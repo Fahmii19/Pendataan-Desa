@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap");
+
+body {
+    font-family: "Open Sans", sans-serif;
+    /* font-family: sans-serif !important; */
+    /* font-family: 'Liberation Serif', serif !important; */
+    overflow: auto !important;
+}
+
+.scrollbar-firefox {
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
+
+.scrollbar::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    /* margin-bottom: 0.5rem; */
+}
+
+.scrollbar::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    /* margin-top: -0.1rem; */
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 5px;
+    /* height: 10px; */
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: blue;
+    display: none;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background: rgb(161 161 170);
+    border-radius: 100vh;
+    border: 2px solid rgb(161 161 170);
+    margin-top: 50% !important;
+    top: 50% !important;
+    position: relative !important;
+}
+
+.subjudul_custom li:nth-child(2) {
+    background: lightgreen;
+}
+
+h1 {
+    font-size: 1.5rem !important;
+}
+
+h2 {
+    font-size: 1.1rem !important;
+}
+
+h3 {
+    font-size: 0.9rem !important;
+}
+
+ul {
+    counter-reset: list;
+}
+
+ul > li {
+    list-style: none;
+    position: relative;
+}
+
+ul > li:before {
+    counter-increment: list;
+    content: counter(list, disc);
+    /* margin-left: 2vw; */
+    position: relative;
+    left: -0.2vw;
+}
+
+.scrollbar-panduan::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    margin-bottom: 0rem;
+}
+
+.scrollbar-panduan::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    margin-top: -1.2rem;
+}
+
+.scrollbar-panduan::-webkit-scrollbar {
+    width: 8px;
+    height: 10px;
+}
+
+.scrollbar-panduan::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: blue;
+    display: none;
+}
+
+.scrollbar-panduan::-webkit-scrollbar-thumb {
+    background: rgb(161 161 170);
+    border-radius: 100vh;
+    border: 2px solid rgb(161 161 170);
+    margin-top: 50% !important;
+    top: 50% !important;
+    position: relative !important;
+}
+
+@media (min-width: 1471px) {
+    /* .grid_subjudul {
+        @apply grid grid-rows-[3vh];
+    } */
+}
+
+.text-blue-500 {
+    color: #3b82f6 !important;
+}

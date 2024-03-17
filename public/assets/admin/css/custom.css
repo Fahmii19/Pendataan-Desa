@@ -1,0 +1,1311 @@
+* {
+    font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+}
+
+/* #accordionSidebar {
+    background: rgb(253, 213, 62);
+    background: linear-gradient(
+        352deg,
+        rgba(253, 213, 62, 1) 0%,
+        rgba(253, 99, 10, 1) 23%,
+        rgba(52, 152, 219, 1) 59%
+    );
+} */
+
+.text_data_terbaru {
+    margin-left: -3.5%;
+}
+
+.text_data_home {
+    /* margin-left: -3.3%; */
+    padding-right: 1.3%;
+}
+
+.jarak_text_data_terbaru {
+    /* height: 10%; */
+    margin-top: -2.5%;
+}
+
+.mapboxgl-ctrl-top-right .mapboxgl-ctrl {
+    margin: 20rem 10px 0 0 !important;
+}
+
+.slick-slide-filter {
+    width: 100px;
+}
+
+/* .carousel-inner {
+    width:100%; */
+/* max-height: 300px !important;
+} */
+
+.img_parents {
+    width: 29.3rem;
+    height: 19rem;
+}
+
+.img_slide_dashboard {
+    height: 26vw !important;
+    width: 45vw !important;
+}
+
+.img_slide_survey_galian_ajib {
+    height: 26vw !important;
+    width: 40vw !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 40px !important;
+}
+
+.img_slide_pendataan {
+    width: 40rem;
+    height: 25rem !important;
+    object-fit: cover;
+}
+
+.img_slide_utama {
+    width: 32rem;
+    height: 19rem;
+}
+
+.img_parents_utama {
+    width: 0 !important;
+    height: 23rem;
+}
+
+/* .slick-list draggable {
+    width: 490px !important;
+} */
+
+.uk_chart_skeleton {
+    /* width: 59.5rem; */
+    width: 100%;
+    /* height: 320px; */
+    height: 15rem;
+}
+
+.img_child {
+    /* width: 150px;
+    height: 100px; */
+    width: 11rem;
+    height: 7rem;
+    padding: 7% 11% 0 0;
+    cursor: pointer;
+}
+
+.img_child_survey {
+    /* width: 150px;
+    height: 100px; */
+    width: 11rem;
+    height: 7rem;
+    /* padding: 7% 11% 0 0; */
+    padding-right: 4%;
+    cursor: pointer;
+}
+
+/* make button larger and change their positions */
+.slick-prev,
+.slick-next {
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+}
+
+.slick-prev {
+    left: 5px;
+}
+
+.slick-next {
+    right: 5px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 40px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* General slick slider styling */
+.slick-slide:focus,
+.slick-slide:focus {
+    outline: none;
+    /* remove default outline when on :focus */
+}
+
+/* hide dots and arrow buttons when slider is not hovered */
+/* .slick-slider:not(:hover) .slick-arrow,
+.slick-slider:not(:hover) .slick-dots {
+    opacity: 1 !important;
+} */
+
+/* transition effects for opacity */
+.slick-arrow {
+    transition: opacity 0.5s ease-out;
+}
+
+/* .slide-arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+}
+.prev-arrow {
+    left: -40px;
+    width: 0;
+    height: 0;
+    border-left: 0 solid transparent;
+    border-right: 15px solid #113463;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+.next-arrow {
+    right: -40px;
+    width: 0;
+    height: 0;
+    border-right: 0 solid transparent;
+    border-left: 15px solid #113463;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+} */
+
+.loader_lazy_load {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    /* margin-left: 10px; */
+    margin-top: 80px;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.dt-buttons {
+    position: absolute !important;
+    margin-top: -1.8rem;
+    margin-left: 11rem;
+}
+
+/* .dataTables_filter {
+    margin-top: -1rem;
+} */
+
+/* @media (min-width: 863px) and (max-width: 1536px) {
+    .responsive_icon {
+        position: relative;
+        right: -3rem;
+    }
+
+    .custom_harian {
+        width: 23rem !important;
+        height: 3.5rem;
+    }
+
+    .gambar_utama_slider_input {
+        width: 42em !important;
+    }
+
+    .img_parents {
+        width: 45em !important;
+    }
+
+    .data_image_space .slick-list {
+        width: 42em !important;
+    }
+} */
+
+.custom_harian {
+    width: 17.7rem;
+    height: 3.5rem;
+}
+
+.gambar_peta .slick-dots li {
+    margin: 0 0 0 0 !important;
+}
+
+/* border dashboard */
+.border_dashboard {
+    border-bottom: 1px solid rgb(226 232 240);
+}
+
+.font_size_box_informasi {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.font_size_box_informasi_izin_lingkungan {
+    font-size: 14px !important;
+    margin-top: 0.5rem !important;
+    margin-left: 0.4rem !important;
+}
+
+.konten_padding_box_kedua {
+    padding-left: 1rem;
+    padding-top: 0.1rem;
+}
+
+.card-header-mobile {
+    padding-left: 0.6%;
+}
+
+.trafik_pengunjung_harian_mobile {
+    border-style: none;
+    margin-left: -0.9%;
+}
+
+/* izin lingkungan */
+#table-lingkungan2_filter {
+    margin-right: 2.2% !important;
+}
+
+/* Breakpoint*/
+/* START FOR MOBILE */
+
+@media (min-width: 280px) and (max-width: 766.98px) {
+    /* Iphone SE */
+    @media (min-width: 361px) and (max-width: 389px) {
+        .chart-pengunjung {
+            width: 335px !important;
+        }
+
+        .img_parents {
+            width: 310px;
+            margin: 15px;
+            object-fit: cover;
+        }
+
+        #photo_ajib_perkembangan {
+            margin-top: -1rem;
+        }
+
+        .text-truncate {
+            position: relative;
+            top: -3.5rem;
+            left: 5rem;
+        }
+
+        #penempatan_perkembangan {
+            position: relative;
+            top: -3.5rem;
+            left: 5rem;
+        }
+
+        .responsive_delete_card {
+            padding: 0 0 0 8px !important;
+        }
+
+        .angka_responsive {
+            padding: 0 0 0 10px;
+        }
+
+        .responsive_icon {
+            position: relative;
+            left: 17rem;
+            top: -2rem;
+        }
+
+        .responsive_card {
+            height: 60px !important;
+        }
+
+        .responsive_row {
+            position: relative;
+            top: 1rem;
+        }
+
+        .responsive_jarak {
+            margin-bottom: 15px;
+        }
+
+        .responsive_text_data {
+            margin-top: 22rem;
+        }
+
+        .text_data_terbaru {
+            margin: 0 0 0 0;
+        }
+
+        .jarak_inmobile {
+            margin-top: 21.3rem !important;
+        }
+
+        .jarak_text {
+            margin-top: -0.4rem !important;
+        }
+
+        .jarak_judul {
+            margin-bottom: 0.2rem;
+        }
+
+        .dataTables_filter {
+            position: relative;
+            top: 0.2em;
+            left: -3.2em;
+            margin-bottom: 0.6em;
+        }
+
+        #table-surveyer2_length {
+            position: relative;
+            left: -7em;
+        }
+
+        #table-surveyer3_length {
+            position: relative;
+            left: -6.7em;
+        }
+
+        .flex_container {
+            display: flex !important;
+            flex-direction: column !important;
+        }
+
+        .mobile_container {
+            padding: 1rem 1rem 1rem 1rem !important;
+        }
+
+        .name_ajib_lingkungan_mobile {
+            margin-top: -3.6rem !important;
+            margin-left: 5rem !important;
+        }
+
+        .name_ajib_pendataan_mobile {
+            margin-top: -3.6rem !important;
+            margin-left: 5rem !important;
+        }
+
+        .skeleton-image {
+            width: 3rem !important;
+            height: 3rem !important;
+            margin-left: 0px !important;
+            margin-top: 6px !important;
+        }
+
+        .box_kotak_wilayah {
+            margin-top: 3% !important;
+            margin-bottom: -8% !important;
+        }
+
+        .penempatan_pendataan {
+            margin-top: -4.3rem !important;
+            margin-left: 5rem !important;
+        }
+
+        .name_pendataan {
+            margin-top: 0.5% !important;
+        }
+
+        .name_pengawasan_lingkungan {
+            margin-top: 0.5% !important;
+        }
+
+        .penempatan_pengawasan_lingkungan {
+            margin-top: -4.3rem !important;
+            margin-left: 5rem !important;
+        }
+        .konten_padding_box_kedua {
+            padding-left: 1rem;
+            padding-top: 0rem;
+        }
+
+        .card-header-mobile {
+            padding-left: 3% !important;
+        }
+
+        /* IZIN LINGKUNGAN */
+        #table-lingkungan2_filter {
+            margin-right: 2.2% !important;
+            margin-top: 0.5%;
+            margin-bottom: 2.5%;
+        }
+
+        #table-lingkungan3_length {
+            position: relative;
+            left: -8.5em;
+        }
+
+        .trafik_pengunjung_harian_mobile {
+            border-style: none;
+            margin-left: 3%;
+        }
+
+        .teks_trafik_pengunjung_harian_mobile {
+            margin-right: 3%;
+        }
+
+        #table-lingkungan2_info {
+            margin-left: 1.5% !important;
+            margin-top: -0.5rem !important;
+        }
+
+        #table-lingkungan2_paginate {
+            margin-right: 1.5% !important;
+            margin-top: 0.7rem !important;
+            margin-bottom: -0.1%;
+        }
+
+        #table-lingkungan3_info {
+            top: 0.6rem !important;
+        }
+
+        #table-lingkungan3_paginate {
+            margin-right: 1.5% !important;
+            margin-top: 1.2rem !important;
+            margin-bottom: -0.1%;
+        }
+    }
+
+    /* Iphone 12 */
+    @media (min-width: 390px) and (max-width: 392px) {
+        .chart-pengunjung {
+            width: 350px !important;
+        }
+
+        .img_parents {
+            width: 323px;
+            margin: 15px;
+            object-fit: cover;
+        }
+
+        #photo_ajib_perkembangan {
+            margin-top: -1rem;
+        }
+
+        .text-truncate {
+            position: relative;
+            top: -3.5rem;
+            left: 5rem;
+        }
+
+        #penempatan_perkembangan {
+            position: relative;
+            top: -3.5rem;
+            left: 5rem;
+        }
+
+        .responsive_delete_card {
+            padding: 0 0 0 8px !important;
+        }
+
+        .angka_responsive {
+            padding: 0 0 0 10px;
+        }
+
+        .responsive_icon {
+            position: relative;
+            left: 18rem;
+            top: -2rem;
+        }
+
+        .responsive_card {
+            height: 60px !important;
+        }
+
+        .responsive_row {
+            position: relative;
+            top: 1rem;
+        }
+
+        .responsive_jarak {
+            margin-bottom: 15px;
+        }
+
+        /* .skeleton-image {
+            width: 20rem !important;
+            height: 1.5rem !important;
+            margin-left: 0px !important;
+            margin-top: 11px !important;
+            margin-bottom: 11px !important;
+        } */
+
+        .responsive_text_data {
+            margin-top: 22rem;
+        }
+
+        .text_data_terbaru {
+            margin: 0 0 0 0;
+        }
+
+        .jarak_inmobile {
+            margin-top: 21.3rem !important;
+        }
+
+        .jarak_text {
+            margin-top: -0.4rem !important;
+        }
+
+        .jarak_judul {
+            margin-bottom: 0.2rem;
+        }
+
+        .dataTables_filter {
+            position: relative;
+            top: 0.2em;
+            left: -3.6em;
+            margin-bottom: 0.6em;
+        }
+
+        #table-surveyer2_length {
+            position: relative;
+            left: -6.9em;
+        }
+        #table-surveyer3_length {
+            position: relative;
+            left: -7.1em;
+        }
+
+        .flex_container {
+            display: flex !important;
+            flex-direction: column !important;
+        }
+
+        .mobile_container {
+            padding: 1rem 1rem 1rem 1rem !important;
+        }
+
+        .name_ajib_lingkungan_mobile {
+            margin-top: -3.6rem !important;
+            margin-left: 5rem !important;
+        }
+
+        .name_ajib_pendataan_mobile {
+            margin-top: -3.6rem !important;
+            margin-left: 5rem !important;
+        }
+
+        .skeleton-image {
+            width: 3rem !important;
+            height: 3rem !important;
+            margin-left: 0px !important;
+            margin-top: 6px !important;
+        }
+
+        .box_kotak_wilayah {
+            margin-top: 3% !important;
+            margin-bottom: -8% !important;
+        }
+
+        .penempatan_pendataan {
+            margin-top: -4.3rem !important;
+            margin-left: 5rem !important;
+        }
+
+        .name_pendataan {
+            margin-top: 0.5% !important;
+        }
+
+        .name_pengawasan_lingkungan {
+            margin-top: 0.5% !important;
+        }
+
+        .penempatan_pengawasan_lingkungan {
+            margin-top: -4.3rem !important;
+            margin-left: 5rem !important;
+        }
+        .konten_padding_box_kedua {
+            padding-left: 1rem;
+            padding-top: 0rem;
+        }
+
+        .card-header-mobile {
+            padding-left: 3% !important;
+        }
+
+        /* IZIN LINGKUNGAN */
+        #table-lingkungan2_filter {
+            margin-right: 2.2% !important;
+            margin-top: 0.5%;
+            margin-bottom: 2.5%;
+        }
+
+        #table-lingkungan3_length {
+            position: relative;
+            left: -8.5em;
+        }
+
+        .trafik_pengunjung_harian_mobile {
+            border-style: none;
+            margin-left: 3%;
+        }
+
+        .teks_trafik_pengunjung_harian_mobile {
+            margin-right: 3%;
+        }
+
+        #table-lingkungan2_info {
+            margin-left: 1.5% !important;
+            margin-top: -0.5rem !important;
+        }
+
+        #table-lingkungan2_paginate {
+            margin-right: 1.5% !important;
+            margin-top: 0.7rem !important;
+            margin-bottom: -0.1%;
+        }
+
+        #table-lingkungan3_info {
+            top: 0.6rem !important;
+        }
+
+        #table-lingkungan3_paginate {
+            margin-right: 1.5% !important;
+            margin-top: 1.2rem !important;
+            margin-bottom: -0.1%;
+        }
+    }
+
+    /* Pixel */
+    @media (min-width: 393px) and (max-width: 411px) {
+        .chart-pengunjung {
+            width: 352px !important;
+        }
+
+        .img_parents {
+            width: 329px;
+            margin: 15px;
+            object-fit: cover;
+        }
+
+        #photo_ajib_perkembangan {
+            margin-top: -1rem;
+        }
+
+        .text-truncate {
+            position: relative;
+            top: -3.5rem;
+            left: 5rem;
+        }
+
+        #penempatan_perkembangan {
+            position: relative;
+            top: -3.5rem;
+            left: 5rem;
+        }
+
+        .responsive_delete_card {
+            padding: 0 0 0 8px !important;
+        }
+
+        .angka_responsive {
+            padding: 0 0 0 10px;
+        }
+
+        .responsive_icon {
+            position: relative;
+            left: 18rem;
+            top: -2rem;
+        }
+
+        .responsive_card {
+            height: 60px !important;
+        }
+
+        .responsive_row {
+            position: relative;
+            top: 1rem;
+        }
+
+        .responsive_jarak {
+            margin-bottom: 15px;
+        }
+
+        /* .skeleton-image {
+            width: 20rem !important;
+            height: 1.5rem !important;
+            margin-left: 0px !important;
+            margin-top: 11px !important;
+            margin-bottom: 11px !important;
+        } */
+
+        .responsive_text_data {
+            margin-top: 22rem;
+        }
+
+        .text_data_terbaru {
+            margin: 0 0 0 0;
+        }
+
+        .jarak_inmobile {
+            margin-top: 21.3rem !important;
+        }
+
+        .jarak_text {
+            margin-top: -0.4rem !important;
+        }
+
+        .jarak_judul {
+            margin-bottom: 0.2rem;
+        }
+
+        .dataTables_filter {
+            position: relative;
+            top: 0.2em;
+            left: -3.9em;
+            margin-bottom: 0.6em;
+        }
+
+        #table-surveyer2_length {
+            position: relative;
+            left: -7em;
+        }
+        #table-surveyer3_length {
+            position: relative;
+            left: -7.4em;
+        }
+
+        .flex_container {
+            display: flex !important;
+            flex-direction: column !important;
+        }
+
+        .mobile_container {
+            padding: 1rem 1rem 1rem 1rem !important;
+        }
+
+        .name_ajib_lingkungan_mobile {
+            margin-top: -3.6rem !important;
+            margin-left: 5rem !important;
+        }
+
+        .name_ajib_pendataan_mobile {
+            margin-top: -3.6rem !important;
+            margin-left: 5rem !important;
+        }
+
+        .skeleton-image {
+            width: 3rem !important;
+            height: 3rem !important;
+            margin-left: 0px !important;
+            margin-top: 6px !important;
+        }
+
+        .box_kotak_wilayah {
+            margin-top: 3% !important;
+            margin-bottom: -8% !important;
+        }
+
+        .penempatan_pendataan {
+            margin-top: -4.3rem !important;
+            margin-left: 5rem !important;
+        }
+
+        .name_pendataan {
+            margin-top: 0.5% !important;
+        }
+
+        .name_pengawasan_lingkungan {
+            margin-top: 0.5% !important;
+        }
+
+        .penempatan_pengawasan_lingkungan {
+            margin-top: -4.3rem !important;
+            margin-left: 5rem !important;
+        }
+        .konten_padding_box_kedua {
+            padding-left: 1rem;
+            padding-top: 0rem;
+        }
+
+        .card-header-mobile {
+            padding-left: 3% !important;
+        }
+
+        /* IZIN LINGKUNGAN */
+        #table-lingkungan2_filter {
+            margin-right: 2.2% !important;
+            margin-top: 0.5%;
+            margin-bottom: 2.5%;
+        }
+
+        #table-lingkungan3_length {
+            position: relative;
+            left: -8.5em;
+        }
+
+        .trafik_pengunjung_harian_mobile {
+            border-style: none;
+            margin-left: 3%;
+        }
+
+        .teks_trafik_pengunjung_harian_mobile {
+            margin-right: 3%;
+        }
+
+        #table-lingkungan2_info {
+            margin-left: 1.5% !important;
+            margin-top: -0.5rem !important;
+        }
+
+        #table-lingkungan2_paginate {
+            margin-right: 1.5% !important;
+            margin-top: 0.7rem !important;
+            margin-bottom: -0.1%;
+        }
+
+        #table-lingkungan3_info {
+            top: 0.6rem !important;
+        }
+
+        #table-lingkungan3_paginate {
+            margin-right: 1.5% !important;
+            margin-top: 1.2rem !important;
+            margin-bottom: -0.1%;
+        }
+    }
+
+    /* Samsung S20 */
+    @media (min-width: 412px) and (max-width: 413px) {
+        .chart-pengunjung {
+            width: 352px !important;
+        }
+
+        .img_parents {
+            width: 345px;
+            margin: 15px;
+            object-fit: cover;
+        }
+
+        #photo_ajib_perkembangan {
+            margin-top: -1rem;
+        }
+
+        .text-truncate {
+            position: relative;
+            top: -3.5rem;
+            left: 5rem;
+        }
+
+        #penempatan_perkembangan {
+            position: relative;
+            top: -3.5rem;
+            left: 5rem;
+        }
+
+        .responsive_delete_card {
+            padding: 0 0 0 8px !important;
+        }
+
+        .angka_responsive {
+            padding: 0 0 0 10px;
+        }
+
+        .responsive_icon {
+            position: relative;
+            left: 19rem;
+            top: -2rem;
+        }
+
+        .responsive_card {
+            height: 60px !important;
+        }
+
+        .responsive_row {
+            position: relative;
+            top: 1rem;
+        }
+
+        .responsive_jarak {
+            margin-bottom: 15px;
+        }
+
+        /* .skeleton-image {
+            width: 20rem !important;
+            height: 1.5rem !important;
+            margin-left: 0px !important;
+            margin-top: 11px !important;
+            margin-bottom: 11px !important;
+        } */
+
+        .responsive_text_data {
+            margin-top: 22rem;
+        }
+
+        .text_data_terbaru {
+            margin: 0 0 0 0;
+        }
+
+        .jarak_inmobile {
+            margin-top: 21.3rem !important;
+        }
+
+        .jarak_text {
+            margin-top: -0.4rem !important;
+        }
+
+        .jarak_judul {
+            margin-bottom: 0.2rem;
+        }
+
+        .dataTables_filter {
+            position: relative;
+            top: 0.2em;
+            left: -4.5em;
+            margin-bottom: 0.6em;
+        }
+
+        #table-surveyer2_length {
+            position: relative;
+            left: -7.5em;
+        }
+        #table-surveyer3_length {
+            position: relative;
+            left: -8em;
+        }
+
+        .flex_container {
+            display: flex !important;
+            flex-direction: column !important;
+        }
+
+        .mobile_container {
+            padding: 1rem 1rem 1rem 1rem !important;
+        }
+
+        .name_ajib_lingkungan_mobile {
+            margin-top: -3.6rem !important;
+            margin-left: 5rem !important;
+        }
+
+        .name_ajib_pendataan_mobile {
+            margin-top: -3.6rem !important;
+            margin-left: 5rem !important;
+        }
+
+        .skeleton-image {
+            width: 3rem !important;
+            height: 3rem !important;
+            margin-left: 0px !important;
+            margin-top: 6px !important;
+        }
+
+        .box_kotak_wilayah {
+            margin-top: 3% !important;
+            margin-bottom: -8% !important;
+        }
+
+        .penempatan_pendataan {
+            margin-top: -4.3rem !important;
+            margin-left: 5rem !important;
+        }
+
+        .name_pendataan {
+            margin-top: 0.5% !important;
+        }
+
+        .name_pengawasan_lingkungan {
+            margin-top: 0.5% !important;
+        }
+
+        .penempatan_pengawasan_lingkungan {
+            margin-top: -4.3rem !important;
+            margin-left: 5rem !important;
+        }
+
+        .konten_padding_box_kedua {
+            padding-left: 1rem;
+            padding-top: 0rem;
+        }
+
+        .card-header-mobile {
+            padding-left: 3% !important;
+        }
+
+        /* IZIN LINGKUNGAN */
+        #table-lingkungan2_filter {
+            margin-right: 2.2% !important;
+            margin-top: 0.5%;
+            margin-bottom: 2.5%;
+        }
+
+        #table-lingkungan3_length {
+            position: relative;
+            left: -8.5em;
+        }
+
+        .trafik_pengunjung_harian_mobile {
+            border-style: none;
+            margin-left: 3%;
+        }
+
+        .teks_trafik_pengunjung_harian_mobile {
+            margin-right: 3%;
+        }
+
+        #table-lingkungan2_info {
+            margin-left: 1.5% !important;
+            margin-top: -0.5rem !important;
+        }
+
+        #table-lingkungan2_paginate {
+            margin-right: 1.5% !important;
+            margin-top: 0.7rem !important;
+            margin-bottom: -0.1%;
+        }
+
+        #table-lingkungan3_info {
+            top: 0.6rem !important;
+        }
+
+        #table-lingkungan3_paginate {
+            margin-right: 1.5% !important;
+            margin-top: 1.2rem !important;
+            margin-bottom: -0.1%;
+        }
+    }
+
+    /* Iphone XR */
+    @media (min-width: 414px) and (max-width: 420px) {
+        .chart-pengunjung {
+            width: 370px !important;
+        }
+
+        .img_parents {
+            width: 348px;
+            margin: 15px;
+            object-fit: cover;
+        }
+
+        #photo_ajib_perkembangan {
+            margin-top: -1rem;
+        }
+
+        .text-truncate {
+            position: relative;
+            top: -3.5rem;
+            left: 5rem;
+        }
+
+        #penempatan_perkembangan {
+            position: relative;
+            top: -3.5rem;
+            left: 5rem;
+        }
+
+        .responsive_delete_card {
+            padding: 0 0 0 8px !important;
+        }
+
+        .angka_responsive {
+            padding: 0 0 0 10px;
+        }
+
+        .responsive_icon {
+            position: relative;
+            left: 19rem;
+            top: -2rem;
+        }
+
+        .responsive_card {
+            height: 60px !important;
+        }
+
+        .responsive_row {
+            position: relative;
+            top: 1rem;
+        }
+
+        .responsive_jarak {
+            margin-bottom: 15px;
+        }
+
+        /* .skeleton-image {
+            width: 20rem !important;
+            height: 1.5rem !important;
+            margin-left: 0px !important;
+            margin-top: 11px !important;
+            margin-bottom: 11px !important;
+        } */
+
+        .responsive_text_data {
+            margin-top: 22rem;
+        }
+
+        .text_data_terbaru {
+            margin: 0 0 0 0;
+        }
+
+        .jarak_inmobile {
+            margin-top: 21.3rem !important;
+        }
+
+        .jarak_text {
+            margin-top: -0.4rem !important;
+        }
+
+        .jarak_judul {
+            margin-bottom: 0.2rem;
+        }
+
+        .dataTables_filter {
+            position: relative;
+            top: 0.2em;
+            left: -4.7em;
+            margin-bottom: 0.6em;
+        }
+
+        #table-surveyer2_length {
+            position: relative;
+            left: -7.7em;
+        }
+        #table-surveyer3_length {
+            position: relative;
+            left: -8.3em;
+        }
+
+        #table-lingkungan2_length {
+            position: relative;
+            left: -8.3em;
+        }
+
+        .flex_container {
+            display: flex !important;
+            flex-direction: column !important;
+        }
+
+        .mobile_container {
+            padding: 1rem 1rem 1rem 1rem !important;
+        }
+
+        .name_ajib_lingkungan_mobile {
+            margin-top: -3.6rem !important;
+            margin-left: 5rem !important;
+        }
+
+        .name_ajib_pendataan_mobile {
+            margin-top: -3.6rem !important;
+            margin-left: 5rem !important;
+        }
+
+        .skeleton-image {
+            width: 3rem !important;
+            height: 3rem !important;
+            margin-left: 0px !important;
+            margin-top: 6px !important;
+        }
+
+        .box_kotak_wilayah {
+            margin-top: 3% !important;
+            margin-bottom: -8% !important;
+        }
+
+        .penempatan_pendataan {
+            margin-top: -4.3rem !important;
+            margin-left: 5rem !important;
+        }
+
+        .name_pendataan {
+            margin-top: 0.5% !important;
+        }
+
+        .name_pengawasan_lingkungan {
+            margin-top: 0.5% !important;
+        }
+
+        .penempatan_pengawasan_lingkungan {
+            margin-top: -4.3rem !important;
+            margin-left: 5rem !important;
+        }
+
+        /* new */
+        /* .judul_center_box_kedua {
+            margin-top: 1.3rem !important;
+            text-align: center;
+        }
+
+        .konten_center_box_kedua {
+            text-align: center;
+            margin-top: 0.5rem;
+        } */
+
+        .konten_padding_box_kedua {
+            padding-left: 1rem;
+            padding-top: 0rem;
+        }
+
+        .card-header-mobile {
+            padding-left: 3% !important;
+        }
+
+        /* IZIN LINGKUNGAN */
+        #table-lingkungan2_filter {
+            margin-right: 2.2% !important;
+            margin-top: 0.5%;
+            margin-bottom: 2.5%;
+        }
+
+        #table-lingkungan3_length {
+            position: relative;
+            left: -8.5em;
+        }
+
+        .trafik_pengunjung_harian_mobile {
+            border-style: none;
+            margin-left: 3%;
+        }
+
+        .teks_trafik_pengunjung_harian_mobile {
+            margin-right: 3%;
+        }
+
+        #table-lingkungan2_info {
+            margin-left: 1.5% !important;
+            margin-top: -0.5rem !important;
+        }
+
+        #table-lingkungan2_paginate {
+            margin-right: 1.5% !important;
+            margin-top: 0.7rem !important;
+            margin-bottom: -0.1%;
+        }
+
+        #table-lingkungan3_info {
+            top: 0.6rem !important;
+        }
+
+        #table-lingkungan3_paginate {
+            margin-right: 1.5% !important;
+            margin-top: 1.2rem !important;
+            margin-bottom: -0.1%;
+        }
+    }
+}
+
+/* START Tablets */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+.flex_container {
+    display: flex;
+    flex-direction: row;
+}
+
+/* START Desktops */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .font_size_box_informasi {
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .font_size_box_informasi_izin_lingkungan {
+        font-size: 11px !important;
+        margin-top: 0.5rem !important;
+    }
+}
