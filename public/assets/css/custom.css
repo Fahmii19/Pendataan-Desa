@@ -832,6 +832,10 @@ textarea {
     background-color: #fdfffc;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
 #map {
     position: absolute;
     top: 0;
@@ -849,7 +853,7 @@ input[type="range"]::-moz-range-progress {
 /* Finish Range */
 
 .mapboxgl-ctrl-top-right {
-    top: 65% !important;
+    top: 62% !important;
     right: 0.5vw !important;
 }
 

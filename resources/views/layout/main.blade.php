@@ -12,6 +12,16 @@
 
     <link rel="icon" href="assets/gambar/favicon.png">
 
+    {{-- Pendataan Desa --}}
+
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.5/dist/flowbite.min.css" />
+
+    <link rel="stylesheet" href="{{ asset('assets/css/panduan.css') }}">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
     <meta name="google-signin-client_id" content="{{ env('GOOGLE_CLIENT_ID') }}">
@@ -78,6 +88,292 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 @endphp
 
 <body>
+
+
+    {{-- KODE PENDATAAN DESA START --}}
+
+
+
+    <div class="h-[100vh] overflow-hidden grid grid-cols-1">
+        <div class="w-full h-[100vh] relative">
+
+            <div id="map" class="w-full h-full absolute">
+            </div>
+
+
+
+            <div class="w-full h-full grid grid-cols-[425px,1fr]">
+                <!-- Pertama -->
+                <div class="w-full bg-white flex flex-col z-10">
+                    <!-- logo -->
+                    <div class="w-full h-[14vh] flex justify-center items-center mt-4">
+                        <div class="text-xl font-semibold">Portal Investasi Desa</div>
+                    </div>
+                    <!--  -->
+                    <div class="w-full mt-3 px-5">
+                        <!-- Peta Tematik Title -->
+                        <div class="font-semibold text-sm mt-2">Peta Tematik</div>
+
+                        <!-- Section Zonasi -->
+                        <div class="grid grid-cols-1 gap-y-1 text-sm mt-2">
+                            <div>
+                                <input id="zonasi" type="checkbox" value="" class="w-3 h-3 text-blue-600 border-gray-300 border rounded-sm focus:border focus:ring-0 hapus_focus_checkbox bg-white" />
+                                <label for="zonasi" class="ml-2 cursor-pointer font-medium text-black">Zonasi</label>
+                            </div>
+                            <div class="flex flex-row">
+                                <div class="w-full">
+                                    <input id="perda-1" type="radio" value="Perda 1/2014" name="jenis-perda" class="w-3 h-3 text-blue-600 bg-gray-100 border-gray-300 focus:border-transparent focus:ring-0 hapus_focus_checkbox bg-white" />
+                                    <label for="perda-1" class="ms-2 text-black">Perda 1/2014</label>
+                                </div>
+                                <div class="w-full">
+                                    <input id="pergub-31" type="radio" value="Pergub 31/2022" name="jenis-perda" class="w-3 h-3 text-blue-600 bg-gray-100 border-gray-300 focus:border-transparent focus:ring-0 hapus_focus_checkbox bg-white" />
+                                    <label for="pergub-31" class="ms-2 text-black">Pergub 31/2022</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Section Batas Rw -->
+                        <div class="grid grid-cols-1 gap-y-1 text-sm mt-2">
+                            <div>
+                                <input id="batas-rw" type="checkbox" value="" class="w-3 h-3 text-blue-600 border-gray-300 border rounded-sm focus:border focus:ring-0 hapus_focus_checkbox bg-white" />
+                                <label for="batas-rw" class="ml-2 cursor-pointer font-medium text-black">Batas Rw</label>
+                            </div>
+                        </div>
+
+                        <!-- Section Transect Zone -->
+                        <div class="grid grid-cols-1 gap-y-1 text-sm mt-2">
+                            <div>
+                                <input id="transect-zone" type="checkbox" value="" class="w-3 h-3 text-blue-600 border-gray-300 border rounded-sm focus:border focus:ring-0 hapus_focus_checkbox bg-white" />
+                                <label for="transect-zone" class="ml-2 cursor-pointer font-medium text-black">Transect Zone (Model Deep Learning)</label>
+                            </div>
+                            <div class="flex flex-row">
+                                <div class="w-full">
+                                    <input id="tahun-2010" type="radio" value="Tahun 2010" name="tahun-transect" class="w-3 h-3 text-blue-600 bg-gray-100 border-gray-300 focus:border-transparent focus:ring-0 hapus_focus_checkbox bg-white" />
+                                    <label for="tahun-2010" class="ms-2 text-black">Tahun 2010</label>
+                                </div>
+                                <div class="w-full">
+                                    <input id="tahun-2021" type="radio" value="Tahun 2021" name="tahun-transect" class="w-3 h-3 text-blue-600 bg-gray-100 border-gray-300 focus:border-transparent focus:ring-0 hapus_focus_checkbox bg-white" />
+                                    <label for="tahun-2021" class="ms-2 text-black">Tahun 2021</label>
+                                </div>
+                                <div class="w-full">
+                                    <input id="tahun-2032" type="radio" value="Tahun 2032" name="tahun-transect" class="w-3 h-3 text-blue-600 bg-gray-100 border-gray-300 focus:border-transparent focus:ring-0 hapus_focus_checkbox bg-white" />
+                                    <label for="tahun-2032" class="ms-2 text-black">Tahun 2032</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Section Analisis GIS -->
+                        <div class="grid grid-cols-1 gap-y-1 text-sm mt-2">
+                            <div>
+                                <input id="analisis-gis" type="checkbox" value="" class="w-3 h-3 text-blue-600 border-gray-300 border rounded-sm focus:border focus:ring-0 hapus_focus_checkbox bg-white" />
+                                <label for="analisis-gis" class="ml-2 cursor-pointer font-medium text-black">Analisis GIS</label>
+                            </div>
+                            <div class="flex flex-col ml-[1.1rem]">
+                                <div class="w-full">
+                                    <input id="perda-2014" type="radio" value="Perda 1/2014" name="tahun-analisis" class="w-3 h-3 text-blue-600 bg-gray-100 border-gray-300 focus:border-transparent focus:ring-0 hapus_focus_checkbox bg-white" />
+                                    <label for="perda-2014" class="ms-2 text-black">Perda 1/2014</label>
+                                </div>
+                                <div class="w-full">
+                                    <input id="pergub-2022-terkendali" type="radio" value="Pergub 31/2022 Terkendali" name="tahun-analisis" class="w-3 h-3 text-blue-600 bg-gray-100 border-gray-300 focus:border-transparent focus:ring-0 hapus_focus_checkbox bg-white" />
+                                    <label for="pergub-2022-terkendali" class="ms-2 text-black">Pergub 31/2022 Terkendali</label>
+                                </div>
+                                <div class="w-full">
+                                    <input id="pergub-2022-maksimum" type="radio" value="Pergub 31/2022 Maksimum" name="tahun-analisis" class="w-3 h-3 text-blue-600 bg-gray-100 border-gray-300 focus:border-transparent focus:ring-0 hapus_focus_checkbox bg-white" />
+                                    <label for="pergub-2022-maksimum" class="ms-2 text-black">Pergub 31/2022 Maksimum</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--  -->
+                    </div>
+
+                    <!-- Button Grup Menu -->
+                    <div class="w-full px-5 mt-7 h-full flex flex-col">
+                        <div class="grid grid-cols-4">
+                            <!-- Button Pertama -->
+                            <div>
+                                <div class="flex justify-start items-center">
+                                    <button class="h-10 w-10 flex justify-center items-center border bg-blue-500 border-blue-500 rounded-full" id="btn-1">
+                                        <svg class="text-white h-[18px]" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-dot" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                            <path class="" fill="currentColor" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Button Kedua -->
+                            <div>
+                                <div class="flex justify-start items-center">
+                                    <button class="inline-block h-10 w-10 flex justify-center items-center border border-blue-500 rounded-full" id="btn-2">
+                                        <svg class="text-[#007bff] h-[17px]" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                            <path class="" fill="currentColor" d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Button Ketiga -->
+                            <div>
+                                <div class="flex justify-start items-center">
+                                    <button class="inline-block h-10 w-10 flex justify-center items-center border border-blue-500 rounded-full" id="btn-3">
+                                        <svg class="text-[#007bff] h-[17px]" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="droplet" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                            <path class="" fill="currentColor" d="M192 512C86 512 0 426 0 320C0 228.8 130.2 57.7 166.6 11.7C172.6 4.2 181.5 0 191.1 0h1.8c9.6 0 18.5 4.2 24.5 11.7C253.8 57.7 384 228.8 384 320c0 106-86 192-192 192zM96 336c0-8.8-7.2-16-16-16s-16 7.2-16 16c0 61.9 50.1 112 112 112c8.8 0 16-7.2 16-16s-7.2-16-16-16c-44.2 0-80-35.8-80-80z"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Button Keempat -->
+                            <div>
+                                <div class="flex justify-start items-center">
+                                    <button class="inline-block h-10 w-10 flex justify-center items-center border border-blue-500 rounded-full" id="btn-4">
+                                        <svg class="text-[#007bff] h-[17px]" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="crosshairs" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path class="" fill="currentColor" d="M256 0c17.7 0 32 14.3 32 32V42.4c93.7 13.9 167.7 88 181.6 181.6H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H469.6c-13.9 93.7-88 167.7-181.6 181.6V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V469.6C130.3 455.7 56.3 381.7 42.4 288H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H42.4C56.3 130.3 130.3 56.3 224 42.4V32c0-17.7 14.3-32 32-32zM107.4 288c12.5 58.3 58.4 104.1 116.6 116.6V384c0-17.7 14.3-32 32-32s32 14.3 32 32v20.6c58.3-12.5 104.1-58.4 116.6-116.6H384c-17.7 0-32-14.3-32-32s14.3-32 32-32h20.6C392.1 165.7 346.3 119.9 288 107.4V128c0 17.7-14.3 32-32 32s-32-14.3-32-32V107.4C165.7 119.9 119.9 165.7 107.4 224H128c17.7 0 32 14.3 32 32s-14.3 32-32 32H107.4zM256 224a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- konten -->
+
+                        <div class="mt-2.5" id="default-tab-content">
+                            <!-- Konten Pertama -->
+                            <div class="hidden text-sm" id="content-1">
+                                <div>Pertama</div>
+                            </div>
+                            <!-- Konten Kedua -->
+                            <div class="hidden text-sm" id="content-2">
+                                <div>Kedua</div>
+                            </div>
+
+                            <!-- Konten Ketiga -->
+                            <div class="hidden text-sm" id="content-3">
+                                <div>Ketiga</div>
+                            </div>
+
+                            <!-- Konten Keempat -->
+                            <div class="hidden text-sm" id="content-4">
+                                <div>Keempat</div>
+                            </div>
+                        </div>
+
+                        <!--  -->
+                    </div>
+                </div>
+                <!-- Kedua -->
+
+                <div class="flex flex-col justify-between">
+                    <!-- Atas -->
+                    <div class="w-full flex flex-col relative">
+                        <!--  -->
+                        <div class="w-full flex flex-row mx-5 my-4">
+                            <!--  -->
+                            <div>
+                                <button class="inline-flex justify-center items-center px-4 h-8 text-sm font-medium rounded-full shadow-sm focus:outline-none focus:ring-0 bg-white text-black mr-3">
+                                    <span class="font-semibold tracking-wider">Pasar Induk</span>
+                                </button>
+                            </div>
+                            <!--  -->
+                            <div>
+                                <button class="inline-flex justify-center items-center px-4 h-8 text-sm font-medium rounded-full shadow-sm focus:outline-none focus:ring-0 bg-white text-black mr-3">
+                                    <span class="font-semibold tracking-wider">Lumbung Desa</span>
+                                </button>
+                            </div>
+                            <!--  -->
+                        </div>
+                        <!--  -->
+                    </div>
+
+                    <!-- Bawah -->
+                    <div class="w-full flex items-stretch">
+                        <div class="w-full flex flex-col self-end">
+                            <!-- Legend -->
+                            <div class="w-full mb-3 ml-[1.2vw] relative">
+                                <div class="w-[21vw] h-[17vh] text-xs flex flex-col justify-center items-start px-2 rounded-sm bg-white">
+                                    <!--  -->
+                                    <div class="inline-flex items-center">
+                                        <div class="w-3 h-3 bg-[#5C5C5C]"></div>
+                                        <div class="font-semibold tracking-wide ml-1">
+                                            SD (Special District)
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                    <div class="inline-flex items-center">
+                                        <div class="w-3 h-3 bg-[#38A800]"></div>
+                                        <div class="font-semibold tracking-wide ml-1">
+                                            T1 (Natural)
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                    <div class="inline-flex items-center">
+                                        <div class="w-3 h-3 bg-[#ffff00]"></div>
+                                        <div class="font-semibold tracking-wide ml-1">
+                                            T2 (Rural)
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                    <div class="inline-flex items-center">
+                                        <div class="w-3 h-3 bg-[#FFEBAF]"></div>
+                                        <div class="font-semibold tracking-wide ml-1">
+                                            T3 (Sub-Urban)
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                    <div class="inline-flex items-center">
+                                        <div class="w-3 h-3 bg-[#FFAA00]"></div>
+                                        <div class="font-semibold tracking-wide ml-1">
+                                            T4 (Urban) - termasuk Kampung Kota
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                    <div class="inline-flex items-center">
+                                        <div class="w-3 h-3 bg-[#FF7F7F]"></div>
+                                        <div class="font-semibold tracking-wide ml-1">
+                                            T5 (Urban Center)
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                    <div class="inline-flex items-center">
+                                        <div class="w-3 h-3 bg-[#FF0000]"></div>
+                                        <div class="font-semibold tracking-wide ml-1">
+                                            T6 (Urban Core) - termasuk T6a dan T6b
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                </div>
+                            </div>
+                            <!-- Running Teks -->
+                            <div class="w-full bg-white relative">
+                                <div class="w-[71vw] h-[4vh] flex justify-center items-center">
+                                    <div class="teks-berjalan-pencarian w-full text-sm text-black whitespace-nowrap">
+                                        lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+                                        lorem ipsum
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  -->
+            </div>
+            <!--  -->
+
+            <!--  -->
+        </div>
+    </div>
+
+
+
+    {{-- KODE PENDATAAN DESA END --}}
+
+
+
+
+
+
+
+
     <form id="formSHP">
         <div class="modal fade bd-example-modal-sm" id="downloadSHP" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-sm modal-dialog-centered">
@@ -9054,15 +9350,11 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
     </div>
     </div>
     <!-- Peta -->
-    <div id='map' style='width: 100%; height: 100%; position: fixed;'>
-        {{-- <div style="z-index: 999; position: absolute; right:6px; top:100px;">
-
-        </div> --}}
-    </div>
 
 
 
-    <div class="d-flex flex-col justify-content-end">
+
+    <div class="d-flex flex-col justify-content-end hidden">
 
         <div class="d-flex justify-content-end pt-3 pr-3" style="z-index: 9">
 
@@ -9571,6 +9863,71 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
         }
 
     </script>
+
+    {{-- Pendataan Desa --}}
+
+    <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
+
+    <script>
+        // Running Teks
+
+        $(document).ready(function() {
+            // Initialize marquee
+            $(".teks-berjalan-pencarian").marquee({
+                duration: 17500
+                , delayBeforeStart: 0
+                , direction: "left"
+                , pauseOnHover: true
+            , });
+        });
+
+        document.addEventListener("DOMContentLoaded", function() {
+            // Fungsi untuk mengaktifkan tab
+            function activateTab(btnId) {
+                // Mendapatkan semua elemen konten
+                const allContents = document.querySelectorAll('[id^="content-"]');
+                // Sembunyikan semua konten
+                allContents.forEach((content) => {
+                    content.classList.add("hidden");
+                });
+
+                // Mendapatkan semua tombol
+                const allButtons = document.querySelectorAll('[id^="btn-"]');
+                // Reset kelas untuk semua tombol
+                allButtons.forEach((btn) => {
+                    // Reset tombol ke default tidak aktif
+                    btn.classList.add("border-blue-500", "text-[#007bff]"); // Teks biru untuk tombol tidak aktif
+                    btn.classList.remove("bg-blue-500", "text-white"); // Hapus kelas untuk tombol aktif
+                    btn.querySelector("svg").classList.add("text-[#007bff]"); // Teks biru untuk SVG
+                    btn.querySelector("svg").classList.remove("text-white"); // Hapus kelas teks putih pada SVG
+                });
+
+                // Tampilkan konten yang sesuai
+                const contentId = "content-" + btnId.split("-")[1];
+                document.getElementById(contentId).classList.remove("hidden");
+
+                // Tambahkan kelas pada tombol yang aktif
+                const activeBtn = document.getElementById(btnId);
+                activeBtn.classList.add("bg-blue-500", "text-white"); // Tombol aktif dengan background biru dan teks putih
+                activeBtn.classList.remove("text-[#007bff]", "border-blue-500"); // Hapus kelas teks biru dan border biru
+                activeBtn.querySelector("svg").classList.remove("text-[#007bff]"); // Hapus kelas teks biru pada SVG
+                activeBtn.querySelector("svg").classList.add("text-white"); // Teks putih untuk SVG
+            }
+
+            // Tambahkan event listener ke setiap tombol
+            document.querySelectorAll('[id^="btn-"]').forEach((btn) => {
+                btn.addEventListener("click", function() {
+                    activateTab(btn.id);
+                });
+            });
+
+            // Aktifkan konten pertama secara default
+            activateTab("btn-1");
+        });
+
+    </script>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
     <script src="{{ asset('assets/js/pitchtoggle.js') }}"></script>
