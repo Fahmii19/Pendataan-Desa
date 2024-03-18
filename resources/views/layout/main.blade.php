@@ -235,46 +235,34 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                     <h5 class="mt-3 font-bold text-md text-center">Lokasi</h5>
 
-                                    <div class="grid grid-cols-2 mt-2">
-                                        <div class="">Koordinat</div>
-                                        <div class="inf-kordinat mt-2">
-                                            <span>
-                                                <a href="https://www.google.com/maps/search/-6.160287738049675,106.82328264794558" target="blank_" class="text-blue-600 font-bold leading-0">-6.160287738049675, 106.82328264794558</a>
-                                                <div data-v-5784ed69="" class="inline-block float-right" style="border: 12px solid transparent; margin: -12px; --c81fc0a4: 9999;">
-                                                    <div data-v-5784ed69=""><span data-v-5784ed69-s="" class="text-xl text-gray-500 bottom-[13px] cursor-pointer material-design-icon content-copy-icon" aria-hidden="true" role="img">
-                                                            <!-- Icon copy disini -->
-                                                        </span></div>
-                                                    <div data-v-5784ed69="" class="popper" style="display: none;">Copy Koordinat<div data-v-20b7fd4a="" data-v-5784ed69="" id="arrow" data-popper-arrow=""></div>
-                                                    </div>
-                                                </div>
-                                            </span>
-                                        </div>
-                                    </div>
-
-                                    <div class="grid grid-cols-2 mt-2">
-                                        <div class="">RT/RW</div>
-                                        <div class="inf-rtrw">005/001</div>
-                                    </div>
 
                                     <div class="grid grid-cols-2 mt-2">
                                         <div class="">Kelurahan</div>
-                                        <div class="inf-kelurahan">MAPHAR</div>
+                                        <div class="inf-kelurahan">Cimeuhmal</div>
                                     </div>
 
                                     <div class="grid grid-cols-2 mt-2">
                                         <div class="">Kecamatan</div>
-                                        <div class="inf-kecamatan">TAMAN SARI</div>
+                                        <div class="inf-kecamatan">Tanjungsiang</div>
                                     </div>
 
                                     <div class="grid grid-cols-2 mt-2">
-                                        <div class="">Wilayah</div>
-                                        <div class="inf-kota">JAKARTA BARAT</div>
+                                        <div class="">Kabupaten</div>
+                                        <div class="inf-kota">Subang</div>
                                     </div>
 
                                     <div class="grid grid-cols-2 mt-2">
                                         <div class="">Luas</div>
-                                        <div class="inf-luasarea">629909.976131 ha</div>
+                                        <div class="inf-luasarea">3.792.700 m<sup>2</sup></div>
                                     </div>
+
+                                    <h5 class="mt-5 font-bold text-md text-center">Usaha Pertanian</h5>
+
+                                    <div class="grid grid-cols-2 mt-2">
+                                        <div class="">Luas Lahan</div>
+                                        <div class="inf-luasarea">500.000 m<sup>2</sup></div>
+                                    </div>
+
 
 
 
@@ -336,7 +324,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                     <!-- Atas -->
                     <div class="w-full flex flex-col relative">
                         <!--  -->
-                        <div class="w-full flex flex-row mx-5 my-4">
+                        <div class="w-full flex flex-row justify-center mx-5 my-4">
                             <!--  -->
                             <div>
                                 <button class="inline-flex justify-center items-center px-4 h-8 text-sm font-medium rounded-full shadow-sm focus:outline-none focus:ring-0 bg-white text-black mr-3">
@@ -363,21 +351,21 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                     <!--  -->
                                     <div class="inline-flex items-center">
                                         <div class="w-3 h-3 bg-[#5C5C5C]"></div>
-                                        <div class="font-semibold tracking-wide ml-1">
+                                        <div class="tracking-wide ml-1">
                                             Beras
                                         </div>
                                     </div>
                                     <!--  -->
                                     <div class="inline-flex items-center">
                                         <div class="w-3 h-3 bg-[#38A800]"></div>
-                                        <div class="font-semibold tracking-wide ml-1">
+                                        <div class="tracking-wide ml-1">
                                             Cabe
                                         </div>
                                     </div>
                                     <!--  -->
                                     <div class="inline-flex items-center">
                                         <div class="w-3 h-3 bg-[#ffff00]"></div>
-                                        <div class="font-semibold tracking-wide ml-1">
+                                        <div class="tracking-wide ml-1">
                                             Bawang
                                         </div>
                                     </div>
@@ -2705,9 +2693,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                         <div class="form-check investasi_line" style="display: none;"><input id="investasi_line"
                                 name="investasi_line" class="form-check-input mt-1" type="checkbox"><label
                                 for="investasi_line" class="form-check-label text_all">Investasi3</label></div> --}}
-                    <div class="form-z mt-1">
-                        <label class="form-check-label font-weight-bold text_all" for="">Peta Tematik </label>
-                    </div>
+
                     <div class="form-check zoning_fill mt-1">
                         <input type="checkbox" class="form-check-input" id="rdtr" checked>
                         <label class="form-check-label  text_all" for="zoning_fill">Zonasi</label><br>

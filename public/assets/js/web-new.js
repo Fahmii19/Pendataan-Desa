@@ -208,7 +208,7 @@ mapboxgl.accessToken =
 const map = new mapboxgl.Map({
     container: "map",
     style: "mapbox://styles/menthoelsr/ckp6i54ay22u818lrq15ffcnr",
-    zoom: 14,
+    zoom: 15,
     center: [106.8271, -6.2307], // Koordinat Kuningan Barat, Jakarta
     preserveDrawingBuffer: true,
 });
@@ -2986,16 +2986,24 @@ map.on("mousemove", "urban_fill", (e) => {
     ) {
         content = `<div class="card">
 
-        <div class="card-body p-2">
-            <div style="line-height: 1.2;">
-                <span class="d-block font-weight-bold">Urban Index 2021</span>
-                <span class="d-block">${dt.ket2021}</span><br>
-                <span class="d-block font-weight-bold">Keterangan</span>
-                <span class="d-block">${dt.f2020_2021}</span><br>
-                <span class="d-block font-weight-bold">Urban Index 2010</span>
-                <span class="d-block">${dt.desc2021}</span><br>
-            </div>
-        </div>`;
+<div class="card-body w-[10vw] p-3">
+    <div style="line-height: 1.2;">
+        <span class="d-block font-weight-bold">Luas</span>
+        <span class="d-block">3000 m<sup>2</sup></span><br>
+        <span class="d-block font-weight-bold">PH</span>
+        <span class="d-block">6.3</span><br>
+        <span class="d-block font-weight-bold">Tanaman</span>
+        <span class="d-block">Beras</span><br>
+        <span class="d-block font-weight-bold">Mulai Tanggal</span>
+        <span class="d-block">3 Februari 2024</span><br>
+        <span class="d-block font-weight-bold">Perkiraan Panen</span>
+        <span class="d-block">10 Ton</span><br>
+        <span class="d-block font-weight-bold">Pemilik</span>
+        <span class="d-block">Kusdi</span>
+    </div>
+</div>
+
+        `;
     } else if (
         $("input[name='transect_zone']:checked").val() == "tp2032-color2032"
     ) {
