@@ -108,8 +108,9 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                 <div class="w-full bg-white flex flex-col z-10 h-screen overflow-y-auto scrollbar">
 
                     <!-- logo -->
-                    <div class="w-full h-[14vh] mt-4">
-                        <div class="flex justify-center items-center">
+                    <div class="w-full h-[14vh] mt-[4.5vh]">
+                        <div class="flex justify-center items-center -ml-[0.7vw]">
+
 
                             <img src="{{ asset('assets/wheat.png') }}" alt="" class="w-12 h-12 mr-3">
 
@@ -118,9 +119,9 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                     </div>
                     <!--  -->
-                    <div class="w-full mt-3 px-4">
+                    <div class="w-full px-4">
                         <!-- Peta Tematik Title -->
-                        <div class="font-semibold text-sm mt-2">Peta Tematik</div>
+                        {{-- <div class="font-semibold text-sm mt-2">Peta Tematik</div> --}}
 
                         <!-- Section Transect Zone -->
                         <div class="grid grid-cols-1 gap-y-1 text-sm mt-2">
@@ -128,7 +129,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             <div class="flex items-center form-check transect_zone mt-1">
                                 <div class="inline-flex items-center">
                                     <input type="checkbox" class="h-3.5 w-3.5 form-check-input hapus_focus_checkbox focus:border focus:ring-0 text-blue-600 border-gray-300 border rounded-sm" id="urban_fill" onchange="getDataSource('urban', localStorage.getItem('kelurahan'))">
-                                    <label class="form-check-label text_all ml-2 mt-1" for="transect_zone">Prediksi Sawah (Transect Zone 2032)</label>
+                                    <label class="form-check-label text_all ml-2 mt-1" for="transect_zone">Persil BMKG</label>
 
                                     <div class="form-check form-check-inline urban_fill mt-1 hidden">
                                         <input type="radio" name="transect_zone" value="tp2021-color2021" class="form-check-input urban_fill w-3 h-3" disabled checked>
@@ -185,7 +186,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             <!-- Button Pertama -->
                             <div>
                                 <div class="flex justify-start items-center">
-                                    <button class="h-10 w-10 flex justify-center items-center border bg-blue-500 border-blue-500 rounded-full" id="btn-1">
+                                    <button style="outline:none !important;" class="h-10 w-10 flex justify-center items-center border bg-blue-500 border-blue-500 rounded-full outline-none" id="btn-1">
                                         <svg class="text-white h-[18px]" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-dot" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                                             <path class="" fill="currentColor" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"></path>
                                         </svg>
@@ -196,7 +197,8 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             <!-- Button Kedua -->
                             <div>
                                 <div class="flex justify-start items-center">
-                                    <button class="inline-block h-10 w-10 flex justify-center items-center border border-blue-500 rounded-full" id="btn-2">
+                                    <button style="outline:none !important;" class="inline-block h-10 w-10 flex justify-center items-center border border-blue-500 rounded-full" id="btn-2">
+
                                         <svg class="text-[#007bff] h-[17px]" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                                             <path class="" fill="currentColor" d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"></path>
                                         </svg>
@@ -207,7 +209,8 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             <!-- Button Ketiga -->
                             <div>
                                 <div class="flex justify-start items-center">
-                                    <button class="inline-block h-10 w-10 flex justify-center items-center border border-blue-500 rounded-full" id="btn-3">
+                                    <button style="outline:none !important;" class="inline-block h-10 w-10 flex justify-center items-center border border-blue-500 rounded-full" id="btn-3">
+
                                         <svg class="text-[#007bff] h-[17px]" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="droplet" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                                             <path class="" fill="currentColor" d="M192 512C86 512 0 426 0 320C0 228.8 130.2 57.7 166.6 11.7C172.6 4.2 181.5 0 191.1 0h1.8c9.6 0 18.5 4.2 24.5 11.7C253.8 57.7 384 228.8 384 320c0 106-86 192-192 192zM96 336c0-8.8-7.2-16-16-16s-16 7.2-16 16c0 61.9 50.1 112 112 112c8.8 0 16-7.2 16-16s-7.2-16-16-16c-44.2 0-80-35.8-80-80z"></path>
                                         </svg>
@@ -218,7 +221,8 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             <!-- Button Keempat -->
                             <div>
                                 <div class="flex justify-start items-center">
-                                    <button class="inline-block h-10 w-10 flex justify-center items-center border border-blue-500 rounded-full" id="btn-4">
+                                    <button style="outline:none !important;" class="inline-block h-10 w-10 flex justify-center items-center border border-blue-500 rounded-full" id="btn-4">
+
                                         <svg class="text-[#007bff] h-[17px]" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="crosshairs" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <path class="" fill="currentColor" d="M256 0c17.7 0 32 14.3 32 32V42.4c93.7 13.9 167.7 88 181.6 181.6H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H469.6c-13.9 93.7-88 167.7-181.6 181.6V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V469.6C130.3 455.7 56.3 381.7 42.4 288H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H42.4C56.3 130.3 130.3 56.3 224 42.4V32c0-17.7 14.3-32 32-32zM107.4 288c12.5 58.3 58.4 104.1 116.6 116.6V384c0-17.7 14.3-32 32-32s32 14.3 32 32v20.6c58.3-12.5 104.1-58.4 116.6-116.6H384c-17.7 0-32-14.3-32-32s14.3-32 32-32h20.6C392.1 165.7 346.3 119.9 288 107.4V128c0 17.7-14.3 32-32 32s-32-14.3-32-32V107.4C165.7 119.9 119.9 165.7 107.4 224H128c17.7 0 32 14.3 32 32s-14.3 32-32 32H107.4zM256 224a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"></path>
                                         </svg>
@@ -233,7 +237,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             <div class="hidden text-sm" id="content-1">
                                 <div class="w-full h-full">
 
-                                    <h5 class="mt-3 font-bold text-md text-center">Lokasi</h5>
+                                    <h5 class="mt-3 mb-1 font-bold text-md text-center">Lokasi</h5>
 
 
                                     <div class="grid grid-cols-2 mt-2">
@@ -256,39 +260,16 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                         <div class="inf-luasarea">3.792.700 m<sup>2</sup></div>
                                     </div>
 
-                                    <h5 class="mt-5 font-bold text-md text-center">Usaha Pertanian</h5>
+                                    <h5 class="mt-3 font-bold text-md text-center">Usaha Pertanian</h5>
 
                                     <div class="grid grid-cols-2 mt-2">
                                         <div class="">Luas Lahan</div>
                                         <div class="inf-luasarea">500.000 m<sup>2</sup></div>
                                     </div>
 
-
-
-
-                                    {{-- --}}
-
-                                    <h5 class="mt-5 font-bold text-md text-center">Usaha Tani</h5>
-
-                                    <div class="mt-3 text-sm">
-                                        <div class="grid grid-cols-2">
-                                            <div class="">Jumlah Petani</div>
-                                            <div class="inf-eksisting">10 Orang</div>
-                                        </div>
-
-                                    </div>
-
-                                    <h5 class="mt-5 font-bold text-md text-center">Usaha Mikro Kecil</h5>
-
-                                    <div class="mt-3 text-sm mb-5">
-                                        <div class="grid grid-cols-2">
-                                            <div class="">Pemilik IUMK</div>
-                                            <div class="inf-iumk">915 <span>orang</span></div>
-                                        </div>
-                                        <div class="grid grid-cols-2 mt-2">
-                                            <div class="">Total Omset</div>
-                                            <div class="inf-omzet">Rp.4.868.570.000 per bulan</div>
-                                        </div>
+                                    <div class="grid grid-cols-2">
+                                        <div class="">Jumlah Petani</div>
+                                        <div class="inf-eksisting">10 Orang</div>
                                     </div>
 
 
@@ -301,17 +282,25 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             </div>
                             <!-- Konten Kedua -->
                             <div class="hidden text-sm" id="content-2">
-                                <div>Kedua</div>
+                                <h5 class="mt-3 mb-1 font-bold text-md text-center">Kedua</h5>
+
+
                             </div>
 
                             <!-- Konten Ketiga -->
                             <div class="hidden text-sm" id="content-3">
-                                <div>Ketiga</div>
+                                <h5 class="mt-3 mb-1 font-bold text-md text-center">Ketiga</h5>
+
+
+
                             </div>
 
                             <!-- Konten Keempat -->
                             <div class="hidden text-sm" id="content-4">
-                                <div>Keempat</div>
+                                <h5 class="mt-3 mb-1 font-bold text-md text-center">Keempat</h5>
+
+
+
                             </div>
                         </div>
 

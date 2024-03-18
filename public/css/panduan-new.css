@@ -883,6 +883,18 @@ video {
 .mt-40 {
   margin-top: 10rem;
 }
+.-ml-\[0\.5vw\] {
+  margin-left: -0.5vw;
+}
+.mt-\[2vh\] {
+  margin-top: 2vh;
+}
+.mt-\[4\.5vh\] {
+  margin-top: 4.5vh;
+}
+.-ml-\[0\.7vw\] {
+  margin-left: -0.7vw;
+}
 .block {
   display: block;
 }

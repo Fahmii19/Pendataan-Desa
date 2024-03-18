@@ -209,7 +209,7 @@ const map = new mapboxgl.Map({
     container: "map",
     style: "mapbox://styles/menthoelsr/ckp6i54ay22u818lrq15ffcnr",
     zoom: 15,
-    center: [106.8271, -6.2307], // Koordinat Kuningan Barat, Jakarta
+    center: [106.8245788, -6.2308403],
     preserveDrawingBuffer: true,
 });
 
@@ -2986,7 +2986,7 @@ map.on("mousemove", "urban_fill", (e) => {
     ) {
         content = `<div class="card">
 
-<div class="card-body w-[10vw] p-3">
+<div class="card-body w-[20vw] p-3">
     <div style="line-height: 1.2;">
         <span class="d-block font-weight-bold">Luas</span>
         <span class="d-block">3000 m<sup>2</sup></span><br>
