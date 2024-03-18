@@ -208,6 +208,8 @@ mapboxgl.accessToken =
 const map = new mapboxgl.Map({
     container: "map",
     style: "mapbox://styles/menthoelsr/ckp6i54ay22u818lrq15ffcnr",
+    zoom: 14,
+    center: [106.8271, -6.2307], // Koordinat Kuningan Barat, Jakarta
     preserveDrawingBuffer: true,
 });
 
@@ -752,8 +754,8 @@ window.onload = function () {
 
 map.on("load", () => {
     // Koordinat yang ditentukan
-    const lat = -6.181662939;
-    const lng = 106.837260227;
+    const lat = -6.227329703717999;
+    const lng = 106.83267899475032;
 
     // Langsung memanggil fungsi loadZoning dengan koordinat tersebut
     loadZoning(lat, lng);
