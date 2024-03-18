@@ -142,24 +142,32 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                         <!-- Section Transect Zone -->
                         <div class="grid grid-cols-1 gap-y-1 text-sm mt-2">
-                            <div>
-                                <input id="transect-zone" type="checkbox" value="" class="w-3 h-3 text-blue-600 border-gray-300 border rounded-sm focus:border focus:ring-0 hapus_focus_checkbox bg-white" />
-                                <label for="transect-zone" class="ml-2 cursor-pointer font-medium text-black">Transect Zone (Model Deep Learning)</label>
+
+                            <div class="form-check transect_zone mt-1">
+                                <input type="checkbox" class="form-check-input hapus_focus_checkbox focus:border focus:ring-0 text-blue-600 border-gray-300 border rounded-sm" id="urban_fill" onchange="getDataSource('urban', localStorage.getItem('kelurahan'))">
+
+
+
+                                <label class="form-check-label  text_all" for="transect_zone">Transect Zone (Model <i>Deep
+                                        Learning</i>) </label><br>
+
+                                <div class="form-check form-check-inline urban_fill mt-1">
+                                    <input type="radio" name="transect_zone" value="tp2010-color2010" class="form-check-input urban_fill w-3 h-3" disabled>
+                                    <label class="form-check-label  text_all"> Tahun 2010</label>
+                                </div>
+                                <div class="form-check form-check-inline urban_fill mt-1">
+                                    <input type="radio" name="transect_zone" value="tp2021-color2021" class="form-check-input urban_fill w-3 h-3" disabled checked>
+                                    <label class="form-check-label  text_all">Tahun 2021</label>
+                                </div>
+                                <div class="form-check form-check-inline urban_fill mt-1">
+                                    <input type="radio" name="transect_zone" value="tp2032-color2032" class="form-check-input urban_fill w-3 h-3" disabled>
+                                    <label class="form-check-label  text_all">Tahun
+                                        2032</label>
+                                </div>
                             </div>
-                            <div class="flex flex-row">
-                                <div class="w-full">
-                                    <input id="tahun-2010" type="radio" value="Tahun 2010" name="tahun-transect" class="w-3 h-3 text-blue-600 bg-gray-100 border-gray-300 focus:border-transparent focus:ring-0 hapus_focus_checkbox bg-white" />
-                                    <label for="tahun-2010" class="ms-2 text-black">Tahun 2010</label>
-                                </div>
-                                <div class="w-full">
-                                    <input id="tahun-2021" type="radio" value="Tahun 2021" name="tahun-transect" class="w-3 h-3 text-blue-600 bg-gray-100 border-gray-300 focus:border-transparent focus:ring-0 hapus_focus_checkbox bg-white" />
-                                    <label for="tahun-2021" class="ms-2 text-black">Tahun 2021</label>
-                                </div>
-                                <div class="w-full">
-                                    <input id="tahun-2032" type="radio" value="Tahun 2032" name="tahun-transect" class="w-3 h-3 text-blue-600 bg-gray-100 border-gray-300 focus:border-transparent focus:ring-0 hapus_focus_checkbox bg-white" />
-                                    <label for="tahun-2032" class="ms-2 text-black">Tahun 2032</label>
-                                </div>
-                            </div>
+
+
+
                         </div>
 
                         <!-- Section Analisis GIS -->
@@ -2746,25 +2754,6 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                 <i>Deep
                                     Learning</i>) </label>
                         </div> --}}
-                    <div class="form-check transect_zone mt-1">
-                        <input type="checkbox" class="form-check-input" id="urban_fill" onchange="getDataSource('urban', localStorage.getItem('kelurahan'))">
-                        <label class="form-check-label  text_all" for="transect_zone">Transect Zone (Model <i>Deep
-                                Learning</i>) </label><br>
-
-                        <div class="form-check form-check-inline urban_fill mt-1">
-                            <input type="radio" name="transect_zone" value="tp2010-color2010" class="form-check-input urban_fill" disabled>
-                            <label class="form-check-label  text_all"> Tahun 2010</label>
-                        </div>
-                        <div class="form-check form-check-inline urban_fill mt-1">
-                            <input type="radio" name="transect_zone" value="tp2021-color2021" class="form-check-input urban_fill" disabled checked>
-                            <label class="form-check-label  text_all">Tahun 2021</label>
-                        </div>
-                        <div class="form-check form-check-inline urban_fill mt-1">
-                            <input type="radio" name="transect_zone" value="tp2032-color2032" class="form-check-input urban_fill" disabled>
-                            <label class="form-check-label  text_all">Tahun
-                                2032</label>
-                        </div>
-                    </div>
 
                     <div class="form-check analisa_gis mt-1">
                         <input type="checkbox" class="form-check-input" id="analisa_gis_fill" onchange="getDataSource('analisa_gis', localStorage.getItem('kelurahan'))">
@@ -9680,31 +9669,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
     <!-- End Detail Omzet -->
 
     {{-- Legend Layer Urban --}}
-    <div class="legend-urban" style="display:none;">
-        <div class="ml-2">
-            <div>
-                <span class="legend-key" style="background: #38A800"></span><span style="font-size:12px;font-weight:bold;">TP-1 (Natural)</span>
-            </div>
-            <div>
-                <span class="legend-key" style="background: #ffff00"></span><span style="font-size:12px;font-weight:bold;">TP-2 (Kampung)</span>
-            </div>
-            <div>
-                <span class="legend-key" style="background: #FFEBAF "></span><span style="font-size:12px;font-weight:bold;">TP-3 (Sub-Urban)</span>
-            </div>
-            <div>
-                <span class="legend-key" style="background: #FFAA00 "></span><span style="font-size:12px;font-weight:bold;">TP-4 (Urban)</span>
-            </div>
-            <div>
-                <span class="legend-key" style="background: #FF7F7F "></span><span style="font-size:12px;font-weight:bold;">TP-5 (Urban Center)</span>
-            </div>
-            <div>
-                <span class="legend-key" style="background: #FF0000 "></span><span style="font-size:12px;font-weight:bold;">TP-6A (Urban Core - Highrise Building)</span>
-            </div>
-            <div>
-                <span class="legend-key" style="background: #8400A8 "></span><span style="font-size:12px;font-weight:bold;">TP-6B (Urban Core - Skyscraper)</span>
-            </div>
-        </div>
-    </div>
+
 
     <div class="legend-analisa-gis" style="display:none;">
         <div class="ml-2">
