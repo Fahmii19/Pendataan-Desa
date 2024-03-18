@@ -105,13 +105,17 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
             <div class="w-full h-full grid grid-cols-[425px,1fr]">
                 <!-- Pertama -->
-                <div class="w-full bg-white flex flex-col z-10">
+                <div class="w-full bg-white flex flex-col z-10 h-screen overflow-y-auto scrollbar">
+
                     <!-- logo -->
-                    <div class="w-full h-[14vh] flex justify-center items-center mt-4 border-red-500 inline-flex">
-                        <img src="{{ asset('assets/wheat.png') }}" alt="" class="w-12 h-12 mr-3">
+                    <div class="w-full h-[14vh] mt-4">
+                        <div class="flex justify-center items-center">
 
+                            <img src="{{ asset('assets/wheat.png') }}" alt="" class="w-12 h-12 mr-3">
 
-                        <div class="text-2xl font-semibold">Portal Investasi Desa</div>
+                            <div class="text-2xl font-semibold">Portal Investasi Desa</div>
+                        </div>
+
                     </div>
                     <!--  -->
                     <div class="w-full mt-3 px-4">
@@ -227,7 +231,85 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                         <div class="mt-2.5" id="default-tab-content">
                             <!-- Konten Pertama -->
                             <div class="hidden text-sm" id="content-1">
-                                <div>Pertama</div>
+                                <div class="w-full h-full">
+
+                                    <h5 class="mt-3 font-bold text-md text-center">Lokasi</h5>
+
+                                    <div class="grid grid-cols-2 mt-2">
+                                        <div class="">Koordinat</div>
+                                        <div class="inf-kordinat mt-2">
+                                            <span>
+                                                <a href="https://www.google.com/maps/search/-6.160287738049675,106.82328264794558" target="blank_" class="text-blue-600 font-bold leading-0">-6.160287738049675, 106.82328264794558</a>
+                                                <div data-v-5784ed69="" class="inline-block float-right" style="border: 12px solid transparent; margin: -12px; --c81fc0a4: 9999;">
+                                                    <div data-v-5784ed69=""><span data-v-5784ed69-s="" class="text-xl text-gray-500 bottom-[13px] cursor-pointer material-design-icon content-copy-icon" aria-hidden="true" role="img">
+                                                            <!-- Icon copy disini -->
+                                                        </span></div>
+                                                    <div data-v-5784ed69="" class="popper" style="display: none;">Copy Koordinat<div data-v-20b7fd4a="" data-v-5784ed69="" id="arrow" data-popper-arrow=""></div>
+                                                    </div>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="grid grid-cols-2 mt-2">
+                                        <div class="">RT/RW</div>
+                                        <div class="inf-rtrw">005/001</div>
+                                    </div>
+
+                                    <div class="grid grid-cols-2 mt-2">
+                                        <div class="">Kelurahan</div>
+                                        <div class="inf-kelurahan">MAPHAR</div>
+                                    </div>
+
+                                    <div class="grid grid-cols-2 mt-2">
+                                        <div class="">Kecamatan</div>
+                                        <div class="inf-kecamatan">TAMAN SARI</div>
+                                    </div>
+
+                                    <div class="grid grid-cols-2 mt-2">
+                                        <div class="">Wilayah</div>
+                                        <div class="inf-kota">JAKARTA BARAT</div>
+                                    </div>
+
+                                    <div class="grid grid-cols-2 mt-2">
+                                        <div class="">Luas</div>
+                                        <div class="inf-luasarea">629909.976131 ha</div>
+                                    </div>
+
+
+
+                                    {{-- --}}
+
+                                    <h5 class="mt-5 font-bold text-md text-center">Usaha Tani</h5>
+
+                                    <div class="mt-3 text-sm">
+                                        <div class="grid grid-cols-2">
+                                            <div class="">Jumlah Petani</div>
+                                            <div class="inf-eksisting">10 Orang</div>
+                                        </div>
+
+                                    </div>
+
+                                    <h5 class="mt-5 font-bold text-md text-center">Usaha Mikro Kecil</h5>
+
+                                    <div class="mt-3 text-sm mb-5">
+                                        <div class="grid grid-cols-2">
+                                            <div class="">Pemilik IUMK</div>
+                                            <div class="inf-iumk">915 <span>orang</span></div>
+                                        </div>
+                                        <div class="grid grid-cols-2 mt-2">
+                                            <div class="">Total Omset</div>
+                                            <div class="inf-omzet">Rp.4.868.570.000 per bulan</div>
+                                        </div>
+                                    </div>
+
+
+
+                                    {{-- --}}
+
+
+
+                                </div>
                             </div>
                             <!-- Konten Kedua -->
                             <div class="hidden text-sm" id="content-2">
@@ -277,7 +359,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                         <div class="w-full flex flex-col self-end">
                             <!-- Legend -->
                             <div class="w-full mb-3 ml-[1.2vw] relative">
-                                <div class="w-[21vw] h-[8vh] text-xs flex flex-col justify-center items-start px-2 rounded-sm bg-white">
+                                <div class="w-[16vw] h-[16vh] text-sm flex flex-col justify-start py-2 items-start px-2 rounded-sm bg-white">
                                     <!--  -->
                                     <div class="inline-flex items-center">
                                         <div class="w-3 h-3 bg-[#5C5C5C]"></div>
@@ -2883,113 +2965,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                 <hr class="for_web">
 
 
-                <!-- Mengatur Menu Web -->
-                <div class="container container_menu  for_web">
 
-                    <div class="flex_container">
-                        <label class="font-weight-bold text_all">Persil</label>
-                        <ul class="nav nav-pills w-100" id="pills-tab-1" role="tablist">
-
-                            <li class="nav-item">
-                                <a class="active btn btn-outline-primary btn-md tombol_menu padding_icon_navpill" id="lokasi-tab" data-toggle="pill" href="#pills-lokasi" title="Profil" role="tab" aria-controls="pills-lokasi" id="profil-tab" aria-selected="true"><i class="fa fa-map-marker"></i></a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="btn btn-outline-primary btn-md tombol_menu padding_icon_navpill" id="ketentuan-tab" data-toggle="pill" href="#pills-ketentuan" title="Ketentuan" role="tab" aria-controls="pills-ketentuan" aria-selected="true"><i class="fa fa-book"></i></a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class=" btn btn-outline-primary btn-md tombol_menu padding_icon_navpill" id="kblikeg-tab" data-toggle="pill" id="kbli-tab" href="#pills-kblikeg" title="KBLI" role="tab" aria-controls="pills-kblikeg" aria-selected="false"><i class="ri-user-search-fill"></i></a>
-                            </li>
-
-                            <li class="nav-item dropdown d-none">
-                                <a class="btn btn-outline-primary btn-md tombol_menu padding_icon_navpill" data-toggle="pill" href="#pills-cetak" id="cetak-tab" title="Cetak" role="tab" aria-controls="pills-cetak" aria-selected="false"><i class="ri-printer-fill"></i></a>
-                            </li>
-
-                        </ul>
-                        <label class="font-weight-bold text_all">Kawasan</label>
-                        <ul class="nav nav-pills w-100" id="pills-tab-2" role="tablist">
-
-                            <li class="nav-item">
-                                <a class="btn btn-outline-primary btn-md tombol_menu padding_icon_navpill" data-toggle="pill" href="#pills-index" role="tab" title="Indikator" id="index-tab" aria-selected="false"><i class="ri-contrast-drop-2-line"></i></a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="btn btn-outline-primary btn-md tombol_menu padding_icon_navpill" id="poi-tab" data-toggle="pill" href="#pills-poi" role="tab" title="Sarpras" aria-controls="pills-poi" aria-selected="false"><i class="fa fa-crosshairs"></i></a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="btn btn-outline-primary btn-md tombol_menu padding_icon_navpill" data-toggle="pill" href="#pills-simulasi" role="tab" title="Lingkungan" aria-controls="pills-poi" id="simulasi-tab" aria-selected="false"><i class="ri-calculator-line"></i></a>
-                            </li>
-                            <li class="nav-item d-none">
-                                <a class="btn btn-outline-primary btn-md tombol_menu padding_icon_navpill" id="btnSHP" data-toggle="pill" href="#" role="tab" aria-controls="pills-cetak" aria-selected="false"><i class="ri-file-code-line"></i>
-                                    {{-- <span class="badge badge-danger"
-                                            style="top: -2.6rem;left: 1rem">Beta</span>
-                                        --}}
-                                </a>
-                                <br>
-                                <label class="size_menu size_menu_mobile">SHP</label>
-                            </li>
-                            {{-- <li class="nav-item">
-                                    <a class="btn btn-outline-primary btn-md tombol_menu padding_icon_navpill"
-                                        data-toggle="pill" href="#pills-andalalin" role="tab" id="andalalin-tab"
-                                        aria-selected="false"><i class="ri-e-bike-2-line"></i></a>
-
-                                    <br>
-                                    <label class="size_menu size_menu_mobile">Simlalin</label>
-                                </li> --}}
-                            {{-- <li class="nav-item">
-                                    <a class="btn btn-outline-primary btn-md tombol_menu padding_icon_navpill"
-                                        data-toggle="pill" href="#pills-digitasi" role="tab" id="polygonDraw"
-                                        aria-selected="false"><i class="ri-shape-line"></i></a>
-
-                                    <br>
-                                    <label class="size_menu size_menu_mobile">Digitasi</label>
-                                </li> --}}
-
-                            <li class="nav-item">
-                                <a class="btn btn-outline-primary btn-md tombol_menu padding_icon_navpill" data-toggle="pill" href="#pills-potensi" role="tab" title="Potensi" onclick="$('#list-potensi-bangunan').trigger('change')" id="potensi-tab" aria-selected="false"><i class="ri-money-dollar-circle-line"></i>
-                                    {{-- <span class="badge badge-danger"
-                                            style="top: -2.6rem;left: 1rem">Beta</span>
-                                        --}}
-                                </a>
-                            </li>
-
-                            <li class="nav-d">
-                                <a class="btn btn-outline-primary btn-md tombol_menu padding_icon_navpill" data-toggle="pill" href="#pills-filter" role="tab" title="Filter" id="filter-tab" aria-selected="false"><i class="ri-filter-line"></i>
-                                    {{-- <span class="badge badge-danger"
-                                            style="top: -2.6rem;left: 1rem">Beta</span> --}}
-
-                                </a>
-                            </li>
-
-                            {{-- <li class="nav-item">
-                                    <a class="btn btn-outline-primary btn-md tombol_menu padding_icon_navpill"
-                                        data-toggle="pill" href="#pills-resiko" role="tab" id="resiko-tab"
-                                        aria-selected="false"><i class="ri-error-warning-line"></i>
-                                        <span class="badge badge-danger" style="top: -2.6rem;left: 1rem">Beta</span>
-
-                                    </a>
-
-                                    <br>
-                                    <label class="size_menu size_menu_mobile">Resiko</label>
-                                </li> --}}
-                            {{-- <li class="nav-item">
-                                    <a class="btn btn-outline-primary btn-md tombol_menu padding_icon_navpill"
-                                        data-toggle="pill" href="#pills-simio" role="tab" id="simio-tab"
-                                        aria-selected="false"><i class="ri-money-dollar-circle-line"></i>
-                                        <span class="badge badge-danger" style="top: -2.6rem;left: 1rem">Beta</span>
-                                    </a>
-
-                                    <br>
-                                    <label class="size_menu size_menu_mobile">IO</label>
-                                </li> --}}
-                            <!-- Pending menu pin-->
-
-                        </ul>
-
-                    </div>
-                </div>
                 <!-- End Mengatur Menu Web -->
 
 

@@ -8117,12 +8117,12 @@ const add_marker = (event) => {
     }
 };
 
-map.on("", add_marker);
+// map.on("click", add_marker);
 
 //Load Zoning Layer on Click
 
-map.on("", (e) => {
-    let coordinates = e.lngLat;
+map.on("click", (e) => {
+    // let coordinates = e.lngLat;
     loadZoning(coordinates.lat, coordinates.lng);
 
     //Add Info Coordinate
