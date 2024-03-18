@@ -733,7 +733,31 @@ map.on("style.load", () => {
     getLayerIzinLingkungan();
 });
 
+window.onload = function () {
+    // Menemukan checkbox menggunakan ID-nya
+    var checkbox = document.getElementById("urban_fill");
+
+    // Memeriksa checkbox
+    checkbox.checked = true;
+
+    // Memanggil fungsi getDataSource secara manual jika diperlukan
+    // Asumsi: 'kelurahan' sudah tersimpan di localStorage
+    getDataSource("urban", localStorage.getItem("kelurahan"));
+
+    // Opsional: Memicu event 'change' jika ada logika tambahan yang tergantung pada ini
+    // Ini bisa berguna jika ada event handler yang terpasang pada checkbox ini
+    var event = new Event("change");
+    checkbox.dispatchEvent(event);
+};
+
 map.on("load", () => {
+    // Koordinat yang ditentukan
+    const lat = -6.181662939;
+    const lng = 106.837260227;
+
+    // Langsung memanggil fungsi loadZoning dengan koordinat tersebut
+    loadZoning(lat, lng);
+
     //Add Source Layer Zoning from Tegola
     SourceZoning();
     if (user_id != 4309) {
@@ -1742,7 +1766,7 @@ const onOffLayer = (layer) => {
                 $(".detail_jumlah").show();
                 $("#btnInteractive").addClass("text-primary");
                 map.easeTo({
-                    zoom: 11,
+                    zoom: 15,
                     center: {
                         lng: 106.80331075792759,
                         lat: -6.231019525132169,
@@ -8093,11 +8117,11 @@ const add_marker = (event) => {
     }
 };
 
-map.on("click", add_marker);
+map.on("", add_marker);
 
 //Load Zoning Layer on Click
 
-map.on("click", (e) => {
+map.on("", (e) => {
     let coordinates = e.lngLat;
     loadZoning(coordinates.lat, coordinates.lng);
 
@@ -8159,6 +8183,7 @@ map.on("click", (e) => {
 });
 
 const loadZoning = (lat, lng) => {
+    // console.log(lat, lng);
     $.ajax({
         url: `${url_api}/wilayah`,
         method: "PUT",

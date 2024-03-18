@@ -8,9 +8,10 @@
     @if (isMobileDevice())
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @endif
-    <title>Portal Investasi Berbasis Spasial</title>
+    <title>Portal Investasi Desa</title>
 
-    <link rel="icon" href="assets/gambar/favicon.png">
+
+    {{-- <link rel="icon" href="assets/gambar/favicon.png"> --}}
 
     {{-- Pendataan Desa --}}
 
@@ -106,97 +107,76 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                 <!-- Pertama -->
                 <div class="w-full bg-white flex flex-col z-10">
                     <!-- logo -->
-                    <div class="w-full h-[14vh] flex justify-center items-center mt-4">
-                        <div class="text-xl font-semibold">Portal Investasi Desa</div>
+                    <div class="w-full h-[14vh] flex justify-center items-center mt-4 border-red-500 inline-flex">
+                        <img src="{{ asset('assets/wheat.png') }}" alt="" class="w-12 h-12 mr-3">
+
+
+                        <div class="text-2xl font-semibold">Portal Investasi Desa</div>
                     </div>
                     <!--  -->
-                    <div class="w-full mt-3 px-5">
+                    <div class="w-full mt-3 px-4">
                         <!-- Peta Tematik Title -->
                         <div class="font-semibold text-sm mt-2">Peta Tematik</div>
-
-                        <!-- Section Zonasi -->
-                        <div class="grid grid-cols-1 gap-y-1 text-sm mt-2">
-                            <div>
-                                <input id="zonasi" type="checkbox" value="" class="w-3 h-3 text-blue-600 border-gray-300 border rounded-sm focus:border focus:ring-0 hapus_focus_checkbox bg-white" />
-                                <label for="zonasi" class="ml-2 cursor-pointer font-medium text-black">Zonasi</label>
-                            </div>
-                            <div class="flex flex-row">
-                                <div class="w-full">
-                                    <input id="perda-1" type="radio" value="Perda 1/2014" name="jenis-perda" class="w-3 h-3 text-blue-600 bg-gray-100 border-gray-300 focus:border-transparent focus:ring-0 hapus_focus_checkbox bg-white" />
-                                    <label for="perda-1" class="ms-2 text-black">Perda 1/2014</label>
-                                </div>
-                                <div class="w-full">
-                                    <input id="pergub-31" type="radio" value="Pergub 31/2022" name="jenis-perda" class="w-3 h-3 text-blue-600 bg-gray-100 border-gray-300 focus:border-transparent focus:ring-0 hapus_focus_checkbox bg-white" />
-                                    <label for="pergub-31" class="ms-2 text-black">Pergub 31/2022</label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Section Batas Rw -->
-                        <div class="grid grid-cols-1 gap-y-1 text-sm mt-2">
-                            <div>
-                                <input id="batas-rw" type="checkbox" value="" class="w-3 h-3 text-blue-600 border-gray-300 border rounded-sm focus:border focus:ring-0 hapus_focus_checkbox bg-white" />
-                                <label for="batas-rw" class="ml-2 cursor-pointer font-medium text-black">Batas Rw</label>
-                            </div>
-                        </div>
 
                         <!-- Section Transect Zone -->
                         <div class="grid grid-cols-1 gap-y-1 text-sm mt-2">
 
-                            <div class="form-check transect_zone mt-1">
-                                <input type="checkbox" class="form-check-input hapus_focus_checkbox focus:border focus:ring-0 text-blue-600 border-gray-300 border rounded-sm" id="urban_fill" onchange="getDataSource('urban', localStorage.getItem('kelurahan'))">
+                            <div class="flex items-center form-check transect_zone mt-1">
+                                <div class="inline-flex items-center">
+                                    <input type="checkbox" class="h-3.5 w-3.5 form-check-input hapus_focus_checkbox focus:border focus:ring-0 text-blue-600 border-gray-300 border rounded-sm" id="urban_fill" onchange="getDataSource('urban', localStorage.getItem('kelurahan'))">
+                                    <label class="form-check-label text_all ml-2 mt-1" for="transect_zone">Prediksi Sawah (Transect Zone 2032)</label>
+
+                                    <div class="form-check form-check-inline urban_fill mt-1 hidden">
+                                        <input type="radio" name="transect_zone" value="tp2021-color2021" class="form-check-input urban_fill w-3 h-3" disabled checked>
+                                        <label class="form-check-label  text_all">Tahun 2021</label>
+                                    </div>
 
 
-
-                                <label class="form-check-label  text_all" for="transect_zone">Transect Zone (Model <i>Deep
-                                        Learning</i>) </label><br>
-
-                                <div class="form-check form-check-inline urban_fill mt-1">
-                                    <input type="radio" name="transect_zone" value="tp2010-color2010" class="form-check-input urban_fill w-3 h-3" disabled>
-                                    <label class="form-check-label  text_all"> Tahun 2010</label>
-                                </div>
-                                <div class="form-check form-check-inline urban_fill mt-1">
-                                    <input type="radio" name="transect_zone" value="tp2021-color2021" class="form-check-input urban_fill w-3 h-3" disabled checked>
-                                    <label class="form-check-label  text_all">Tahun 2021</label>
-                                </div>
-                                <div class="form-check form-check-inline urban_fill mt-1">
-                                    <input type="radio" name="transect_zone" value="tp2032-color2032" class="form-check-input urban_fill w-3 h-3" disabled>
-                                    <label class="form-check-label  text_all">Tahun
-                                        2032</label>
                                 </div>
                             </div>
 
 
 
+
+
                         </div>
 
-                        <!-- Section Analisis GIS -->
+
+                        <!-- Section Zonasi -->
                         <div class="grid grid-cols-1 gap-y-1 text-sm mt-2">
-                            <div>
-                                <input id="analisis-gis" type="checkbox" value="" class="w-3 h-3 text-blue-600 border-gray-300 border rounded-sm focus:border focus:ring-0 hapus_focus_checkbox bg-white" />
-                                <label for="analisis-gis" class="ml-2 cursor-pointer font-medium text-black">Analisis GIS</label>
+                            <div class="flex items-center form-check transect_zone mt-1">
+                                <div class="inline-flex items-center">
+                                    <input type="checkbox" class="h-3.5 w-3.5 form-check-input hapus_focus_checkbox focus:border focus:ring-0 text-blue-600 border-gray-300 border rounded-sm" id="urban_fill" onchange="getDataSource('urban', localStorage.getItem('kelurahan'))">
+                                    <label class="form-check-label text_all ml-2 mt-1" for="transect_zone">Prediksi BMKG</label>
+
+                                </div>
                             </div>
-                            <div class="flex flex-col ml-[1.1rem]">
+
+                            <div class="flex flex-row ml-[1.8vw]">
                                 <div class="w-full">
-                                    <input id="perda-2014" type="radio" value="Perda 1/2014" name="tahun-analisis" class="w-3 h-3 text-blue-600 bg-gray-100 border-gray-300 focus:border-transparent focus:ring-0 hapus_focus_checkbox bg-white" />
-                                    <label for="perda-2014" class="ms-2 text-black">Perda 1/2014</label>
+                                    <input id="perda-1" type="radio" value="Perda 1/2014" name="jenis-perda" class="w-3 h-3 text-blue-600 bg-gray-100 border-gray-300 focus:border-transparent focus:ring-0 hapus_focus_checkbox bg-white" />
+                                    <label for="perda-1" class="ms-2 text-black">30 Hari</label>
                                 </div>
                                 <div class="w-full">
-                                    <input id="pergub-2022-terkendali" type="radio" value="Pergub 31/2022 Terkendali" name="tahun-analisis" class="w-3 h-3 text-blue-600 bg-gray-100 border-gray-300 focus:border-transparent focus:ring-0 hapus_focus_checkbox bg-white" />
-                                    <label for="pergub-2022-terkendali" class="ms-2 text-black">Pergub 31/2022 Terkendali</label>
+                                    <input id="pergub-31" type="radio" value="Pergub 31/2022" name="jenis-perda" class="w-3 h-3 text-blue-600 bg-gray-100 border-gray-300 focus:border-transparent focus:ring-0 hapus_focus_checkbox bg-white" />
+                                    <label for="pergub-31" class="ms-2 text-black">90 Hari</label>
                                 </div>
+                                {{-- --}}
                                 <div class="w-full">
-                                    <input id="pergub-2022-maksimum" type="radio" value="Pergub 31/2022 Maksimum" name="tahun-analisis" class="w-3 h-3 text-blue-600 bg-gray-100 border-gray-300 focus:border-transparent focus:ring-0 hapus_focus_checkbox bg-white" />
-                                    <label for="pergub-2022-maksimum" class="ms-2 text-black">Pergub 31/2022 Maksimum</label>
+                                    <input id="pergub-31" type="radio" value="Pergub 31/2022" name="jenis-perda" class="w-3 h-3 text-blue-600 bg-gray-100 border-gray-300 focus:border-transparent focus:ring-0 hapus_focus_checkbox bg-white" />
+                                    <label for="pergub-31" class="ms-2 text-black">180 Hari</label>
                                 </div>
+
+                                {{-- --}}
                             </div>
                         </div>
+
 
                         <!--  -->
                     </div>
 
                     <!-- Button Grup Menu -->
-                    <div class="w-full px-5 mt-7 h-full flex flex-col">
+                    <div class="w-full px-4 mt-7 h-full flex flex-col">
                         <div class="grid grid-cols-4">
                             <!-- Button Pertama -->
                             <div>
@@ -297,56 +277,29 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                         <div class="w-full flex flex-col self-end">
                             <!-- Legend -->
                             <div class="w-full mb-3 ml-[1.2vw] relative">
-                                <div class="w-[21vw] h-[17vh] text-xs flex flex-col justify-center items-start px-2 rounded-sm bg-white">
+                                <div class="w-[21vw] h-[8vh] text-xs flex flex-col justify-center items-start px-2 rounded-sm bg-white">
                                     <!--  -->
                                     <div class="inline-flex items-center">
                                         <div class="w-3 h-3 bg-[#5C5C5C]"></div>
                                         <div class="font-semibold tracking-wide ml-1">
-                                            SD (Special District)
+                                            Beras
                                         </div>
                                     </div>
                                     <!--  -->
                                     <div class="inline-flex items-center">
                                         <div class="w-3 h-3 bg-[#38A800]"></div>
                                         <div class="font-semibold tracking-wide ml-1">
-                                            T1 (Natural)
+                                            Cabe
                                         </div>
                                     </div>
                                     <!--  -->
                                     <div class="inline-flex items-center">
                                         <div class="w-3 h-3 bg-[#ffff00]"></div>
                                         <div class="font-semibold tracking-wide ml-1">
-                                            T2 (Rural)
+                                            Bawang
                                         </div>
                                     </div>
-                                    <!--  -->
-                                    <div class="inline-flex items-center">
-                                        <div class="w-3 h-3 bg-[#FFEBAF]"></div>
-                                        <div class="font-semibold tracking-wide ml-1">
-                                            T3 (Sub-Urban)
-                                        </div>
-                                    </div>
-                                    <!--  -->
-                                    <div class="inline-flex items-center">
-                                        <div class="w-3 h-3 bg-[#FFAA00]"></div>
-                                        <div class="font-semibold tracking-wide ml-1">
-                                            T4 (Urban) - termasuk Kampung Kota
-                                        </div>
-                                    </div>
-                                    <!--  -->
-                                    <div class="inline-flex items-center">
-                                        <div class="w-3 h-3 bg-[#FF7F7F]"></div>
-                                        <div class="font-semibold tracking-wide ml-1">
-                                            T5 (Urban Center)
-                                        </div>
-                                    </div>
-                                    <!--  -->
-                                    <div class="inline-flex items-center">
-                                        <div class="w-3 h-3 bg-[#FF0000]"></div>
-                                        <div class="font-semibold tracking-wide ml-1">
-                                            T6 (Urban Core) - termasuk T6a dan T6b
-                                        </div>
-                                    </div>
+
                                     <!--  -->
                                 </div>
                             </div>
@@ -402,7 +355,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
     </form>
 
 
-    <div class="g-signin2" data-onsuccess="onSignIn" style="position:absolute"></div>
+    {{-- <div class="g-signin2" data-onsuccess="onSignIn" style="position:absolute"></div> --}}
     <!-- hide -->
     {{-- <button class="btn btn_hide_side_bar for_web" type="button" id="hide_side_bar">
         <i class="btn_icon_hide ri-arrow-left-s-fill fa-2x"></i>
@@ -9340,136 +9293,6 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
     </div>
     <!-- Peta -->
 
-
-
-
-    <div class="d-flex flex-col justify-content-end hidden">
-
-        <div class="d-flex justify-content-end pt-3 pr-3" style="z-index: 9">
-
-            {{-- NONAKTIF --}}
-
-            {{-- <button class="btn btn-sm" style="outline: none; box-shadow: none;">
-                <div class="container">
-                    <div class="row" id="dropdownMenuButton1" data-toggle="dropdown">
-                        <span class="material-icons text-white">
-                            apps
-                        </span>
-                    </div>
-                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton" style="width: 300px">
-                        <div class="row" style="padding: 4% 5% 1% 5%;">
-
-                            <div style="position:relative;" class="col-sm-4 text-center d-flex align-items-center mt-2">
-                                <a href="/v1/dashboard" target="_blank" style="text-decoration:none" class="text-dark font-weight-normal"><img style="width: 100%;max-width: 64%;margin-bottom: 0.2rem" src="{{ asset('assets/gambar/dashboard.png') }}">
-            <span style="font-size: 9pt;position: relative;top: -6px;">Dashboard</span></a>
-        </div>
-
-        <div style="position:relative; left:-9px;" class="col-sm-4 text-center d-flex align-items-center mt-2">
-            <a href="https://formulir.dpmptsp-dki.com/permohonan-baru" target="_blank" style="text-decoration:none" class="text-dark font-weight-normal"><img style="width: 100%;max-width: 53%;margin-bottom: 0.2rem" src="{{ asset('assets/gambar/prapermohonan.png') }}">
-                <span style="font-size: 9pt;margin-top: -5px !important;position: relative;top: -6px;">PraPermohonan</span></a>
-        </div>
-
-        <div class="col-sm-4 text-center d-flex align-items-center mt-2">
-            <a href="https://jakartasatu.jakarta.go.id/irk/login" target="_blank" style="text-decoration:none" class="text-dark font-weight-normal"><img style="width: 100%;max-width: 67%;margin-bottom: 0.2rem" src="{{ asset('assets/gambar/irk.png') }}">
-                <span style="font-size: 9pt;margin-top: -5px !important;position: relative;top: -6px;">&nbsp;IRK</span></a>
-        </div>
-
-        <div class="col-sm-4 text-center d-flex align-items-center mt-2">
-            <a href="https://jakevo.jakarta.go.id/" target="_blank" style="text-decoration:none" class="text-dark font-weight-normal"><img style="width: 100%;max-width: 68%;margin-bottom: 0.2rem" src="{{ asset('assets/gambar/jakevo.png') }}">
-                <span style="font-size: 9pt;margin-top: -5px !important;position: relative;top: -6px;">Jakevo</span></a>
-        </div>
-
-        <div class="col-sm-4 text-center d-flex align-items-center mt-2">
-            <a href="https://oss.go.id" target="_blank" style="text-decoration:none" class="text-dark font-weight-normal"><img style="width: 100%;max-width: 68%;margin-bottom: 0.2rem" src="{{ asset('assets/gambar/OSS.png') }}">
-                <span style="font-size: 9pt;margin-top: -5px !important;position: relative;top: -5px;">OSS</span></a>
-        </div>
-
-        <div class="col-sm-4 text-center d-flex align-items-center mt-2">
-            <a href="https://dpmptsp-jkt.com" target="_blank" style="text-decoration:none" class="text-dark font-weight-normal"><img style="width: 100%;max-width: 70%;margin-bottom: 0.2rem" src="{{ asset('assets/gambar/pesanajib.png') }}">
-                <span style="font-size: 9pt;margin-top: -5px !important;position: relative;top: -6px;">Pesan
-                    AJIB</span></a>
-        </div>
-
-        <div class="col-sm-4 text-center d-flex align-items-center mt-2">
-            <a href="https://simbg.pu.go.id/" target="_blank" style="text-decoration:none" class="text-dark font-weight-normal"><img style="width: 100%;max-width: 67%;margin-bottom: 1.8%" src="{{ asset('assets/gambar/simbg.png') }}">
-                <span style="font-size: 9pt;margin-top: -5px !important;position: relative;top: -4px;">SIMBG</span></a>
-        </div>
-
-        <div class="col-sm-4 text-center d-flex align-items-center mt-2">
-            <a href="https://jakartasatu.jakarta.go.id/" target="_blank" style="text-decoration:none" class="text-dark font-weight-normal"><img style="width: 100%;max-width: 71%;margin-bottom: 0.2rem; margin-right: 0.1rem;" src="{{ asset('assets/gambar/jakarta1_logo.png') }}">
-                <span style="font-size: 9pt;margin-top: -5px !important;position: relative;top: -6px;">JakartaSatu</span></a>
-        </div>
-
-
-        <div class="col-sm-4 text-center d-flex align-items-center mt-2">
-            <a href="https://isi.or.id/" target="_blank" style="text-decoration:none" class="text-dark font-weight-normal"><img style="width: 100%;max-width: 71%;margin-bottom: 0.2rem" src="{{ asset('assets/gambar/ISI.png') }}">
-                <span style="font-size: 9pt;margin-top: -5px !important;position: relative;top: -6px; left:-2px;">&nbsp;&nbsp;ISI
-                    Survei</span></a>
-        </div>
-
-        <div class="col-sm-4 text-center d-flex align-items-center mt-2">
-            <a href="https://bankdki.co.id/en/product-services/micro-sme/2016-11-24-20-19-48/kredit-umkm" target="_blank" style="text-decoration:none" class="text-dark font-weight-normal"><img style="width: 100%;max-width: 67%;margin-bottom: 0.2rem" src="{{ asset('assets/gambar/dki.png') }}">
-                <span style="font-size: 9pt;margin-top: -5px !important;position: relative;top: -5px;">Bank
-                    DKI</span></a>
-        </div>
-
-        <div class="col-sm-4 text-center d-flex align-items-center mt-2">
-            <a href="/v1/dokumen-dasar-dan-panduan" target="_blank" style="text-decoration:none" class="text-dark font-weight-normal"><img style="width: 100%;max-width: 69%;margin-bottom: 0.2rem" src="{{ asset('assets/gambar/referensi.png') }}">
-                <span style="font-size: 9pt;margin-top: -5px !important;position: relative;top: -5px;">Referensi</span></a>
-        </div>
-
-        <div class="col-sm-4 text-center d-flex align-items-center mt-2">
-            <a href="https://sppirt.pom.go.id/" target="_blank" style="text-decoration:none" class="text-dark font-weight-normal"><img style="width: 100%;max-width: 70%;margin-bottom: 0.2rem" src="{{ asset('assets/gambar/BPOM.png') }}">
-                <span style="font-size: 9pt;margin-top: -6px !important;position: relative;top: -6px;">BPOM</span></a>
-        </div>
-
-        <div class="col-sm-4 text-center d-flex align-items-center mt-2">
-            <a href="https://ptsp.halal.go.id/" target="_blank" style="text-decoration:none" class="text-dark font-weight-normal"><img style="width: 100%;max-width: 89%;margin-bottom: 0.2rem;margin-left:0.1rem;" src="{{ asset('assets/gambar/halal.png') }}">
-                <span style="font-size: 9pt;margin-top: -8px !important;position: relative;top: -12px; left:2px;">SIHALAL</span></a>
-        </div>
-
-        <div class="col-sm-4 text-center d-flex align-items-center mt-2">
-            <a href="{{ asset('pdf-documents/Buku Panduan Pelayanan Gerai Memulai Usaha preview.pdf') }}" target="_blank" style="text-decoration:none" class="text-dark font-weight-normal"><img style="width: 100%;max-width: 70%;margin-bottom: 0.2rem;margin-left:0.1rem; border-radius:10px;" src="{{ asset('assets/gambar/gerai_toko.jpg') }}">
-                <span style="font-size: 9pt; !important;position: relative;top: -6px;">Gerai
-                    PTSP</span></a>
-        </div>
-
-        <div class="col-sm-4 text-center d-flex align-items-center mt-2">
-            <a href="https://jakarta.pintoinvest.com/v1/panduan" target="_blank" style="text-decoration:none" class="text-dark font-weight-normal"><img style="width: 100%;max-width: 70%;margin-bottom: 0.2rem;margin-left:0.1rem; border-radius:10px;" src="{{ asset('assets/gambar/guide.png') }}">
-                <span style="font-size: 9pt; !important;position: relative;top: -7px;">Panduan</span></a>
-        </div>
-
-        <div class="col-sm-4 text-center d-flex align-items-center mt-2">
-            <a href="/v1/s&k-pintoinvest" target="_blank" style="text-decoration:none" class="text-dark font-weight-normal"><img style="width: 100%;max-width: 71%;margin-bottom: 0.2rem;margin-left:0.5rem; border-radius:10px;" src="{{ asset('assets/gambar/sk.png') }}">
-                <span style="font-size: 9pt; !important;position: relative;top: -6px; left:5px">S &
-                    K</span></a>
-        </div>
-
-        <div class="col-sm-4 text-center d-flex align-items-center mt-2">
-            <a href="/v1/kebijakan-pintoinvest" target="_blank" style="text-decoration:none" class="text-dark font-weight-normal"><img style="width: 100%;max-width: 75%; margin-bottom: 0.2rem;margin-left:0.1rem; border-radius:10px;" src="{{ asset('assets/gambar/privasi.png') }}">
-                <span style="font-size: 9pt; !important;position: relative;top: -7px; left:2px">Privasi</span></a>
-        </div>
-
-        <div class="col-sm-4 text-center d-flex align-items-center mt-2">
-            <a href="https://jakarta.pintoinvest.com/aksesibilitas/login" target="_blank" style="text-decoration:none" class="text-dark font-weight-normal"><img style="width: 100%;max-width: 59%;margin-bottom: 0.2rem" src="{{ asset('assets/gambar/survey-aksesibilitas.png') }}">
-                <span style="font-size: 9pt;margin-top: -5px !important;position: relative;top: -6px;">Survey</span></a>
-        </div>
-
-    </div>
-    </div>
-    </div>
-    </button> --}}
-
-    <button class="btn btn-sm" style="outline: none; box-shadow: none;">
-        <div class="container">
-
-        </div>
-    </button>
-
-
-    </div>
-
-    </div>
 
     <div class="d-flex flex-col justify-content-end">
         <div class="d-flex justify-content-end pr-3" style="z-index: 9">
