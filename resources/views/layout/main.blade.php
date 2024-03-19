@@ -128,7 +128,8 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                             <div class="flex items-center form-check transect_zone mt-1">
                                 <div class="inline-flex items-center">
-                                    <input type="checkbox" class="h-3.5 w-3.5 form-check-input hapus_focus_checkbox focus:border focus:ring-0 text-blue-600 border-gray-300 border rounded-sm" id="urban_fill" onchange="getDataSource('urban', localStorage.getItem('kelurahan'))">
+                                    <input type="checkbox" class="h-3.5 w-3.5 form-check-input hapus_focus_checkbox focus:border focus:ring-0 focus:ring-offset-0 text-blue-600 border-gray-300 border rounded-sm" id="urban_fill" onchange="getDataSource('urban', localStorage.getItem('kelurahan'))">
+
                                     <label class="form-check-label text_all ml-2 mt-1" for="transect_zone">Persil Sawah</label>
 
                                     <div class="form-check form-check-inline urban_fill mt-1 hidden">
@@ -151,7 +152,8 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                         <div class="grid grid-cols-1 gap-y-1 text-sm mt-2">
                             <div class="flex items-center form-check transect_zone mt-1">
                                 <div class="inline-flex items-center">
-                                    <input type="checkbox" class="h-3.5 w-3.5 form-check-input hapus_focus_checkbox focus:border focus:ring-0 text-blue-600 border-gray-300 border rounded-sm" id="urban_fill" onchange="getDataSource('urban', localStorage.getItem('kelurahan'))">
+                                    <input type="checkbox" class="h-3.5 w-3.5 form-check-input hapus_focus_checkbox focus:border focus:ring-0 focus:ring-offset-0 text-blue-600 border-gray-300 border rounded-sm" id="urban_fill" onchange="getDataSource('urban', localStorage.getItem('kelurahan'))">
+
                                     <label class="form-check-label text_all ml-2 mt-1" for="transect_zone">Prediksi BMKG</label>
 
                                 </div>
