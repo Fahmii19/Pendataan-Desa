@@ -129,7 +129,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             <div class="flex items-center form-check transect_zone mt-1">
                                 <div class="inline-flex items-center">
                                     <input type="checkbox" class="h-3.5 w-3.5 form-check-input hapus_focus_checkbox focus:border focus:ring-0 text-blue-600 border-gray-300 border rounded-sm" id="urban_fill" onchange="getDataSource('urban', localStorage.getItem('kelurahan'))">
-                                    <label class="form-check-label text_all ml-2 mt-1" for="transect_zone">Persil BMKG</label>
+                                    <label class="form-check-label text_all ml-2 mt-1" for="transect_zone">Persil Sawah</label>
 
                                     <div class="form-check form-check-inline urban_fill mt-1 hidden">
                                         <input type="radio" name="transect_zone" value="tp2021-color2021" class="form-check-input urban_fill w-3 h-3" disabled checked>
@@ -286,7 +286,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                         <div class="inf-luasarea">500.000 m<sup>2</sup></div>
                                     </div>
 
-                                    <div class="grid grid-cols-2">
+                                    <div class="grid grid-cols-2 mt-2">
                                         <div class="">Jumlah Petani</div>
                                         <div class="inf-eksisting">10 Orang</div>
                                     </div>
@@ -355,24 +355,24 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                         <div class="w-full flex flex-col self-end">
                             <!-- Legend -->
                             <div class="w-full mb-3 ml-[1.2vw] relative">
-                                <div class="w-[16vw] h-[16vh] text-sm flex flex-col justify-start py-2 items-start px-2 rounded-sm bg-white">
+                                <div class="w-[16vw] h-[16vh] text-xs flex flex-col justify-start py-2 items-start px-2 rounded-sm bg-white">
                                     <!--  -->
                                     <div class="inline-flex items-center">
-                                        <div class="w-3 h-3 bg-[#5C5C5C]"></div>
+                                        <div class="w-2.5 h-2.5 bg-[#5C5C5C] rounded-xs"></div>
                                         <div class="tracking-wide ml-1">
                                             Beras
                                         </div>
                                     </div>
                                     <!--  -->
                                     <div class="inline-flex items-center">
-                                        <div class="w-3 h-3 bg-[#38A800]"></div>
+                                        <div class="w-2.5 h-2.5 bg-[#38A800] rounded-xs"></div>
                                         <div class="tracking-wide ml-1">
                                             Cabe
                                         </div>
                                     </div>
                                     <!--  -->
                                     <div class="inline-flex items-center">
-                                        <div class="w-3 h-3 bg-[#ffff00]"></div>
+                                        <div class="w-2.5 h-2.5 bg-[#ffff00] rounded-xs"></div>
                                         <div class="tracking-wide ml-1">
                                             Bawang
                                         </div>
