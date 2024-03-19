@@ -609,6 +609,9 @@ video {
 .z-\[99\] {
   z-index: 99;
 }
+.z-20 {
+  z-index: 20;
+}
 .col-auto {
   grid-column: auto;
 }
@@ -1496,6 +1499,10 @@ video {
 }
 .border-transparent {
   border-color: transparent;
+}
+.border-red-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
 }
 .bg-\[\#102037\] {
   --tw-bg-opacity: 1;
