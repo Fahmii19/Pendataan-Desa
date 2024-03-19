@@ -185,12 +185,26 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                         <div class="grid grid-cols-4">
                             <!-- Button Pertama -->
                             <div>
-                                <div class="flex justify-start items-center">
-                                    <button style="outline:none !important;" class="h-10 w-10 flex justify-center items-center border bg-blue-500 border-blue-500 rounded-full outline-none" id="btn-1">
+                                <div class="flex justify-start items-center group/profil">
+
+
+                                    <button style="outline:none !important;" class="h-10 w-10 flex justify-center items-center border bg-blue-500 border-blue-500 rounded-full outline-none " id="btn-1">
+
                                         <svg class="text-white h-[18px]" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-dot" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                                             <path class="" fill="currentColor" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"></path>
                                         </svg>
                                     </button>
+
+
+                                    <div class="absolute hidden left-0 flex items-center ml-6 group-hover/profil:flex">
+
+                                        <span class=" relative z-10 px-2 mt-5 ml-[2rem] bg-white py-1 text-xs font-medium text-black bg-gray-900 border rounded-lg">Profil</span>
+                                    </div>
+
+
+
+
+
                                 </div>
                             </div>
 
@@ -220,13 +234,18 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                             <!-- Button Keempat -->
                             <div>
-                                <div class="flex justify-start items-center">
+                                <div class="flex justify-start items-center group/harga">
                                     <button style="outline:none !important;" class="inline-block h-10 w-10 flex justify-center items-center border border-blue-500 rounded-full" id="btn-4">
 
                                         <svg class="text-[#007bff] h-[17px]" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="crosshairs" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <path class="" fill="currentColor" d="M256 0c17.7 0 32 14.3 32 32V42.4c93.7 13.9 167.7 88 181.6 181.6H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H469.6c-13.9 93.7-88 167.7-181.6 181.6V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V469.6C130.3 455.7 56.3 381.7 42.4 288H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H42.4C56.3 130.3 130.3 56.3 224 42.4V32c0-17.7 14.3-32 32-32zM107.4 288c12.5 58.3 58.4 104.1 116.6 116.6V384c0-17.7 14.3-32 32-32s32 14.3 32 32v20.6c58.3-12.5 104.1-58.4 116.6-116.6H384c-17.7 0-32-14.3-32-32s14.3-32 32-32h20.6C392.1 165.7 346.3 119.9 288 107.4V128c0 17.7-14.3 32-32 32s-32-14.3-32-32V107.4C165.7 119.9 119.9 165.7 107.4 224H128c17.7 0 32 14.3 32 32s-14.3 32-32 32H107.4zM256 224a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"></path>
                                         </svg>
                                     </button>
+                                    {{-- <div class="absolute hidden left-0 flex items-center ml-6 group-hover/harga:flex">
+                                        <span class=" relative z-10 px-2 mt-5 ml-[2rem] bg-white py-1 text-xs font-medium text-black bg-gray-900 border rounded-lg">Harga</span>
+                                    </div> --}}
+
+
                                 </div>
                             </div>
                         </div>

@@ -2994,12 +2994,12 @@ map.on("mousemove", "urban_fill", (e) => {
         <span class="d-block">6.3</span><br>
         <span class="d-block font-weight-bold">Tanaman</span>
         <span class="d-block">Beras</span><br>
-        <span class="d-block font-weight-bold">Mulai Tanggal</span>
+        <span class="d-block font-weight-bold">Mulai Tanam</span>
         <span class="d-block">3 Februari 2024</span><br>
         <span class="d-block font-weight-bold">Perkiraan Panen</span>
-        <span class="d-block">10 Ton</span><br>
+        <span class="d-block">10 ton</span><br>
         <span class="d-block font-weight-bold">Pemilik</span>
-        <span class="d-block">Kusdi</span>
+        <span class="d-block">Kasdi</span>
     </div>
 </div>
 
