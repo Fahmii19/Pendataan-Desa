@@ -160,16 +160,16 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             <div class="flex flex-row ml-[1.8vw]">
                                 <div class="w-full">
                                     <input id="perda-1" type="radio" value="Perda 1/2014" name="jenis-perda" class="w-3 h-3 text-blue-600 bg-gray-100 border-gray-300 focus:border-transparent focus:ring-0 hapus_focus_checkbox bg-white" />
-                                    <label for="perda-1" class="ms-2 text-black">30 Hari</label>
+                                    <label for="perda-1" class="ms-2 text-black text-xs">30 Hari</label>
                                 </div>
                                 <div class="w-full">
                                     <input id="pergub-31" type="radio" value="Pergub 31/2022" name="jenis-perda" class="w-3 h-3 text-blue-600 bg-gray-100 border-gray-300 focus:border-transparent focus:ring-0 hapus_focus_checkbox bg-white" />
-                                    <label for="pergub-31" class="ms-2 text-black">90 Hari</label>
+                                    <label for="pergub-31" class="ms-2 text-black text-xs">90 Hari</label>
                                 </div>
                                 {{-- --}}
                                 <div class="w-full">
                                     <input id="pergub-31" type="radio" value="Pergub 31/2022" name="jenis-perda" class="w-3 h-3 text-blue-600 bg-gray-100 border-gray-300 focus:border-transparent focus:ring-0 hapus_focus_checkbox bg-white" />
-                                    <label for="pergub-31" class="ms-2 text-black">180 Hari</label>
+                                    <label for="pergub-31" class="ms-2 text-black text-xs">180 Hari</label>
                                 </div>
 
                                 {{-- --}}
@@ -185,26 +185,12 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                         <div class="grid grid-cols-4">
                             <!-- Button Pertama -->
                             <div>
-                                <div class="flex justify-start items-center group/profil">
-
-
-                                    <button style="outline:none !important;" class="h-10 w-10 flex justify-center items-center border bg-blue-500 border-blue-500 rounded-full outline-none " id="btn-1">
-
+                                <div class="flex justify-start items-center">
+                                    <button style="outline:none !important;" class="h-10 w-10 flex justify-center items-center border bg-blue-500 border-blue-500 rounded-full outline-none" id="btn-1">
                                         <svg class="text-white h-[18px]" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-dot" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                                             <path class="" fill="currentColor" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"></path>
                                         </svg>
                                     </button>
-
-
-                                    <div class="absolute hidden left-0 flex items-center ml-6 group-hover/profil:flex">
-
-                                        <span class=" relative z-10 px-2 mt-5 ml-[2rem] bg-white py-1 text-xs font-medium text-black bg-gray-900 border rounded-lg">Profil</span>
-                                    </div>
-
-
-
-
-
                                 </div>
                             </div>
 
@@ -234,18 +220,13 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                             <!-- Button Keempat -->
                             <div>
-                                <div class="flex justify-start items-center group/harga">
+                                <div class="flex justify-start items-center">
                                     <button style="outline:none !important;" class="inline-block h-10 w-10 flex justify-center items-center border border-blue-500 rounded-full" id="btn-4">
 
                                         <svg class="text-[#007bff] h-[17px]" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="crosshairs" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <path class="" fill="currentColor" d="M256 0c17.7 0 32 14.3 32 32V42.4c93.7 13.9 167.7 88 181.6 181.6H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H469.6c-13.9 93.7-88 167.7-181.6 181.6V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V469.6C130.3 455.7 56.3 381.7 42.4 288H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H42.4C56.3 130.3 130.3 56.3 224 42.4V32c0-17.7 14.3-32 32-32zM107.4 288c12.5 58.3 58.4 104.1 116.6 116.6V384c0-17.7 14.3-32 32-32s32 14.3 32 32v20.6c58.3-12.5 104.1-58.4 116.6-116.6H384c-17.7 0-32-14.3-32-32s14.3-32 32-32h20.6C392.1 165.7 346.3 119.9 288 107.4V128c0 17.7-14.3 32-32 32s-32-14.3-32-32V107.4C165.7 119.9 119.9 165.7 107.4 224H128c17.7 0 32 14.3 32 32s-14.3 32-32 32H107.4zM256 224a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"></path>
                                         </svg>
                                     </button>
-                                    {{-- <div class="absolute hidden left-0 flex items-center ml-6 group-hover/harga:flex">
-                                        <span class=" relative z-10 px-2 mt-5 ml-[2rem] bg-white py-1 text-xs font-medium text-black bg-gray-900 border rounded-lg">Harga</span>
-                                    </div> --}}
-
-
                                 </div>
                             </div>
                         </div>
@@ -336,7 +317,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             <!--  -->
                             <div>
                                 <button class="inline-flex justify-center items-center px-4 h-8 text-sm font-medium rounded-full shadow-sm focus:outline-none focus:ring-0 bg-white text-black mr-3">
-                                    <span class="font-semibold tracking-wider">Pasar Induk</span>
+                                    <span class="font-semibold tracking-wider">Penggilingan Beras</span>
                                 </button>
                             </div>
                             <!--  -->
@@ -345,6 +326,14 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                     <span class="font-semibold tracking-wider">Lumbung Desa</span>
                                 </button>
                             </div>
+                            <!--  -->
+                            <div>
+                                <button class="inline-flex justify-center items-center px-4 h-8 text-sm font-medium rounded-full shadow-sm focus:outline-none focus:ring-0 bg-white text-black mr-3">
+                                    <span class="font-semibold tracking-wider">Pasar Induk</span>
+
+                                </button>
+                            </div>
+
                             <!--  -->
                         </div>
                         <!--  -->
@@ -355,38 +344,120 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                         <div class="w-full flex flex-col self-end">
                             <!-- Legend -->
                             <div class="w-full mb-3 ml-[1.2vw] relative">
-                                <div class="w-[16vw] h-[16vh] text-xs flex flex-col justify-start py-2 items-start px-2 rounded-sm bg-white">
-                                    <!--  -->
+                                <div class="w-[16vw] h-[30.5vh] text-xs flex flex-col justify-start py-2 items-start px-2 rounded-sm bg-white">
+                                    <!-- Existing legend items -->
                                     <div class="inline-flex items-center">
                                         <div class="w-2.5 h-2.5 bg-[#5C5C5C] rounded-xs"></div>
-                                        <div class="tracking-wide ml-1">
-                                            Beras
+                                        <div class="tracking-wide ml-[0.4rem]">
+                                            Beras Cianjur Kepala
                                         </div>
                                     </div>
                                     <!--  -->
                                     <div class="inline-flex items-center">
                                         <div class="w-2.5 h-2.5 bg-[#38A800] rounded-xs"></div>
-                                        <div class="tracking-wide ml-1">
-                                            Cabe
+                                        <div class="tracking-wide ml-[0.4rem]">
+                                            Cabe Merah Keriting
                                         </div>
                                     </div>
                                     <!--  -->
                                     <div class="inline-flex items-center">
                                         <div class="w-2.5 h-2.5 bg-[#ffff00] rounded-xs"></div>
-                                        <div class="tracking-wide ml-1">
-                                            Bawang
+                                        <div class="tracking-wide ml-[0.4rem]">
+                                            Bawang Merah
                                         </div>
                                     </div>
 
+                                    <!-- New items with dynamically generated random colors -->
                                     <!--  -->
+                                    <div class="inline-flex items-center">
+                                        <div class="w-2.5 h-2.5 bg-[#C78E28] rounded-xs"></div>
+
+                                        <div class="tracking-wide ml-[0.4rem]">
+                                            Beras Cianjur Slyp
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                    <div class="inline-flex items-center">
+                                        <div class="w-2.5 h-2.5 bg-[#46A042] rounded-xs"></div>
+
+                                        <div class="tracking-wide ml-[0.4rem]">
+                                            Beras Setra
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                    <div class="inline-flex items-center">
+                                        <div class="w-2.5 h-2.5 bg-[#38A800] rounded-xs"></div>
+                                        <div class="tracking-wide ml-[0.4rem]">
+                                            Beras Saigon
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                    <div class="inline-flex items-center">
+                                        <div class="w-2.5 h-2.5 bg-[#42A097] rounded-xs"></div>
+
+                                        <div class="tracking-wide ml-[0.4rem]">
+                                            Beras Muncul 1
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                    <div class="inline-flex items-center">
+                                        <div class="w-2.5 h-2.5 bg-[#4249A0] rounded-xs"></div>
+
+                                        <div class="tracking-wide ml-[0.4rem]">
+                                            Beras Muncul 2
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                    <div class="inline-flex items-center">
+                                        <div class="w-2.5 h-2.5 bg-[#A0427A] rounded-xs"></div>
+
+                                        <div class="tracking-wide ml-[0.4rem]">
+                                            Beras Muncul 3
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                    <div class="inline-flex items-center">
+                                        <div class="w-2.5 h-2.5 bg-[#A04244] rounded-xs"></div>
+
+                                        <div class="tracking-wide ml-[0.4rem]">
+                                            Cabe Merah Besar
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                    <div class="inline-flex items-center">
+                                        <div class="w-2.5 h-2.5 bg-[#9394AA] rounded-xs"></div>
+
+                                        <div class="tracking-wide ml-[0.4rem]">
+                                            Cabe Rawit Merah
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                    <div class="inline-flex items-center">
+                                        <div class="w-2.5 h-2.5 bg-[#7FAA91] rounded-xs"></div>
+
+                                        <div class="tracking-wide ml-[0.4rem]">
+                                            Cabe Rawit Hijau
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                    <div class="inline-flex items-center">
+                                        <div class="w-2.5 h-2.5 bg-[#32453A] rounded-xs"></div>
+
+                                        <div class="tracking-wide ml-[0.4rem]">
+                                            Bawang Putih
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+
+
+
                             <!-- Running Teks -->
                             <div class="w-full bg-white relative">
                                 <div class="w-[71vw] h-[4vh] flex justify-center items-center">
                                     <div class="teks-berjalan-pencarian w-full text-sm text-black whitespace-nowrap">
-                                        lorem ipsum dolor sit amet lorem ipsum dolor sit amet
-                                        lorem ipsum
+                                        Dalam konteks pertanian pedesaan, kemajuan terjadi melalui adopsi teknologi modern seperti irigasi otomatis, penggunaan pupuk organik, dan pelatihan petani tentang praktik berkelanjutan. Ini memungkinkan peningkatan produksi yang berkelanjutan sambil menjaga kelestarian lingkungan dan kemandirian lokal dalam pasokan pangan
+
                                     </div>
                                 </div>
                             </div>
