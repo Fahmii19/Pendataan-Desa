@@ -184,7 +184,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                     <!-- Button Grup Menu -->
                     <div class="w-full px-4 mt-7 h-full flex flex-col">
-                        <div class="grid grid-cols-4">
+                        <div class="grid grid-cols-4 gap-y-5">
                             <!-- Button Pertama -->
                             <div>
                                 <div class="flex justify-start items-center relative">
@@ -212,7 +212,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             <!-- Button Kedua -->
                             <div>
                                 <div class="flex justify-start items-center">
-                                    <button style="outline:none !important;" class="inline-block h-10 w-10 flex justify-center items-center border border-blue-500 rounded-full" id="btn-2" data-tooltip-target="tooltip-no-arrow-2" data-tooltip-placement="bottom">
+                                    <button style="outline:none !important;" class="inline-block h-10 w-10 flex justify-center items-center border border-blue-500 rounded-full" id="btn-5" data-tooltip-target="tooltip-no-arrow-5" data-tooltip-placement="bottom">
 
 
                                         <svg class="text-[#007bff] h-[17px]" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -221,8 +221,8 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                     </button>
 
                                     {{-- --}}
-                                    <div id="tooltip-no-arrow-2" role="tooltip" class="absolute z-10 invisible inline-block px-2 py-1 text-xs font-medium text-black bg-white border rounded-lg ">
-                                        Perkiraan Cuaca
+                                    <div id="tooltip-no-arrow-5" role="tooltip" class="absolute z-10 invisible inline-block px-2 py-1 text-xs font-medium text-black bg-white border rounded-lg ">
+                                        Valuasi
                                     </div>
 
 
@@ -260,11 +260,34 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                     </button>
                                     <div id="tooltip-no-arrow-4" role="tooltip" class="absolute z-10 invisible inline-block px-2 py-1 text-xs font-medium text-black bg-white border rounded-lg ">
                                         Saldo Lumbung
-
                                     </div>
+                                </div>
+                            </div>
+
+                            {{-- BUtton Kelima --}}
+
+                            <!-- Button Kedua -->
+                            <div>
+                                <div class="flex justify-start items-center">
+                                    <button style="outline:none !important;" class="inline-block h-10 w-10 flex justify-center items-center border border-blue-500 rounded-full" id="btn-2" data-tooltip-target="tooltip-no-arrow-2" data-tooltip-placement="bottom">
+
+
+                                        <svg class="text-[#007bff] h-[17px]" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                            <path class="" fill="currentColor" d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"></path>
+                                        </svg>
+                                    </button>
+
+                                    {{-- --}}
+                                    <div id="tooltip-no-arrow-2" role="tooltip" class="absolute z-10 invisible inline-block px-2 py-1 text-xs font-medium text-black bg-white border rounded-lg ">
+                                        Perkiraan Cuaca
+                                    </div>
+
 
                                 </div>
                             </div>
+
+
+
                         </div>
                         <!-- konten -->
 
@@ -274,6 +297,11 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                 <div class="w-full h-full">
 
                                     <h5 class="mt-3 mb-1 font-bold text-md text-center">Lokasi</h5>
+
+                                    <div class="grid grid-cols-2 mt-2">
+                                        <div class="">Luas</div>
+                                        <div class="inf-luasarea">3.792.700 m<sup>2</sup></div>
+                                    </div>
 
 
                                     <div class="grid grid-cols-2 mt-2">
@@ -291,10 +319,6 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                         <div class="inf-kota">Subang</div>
                                     </div>
 
-                                    <div class="grid grid-cols-2 mt-2">
-                                        <div class="">Luas</div>
-                                        <div class="inf-luasarea">3.792.700 m<sup>2</sup></div>
-                                    </div>
 
                                     <h5 class="mt-3 font-bold text-md text-center">Usaha Pertanian</h5>
 
@@ -304,9 +328,22 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                     </div>
 
                                     <div class="grid grid-cols-2 mt-2">
-                                        <div class="">Jumlah Petani</div>
-                                        <div class="inf-eksisting">10 Orang</div>
+                                        <div class="">Jenis Pemilik Lahan</div>
+                                        <div class="inf-eksisting">10</div>
                                     </div>
+
+                                    <div class="grid grid-cols-2 mt-2">
+                                        <div class="">Jumlah Petani Penggarap</div>
+                                        <div class="inf-eksisting">300</div>
+                                    </div>
+
+
+                                    <h5 class="mt-3 font-bold text-md text-center">Produksi</h5>
+
+
+
+                                    <canvas class="mt-0.5" id="produksiPertanian" width="600" height="400"></canvas>
+
 
 
 
@@ -319,25 +356,25 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             <!-- Konten Kedua -->
                             <div class="hidden text-sm" id="content-2">
                                 <h5 class="mt-3 mb-1 font-bold text-md text-center">Kedua</h5>
-
-
                             </div>
 
                             <!-- Konten Ketiga -->
                             <div class="hidden text-sm" id="content-3">
                                 <h5 class="mt-3 mb-1 font-bold text-md text-center">Ketiga</h5>
-
-
-
                             </div>
 
                             <!-- Konten Keempat -->
                             <div class="hidden text-sm" id="content-4">
                                 <h5 class="mt-3 mb-1 font-bold text-md text-center">Keempat</h5>
-
-
-
                             </div>
+
+                            <!-- Konten Kelima -->
+                            <div class="hidden text-sm" id="content-5">
+                                <h5 class="mt-3 mb-1 font-bold text-md text-center">Kelima</h5>
+                            </div>
+
+
+
                         </div>
 
                         <!--  -->
@@ -388,20 +425,8 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                             Beras Cianjur Kepala
                                         </div>
                                     </div>
-                                    <!--  -->
-                                    <div class="inline-flex items-center">
-                                        <div class="w-2.5 h-2.5 bg-[#38A800] rounded-xs"></div>
-                                        <div class="tracking-wide ml-[0.4rem]">
-                                            Cabe Merah Keriting
-                                        </div>
-                                    </div>
-                                    <!--  -->
-                                    <div class="inline-flex items-center">
-                                        <div class="w-2.5 h-2.5 bg-[#ffff00] rounded-xs"></div>
-                                        <div class="tracking-wide ml-[0.4rem]">
-                                            Bawang Merah
-                                        </div>
-                                    </div>
+
+
 
                                     <!-- New items with dynamically generated random colors -->
                                     <!--  -->
@@ -451,6 +476,16 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                             Beras Muncul 3
                                         </div>
                                     </div>
+
+                                    <!--  -->
+                                    <div class="inline-flex items-center">
+                                        <div class="w-2.5 h-2.5 bg-[#38A800] rounded-xs"></div>
+                                        <div class="tracking-wide ml-[0.4rem]">
+                                            Cabe Merah Keriting
+                                        </div>
+                                    </div>
+
+
                                     <!--  -->
                                     <div class="inline-flex items-center">
                                         <div class="w-2.5 h-2.5 bg-[#A04244] rounded-xs"></div>
@@ -475,6 +510,16 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                             Cabe Rawit Hijau
                                         </div>
                                     </div>
+
+                                    <!--  -->
+                                    <div class="inline-flex items-center">
+                                        <div class="w-2.5 h-2.5 bg-[#ffff00] rounded-xs"></div>
+                                        <div class="tracking-wide ml-[0.4rem]">
+                                            Bawang Merah
+                                        </div>
+                                    </div>
+
+
                                     <!--  -->
                                     <div class="inline-flex items-center">
                                         <div class="w-2.5 h-2.5 bg-[#32453A] rounded-xs"></div>
@@ -9791,6 +9836,38 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
         });
 
     </script>
+
+    {{-- Pie Chart --}}
+    <script>
+        var oilCanvas = document.getElementById("produksiPertanian");
+
+        // Chart.defaults.global.defaultFontFamily = "Lato";
+        Chart.defaults.global.defaultFontSize = 14;
+
+        var oilData = {
+            labels: [
+                "Beras"
+                , "Cabe"
+                , "Bawang"
+            ]
+            , datasets: [{
+                data: [133.3, 86.2, 52.2]
+                , backgroundColor: [
+                    "#FF6384"
+                    , "#63FF84"
+                    , "#84FF63"
+
+                ]
+            }]
+        };
+
+        var pieChart = new Chart(oilCanvas, {
+            type: 'pie'
+            , data: oilData
+        });
+
+    </script>
+
 
 
 
