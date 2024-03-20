@@ -154,7 +154,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                 <div class="inline-flex items-center">
                                     <input type="checkbox" class="h-3.5 w-3.5 form-check-input hapus_focus_checkbox focus:border focus:ring-0 focus:ring-offset-0 text-blue-600 border-gray-300 border rounded-sm" id="urban_fill" onchange="getDataSource('urban', localStorage.getItem('kelurahan'))">
 
-                                    <label class="form-check-label text_all ml-2 mt-1" for="transect_zone">Prediksi BMKG</label>
+                                    <label class="form-check-label text_all ml-2 mt-1" for="transect_zone">Prediksi Curah Hujan</label>
 
                                 </div>
                             </div>
@@ -210,25 +210,6 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                 </div>
                             </div>
 
-                            <!-- Button Kedua -->
-                            <div>
-                                <div class="flex justify-start items-center">
-                                    <button style="outline:none !important;" class="inline-block h-10 w-10 flex justify-center items-center border border-blue-500 rounded-full" id="btn-5" data-tooltip-target="tooltip-no-arrow-5" data-tooltip-placement="bottom">
-
-
-                                        <svg class="text-[#007bff] h-[17px]" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                            <path class="" fill="currentColor" d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"></path>
-                                        </svg>
-                                    </button>
-
-                                    {{-- --}}
-                                    <div id="tooltip-no-arrow-5" role="tooltip" class="absolute z-10 invisible inline-block px-2 py-1 text-xs font-medium text-black bg-white border rounded-lg ">
-                                        Valuasi
-                                    </div>
-
-
-                                </div>
-                            </div>
 
                             <!-- Button Ketiga -->
                             <div>
@@ -280,7 +261,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                     {{-- --}}
                                     <div id="tooltip-no-arrow-2" role="tooltip" class="absolute z-10 invisible inline-block px-2 py-1 text-xs font-medium text-black bg-white border rounded-lg ">
-                                        Perkiraan Cuaca
+                                        Prakiraan Cuaca
                                     </div>
 
 
@@ -374,7 +355,32 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                             <!-- Konten Ketiga -->
                             <div class="hidden text-sm" id="content-3">
-                                <h5 class="mt-3 mb-1 font-bold text-md text-center">Ketiga</h5>
+
+                                <div class="relative">
+
+                                    <div class="px-6 w-full mt-5">
+                                        <input type="range" id="slider" class="w-full opacity-0 absolute" style="z-index: 20; height: 2rem; cursor: pointer;" min="0" max="4" step="1">
+                                        <div class="bg-gray-300 h-2 w-full rounded-full relative mt-[-2rem]">
+                                            <span id="thumb" class="bg-white h-4 w-4 absolute top-0 -ml-2 -mt-1 z-10 shadow rounded-full cursor-pointer"></span>
+                                            <span id="progress" class="bg-teal-500 h-2 absolute left-0 top-0 rounded-full" style="width:0%;"></span>
+                                        </div>
+                                        <div class="flex justify-between mt-2 text-xs text-gray-600">
+                                            <span class="clickable w-8 text-left" data-value="0">0%</span>
+                                            <span class="clickable w-8 text-center" data-value="1">25%</span>
+                                            <span class="clickable w-8 text-center" data-value="2">50%</span>
+                                            <span class="clickable w-8 text-center" data-value="3">75%</span>
+                                            <span class="clickable w-8 text-right" data-value="4">100%</span>
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                </div>
+
+
+
                             </div>
 
                             <!-- Konten Keempat -->
@@ -395,11 +401,6 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                 </div>
 
 
-                            </div>
-
-                            <!-- Konten Kelima -->
-                            <div class="hidden text-sm" id="content-5">
-                                <h5 class="mt-3 mb-1 font-bold text-md text-center">Kelima</h5>
                             </div>
 
 
@@ -446,117 +447,111 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                         <div class="w-full flex flex-col self-end">
                             <!-- Legend -->
                             <div class="w-full mb-3 ml-[1.2vw] relative">
-                                <div class="w-[16vw] h-[30.5vh] text-xs flex flex-col justify-start py-2 items-start px-2 rounded-sm bg-white">
-                                    <!-- Existing legend items -->
-                                    <div class="inline-flex items-center">
-                                        <div class="w-2.5 h-2.5 bg-[#5C5C5C] rounded-xs"></div>
-                                        <div class="tracking-wide ml-[0.4rem]">
-                                            Beras Cianjur Kepala
+                                <div class="w-[39.5vw] h-[20vh] text-xs p-1 rounded-sm bg-white flex flex-col">
+
+
+                                    <div class="ml-1.5 font-semibold text-sm">Valuasi</div>
+
+                                    <div class="flex flex-row mb-2.5">
+
+
+                                        <div class="flex flex-col ml-1.5">
+                                            <div class="font-semibold mb-0.5">Komoditi</div>
+                                            {{-- --}}
+                                            <div class="flex flex-col">
+                                                <div class="inline-flex items-center">
+                                                    <div class="w-2.5 h-2.5 bg-[#5C5C5C] rounded-xs mr-1"></div>
+                                                    <div> Beras Cianjur Kepala</div>
+                                                </div>
+                                                <div class="inline-flex items-center">
+                                                    <div class="w-2.5 h-2.5 bg-[#C78E28] rounded-xs mr-1"></div>
+
+
+                                                    <div>
+                                                        Beras Setra
+                                                    </div>
+                                                </div>
+
+                                                <div class="inline-flex items-center">
+                                                    <div class="w-2.5 h-2.5 bg-[#38A800] rounded-xs mr-1"></div>
+                                                    <div> Cabe Merah Keriting</div>
+                                                </div>
+                                                <div class="inline-flex items-center">
+                                                    <div class="w-2.5 h-2.5 bg-[#42A097] rounded-xs mr-1"></div>
+                                                    <div> Cabe Rawit Merah</div>
+                                                </div>
+                                                <div class="inline-flex items-center">
+                                                    <div class="w-2.5 h-2.5 bg-[#46A042] rounded-xs mr-1"></div>
+                                                    <div>
+                                                        Bawang Merah
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
                                         </div>
+
+                                        <div class="flex flex-col ml-3.5">
+                                            <div class="font-semibold mb-0.5">Luas Lahan (m<sup>2</sup>)</div>
+
+                                            <div class="flex flex-col text-right">
+                                                <div>11,000</div>
+                                                <div>54,000</div>
+                                                <div>21,000</div>
+                                                <div>89,000</div>
+                                                <div>12,000</div>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="flex flex-col ml-3.5">
+                                            <div class="font-semibold mb-0.5">Perkiraan Panen (Ton)</div>
+
+                                            <div class="flex flex-col text-center">
+                                                <div>17</div>
+                                                <div>12</div>
+                                                <div>15</div>
+                                                <div>14</div>
+                                                <div>18</div>
+                                            </div>
+                                            {{-- --}}
+                                        </div>
+                                        <div class="flex flex-col ml-3.5">
+                                            <div class="font-semibold mb-0.5">Harga Pasar (Rp)</div>
+                                            <div class="flex flex-col text-right">
+                                                <div>25,500</div>
+                                                <div>27,500</div>
+                                                <div>29,500</div>
+                                                <div>15,500</div>
+                                                <div>13,500</div>
+                                            </div>
+                                            <div class="mt-0.5 text-right font-semibold">Jumlah</div>
+
+                                        </div>
+                                        <div class="flex flex-col ml-3.5">
+                                            <div class="font-semibold mb-0.5">Total</div>
+
+
+                                            <div class="flex flex-col text-right">
+
+                                                <div>4,768,500,000</div>
+                                                <div>17,820,000,000</div>
+                                                <div>9,292,500,000</div>
+                                                <div>19,313,000,000</div>
+                                                <div>2,916,000,000</div>
+
+
+                                            </div>
+
+                                            <div class="font-semibold mt-0.5">54,110,000,000</div>
+                                        </div>
+
+
                                     </div>
 
 
 
-                                    <!-- New items with dynamically generated random colors -->
-                                    <!--  -->
-                                    <div class="inline-flex items-center">
-                                        <div class="w-2.5 h-2.5 bg-[#C78E28] rounded-xs"></div>
 
-                                        <div class="tracking-wide ml-[0.4rem]">
-                                            Beras Cianjur Slyp
-                                        </div>
-                                    </div>
-                                    <!--  -->
-                                    <div class="inline-flex items-center">
-                                        <div class="w-2.5 h-2.5 bg-[#46A042] rounded-xs"></div>
-
-                                        <div class="tracking-wide ml-[0.4rem]">
-                                            Beras Setra
-                                        </div>
-                                    </div>
-                                    <!--  -->
-                                    <div class="inline-flex items-center">
-                                        <div class="w-2.5 h-2.5 bg-[#38A800] rounded-xs"></div>
-                                        <div class="tracking-wide ml-[0.4rem]">
-                                            Beras Saigon
-                                        </div>
-                                    </div>
-                                    <!--  -->
-                                    <div class="inline-flex items-center">
-                                        <div class="w-2.5 h-2.5 bg-[#42A097] rounded-xs"></div>
-
-                                        <div class="tracking-wide ml-[0.4rem]">
-                                            Beras Muncul 1
-                                        </div>
-                                    </div>
-                                    <!--  -->
-                                    <div class="inline-flex items-center">
-                                        <div class="w-2.5 h-2.5 bg-[#4249A0] rounded-xs"></div>
-
-                                        <div class="tracking-wide ml-[0.4rem]">
-                                            Beras Muncul 2
-                                        </div>
-                                    </div>
-                                    <!--  -->
-                                    <div class="inline-flex items-center">
-                                        <div class="w-2.5 h-2.5 bg-[#A0427A] rounded-xs"></div>
-
-                                        <div class="tracking-wide ml-[0.4rem]">
-                                            Beras Muncul 3
-                                        </div>
-                                    </div>
-
-                                    <!--  -->
-                                    <div class="inline-flex items-center">
-                                        <div class="w-2.5 h-2.5 bg-[#38A800] rounded-xs"></div>
-                                        <div class="tracking-wide ml-[0.4rem]">
-                                            Cabe Merah Keriting
-                                        </div>
-                                    </div>
-
-
-                                    <!--  -->
-                                    <div class="inline-flex items-center">
-                                        <div class="w-2.5 h-2.5 bg-[#A04244] rounded-xs"></div>
-
-                                        <div class="tracking-wide ml-[0.4rem]">
-                                            Cabe Merah Besar
-                                        </div>
-                                    </div>
-                                    <!--  -->
-                                    <div class="inline-flex items-center">
-                                        <div class="w-2.5 h-2.5 bg-[#9394AA] rounded-xs"></div>
-
-                                        <div class="tracking-wide ml-[0.4rem]">
-                                            Cabe Rawit Merah
-                                        </div>
-                                    </div>
-                                    <!--  -->
-                                    <div class="inline-flex items-center">
-                                        <div class="w-2.5 h-2.5 bg-[#7FAA91] rounded-xs"></div>
-
-                                        <div class="tracking-wide ml-[0.4rem]">
-                                            Cabe Rawit Hijau
-                                        </div>
-                                    </div>
-
-                                    <!--  -->
-                                    <div class="inline-flex items-center">
-                                        <div class="w-2.5 h-2.5 bg-[#ffff00] rounded-xs"></div>
-                                        <div class="tracking-wide ml-[0.4rem]">
-                                            Bawang Merah
-                                        </div>
-                                    </div>
-
-
-                                    <!--  -->
-                                    <div class="inline-flex items-center">
-                                        <div class="w-2.5 h-2.5 bg-[#32453A] rounded-xs"></div>
-
-                                        <div class="tracking-wide ml-[0.4rem]">
-                                            Bawang Putih
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
 
@@ -9976,8 +9971,32 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
 
 
+    <script>
+        document.getElementById('slider').addEventListener('input', updateSlider);
 
+        function updateSlider() {
+            const slider = document.getElementById('slider');
+            const progressPercentages = [0, 25, 50, 75, 100];
+            const value = slider.value;
+            const progress = document.getElementById('progress');
+            const thumb = document.getElementById('thumb');
 
+            // Menentukan lebar progress dan posisi thumb berdasarkan persentase yang sesuai
+            const percentage = progressPercentages[value];
+            progress.style.width = percentage + '%';
+            thumb.style.left = `calc(${percentage}% - ${thumb.offsetWidth / 2}px)`;
+        }
+
+        // Menambahkan event listener pada setiap elemen span untuk mengatur nilai slider
+        document.querySelectorAll('.clickable').forEach(span => {
+            span.addEventListener('click', function() {
+                const slider = document.getElementById('slider');
+                slider.value = this.getAttribute('data-value');
+                updateSlider();
+            });
+        });
+
+    </script>
 
 
 
