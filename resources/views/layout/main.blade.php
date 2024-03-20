@@ -339,11 +339,11 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                     </div>
 
 
-                                    <h5 class="mt-4 font-bold text-md text-center">Produksi Komposisi Tanam</h5>
+                                    <h5 class="mt-4 font-bold text-md text-center">Komposisi Tanam</h5>
 
 
 
-                                    <canvas class="mt-2" id="produksiPertanian" width="600" height="400"></canvas>
+                                    <canvas class="mt-2" id="produksiPertanian" width="400" height="200"></canvas>
 
 
 
@@ -9870,14 +9870,12 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
     <script>
         var oilCanvas = document.getElementById("produksiPertanian");
 
-        // Chart.defaults.global.defaultFontFamily = "Lato";
+        // Mengatur ukuran font default
         Chart.defaults.global.defaultFontSize = 14;
 
         var oilData = {
             labels: [
-                "Beras"
-                , "Cabe"
-                , "Bawang"
+                "Beras", "Cabe", "Bawang"
             ]
             , datasets: [{
                 data: [133.3, 86.2, 52.2]
@@ -9885,8 +9883,6 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                     "#DAA520", // Beras
                     "#FF0000", // Cabe
                     "#800080" // Bawang (Unggu)
-
-
                 ]
             }]
         };
@@ -9894,9 +9890,18 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
         var pieChart = new Chart(oilCanvas, {
             type: 'pie'
             , data: oilData
+            , options: {
+                legend: {
+                    labels: {
+                        fontSize: 10 // Menyesuaikan ukuran font untuk legenda
+                    }
+                }
+            }
         });
 
     </script>
+
+
 
 
     <script>
@@ -9945,6 +9950,18 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             , }
                         }
                     }
+                    , yAxes: [{
+                        ticks: {
+                            fontSize: 10
+                        }
+                    }]
+                    , xAxes: [{
+                        ticks: {
+                            fontSize: 10
+                        }
+                    }]
+
+
                 }
                 , legend: {
                     labels: {
