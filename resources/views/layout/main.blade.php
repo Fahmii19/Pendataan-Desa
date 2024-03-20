@@ -183,8 +183,9 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                     </div>
 
                     <!-- Button Grup Menu -->
-                    <div class="w-full px-4 mt-7 h-full flex flex-col">
-                        <div class="grid grid-cols-4 gap-y-5">
+                    <div class="w-full px-4 mt-7 h-full flex flex-col ">
+                        <div class="grid grid-cols-4 gap-y-7 pb-7 border-b">
+
                             <!-- Button Pertama -->
                             <div>
                                 <div class="flex justify-start items-center relative">
@@ -296,7 +297,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             <div class="hidden text-sm" id="content-1">
                                 <div class="w-full h-full">
 
-                                    <h5 class="mt-3 mb-1 font-bold text-md text-center">Lokasi</h5>
+                                    <h5 class="mt-3 mb-3.5 font-bold text-md text-center">Lokasi</h5>
 
                                     <div class="grid grid-cols-2 mt-2">
                                         <div class="">Luas</div>
@@ -320,7 +321,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                     </div>
 
 
-                                    <h5 class="mt-3 font-bold text-md text-center">Usaha Pertanian</h5>
+                                    <h5 class="mt-4 mb-3.5 font-bold text-md text-center">Usaha Pertanian</h5>
 
                                     <div class="grid grid-cols-2 mt-2">
                                         <div class="">Luas Lahan</div>
@@ -338,11 +339,20 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                     </div>
 
 
-                                    <h5 class="mt-3 font-bold text-md text-center">Produksi</h5>
+                                    <h5 class="mt-4 font-bold text-md text-center">Produksi Komposisi Tanam</h5>
 
 
 
-                                    <canvas class="mt-0.5" id="produksiPertanian" width="600" height="400"></canvas>
+                                    <canvas class="mt-2" id="produksiPertanian" width="600" height="400"></canvas>
+
+
+
+                                    <h5 class="mt-3 font-bold text-md text-center">Hasil Panen</h5>
+
+                                    <canvas class="mt-2" id="myChart2"></canvas>
+
+
+
 
 
 
@@ -355,7 +365,11 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             </div>
                             <!-- Konten Kedua -->
                             <div class="hidden text-sm" id="content-2">
-                                <h5 class="mt-3 mb-1 font-bold text-md text-center">Kedua</h5>
+                                <div class="w-full h-[30vh]">
+                                    <img src="{{ asset('assets/perkiraan_cuaca.png') }}" alt="" class="w-full h-full object-contain">
+
+                                </div>
+
                             </div>
 
                             <!-- Konten Ketiga -->
@@ -365,7 +379,22 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                             <!-- Konten Keempat -->
                             <div class="hidden text-sm" id="content-4">
-                                <h5 class="mt-3 mb-1 font-bold text-md text-center">Keempat</h5>
+                                <h5 class="mt-3 mb-1 font-bold text-md text-center">Stok Lumbung</h5>
+                                <div class="grid grid-cols-2 mt-2">
+                                    <div class="">Stok Gabah</div>
+                                    <div class="inf-luasarea">55.747 kg</div>
+
+                                </div>
+
+
+                                <div class="grid grid-cols-2 mt-2">
+                                    <div class="">Stok beras</div>
+
+                                    <div class="inf-kelurahan"> 31.235 kg</div>
+
+                                </div>
+
+
                             </div>
 
                             <!-- Konten Kelima -->
@@ -9853,9 +9882,10 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
             , datasets: [{
                 data: [133.3, 86.2, 52.2]
                 , backgroundColor: [
-                    "#FF6384"
-                    , "#63FF84"
-                    , "#84FF63"
+                    "#DAA520", // Beras
+                    "#FF0000", // Cabe
+                    "#800080" // Bawang (Unggu)
+
 
                 ]
             }]
@@ -9867,6 +9897,75 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
         });
 
     </script>
+
+
+    <script>
+        var ctx = document.getElementById('myChart2').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'line'
+            , data: {
+                labels: ["Jan", "Feb", "Mar", "Apr", "Mei"]
+                , datasets: [{
+                    data: [86, 114, 106, 106, 107, 111, 133]
+                    , label: "Beras"
+                    , borderColor: "#DAA520"
+                    , backgroundColor: "transparent"
+                    , borderWidth: 1
+                    , pointRadius: 2 // Mengatur radius dari titik-titik
+                }, {
+                    data: [70, 90, 44, 60, 83, 90, 100]
+                    , label: "Cabe"
+                    , borderColor: "#FF0000"
+                    , backgroundColor: "transparent"
+                    , borderWidth: 1
+                    , pointRadius: 2
+                }, {
+                    data: [10, 21, 60, 44, 17, 21, 17]
+                    , label: "Bawang"
+                    , borderColor: "#9400D3"
+                    , backgroundColor: "transparent"
+                    , borderWidth: 1
+                    , pointRadius: 2
+                }]
+            }
+            , options: {
+                scales: {
+                    y: {
+                        display: true
+                        , beginAtZero: true
+                        , ticks: {
+                            stepSize: 250
+                        }
+                        , title: {
+                            display: true
+                            , text: "Volume"
+                            , font: {
+                                size: 13
+                                , weight: "bold"
+                            , }
+                        }
+                    }
+                }
+                , legend: {
+                    labels: {
+                        // Menyesuaikan ukuran font untuk legenda
+                        fontSize: 10
+                    }
+                }
+            }
+        });
+
+    </script>
+
+
+
+
+
+
+
+
+
+
 
 
 
