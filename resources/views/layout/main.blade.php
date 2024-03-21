@@ -164,6 +164,23 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                         </div>
 
 
+                        <!-- Section Fertility Map -->
+                        <div class="grid grid-cols-1 gap-y-1 text-sm mt-2">
+                            <div class="flex items-center form-check fertility_map_zone mt-1">
+                                <div class="inline-flex items-center">
+                                    <input type="checkbox" class="h-3.5 w-3.5 form-check-input hapus_focus_checkbox focus:border focus:ring-0 focus:ring-offset-0 text-green-600 border-gray-300 border rounded-sm" id="fertility_map" onchange="getDataSource('fertility', localStorage.getItem('kelurahan'))">
+                                    <label class="form-check-label text_all ml-2 mt-1" for="fertility_map">Jalur Pengairan</label>
+
+                                    <div class="form-check form-check-inline fertility_map_year mt-1 hidden">
+                                        <input type="radio" name="fertility_map_zone" value="year2021-color2021" class="form-check-input fertility_map_year w-3 h-3" disabled checked>
+                                        <label class="form-check-label text_all">Tahun 2021</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
 
                         <!-- Section Zonasi -->
                         <div class="grid grid-cols-1 gap-y-1 text-sm mt-2">
@@ -214,9 +231,15 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
 
 
-                                        <svg class=" text-white h-[18px]" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-dot" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                            <path class="" fill="currentColor" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"></path>
+
+                                        <svg class="text-white h-[18px]" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-map" viewBox="0 0 16 16">
+
+
+                                            <path fill-rule="evenodd" d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.5.5 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103M10 1.91l-4-.8v12.98l4 .8zm1 12.98 4-.8V1.11l-4 .8zm-6-.8V1.11l-4 .8v12.98z" />
                                         </svg>
+
+
+
                                     </button>
 
                                     {{-- --}}
@@ -237,9 +260,18 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                     <button style="outline:none !important;" class="inline-block h-10 w-10 flex justify-center items-center border border-blue-500 rounded-full" id="btn-3" data-tooltip-target="tooltip-no-arrow-3" data-tooltip-placement="bottom">
 
 
-                                        <svg class="text-[#007bff] h-[17px]" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="droplet" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                            <path class="" fill="currentColor" d="M192 512C86 512 0 426 0 320C0 228.8 130.2 57.7 166.6 11.7C172.6 4.2 181.5 0 191.1 0h1.8c9.6 0 18.5 4.2 24.5 11.7C253.8 57.7 384 228.8 384 320c0 106-86 192-192 192zM96 336c0-8.8-7.2-16-16-16s-16 7.2-16 16c0 61.9 50.1 112 112 112c8.8 0 16-7.2 16-16s-7.2-16-16-16c-44.2 0-80-35.8-80-80z"></path>
+
+
+
+                                        <svg class="text-[#007bff] h-[22px]" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-tags" viewBox="0 0 16 16">
+
+                                            <path d="M3 2v4.586l7 7L14.586 9l-7-7zM2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586z" />
+                                            <path d="M5.5 5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m0 1a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3M1 7.086a1 1 0 0 0 .293.707L8.75 15.25l-.043.043a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 0 7.586V3a1 1 0 0 1 1-1z" />
                                         </svg>
+
+
+
+
                                     </button>
                                     <div id="tooltip-no-arrow-3" role="tooltip" class="absolute z-10 invisible inline-block px-2 py-1 text-xs font-medium text-black bg-white border rounded-lg ">
                                         Harga Pasar
@@ -256,9 +288,13 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                     <button style="outline:none !important;" class="inline-block h-10 w-10 flex justify-center items-center border border-blue-500 rounded-full" id="btn-4" data-tooltip-target="tooltip-no-arrow-4" data-tooltip-placement="bottom">
 
 
-                                        <svg class="text-[#007bff] h-[17px]" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="crosshairs" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path class="" fill="currentColor" d="M256 0c17.7 0 32 14.3 32 32V42.4c93.7 13.9 167.7 88 181.6 181.6H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H469.6c-13.9 93.7-88 167.7-181.6 181.6V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V469.6C130.3 455.7 56.3 381.7 42.4 288H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H42.4C56.3 130.3 130.3 56.3 224 42.4V32c0-17.7 14.3-32 32-32zM107.4 288c12.5 58.3 58.4 104.1 116.6 116.6V384c0-17.7 14.3-32 32-32s32 14.3 32 32v20.6c58.3-12.5 104.1-58.4 116.6-116.6H384c-17.7 0-32-14.3-32-32s14.3-32 32-32h20.6C392.1 165.7 346.3 119.9 288 107.4V128c0 17.7-14.3 32-32 32s-32-14.3-32-32V107.4C165.7 119.9 119.9 165.7 107.4 224H128c17.7 0 32 14.3 32 32s-14.3 32-32 32H107.4zM256 224a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"></path>
+                                        <svg class="text-[#007bff] h-[20px]" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-safe2" viewBox="0 0 16 16">
+
+                                            <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h12A1.5 1.5 0 0 1 16 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-12A1.5 1.5 0 0 1 1 14.5V14H.5a.5.5 0 0 1 0-1H1V9H.5a.5.5 0 0 1 0-1H1V4H.5a.5.5 0 0 1 0-1H1zM2.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h12a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5z" />
+                                            <path d="M5.035 8h1.528q.072-.277.214-.516l-1.08-1.08A3.5 3.5 0 0 0 5.035 8m1.369-2.303 1.08 1.08q.24-.142.516-.214V5.035a3.5 3.5 0 0 0-1.596.662M9 5.035v1.528q.277.072.516.214l1.08-1.08A3.5 3.5 0 0 0 9 5.035m2.303 1.369-1.08 1.08q.142.24.214.516h1.528a3.5 3.5 0 0 0-.662-1.596M11.965 9h-1.528q-.072.277-.214.516l1.08 1.08A3.5 3.5 0 0 0 11.965 9m-1.369 2.303-1.08-1.08q-.24.142-.516.214v1.528a3.5 3.5 0 0 0 1.596-.662M8 11.965v-1.528a2 2 0 0 1-.516-.214l-1.08 1.08A3.5 3.5 0 0 0 8 11.965m-2.303-1.369 1.08-1.08A2 2 0 0 1 6.563 9H5.035c.085.593.319 1.138.662 1.596M4 8.5a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0m4.5-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2" />
                                         </svg>
+
+
                                     </button>
                                     <div id="tooltip-no-arrow-4" role="tooltip" class="absolute z-10 invisible inline-block px-2 py-1 text-xs font-medium text-black bg-white border rounded-lg ">
                                         Saldo Lumbung
@@ -273,9 +309,13 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                     <button style="outline:none !important;" class="inline-block h-10 w-10 flex justify-center items-center border border-blue-500 rounded-full" id="btn-2" data-tooltip-target="tooltip-no-arrow-2" data-tooltip-placement="bottom">
 
 
-                                        <svg class="text-[#007bff] h-[17px]" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                            <path class="" fill="currentColor" d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"></path>
+
+
+                                        <svg class="text-[#007bff] h-[21px]" xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-cloud-drizzle" viewBox="0 0 16 16">
+                                            <path d="M4.158 12.025a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 0 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317m6 0a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 0 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317m-3.5 1.5a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 0 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317m6 0a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 1 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317m.747-8.498a5.001 5.001 0 0 0-9.499-1.004A3.5 3.5 0 1 0 3.5 11H13a3 3 0 0 0 .405-5.973M8.5 2a4 4 0 0 1 3.976 3.555.5.5 0 0 0 .5.445H13a2 2 0 0 1 0 4H3.5a2.5 2.5 0 1 1 .605-4.926.5.5 0 0 0 .596-.329A4 4 0 0 1 8.5 2" />
                                         </svg>
+
+
                                     </button>
 
                                     {{-- --}}
@@ -295,9 +335,18 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                     <button style="outline:none !important;" class="inline-block h-10 w-10 flex justify-center items-center border border-blue-500 rounded-full" id="btn-5" data-tooltip-target="tooltip-no-arrow-5" data-tooltip-placement="bottom">
 
 
-                                        <svg class="text-[#007bff] h-[17px]" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                        {{-- <svg class="text-[#007bff] h-[17px]" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                                             <path class="" fill="currentColor" d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"></path>
+                                        </svg> --}}
+
+
+                                        <svg class="text-[#007bff] h-[25px]" xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-flower3" viewBox="0 0 16 16">
+
+                                            <path d="M11.424 8c.437-.052.811-.136 1.04-.268a2 2 0 0 0-2-3.464c-.229.132-.489.414-.752.767C9.886 4.63 10 4.264 10 4a2 2 0 1 0-4 0c0 .264.114.63.288 1.035-.263-.353-.523-.635-.752-.767a2 2 0 0 0-2 3.464c.229.132.603.216 1.04.268-.437.052-.811.136-1.04.268a2 2 0 1 0 2 3.464c.229-.132.489-.414.752-.767C6.114 11.37 6 11.736 6 12a2 2 0 1 0 4 0c0-.264-.114-.63-.288-1.035.263.353.523.635.752.767a2 2 0 1 0 2-3.464c-.229-.132-.603-.216-1.04-.268M9 4a2 2 0 0 1-.045.205q-.059.2-.183.484a13 13 0 0 1-.637 1.223L8 6.142l-.135-.23a13 13 0 0 1-.637-1.223 4 4 0 0 1-.183-.484A2 2 0 0 1 7 4a1 1 0 1 1 2 0M3.67 5.5a1 1 0 0 1 1.366-.366 2 2 0 0 1 .156.142q.142.15.326.4c.245.333.502.747.742 1.163l.13.232-.265.002a13 13 0 0 1-1.379-.06 4 4 0 0 1-.51-.083 2 2 0 0 1-.2-.064A1 1 0 0 1 3.67 5.5m1.366 5.366a1 1 0 0 1-1-1.732l.047-.02q.055-.02.153-.044.202-.048.51-.083a13 13 0 0 1 1.379-.06q.135 0 .266.002l-.131.232c-.24.416-.497.83-.742 1.163a4 4 0 0 1-.327.4 2 2 0 0 1-.155.142M9 12a1 1 0 0 1-2 0 2 2 0 0 1 .045-.206q.058-.198.183-.483c.166-.378.396-.808.637-1.223L8 9.858l.135.23c.241.415.47.845.637 1.223q.124.285.183.484A1.3 1.3 0 0 1 9 12m3.33-6.5a1 1 0 0 1-.366 1.366 2 2 0 0 1-.2.064q-.202.048-.51.083c-.412.045-.898.061-1.379.06q-.135 0-.266-.002l.131-.232c.24-.416.497-.83.742-1.163a4 4 0 0 1 .327-.4q.07-.074.114-.11l.041-.032a1 1 0 0 1 1.366.366m-1.366 5.366a2 2 0 0 1-.155-.141 4 4 0 0 1-.327-.4A13 13 0 0 1 9.74 9.16l-.13-.232.265-.002c.48-.001.967.015 1.379.06q.308.035.51.083.098.024.153.044l.048.02a1 1 0 1 1-1 1.732zM8 9a1 1 0 1 1 0-2 1 1 0 0 1 0 2" />
                                         </svg>
+
+
+
                                     </button>
 
                                     {{-- --}}
@@ -393,7 +442,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             <!-- Konten Kedua -->
                             <div class="hidden text-sm" id="content-2">
                                 <div class="w-full h-[30vh]">
-                                    <div class="text-xs text-gray-500 mt-3 mb-2">Periode 19 - 26 Maret 2024</div>
+                                    <div class="text-md text-black flex justify-center mt-3 mb-2">Periode 19 - 26 Maret 2024</div>
 
 
                                     <img src="{{ asset('assets/perkiraan_cuaca.png') }}" alt="" class="w-full h-full object-contain">
@@ -416,7 +465,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                                 <span id="thumb" class="bg-white h-4 w-4 absolute top-0 -ml-1 -mt-1 z-10 border rounded-full cursor-pointer"></span>
                                                 <span id="progress" class="bg-teal-500 h-2 absolute left-0 top-0 rounded-full" style="width:0 km;"></span>
                                             </div>
-                                            <div class="flex justify-between mt-2.5 text-xs text-gray-600">
+                                            <div class="flex justify-between mt-2.5 text-xs text-black">
                                                 <span class="clickable w-10 text-left" data-value="0">0 km</span>
                                                 <span class="clickable w-10 text-center" data-value="1">25 km</span>
                                                 <span class="clickable w-10 text-center" data-value="2">50 km</span>
@@ -427,8 +476,12 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                         {{-- --}}
                                         <div class="relative flex justify-center">
-                                            <div class="absolute -bottom-8 text-xs text-gray-500">Pembaruan Terakhir
-                                                Tanggal 19 Maret 2024</div>
+                                            <div class="absolute -bottom-[3.5rem] text-md text-black flex flex-col ">
+                                                <div class="w-full flex justify-center">Pembaruan Terakhir</div>
+                                                <div class="w-full flex justify-center">Tanggal 19 Maret 2024</div>
+
+
+                                            </div>
                                         </div>
 
 
@@ -441,7 +494,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
 
                                 {{-- --}}
-                                <div class="grid grid-cols-1 mt-[3.6rem] radius1">
+                                <div class="grid grid-cols-1 mt-[5rem] radius1">
 
                                     <h5 class="mt-2 mb-1 font-bold text-md text-left">Pasar Induk Terminal Kota Subang</h5>
 
@@ -547,49 +600,10 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                             <!-- Konten Keempat -->
                             <div class="hidden text-sm" id="content-4">
-                                <h5 class="mt-3 mb-3.5 font-bold text-md text-center">Saldo Lumbung</h5>
 
-                                <canvas class="" id="myChart3"></canvas>
-
-                                <div class="flex flex-col mt-3.5">
+                                <canvas class="mt-3" id="myChart3"></canvas>
 
 
-                                    <div class="grid grid-cols-2 mt-2">
-                                        <div class="">Beras Cianjur Kepala</div>
-
-                                        <div class="inf-luasarea">17 Ton</div>
-                                    </div>
-
-
-                                    <div class="grid grid-cols-2 mt-2">
-                                        <div class="">
-                                            Beras Setra
-
-                                        </div>
-                                        <div class="inf-kelurahan">12 Ton</div>
-                                    </div>
-
-                                    <div class="grid grid-cols-2 mt-2">
-                                        <div class="">Cabe Merah Keriting</div>
-
-                                        <div class="inf-kecamatan">15 Ton</div>
-                                    </div>
-
-                                    <div class="grid grid-cols-2 mt-2">
-                                        <div class="">
-                                            Cabe Rawit Merah</div>
-
-                                        <div class="inf-kota">14 Ton</div>
-                                    </div>
-
-                                    <div class="grid grid-cols-2 mt-2">
-                                        <div class="">
-                                            Bawang Merah</div>
-
-
-                                        <div class="inf-kota">18 Ton</div>
-                                    </div>
-                                </div>
 
 
 
@@ -603,7 +617,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                             <!-- Konten Keempat -->
                             <div class="hidden text-sm" id="content-5">
-                                <h5 class="mt-3 mb-3.5 font-bold text-md text-center">Saldo Lumbung</h5>
+                                {{-- <h5 class="mt-3 mb-3.5 font-bold text-md text-center">Distribusi Pupuk</h5> --}}
                             </div>
 
 

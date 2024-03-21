@@ -3001,7 +3001,7 @@ map.on("mousemove", "urban_fill", (e) => {
 
                                             <div class="flex flex-col  mr-2.5">
 
-                                                <div class="font-semibold">Luas m<sup>2</sup></div>
+                                                <div class="font-semibold">Luas (m<sup>2</sup>)</div>
 
                                                 <div>3.000</div>
                                             </div>
