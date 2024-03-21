@@ -357,48 +357,177 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             <div class="hidden text-sm" id="content-3">
 
                                 <div class="relative">
-
-                                    <div class="px-6 w-full mt-5">
-                                        <input type="range" id="slider" class="w-full opacity-0 absolute" style="z-index: 20; height: 2rem; cursor: pointer;" min="0" max="4" step="1">
+                                    <div class="px-0 w-full mt-[3.5rem]">
+                                        <input type="range" id="slider-pindes" class="w-full opacity-0 absolute" style="z-index: 20; height: 2rem; cursor: pointer;" min="0" max="4" step="1">
                                         <div class="bg-gray-300 h-2 w-full rounded-full relative mt-[-2rem]">
-                                            <span id="thumb" class="bg-white h-4 w-4 absolute top-0 -ml-2 -mt-1 z-10 shadow rounded-full cursor-pointer"></span>
-                                            <span id="progress" class="bg-teal-500 h-2 absolute left-0 top-0 rounded-full" style="width:0%;"></span>
+                                            <span id="thumb" class="bg-white h-4 w-4 absolute top-0 -ml-1 -mt-1 z-10 border rounded-full cursor-pointer"></span>
+                                            <span id="progress" class="bg-teal-500 h-2 absolute left-0 top-0 rounded-full" style="width:0 Km;"></span>
                                         </div>
-                                        <div class="flex justify-between mt-2 text-xs text-gray-600">
-                                            <span class="clickable w-8 text-left" data-value="0">0%</span>
-                                            <span class="clickable w-8 text-center" data-value="1">25%</span>
-                                            <span class="clickable w-8 text-center" data-value="2">50%</span>
-                                            <span class="clickable w-8 text-center" data-value="3">75%</span>
-                                            <span class="clickable w-8 text-right" data-value="4">100%</span>
+                                        <div class="flex justify-between mt-2.5 text-xs text-gray-600">
+                                            <span class="clickable w-10 text-left" data-value="0">0 Km</span>
+                                            <span class="clickable w-10 text-center" data-value="1">25 Km</span>
+                                            <span class="clickable w-10 text-center" data-value="2">50 Km</span>
+                                            <span class="clickable w-10 text-center" data-value="3">75 Km</span>
+                                            <span class="clickable w-12 text-right" data-value="4">100 Km</span>
                                         </div>
                                     </div>
-
-
-
-
-
                                 </div>
 
 
+                                {{-- --}}
+                                <div class="grid grid-cols-1 mt-3 radius1">
+
+                                    <h5 class="mt-2 mb-1 font-bold text-md text-left">Pasar Induk Terminal Kota Subang</h5>
+
+                                    <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="">Beras Cianjur Kepala</div>
+                                        <div class=" text-right">Rp 19.825</div>
+                                    </div>
+                                    <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="">Beras Cianjur Slyp</div>
+                                        <div class=" text-right">Rp 18.333</div>
+                                    </div>
+                                    <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="">Beras Setra</div>
+                                        <div class=" text-right">Rp 16.786</div>
+                                    </div>
+                                    <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="">Beras Saigon</div>
+                                        <div class=" text-right">Rp 16.070</div>
+                                    </div>
+                                    <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="">Beras Muncul 1</div>
+                                        <div class=" text-right">Rp 15.900</div>
+                                    </div>
+                                    <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="">Beras Muncul 2</div>
+                                        <div class=" text-right">Rp 15.333</div>
+                                    </div>
+                                    <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="">Beras Muncul 3</div>
+                                        <div class=" text-right">Rp 14.500</div>
+                                    </div>
+
+
+                                    {{-- --}}
+                                </div>
+
+                                <div class="grid grid-cols-1 mt-3 radius2">
+                                    <h5 class="mt-1 mb-1 font-bold text-md text-left">Pasar Induk Johar Karawang</h5>
+                                    <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="">Beras Cianjur Kepala</div>
+                                        <div class="text-right">Rp 19.825</div>
+                                    </div>
+                                    <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="">Beras Cianjur Slyp</div>
+                                        <div class="text-right">Rp 18.333</div>
+                                    </div>
+                                    <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="">Beras Setra</div>
+                                        <div class="text-right">Rp 16.786</div>
+                                    </div>
+                                    <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="">Beras Saigon</div>
+                                        <div class="text-right">Rp 16.070</div>
+                                    </div>
+                                    <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="">Beras Muncul 1</div>
+                                        <div class="text-right">Rp 15.900</div>
+                                    </div>
+                                    <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="">Beras Muncul 2</div>
+                                        <div class="text-right">Rp 15.333</div>
+                                    </div>
+                                    <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="">Beras Muncul 3</div>
+                                        <div class="text-right">Rp 14.500</div>
+                                    </div>
+                                </div>
+
+
+                                <div class="grid grid-cols-1 mt-3 radius3">
+                                    <h5 class="mt-1 mb-1 font-bold text-md text-left">Pasar Induk Cianjur</h5>
+                                    <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="">Beras Cianjur Kepala</div>
+                                        <div class="text-right">Rp 19.825</div>
+                                    </div>
+                                    <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="">Beras Cianjur Slyp</div>
+                                        <div class="text-right">Rp 18.333</div>
+                                    </div>
+                                    <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="">Beras Setra</div>
+                                        <div class="text-right">Rp 16.786</div>
+                                    </div>
+                                    <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="">Beras Saigon</div>
+                                        <div class="text-right">Rp 16.070</div>
+                                    </div>
+                                    <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="">Beras Muncul 1</div>
+                                        <div class="text-right">Rp 15.900</div>
+                                    </div>
+                                    <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="">Beras Muncul 2</div>
+                                        <div class="text-right">Rp 15.333</div>
+                                    </div>
+                                    <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="">Beras Muncul 3</div>
+                                        <div class="text-right">Rp 14.500</div>
+                                    </div>
+                                </div>
 
                             </div>
 
                             <!-- Konten Keempat -->
                             <div class="hidden text-sm" id="content-4">
-                                <h5 class="mt-3 mb-1 font-bold text-md text-center">Stok Lumbung</h5>
-                                <div class="grid grid-cols-2 mt-2">
-                                    <div class="">Stok Gabah</div>
-                                    <div class="inf-luasarea">55.747 kg</div>
+                                <h5 class="mt-3 mb-3.5 font-bold text-md text-center">Saldo Lumbung</h5>
 
+                                <div class="flex flex-col">
+
+                                    <div class="grid grid-cols-2 mt-2">
+                                        <div class="">Beras Cianjur Kepala</div>
+
+                                        <div class="inf-luasarea">17 Ton</div>
+                                    </div>
+
+
+                                    <div class="grid grid-cols-2 mt-2">
+                                        <div class="">
+                                            Beras Setra
+
+                                        </div>
+                                        <div class="inf-kelurahan">12 Ton</div>
+                                    </div>
+
+                                    <div class="grid grid-cols-2 mt-2">
+                                        <div class="">Cabe Merah Keriting</div>
+
+                                        <div class="inf-kecamatan">15 Ton</div>
+                                    </div>
+
+                                    <div class="grid grid-cols-2 mt-2">
+                                        <div class="">
+                                            Cabe Rawit Merah</div>
+
+                                        <div class="inf-kota">14 Ton</div>
+                                    </div>
+
+                                    <div class="grid grid-cols-2 mt-2">
+                                        <div class="">
+                                            Bawang Merah</div>
+
+
+                                        <div class="inf-kota">18 Ton</div>
+                                    </div>
                                 </div>
 
+                                <canvas class="mt-3.5" id="myChart3"></canvas>
 
-                                <div class="grid grid-cols-2 mt-2">
-                                    <div class="">Stok beras</div>
 
-                                    <div class="inf-kelurahan"> 31.235 kg</div>
 
-                                </div>
+
+
 
 
                             </div>
@@ -9972,17 +10101,38 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
 
     <script>
-        document.getElementById('slider').addEventListener('input', updateSlider);
+        document.getElementById('slider-pindes').addEventListener('input', updateSlider);
 
         function updateSlider() {
-            const slider = document.getElementById('slider');
+            const slider = document.getElementById('slider-pindes');
+            const value = parseInt(slider.value, 10); // Mengonversi nilai slider ke integer
+
+            // Mengambil referensi ke setiap elemen radius
+            const radius1 = document.querySelector('.radius1');
+            const radius2 = document.querySelector('.radius2');
+            const radius3 = document.querySelector('.radius3');
+
+            // Menyembunyikan semua elemen radius terlebih dahulu
+            radius1.style.display = 'none';
+            radius2.style.display = 'none';
+            radius3.style.display = 'none';
+
+            // Menampilkan elemen berdasarkan nilai slider
+            if (value >= 0) {
+                radius1.style.display = 'block'; // Selalu tampilkan radius1
+            }
+            if (value >= 2) {
+                radius2.style.display = 'block'; // Tampilkan radius2 ketika slider ≥ 50km
+            }
+            if (value == 4) {
+                radius3.style.display = 'block'; // Tampilkan radius3 hanya ketika slider = 100km
+            }
+
+            // Memperbarui lebar progress dan posisi thumb
             const progressPercentages = [0, 25, 50, 75, 100];
-            const value = slider.value;
+            const percentage = progressPercentages[value];
             const progress = document.getElementById('progress');
             const thumb = document.getElementById('thumb');
-
-            // Menentukan lebar progress dan posisi thumb berdasarkan persentase yang sesuai
-            const percentage = progressPercentages[value];
             progress.style.width = percentage + '%';
             thumb.style.left = `calc(${percentage}% - ${thumb.offsetWidth / 2}px)`;
         }
@@ -9990,13 +10140,99 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
         // Menambahkan event listener pada setiap elemen span untuk mengatur nilai slider
         document.querySelectorAll('.clickable').forEach(span => {
             span.addEventListener('click', function() {
-                const slider = document.getElementById('slider');
+                const slider = document.getElementById('slider-pindes');
                 slider.value = this.getAttribute('data-value');
                 updateSlider();
             });
         });
 
+        // Memicu pembaruan slider saat halaman dimuat untuk menetapkan kondisi awal
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.getElementById('slider-pindes').value = 0; // Menetapkan nilai awal slider
+            updateSlider(); // Memperbarui slider untuk mencerminkan kondisi awal
+        });
+
     </script>
+
+
+    <script>
+        var ctx = document.getElementById('myChart3').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'line'
+            , data: {
+                labels: ["Jan", "Feb", "Mar", "Apr", "Mei"], // Label pada sumbu X tetap sama, mewakili bulan
+                datasets: [{
+                    data: [86, 114, 106, 106, 107], // Misalnya, data untuk Beras Cianjur Kepala
+                    label: "Beras Cianjur Kepala"
+                    , borderColor: "#DAA520"
+                    , backgroundColor: "transparent"
+                    , borderWidth: 1
+                    , pointRadius: 2
+                }, {
+                    data: [70, 90, 44, 60, 83], // Misalnya, data untuk Beras Setra
+                    label: "Beras Setra"
+                    , borderColor: "#FF0000"
+                    , backgroundColor: "transparent"
+                    , borderWidth: 1
+                    , pointRadius: 2
+                }, {
+                    data: [10, 21, 60, 44, 17], // Misalnya, data untuk Cabe Merah Keriting
+                    label: "Cabe Merah Keriting"
+                    , borderColor: "#9400D3"
+                    , backgroundColor: "transparent"
+                    , borderWidth: 1
+                    , pointRadius: 2
+                }, {
+                    data: [111, 133, 70, 90, 100], // Misalnya, data untuk Cabe Rawit Merah
+                    label: "Cabe Rawit Merah"
+                    , borderColor: "#3e95cd"
+                    , backgroundColor: "transparent"
+                    , borderWidth: 1
+                    , pointRadius: 2
+                }, {
+                    data: [60, 44, 17, 21, 17], // Misalnya, data untuk Bawang Merah
+                    label: "Bawang Merah"
+                    , borderColor: "#8e5ea2"
+                    , backgroundColor: "transparent"
+                    , borderWidth: 1
+                    , pointRadius: 2
+                }]
+            }
+            , options: {
+                scales: {
+                    y: {
+                        display: true
+                        , beginAtZero: true
+                        , ticks: {
+                            stepSize: 250
+                        }
+                        , title: {
+                            display: true
+                            , text: "Volume"
+                            , font: {
+                                size: 13
+                                , weight: "bold"
+                            , }
+                        }
+                    }
+                }
+                , legend: {
+                    labels: {
+                        fontSize: 10
+                    }
+                }
+            }
+        });
+
+    </script>
+
+
+
+
+
+
+
+
 
 
 
