@@ -130,7 +130,8 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                 <div class="inline-flex items-center">
                                     <input type="checkbox" class="h-3.5 w-3.5 form-check-input hapus_focus_checkbox focus:border focus:ring-0 focus:ring-offset-0 text-blue-600 border-gray-300 border rounded-sm" id="urban_fill" onchange="getDataSource('urban', localStorage.getItem('kelurahan'))">
 
-                                    <label class="form-check-label text_all ml-2 mt-1" for="transect_zone">Persil Sawah</label>
+                                    <label class="form-check-label text_all ml-2 mt-1" for="transect_zone">Peta Profitabilitas Desa</label>
+
 
                                     <div class="form-check form-check-inline urban_fill mt-1 hidden">
                                         <input type="radio" name="transect_zone" value="tp2021-color2021" class="form-check-input urban_fill w-3 h-3" disabled checked>
@@ -147,6 +148,22 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                         </div>
 
+                        <!-- Section Fertility Map -->
+                        <div class="grid grid-cols-1 gap-y-1 text-sm mt-2">
+                            <div class="flex items-center form-check fertility_map_zone mt-1">
+                                <div class="inline-flex items-center">
+                                    <input type="checkbox" class="h-3.5 w-3.5 form-check-input hapus_focus_checkbox focus:border focus:ring-0 focus:ring-offset-0 text-green-600 border-gray-300 border rounded-sm" id="fertility_map" onchange="getDataSource('fertility', localStorage.getItem('kelurahan'))">
+                                    <label class="form-check-label text_all ml-2 mt-1" for="fertility_map">Peta Kesuburan Lahan</label>
+
+                                    <div class="form-check form-check-inline fertility_map_year mt-1 hidden">
+                                        <input type="radio" name="fertility_map_zone" value="year2021-color2021" class="form-check-input fertility_map_year w-3 h-3" disabled checked>
+                                        <label class="form-check-label text_all">Tahun 2021</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
 
                         <!-- Section Zonasi -->
                         <div class="grid grid-cols-1 gap-y-1 text-sm mt-2">
@@ -162,21 +179,24 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             <div class="flex flex-row ml-[1.8vw]">
                                 <div class="w-full">
                                     <input id="perda-1" type="radio" value="Perda 1/2014" name="jenis-perda" class="w-3 h-3 text-blue-600 bg-gray-100 border-gray-300 focus:border-transparent focus:ring-0 hapus_focus_checkbox bg-white" />
-                                    <label for="perda-1" class="ms-2 text-black text-xs">30 Hari</label>
+                                    <label for="perda-1" class="ms-2 text-black text-xs">30 hari</label>
                                 </div>
                                 <div class="w-full">
                                     <input id="pergub-31" type="radio" value="Pergub 31/2022" name="jenis-perda" class="w-3 h-3 text-blue-600 bg-gray-100 border-gray-300 focus:border-transparent focus:ring-0 hapus_focus_checkbox bg-white" />
-                                    <label for="pergub-31" class="ms-2 text-black text-xs">90 Hari</label>
+                                    <label for="pergub-31" class="ms-2 text-black text-xs">90 hari</label>
                                 </div>
                                 {{-- --}}
                                 <div class="w-full">
                                     <input id="pergub-31" type="radio" value="Pergub 31/2022" name="jenis-perda" class="w-3 h-3 text-blue-600 bg-gray-100 border-gray-300 focus:border-transparent focus:ring-0 hapus_focus_checkbox bg-white" />
-                                    <label for="pergub-31" class="ms-2 text-black text-xs">180 Hari</label>
+                                    <label for="pergub-31" class="ms-2 text-black text-xs">180 hari</label>
                                 </div>
 
                                 {{-- --}}
                             </div>
                         </div>
+
+
+
 
 
                         <!--  -->
@@ -246,7 +266,6 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                 </div>
                             </div>
 
-                            {{-- BUtton Kelima --}}
 
                             <!-- Button Kedua -->
                             <div>
@@ -268,6 +287,29 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                 </div>
                             </div>
 
+                            {{-- BUtton Kelima --}}
+
+
+                            <div>
+                                <div class="flex justify-start items-center">
+                                    <button style="outline:none !important;" class="inline-block h-10 w-10 flex justify-center items-center border border-blue-500 rounded-full" id="btn-5" data-tooltip-target="tooltip-no-arrow-5" data-tooltip-placement="bottom">
+
+
+                                        <svg class="text-[#007bff] h-[17px]" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                            <path class="" fill="currentColor" d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"></path>
+                                        </svg>
+                                    </button>
+
+                                    {{-- --}}
+                                    <div id="tooltip-no-arrow-5" role="tooltip" class="absolute z-10 invisible inline-block px-2 py-1 text-xs font-medium text-black bg-white border rounded-lg ">
+                                        Distribusi Pupuk
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+
 
 
                         </div>
@@ -279,6 +321,11 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                 <div class="w-full h-full">
 
                                     <h5 class="mt-3 mb-3.5 font-bold text-md text-center">Lokasi</h5>
+
+                                    {{-- rt1 --}}
+
+
+
 
                                     <div class="grid grid-cols-2 mt-2">
                                         <div class="">Luas</div>
@@ -320,8 +367,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                     </div>
 
 
-                                    <h5 class="mt-4 font-bold text-md text-center">Komposisi Tanam</h5>
-
+                                    <h5 class="mt-4 font-bold text-md text-center">Distribusi Komoditi Tanam</h5>
 
 
                                     <canvas class="mt-2" id="produksiPertanian" width="400" height="200"></canvas>
@@ -347,6 +393,9 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             <!-- Konten Kedua -->
                             <div class="hidden text-sm" id="content-2">
                                 <div class="w-full h-[30vh]">
+                                    <div class="text-xs text-gray-500 mt-3 mb-2">Periode 19 - 26 Maret 2024</div>
+
+
                                     <img src="{{ asset('assets/perkiraan_cuaca.png') }}" alt="" class="w-full h-full object-contain">
 
                                 </div>
@@ -356,26 +405,43 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             <!-- Konten Ketiga -->
                             <div class="hidden text-sm" id="content-3">
 
-                                <div class="relative">
-                                    <div class="px-0 w-full mt-[3.5rem]">
-                                        <input type="range" id="slider-pindes" class="w-full opacity-0 absolute" style="z-index: 20; height: 2rem; cursor: pointer;" min="0" max="4" step="1">
-                                        <div class="bg-gray-300 h-2 w-full rounded-full relative mt-[-2rem]">
-                                            <span id="thumb" class="bg-white h-4 w-4 absolute top-0 -ml-1 -mt-1 z-10 border rounded-full cursor-pointer"></span>
-                                            <span id="progress" class="bg-teal-500 h-2 absolute left-0 top-0 rounded-full" style="width:0 Km;"></span>
+                                <div class="flex flex-col mt-[3rem] relative">
+                                    <div class="relative flex flex-col">
+
+                                        <div class="font-semibold absolute -top-8">Jarak Radius</div>
+
+                                        <div class="px-0 w-full ">
+                                            <input type="range" id="slider-pindes" class="w-full opacity-0" style="z-index: 20; height: 2rem; cursor: pointer;" min="0" max="4" step="1">
+                                            <div class="bg-gray-300 h-2 w-full rounded-full relative mt-[-2rem]">
+                                                <span id="thumb" class="bg-white h-4 w-4 absolute top-0 -ml-1 -mt-1 z-10 border rounded-full cursor-pointer"></span>
+                                                <span id="progress" class="bg-teal-500 h-2 absolute left-0 top-0 rounded-full" style="width:0 km;"></span>
+                                            </div>
+                                            <div class="flex justify-between mt-2.5 text-xs text-gray-600">
+                                                <span class="clickable w-10 text-left" data-value="0">0 km</span>
+                                                <span class="clickable w-10 text-center" data-value="1">25 km</span>
+                                                <span class="clickable w-10 text-center" data-value="2">50 km</span>
+                                                <span class="clickable w-10 text-center" data-value="3">75 km</span>
+                                                <span class="clickable w-12 text-right" data-value="4">100 km</span>
+                                            </div>
                                         </div>
-                                        <div class="flex justify-between mt-2.5 text-xs text-gray-600">
-                                            <span class="clickable w-10 text-left" data-value="0">0 Km</span>
-                                            <span class="clickable w-10 text-center" data-value="1">25 Km</span>
-                                            <span class="clickable w-10 text-center" data-value="2">50 Km</span>
-                                            <span class="clickable w-10 text-center" data-value="3">75 Km</span>
-                                            <span class="clickable w-12 text-right" data-value="4">100 Km</span>
+
+                                        {{-- --}}
+                                        <div class="relative flex justify-center">
+                                            <div class="absolute -bottom-8 text-xs text-gray-500">Pembaruan Terakhir
+                                                Tanggal 19 Maret 2024</div>
                                         </div>
+
+
+
+
+                                        {{-- --}}
                                     </div>
                                 </div>
 
 
+
                                 {{-- --}}
-                                <div class="grid grid-cols-1 mt-3 radius1">
+                                <div class="grid grid-cols-1 mt-[3.6rem] radius1">
 
                                     <h5 class="mt-2 mb-1 font-bold text-md text-left">Pasar Induk Terminal Kota Subang</h5>
 
@@ -483,7 +549,10 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             <div class="hidden text-sm" id="content-4">
                                 <h5 class="mt-3 mb-3.5 font-bold text-md text-center">Saldo Lumbung</h5>
 
-                                <div class="flex flex-col">
+                                <canvas class="" id="myChart3"></canvas>
+
+                                <div class="flex flex-col mt-3.5">
+
 
                                     <div class="grid grid-cols-2 mt-2">
                                         <div class="">Beras Cianjur Kepala</div>
@@ -522,7 +591,6 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                     </div>
                                 </div>
 
-                                <canvas class="mt-3.5" id="myChart3"></canvas>
 
 
 
@@ -532,6 +600,11 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                             </div>
 
+
+                            <!-- Konten Keempat -->
+                            <div class="hidden text-sm" id="content-5">
+                                <h5 class="mt-3 mb-3.5 font-bold text-md text-center">Saldo Lumbung</h5>
+                            </div>
 
 
                         </div>
@@ -585,7 +658,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
 
                                         <div class="flex flex-col ml-1.5">
-                                            <div class="font-semibold mb-0.5">Komoditi</div>
+                                            <div class="font-semibold mb-0.5 text-center">Komoditi</div>
                                             {{-- --}}
                                             <div class="flex flex-col">
                                                 <div class="inline-flex items-center">
@@ -621,7 +694,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                         </div>
 
                                         <div class="flex flex-col ml-3.5">
-                                            <div class="font-semibold mb-0.5">Luas Lahan (m<sup>2</sup>)</div>
+                                            <div class="font-semibold mb-0.5 text-center">Luas Lahan (m<sup>2</sup>)</div>
 
                                             <div class="flex flex-col text-right">
                                                 <div>11,000</div>
@@ -634,7 +707,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                         </div>
                                         <div class="flex flex-col ml-3.5">
-                                            <div class="font-semibold mb-0.5">Perkiraan Panen (Ton)</div>
+                                            <div class="font-semibold mb-0.5 text-center">Perkiraan Panen (Ton)</div>
 
                                             <div class="flex flex-col text-center">
                                                 <div>17</div>
@@ -646,7 +719,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                             {{-- --}}
                                         </div>
                                         <div class="flex flex-col ml-3.5">
-                                            <div class="font-semibold mb-0.5">Harga Pasar (Rp)</div>
+                                            <div class="font-semibold mb-0.5 text-center">Harga Pasar (Rp)</div>
                                             <div class="flex flex-col text-right">
                                                 <div>25,500</div>
                                                 <div>27,500</div>
@@ -658,7 +731,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                         </div>
                                         <div class="flex flex-col ml-3.5">
-                                            <div class="font-semibold mb-0.5">Total</div>
+                                            <div class="font-semibold mb-0.5 text-center">Total</div>
 
 
                                             <div class="flex flex-col text-right">

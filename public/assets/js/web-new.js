@@ -2986,22 +2986,91 @@ map.on("mousemove", "urban_fill", (e) => {
     ) {
         content = `<div class="card">
 
-<div class="card-body w-[20vw] p-3">
-    <div style="line-height: 1.2;">
-        <span class="d-block font-weight-bold">Luas</span>
-        <span class="d-block">3000 m<sup>2</sup></span><br>
-        <span class="d-block font-weight-bold">PH</span>
-        <span class="d-block">6.3</span><br>
-        <span class="d-block font-weight-bold">Tanaman</span>
-        <span class="d-block">Beras</span><br>
-        <span class="d-block font-weight-bold">Mulai Tanam</span>
-        <span class="d-block">3 Februari 2024</span><br>
-        <span class="d-block font-weight-bold">Perkiraan Panen</span>
-        <span class="d-block">10 ton</span><br>
-        <span class="d-block font-weight-bold">Pemilik</span>
-        <span class="d-block">Kasdi</span>
-    </div>
-</div>
+         <div class="card-body w-[35vw] grid grid-cols-[270px,1fr] text-xs" style="padding: 0.7rem 0.7rem 0.2rem 0.7rem!important;">
+                                        <div class="grid grid-cols-2 mr-2">
+
+                                            <div class="flex flex-col mb-1 mr-2.5">
+                                                <div class="font-semibold">Pemilik</div>
+                                                <div>Kasdi</div>
+                                            </div>
+                                            <div class="flex flex-col mb-1 mr-2.5">
+
+                                                <div class="font-semibold">Periode Tanam</div>
+                                                <div>1 Maret - 30 Juni 2024</div>
+                                            </div>
+
+                                            <div class="flex flex-col  mr-2.5">
+
+                                                <div class="font-semibold">Luas m<sup>2</sup></div>
+
+                                                <div>3.000</div>
+                                            </div>
+                                            <div class="flex flex-col mr-2.5">
+
+                                                <div class="font-semibold">Tahap Tanam</div>
+                                                <div class="inline-flex items-center">
+
+
+                                                <img src=/assets/check.png alt="" class="w-2.5 h-2.5 object-contain mr-1">
+
+                                                Pembajakan</div>
+
+                                                    <div class="inline-flex items-center">
+
+
+                                                <img src=/assets/check.png alt="" class="w-2.5 h-2.5 object-contain mr-1">
+
+                                                Pembenihan</div>
+
+                                            </div>
+
+                                            <div class="flex flex-col mb-1 mr-2.5">
+
+                                                <div class="font-semibold">pH</div>
+
+                                                <div>6.3</div>
+                                            </div>
+                                            <div class="flex flex-col mb-1 mr-2.5">
+
+                                                <div class="inline-flex items-center">
+
+
+                                                <img src=/assets/check.png alt="" class="w-2.5 h-2.5 object-contain mr-1">
+
+                                                Pembajakan 1</div>
+
+                                                <div>Pemupukan 2</div>
+                                                <div>Pemupukan 3</div>
+                                            </div>
+
+
+                                            <div class="mb-1 mr-2.5 font-semibold">Komoditi Tanam</div>
+                                            <div class="mb-1 mr-2.5"></div>
+
+                                            <div class="flex flex-col mb-1 mr-2.5">
+                                                <div class="">Beras Setra</div>
+                                            </div>
+                                            <div class="flex flex-col mb-1 mr-2.5">
+
+                                                <div class="font-semibold">Perkiraan Panen</div>
+                                                <div>7.000 kg</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="w-full flex flex-col">
+
+                                            <div class="w-full flex justify-center">
+                                                <img src=/assets/tanam_padi.png alt="" class="w-full h-full object-contain">
+
+
+                                            </div>
+
+
+                                        </div>
+
+       </div>
+
+
 
         `;
     } else if (
@@ -3040,7 +3109,7 @@ map.on("mousemove", "urban_fill", (e) => {
 map.on("mouseleave", "urban_fill", () => {
     map.getCanvas().style.cursor = "";
 
-    popup.remove();
+    // popup.remove();
 });
 
 // Interaction Layer Sarana Prasarana
