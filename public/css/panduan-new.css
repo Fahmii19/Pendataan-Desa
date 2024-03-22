@@ -913,6 +913,18 @@ video {
 .mt-auto {
   margin-top: auto;
 }
+.mb-\[2vh\] {
+  margin-bottom: 2vh;
+}
+.mb-\[2\.8vh\] {
+  margin-bottom: 2.8vh;
+}
+.mt-\[2rem\] {
+  margin-top: 2rem;
+}
+.mt-\[1\.2rem\] {
+  margin-top: 1.2rem;
+}
 .block {
   display: block;
 }

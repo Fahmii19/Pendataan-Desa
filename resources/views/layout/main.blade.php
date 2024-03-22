@@ -108,7 +108,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                 <div class="w-full bg-white flex flex-col z-10 h-screen overflow-y-auto scrollbar">
 
                     <!-- logo -->
-                    <div class="w-full h-[14vh] mt-[4.5vh]">
+                    <div class="w-full h-[14vh] mt-[4.5vh] mb-[2.8vh]">
                         <div class="flex justify-center items-center -ml-[0.7vw]">
 
 
@@ -124,7 +124,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                         {{-- <div class="font-semibold text-sm mt-2">Peta Tematik</div> --}}
 
                         <!-- Section Transect Zone -->
-                        <div class="grid grid-cols-1 gap-y-1 text-sm mt-2">
+                        <div class="grid grid-cols-1 gap-y-1 text-sm">
 
                             <div class="flex items-center form-check transect_zone mt-1">
                                 <div class="inline-flex items-center">
@@ -149,7 +149,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                         </div>
 
                         <!-- Section Fertility Map -->
-                        <div class="grid grid-cols-1 gap-y-1 text-sm mt-2">
+                        <div class="grid grid-cols-1 gap-y-1 text-sm">
                             <div class="flex items-center form-check fertility_map_zone mt-1">
                                 <div class="inline-flex items-center">
                                     <input type="checkbox" class="h-3.5 w-3.5 form-check-input hapus_focus_checkbox focus:border focus:ring-0 focus:ring-offset-0 text-green-600 border-gray-300 border rounded-sm" id="fertility_map" onchange="getDataSource('fertility', localStorage.getItem('kelurahan'))">
@@ -165,7 +165,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
 
                         <!-- Section Fertility Map -->
-                        <div class="grid grid-cols-1 gap-y-1 text-sm mt-2">
+                        <div class="grid grid-cols-1 gap-y-1 text-sm">
                             <div class="flex items-center form-check fertility_map_zone mt-1">
                                 <div class="inline-flex items-center">
                                     <input type="checkbox" class="h-3.5 w-3.5 form-check-input hapus_focus_checkbox focus:border focus:ring-0 focus:ring-offset-0 text-green-600 border-gray-300 border rounded-sm" id="fertility_map" onchange="getDataSource('fertility', localStorage.getItem('kelurahan'))">
@@ -180,13 +180,11 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                         </div>
 
 
-
-
                         <!-- Section Zonasi -->
-                        <div class="grid grid-cols-1 gap-y-1 text-sm mt-2">
+                        <div class="grid grid-cols-1 gap-y-1 text-sm">
                             <div class="flex items-center form-check transect_zone mt-1">
                                 <div class="inline-flex items-center">
-                                    <input type="checkbox" class="h-3.5 w-3.5 form-check-input hapus_focus_checkbox focus:border focus:ring-0 focus:ring-offset-0 text-blue-600 border-gray-300 border rounded-sm" id="urban_fill" onchange="getDataSource('urban', localStorage.getItem('kelurahan'))">
+                                    <input type="checkbox" class="h-3.5 w-3.5 form-check-input hapus_focus_checkbox focus:border focus:ring-0 focus:ring-offset-0 text-blue-600 border-gray-300 border rounded-sm" id="prediksi_curah_hujan">
 
                                     <label class="form-check-label ml-2 mt-1" for="transect_zone">Prediksi Curah Hujan</label>
 
@@ -220,7 +218,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                     </div>
 
                     <!-- Button Grup Menu -->
-                    <div class="w-full px-4 mt-7 h-full flex flex-col ">
+                    <div class="w-full px-4 mt-[1.2rem] h-full flex flex-col ">
                         <div class="grid grid-cols-4 gap-y-7 pb-7 border-b">
 
                             <!-- Button Pertama -->
