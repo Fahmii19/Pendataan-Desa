@@ -3143,7 +3143,7 @@ map.on("mousemove", "urban_fill", (e) => {
 map.on("mouseleave", "urban_fill", () => {
     map.getCanvas().style.cursor = "";
 
-    // popup.remove();
+    popup.remove();
 });
 
 // Interaction Layer Sarana Prasarana

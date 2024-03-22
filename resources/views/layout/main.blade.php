@@ -410,63 +410,64 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                     {{-- byeeeee --}}
 
+                                    <div class="w-full flex flex-col text-sm text-black">
 
+                                        <div class="grid grid-cols-2 mt-2">
+                                            <div class="">Luas</div>
+                                            <div>3.792.700 m<sup>2</sup></div>
+                                        </div>
 
+                                        <div class="grid grid-cols-2 mt-2">
+                                            <div class="">Kelurahan</div>
+                                            <div>Cimeuhmal</div>
+                                        </div>
 
+                                        <div class="grid grid-cols-2 mt-2">
+                                            <div class="">Kategori IDM</div>
+                                            <div>Desa Mandiri</div>
+                                        </div>
 
-                                    {{-- --}}
+                                        <div class="grid grid-cols-2 mt-2">
+                                            <div class="">Kecamatan</div>
+                                            <div>Tanjungsiang</div>
+                                        </div>
 
-                                    <div class="grid grid-cols-2 mt-2">
-                                        <div class="">Luas</div>
-                                        <div>3.792.700 m<sup>2</sup></div>
+                                        <div class="grid grid-cols-2 mt-2">
+                                            <div class="">Kabupaten</div>
+                                            <div>Subang</div>
+                                        </div>
+
                                     </div>
 
 
-
-
-                                    <div class="grid grid-cols-2 mt-2">
-                                        <div class="">Kelurahan</div>
-                                        <div>Cimeuhmal</div>
-                                    </div>
-
-                                    <div class="grid grid-cols-2 mt-2">
-                                        <div class="">Kategori IDM</div>
-                                        <div>Desa Mandiri</div>
-
-                                    </div>
-
-
-                                    <div class="grid grid-cols-2 mt-2">
-                                        <div class="">Kecamatan</div>
-                                        <div>Tanjungsiang</div>
-                                    </div>
-
-                                    <div class="grid grid-cols-2 mt-2">
-                                        <div class="">Kabupaten</div>
-                                        <div>Subang</div>
-                                    </div>
 
 
                                     <h5 class="mt-4 mb-3.5 font-bold text-md text-center">Usaha Pertanian</h5>
 
-                                    <div class="grid grid-cols-2 mt-2">
-                                        <div class="">Luas Lahan</div>
-                                        <div>500.000 m<sup>2</sup></div>
+                                    <div class="w-full flex flex-col text-sm text-black">
+
+
+
+                                        <div class="grid grid-cols-2 mt-2">
+                                            <div class="">Luas Lahan</div>
+                                            <div>500.000 m<sup>2</sup></div>
+                                        </div>
+
+                                        <div class="grid grid-cols-2 mt-2">
+                                            <div class="">Jumlah Pemilik Lahan</div>
+                                            <div>10</div>
+                                        </div>
+
+                                        <div class="grid grid-cols-2 mt-2">
+                                            <div class="">Jumlah Penyewa Lahan</div>
+                                            <div>300</div>
+                                        </div>
+                                        <div class="grid grid-cols-2 mt-2">
+                                            <div class="">Jumlah Petani Penggarap</div>
+                                            <div>300</div>
+                                        </div>
                                     </div>
 
-                                    <div class="grid grid-cols-2 mt-2">
-                                        <div class="">Jumlah Pemilik Lahan</div>
-                                        <div>10</div>
-                                    </div>
-
-                                    <div class="grid grid-cols-2 mt-2">
-                                        <div class="">Jumlah Penyewa Lahan</div>
-                                        <div>300</div>
-                                    </div>
-                                    <div class="grid grid-cols-2 mt-2">
-                                        <div class="">Jumlah Petani Penggarap</div>
-                                        <div>300</div>
-                                    </div>
 
 
                                     <h5 class="mt-4 font-bold text-md text-center">Distribusi Komoditi Tanam</h5>
