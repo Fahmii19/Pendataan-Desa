@@ -130,12 +130,12 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                 <div class="inline-flex items-center">
                                     <input type="checkbox" class="h-3.5 w-3.5 form-check-input hapus_focus_checkbox focus:border focus:ring-0 focus:ring-offset-0 text-blue-600 border-gray-300 border rounded-sm" id="urban_fill" onchange="getDataSource('urban', localStorage.getItem('kelurahan'))">
 
-                                    <label class="form-check-label text_all ml-2 mt-1" for="transect_zone">Peta Profitabilitas Desa</label>
+                                    <label class="form-check-label ml-2 mt-1" for="transect_zone">Peta Profitabilitas Desa</label>
 
 
                                     <div class="form-check form-check-inline urban_fill mt-1 hidden">
                                         <input type="radio" name="transect_zone" value="tp2021-color2021" class="form-check-input urban_fill w-3 h-3" disabled checked>
-                                        <label class="form-check-label  text_all">Tahun 2021</label>
+                                        <label class="form-check-label ">Tahun 2021</label>
                                     </div>
 
 
@@ -153,11 +153,11 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             <div class="flex items-center form-check fertility_map_zone mt-1">
                                 <div class="inline-flex items-center">
                                     <input type="checkbox" class="h-3.5 w-3.5 form-check-input hapus_focus_checkbox focus:border focus:ring-0 focus:ring-offset-0 text-green-600 border-gray-300 border rounded-sm" id="fertility_map" onchange="getDataSource('fertility', localStorage.getItem('kelurahan'))">
-                                    <label class="form-check-label text_all ml-2 mt-1" for="fertility_map">Peta Kesuburan Lahan</label>
+                                    <label class="form-check-label  ml-2 mt-1" for="fertility_map">Peta Kesuburan Lahan</label>
 
                                     <div class="form-check form-check-inline fertility_map_year mt-1 hidden">
                                         <input type="radio" name="fertility_map_zone" value="year2021-color2021" class="form-check-input fertility_map_year w-3 h-3" disabled checked>
-                                        <label class="form-check-label text_all">Tahun 2021</label>
+                                        <label class="form-check-label ">Tahun 2021</label>
                                     </div>
                                 </div>
                             </div>
@@ -169,11 +169,11 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             <div class="flex items-center form-check fertility_map_zone mt-1">
                                 <div class="inline-flex items-center">
                                     <input type="checkbox" class="h-3.5 w-3.5 form-check-input hapus_focus_checkbox focus:border focus:ring-0 focus:ring-offset-0 text-green-600 border-gray-300 border rounded-sm" id="fertility_map" onchange="getDataSource('fertility', localStorage.getItem('kelurahan'))">
-                                    <label class="form-check-label text_all ml-2 mt-1" for="fertility_map">Jalur Pengairan</label>
+                                    <label class="form-check-label  ml-2 mt-1" for="fertility_map">Jalur Pengairan</label>
 
                                     <div class="form-check form-check-inline fertility_map_year mt-1 hidden">
                                         <input type="radio" name="fertility_map_zone" value="year2021-color2021" class="form-check-input fertility_map_year w-3 h-3" disabled checked>
-                                        <label class="form-check-label text_all">Tahun 2021</label>
+                                        <label class="form-check-label ">Tahun 2021</label>
                                     </div>
                                 </div>
                             </div>
@@ -188,7 +188,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                 <div class="inline-flex items-center">
                                     <input type="checkbox" class="h-3.5 w-3.5 form-check-input hapus_focus_checkbox focus:border focus:ring-0 focus:ring-offset-0 text-blue-600 border-gray-300 border rounded-sm" id="urban_fill" onchange="getDataSource('urban', localStorage.getItem('kelurahan'))">
 
-                                    <label class="form-check-label text_all ml-2 mt-1" for="transect_zone">Prediksi Curah Hujan</label>
+                                    <label class="form-check-label ml-2 mt-1" for="transect_zone">Prediksi Curah Hujan</label>
 
                                 </div>
                             </div>
@@ -196,16 +196,16 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             <div class="flex flex-row ml-[1.8vw]">
                                 <div class="w-full">
                                     <input id="perda-1" type="radio" value="Perda 1/2014" name="jenis-perda" class="w-3 h-3 text-blue-600 bg-gray-100 border-gray-300 focus:border-transparent focus:ring-0 hapus_focus_checkbox bg-white" />
-                                    <label for="perda-1" class="ms-2 text-black text-xs">30 hari</label>
+                                    <label for="perda-1" class="ms-2 text-sm">30 hari</label>
                                 </div>
                                 <div class="w-full">
                                     <input id="pergub-31" type="radio" value="Pergub 31/2022" name="jenis-perda" class="w-3 h-3 text-blue-600 bg-gray-100 border-gray-300 focus:border-transparent focus:ring-0 hapus_focus_checkbox bg-white" />
-                                    <label for="pergub-31" class="ms-2 text-black text-xs">90 hari</label>
+                                    <label for="pergub-31" class="ms-2 text-sm">90 hari</label>
                                 </div>
                                 {{-- --}}
                                 <div class="w-full">
                                     <input id="pergub-31" type="radio" value="Pergub 31/2022" name="jenis-perda" class="w-3 h-3 text-blue-600 bg-gray-100 border-gray-300 focus:border-transparent focus:ring-0 hapus_focus_checkbox bg-white" />
-                                    <label for="pergub-31" class="ms-2 text-black text-xs">180 hari</label>
+                                    <label for="pergub-31" class="ms-2 text-sm">180 hari</label>
                                 </div>
 
                                 {{-- --}}
@@ -263,11 +263,12 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
 
 
-                                        <svg class="text-[#007bff] h-[22px]" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-tags" viewBox="0 0 16 16">
 
-                                            <path d="M3 2v4.586l7 7L14.586 9l-7-7zM2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586z" />
-                                            <path d="M5.5 5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m0 1a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3M1 7.086a1 1 0 0 0 .293.707L8.75 15.25l-.043.043a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 0 7.586V3a1 1 0 0 1 1-1z" />
+                                        <svg class="text-[#007bff] h-[22px]" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-tags xmlns=" http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+
+                                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
                                         </svg>
+
 
 
 
@@ -351,7 +352,8 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                     {{-- --}}
                                     <div id="tooltip-no-arrow-5" role="tooltip" class="absolute z-10 invisible inline-block px-2 py-1 text-xs font-medium text-black bg-white border rounded-lg ">
-                                        Distribusi Pupuk
+                                        Persediaan Pupuk
+
                                     </div>
 
 
@@ -378,23 +380,23 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                     <div class="grid grid-cols-2 mt-2">
                                         <div class="">Luas</div>
-                                        <div class="inf-luasarea">3.792.700 m<sup>2</sup></div>
+                                        <div>3.792.700 m<sup>2</sup></div>
                                     </div>
 
 
                                     <div class="grid grid-cols-2 mt-2">
                                         <div class="">Kelurahan</div>
-                                        <div class="inf-kelurahan">Cimeuhmal</div>
+                                        <div>Cimeuhmal</div>
                                     </div>
 
                                     <div class="grid grid-cols-2 mt-2">
                                         <div class="">Kecamatan</div>
-                                        <div class="inf-kecamatan">Tanjungsiang</div>
+                                        <div>Tanjungsiang</div>
                                     </div>
 
                                     <div class="grid grid-cols-2 mt-2">
                                         <div class="">Kabupaten</div>
-                                        <div class="inf-kota">Subang</div>
+                                        <div>Subang</div>
                                     </div>
 
 
@@ -402,17 +404,17 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                     <div class="grid grid-cols-2 mt-2">
                                         <div class="">Luas Lahan</div>
-                                        <div class="inf-luasarea">500.000 m<sup>2</sup></div>
+                                        <div>500.000 m<sup>2</sup></div>
                                     </div>
 
                                     <div class="grid grid-cols-2 mt-2">
                                         <div class="">Jenis Pemilik Lahan</div>
-                                        <div class="inf-eksisting">10</div>
+                                        <div>10</div>
                                     </div>
 
                                     <div class="grid grid-cols-2 mt-2">
                                         <div class="">Jumlah Petani Penggarap</div>
-                                        <div class="inf-eksisting">300</div>
+                                        <div>300</div>
                                     </div>
 
 
@@ -10249,41 +10251,46 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
             , data: {
                 labels: ["Jan", "Feb", "Mar", "Apr", "Mei"], // Label pada sumbu X tetap sama, mewakili bulan
                 datasets: [{
-                    data: [86, 114, 106, 106, 107], // Misalnya, data untuk Beras Cianjur Kepala
-                    label: "Beras Cianjur Kepala"
-                    , borderColor: "#DAA520"
-                    , backgroundColor: "transparent"
-                    , borderWidth: 1
-                    , pointRadius: 2
-                }, {
-                    data: [70, 90, 44, 60, 83], // Misalnya, data untuk Beras Setra
-                    label: "Beras Setra"
-                    , borderColor: "#FF0000"
-                    , backgroundColor: "transparent"
-                    , borderWidth: 1
-                    , pointRadius: 2
-                }, {
-                    data: [10, 21, 60, 44, 17], // Misalnya, data untuk Cabe Merah Keriting
-                    label: "Cabe Merah Keriting"
-                    , borderColor: "#9400D3"
-                    , backgroundColor: "transparent"
-                    , borderWidth: 1
-                    , pointRadius: 2
-                }, {
-                    data: [111, 133, 70, 90, 100], // Misalnya, data untuk Cabe Rawit Merah
-                    label: "Cabe Rawit Merah"
-                    , borderColor: "#3e95cd"
-                    , backgroundColor: "transparent"
-                    , borderWidth: 1
-                    , pointRadius: 2
-                }, {
-                    data: [60, 44, 17, 21, 17], // Misalnya, data untuk Bawang Merah
-                    label: "Bawang Merah"
-                    , borderColor: "#8e5ea2"
-                    , backgroundColor: "transparent"
-                    , borderWidth: 1
-                    , pointRadius: 2
-                }]
+                        data: [86, 114, 106, 106, 107], // Misalnya, data untuk Beras Cianjur Kepala
+                        label: "Beras Cianjur Kepala"
+                        , borderColor: "#DAA520"
+                        , backgroundColor: "transparent"
+                        , borderWidth: 1
+                        , pointRadius: 2
+                    }, {
+                        data: [70, 90, 44, 60, 83], // Misalnya, data untuk Beras Setra
+                        label: "Beras Setra"
+                        , borderColor: "#FF0000"
+                        , backgroundColor: "transparent"
+                        , borderWidth: 1
+                        , pointRadius: 2
+                    },
+
+                    {
+                        data: [60, 44, 17, 21, 17], // Misalnya, data untuk Bawang Merah
+                        label: "Bawang Merah"
+                        , borderColor: "#8e5ea2"
+                        , backgroundColor: "transparent"
+                        , borderWidth: 1
+                        , pointRadius: 2
+                    },
+
+                    {
+                        data: [10, 21, 60, 44, 17], // Misalnya, data untuk Cabe Merah Keriting
+                        label: "Cabe Merah Keriting"
+                        , borderColor: "#9400D3"
+                        , backgroundColor: "transparent"
+                        , borderWidth: 1
+                        , pointRadius: 2
+                    }, {
+                        data: [111, 133, 70, 90, 100], // Misalnya, data untuk Cabe Rawit Merah
+                        label: "Cabe Rawit Merah"
+                        , borderColor: "#3e95cd"
+                        , backgroundColor: "transparent"
+                        , borderWidth: 1
+                        , pointRadius: 2
+                    }
+                ]
             }
             , options: {
                 scales: {
@@ -10302,13 +10309,27 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             , }
                         }
                     }
+                    , yAxes: [{
+                        ticks: {
+                            fontSize: 10
+                        }
+                    }]
+                    , xAxes: [{
+                        ticks: {
+                            fontSize: 10
+                        }
+                    }]
+
+
                 }
                 , legend: {
                     labels: {
+                        // Menyesuaikan ukuran font untuk legenda
                         fontSize: 10
                     }
                 }
             }
+
         });
 
     </script>

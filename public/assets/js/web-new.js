@@ -3039,22 +3039,21 @@ map.on("mousemove", "urban_fill", (e) => {
 
                                                 Pembajakan 1</div>
 
-                                                <div>Pemupukan 2</div>
-                                                <div>Pemupukan 3</div>
+                                                <div class="ml-[0.9rem]">Pemupukan 2</div>
+                                                <div class="ml-[0.9rem]">Pemupukan 3</div>
                                             </div>
 
-
-                                            <div class="mb-1 mr-2.5 font-semibold">Komoditi Tanam</div>
-                                            <div class="mb-1 mr-2.5"></div>
-
                                             <div class="flex flex-col mb-1 mr-2.5">
-                                                <div class="">Beras Setra</div>
+                                                <div class="font-semibold">Komoditi Tanam</div>
+                                                <div>Beras Setra</div>
                                             </div>
-                                            <div class="flex flex-col mb-1 mr-2.5">
 
+                                            <div class="flex flex-col mb-1 mr-2.5">
                                                 <div class="font-semibold">Perkiraan Panen</div>
                                                 <div>7.000 kg</div>
                                             </div>
+
+
                                         </div>
 
                                         <div class="w-full flex flex-col">
@@ -3109,7 +3108,7 @@ map.on("mousemove", "urban_fill", (e) => {
 map.on("mouseleave", "urban_fill", () => {
     map.getCanvas().style.cursor = "";
 
-    // popup.remove();
+    popup.remove();
 });
 
 // Interaction Layer Sarana Prasarana
