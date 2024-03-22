@@ -924,6 +924,12 @@ video {
 .mt-\[1\.2rem\] {
   margin-top: 1.2rem;
 }
+.ml-\[0\.9rem\] {
+  margin-left: 0.9rem;
+}
+.mr-2\.5 {
+  margin-right: 0.625rem;
+}
 .block {
   display: block;
 }
@@ -1527,6 +1533,10 @@ video {
 }
 .border-transparent {
   border-color: transparent;
+}
+.border-red-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
 }
 .bg-\[\#102037\] {
   --tw-bg-opacity: 1;

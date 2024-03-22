@@ -371,7 +371,9 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                     <h5 class="mt-3 mb-3.5 font-bold text-md text-center">Lokasi</h5>
 
+
                                     {{-- rt1 --}}
+
 
 
                                     {{-- --}}
