@@ -773,12 +773,11 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                 <div class="w-[19vw] h-[17.7vh] text-xs rounded-sm bg-white flex flex-col items-center pt-2">
 
                                     <div class="flex flex-col">
-                                        <div class="inline-flex items-center">
+                                        <div class="inline-flex items-center mb-[0.2rem]">
                                             <div class="w-2.5 h-2.5 bg-[#5C5C5C] rounded-xs mr-1"></div>
                                             <div> 0 mm/hari (abu-abu) : Berawan</div>
-
                                         </div>
-                                        <div class="inline-flex items-center">
+                                        <div class="inline-flex items-center mb-[0.2rem]">
                                             <div class="w-2.5 h-2.5 bg-[#C78E28] rounded-xs mr-1"></div>
 
 
@@ -788,17 +787,17 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                             </div>
                                         </div>
 
-                                        <div class="inline-flex items-center">
+                                        <div class="inline-flex items-center mb-[0.2rem]">
                                             <div class="w-2.5 h-2.5 bg-[#38A800] rounded-xs mr-1"></div>
                                             <div>20 – 50 mm/hari (kuning) : Hujan sedang</div>
 
                                         </div>
-                                        <div class="inline-flex items-center">
+                                        <div class="inline-flex items-center mb-[0.2rem]">
                                             <div class="w-2.5 h-2.5 bg-[#42A097] rounded-xs mr-1"></div>
                                             <div>50 – 100 mm/hari (oranye): Hujan lebat</div>
 
                                         </div>
-                                        <div class="inline-flex items-center">
+                                        <div class="inline-flex items-center mb-[0.2rem]">
                                             <div class="w-2.5 h-2.5 bg-[#46A042] rounded-xs mr-1"></div>
                                             <div>
                                                 100 – 150 mm/hari (merah) : Hujan sangat lebat
@@ -806,7 +805,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                             </div>
                                         </div>
 
-                                        <div class="inline-flex items-center">
+                                        <div class="inline-flex items-center mb-[0.2rem]">
                                             <div class="w-2.5 h-2.5 bg-[#46A042] rounded-xs mr-1"></div>
                                             <div>
                                                 >150 mm / hari (ungu) : Hujan ekstrem
