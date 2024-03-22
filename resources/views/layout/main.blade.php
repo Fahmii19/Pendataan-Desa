@@ -179,6 +179,21 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             </div>
                         </div>
 
+                        {{--Usia Tanaman  --}}
+                        <div class="grid grid-cols-1 gap-y-1 text-sm">
+                            <div class="flex items-center form-check fertility_map_zone mt-1">
+                                <div class="inline-flex items-center">
+                                    <input type="checkbox" class="h-3.5 w-3.5 form-check-input hapus_focus_checkbox focus:border focus:ring-0 focus:ring-offset-0 text-green-600 border-gray-300 border rounded-sm" id="fertility_map">
+                                    <label class="form-check-label  ml-2 mt-1" for="fertility_map">Peta Usia Tanaman</label>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
 
                         <!-- Section Zonasi -->
                         <div class="grid grid-cols-1 gap-y-1 text-sm">
@@ -219,7 +234,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                     <!-- Button Grup Menu -->
                     <div class="w-full px-4 mt-[1.2rem] h-full flex flex-col ">
-                        <div class="grid grid-cols-4 gap-y-7 pb-7 border-b">
+                        <div class="grid grid-cols-4 gap-y-7 py-4 border-b border-t">
 
                             <!-- Button Pertama -->
                             <div>
@@ -328,35 +343,54 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                             {{-- BUtton Kelima --}}
 
-
                             <div>
                                 <div class="flex justify-start items-center">
                                     <button style="outline:none !important;" class="inline-block h-10 w-10 flex justify-center items-center border border-blue-500 rounded-full" id="btn-5" data-tooltip-target="tooltip-no-arrow-5" data-tooltip-placement="bottom">
 
 
-                                        {{-- <svg class="text-[#007bff] h-[17px]" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                            <path class="" fill="currentColor" d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"></path>
-                                        </svg> --}}
-
-
-                                        <svg class="text-[#007bff] h-[25px]" xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-flower3" viewBox="0 0 16 16">
+                                        <svg class="text-[#007bff] h-[27px]" xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-flower3" viewBox="0 0 16 16">
 
                                             <path d="M11.424 8c.437-.052.811-.136 1.04-.268a2 2 0 0 0-2-3.464c-.229.132-.489.414-.752.767C9.886 4.63 10 4.264 10 4a2 2 0 1 0-4 0c0 .264.114.63.288 1.035-.263-.353-.523-.635-.752-.767a2 2 0 0 0-2 3.464c.229.132.603.216 1.04.268-.437.052-.811.136-1.04.268a2 2 0 1 0 2 3.464c.229-.132.489-.414.752-.767C6.114 11.37 6 11.736 6 12a2 2 0 1 0 4 0c0-.264-.114-.63-.288-1.035.263.353.523.635.752.767a2 2 0 1 0 2-3.464c-.229-.132-.603-.216-1.04-.268M9 4a2 2 0 0 1-.045.205q-.059.2-.183.484a13 13 0 0 1-.637 1.223L8 6.142l-.135-.23a13 13 0 0 1-.637-1.223 4 4 0 0 1-.183-.484A2 2 0 0 1 7 4a1 1 0 1 1 2 0M3.67 5.5a1 1 0 0 1 1.366-.366 2 2 0 0 1 .156.142q.142.15.326.4c.245.333.502.747.742 1.163l.13.232-.265.002a13 13 0 0 1-1.379-.06 4 4 0 0 1-.51-.083 2 2 0 0 1-.2-.064A1 1 0 0 1 3.67 5.5m1.366 5.366a1 1 0 0 1-1-1.732l.047-.02q.055-.02.153-.044.202-.048.51-.083a13 13 0 0 1 1.379-.06q.135 0 .266.002l-.131.232c-.24.416-.497.83-.742 1.163a4 4 0 0 1-.327.4 2 2 0 0 1-.155.142M9 12a1 1 0 0 1-2 0 2 2 0 0 1 .045-.206q.058-.198.183-.483c.166-.378.396-.808.637-1.223L8 9.858l.135.23c.241.415.47.845.637 1.223q.124.285.183.484A1.3 1.3 0 0 1 9 12m3.33-6.5a1 1 0 0 1-.366 1.366 2 2 0 0 1-.2.064q-.202.048-.51.083c-.412.045-.898.061-1.379.06q-.135 0-.266-.002l.131-.232c.24-.416.497-.83.742-1.163a4 4 0 0 1 .327-.4q.07-.074.114-.11l.041-.032a1 1 0 0 1 1.366.366m-1.366 5.366a2 2 0 0 1-.155-.141 4 4 0 0 1-.327-.4A13 13 0 0 1 9.74 9.16l-.13-.232.265-.002c.48-.001.967.015 1.379.06q.308.035.51.083.098.024.153.044l.048.02a1 1 0 1 1-1 1.732zM8 9a1 1 0 1 1 0-2 1 1 0 0 1 0 2" />
                                         </svg>
-
-
 
                                     </button>
 
                                     {{-- --}}
                                     <div id="tooltip-no-arrow-5" role="tooltip" class="absolute z-10 invisible inline-block px-2 py-1 text-xs font-medium text-black bg-white border rounded-lg ">
                                         Persediaan Pupuk
-
                                     </div>
 
 
                                 </div>
                             </div>
+
+                            {{-- Button Keenam --}}
+                            <div>
+                                <div class="flex justify-start items-center">
+                                    <button style="outline:none !important;" class="inline-block h-10 w-10 flex justify-center items-center border border-blue-500 rounded-full" id="btn-6" data-tooltip-target="tooltip-no-arrow-6" data-tooltip-placement="bottom">
+
+
+                                        <svg class="text-[#007bff] h-[22px]" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+
+                                            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73z" />
+                                        </svg>
+
+
+
+
+
+                                    </button>
+
+                                    {{-- --}}
+                                    <div id="tooltip-no-arrow-6" role="tooltip" class="absolute z-10 invisible inline-block px-2 py-1 text-xs font-medium text-black bg-white border rounded-lg ">
+                                        Finansial
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+
 
 
 
@@ -408,10 +442,14 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                     </div>
 
                                     <div class="grid grid-cols-2 mt-2">
-                                        <div class="">Jenis Pemilik Lahan</div>
+                                        <div class="">Jumlah Pemilik Lahan</div>
                                         <div>10</div>
                                     </div>
 
+                                    <div class="grid grid-cols-2 mt-2">
+                                        <div class="">Jumlah Penyewa Lahan</div>
+                                        <div>300</div>
+                                    </div>
                                     <div class="grid grid-cols-2 mt-2">
                                         <div class="">Jumlah Petani Penggarap</div>
                                         <div>300</div>
@@ -443,8 +481,11 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             </div>
                             <!-- Konten Kedua -->
                             <div class="hidden text-sm" id="content-2">
-                                <div class="w-full h-[30vh]">
-                                    <div class="text-md text-black flex justify-center mt-3 mb-2">Periode 19 - 26 Maret 2024</div>
+
+
+
+                                <div class="w-full h-[50vh] flex flex-col">
+                                    <div class="text-xs text-black flex justify-center mt-3 mb-2">Periode 19 - 26 Maret 2024</div>
 
 
                                     <img src="{{ asset('assets/perkiraan_cuaca.png') }}" alt="" class="w-full h-full object-contain">
@@ -478,7 +519,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                         {{-- --}}
                                         <div class="relative flex justify-center">
-                                            <div class="absolute -bottom-[3.5rem] text-md text-black flex flex-col ">
+                                            <div class="absolute -bottom-[3.5rem] text-xs text-black flex flex-col ">
                                                 <div class="w-full flex justify-center">Pembaruan Terakhir</div>
                                                 <div class="w-full flex justify-center">Tanggal 19 Maret 2024</div>
 
@@ -603,7 +644,10 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             <!-- Konten Keempat -->
                             <div class="hidden text-sm" id="content-4">
 
-                                <canvas class="mt-3" id="myChart3"></canvas>
+                                <div class="h-[50vh] flex flex-col">
+                                    <canvas class="mt-3" id="myChart3"></canvas>
+                                </div>
+
 
 
 
@@ -616,11 +660,24 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                             </div>
 
-
-                            <!-- Konten Keempat -->
+                            <!-- Konten Kelima -->
                             <div class="hidden text-sm" id="content-5">
+                                <div class="h-[50vh] flex flex-col "></div>
                                 {{-- <h5 class="mt-3 mb-3.5 font-bold text-md text-center">Distribusi Pupuk</h5> --}}
                             </div>
+
+
+                            <!-- Konten Keenam -->
+                            <div class="hidden text-sm" id="content-6">
+                                <div class="h-[50vh] flex flex-col ">
+
+                                    <h5 class="mt-3 mb-3.5 font-bold text-md text-center">Distribusi Pembiayaan</h5>
+
+
+
+                                </div>
+                            </div>
+
 
 
                         </div>
@@ -770,7 +827,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                 </div>
 
-                                <div class="w-[9vw] h-[17.7vh] text-xs rounded-sm bg-white flex flex-col items-center pt-2">
+                                <div class="w-[9vw] h-[17.7vh] text-xs rounded-sm bg-white flex flex-col items-center pt-2 mr-3">
 
                                     <div class="flex flex-col">
                                         <div class="inline-flex items-center mb-[0.2rem]">
@@ -819,6 +876,38 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
 
                                 </div>
+
+                                {{-- --}}
+                                <div class="w-[6vw] h-[17.7vh] text-xs rounded-sm bg-white flex flex-col items-center pt-2 mr-3">
+                                    <div class="flex flex-col">
+                                        <div class="inline-flex items-center mb-[0.2rem]">
+                                            <div class="w-2.5 h-2.5 bg-[#C8E6C9] rounded-xs mr-1"></div>
+                                            <div>0 - 1 bulan</div>
+                                        </div>
+                                        <div class="inline-flex items-center mb-[0.2rem]">
+                                            <div class="w-2.5 h-2.5 bg-[#A3D9A5] rounded-xs mr-1"></div>
+                                            <div>1 - 2 bulan</div>
+                                        </div>
+                                        <div class="inline-flex items-center mb-[0.2rem]">
+                                            <div class="w-2.5 h-2.5 bg-[#72C074] rounded-xs mr-1"></div>
+                                            <div>2 - 3 bulan</div>
+                                        </div>
+                                        <div class="inline-flex items-center mb-[0.2rem]">
+                                            <div class="w-2.5 h-2.5 bg-[#42A842] rounded-xs mr-1"></div>
+                                            <div>3 - 4 bulan</div>
+                                        </div>
+                                        <div class="inline-flex items-center mb-[0.2rem]">
+                                            <div class="w-2.5 h-2.5 bg-[#008A00] rounded-xs mr-1"></div>
+                                            <div>4 - 5 bulan</div>
+                                        </div>
+                                        <div class="inline-flex items-center mb-[0.2rem]">
+                                            <div class="w-2.5 h-2.5 bg-[#005700] rounded-xs mr-1"></div>
+                                            <div>5 - 6 bulan</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
 
 
 

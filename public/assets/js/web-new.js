@@ -2988,7 +2988,7 @@ map.on("mousemove", "urban_fill", (e) => {
 
         <div class="card-body w-[35vw] grid grid-cols-[270px,1fr] text-xs" style="padding: 0.7rem 0.7rem 0.2rem 0.7rem!important;">
 
-            <div class="grid grid-cols-2 mr-2">
+                                    <div class="grid grid-cols-2 mr-2">
 
                                         <div class="flex flex-col ">
 

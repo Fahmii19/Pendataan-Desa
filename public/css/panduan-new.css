@@ -1087,6 +1087,12 @@ video {
 .h-screen {
   height: 100vh;
 }
+.h-\[50vh\] {
+  height: 50vh;
+}
+.h-\[27px\] {
+  height: 27px;
+}
 .max-h-\[20rem\] {
   max-height: 20rem;
 }
@@ -1653,6 +1659,30 @@ video {
 .bg-\[\#99CCFF\] {
   --tw-bg-opacity: 1;
   background-color: rgb(153 204 255 / var(--tw-bg-opacity));
+}
+.bg-\[\#005700\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 87 0 / var(--tw-bg-opacity));
+}
+.bg-\[\#008A00\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 138 0 / var(--tw-bg-opacity));
+}
+.bg-\[\#42A842\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(66 168 66 / var(--tw-bg-opacity));
+}
+.bg-\[\#72C074\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(114 192 116 / var(--tw-bg-opacity));
+}
+.bg-\[\#A3D9A5\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(163 217 165 / var(--tw-bg-opacity));
+}
+.bg-\[\#C8E6C9\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(200 230 201 / var(--tw-bg-opacity));
 }
 .stroke-\[2px\] {
   stroke-width: 2px;
