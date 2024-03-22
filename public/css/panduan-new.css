@@ -931,6 +931,9 @@ video {
 .mr-2\.5 {
   margin-right: 0.625rem;
 }
+.ml-2\.5 {
+  margin-left: 0.625rem;
+}
 .block {
   display: block;
 }

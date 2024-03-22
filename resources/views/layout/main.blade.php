@@ -163,6 +163,19 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             </div>
                         </div>
 
+                        {{--Usia Tanaman  --}}
+                        <div class="grid grid-cols-1 gap-y-1 text-sm">
+                            <div class="flex items-center form-check fertility_map_zone mt-1">
+                                <div class="inline-flex items-center">
+                                    <input type="checkbox" class="h-3.5 w-3.5 form-check-input hapus_focus_checkbox focus:border focus:ring-0 focus:ring-offset-0 text-green-600 border-gray-300 border rounded-sm" id="fertility_map">
+                                    <label class="form-check-label  ml-2 mt-1" for="fertility_map">Peta Usia Tanaman</label>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+
 
                         <!-- Section Fertility Map -->
                         <div class="grid grid-cols-1 gap-y-1 text-sm">
@@ -179,17 +192,6 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             </div>
                         </div>
 
-                        {{--Usia Tanaman  --}}
-                        <div class="grid grid-cols-1 gap-y-1 text-sm">
-                            <div class="flex items-center form-check fertility_map_zone mt-1">
-                                <div class="inline-flex items-center">
-                                    <input type="checkbox" class="h-3.5 w-3.5 form-check-input hapus_focus_checkbox focus:border focus:ring-0 focus:ring-offset-0 text-green-600 border-gray-300 border rounded-sm" id="fertility_map">
-                                    <label class="form-check-label  ml-2 mt-1" for="fertility_map">Peta Usia Tanaman</label>
-
-
-                                </div>
-                            </div>
-                        </div>
 
 
 
@@ -406,7 +408,9 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                     <h5 class="mt-3 mb-3.5 font-bold text-md text-center">Lokasi</h5>
 
 
-                                    {{-- rt1 --}}
+                                    {{-- byeeeee --}}
+
+
 
 
 
@@ -418,10 +422,19 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                     </div>
 
 
+
+
                                     <div class="grid grid-cols-2 mt-2">
                                         <div class="">Kelurahan</div>
                                         <div>Cimeuhmal</div>
                                     </div>
+
+                                    <div class="grid grid-cols-2 mt-2">
+                                        <div class="">Kategori IDM</div>
+                                        <div>Desa Mandiri</div>
+
+                                    </div>
+
 
                                     <div class="grid grid-cols-2 mt-2">
                                         <div class="">Kecamatan</div>
@@ -488,7 +501,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                     <div class="text-xs text-black flex justify-center mt-3 mb-2">Periode 19 - 26 Maret 2024</div>
 
 
-                                    <img src="{{ asset('assets/perkiraan_cuaca.png') }}" alt="" class="w-full h-full object-contain">
+                                    <img src="{{ asset('assets/perkiraan_cuaca.png') }}" alt="" class="w-full object-contain">
 
                                 </div>
 
@@ -497,147 +510,155 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             <!-- Konten Ketiga -->
                             <div class="hidden text-sm" id="content-3">
 
-                                <div class="flex flex-col mt-[3rem] relative">
-                                    <div class="relative flex flex-col">
+                                <div class="w-full h-[50vh] flex flex-col">
 
-                                        <div class="font-semibold absolute -top-8">Jarak Radius</div>
 
-                                        <div class="px-0 w-full ">
-                                            <input type="range" id="slider-pindes" class="w-full opacity-0" style="z-index: 20; height: 2rem; cursor: pointer;" min="0" max="4" step="1">
-                                            <div class="bg-gray-300 h-2 w-full rounded-full relative mt-[-2rem]">
-                                                <span id="thumb" class="bg-white h-4 w-4 absolute top-0 -ml-1 -mt-1 z-10 border rounded-full cursor-pointer"></span>
-                                                <span id="progress" class="bg-teal-500 h-2 absolute left-0 top-0 rounded-full" style="width:0 km;"></span>
+
+                                    <div class="flex flex-col mt-[3rem] relative">
+                                        <div class="relative flex flex-col">
+
+                                            <div class="font-semibold absolute -top-8">Jarak Radius</div>
+
+                                            <div class="px-0 w-full ">
+                                                <input type="range" id="slider-pindes" class="w-full opacity-0" style="z-index: 20; height: 2rem; cursor: pointer;" min="0" max="4" step="1">
+                                                <div class="bg-gray-300 h-2 w-full rounded-full relative mt-[-2rem]">
+                                                    <span id="thumb" class="bg-white h-4 w-4 absolute top-0 -ml-1 -mt-1 z-10 border rounded-full cursor-pointer"></span>
+                                                    <span id="progress" class="bg-teal-500 h-2 absolute left-0 top-0 rounded-full" style="width:0 km;"></span>
+                                                </div>
+                                                <div class="flex justify-between mt-2.5 text-xs text-black">
+                                                    <span class="clickable w-10 text-left" data-value="0">0 km</span>
+                                                    <span class="clickable w-10 text-center" data-value="1">25 km</span>
+                                                    <span class="clickable w-10 text-center" data-value="2">50 km</span>
+                                                    <span class="clickable w-10 text-center" data-value="3">75 km</span>
+                                                    <span class="clickable w-12 text-right" data-value="4">100 km</span>
+                                                </div>
                                             </div>
-                                            <div class="flex justify-between mt-2.5 text-xs text-black">
-                                                <span class="clickable w-10 text-left" data-value="0">0 km</span>
-                                                <span class="clickable w-10 text-center" data-value="1">25 km</span>
-                                                <span class="clickable w-10 text-center" data-value="2">50 km</span>
-                                                <span class="clickable w-10 text-center" data-value="3">75 km</span>
-                                                <span class="clickable w-12 text-right" data-value="4">100 km</span>
+
+                                            {{-- --}}
+                                            <div class="relative flex justify-center">
+                                                <div class="absolute -bottom-[3.5rem] text-xs text-black flex flex-col ">
+                                                    <div class="w-full flex justify-center">Pembaruan Terakhir</div>
+                                                    <div class="w-full flex justify-center">Tanggal 19 Maret 2024</div>
+
+
+                                                </div>
                                             </div>
+
+
+
+
+                                            {{-- --}}
                                         </div>
-
-                                        {{-- --}}
-                                        <div class="relative flex justify-center">
-                                            <div class="absolute -bottom-[3.5rem] text-xs text-black flex flex-col ">
-                                                <div class="w-full flex justify-center">Pembaruan Terakhir</div>
-                                                <div class="w-full flex justify-center">Tanggal 19 Maret 2024</div>
-
-
-                                            </div>
-                                        </div>
-
-
-
-
-                                        {{-- --}}
                                     </div>
-                                </div>
 
-
-
-                                {{-- --}}
-                                <div class="grid grid-cols-1 mt-[5rem] radius1">
-
-                                    <h5 class="mt-2 mb-1 font-bold text-md text-left">Pasar Induk Terminal Kota Subang</h5>
-
-                                    <div class="grid grid-cols-[1fr,150px]">
-                                        <div class="">Beras Cianjur Kepala</div>
-                                        <div class=" text-right">Rp 19.825</div>
-                                    </div>
-                                    <div class="grid grid-cols-[1fr,150px]">
-                                        <div class="">Beras Cianjur Slyp</div>
-                                        <div class=" text-right">Rp 18.333</div>
-                                    </div>
-                                    <div class="grid grid-cols-[1fr,150px]">
-                                        <div class="">Beras Setra</div>
-                                        <div class=" text-right">Rp 16.786</div>
-                                    </div>
-                                    <div class="grid grid-cols-[1fr,150px]">
-                                        <div class="">Beras Saigon</div>
-                                        <div class=" text-right">Rp 16.070</div>
-                                    </div>
-                                    <div class="grid grid-cols-[1fr,150px]">
-                                        <div class="">Beras Muncul 1</div>
-                                        <div class=" text-right">Rp 15.900</div>
-                                    </div>
-                                    <div class="grid grid-cols-[1fr,150px]">
-                                        <div class="">Beras Muncul 2</div>
-                                        <div class=" text-right">Rp 15.333</div>
-                                    </div>
-                                    <div class="grid grid-cols-[1fr,150px]">
-                                        <div class="">Beras Muncul 3</div>
-                                        <div class=" text-right">Rp 14.500</div>
-                                    </div>
 
 
                                     {{-- --}}
+                                    <div class="grid grid-cols-1 mt-[5rem] radius1">
+
+                                        <h5 class="mt-2 mb-1 font-bold text-md text-left">Pasar Induk Terminal Kota Subang</h5>
+
+                                        <div class="grid grid-cols-[1fr,150px]">
+                                            <div class="">Beras Cianjur Kepala</div>
+                                            <div class=" text-right">Rp 19.825</div>
+                                        </div>
+                                        <div class="grid grid-cols-[1fr,150px]">
+                                            <div class="">Beras Cianjur Slyp</div>
+                                            <div class=" text-right">Rp 18.333</div>
+                                        </div>
+                                        <div class="grid grid-cols-[1fr,150px]">
+                                            <div class="">Beras Setra</div>
+                                            <div class=" text-right">Rp 16.786</div>
+                                        </div>
+                                        <div class="grid grid-cols-[1fr,150px]">
+                                            <div class="">Beras Saigon</div>
+                                            <div class=" text-right">Rp 16.070</div>
+                                        </div>
+                                        <div class="grid grid-cols-[1fr,150px]">
+                                            <div class="">Beras Muncul 1</div>
+                                            <div class=" text-right">Rp 15.900</div>
+                                        </div>
+                                        <div class="grid grid-cols-[1fr,150px]">
+                                            <div class="">Beras Muncul 2</div>
+                                            <div class=" text-right">Rp 15.333</div>
+                                        </div>
+                                        <div class="grid grid-cols-[1fr,150px]">
+                                            <div class="">Beras Muncul 3</div>
+                                            <div class=" text-right">Rp 14.500</div>
+                                        </div>
+
+
+                                        {{-- --}}
+                                    </div>
+
+                                    <div class="grid grid-cols-1 mt-3 radius2">
+                                        <h5 class="mt-1 mb-1 font-bold text-md text-left">Pasar Induk Johar Karawang</h5>
+                                        <div class="grid grid-cols-[1fr,150px]">
+                                            <div class="">Beras Cianjur Kepala</div>
+                                            <div class="text-right">Rp 19.825</div>
+                                        </div>
+                                        <div class="grid grid-cols-[1fr,150px]">
+                                            <div class="">Beras Cianjur Slyp</div>
+                                            <div class="text-right">Rp 18.333</div>
+                                        </div>
+                                        <div class="grid grid-cols-[1fr,150px]">
+                                            <div class="">Beras Setra</div>
+                                            <div class="text-right">Rp 16.786</div>
+                                        </div>
+                                        <div class="grid grid-cols-[1fr,150px]">
+                                            <div class="">Beras Saigon</div>
+                                            <div class="text-right">Rp 16.070</div>
+                                        </div>
+                                        <div class="grid grid-cols-[1fr,150px]">
+                                            <div class="">Beras Muncul 1</div>
+                                            <div class="text-right">Rp 15.900</div>
+                                        </div>
+                                        <div class="grid grid-cols-[1fr,150px]">
+                                            <div class="">Beras Muncul 2</div>
+                                            <div class="text-right">Rp 15.333</div>
+                                        </div>
+                                        <div class="grid grid-cols-[1fr,150px]">
+                                            <div class="">Beras Muncul 3</div>
+                                            <div class="text-right">Rp 14.500</div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="grid grid-cols-1 mt-3 radius3">
+                                        <h5 class="mt-1 mb-1 font-bold text-md text-left">Pasar Induk Cianjur</h5>
+                                        <div class="grid grid-cols-[1fr,150px]">
+                                            <div class="">Beras Cianjur Kepala</div>
+                                            <div class="text-right">Rp 19.825</div>
+                                        </div>
+                                        <div class="grid grid-cols-[1fr,150px]">
+                                            <div class="">Beras Cianjur Slyp</div>
+                                            <div class="text-right">Rp 18.333</div>
+                                        </div>
+                                        <div class="grid grid-cols-[1fr,150px]">
+                                            <div class="">Beras Setra</div>
+                                            <div class="text-right">Rp 16.786</div>
+                                        </div>
+                                        <div class="grid grid-cols-[1fr,150px]">
+                                            <div class="">Beras Saigon</div>
+                                            <div class="text-right">Rp 16.070</div>
+                                        </div>
+                                        <div class="grid grid-cols-[1fr,150px]">
+                                            <div class="">Beras Muncul 1</div>
+                                            <div class="text-right">Rp 15.900</div>
+                                        </div>
+                                        <div class="grid grid-cols-[1fr,150px]">
+                                            <div class="">Beras Muncul 2</div>
+                                            <div class="text-right">Rp 15.333</div>
+                                        </div>
+                                        <div class="grid grid-cols-[1fr,150px]">
+                                            <div class="">Beras Muncul 3</div>
+                                            <div class="text-right">Rp 14.500</div>
+                                        </div>
+                                    </div>
+
                                 </div>
 
-                                <div class="grid grid-cols-1 mt-3 radius2">
-                                    <h5 class="mt-1 mb-1 font-bold text-md text-left">Pasar Induk Johar Karawang</h5>
-                                    <div class="grid grid-cols-[1fr,150px]">
-                                        <div class="">Beras Cianjur Kepala</div>
-                                        <div class="text-right">Rp 19.825</div>
-                                    </div>
-                                    <div class="grid grid-cols-[1fr,150px]">
-                                        <div class="">Beras Cianjur Slyp</div>
-                                        <div class="text-right">Rp 18.333</div>
-                                    </div>
-                                    <div class="grid grid-cols-[1fr,150px]">
-                                        <div class="">Beras Setra</div>
-                                        <div class="text-right">Rp 16.786</div>
-                                    </div>
-                                    <div class="grid grid-cols-[1fr,150px]">
-                                        <div class="">Beras Saigon</div>
-                                        <div class="text-right">Rp 16.070</div>
-                                    </div>
-                                    <div class="grid grid-cols-[1fr,150px]">
-                                        <div class="">Beras Muncul 1</div>
-                                        <div class="text-right">Rp 15.900</div>
-                                    </div>
-                                    <div class="grid grid-cols-[1fr,150px]">
-                                        <div class="">Beras Muncul 2</div>
-                                        <div class="text-right">Rp 15.333</div>
-                                    </div>
-                                    <div class="grid grid-cols-[1fr,150px]">
-                                        <div class="">Beras Muncul 3</div>
-                                        <div class="text-right">Rp 14.500</div>
-                                    </div>
-                                </div>
 
-
-                                <div class="grid grid-cols-1 mt-3 radius3">
-                                    <h5 class="mt-1 mb-1 font-bold text-md text-left">Pasar Induk Cianjur</h5>
-                                    <div class="grid grid-cols-[1fr,150px]">
-                                        <div class="">Beras Cianjur Kepala</div>
-                                        <div class="text-right">Rp 19.825</div>
-                                    </div>
-                                    <div class="grid grid-cols-[1fr,150px]">
-                                        <div class="">Beras Cianjur Slyp</div>
-                                        <div class="text-right">Rp 18.333</div>
-                                    </div>
-                                    <div class="grid grid-cols-[1fr,150px]">
-                                        <div class="">Beras Setra</div>
-                                        <div class="text-right">Rp 16.786</div>
-                                    </div>
-                                    <div class="grid grid-cols-[1fr,150px]">
-                                        <div class="">Beras Saigon</div>
-                                        <div class="text-right">Rp 16.070</div>
-                                    </div>
-                                    <div class="grid grid-cols-[1fr,150px]">
-                                        <div class="">Beras Muncul 1</div>
-                                        <div class="text-right">Rp 15.900</div>
-                                    </div>
-                                    <div class="grid grid-cols-[1fr,150px]">
-                                        <div class="">Beras Muncul 2</div>
-                                        <div class="text-right">Rp 15.333</div>
-                                    </div>
-                                    <div class="grid grid-cols-[1fr,150px]">
-                                        <div class="">Beras Muncul 3</div>
-                                        <div class="text-right">Rp 14.500</div>
-                                    </div>
-                                </div>
 
                             </div>
 
@@ -672,6 +693,10 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                 <div class="h-[50vh] flex flex-col ">
 
                                     <h5 class="mt-3 mb-3.5 font-bold text-md text-center">Distribusi Pembiayaan</h5>
+
+                                    <canvas class="mt-2" id="distribusiPembiayaan" width="400" height="200"></canvas>
+
+
 
 
 
@@ -878,8 +903,8 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                 </div>
 
                                 {{-- --}}
-                                <div class="w-[6vw] h-[17.7vh] text-xs rounded-sm bg-white flex flex-col items-center pt-2 mr-3">
-                                    <div class="flex flex-col">
+                                <div class="w-[9vw] h-[17.7vh] text-xs rounded-sm bg-white flex flex-col items-start pt-2 mr-3">
+                                    <div class="flex flex-col ml-2.5">
                                         <div class="inline-flex items-center mb-[0.2rem]">
                                             <div class="w-2.5 h-2.5 bg-[#C8E6C9] rounded-xs mr-1"></div>
                                             <div>0 - 1 bulan</div>
@@ -10254,6 +10279,43 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
         });
 
     </script>
+
+
+    <script>
+        var oilCanvas = document.getElementById("distribusiPembiayaan");
+
+
+        // Mengatur ukuran font default
+        Chart.defaults.global.defaultFontSize = 14;
+
+        var oilData = {
+            labels: [
+                "Bank", "Tengkulak", "Modal Sendiri"
+            ]
+            , datasets: [{
+                data: [133.3, 86.2, 52.2]
+                , backgroundColor: [
+                    "#0000FF", // Biru
+                    "#008000", // Hijau
+                    "#FF0000" // Merah
+                ]
+            }]
+        };
+
+        var pieChart = new Chart(oilCanvas, {
+            type: 'pie'
+            , data: oilData
+            , options: {
+                legend: {
+                    labels: {
+                        fontSize: 10 // Menyesuaikan ukuran font untuk legenda
+                    }
+                }
+            }
+        });
+
+    </script>
+
 
 
 

@@ -2988,14 +2988,10 @@ map.on("mousemove", "urban_fill", (e) => {
 
         <div class="card-body w-[35vw] grid grid-cols-[270px,1fr] text-xs" style="padding: 0.7rem 0.7rem 0.2rem 0.7rem!important;">
 
-                                    <div class="grid grid-cols-2 mr-2">
+
+                <div class="grid grid-cols-2 mr-2">
 
                                         <div class="flex flex-col ">
-
-                                            <div class="flex flex-col mb-1 mr-2.5">
-                                                <div class="font-semibold">Pemilik</div>
-                                                <div>Kasdi</div>
-                                            </div>
 
                                             <div class="flex flex-col mb-1 mr-2.5">
                                                 <div class="font-semibold">Luas (m<sup>2</sup>)</div>
@@ -3003,20 +2999,60 @@ map.on("mousemove", "urban_fill", (e) => {
                                             </div>
 
 
+
+
                                             <div class="flex flex-col mb-1 mr-2.5">
                                                 <div class="font-semibold">pH</div>
                                                 <div>6.3</div>
                                             </div>
+                                            <div class="flex flex-col mb-1 mr-2.5">
+                                                <div class="font-semibold">Pemilik lahan
 
+                                                </div>
+                                                <div>
+                                                    Dedi
+
+
+                                                </div>
+                                            </div>
+                                            <div class="flex flex-col mb-1 mr-2.5">
+                                                <div class="font-semibold">Penyewa
+
+                                                </div>
+                                                <div>Koko
+
+                                                </div>
+                                            </div>
+                                            <div class="flex flex-col mb-1 mr-2.5">
+                                                <div class="font-semibold">Jumlah Penggarap
+
+                                                </div>
+                                                <div>5</div>
+                                            </div>
+
+
+                                            <div class="flex flex-col mb-1 mr-2.5">
+                                                <div class="font-semibold">Sumber Pembiayaan
+                                                </div>
+                                                <div>Modal Sendiri
+
+                                                </div>
+                                            </div>
+
+
+
+
+
+
+                                        </div>
+
+                                        <div class="flex flex-col ">
 
                                             <div class="flex flex-col mb-1 mr-2.5">
                                                 <div class="font-semibold">Komoditi Tanam</div>
                                                 <div>Beras Setra</div>
                                             </div>
 
-                                        </div>
-
-                                        <div class="flex flex-col ">
 
                                             <div class="flex flex-col mb-1 mr-2.5">
                                                 <div class="font-semibold">Periode Tanam</div>
@@ -3044,14 +3080,26 @@ map.on("mousemove", "urban_fill", (e) => {
                                                 <div>7.000 kg</div>
                                             </div>
 
+                                            <div class="flex flex-col mb-1 mr-2.5">
+                                                <div class="font-semibold">Valuasi</div>
+                                                <div>Rp 400.000.000
+
+                                                </div>
+                                            </div>
+
+
                                         </div>
 
                                     </div>
 
+
+
                                         <div class="w-full flex flex-col">
-                                            <div class="w-full flex justify-center">
+                                            <div class="w-full flex justify-center mb-2">
                                                 <img src=/assets/tanam_padi.png alt="" class="w-full h-full object-contain">
                                             </div>
+
+                                            <div class="w-full h-full">memerlukan sekitar 4-5 bulan untuk mencapai panen setelah ditanam. Prosesnya dimulai dengan persiapan lahan, penanaman bibit padi, perawatan tanaman, seperti pemupukan dan pengendalian hama</div>
                                         </div>
 
                                     </div>
