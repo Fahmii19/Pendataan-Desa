@@ -2986,59 +2986,44 @@ map.on("mousemove", "urban_fill", (e) => {
     ) {
         content = `<div class="card">
 
-         <div class="card-body w-[35vw] grid grid-cols-[270px,1fr] text-xs" style="padding: 0.7rem 0.7rem 0.2rem 0.7rem!important;">
+        <div class="card-body w-[35vw] grid grid-cols-[270px,1fr] text-xs" style="padding: 0.7rem 0.7rem 0.2rem 0.7rem!important;">
+
                                         <div class="grid grid-cols-2 mr-2">
 
                                             <div class="flex flex-col mb-1 mr-2.5">
                                                 <div class="font-semibold">Pemilik</div>
                                                 <div>Kasdi</div>
                                             </div>
-                                            <div class="flex flex-col mb-1 mr-2.5">
 
+                                            <div class="flex flex-col mb-1 mr-2.5">
                                                 <div class="font-semibold">Periode Tanam</div>
                                                 <div>1 Maret - 30 Juni 2024</div>
                                             </div>
 
                                             <div class="flex flex-col  mr-2.5">
-
                                                 <div class="font-semibold">Luas (m<sup>2</sup>)</div>
-
                                                 <div>3.000</div>
                                             </div>
-                                            <div class="flex flex-col mr-2.5">
 
+                                            <div class="flex flex-col mr-2.5">
                                                 <div class="font-semibold">Tahap Tanam</div>
                                                 <div class="inline-flex items-center">
-
-
                                                 <img src=/assets/check.png alt="" class="w-2.5 h-2.5 object-contain mr-1">
-
                                                 Pembajakan</div>
-
                                                     <div class="inline-flex items-center">
-
-
                                                 <img src=/assets/check.png alt="" class="w-2.5 h-2.5 object-contain mr-1">
-
                                                 Pembenihan</div>
-
                                             </div>
 
                                             <div class="flex flex-col mb-1 mr-2.5">
-
                                                 <div class="font-semibold">pH</div>
-
                                                 <div>6.3</div>
                                             </div>
+
                                             <div class="flex flex-col mb-1 mr-2.5">
-
                                                 <div class="inline-flex items-center">
-
-
                                                 <img src=/assets/check.png alt="" class="w-2.5 h-2.5 object-contain mr-1">
-
                                                 Pembajakan 1</div>
-
                                                 <div class="ml-[0.9rem]">Pemupukan 2</div>
                                                 <div class="ml-[0.9rem]">Pemupukan 3</div>
                                             </div>
@@ -3053,21 +3038,15 @@ map.on("mousemove", "urban_fill", (e) => {
                                                 <div>7.000 kg</div>
                                             </div>
 
-
                                         </div>
 
                                         <div class="w-full flex flex-col">
-
                                             <div class="w-full flex justify-center">
                                                 <img src=/assets/tanam_padi.png alt="" class="w-full h-full object-contain">
-
-
                                             </div>
-
-
                                         </div>
 
-       </div>
+                                    </div>
 
 
 

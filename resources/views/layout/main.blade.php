@@ -169,7 +169,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             <div class="flex items-center form-check fertility_map_zone mt-1">
                                 <div class="inline-flex items-center">
                                     <input type="checkbox" class="h-3.5 w-3.5 form-check-input hapus_focus_checkbox focus:border focus:ring-0 focus:ring-offset-0 text-green-600 border-gray-300 border rounded-sm" id="fertility_map" onchange="getDataSource('fertility', localStorage.getItem('kelurahan'))">
-                                    <label class="form-check-label  ml-2 mt-1" for="fertility_map">Jalur Pengairan</label>
+                                    <label class="form-check-label  ml-2 mt-1" for="fertility_map">Sumber Air dan Jalur Pengaliran</label>
 
                                     <div class="form-check form-check-inline fertility_map_year mt-1 hidden">
                                         <input type="radio" name="fertility_map_zone" value="year2021-color2021" class="form-check-input fertility_map_year w-3 h-3" disabled checked>
@@ -376,7 +376,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                     {{-- rt1 --}}
 
 
-
+                                    {{-- --}}
 
                                     <div class="grid grid-cols-2 mt-2">
                                         <div class="">Luas</div>
@@ -664,16 +664,14 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                     <div class="w-full flex items-stretch">
                         <div class="w-full flex flex-col self-end">
                             <!-- Legend -->
-                            <div class="w-full mb-3 ml-[1.2vw] relative">
-                                <div class="w-[39.5vw] h-[20vh] text-xs p-1 rounded-sm bg-white flex flex-col">
+                            <div class="flex flex-row w-full mb-3 ml-[1.2vw] relative">
+                                <div class="w-[39.5vw] h-[17.7vh] text-xs py-2 px-1 rounded-sm bg-white flex flex-col mr-3">
 
-
-                                    <div class="ml-1.5 font-semibold text-sm">Valuasi</div>
 
                                     <div class="flex flex-row mb-2.5">
 
 
-                                        <div class="flex flex-col ml-1.5">
+                                        <div class="flex flex-col ml-[0.45rem]">
                                             <div class="font-semibold mb-0.5 text-center">Komoditi</div>
                                             {{-- --}}
                                             <div class="flex flex-col">
@@ -771,6 +769,59 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
 
                                 </div>
+
+                                <div class="w-[19vw] h-[17.7vh] text-xs rounded-sm bg-white flex flex-col items-center pt-2">
+
+                                    <div class="flex flex-col">
+                                        <div class="inline-flex items-center">
+                                            <div class="w-2.5 h-2.5 bg-[#5C5C5C] rounded-xs mr-1"></div>
+                                            <div> 0 mm/hari (abu-abu) : Berawan</div>
+
+                                        </div>
+                                        <div class="inline-flex items-center">
+                                            <div class="w-2.5 h-2.5 bg-[#C78E28] rounded-xs mr-1"></div>
+
+
+                                            <div>
+                                                0.5 – 20 mm/hari (hijau) : Hujan ringan
+
+                                            </div>
+                                        </div>
+
+                                        <div class="inline-flex items-center">
+                                            <div class="w-2.5 h-2.5 bg-[#38A800] rounded-xs mr-1"></div>
+                                            <div>20 – 50 mm/hari (kuning) : Hujan sedang</div>
+
+                                        </div>
+                                        <div class="inline-flex items-center">
+                                            <div class="w-2.5 h-2.5 bg-[#42A097] rounded-xs mr-1"></div>
+                                            <div>50 – 100 mm/hari (oranye): Hujan lebat</div>
+
+                                        </div>
+                                        <div class="inline-flex items-center">
+                                            <div class="w-2.5 h-2.5 bg-[#46A042] rounded-xs mr-1"></div>
+                                            <div>
+                                                100 – 150 mm/hari (merah) : Hujan sangat lebat
+
+                                            </div>
+                                        </div>
+
+                                        <div class="inline-flex items-center">
+                                            <div class="w-2.5 h-2.5 bg-[#46A042] rounded-xs mr-1"></div>
+                                            <div>
+                                                >150 mm / hari (ungu) : Hujan ekstrem
+
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+
+                                </div>
+
+
                             </div>
 
 
