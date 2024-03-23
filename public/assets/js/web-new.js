@@ -3099,7 +3099,11 @@ map.on("mousemove", "urban_fill", (e) => {
                                                 <img src=/assets/tanam_padi.png alt="" class="w-full h-full object-contain">
                                             </div>
 
-                                            <div class="w-full h-full">memerlukan sekitar 4-5 bulan untuk mencapai panen setelah ditanam. Prosesnya dimulai dengan persiapan lahan, penanaman bibit padi, perawatan tanaman, seperti pemupukan dan pengendalian hama</div>
+                                            <div class="w-full h-full flex flex-col">
+                                                    <div class="font-semibold">Catatan</div>
+                                                    <div>
+                                                    memerlukan sekitar 4-5 bulan untuk mencapai panen setelah ditanam. Prosesnya dimulai dengan persiapan lahan</div>
+                                            </div>
                                         </div>
 
                                     </div>

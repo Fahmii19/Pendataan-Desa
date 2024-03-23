@@ -167,11 +167,10 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                         <div class="grid grid-cols-1 gap-y-1 text-sm">
                             <div class="flex items-center form-check fertility_map_zone mt-1">
                                 <div class="inline-flex items-center">
-                                    <input type="checkbox" class="h-3.5 w-3.5 form-check-input hapus_focus_checkbox focus:border focus:ring-0 focus:ring-offset-0 text-green-600 border-gray-300 border rounded-sm" id="fertility_map">
-                                    <label class="form-check-label  ml-2 mt-1" for="fertility_map">Peta Usia Tanaman</label>
-
-
+                                    <input type="checkbox" class="h-3.5 w-3.5 form-check-input hapus_focus_checkbox focus:border focus:ring-0 focus:ring-offset-0 text-green-600 border-gray-300 border rounded-sm" id="fertility_map_checkbox" onchange="toggleUsiaTanam()">
+                                    <label class="form-check-label ml-2 mt-1" for="fertility_map_checkbox">Peta Usia Tanaman</label>
                                 </div>
+
                             </div>
                         </div>
 
@@ -201,11 +200,10 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                         <div class="grid grid-cols-1 gap-y-1 text-sm">
                             <div class="flex items-center form-check transect_zone mt-1">
                                 <div class="inline-flex items-center">
-                                    <input type="checkbox" class="h-3.5 w-3.5 form-check-input hapus_focus_checkbox focus:border focus:ring-0 focus:ring-offset-0 text-blue-600 border-gray-300 border rounded-sm" id="prediksi_curah_hujan">
-
-                                    <label class="form-check-label ml-2 mt-1" for="transect_zone">Prediksi Curah Hujan</label>
-
+                                    <input type="checkbox" class="h-3.5 w-3.5 form-check-input hapus_focus_checkbox focus:border focus:ring-0 focus:ring-offset-0 text-blue-600 border-gray-300 border rounded-sm" id="prediksi_curah_hujan_checkbox" onchange="togglePrediksiCurahHujan()">
+                                    <label class="form-check-label ml-2 mt-1" for="prediksi_curah_hujan_checkbox">Prediksi Curah Hujan</label>
                                 </div>
+
                             </div>
 
                             <div class="flex flex-row ml-[1.8vw]">
@@ -850,7 +848,8 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                 </div>
 
-                                <div class="w-[9vw] h-[17.7vh] text-xs rounded-sm bg-white flex flex-col items-center pt-2 mr-3">
+                                <div class=" box_prediksi_hujan hidden w-[9vw] h-[17.7vh] text-xs rounded-sm bg-white flex flex-col items-center pt-2 mr-3">
+
 
                                     <div class="flex flex-col">
                                         <div class="inline-flex items-center mb-[0.2rem]">
@@ -901,7 +900,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                 </div>
 
                                 {{-- --}}
-                                <div class="w-[9vw] h-[17.7vh] text-xs rounded-sm bg-white flex flex-col items-start pt-2 mr-3">
+                                <div class="box_usia_panen w-[9vw] h-[17.7vh] text-xs rounded-sm bg-white flex flex-col items-start pt-2 mr-3 hidden">
                                     <div class="flex flex-col ml-2.5">
                                         <div class="inline-flex items-center mb-[0.2rem]">
                                             <div class="w-2.5 h-2.5 bg-[#C8E6C9] rounded-xs mr-1"></div>
@@ -10257,9 +10256,10 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
             , datasets: [{
                 data: [133.3, 86.2, 52.2]
                 , backgroundColor: [
-                    "#DAA520", // Beras
-                    "#FF0000", // Cabe
-                    "#800080" // Bawang (Unggu)
+                    "#FDCA40", // Beras
+                    "#FB3640", // Cabe
+                    "#542E71" // Bawang (Unggu)
+
                 ]
             }]
         };
@@ -10293,9 +10293,15 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
             , datasets: [{
                 data: [133.3, 86.2, 52.2]
                 , backgroundColor: [
-                    "#0000FF", // Biru
-                    "#008000", // Hijau
-                    "#FF0000" // Merah
+                    "#FFB6B9", // Biru
+
+
+                    "#FAE3D9", // Hijau
+
+
+                    "#61C0BF" // Merah
+
+
                 ]
             }]
         };
@@ -10537,7 +10543,31 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
 
 
+    {{-- CheckBox --}}
+    <script>
+        function toggleUsiaTanam() {
 
+            const mapContainer = document.querySelector('.box_usia_panen');
+
+            const checkbox = document.getElementById('fertility_map_checkbox');
+            if (checkbox.checked) {
+                mapContainer.classList.remove('hidden');
+            } else {
+                mapContainer.classList.add('hidden');
+            }
+        }
+
+        function togglePrediksiCurahHujan() {
+            const prediksiCurahHujanContainer = document.querySelector('.box_prediksi_hujan');
+            const checkbox = document.getElementById('prediksi_curah_hujan_checkbox');
+            if (checkbox.checked) {
+                prediksiCurahHujanContainer.classList.remove('hidden');
+            } else {
+                prediksiCurahHujanContainer.classList.add('hidden');
+            }
+        }
+
+    </script>
 
 
 
