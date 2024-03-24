@@ -23,6 +23,8 @@
 
 
 
+
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
     <meta name="google-signin-client_id" content="{{ env('GOOGLE_CLIENT_ID') }}">
@@ -105,7 +107,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
             <div class="w-full h-full grid grid-cols-[425px,1fr]">
                 <!-- Pertama -->
-                <div class="w-full bg-white flex flex-col z-10 h-screen overflow-y-auto scrollbar">
+                <div class="w-full bg-white flex flex-col z-10 h-screen overflow-y-auto overflow-x-hidden scrollbar">
 
                     <!-- logo -->
                     <div class="w-full h-[14vh] mt-[4.5vh] mb-[2.8vh]">
@@ -397,7 +399,8 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                         <div class="mt-2.5" id="default-tab-content">
                             <!-- Konten Pertama -->
-                            <div class="hidden text-sm" id="content-1">
+                            <div class="hidden text-sm pb-2" id="content-1">
+
                                 <div class="w-full h-full">
 
                                     <h5 class="mt-3 mb-3.5 font-bold text-md text-center">Lokasi</h5>
@@ -468,13 +471,24 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                     <h5 class="mt-4 font-bold text-md text-center">Distribusi Komoditi Tanam</h5>
 
 
-                                    <canvas class="mt-2" id="produksiPertanian" width="400" height="200"></canvas>
+                                    <div class="w-full flex justify-center">
+                                        <div style="width:55%;">
+
+                                            <canvas class="mt-2" id="produksiPertanian" width="100" height="100"></canvas>
+                                        </div>
+
+                                    </div>
 
 
 
-                                    <h5 class="mt-3 font-bold text-md text-center">Hasil Panen</h5>
+                                    <h5 class="mt-4 font-bold text-md text-center">Hasil Panen</h5>
 
-                                    <canvas class="mt-2" id="myChart2"></canvas>
+
+                                    <div class="mt-2">
+                                        <canvas width="700" height="330" id="myChart2"></canvas>
+                                    </div>
+
+
 
 
 
@@ -489,7 +503,8 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                 </div>
                             </div>
                             <!-- Konten Kedua -->
-                            <div class="hidden text-sm" id="content-2">
+                            <div class="hidden text-sm pb-2" id="content-2">
+
 
 
 
@@ -504,7 +519,8 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             </div>
 
                             <!-- Konten Ketiga -->
-                            <div class="hidden text-sm" id="content-3">
+                            <div class="hidden text-sm pb-2" id="content-3">
+
 
                                 <div class="w-full h-[50vh] flex flex-col">
 
@@ -659,7 +675,8 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             </div>
 
                             <!-- Konten Keempat -->
-                            <div class="hidden text-sm" id="content-4">
+                            <div class="hidden text-sm pb-2" id="content-4">
+
 
                                 <div class="h-[50vh] flex flex-col">
                                     <canvas class="mt-3" id="myChart3"></canvas>
@@ -678,14 +695,16 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             </div>
 
                             <!-- Konten Kelima -->
-                            <div class="hidden text-sm" id="content-5">
+                            <div class="hidden text-sm pb-2" id="content-5">
+
                                 <div class="h-[50vh] flex flex-col "></div>
                                 {{-- <h5 class="mt-3 mb-3.5 font-bold text-md text-center">Distribusi Pupuk</h5> --}}
                             </div>
 
 
                             <!-- Konten Keenam -->
-                            <div class="hidden text-sm" id="content-6">
+                            <div class="hidden text-sm pb-2" id="content-6">
+
                                 <div class="h-[50vh] flex flex-col ">
 
                                     <h5 class="mt-3 mb-3.5 font-bold text-md text-center">Distribusi Pembiayaan</h5>
@@ -10140,7 +10159,13 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
-    <script src="{{ asset('assets/js/Chart.min.js') }}"></script>
+    {{-- <script src="{{ asset('assets/js/Chart.min.js') }}"></script> --}}
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-adapter-moment/1.0.0/chartjs-adapter-moment.min.js"></script>
+
+
     <script src="{{ asset('assets/js/bindWithDelay.js') }}"></script>
     <script src='assets/js/mapbox-gl.js'></script>
     {{-- <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script> --}}
@@ -10247,7 +10272,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
         var oilCanvas = document.getElementById("produksiPertanian");
 
         // Mengatur ukuran font default
-        Chart.defaults.global.defaultFontSize = 14;
+        Chart.defaults.font.size = 14;
 
         var oilData = {
             labels: [
@@ -10259,7 +10284,6 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                     "#FDCA40", // Beras
                     "#FB3640", // Cabe
                     "#542E71" // Bawang (Unggu)
-
                 ]
             }]
         };
@@ -10268,15 +10292,22 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
             type: 'pie'
             , data: oilData
             , options: {
-                legend: {
-                    labels: {
-                        fontSize: 10 // Menyesuaikan ukuran font untuk legenda
+                plugins: {
+                    legend: {
+                        labels: {
+                            usePointStyle: true
+                            , boxWidth: 8
+                            , font: {
+                                size: 10 // Menyesuaikan ukuran font untuk legenda
+                            }
+                        }
                     }
                 }
             }
         });
 
     </script>
+
 
 
     <script>
@@ -10322,44 +10353,75 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
 
 
-
-
     <script>
-        var ctx = document.getElementById('myChart2').getContext('2d');
-        var myChart = new Chart(ctx, {
+        const skipped = (ctx, value) => ctx.p0.skip ||
+            ctx.p1.skip ? value : undefined;
+        const down = (ctx, value) => ctx.p0.parsed.y >
+            ctx.p1.parsed.y ? value : undefined;
+
+        // Setting generic options
+        const genericOptions = {
+            fill: false
+            , interaction: {
+                intersect: false
+            }
+            , radius: 0
+        };
+
+        // Setting options in a line chart
+        new Chart(document.getElementById("myChart2"), {
+
             type: 'line'
             , data: {
-                labels: ["Jan", "Feb", "Mar", "Apr", "Mei"]
+                labels: ["Jan", "Feb", "Mar", "Apr", "Mei", "Jun"]
                 , datasets: [{
-                    data: [86, 114, 106, 106, 107, 111, 133]
-                    , label: "Beras"
-                    , borderColor: "#DAA520"
-                    , backgroundColor: "transparent"
-                    , borderWidth: 1
-                    , pointRadius: 2 // Mengatur radius dari titik-titik
-                }, {
-                    data: [70, 90, 44, 60, 83, 90, 100]
-                    , label: "Cabe"
-                    , borderColor: "#FF0000"
-                    , backgroundColor: "transparent"
-                    , borderWidth: 1
-                    , pointRadius: 2
-                }, {
-                    data: [10, 21, 60, 44, 17, 21, 17]
-                    , label: "Bawang"
-                    , borderColor: "#9400D3"
-                    , backgroundColor: "transparent"
-                    , borderWidth: 1
-                    , pointRadius: 2
-                }]
+                        label: 'Beras'
+                        , data: [67, 45, 60, 34, NaN, 70]
+                        , borderColor: '#DAA520'
+                        , borderWidth: 1
+                        , pointRadius: 2 // Mengatur radius dari titik-titik
+                        , segment: {
+                            borderColor: ctx => skipped(ctx, '#DAA520') || down(ctx, '#DAA520')
+                            , borderDash: ctx => skipped(ctx, [3, 3])
+                        }
+                        , spanGaps: true
+                    }
+                    , {
+                        label: 'Cabe'
+                        , data: [54, 23, 35, 60, NaN, 95]
+                        , borderColor: '#FF0000'
+                        , borderWidth: 1
+                        , pointRadius: 2
+                        , segment: {
+                            borderColor: ctx => skipped(ctx, '#FF0000') || down(ctx, '#FF0000')
+                            , borderDash: ctx => skipped(ctx, [3, 3])
+                        }
+                        , spanGaps: true
+                    }
+                    , {
+                        label: 'Bawang'
+                        , data: [21, 34, 45, 55, NaN, 85]
+                        , borderColor: '#9400D3'
+                        , borderWidth: 1
+                        , pointRadius: 2
+                        , segment: {
+                            borderColor: ctx => skipped(ctx, '#9400D3') || down(ctx, '#9400D3')
+                            , borderDash: ctx => skipped(ctx, [3, 3])
+                        }
+                        , spanGaps: true
+                    }
+
+
+                ]
             }
             , options: {
+                ...genericOptions, // Use spread syntax to include genericOptions
                 scales: {
                     y: {
                         display: true
                         , beginAtZero: true
                         , ticks: {
-                            stepSize: 250
+                            stepSize: 25
                         }
                         , title: {
                             display: true
@@ -10367,32 +10429,51 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             , font: {
                                 size: 13
                                 , weight: "bold"
-                            , }
+                            }
                         }
                     }
-                    , yAxes: [{
-                        ticks: {
-                            fontSize: 10
+                    , x: {
+                        display: true
+                        , title: {
+                            display: true
+                            , text: "Bulan"
+                            , font: {
+                                size: 12
+                                , weight: "bold"
+                            }
                         }
-                    }]
-                    , xAxes: [{
-                        ticks: {
-                            fontSize: 10
-                        }
-                    }]
-
-
+                    }
                 }
-                , legend: {
-                    labels: {
-                        // Menyesuaikan ukuran font untuk legenda
-                        fontSize: 10
+                , plugins: {
+                    legend: {
+                        labels: {
+                            usePointStyle: true
+                            , generateLabels: (chart) => {
+                                return chart.data.datasets.map((dataset, index) => {
+                                    return {
+                                        text: dataset.label
+                                        , fillStyle: dataset.backgroundColor
+                                        , strokeStyle: dataset.borderColor
+                                        , pointStyle: 'line'
+                                        , hidden: false
+                                    };
+                                });
+                            }
+                        }
                     }
                 }
             }
+
         });
 
     </script>
+
+
+
+
+
+
+
 
 
 
@@ -10605,6 +10686,8 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
     <script src="{{ asset('assets/js/pesan-ajib.js') }}"></script>
     <script src="{{ asset('assets/js/prapermohonan.js') }}"></script>
     {{-- @endif --}}
+
+
 </body>
 
 </html>
