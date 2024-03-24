@@ -1970,20 +1970,20 @@ const onOffLayer = (layer) => {
                             closeButton: false,
                         })
                             .setLngLat([Long, Lat])
-                            .setHTML(`Rp. ${separatorNum(Sewa)}`)
+                            // .setHTML(``)
                             .addTo(map);
 
                         //Styling Popup
-                        $(".mapboxgl-popup-content").css("background", "green");
-                        $(".mapboxgl-popup-content").css("color", "white");
-                        $(".mapboxgl-popup-tip").css(
-                            "border-top-color",
-                            "green"
-                        );
-                        $(".mapboxgl-popup-tip").css(
-                            "border-bottom-color",
-                            "green"
-                        );
+                        // $(".mapboxgl-popup-content").css("background", "green");
+                        // $(".mapboxgl-popup-content").css("color", "white");
+                        // $(".mapboxgl-popup-tip").css(
+                        //     "border-top-color",
+                        //     "green"
+                        // );
+                        // $(".mapboxgl-popup-tip").css(
+                        //     "border-bottom-color",
+                        //     "green"
+                        // );
 
                         //List Data Sewa
                         content += `
@@ -1993,16 +1993,27 @@ const onOffLayer = (layer) => {
                                 <img class="lazy" width="100px" height="90px" style="object-fit: cover; border-radius:15px"
                                     data-src="https://jakarta.pintoinvest.com/rent/${Foto}">
                             </div>
-                            <div class="col-8">
-                                <p style="font-size: 11pt;margin-bottom:-1px" class="font-weight-bold" class="inf-nama-kantor">${Nama}</p>
-                                <lable style="font-size: 13px; line-height:1; margin-bottom: -13px;" class="inf-alamat-sewa"><span>${Alamat}</span></lable>
-                                <p style="font-size: 13px; line-height:0; margin-top:10px !important;" class="inf-harga-sewa"> <span>Rp. ${separatorNum(
-                                    Sewa
-                                )}</span></p>
-                            </div>
+
                         </div>
                     </div>
                         `;
+                        //     content += `
+                        //     <div class="item mb-3">
+                        //     <div class="row">
+                        //         <div class="col-4">
+                        //             <img class="lazy" width="100px" height="90px" style="object-fit: cover; border-radius:15px"
+                        //                 data-src="https://jakarta.pintoinvest.com/rent/${Foto}">
+                        //         </div>
+                        //         <div class="col-8">
+                        //             <p style="font-size: 11pt;margin-bottom:-1px" class="font-weight-bold" class="inf-nama-kantor">${Nama}</p>
+                        //             <lable style="font-size: 13px; line-height:1; margin-bottom: -13px;" class="inf-alamat-sewa"><span>${Alamat}</span></lable>
+                        //             <p style="font-size: 13px; line-height:0; margin-top:10px !important;" class="inf-harga-sewa"> <span>Rp. ${separatorNum(
+                        //                 Sewa
+                        //             )}</span></p>
+                        //         </div>
+                        //     </div>
+                        // </div>
+                        //     `;
                     });
                 } else {
                     content = `<p style="font-size: 13px;">Tidak Ada Data</p>`;

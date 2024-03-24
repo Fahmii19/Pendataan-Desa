@@ -1274,3 +1274,7 @@ input[name="id_ajib"]:checked + .card {
     z-index: 9999;
     display: block;
 }
+
+.slick-track {
+    width: auto !important;
+}
