@@ -469,21 +469,13 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
 
                                     <h5 class="mt-4 font-bold text-md text-center">Distribusi Komoditi Tanam</h5>
-
-
                                     <div class="w-full flex justify-center">
                                         <div style="width:55%;">
-
                                             <canvas class="mt-2" id="produksiPertanian" width="100" height="100"></canvas>
                                         </div>
-
                                     </div>
 
-
-
                                     <h5 class="mt-4 font-bold text-md text-center">Hasil Panen</h5>
-
-
                                     <div class="mt-2">
                                         <canvas width="700" height="330" id="myChart2"></canvas>
                                     </div>
@@ -678,10 +670,11 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             <div class="hidden text-sm pb-2" id="content-4">
 
 
-                                <div class="h-[50vh] flex flex-col">
-                                    <canvas class="mt-3" id="myChart3"></canvas>
-                                </div>
+                                <h5 class="mt-4 font-bold text-md text-center">Saldo Lumbungg</h5>
+                                <div class="mt-2">
+                                    <canvas width="500" height="330" id="myChart3"></canvas>
 
+                                </div>
 
 
 
@@ -707,9 +700,18 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                 <div class="h-[50vh] flex flex-col ">
 
-                                    <h5 class="mt-3 mb-3.5 font-bold text-md text-center">Distribusi Pembiayaan</h5>
+                                    {{-- <h5 class="mt-3 mb-3.5 font-bold text-md text-center">Distribusi Pembiayaan</h5>
 
                                     <canvas class="mt-2" id="distribusiPembiayaan" width="400" height="200"></canvas>
+ --}}
+                                    <h5 class="mt-4 font-bold text-md text-center">Distribusi Pembiayaan</h5>
+
+                                    <div class="w-full flex justify-center">
+                                        <div style="width:65%;">
+                                            <canvas class="mt-2" id="distribusiPembiayaan" width="100" height="100"></canvas>
+
+                                        </div>
+                                    </div>
 
 
 
@@ -10296,7 +10298,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                     legend: {
                         labels: {
                             usePointStyle: true
-                            , boxWidth: 8
+                            , boxWidth: 9
                             , font: {
                                 size: 10 // Menyesuaikan ukuran font untuk legenda
                             }
@@ -10310,16 +10312,20 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
 
 
+    {{-- Pie Chart2 --}}
     <script>
         var oilCanvas = document.getElementById("distribusiPembiayaan");
 
 
         // Mengatur ukuran font default
-        Chart.defaults.global.defaultFontSize = 14;
+        Chart.defaults.font.size = 14;
 
         var oilData = {
             labels: [
                 "Bank", "Tengkulak", "Modal Sendiri"
+
+
+
             ]
             , datasets: [{
                 data: [133.3, 86.2, 52.2]
@@ -10341,15 +10347,22 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
             type: 'pie'
             , data: oilData
             , options: {
-                legend: {
-                    labels: {
-                        fontSize: 10 // Menyesuaikan ukuran font untuk legenda
+                plugins: {
+                    legend: {
+                        labels: {
+                            usePointStyle: true
+                            , boxWidth: 8
+                            , font: {
+                                size: 10 // Menyesuaikan ukuran font untuk legenda
+                            }
+                        }
                     }
                 }
             }
         });
 
     </script>
+
 
 
 
@@ -10368,9 +10381,8 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
             , radius: 0
         };
 
-        // Setting options in a line chart
+        // Setting options for the second line chart
         new Chart(document.getElementById("myChart2"), {
-
             type: 'line'
             , data: {
                 labels: ["Jan", "Feb", "Mar", "Apr", "Mei", "Jun"]
@@ -10378,8 +10390,9 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                         label: 'Beras'
                         , data: [67, 45, 60, 34, NaN, 70]
                         , borderColor: '#DAA520'
+                        , backgroundColor: '#DAA520'
                         , borderWidth: 1
-                        , pointRadius: 2 // Mengatur radius dari titik-titik
+                        , pointRadius: 2
                         , segment: {
                             borderColor: ctx => skipped(ctx, '#DAA520') || down(ctx, '#DAA520')
                             , borderDash: ctx => skipped(ctx, [3, 3])
@@ -10390,6 +10403,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                         label: 'Cabe'
                         , data: [54, 23, 35, 60, NaN, 95]
                         , borderColor: '#FF0000'
+                        , backgroundColor: '#FF0000'
                         , borderWidth: 1
                         , pointRadius: 2
                         , segment: {
@@ -10402,6 +10416,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                         label: 'Bawang'
                         , data: [21, 34, 45, 55, NaN, 85]
                         , borderColor: '#9400D3'
+                        , backgroundColor: '#9400D3'
                         , borderWidth: 1
                         , pointRadius: 2
                         , segment: {
@@ -10410,13 +10425,12 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                         }
                         , spanGaps: true
                     }
-
-
                 ]
             }
+
             , options: {
-                ...genericOptions, // Use spread syntax to include genericOptions
-                scales: {
+                ...genericOptions
+                , scales: {
                     y: {
                         display: true
                         , beginAtZero: true
@@ -10448,13 +10462,14 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                     legend: {
                         labels: {
                             usePointStyle: true
+                            , boxWidth: 8
                             , generateLabels: (chart) => {
                                 return chart.data.datasets.map((dataset, index) => {
                                     return {
                                         text: dataset.label
                                         , fillStyle: dataset.backgroundColor
                                         , strokeStyle: dataset.borderColor
-                                        , pointStyle: 'line'
+                                        , pointStyle: 'rect'
                                         , hidden: false
                                     };
                                 });
@@ -10463,10 +10478,147 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                     }
                 }
             }
+        });
 
+
+
+        // Setting options for the second line chart
+        new Chart(document.getElementById("myChart3"), {
+            type: 'line'
+            , data: {
+                labels: ["Jan", "Feb", "Mar", "Apr", "Mei", "Jun"]
+                , datasets: [{
+                        label: 'Beras Cianjur Kepala'
+                        , data: [67, 45, 60, 34, NaN, 70]
+                        , borderColor: '#DAA520'
+                        , backgroundColor: '#DAA520'
+                        , borderWidth: 1
+                        , pointRadius: 2
+                        , segment: {
+                            borderColor: ctx => skipped(ctx, '#DAA520') || down(ctx, '#DAA520')
+                            , borderDash: ctx => skipped(ctx, [3, 3])
+                        }
+                        , spanGaps: true
+                    }
+                    , {
+                        label: 'Beras Setra'
+                        , data: [54, 23, 35, 60, NaN, 95]
+                        , borderColor: '#FF0000'
+                        , backgroundColor: '#FF0000'
+                        , borderWidth: 1
+                        , pointRadius: 2
+                        , segment: {
+                            borderColor: ctx => skipped(ctx, '#FF0000') || down(ctx, '#FF0000')
+                            , borderDash: ctx => skipped(ctx, [3, 3])
+                        }
+                        , spanGaps: true
+                    }
+                    , {
+                        label: 'Cabe Merah Keriting'
+                        , data: [10, 34, 42, 55, NaN, 85]
+                        , borderColor: '#9400D3'
+                        , backgroundColor: '#9400D3'
+                        , borderWidth: 1
+                        , pointRadius: 2
+                        , segment: {
+                            borderColor: ctx => skipped(ctx, '#9400D3') || down(ctx, '#9400D3')
+                            , borderDash: ctx => skipped(ctx, [3, 3])
+                        }
+                        , spanGaps: true
+                    },
+
+                    // Cabe Rawit Merah
+
+                    {
+                        label: 'Cabe Rawit Merah'
+                        , data: [10, 15, 21, 19, NaN, 85]
+                        , borderColor: '#FF4500'
+                        , backgroundColor: '#FF4500'
+                        , borderWidth: 1
+                        , pointRadius: 2
+                        , segment: {
+                            borderColor: ctx => skipped(ctx, '#FF4500') || down(ctx, '#FF4500')
+                            , borderDash: ctx => skipped(ctx, [3, 3])
+                        }
+                        , spanGaps: true
+                    },
+
+                    // Bawang Merah
+
+                    {
+                        label: 'Bawang Merah'
+                        , data: [21, 34, 45, 55, NaN, 85]
+                        , borderColor: '#FFD700'
+                        , backgroundColor: '#FFD700'
+                        , borderWidth: 1
+                        , pointRadius: 2
+                        , segment: {
+                            borderColor: ctx => skipped(ctx, '#FFD700') || down(ctx, '#FFD700')
+                            , borderDash: ctx => skipped(ctx, [3, 3])
+                        }
+                        , spanGaps: true
+                    }
+
+                ]
+            }
+            , options: {
+                ...genericOptions
+                , scales: {
+                    y: {
+                        display: true
+                        , beginAtZero: true
+                        , ticks: {
+                            stepSize: 25
+                        }
+                        , title: {
+                            display: true
+                            , text: "Volume"
+                            , font: {
+                                size: 13
+                                , weight: "bold"
+                            }
+                        }
+                    }
+                    , x: {
+                        display: true
+                        , title: {
+                            display: true
+                            , text: "Bulan"
+                            , font: {
+                                size: 12
+                                , weight: "bold"
+                            }
+                        }
+                    }
+                }
+                , plugins: {
+                    legend: {
+                        labels: {
+                            usePointStyle: true
+                            , boxWidth: 8
+                            , font: {
+                                size: 9 // Menyesuaikan ukuran font untuk legenda
+                            }
+
+                            , generateLabels: (chart) => {
+                                return chart.data.datasets.map((dataset, index) => {
+                                    return {
+                                        text: dataset.label
+                                        , fillStyle: dataset.backgroundColor
+                                        , strokeStyle: dataset.borderColor
+                                        , pointStyle: 'rect'
+                                        , hidden: false
+                                    };
+                                });
+                            }
+                        }
+                    }
+                }
+            }
         });
 
     </script>
+
 
 
 
@@ -10531,96 +10683,6 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
     </script>
 
-
-    <script>
-        var ctx = document.getElementById('myChart3').getContext('2d');
-        var myChart = new Chart(ctx, {
-            type: 'line'
-            , data: {
-                labels: ["Jan", "Feb", "Mar", "Apr", "Mei"], // Label pada sumbu X tetap sama, mewakili bulan
-                datasets: [{
-                        data: [86, 114, 106, 106, 107], // Misalnya, data untuk Beras Cianjur Kepala
-                        label: "Beras Cianjur Kepala"
-                        , borderColor: "#DAA520"
-                        , backgroundColor: "transparent"
-                        , borderWidth: 1
-                        , pointRadius: 2
-                    }, {
-                        data: [70, 90, 44, 60, 83], // Misalnya, data untuk Beras Setra
-                        label: "Beras Setra"
-                        , borderColor: "#FF0000"
-                        , backgroundColor: "transparent"
-                        , borderWidth: 1
-                        , pointRadius: 2
-                    },
-
-                    {
-                        data: [60, 44, 17, 21, 17], // Misalnya, data untuk Bawang Merah
-                        label: "Bawang Merah"
-                        , borderColor: "#8e5ea2"
-                        , backgroundColor: "transparent"
-                        , borderWidth: 1
-                        , pointRadius: 2
-                    },
-
-                    {
-                        data: [10, 21, 60, 44, 17], // Misalnya, data untuk Cabe Merah Keriting
-                        label: "Cabe Merah Keriting"
-                        , borderColor: "#9400D3"
-                        , backgroundColor: "transparent"
-                        , borderWidth: 1
-                        , pointRadius: 2
-                    }, {
-                        data: [111, 133, 70, 90, 100], // Misalnya, data untuk Cabe Rawit Merah
-                        label: "Cabe Rawit Merah"
-                        , borderColor: "#3e95cd"
-                        , backgroundColor: "transparent"
-                        , borderWidth: 1
-                        , pointRadius: 2
-                    }
-                ]
-            }
-            , options: {
-                scales: {
-                    y: {
-                        display: true
-                        , beginAtZero: true
-                        , ticks: {
-                            stepSize: 250
-                        }
-                        , title: {
-                            display: true
-                            , text: "Volume"
-                            , font: {
-                                size: 13
-                                , weight: "bold"
-                            , }
-                        }
-                    }
-                    , yAxes: [{
-                        ticks: {
-                            fontSize: 10
-                        }
-                    }]
-                    , xAxes: [{
-                        ticks: {
-                            fontSize: 10
-                        }
-                    }]
-
-
-                }
-                , legend: {
-                    labels: {
-                        // Menyesuaikan ukuran font untuk legenda
-                        fontSize: 10
-                    }
-                }
-            }
-
-        });
-
-    </script>
 
 
 
