@@ -122,8 +122,6 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                     </div>
                     <!--  -->
                     <div class="w-full px-4">
-                        <!-- Peta Tematik Title -->
-                        {{-- <div class="font-semibold text-sm mt-2">Peta Tematik</div> --}}
 
                         <!-- Section Transect Zone -->
                         <div class="grid grid-cols-1 gap-y-1 text-sm">
@@ -245,8 +243,6 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                     <button style="outline:none !important;" class="h-10 w-10 z-10 flex justify-center items-center border bg-blue-500 border-blue-500 rounded-full outline-none " id="btn-1" data-tooltip-target="tooltip-no-arrow" data-tooltip-placement="bottom">
 
 
-
-
                                         <svg class="text-white h-[18px]" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-map" viewBox="0 0 16 16">
 
 
@@ -279,10 +275,6 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                             <path fill-rule="evenodd" d="M0 0h1v15h15v1H0zm14.817 3.113a.5.5 0 0 1 .07.704l-4.5 5.5a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61 4.15-5.073a.5.5 0 0 1 .704-.07" />
                                         </svg>
-
-
-
-
 
 
                                     </button>
@@ -406,7 +398,6 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                     <h5 class="mt-3 mb-3.5 font-bold text-md text-center">Lokasi</h5>
 
 
-                                    {{-- byeeeee --}}
 
                                     <div class="w-full flex flex-col text-sm text-black">
 
@@ -479,16 +470,6 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                     <div class="mt-2">
                                         <canvas width="700" height="330" id="myChart2"></canvas>
                                     </div>
-
-
-
-
-
-
-
-
-
-                                    {{-- --}}
 
 
 
@@ -700,10 +681,6 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                 <div class="h-[50vh] flex flex-col ">
 
-                                    {{-- <h5 class="mt-3 mb-3.5 font-bold text-md text-center">Distribusi Pembiayaan</h5>
-
-                                    <canvas class="mt-2" id="distribusiPembiayaan" width="400" height="200"></canvas>
- --}}
                                     <h5 class="mt-4 font-bold text-md text-center">Distribusi Pembiayaan</h5>
 
                                     <div class="w-full flex justify-center">
@@ -733,10 +710,10 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                     <!-- Atas -->
                     <div class="w-full flex flex-col relative">
                         <!--  -->
-                        <div class="w-full flex flex-row justify-center mx-5 my-4">
+                        <div class="w-full flex flex-row justify-center mx-3 my-4">
                             <!--  -->
                             <div>
-                                <button class="inline-flex justify-center items-center px-3 h-8 text-sm font-medium rounded-full shadow-sm focus:outline-none focus:ring-0 bg-white text-black mr-3">
+                                <button id="iumk" class="inline-flex justify-center items-center px-3 h-8 text-sm font-medium rounded-full shadow-sm focus:outline-none focus:ring-0 bg-white text-black mr-3">
                                     <img src="{{ asset('assets/penggilingan.png') }}" alt="" class="w-5 h-5 mr-2.5 object-contain">
                                     <span class="font-semibold tracking-wider">Penggilingan Beras</span>
                                 </button>
@@ -744,7 +721,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             <!--  -->
 
                             <div>
-                                <button class="inline-flex justify-center items-center px-3 h-8 text-sm font-medium rounded-full shadow-sm focus:outline-none focus:ring-0 bg-white text-black mr-3">
+                                <button id="nib" class="inline-flex justify-center items-center px-3 h-8 text-sm font-medium rounded-full shadow-sm focus:outline-none focus:ring-0 bg-white text-black mr-3">
                                     <img src="{{ asset('assets/lumbung.png') }}" alt="" class="w-5 h-5 mr-2.5 object-contain">
                                     <span class="font-semibold tracking-wider">Lumbung Desa</span>
 
@@ -754,7 +731,8 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             <!--  -->
 
                             <div>
-                                <button class="inline-flex justify-center items-center px-3 h-8 text-sm font-medium rounded-full shadow-sm focus:outline-none focus:ring-0 bg-white text-black mr-3">
+                                <button id="sewa_kantor" class="inline-flex justify-center items-center px-3 h-8 text-sm font-medium rounded-full shadow-sm focus:outline-none focus:ring-0 bg-white text-black mr-3">
+
                                     <img src="{{ asset('assets/pasarinduk.png') }}" alt="" class="w-5 h-5 mr-2.5 object-contain">
 
                                     <span class="font-semibold tracking-wider">Pasar Induk</span>

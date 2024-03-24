@@ -736,15 +736,10 @@ map.on("style.load", () => {
 });
 
 window.onload = function () {
-    // Menemukan checkbox menggunakan ID-nya
-    var checkbox = document.getElementById("urban_fill");
-
-    // Memeriksa checkbox
-    checkbox.checked = true;
-
-    // Memanggil fungsi getDataSource secara manual jika diperlukan
-    // Asumsi: 'kelurahan' sudah tersimpan di localStorage
-    getDataSource("urban", localStorage.getItem("kelurahan"));
+    // noo1
+    // var checkbox = document.getElementById("urban_fill");
+    // checkbox.checked = true;
+    // getDataSource("urban", localStorage.getItem("kelurahan"));
 
     // Opsional: Memicu event 'change' jika ada logika tambahan yang tergantung pada ini
     // Ini bisa berguna jika ada event handler yang terpasang pada checkbox ini
