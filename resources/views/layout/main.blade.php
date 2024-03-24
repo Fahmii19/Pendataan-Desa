@@ -736,23 +736,32 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                         <div class="w-full flex flex-row justify-center mx-5 my-4">
                             <!--  -->
                             <div>
-                                <button class="inline-flex justify-center items-center px-4 h-8 text-sm font-medium rounded-full shadow-sm focus:outline-none focus:ring-0 bg-white text-black mr-3">
+                                <button class="inline-flex justify-center items-center px-3 h-8 text-sm font-medium rounded-full shadow-sm focus:outline-none focus:ring-0 bg-white text-black mr-3">
+                                    <img src="{{ asset('assets/penggilingan.png') }}" alt="" class="w-5 h-5 mr-2.5 object-contain">
                                     <span class="font-semibold tracking-wider">Penggilingan Beras</span>
                                 </button>
                             </div>
                             <!--  -->
+
                             <div>
-                                <button class="inline-flex justify-center items-center px-4 h-8 text-sm font-medium rounded-full shadow-sm focus:outline-none focus:ring-0 bg-white text-black mr-3">
+                                <button class="inline-flex justify-center items-center px-3 h-8 text-sm font-medium rounded-full shadow-sm focus:outline-none focus:ring-0 bg-white text-black mr-3">
+                                    <img src="{{ asset('assets/lumbung.png') }}" alt="" class="w-5 h-5 mr-2.5 object-contain">
                                     <span class="font-semibold tracking-wider">Lumbung Desa</span>
+
                                 </button>
                             </div>
+
                             <!--  -->
+
                             <div>
-                                <button class="inline-flex justify-center items-center px-4 h-8 text-sm font-medium rounded-full shadow-sm focus:outline-none focus:ring-0 bg-white text-black mr-3">
+                                <button class="inline-flex justify-center items-center px-3 h-8 text-sm font-medium rounded-full shadow-sm focus:outline-none focus:ring-0 bg-white text-black mr-3">
+                                    <img src="{{ asset('assets/pasarinduk.png') }}" alt="" class="w-5 h-5 mr-2.5 object-contain">
+
                                     <span class="font-semibold tracking-wider">Pasar Induk</span>
 
                                 </button>
                             </div>
+
 
                             <!--  -->
                         </div>
