@@ -519,7 +519,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
 
 
-                                    <div class="flex flex-col mt-[3rem] relative">
+                                    <div class="flex flex-col mt-[1.5rem] relative">
                                         <div class="relative flex flex-col">
 
                                             <div class="grid grid-cols-1 mb-[2rem] mt-1">
@@ -561,9 +561,13 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                             </div>
 
-                                            <div class="font-semibold absolute -top-8">Jarak Radius</div>
 
-                                            <div class="px-0 w-full ">
+                                            <div class="px-0 w-full relative mt-[1.5rem]">
+
+                                                <div class="font-semibold absolute -top-8">Jarak Radius</div>
+
+
+
                                                 <input type="range" id="slider-pindes" class="w-full opacity-0" style="z-index: 20; height: 2rem; cursor: pointer;" min="0" max="4" step="1">
                                                 <div class="bg-gray-300 h-2 w-full rounded-full relative mt-[-2rem]">
                                                     <span id="thumb" class="bg-white h-4 w-4 absolute top-0 -ml-1 -mt-1 z-10 border rounded-full cursor-pointer"></span>
