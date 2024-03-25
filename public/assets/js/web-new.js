@@ -737,9 +737,9 @@ map.on("style.load", () => {
 
 window.onload = function () {
     // noo1
-    // var checkbox = document.getElementById("urban_fill");
-    // checkbox.checked = true;
-    // getDataSource("urban", localStorage.getItem("kelurahan"));
+    var checkbox = document.getElementById("urban_fill");
+    checkbox.checked = true;
+    getDataSource("urban", localStorage.getItem("kelurahan"));
 
     // Opsional: Memicu event 'change' jika ada logika tambahan yang tergantung pada ini
     // Ini bisa berguna jika ada event handler yang terpasang pada checkbox ini
@@ -2992,7 +2992,7 @@ map.on("mousemove", "urban_fill", (e) => {
     ) {
         content = `<div class="card">
 
-        <div class="card-body w-[35vw] grid grid-cols-[270px,1fr] text-xs" style="padding: 0.7rem 0.7rem 0.2rem 0.7rem!important;">
+        <div class="card-body w-[40vw] grid grid-cols-[330px,1fr] text-xs" style="padding: 0.7rem 0.7rem 0.2rem 0.7rem!important;">
 
 
                 <div class="grid grid-cols-2 mr-2">
@@ -3009,14 +3009,35 @@ map.on("mousemove", "urban_fill", (e) => {
 
                                             <div class="flex flex-col mb-1 mr-2.5">
                                                 <div class="font-semibold">Kesuburan</div>
-                                                <div class="flex flex-row">
-                                                    <div class="">pH: 6.3</div>
-                                                    <div class="">P: 120 ppm</div>
+                                                <div class="grid grid-cols-2">
+                                                    <div class="grid grid-cols-[21px,1fr]">
+                                                        <div class="w-full flex justify-between">
+                                                            <div class="">pH</div>
+                                                        </div>
+                                                        <div class="">6.3</div>
+                                                    </div>
+                                                    <div class="grid grid-cols-[21px,1fr]">
+                                                        <div class="w-full flex justify-between">
+                                                            <div class="">P</div>
+                                                        </div>
+                                                        <div class="">120 ppm</div>
+                                                    </div>
                                                 </div>
-                                                <div class="flex flex-row">
-                                                    <div class="">K: 200 ppm</div>
-                                                    <div class="">Mg: 120 ppm</div>
+                                                <div class="grid grid-cols-2">
+                                                    <div class="grid grid-cols-[21px,1fr]">
+                                                        <div class="w-full flex justify-between">
+                                                            <div class="">K</div>
+                                                        </div>
+                                                        <div class="">200 ppm</div>
+                                                    </div>
+                                                    <div class="grid grid-cols-[21px,1fr]">
+                                                        <div class="w-full flex justify-between">
+                                                            <div class="">Mg</div>
+                                                        </div>
+                                                        <div class="">120 ppm</div>
+                                                    </div>
                                                 </div>
+
                                             </div>
                                             <div class="flex flex-col mb-1 mr-2.5">
                                                 <div class="font-semibold">Pemilik lahan
@@ -3041,6 +3062,11 @@ map.on("mousemove", "urban_fill", (e) => {
 
                                                 </div>
                                                 <div>5</div>
+                                            </div>
+                                            <div class="flex flex-col mb-1 mr-2.5">
+                                                <div class="font-semibold">Jumlah Pembiayaan
+                                                </div>
+                                                <div>Rp 50,000,000</div>
                                             </div>
 
 
@@ -3120,7 +3146,9 @@ map.on("mousemove", "urban_fill", (e) => {
                                             <div class="w-full h-full flex flex-col">
                                                     <div class="font-semibold">Catatan</div>
                                                     <div>
-                                                    memerlukan sekitar 4-5 bulan untuk mencapai panen setelah ditanam. Prosesnya dimulai dengan persiapan lahan</div>
+                                                    Pemupukan tahap kedua kemungkinan akan tertunda karena keterbatasan pupuk.</div>
+                                                    <div>
+                                                    (Petugas: Ali Imron)</div>
                                             </div>
                                         </div>
 

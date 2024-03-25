@@ -273,14 +273,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                 <div class="flex justify-start items-center">
                                     <button style="outline:none !important;" class="inline-block h-10 w-10 flex justify-center items-center border border-blue-500 rounded-full" id="btn-6" data-tooltip-target="tooltip-no-arrow-6" data-tooltip-placement="bottom">
 
-
-                                        <svg class="text-[#007bff] h-[22px]" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
-
-                                            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73z" />
-                                        </svg>
-
-
-
+                                        <img src="{{ asset('assets/neww/rp-off.png') }}" alt="" class="w-[1.1rem] h-[1.1rem] ml-0.5 mt-0.5 object-contain">
 
 
                                     </button>
@@ -308,14 +301,32 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                             <path fill-rule="evenodd" d="M0 0h1v15h15v1H0zm14.817 3.113a.5.5 0 0 1 .07.704l-4.5 5.5a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61 4.15-5.073a.5.5 0 0 1 .704-.07" />
                                         </svg>
 
+                                    </button>
+                                    <div id="tooltip-no-arrow-3" role="tooltip" class="absolute z-10 invisible inline-block px-2 py-1 text-xs font-medium text-black bg-white border rounded-lg ">
+                                        Pasar Induk
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- Button Ketujuh -->
+                            <div>
+                                <div class="flex justify-start items-center">
+                                    <button style="outline:none !important;" class="inline-block h-10 w-10 flex justify-center items-center border border-blue-500 rounded-full" id="btn-7" data-tooltip-target="tooltip-no-arrow-7" data-tooltip-placement="bottom">
 
 
+
+                                        <svg class="text-[#007bff] h-[19px]" xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
+
+                                            <path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z" />
+                                            <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z" />
+                                        </svg>
 
 
 
                                     </button>
-                                    <div id="tooltip-no-arrow-3" role="tooltip" class="absolute z-10 invisible inline-block px-2 py-1 text-xs font-medium text-black bg-white border rounded-lg ">
-                                        Referensi Harga
+                                    <div id="tooltip-no-arrow-7" role="tooltip" class="absolute z-10 invisible inline-block px-2 py-1 text-xs font-medium text-black bg-white border rounded-lg ">
+                                        Bandan Pangan Nasional
                                     </div>
 
                                 </div>
@@ -327,11 +338,16 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                     <button style="outline:none !important;" class="inline-block h-10 w-10 flex justify-center items-center border border-blue-500 rounded-full" id="btn-4" data-tooltip-target="tooltip-no-arrow-4" data-tooltip-placement="bottom">
 
 
-                                        <svg class="text-[#007bff] h-[20px]" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-safe2" viewBox="0 0 16 16">
+                                        <img src="{{ asset('assets/neww/saldo-off.png') }}" alt="" class="w-[1.4rem] h-[1.4rem] ml-0.5 object-contain">
+
+
+
+
+                                        {{-- <svg class="text-[#007bff] h-[20px]" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-safe2" viewBox="0 0 16 16">
 
                                             <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h12A1.5 1.5 0 0 1 16 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-12A1.5 1.5 0 0 1 1 14.5V14H.5a.5.5 0 0 1 0-1H1V9H.5a.5.5 0 0 1 0-1H1V4H.5a.5.5 0 0 1 0-1H1zM2.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h12a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5z" />
                                             <path d="M5.035 8h1.528q.072-.277.214-.516l-1.08-1.08A3.5 3.5 0 0 0 5.035 8m1.369-2.303 1.08 1.08q.24-.142.516-.214V5.035a3.5 3.5 0 0 0-1.596.662M9 5.035v1.528q.277.072.516.214l1.08-1.08A3.5 3.5 0 0 0 9 5.035m2.303 1.369-1.08 1.08q.142.24.214.516h1.528a3.5 3.5 0 0 0-.662-1.596M11.965 9h-1.528q-.072.277-.214.516l1.08 1.08A3.5 3.5 0 0 0 11.965 9m-1.369 2.303-1.08-1.08q-.24.142-.516.214v1.528a3.5 3.5 0 0 0 1.596-.662M8 11.965v-1.528a2 2 0 0 1-.516-.214l-1.08 1.08A3.5 3.5 0 0 0 8 11.965m-2.303-1.369 1.08-1.08A2 2 0 0 1 6.563 9H5.035c.085.593.319 1.138.662 1.596M4 8.5a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0m4.5-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2" />
-                                        </svg>
+                                        </svg> --}}
 
 
                                     </button>
@@ -511,6 +527,63 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                             </div>
 
+                            <!-- Konten Ketujuh -->
+                            <div class="hidden text-sm pb-2" id="content-7">
+                                <div class="w-full h-[50vh] flex flex-col">
+
+                                    <div class="mt-3">
+                                        <div class="w-full text-xs text-black flex flex-col ">
+                                            <div class="w-full flex justify-center">Pembaruan Terakhir</div>
+                                            <div class="w-full flex justify-center">Tanggal 19 Maret 2024</div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="grid grid-cols-1 mb-[2rem] mt-3">
+                                        {{-- <div class="col-span-1 font-semibold">Badan Pangan Nasional</div> --}}
+                                        <div class="grid grid-cols-[1fr,1fr,100px]">
+                                            <div class="">Beras Cianjur Kepala</div>
+                                            <div class=" text-right">Rp 19.825</div>
+                                        </div>
+                                        <div class="grid grid-cols-[1fr,1fr,100px]">
+                                            <div class="">Beras Cianjur Slyp</div>
+
+                                            <div class=" text-right">Rp 18.333</div>
+                                        </div>
+                                        <div class="grid grid-cols-[1fr,1fr,100px]">
+                                            <div class="">Beras Setra</div>
+                                            <div class=" text-right">Rp 16.786</div>
+                                        </div>
+                                        {{-- --}}
+                                        <div class="grid grid-cols-[1fr,1fr,100px]">
+                                            <div class="">Beras Saigon</div>
+                                            <div class=" text-right">Rp 16.070</div>
+                                        </div>
+                                        {{-- --}}
+                                        <div class="grid grid-cols-[1fr,1fr,100px]">
+                                            <div class="">Beras Muncul 1</div>
+                                            <div class=" text-right">Rp 15.900</div>
+                                        </div>
+                                        {{-- --}}
+                                        <div class="grid grid-cols-[1fr,1fr,100px]">
+                                            <div class="">Beras Muncul 2</div>
+                                            <div class=" text-right">Rp 15.333</div>
+                                        </div>
+                                        {{-- --}}
+                                        <div class="grid grid-cols-[1fr,1fr,100px]">
+                                            <div class="">Beras Muncul 3</div>
+                                            <div class=" text-right">Rp 14.500</div>
+
+                                        </div>
+
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+
+
                             <!-- Konten Ketiga -->
                             <div class="hidden text-sm pb-2" id="content-3">
 
@@ -521,47 +594,6 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                     <div class="flex flex-col mt-[1.5rem] relative">
                                         <div class="relative flex flex-col">
-
-                                            <div class="grid grid-cols-1 mb-[2rem] mt-1">
-                                                <div class="col-span-1 font-semibold">Badan Pangan Nasional</div>
-                                                <div class="grid grid-cols-[1fr,150px]">
-                                                    <div class="">Beras Cianjur Kepala</div>
-                                                    <div class=" text-right">Rp 19.825</div>
-                                                </div>
-                                                <div class="grid grid-cols-[1fr,150px]">
-                                                    <div class="">Beras Cianjur Slyp</div>
-
-                                                    <div class=" text-right">Rp 18.333</div>
-                                                </div>
-                                                <div class="grid grid-cols-[1fr,150px]">
-                                                    <div class="">Beras Setra</div>
-                                                    <div class=" text-right">Rp 16.786</div>
-                                                </div>
-                                                {{-- --}}
-                                                <div class="grid grid-cols-[1fr,150px]">
-                                                    <div class="">Beras Saigon</div>
-                                                    <div class=" text-right">Rp 16.070</div>
-                                                </div>
-                                                {{-- --}}
-                                                <div class="grid grid-cols-[1fr,150px]">
-                                                    <div class="">Beras Muncul 1</div>
-                                                    <div class=" text-right">Rp 15.900</div>
-                                                </div>
-                                                {{-- --}}
-                                                <div class="grid grid-cols-[1fr,150px]">
-                                                    <div class="">Beras Muncul 2</div>
-                                                    <div class=" text-right">Rp 15.333</div>
-                                                </div>
-                                                {{-- --}}
-                                                <div class="grid grid-cols-[1fr,150px]">
-                                                    <div class="">Beras Muncul 3</div>
-                                                    <div class=" text-right">Rp 14.500</div>
-
-                                                </div>
-
-                                            </div>
-
-
                                             <div class="px-0 w-full relative mt-[1.5rem]">
 
                                                 <div class="font-semibold absolute -top-8">Jarak Radius</div>
@@ -587,8 +619,6 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                                 <div class="absolute -bottom-[3.5rem] text-xs text-black flex flex-col ">
                                                     <div class="w-full flex justify-center">Pembaruan Terakhir</div>
                                                     <div class="w-full flex justify-center">Tanggal 19 Maret 2024</div>
-
-
                                                 </div>
                                             </div>
 
@@ -606,31 +636,31 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                         <h5 class="mt-2 mb-1 font-bold text-md text-left">Pasar Induk Terminal Kota Subang</h5>
 
-                                        <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="grid grid-cols-[1fr,1fr,100px]">
                                             <div class="">Beras Cianjur Kepala</div>
                                             <div class=" text-right">Rp 19.825</div>
                                         </div>
-                                        <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="grid grid-cols-[1fr,1fr,100px]">
                                             <div class="">Beras Cianjur Slyp</div>
                                             <div class=" text-right">Rp 18.333</div>
                                         </div>
-                                        <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="grid grid-cols-[1fr,1fr,100px]">
                                             <div class="">Beras Setra</div>
                                             <div class=" text-right">Rp 16.786</div>
                                         </div>
-                                        <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="grid grid-cols-[1fr,1fr,100px]">
                                             <div class="">Beras Saigon</div>
                                             <div class=" text-right">Rp 16.070</div>
                                         </div>
-                                        <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="grid grid-cols-[1fr,1fr,100px]">
                                             <div class="">Beras Muncul 1</div>
                                             <div class=" text-right">Rp 15.900</div>
                                         </div>
-                                        <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="grid grid-cols-[1fr,1fr,100px]">
                                             <div class="">Beras Muncul 2</div>
                                             <div class=" text-right">Rp 15.333</div>
                                         </div>
-                                        <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="grid grid-cols-[1fr,1fr,100px]">
                                             <div class="">Beras Muncul 3</div>
                                             <div class=" text-right">Rp 14.500</div>
                                         </div>
@@ -641,31 +671,31 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                     <div class="grid grid-cols-1 mt-3 radius2">
                                         <h5 class="mt-1 mb-1 font-bold text-md text-left">Pasar Induk Johar Karawang</h5>
-                                        <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="grid grid-cols-[1fr,1fr,100px]">
                                             <div class="">Beras Cianjur Kepala</div>
                                             <div class="text-right">Rp 19.825</div>
                                         </div>
-                                        <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="grid grid-cols-[1fr,1fr,100px]">
                                             <div class="">Beras Cianjur Slyp</div>
                                             <div class="text-right">Rp 18.333</div>
                                         </div>
-                                        <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="grid grid-cols-[1fr,1fr,100px]">
                                             <div class="">Beras Setra</div>
                                             <div class="text-right">Rp 16.786</div>
                                         </div>
-                                        <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="grid grid-cols-[1fr,1fr,100px]">
                                             <div class="">Beras Saigon</div>
                                             <div class="text-right">Rp 16.070</div>
                                         </div>
-                                        <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="grid grid-cols-[1fr,1fr,100px]">
                                             <div class="">Beras Muncul 1</div>
                                             <div class="text-right">Rp 15.900</div>
                                         </div>
-                                        <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="grid grid-cols-[1fr,1fr,100px]">
                                             <div class="">Beras Muncul 2</div>
                                             <div class="text-right">Rp 15.333</div>
                                         </div>
-                                        <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="grid grid-cols-[1fr,1fr,100px]">
                                             <div class="">Beras Muncul 3</div>
                                             <div class="text-right">Rp 14.500</div>
                                         </div>
@@ -674,31 +704,31 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                     <div class="grid grid-cols-1 mt-3 radius3">
                                         <h5 class="mt-1 mb-1 font-bold text-md text-left">Pasar Induk Cianjur</h5>
-                                        <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="grid grid-cols-[1fr,1fr,100px]">
                                             <div class="">Beras Cianjur Kepala</div>
                                             <div class="text-right">Rp 19.825</div>
                                         </div>
-                                        <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="grid grid-cols-[1fr,1fr,100px]">
                                             <div class="">Beras Cianjur Slyp</div>
                                             <div class="text-right">Rp 18.333</div>
                                         </div>
-                                        <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="grid grid-cols-[1fr,1fr,100px]">
                                             <div class="">Beras Setra</div>
                                             <div class="text-right">Rp 16.786</div>
                                         </div>
-                                        <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="grid grid-cols-[1fr,1fr,100px]">
                                             <div class="">Beras Saigon</div>
                                             <div class="text-right">Rp 16.070</div>
                                         </div>
-                                        <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="grid grid-cols-[1fr,1fr,100px]">
                                             <div class="">Beras Muncul 1</div>
                                             <div class="text-right">Rp 15.900</div>
                                         </div>
-                                        <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="grid grid-cols-[1fr,1fr,100px]">
                                             <div class="">Beras Muncul 2</div>
                                             <div class="text-right">Rp 15.333</div>
                                         </div>
-                                        <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="grid grid-cols-[1fr,1fr,100px]">
                                             <div class="">Beras Muncul 3</div>
                                             <div class="text-right">Rp 14.500</div>
                                         </div>
@@ -740,23 +770,30 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                 <div class="h-[50vh] flex flex-col ">
 
+                                    <div class="mt-3">
+                                        <div class="w-full text-xs text-black flex flex-col ">
+                                            <div class="w-full flex justify-center">Pembaruan Terakhir</div>
+                                            <div class="w-full flex justify-center">Tanggal 19 Maret 2024</div>
+                                        </div>
+                                    </div>
+
                                     <div class="grid grid-cols-1 mt-3">
 
                                         <h5 class="mt-2 mb-1 font-bold text-md text-left">Beras</h5>
 
 
-                                        <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="grid grid-cols-[1fr,1fr,100px]">
                                             <div class="">Pupuk Urea</div>
                                             <div class=" text-right">200</div>
                                         </div>
 
-                                        <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="grid grid-cols-[1fr,1fr,100px]">
                                             <div class="">Pupuk NPK</div>
 
                                             <div class=" text-right">200</div>
                                         </div>
 
-                                        <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="grid grid-cols-[1fr,1fr,100px]">
                                             <div class="">Pupuk NPK Khusus</div>
                                             <div class=" text-right">180</div>
                                         </div>
@@ -770,19 +807,19 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
 
 
-                                        <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="grid grid-cols-[1fr,1fr,100px]">
                                             <div class="">Pupuk Urea</div>
                                             <div class=" text-right">200</div>
                                         </div>
 
-                                        <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="grid grid-cols-[1fr,1fr,100px]">
                                             <div class="">Pupuk NPK</div>
 
                                             <div class=" text-right">170</div>
 
                                         </div>
 
-                                        <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="grid grid-cols-[1fr,1fr,100px]">
                                             <div class="">Pupuk NPK Khusus</div>
 
                                             <div class=" text-right">180</div>
@@ -799,19 +836,19 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
 
 
-                                        <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="grid grid-cols-[1fr,1fr,100px]">
                                             <div class="">Pupuk Urea</div>
                                             <div class=" text-right">200</div>
                                         </div>
 
-                                        <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="grid grid-cols-[1fr,1fr,100px]">
                                             <div class="">Pupuk NPK</div>
 
                                             <div class=" text-right">170</div>
 
                                         </div>
 
-                                        <div class="grid grid-cols-[1fr,150px]">
+                                        <div class="grid grid-cols-[1fr,1fr,100px]">
                                             <div class="">Pupuk NPK Khusus</div>
 
                                             <div class=" text-right">180</div>
@@ -10370,46 +10407,50 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
         });
 
         document.addEventListener("DOMContentLoaded", function() {
-            // Fungsi untuk mengaktifkan tab
             function activateTab(btnId) {
-                // Mendapatkan semua elemen konten
                 const allContents = document.querySelectorAll('[id^="content-"]');
-                // Sembunyikan semua konten
                 allContents.forEach((content) => {
                     content.classList.add("hidden");
                 });
 
-                // Mendapatkan semua tombol
                 const allButtons = document.querySelectorAll('[id^="btn-"]');
-                // Reset kelas untuk semua tombol
                 allButtons.forEach((btn) => {
-                    // Reset tombol ke default tidak aktif
-                    btn.classList.add("border-blue-500", "text-[#007bff]"); // Teks biru untuk tombol tidak aktif
-                    btn.classList.remove("bg-blue-500", "text-white"); // Hapus kelas untuk tombol aktif
-                    btn.querySelector("svg").classList.add("text-[#007bff]"); // Teks biru untuk SVG
-                    btn.querySelector("svg").classList.remove("text-white"); // Hapus kelas teks putih pada SVG
+                    btn.classList.add("border-blue-500", "text-blue-500");
+                    btn.classList.remove("bg-blue-500", "text-white");
+                    if (btn.querySelector("svg")) {
+                        btn.querySelector("svg").classList.add("text-blue-500");
+                        btn.querySelector("svg").classList.remove("text-white");
+                    }
+                    if (btn.id === "btn-6") {
+                        btn.querySelector("img").src = "assets/neww/rp-off.png";
+                    } else if (btn.id === "btn-4") {
+                        btn.querySelector("img").src = "assets/neww/saldo-off.png";
+                    }
                 });
 
-                // Tampilkan konten yang sesuai
                 const contentId = "content-" + btnId.split("-")[1];
                 document.getElementById(contentId).classList.remove("hidden");
 
-                // Tambahkan kelas pada tombol yang aktif
                 const activeBtn = document.getElementById(btnId);
-                activeBtn.classList.add("bg-blue-500", "text-white"); // Tombol aktif dengan background biru dan teks putih
-                activeBtn.classList.remove("text-[#007bff]", "border-blue-500"); // Hapus kelas teks biru dan border biru
-                activeBtn.querySelector("svg").classList.remove("text-[#007bff]"); // Hapus kelas teks biru pada SVG
-                activeBtn.querySelector("svg").classList.add("text-white"); // Teks putih untuk SVG
+                activeBtn.classList.add("bg-blue-500", "text-white");
+                activeBtn.classList.remove("text-blue-500", "border-blue-500");
+                if (activeBtn.querySelector("svg")) {
+                    activeBtn.querySelector("svg").classList.remove("text-blue-500");
+                    activeBtn.querySelector("svg").classList.add("text-white");
+                }
+                if (btnId === "btn-6") {
+                    activeBtn.querySelector("img").src = "assets/neww/rp-on.png";
+                } else if (btnId === "btn-4") {
+                    activeBtn.querySelector("img").src = "assets/neww/saldo-on.png";
+                }
             }
 
-            // Tambahkan event listener ke setiap tombol
             document.querySelectorAll('[id^="btn-"]').forEach((btn) => {
                 btn.addEventListener("click", function() {
                     activateTab(btn.id);
                 });
             });
 
-            // Aktifkan konten pertama secara default
             activateTab("btn-1");
         });
 
@@ -10417,97 +10458,109 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
     {{-- Pie Chart --}}
     <script>
-        var oilCanvas = document.getElementById("produksiPertanian");
+        document.addEventListener("DOMContentLoaded", function() {
+            var oilCanvas = document.getElementById("produksiPertanian");
 
-        // Mengatur ukuran font default
-        Chart.defaults.font.size = 14;
+            const oilData = {
+                labels: ["Beras", "Cabe", "Bawang"]
+                , datasets: [{
+                    data: [133.3, 86.2, 52.2], // Angka dalam jutaan
+                    backgroundColor: ["#FDCA40", "#FB3640", "#542E71"]
+                }]
+            };
 
-        var oilData = {
-            labels: [
-                "Beras", "Cabe", "Bawang"
-            ]
-            , datasets: [{
-                data: [133.3, 86.2, 52.2]
-                , backgroundColor: [
-                    "#FDCA40", // Beras
-                    "#FB3640", // Cabe
-                    "#542E71" // Bawang (Unggu)
-                ]
-            }]
-        };
+            const pieChart = new Chart(oilCanvas, {
+                type: 'pie'
+                , data: oilData
+                , options: {
+                    plugins: {
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    let label = context.label || '';
+                                    if (label) {
+                                        label += ': ';
+                                    }
+                                    const value = context.parsed * 1000; // Memperbaiki akses ke nilai data
+                                    label += new Intl.NumberFormat('id-ID').format(value) + ' Ton';
 
-        var pieChart = new Chart(oilCanvas, {
-            type: 'pie'
-            , data: oilData
-            , options: {
-                plugins: {
-                    legend: {
-                        labels: {
-                            usePointStyle: true
-                            , boxWidth: 9
-                            , font: {
-                                size: 10 // Menyesuaikan ukuran font untuk legenda
+                                    return label;
+                                }
+                            }
+                        }
+                        , legend: {
+                            labels: {
+                                usePointStyle: true
+                                , boxWidth: 8
+                                , font: {
+                                    size: 10 // Menyesuaikan ukuran font untuk legenda
+                                }
                             }
                         }
                     }
                 }
-            }
+            });
         });
 
     </script>
+
+
+
+
 
 
 
     {{-- Pie Chart2 --}}
+
     <script>
-        var oilCanvas = document.getElementById("distribusiPembiayaan");
+        document.addEventListener("DOMContentLoaded", function() {
+            var oilCanvas = document.getElementById("distribusiPembiayaan");
 
 
-        // Mengatur ukuran font default
-        Chart.defaults.font.size = 14;
+            const oilData = {
+                labels: ["Bank", "Tengkulak", "Modal Sendiri"]
+                , datasets: [{
+                    data: [133.3, 86.2, 52.2], // Angka dalam jutaan
+                    backgroundColor: ["#FFB6B9", "#FAE3D9", "#61C0BF"]
+                }]
 
-        var oilData = {
-            labels: [
-                "Bank", "Tengkulak", "Modal Sendiri"
+            };
 
-
-
-            ]
-            , datasets: [{
-                data: [133.3, 86.2, 52.2]
-                , backgroundColor: [
-                    "#FFB6B9", // Biru
-
-
-                    "#FAE3D9", // Hijau
-
-
-                    "#61C0BF" // Merah
-
-
-                ]
-            }]
-        };
-
-        var pieChart = new Chart(oilCanvas, {
-            type: 'pie'
-            , data: oilData
-            , options: {
-                plugins: {
-                    legend: {
-                        labels: {
-                            usePointStyle: true
-                            , boxWidth: 8
-                            , font: {
-                                size: 10 // Menyesuaikan ukuran font untuk legenda
+            const pieChart = new Chart(oilCanvas, {
+                type: 'pie'
+                , data: oilData
+                , options: {
+                    plugins: {
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    let label = context.label || '';
+                                    if (label) {
+                                        label += ': ';
+                                    }
+                                    const value = context.parsed * 1000000; // Memperbaiki akses ke nilai data
+                                    label += 'Rp ' + new Intl.NumberFormat('id-ID').format(value);
+                                    return label;
+                                }
+                            }
+                        }
+                        , legend: {
+                            labels: {
+                                usePointStyle: true
+                                , boxWidth: 8
+                                , font: {
+                                    size: 10 // Menyesuaikan ukuran font untuk legenda
+                                }
                             }
                         }
                     }
                 }
-            }
+            });
         });
 
     </script>
+
+
 
 
 
