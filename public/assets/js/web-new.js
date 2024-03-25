@@ -3008,8 +3008,15 @@ map.on("mousemove", "urban_fill", (e) => {
 
 
                                             <div class="flex flex-col mb-1 mr-2.5">
-                                                <div class="font-semibold">pH</div>
-                                                <div>6.3</div>
+                                                <div class="font-semibold">Kesuburan</div>
+                                                <div class="flex flex-row">
+                                                    <div class="">pH: 6.3</div>
+                                                    <div class="">P: 120 ppm</div>
+                                                </div>
+                                                <div class="flex flex-row">
+                                                    <div class="">K: 200 ppm</div>
+                                                    <div class="">Mg: 120 ppm</div>
+                                                </div>
                                             </div>
                                             <div class="flex flex-col mb-1 mr-2.5">
                                                 <div class="font-semibold">Pemilik lahan
@@ -3057,6 +3064,11 @@ map.on("mousemove", "urban_fill", (e) => {
                                             <div class="flex flex-col mb-1 mr-2.5">
                                                 <div class="font-semibold">Komoditi Tanam</div>
                                                 <div>Beras Setra</div>
+                                            </div>
+
+                                            <div class="flex flex-col mb-1 mr-2.5">
+                                                <div class="font-semibold">Skema Pembiayaan</div>
+                                                <div>Modal sendiri</div>
                                             </div>
 
 
@@ -3153,7 +3165,7 @@ map.on("mousemove", "urban_fill", (e) => {
 map.on("mouseleave", "urban_fill", () => {
     map.getCanvas().style.cursor = "";
 
-    popup.remove();
+    // popup.remove();
 });
 
 // Interaction Layer Sarana Prasarana
