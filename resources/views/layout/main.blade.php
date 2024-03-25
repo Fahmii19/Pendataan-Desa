@@ -734,8 +734,92 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             <!-- Konten Kelima -->
                             <div class="hidden text-sm pb-2" id="content-5">
 
-                                <div class="h-[50vh] flex flex-col "></div>
-                                {{-- <h5 class="mt-3 mb-3.5 font-bold text-md text-center">Distribusi Pupuk</h5> --}}
+                                <div class="h-[50vh] flex flex-col ">
+
+                                    <div class="grid grid-cols-1 mt-3">
+
+                                        <h5 class="mt-2 mb-1 font-bold text-md text-left">Beras</h5>
+
+
+                                        <div class="grid grid-cols-[1fr,150px]">
+                                            <div class="">Pupuk Urea</div>
+                                            <div class=" text-right">200</div>
+                                        </div>
+
+                                        <div class="grid grid-cols-[1fr,150px]">
+                                            <div class="">Pupuk NPK</div>
+
+                                            <div class=" text-right">200</div>
+                                        </div>
+
+                                        <div class="grid grid-cols-[1fr,150px]">
+                                            <div class="">Pupuk NPK Khusus</div>
+                                            <div class=" text-right">180</div>
+                                        </div>
+
+                                        {{-- --}}
+                                    </div>
+                                    {{-- --}}
+                                    <div class="grid grid-cols-1 mt-3">
+
+                                        <h5 class="mt-2 mb-1 font-bold text-md text-left">Bawang</h5>
+
+
+
+                                        <div class="grid grid-cols-[1fr,150px]">
+                                            <div class="">Pupuk Urea</div>
+                                            <div class=" text-right">200</div>
+                                        </div>
+
+                                        <div class="grid grid-cols-[1fr,150px]">
+                                            <div class="">Pupuk NPK</div>
+
+                                            <div class=" text-right">170</div>
+
+                                        </div>
+
+                                        <div class="grid grid-cols-[1fr,150px]">
+                                            <div class="">Pupuk NPK Khusus</div>
+
+                                            <div class=" text-right">180</div>
+
+                                        </div>
+
+                                        {{-- --}}
+                                    </div>
+                                    {{-- --}}
+                                    <div class="grid grid-cols-1 mt-3">
+
+                                        <h5 class="mt-2 mb-1 font-bold text-md text-left">Cabe</h5>
+
+
+
+
+                                        <div class="grid grid-cols-[1fr,150px]">
+                                            <div class="">Pupuk Urea</div>
+                                            <div class=" text-right">200</div>
+                                        </div>
+
+                                        <div class="grid grid-cols-[1fr,150px]">
+                                            <div class="">Pupuk NPK</div>
+
+                                            <div class=" text-right">170</div>
+
+                                        </div>
+
+                                        <div class="grid grid-cols-[1fr,150px]">
+                                            <div class="">Pupuk NPK Khusus</div>
+
+                                            <div class=" text-right">180</div>
+
+                                        </div>
+
+                                        {{-- --}}
+                                    </div>
+
+
+
+                                </div>
                             </div>
 
 
