@@ -946,7 +946,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                     <div class="w-full flex items-stretch">
                         <div class="w-full flex flex-col self-end">
                             <!-- Legend -->
-                            <div class="flex flex-row w-full mb-3 ml-[1.2vw] relative">
+                            <div class="flex flex-row w-full mb-3 ml-[1.2vw] relative legend_komoditi hidden">
                                 <div class="w-[39.5vw] h-[17.7vh] text-xs py-2 px-1 rounded-sm bg-white flex flex-col mr-3">
 
 

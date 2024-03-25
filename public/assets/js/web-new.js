@@ -737,9 +737,9 @@ map.on("style.load", () => {
 
 window.onload = function () {
     // noo1
-    var checkbox = document.getElementById("urban_fill");
-    checkbox.checked = true;
-    getDataSource("urban", localStorage.getItem("kelurahan"));
+    // var checkbox = document.getElementById("urban_fill");
+    // checkbox.checked = true;
+    // getDataSource("urban", localStorage.getItem("kelurahan"));
 
     // Opsional: Memicu event 'change' jika ada logika tambahan yang tergantung pada ini
     // Ini bisa berguna jika ada event handler yang terpasang pada checkbox ini
@@ -954,6 +954,17 @@ const banjir = (
 };
 
 const getDataSource = (kategori, kelurahan) => {
+    const prediksiCurahHujanContainer =
+        document.querySelector(".legend_komoditi");
+
+    const checkbox = document.getElementById("urban_fill");
+
+    if (checkbox.checked) {
+        prediksiCurahHujanContainer.classList.remove("hidden");
+    } else {
+        prediksiCurahHujanContainer.classList.add("hidden");
+    }
+
     let temp_kategori = [];
 
     if (kategori == "banjir") {
@@ -3193,7 +3204,7 @@ map.on("mousemove", "urban_fill", (e) => {
 map.on("mouseleave", "urban_fill", () => {
     map.getCanvas().style.cursor = "";
 
-    // popup.remove();
+    popup.remove();
 });
 
 // Interaction Layer Sarana Prasarana
