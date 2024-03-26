@@ -506,10 +506,10 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                         </div>
                                     </div>
 
-                                    <h5 class="mt-4 font-bold text-md text-center">Bar</h5>
+                                    <h5 class="mt-4 font-bold text-md text-center">Distribusi Usia</h5>
                                     <div class="w-full flex justify-center">
-                                        <div style="width:65%;">
-                                            <canvas class="mt-2" id="barChart" width="100" height="100"></canvas>
+                                        <div id="container" style="width: 100%;">
+                                            <canvas id="canvas1"></canvas>
                                         </div>
                                     </div>
 
@@ -10557,6 +10557,9 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
     </script>
 
+
+
+
     {{-- Pie Chart --}}
     <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -11056,63 +11059,58 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
 
     {{-- Bar --}}
-
     <script>
-        // Sample data for the chart
-        let data = {
-            labels: ['Label 1', 'Label 2'
-                , 'Label 3', 'Label 4'
-                , 'Label 5'
-            ]
+        const barChartData = {
+            labels: ["15-20", "21-25", "26-30", "31-35", "36-40"]
             , datasets: [{
-                label: 'Styled Bar Chart'
-                , data: [12, 19, 4, 8, 5]
-                , backgroundColor: [
-                    'rgba(255, 99, 132, 0.5)'
-                    , 'rgba(54, 162, 235, 0.7)'
-                    , 'rgba(255, 206, 86, 0.9)'
-                    , 'rgba(75, 192, 192, 0.6)'
-                    , 'rgba(153, 102, 255, 0.8)'
-                ]
-                , borderColor: [
-                    'rgba(255, 99, 132, 1)'
-                    , 'rgba(54, 162, 235, 1)'
-                    , 'rgba(255, 206, 86, 1)'
-                    , 'rgba(75, 192, 192, 1)'
-                    , 'rgba(153, 102, 255, 1)'
-                ]
-                , borderWidth: 2
-                , borderRadius: 10
-                , hoverBackgroundColor: 'rgba(255, 99, 132, 0.8)'
-                , hoverBorderColor: 'rgba(255, 99, 132, 1)'
-            }]
+                    label: "Penyewa"
+                    , backgroundColor: "#879fd1"
+                    , data: [3, 5, 6, 7, 3]
+                }
+                , {
+                    label: "Pemilik"
+                    , backgroundColor: "#ffba44"
+                    , data: [4, 7, 3, 6, 10]
+                }
+                , {
+                    label: "Petani"
+                    , backgroundColor: "#5dc8f0"
+                    , data: [10, 7, 4, 6, 9]
+                }
+            ]
         };
 
-        // Configuration options for the chart
-        let options = {
+        const chartOptions = {
             scales: {
                 y: {
                     beginAtZero: true
+                    , grid: {
+                        color: "#eeeeee"
+                    }
+                }
+                , x: {
+                    title: {
+                        display: true
+                        , text: 'Usia'
+                    }
+                    , grid: {
+                        display: false
+                        , color: "#333333"
+                    }
                 }
             }
         };
 
-        // Get the canvas element
-        let ctx = document.
-        getElementById('barChart').
-        getContext('2d');
-
-        // Create the styled bar chart
-        let myStyledBarChart = new Chart(ctx, {
-            type: 'bar'
-            , data: data
-            , options: options
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctx = document.getElementById("canvas1").getContext("2d");
+            window.myBar = new Chart(ctx, {
+                type: "bar"
+                , data: barChartData
+                , options: chartOptions
+            });
         });
 
     </script>
-
-
-
 
 
 
