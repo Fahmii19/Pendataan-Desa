@@ -882,8 +882,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                     {{-- <h5 class="mt-3 mb-3.5 font-bold text-md text-center">Distribusi Pembiayaan</h5>
 
-                                    <canvas class="mt-2" id="distribusiPembiayaan" width="400" height="200"></canvas>
- --}}
+                                    <canvas class="mt-2" id="distribusiPembiayaan" width="400" height="200"></canvas>--}}
                                     <h5 class="mt-4 font-bold text-md text-center">Distribusi Pembiayaan</h5>
 
                                     <div class="w-full flex justify-center">
@@ -10481,7 +10480,6 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
 
 
-
                 }]
             };
 
@@ -10490,21 +10488,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                 , data: oilData
                 , options: {
                     plugins: {
-                        tooltip: {
-                            callbacks: {
-                                label: function(context) {
-                                    let label = context.label || '';
-                                    if (label) {
-                                        label += ': ';
-                                    }
-                                    const value = context.parsed * 1000; // Memperbaiki akses ke nilai data
-                                    label += new Intl.NumberFormat('id-ID').format(value) + ' Ton';
-
-                                    return label;
-                                }
-                            }
-                        }
-                        , legend: {
+                        legend: {
                             labels: {
                                 usePointStyle: true
                                 , boxWidth: 8
@@ -10513,6 +10497,22 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                 }
                             }
                         }
+                    }
+                    , hover: {
+                        mode: null, // Menonaktifkan efek hover
+                        animationDuration: 0 // Menghilangkan animasi saat hover
+                    }
+                    , animation: {
+                        duration: 0, // Opsi ini menghilangkan animasi saat load
+                        hover: {
+                            mode: null
+                        }
+                    }
+                    , events: ['mousemove', 'mouseout', 'click', 'touchstart', 'touchmove'], // Menyertakan event untuk tooltip
+                    interaction: {
+                        mode: 'nearest'
+                        , intersect: true
+                        , axis: 'x'
                     }
                 }
             });
@@ -10527,23 +10527,17 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
 
     {{-- Pie Chart2 --}}
-
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             var oilCanvas = document.getElementById("distribusiPembiayaan");
-
 
             const oilData = {
                 labels: ["Bank", "Tengkulak", "Modal Sendiri"]
                 , datasets: [{
                     data: [133.3, 86.2, 52.2], // Angka dalam jutaan
-                    backgroundColor: ["#378CE7", "#378CE7", "#67C6E3"]
-
-
-
+                    backgroundColor: ["#5356FF", "#378CE7", "#67C6E3"]
 
                 }]
-
             };
 
             const pieChart = new Chart(oilCanvas, {
@@ -10551,20 +10545,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                 , data: oilData
                 , options: {
                     plugins: {
-                        tooltip: {
-                            callbacks: {
-                                label: function(context) {
-                                    let label = context.label || '';
-                                    if (label) {
-                                        label += ': ';
-                                    }
-                                    const value = context.parsed * 1000000; // Memperbaiki akses ke nilai data
-                                    label += 'Rp ' + new Intl.NumberFormat('id-ID').format(value);
-                                    return label;
-                                }
-                            }
-                        }
-                        , legend: {
+                        legend: {
                             labels: {
                                 usePointStyle: true
                                 , boxWidth: 8
@@ -10574,13 +10555,27 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             }
                         }
                     }
+                    , hover: {
+                        mode: null, // Menonaktifkan efek hover
+                        animationDuration: 0 // Menghilangkan animasi saat hover
+                    }
+                    , animation: {
+                        duration: 0, // Opsi ini menghilangkan animasi saat load
+                        hover: {
+                            mode: null
+                        }
+                    }
+                    , events: ['mousemove', 'mouseout', 'click', 'touchstart', 'touchmove'], // Menyertakan event untuk tooltip
+                    interaction: {
+                        mode: 'nearest'
+                        , intersect: true
+                        , axis: 'x'
+                    }
                 }
             });
         });
 
     </script>
-
-
 
 
 
