@@ -183,7 +183,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             <div class="flex items-center form-check fertility_map_zone mt-1">
                                 <div class="inline-flex items-center">
                                     <input type="checkbox" class="h-3.5 w-3.5 form-check-input hapus_focus_checkbox focus:border focus:ring-0 focus:ring-offset-0 text-blue-600 border-gray-300 border rounded-sm" id="fertility_map" onchange="getDataSource('fertility', localStorage.getItem('kelurahan'))">
-                                    <label class="form-check-label  ml-2 mt-1" for="fertility_map">Sumber Air dan Jalur Pengaliran</label>
+                                    <label class="form-check-label  ml-2 mt-1" for="fertility_map">Sumber Air dan Jalur Pengairan</label>
 
                                     <div class="form-check form-check-inline fertility_map_year mt-1 hidden">
                                         <input type="radio" name="fertility_map_zone" value="year2021-color2021" class="form-check-input fertility_map_year w-3 h-3" disabled checked>
@@ -326,7 +326,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                     </button>
                                     <div id="tooltip-no-arrow-7" role="tooltip" class="absolute z-10 invisible inline-block px-2 py-1 text-xs font-medium text-black bg-white border rounded-lg ">
-                                        Bandan Pangan Nasional
+                                        Patokan Harga
                                     </div>
 
                                 </div>
@@ -540,7 +540,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
 
                                     <div class="grid grid-cols-1 mb-[2rem] mt-3">
-                                        {{-- <div class="col-span-1 font-semibold">Badan Pangan Nasional</div> --}}
+                                        <div class="col-span-1 font-semibold">Badan Pangan Nasional</div>
                                         <div class="grid grid-cols-[1fr,1fr,100px]">
                                             <div class="">Beras Cianjur Kepala</div>
                                             <div class=" text-right">Rp 19.825</div>
@@ -746,7 +746,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                 <div class="h-[50vh] flex flex-col ">
 
-                                    <h5 class="mt-4 font-bold text-md text-center">Saldo Lumbungg</h5>
+                                    <h5 class="mt-4 font-bold text-md text-center">Saldo Lumbung</h5>
                                     <div class="mt-2">
                                         <canvas width="500" height="330" id="myChart3"></canvas>
                                     </div>
@@ -779,8 +779,10 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                     <div class="grid grid-cols-1 mt-3">
 
-                                        <h5 class="mt-2 mb-1 font-bold text-md text-left">Beras</h5>
-
+                                        <div class="grid grid-cols-[1fr,1fr,100px] font-bold text-md mt-2 mb-1">
+                                            <div class="">Beras</div>
+                                            <div class=" text-right">kg</div>
+                                        </div>
 
                                         <div class="grid grid-cols-[1fr,1fr,100px]">
                                             <div class="">Pupuk Urea</div>
@@ -803,8 +805,11 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                     {{-- --}}
                                     <div class="grid grid-cols-1 mt-3">
 
-                                        <h5 class="mt-2 mb-1 font-bold text-md text-left">Bawang</h5>
 
+                                        <div class="grid grid-cols-[1fr,1fr,100px] font-bold text-md mt-2 mb-1">
+                                            <div class="">Bawang</div>
+                                            <div class=" text-right">kg</div>
+                                        </div>
 
 
                                         <div class="grid grid-cols-[1fr,1fr,100px]">
@@ -831,7 +836,13 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                     {{-- --}}
                                     <div class="grid grid-cols-1 mt-3">
 
-                                        <h5 class="mt-2 mb-1 font-bold text-md text-left">Cabe</h5>
+
+
+                                        <div class="grid grid-cols-[1fr,1fr,100px] font-bold text-md mt-2 mb-1">
+                                            <div class="">Cabe</div>
+                                            <div class=" text-right">kg</div>
+                                        </div>
+
 
 
 
@@ -10465,7 +10476,12 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                 labels: ["Beras", "Cabe", "Bawang"]
                 , datasets: [{
                     data: [133.3, 86.2, 52.2], // Angka dalam jutaan
-                    backgroundColor: ["#FDCA40", "#FB3640", "#542E71"]
+                    backgroundColor: ["#FFC700", "#4CCD99", "#007F73"]
+
+
+
+
+
                 }]
             };
 
@@ -10521,7 +10537,11 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                 labels: ["Bank", "Tengkulak", "Modal Sendiri"]
                 , datasets: [{
                     data: [133.3, 86.2, 52.2], // Angka dalam jutaan
-                    backgroundColor: ["#FFB6B9", "#FAE3D9", "#61C0BF"]
+                    backgroundColor: ["#378CE7", "#378CE7", "#67C6E3"]
+
+
+
+
                 }]
 
             };
@@ -10771,7 +10791,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                         }
                         , title: {
                             display: true
-                            , text: "Volume"
+                            , text: "Volume (ton)"
                             , font: {
                                 size: 13
                                 , weight: "bold"
