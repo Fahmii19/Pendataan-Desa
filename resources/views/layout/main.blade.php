@@ -11176,7 +11176,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                     display: true
                     , title: {
                         display: true
-                        , text: "Angka"
+                        , text: "Jumlah"
                         , font: {
                             size: 13
                             , weight: "bold"
