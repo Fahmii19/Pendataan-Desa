@@ -997,6 +997,8 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                         <div class="w-full flex flex-col self-end">
                             <!-- Legend -->
                             <div class="flex flex-row w-full mb-3 ml-[1.2vw] relative">
+                                {{-- hidden --}}
+
                                 <div class="w-[39.5vw] h-[17.7vh] text-xs py-2 px-1 rounded-sm bg-white flex flex-col mr-3 legend_komoditi hidden">
 
 
@@ -1103,48 +1105,45 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                 </div>
 
-                                <div class=" box_prediksi_hujan hidden w-[9vw] h-[17.7vh] text-xs rounded-sm bg-white flex flex-col items-center pt-2 mr-3">
+                                {{-- hidden --}}
+                                <div class=" box_prediksi_hujan hidden w-[9.2vw] h-[17.7vh] text-xs rounded-sm bg-white flex flex-col items-center pt-2 mr-3">
 
 
-                                    <div class="flex flex-col">
-                                        <div class="inline-flex items-center mb-[0.2rem]">
+                                    <div class="flex flex-col w-full">
+
+                                        <div class="w-full flex justify-center font-semibold mb-0.5">Curah Hujan (mm/hari)</div>
+
+
+                                        <div class="inline-flex items-center ml-2">
                                             <div class="w-2.5 h-2.5 bg-[#99CCFF] rounded-xs mr-1"></div>
-                                            <div> 0 mm/hari</div>
+                                            <div> 0</div>
                                         </div>
-                                        <div class="inline-flex items-center mb-[0.2rem]">
+                                        <div class="inline-flex items-center ml-2">
                                             <div class="w-2.5 h-2.5 bg-[#66B2FF] rounded-xs mr-1"></div>
-
-
                                             <div>
-                                                0.5 – 20 mm/hari
-
+                                                0.5 – 20
                                             </div>
                                         </div>
 
-                                        <div class="inline-flex items-center mb-[0.2rem]">
+                                        <div class="inline-flex items-center ml-2">
                                             <div class="w-2.5 h-2.5 bg-[#3399FF] rounded-xs mr-1"></div>
-                                            <div>20 – 50 mm/hari</div>
-
+                                            <div>20 – 50</div>
                                         </div>
-                                        <div class="inline-flex items-center mb-[0.2rem]">
+                                        <div class="inline-flex items-center ml-2">
                                             <div class="w-2.5 h-2.5 bg-[#0066FF] rounded-xs mr-1"></div>
-                                            <div>50 – 100 mm/hari </div>
-
+                                            <div>50 – 100 </div>
                                         </div>
-                                        <div class="inline-flex items-center mb-[0.2rem]">
+                                        <div class="inline-flex items-center ml-2">
                                             <div class="w-2.5 h-2.5 bg-[#004CFF] rounded-xs mr-1"></div>
                                             <div>
-                                                100 – 150 mm/hari
-
+                                                100 – 150
                                             </div>
                                         </div>
 
-                                        <div class="inline-flex items-center mb-[0.2rem]">
+                                        <div class="inline-flex items-center ml-2">
                                             <div class="w-2.5 h-2.5 bg-[#0033FF] rounded-xs mr-1"></div>
                                             <div>
-                                                >150 mm / hari
-
-
+                                                > 150
                                             </div>
                                         </div>
 
@@ -1154,64 +1153,114 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                 </div>
 
-                                {{-- --}}
-                                <div class="box_usia_panen w-[9vw] h-[17.7vh] text-xs rounded-sm bg-white flex flex-col items-start pt-2 mr-3 hidden">
-                                    <div class="flex flex-col ml-2.5">
-                                        <div class="inline-flex items-center mb-[0.2rem]">
+                                <div class=" box_usia_panen hidden w-[9.2vw] h-[17.7vh] text-xs rounded-sm bg-white flex flex-col items-center pt-2 mr-3">
+
+                                    <div class="flex flex-col w-full">
+
+                                        <div class="w-full flex justify-center font-semibold mb-0.5">Usia Tanaman (minggu)</div>
+
+
+                                        <div class="inline-flex items-center ml-2">
                                             <div class="w-2.5 h-2.5 bg-[#C8E6C9] rounded-xs mr-1"></div>
-                                            <div>0 - 1 bulan</div>
+
+                                            <div>0 - 2</div>
                                         </div>
-                                        <div class="inline-flex items-center mb-[0.2rem]">
+                                        <div class="inline-flex items-center ml-2">
                                             <div class="w-2.5 h-2.5 bg-[#A3D9A5] rounded-xs mr-1"></div>
-                                            <div>1 - 2 bulan</div>
+
+                                            <div>
+                                                2 – 4
+                                            </div>
                                         </div>
-                                        <div class="inline-flex items-center mb-[0.2rem]">
+
+                                        <div class="inline-flex items-center ml-2">
                                             <div class="w-2.5 h-2.5 bg-[#72C074] rounded-xs mr-1"></div>
-                                            <div>2 - 3 bulan</div>
+
+                                            <div>4 – 6</div>
                                         </div>
-                                        <div class="inline-flex items-center mb-[0.2rem]">
+                                        <div class="inline-flex items-center ml-2">
                                             <div class="w-2.5 h-2.5 bg-[#42A842] rounded-xs mr-1"></div>
-                                            <div>3 - 4 bulan</div>
+
+                                            <div>6 – 8 </div>
                                         </div>
-                                        <div class="inline-flex items-center mb-[0.2rem]">
+                                        <div class="inline-flex items-center ml-2">
                                             <div class="w-2.5 h-2.5 bg-[#008A00] rounded-xs mr-1"></div>
-                                            <div>4 - 5 bulan</div>
+
+                                            <div>
+                                                8 – 10
+                                            </div>
                                         </div>
-                                        <div class="inline-flex items-center mb-[0.2rem]">
+
+                                        <div class="inline-flex items-center ml-2">
                                             <div class="w-2.5 h-2.5 bg-[#005700] rounded-xs mr-1"></div>
-                                            <div>5 - 6 bulan</div>
+
+                                            <div>
+                                                10 - 12
+                                            </div>
                                         </div>
+
+
                                     </div>
+
+
                                 </div>
 
-                                {{-- --}}
-                                <div class="box_kesuburan w-[9vw] h-[17.7vh] text-xs rounded-sm bg-white flex flex-col items-start pt-2 mr-3 hidden">
-                                    <div class="flex flex-col ml-2.5">
-                                        <div class="inline-flex items-center mb-[0.2rem]">
+
+                                <div class="box_kesuburan hidden w-[9.2vw] h-[17.7vh] text-xs rounded-sm bg-white flex flex-col items-center pt-2 mr-3">
+                                    <div class="flex flex-col w-full">
+
+                                        <div class="w-full flex justify-center font-semibold mb-0.5">Kesuburan Tanah (pH)</div>
+
+
+                                        <div class="inline-flex items-center ml-2">
                                             <div class="w-2.5 h-2.5 bg-[#D7CCC8] rounded-xs mr-1"></div>
-                                            <div>0 - 2 pH</div>
+
+
+                                            <div>0 - 2</div>
                                         </div>
-                                        <div class="inline-flex items-center mb-[0.2rem]">
+                                        <div class="inline-flex items-center ml-2">
                                             <div class="w-2.5 h-2.5 bg-[#BCAAA4] rounded-xs mr-1"></div>
-                                            <div>2 - 4 pH</div>
+
+
+                                            <div>
+                                                2 – 4
+                                            </div>
                                         </div>
-                                        <div class="inline-flex items-center mb-[0.2rem]">
+
+                                        <div class="inline-flex items-center ml-2">
                                             <div class="w-2.5 h-2.5 bg-[#A1887F] rounded-xs mr-1"></div>
-                                            <div>4 - 6 pH</div>
+
+
+                                            <div>4 – 6</div>
                                         </div>
-                                        <div class="inline-flex items-center mb-[0.2rem]">
+                                        <div class="inline-flex items-center ml-2">
                                             <div class="w-2.5 h-2.5 bg-[#8D6E63] rounded-xs mr-1"></div>
-                                            <div>6 - 8 pH</div>
+
+
+                                            <div>6 – 8 </div>
                                         </div>
-                                        <div class="inline-flex items-center mb-[0.2rem]">
+                                        <div class="inline-flex items-center ml-2">
                                             <div class="w-2.5 h-2.5 bg-[#795548] rounded-xs mr-1"></div>
-                                            <div>8 - 10 pH</div>
+
+
+                                            <div>
+                                                8 – 10
+                                            </div>
                                         </div>
-                                        <div class="inline-flex items-center mb-[0.2rem]">
+
+                                        <div class="inline-flex items-center ml-2">
                                             <div class="w-2.5 h-2.5 bg-[#6D4C41] rounded-xs mr-1"></div>
-                                            <div>10 - 12 pH</div>
+
+
+                                            <div>
+                                                10 - 12
+                                            </div>
                                         </div>
+
+
                                     </div>
+
+
                                 </div>
 
 
