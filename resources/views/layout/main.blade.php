@@ -10727,6 +10727,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                         , backgroundColor: '#DAA520'
                         , borderWidth: 1
                         , pointRadius: 2
+                        , tension: 0.3
                         , segment: {
                             borderColor: ctx => skipped(ctx, '#DAA520') || down(ctx, '#DAA520')
                             , borderDash: ctx => skipped(ctx, [3, 3])
@@ -10740,6 +10741,9 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                         , backgroundColor: '#FF0000'
                         , borderWidth: 1
                         , pointRadius: 2
+                        , tension: 0.3
+
+
                         , segment: {
                             borderColor: ctx => skipped(ctx, '#FF0000') || down(ctx, '#FF0000')
                             , borderDash: ctx => skipped(ctx, [3, 3])
@@ -10753,6 +10757,9 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                         , backgroundColor: '#9400D3'
                         , borderWidth: 1
                         , pointRadius: 2
+                        , tension: 0.3
+
+
                         , segment: {
                             borderColor: ctx => skipped(ctx, '#9400D3') || down(ctx, '#9400D3')
                             , borderDash: ctx => skipped(ctx, [3, 3])
@@ -11076,7 +11083,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                         }
                         , title: {
                             display: true
-                            , text: "Harga (Rp)"
+                            , text: "Harga (x Rp 1.000)"
                             , font: {
                                 size: 13
                                 , weight: "bold"
@@ -11087,7 +11094,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                         display: true
                         , title: {
                             display: true
-                            , text: "Bulan"
+                            , text: "Tanggal"
                             , font: {
                                 size: 12
                                 , weight: "bold"
