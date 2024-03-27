@@ -10570,10 +10570,6 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                 , datasets: [{
                     data: [133.3, 86.2, 52.2], // Angka dalam jutaan
                     backgroundColor: ["#FFC700", "#4CCD99", "#007F73"]
-
-
-
-
                 }]
             };
 
@@ -10588,6 +10584,20 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                 , boxWidth: 8
                                 , font: {
                                     size: 10 // Menyesuaikan ukuran font untuk legenda
+                                }
+                            }
+                        }
+                        , tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    let label = context.label || '';
+                                    if (label) {
+                                        label += ': ';
+                                    }
+                                    const value = context.parsed * 1000; // Memperbaiki akses ke nilai data
+                                    label += new Intl.NumberFormat('id-ID').format(value) + ' Ton';
+
+                                    return label;
                                 }
                             }
                         }
@@ -10613,6 +10623,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
         });
 
     </script>
+
 
 
 
@@ -10630,7 +10641,6 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                 , datasets: [{
                     data: [133.3, 86.2, 52.2], // Angka dalam jutaan
                     backgroundColor: ["#5356FF", "#378CE7", "#67C6E3"]
-
                 }]
             };
 
@@ -10645,6 +10655,21 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                 , boxWidth: 8
                                 , font: {
                                     size: 10 // Menyesuaikan ukuran font untuk legenda
+                                }
+                            }
+                        }
+                        , tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    let label = context.label || '';
+                                    if (label) {
+                                        label += ': ';
+                                    }
+                                    const value = context.parsed * 1000000; // Memperbaiki akses ke nilai data
+                                    label += ' Rp ' + new Intl.NumberFormat('id-ID').format(value);
+
+
+                                    return label;
                                 }
                             }
                         }
@@ -10670,6 +10695,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
         });
 
     </script>
+
 
 
 
@@ -11058,44 +11084,78 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
 
 
-    {{-- Bar --}}
+
     <script>
         const barChartData = {
             labels: ["15-20", "21-25", "26-30", "31-35", "36-40"]
             , datasets: [{
                     label: "Penyewa"
                     , backgroundColor: "#879fd1"
-                    , data: [3, 5, 6, 7, 3]
+                    , data: [17, 20, 25, 20, 23]
+                    , barThickness: 7 // Atur lebar bar menjadi 7 pixel
                 }
                 , {
                     label: "Pemilik"
                     , backgroundColor: "#ffba44"
-                    , data: [4, 7, 3, 6, 10]
+                    , data: [31, 32, 37, 21, 45]
+                    , barThickness: 7 // Atur lebar bar menjadi 7 pixel
                 }
                 , {
                     label: "Petani"
                     , backgroundColor: "#5dc8f0"
-                    , data: [10, 7, 4, 6, 9]
+                    , data: [30, 41, 45, 46, 49]
+                    , barThickness: 7 // Atur lebar bar menjadi 7 pixel
                 }
             ]
         };
 
         const chartOptions = {
+            indexAxis: 'x', // Mengatur sumbu x sebagai sumbu kategori
             scales: {
-                y: {
-                    beginAtZero: true
-                    , grid: {
-                        color: "#eeeeee"
+                x: {
+                    display: true
+                    , beginAtZero: true
+                    , ticks: {
+                        stepSize: 2, // Mengatur jarak antara label pada sumbu x
+                    }
+                    , title: {
+                        display: true
+                        , text: "Usia"
+                        , font: {
+                            size: 12
+                            , weight: "bold"
+                        }
                     }
                 }
-                , x: {
-                    title: {
+                , y: {
+                    display: true
+                    , title: {
                         display: true
-                        , text: 'Usia'
+                        , text: "Angka"
+                        , font: {
+                            size: 13
+                            , weight: "bold"
+                        }
                     }
-                    , grid: {
-                        display: false
-                        , color: "#333333"
+                    , max: 50 // Mengatur nilai maksimum pada sumbu y
+                }
+            }
+            , plugins: {
+                legend: {
+                    labels: {
+                        usePointStyle: true
+                        , boxWidth: 8
+                        , generateLabels: (chart) => {
+                            return chart.data.datasets.map((dataset, index) => {
+                                return {
+                                    text: dataset.label
+                                    , fillStyle: dataset.backgroundColor
+                                    , strokeStyle: dataset.borderColor
+                                    , pointStyle: 'rect'
+                                    , hidden: false
+                                };
+                            });
+                        }
                     }
                 }
             }
@@ -11111,6 +11171,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
         });
 
     </script>
+
 
 
 
