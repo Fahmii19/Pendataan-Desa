@@ -10828,6 +10828,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                         , backgroundColor: '#DAA520'
                         , borderWidth: 1
                         , pointRadius: 2
+                        , tension: 0.3
                         , segment: {
                             borderColor: ctx => skipped(ctx, '#DAA520') || down(ctx, '#DAA520')
                             , borderDash: ctx => skipped(ctx, [3, 3])
@@ -10841,6 +10842,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                         , backgroundColor: '#FF0000'
                         , borderWidth: 1
                         , pointRadius: 2
+                        , tension: 0.3
                         , segment: {
                             borderColor: ctx => skipped(ctx, '#FF0000') || down(ctx, '#FF0000')
                             , borderDash: ctx => skipped(ctx, [3, 3])
@@ -10854,6 +10856,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                         , backgroundColor: '#9400D3'
                         , borderWidth: 1
                         , pointRadius: 2
+                        , tension: 0.3
                         , segment: {
                             borderColor: ctx => skipped(ctx, '#9400D3') || down(ctx, '#9400D3')
                             , borderDash: ctx => skipped(ctx, [3, 3])
@@ -10870,6 +10873,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                         , backgroundColor: '#FF4500'
                         , borderWidth: 1
                         , pointRadius: 2
+                        , tension: 0.3
                         , segment: {
                             borderColor: ctx => skipped(ctx, '#FF4500') || down(ctx, '#FF4500')
                             , borderDash: ctx => skipped(ctx, [3, 3])
@@ -10886,6 +10890,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                         , backgroundColor: '#FFD700'
                         , borderWidth: 1
                         , pointRadius: 2
+                        , tension: 0.3
                         , segment: {
                             borderColor: ctx => skipped(ctx, '#FFD700') || down(ctx, '#FFD700')
                             , borderDash: ctx => skipped(ctx, [3, 3])
@@ -10992,26 +10997,27 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                         , borderWidth: 1
                         , pointRadius: 2
                         , spanGaps: true
+                        , tension: 0.3 // Mengatur kehalusan kurva
                     }
                     , {
                         label: 'Beras Cianjur Slyp'
                         , data: [15, 17, 16, 18, 19, 14, 20]
-
                         , borderColor: '#FF0000'
                         , backgroundColor: '#FF0000'
                         , borderWidth: 1
                         , pointRadius: 2
                         , spanGaps: true
+                        , tension: 0.3 // Mengatur kehalusan kurva
                     }
                     , {
                         label: 'Beras Setra'
                         , data: [18, 20, 15, 17, 14, 19, 16]
-
                         , borderColor: '#9400D3'
                         , backgroundColor: '#9400D3'
                         , borderWidth: 1
                         , pointRadius: 2
                         , spanGaps: true
+                        , tension: 0.3 // Mengatur kehalusan kurva
                     }
                     , {
                         label: 'Beras Saigon'
@@ -11021,6 +11027,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                         , borderWidth: 1
                         , pointRadius: 2
                         , spanGaps: true
+                        , tension: 0.3 // Mengatur kehalusan kurva
                     }
                     , {
                         label: 'Beras Muncul 1'
@@ -11030,6 +11037,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                         , borderWidth: 1
                         , pointRadius: 2
                         , spanGaps: true
+                        , tension: 0.3 // Mengatur kehalusan kurva
                     }
                     , {
                         label: 'Beras Muncul 2'
@@ -11039,6 +11047,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                         , borderWidth: 1
                         , pointRadius: 2
                         , spanGaps: true
+                        , tension: 0.3 // Mengatur kehalusan kurva
                     }
                     , {
                         label: 'Beras Muncul 3'
@@ -11048,6 +11057,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                         , borderWidth: 1
                         , pointRadius: 2
                         , spanGaps: true
+                        , tension: 0.3 // Mengatur kehalusan kurva
                     }
                 ]
             }
