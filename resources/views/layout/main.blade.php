@@ -953,20 +953,18 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                     <!--  -->
                 </div>
-            </div>
-            <!-- Kedua -->
 
-            <div class="flex flex-col justify-between">
-                <!-- Atas -->
-                <div class="w-full flex flex-col relative">
-                    <!-- bug_chips -->
-                    <div class="w-full flex flex-row justify-center mx-3 my-4 hidden">
-                        <!--  -->
-                        <div>
+                <!-- Kedua -->
+
+                <div class="flex flex-col justify-between">
+                    <!-- Atas -->
+                    <div class="w-full flex flex-col relative">
+                        <!-- bug_chips -->
+                        <div class="w-full flex flex-row justify-center mx-3 my-4">
+                            <!--  -->
 
                             <div>
                                 <button class="inline-flex justify-center items-center px-3 h-8 text-sm font-medium rounded-full shadow-sm focus:outline-none focus:ring-0 bg-white text-black mr-3">
-                                    <img src="{{ asset('assets/penggilingan.png') }}" alt="" class="w-5 h-5 mr-2.5 object-contain">
                                     <span class="font-semibold tracking-wider">Penggilingan Beras</span>
                                 </button>
                             </div>
@@ -974,9 +972,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                             <div>
                                 <button class="inline-flex justify-center items-center px-3 h-8 text-sm font-medium rounded-full shadow-sm focus:outline-none focus:ring-0 bg-white text-black mr-3">
-                                    <img src="{{ asset('assets/lumbung.png') }}" alt="" class="w-5 h-5 mr-2.5 object-contain">
                                     <span class="font-semibold tracking-wider">Lumbung Desa</span>
-
                                 </button>
                             </div>
 
@@ -984,267 +980,267 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                             <div>
                                 <button class="inline-flex justify-center items-center px-3 h-8 text-sm font-medium rounded-full shadow-sm focus:outline-none focus:ring-0 bg-white text-black mr-3">
-                                    <img src="{{ asset('assets/pasarinduk.png') }}" alt="" class="w-5 h-5 mr-2.5 object-contain">
-
                                     <span class="font-semibold tracking-wider">Pasar Induk</span>
-
                                 </button>
                             </div>
 
+
+
+
+                            <!--  -->
                         </div>
-
-
-
                         <!--  -->
                     </div>
-                    <!--  -->
-                </div>
 
-                <!-- Bawah -->
-                <div class="w-full flex items-stretch">
-                    <div class="w-full flex flex-col self-end">
-                        <!-- Legend -->
-                        <div class="flex flex-row w-full mb-3 ml-[1.2vw] relative">
-                            <div class="w-[39.5vw] h-[17.7vh] text-xs py-2 px-1 rounded-sm bg-white flex flex-col mr-3 legend_komoditi hidden">
+                    <!-- Bawah -->
+                    <div class="w-full flex items-stretch">
+                        <div class="w-full flex flex-col self-end">
+                            <!-- Legend -->
+                            <div class="flex flex-row w-full mb-3 ml-[1.2vw] relative">
+                                <div class="w-[39.5vw] h-[17.7vh] text-xs py-2 px-1 rounded-sm bg-white flex flex-col mr-3 legend_komoditi hidden">
 
 
 
-                                <div class="flex flex-row mb-2.5">
+                                    <div class="flex flex-row mb-2.5">
 
 
-                                    <div class="flex flex-col ml-[0.45rem]">
-                                        <div class="font-semibold mb-0.5 text-center">Komoditi</div>
-                                        {{-- --}}
-                                        <div class="flex flex-col">
-                                            <div class="inline-flex items-center">
-                                                <div class="w-2.5 h-2.5 bg-[#5C5C5C] rounded-xs mr-1"></div>
-                                                <div> Beras Cianjur Kepala</div>
-                                            </div>
-                                            <div class="inline-flex items-center">
-                                                <div class="w-2.5 h-2.5 bg-[#C78E28] rounded-xs mr-1"></div>
-
-
-                                                <div>
-                                                    Beras Setra
+                                        <div class="flex flex-col ml-[0.45rem]">
+                                            <div class="font-semibold mb-0.5 text-center">Komoditi</div>
+                                            {{-- --}}
+                                            <div class="flex flex-col">
+                                                <div class="inline-flex items-center">
+                                                    <div class="w-2.5 h-2.5 bg-[#5C5C5C] rounded-xs mr-1"></div>
+                                                    <div> Beras Cianjur Kepala</div>
                                                 </div>
-                                            </div>
+                                                <div class="inline-flex items-center">
+                                                    <div class="w-2.5 h-2.5 bg-[#C78E28] rounded-xs mr-1"></div>
 
-                                            <div class="inline-flex items-center">
-                                                <div class="w-2.5 h-2.5 bg-[#38A800] rounded-xs mr-1"></div>
-                                                <div> Cabe Merah Keriting</div>
-                                            </div>
-                                            <div class="inline-flex items-center">
-                                                <div class="w-2.5 h-2.5 bg-[#42A097] rounded-xs mr-1"></div>
-                                                <div> Cabe Rawit Merah</div>
-                                            </div>
-                                            <div class="inline-flex items-center">
-                                                <div class="w-2.5 h-2.5 bg-[#46A042] rounded-xs mr-1"></div>
-                                                <div>
-                                                    Bawang Merah
+
+                                                    <div>
+                                                        Beras Setra
+                                                    </div>
                                                 </div>
+
+                                                <div class="inline-flex items-center">
+                                                    <div class="w-2.5 h-2.5 bg-[#38A800] rounded-xs mr-1"></div>
+                                                    <div> Cabe Merah Keriting</div>
+                                                </div>
+                                                <div class="inline-flex items-center">
+                                                    <div class="w-2.5 h-2.5 bg-[#42A097] rounded-xs mr-1"></div>
+                                                    <div> Cabe Rawit Merah</div>
+                                                </div>
+                                                <div class="inline-flex items-center">
+                                                    <div class="w-2.5 h-2.5 bg-[#46A042] rounded-xs mr-1"></div>
+                                                    <div>
+                                                        Bawang Merah
+                                                    </div>
+                                                </div>
+
                                             </div>
 
                                         </div>
 
-                                    </div>
+                                        <div class="flex flex-col ml-3.5">
+                                            <div class="font-semibold mb-0.5 text-center">Luas Lahan (m<sup>2</sup>)</div>
 
-                                    <div class="flex flex-col ml-3.5">
-                                        <div class="font-semibold mb-0.5 text-center">Luas Lahan (m<sup>2</sup>)</div>
+                                            <div class="flex flex-col text-right">
+                                                <div>11,000</div>
+                                                <div>54,000</div>
+                                                <div>21,000</div>
+                                                <div>89,000</div>
+                                                <div>12,000</div>
+                                            </div>
 
-                                        <div class="flex flex-col text-right">
-                                            <div>11,000</div>
-                                            <div>54,000</div>
-                                            <div>21,000</div>
-                                            <div>89,000</div>
-                                            <div>12,000</div>
+
+                                        </div>
+                                        <div class="flex flex-col ml-3.5">
+                                            <div class="font-semibold mb-0.5 text-center">Perkiraan Panen (Ton)</div>
+
+                                            <div class="flex flex-col text-center">
+                                                <div>17</div>
+                                                <div>12</div>
+                                                <div>15</div>
+                                                <div>14</div>
+                                                <div>18</div>
+                                            </div>
+                                            {{-- --}}
+                                        </div>
+                                        <div class="flex flex-col ml-3.5">
+                                            <div class="font-semibold mb-0.5 text-center">Harga Pasar (Rp)</div>
+                                            <div class="flex flex-col text-right">
+                                                <div>25,500</div>
+                                                <div>27,500</div>
+                                                <div>29,500</div>
+                                                <div>15,500</div>
+                                                <div>13,500</div>
+                                            </div>
+                                            <div class="mt-0.5 text-right font-semibold">Jumlah</div>
+
+                                        </div>
+                                        <div class="flex flex-col ml-3.5">
+                                            <div class="font-semibold mb-0.5 text-center">Total</div>
+
+
+                                            <div class="flex flex-col text-right">
+
+                                                <div>4,768,500,000</div>
+                                                <div>17,820,000,000</div>
+                                                <div>9,292,500,000</div>
+                                                <div>19,313,000,000</div>
+                                                <div>2,916,000,000</div>
+
+
+                                            </div>
+
+                                            <div class="font-semibold mt-0.5">54,110,000,000</div>
                                         </div>
 
 
                                     </div>
-                                    <div class="flex flex-col ml-3.5">
-                                        <div class="font-semibold mb-0.5 text-center">Perkiraan Panen (Ton)</div>
 
-                                        <div class="flex flex-col text-center">
-                                            <div>17</div>
-                                            <div>12</div>
-                                            <div>15</div>
-                                            <div>14</div>
-                                            <div>18</div>
+
+
+
+                                </div>
+
+                                <div class=" box_prediksi_hujan hidden w-[9vw] h-[17.7vh] text-xs rounded-sm bg-white flex flex-col items-center pt-2 mr-3">
+
+
+                                    <div class="flex flex-col">
+                                        <div class="inline-flex items-center mb-[0.2rem]">
+                                            <div class="w-2.5 h-2.5 bg-[#99CCFF] rounded-xs mr-1"></div>
+                                            <div> 0 mm/hari</div>
                                         </div>
-                                        {{-- --}}
-                                    </div>
-                                    <div class="flex flex-col ml-3.5">
-                                        <div class="font-semibold mb-0.5 text-center">Harga Pasar (Rp)</div>
-                                        <div class="flex flex-col text-right">
-                                            <div>25,500</div>
-                                            <div>27,500</div>
-                                            <div>29,500</div>
-                                            <div>15,500</div>
-                                            <div>13,500</div>
-                                        </div>
-                                        <div class="mt-0.5 text-right font-semibold">Jumlah</div>
-
-                                    </div>
-                                    <div class="flex flex-col ml-3.5">
-                                        <div class="font-semibold mb-0.5 text-center">Total</div>
+                                        <div class="inline-flex items-center mb-[0.2rem]">
+                                            <div class="w-2.5 h-2.5 bg-[#66B2FF] rounded-xs mr-1"></div>
 
 
-                                        <div class="flex flex-col text-right">
+                                            <div>
+                                                0.5 – 20 mm/hari
 
-                                            <div>4,768,500,000</div>
-                                            <div>17,820,000,000</div>
-                                            <div>9,292,500,000</div>
-                                            <div>19,313,000,000</div>
-                                            <div>2,916,000,000</div>
-
-
+                                            </div>
                                         </div>
 
-                                        <div class="font-semibold mt-0.5">54,110,000,000</div>
+                                        <div class="inline-flex items-center mb-[0.2rem]">
+                                            <div class="w-2.5 h-2.5 bg-[#3399FF] rounded-xs mr-1"></div>
+                                            <div>20 – 50 mm/hari</div>
+
+                                        </div>
+                                        <div class="inline-flex items-center mb-[0.2rem]">
+                                            <div class="w-2.5 h-2.5 bg-[#0066FF] rounded-xs mr-1"></div>
+                                            <div>50 – 100 mm/hari </div>
+
+                                        </div>
+                                        <div class="inline-flex items-center mb-[0.2rem]">
+                                            <div class="w-2.5 h-2.5 bg-[#004CFF] rounded-xs mr-1"></div>
+                                            <div>
+                                                100 – 150 mm/hari
+
+                                            </div>
+                                        </div>
+
+                                        <div class="inline-flex items-center mb-[0.2rem]">
+                                            <div class="w-2.5 h-2.5 bg-[#0033FF] rounded-xs mr-1"></div>
+                                            <div>
+                                                >150 mm / hari
+
+
+                                            </div>
+                                        </div>
+
+
                                     </div>
 
 
                                 </div>
+
+                                {{-- --}}
+                                <div class="box_usia_panen w-[9vw] h-[17.7vh] text-xs rounded-sm bg-white flex flex-col items-start pt-2 mr-3 hidden">
+                                    <div class="flex flex-col ml-2.5">
+                                        <div class="inline-flex items-center mb-[0.2rem]">
+                                            <div class="w-2.5 h-2.5 bg-[#C8E6C9] rounded-xs mr-1"></div>
+                                            <div>0 - 1 bulan</div>
+                                        </div>
+                                        <div class="inline-flex items-center mb-[0.2rem]">
+                                            <div class="w-2.5 h-2.5 bg-[#A3D9A5] rounded-xs mr-1"></div>
+                                            <div>1 - 2 bulan</div>
+                                        </div>
+                                        <div class="inline-flex items-center mb-[0.2rem]">
+                                            <div class="w-2.5 h-2.5 bg-[#72C074] rounded-xs mr-1"></div>
+                                            <div>2 - 3 bulan</div>
+                                        </div>
+                                        <div class="inline-flex items-center mb-[0.2rem]">
+                                            <div class="w-2.5 h-2.5 bg-[#42A842] rounded-xs mr-1"></div>
+                                            <div>3 - 4 bulan</div>
+                                        </div>
+                                        <div class="inline-flex items-center mb-[0.2rem]">
+                                            <div class="w-2.5 h-2.5 bg-[#008A00] rounded-xs mr-1"></div>
+                                            <div>4 - 5 bulan</div>
+                                        </div>
+                                        <div class="inline-flex items-center mb-[0.2rem]">
+                                            <div class="w-2.5 h-2.5 bg-[#005700] rounded-xs mr-1"></div>
+                                            <div>5 - 6 bulan</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {{-- --}}
+                                <div class="box_kesuburan w-[9vw] h-[17.7vh] text-xs rounded-sm bg-white flex flex-col items-start pt-2 mr-3 hidden">
+                                    <div class="flex flex-col ml-2.5">
+                                        <div class="inline-flex items-center mb-[0.2rem]">
+                                            <div class="w-2.5 h-2.5 bg-[#D7CCC8] rounded-xs mr-1"></div>
+                                            <div>0 - 2 pH</div>
+                                        </div>
+                                        <div class="inline-flex items-center mb-[0.2rem]">
+                                            <div class="w-2.5 h-2.5 bg-[#BCAAA4] rounded-xs mr-1"></div>
+                                            <div>2 - 4 pH</div>
+                                        </div>
+                                        <div class="inline-flex items-center mb-[0.2rem]">
+                                            <div class="w-2.5 h-2.5 bg-[#A1887F] rounded-xs mr-1"></div>
+                                            <div>4 - 6 pH</div>
+                                        </div>
+                                        <div class="inline-flex items-center mb-[0.2rem]">
+                                            <div class="w-2.5 h-2.5 bg-[#8D6E63] rounded-xs mr-1"></div>
+                                            <div>6 - 8 pH</div>
+                                        </div>
+                                        <div class="inline-flex items-center mb-[0.2rem]">
+                                            <div class="w-2.5 h-2.5 bg-[#795548] rounded-xs mr-1"></div>
+                                            <div>8 - 10 pH</div>
+                                        </div>
+                                        <div class="inline-flex items-center mb-[0.2rem]">
+                                            <div class="w-2.5 h-2.5 bg-[#6D4C41] rounded-xs mr-1"></div>
+                                            <div>10 - 12 pH</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
 
 
 
 
                             </div>
 
-                            <div class=" box_prediksi_hujan hidden w-[9vw] h-[17.7vh] text-xs rounded-sm bg-white flex flex-col items-center pt-2 mr-3">
 
 
-                                <div class="flex flex-col">
-                                    <div class="inline-flex items-center mb-[0.2rem]">
-                                        <div class="w-2.5 h-2.5 bg-[#99CCFF] rounded-xs mr-1"></div>
-                                        <div> 0 mm/hari</div>
-                                    </div>
-                                    <div class="inline-flex items-center mb-[0.2rem]">
-                                        <div class="w-2.5 h-2.5 bg-[#66B2FF] rounded-xs mr-1"></div>
-
-
-                                        <div>
-                                            0.5 – 20 mm/hari
-
-                                        </div>
-                                    </div>
-
-                                    <div class="inline-flex items-center mb-[0.2rem]">
-                                        <div class="w-2.5 h-2.5 bg-[#3399FF] rounded-xs mr-1"></div>
-                                        <div>20 – 50 mm/hari</div>
+                            <!-- Running Teks -->
+                            <div class="w-full bg-white relative">
+                                <div class="w-[71vw] h-[4vh] flex justify-center items-center">
+                                    <div class="teks-berjalan-pencarian w-full text-sm text-black whitespace-nowrap">
+                                        Dalam konteks pertanian pedesaan, kemajuan terjadi melalui adopsi teknologi modern seperti irigasi otomatis, penggunaan pupuk organik, dan pelatihan petani tentang praktik berkelanjutan. Ini memungkinkan peningkatan produksi yang berkelanjutan sambil menjaga kelestarian lingkungan dan kemandirian lokal dalam pasokan pangan
 
                                     </div>
-                                    <div class="inline-flex items-center mb-[0.2rem]">
-                                        <div class="w-2.5 h-2.5 bg-[#0066FF] rounded-xs mr-1"></div>
-                                        <div>50 – 100 mm/hari </div>
-
-                                    </div>
-                                    <div class="inline-flex items-center mb-[0.2rem]">
-                                        <div class="w-2.5 h-2.5 bg-[#004CFF] rounded-xs mr-1"></div>
-                                        <div>
-                                            100 – 150 mm/hari
-
-                                        </div>
-                                    </div>
-
-                                    <div class="inline-flex items-center mb-[0.2rem]">
-                                        <div class="w-2.5 h-2.5 bg-[#0033FF] rounded-xs mr-1"></div>
-                                        <div>
-                                            >150 mm / hari
-
-
-                                        </div>
-                                    </div>
-
-
-                                </div>
-
-
-                            </div>
-
-                            {{-- --}}
-                            <div class="box_usia_panen w-[9vw] h-[17.7vh] text-xs rounded-sm bg-white flex flex-col items-start pt-2 mr-3 hidden">
-                                <div class="flex flex-col ml-2.5">
-                                    <div class="inline-flex items-center mb-[0.2rem]">
-                                        <div class="w-2.5 h-2.5 bg-[#C8E6C9] rounded-xs mr-1"></div>
-                                        <div>0 - 1 bulan</div>
-                                    </div>
-                                    <div class="inline-flex items-center mb-[0.2rem]">
-                                        <div class="w-2.5 h-2.5 bg-[#A3D9A5] rounded-xs mr-1"></div>
-                                        <div>1 - 2 bulan</div>
-                                    </div>
-                                    <div class="inline-flex items-center mb-[0.2rem]">
-                                        <div class="w-2.5 h-2.5 bg-[#72C074] rounded-xs mr-1"></div>
-                                        <div>2 - 3 bulan</div>
-                                    </div>
-                                    <div class="inline-flex items-center mb-[0.2rem]">
-                                        <div class="w-2.5 h-2.5 bg-[#42A842] rounded-xs mr-1"></div>
-                                        <div>3 - 4 bulan</div>
-                                    </div>
-                                    <div class="inline-flex items-center mb-[0.2rem]">
-                                        <div class="w-2.5 h-2.5 bg-[#008A00] rounded-xs mr-1"></div>
-                                        <div>4 - 5 bulan</div>
-                                    </div>
-                                    <div class="inline-flex items-center mb-[0.2rem]">
-                                        <div class="w-2.5 h-2.5 bg-[#005700] rounded-xs mr-1"></div>
-                                        <div>5 - 6 bulan</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            {{-- --}}
-                            <div class="box_kesuburan w-[9vw] h-[17.7vh] text-xs rounded-sm bg-white flex flex-col items-start pt-2 mr-3 hidden">
-                                <div class="flex flex-col ml-2.5">
-                                    <div class="inline-flex items-center mb-[0.2rem]">
-                                        <div class="w-2.5 h-2.5 bg-[#D7CCC8] rounded-xs mr-1"></div>
-                                        <div>0 - 2 pH</div>
-                                    </div>
-                                    <div class="inline-flex items-center mb-[0.2rem]">
-                                        <div class="w-2.5 h-2.5 bg-[#BCAAA4] rounded-xs mr-1"></div>
-                                        <div>2 - 4 pH</div>
-                                    </div>
-                                    <div class="inline-flex items-center mb-[0.2rem]">
-                                        <div class="w-2.5 h-2.5 bg-[#A1887F] rounded-xs mr-1"></div>
-                                        <div>4 - 6 pH</div>
-                                    </div>
-                                    <div class="inline-flex items-center mb-[0.2rem]">
-                                        <div class="w-2.5 h-2.5 bg-[#8D6E63] rounded-xs mr-1"></div>
-                                        <div>6 - 8 pH</div>
-                                    </div>
-                                    <div class="inline-flex items-center mb-[0.2rem]">
-                                        <div class="w-2.5 h-2.5 bg-[#795548] rounded-xs mr-1"></div>
-                                        <div>8 - 10 pH</div>
-                                    </div>
-                                    <div class="inline-flex items-center mb-[0.2rem]">
-                                        <div class="w-2.5 h-2.5 bg-[#6D4C41] rounded-xs mr-1"></div>
-                                        <div>10 - 12 pH</div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-
-
-
-
-
-                        </div>
-
-
-
-                        <!-- Running Teks -->
-                        <div class="w-full bg-white relative">
-                            <div class="w-[71vw] h-[4vh] flex justify-center items-center">
-                                <div class="teks-berjalan-pencarian w-full text-sm text-black whitespace-nowrap">
-                                    Dalam konteks pertanian pedesaan, kemajuan terjadi melalui adopsi teknologi modern seperti irigasi otomatis, penggunaan pupuk organik, dan pelatihan petani tentang praktik berkelanjutan. Ini memungkinkan peningkatan produksi yang berkelanjutan sambil menjaga kelestarian lingkungan dan kemandirian lokal dalam pasokan pangan
-
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+
             </div>
+
 
             <!--  -->
         </div>
