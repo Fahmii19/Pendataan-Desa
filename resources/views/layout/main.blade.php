@@ -816,7 +816,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                         <!-- Konten Kelima -->
                         <div class="hidden text-sm pb-2" id="content-5">
 
-                            <div class="h-[50vh] flex flex-col ">
+                            <div class="h-[50vh] flex flex-col mb-[4.4rem]">
 
                                 <h5 class="font-bold text-md text-center mt-4">Persediaan Pupuk</h5>
 
