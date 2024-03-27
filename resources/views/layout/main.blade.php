@@ -328,7 +328,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                     </button>
                                     <div id="tooltip-no-arrow-7" role="tooltip" class="absolute z-10 invisible inline-block px-2 py-1 text-xs font-medium text-black bg-white border rounded-lg ">
-                                        Riwayat Harga
+                                        Patokan Harga
                                     </div>
 
                                 </div>
@@ -556,7 +556,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             <div class="hidden text-sm pb-[10rem]" id="content-7">
                                 <div class="w-full h-[50vh] flex flex-col">
 
-                                    <h5 class="font-bold text-md text-center mt-4">Patokan Harga</h5>
+                                    <h5 class="font-bold text-md text-center mt-4">Riwayat Harga</h5>
 
 
                                     <div class="mt-2">
@@ -644,7 +644,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                     <div class="relative flex flex-col">
                                         <div class="px-0 w-full relative mt-[1.5rem]">
 
-                                            <div class="font-semibold absolute -top-8">Jarak Radius</div>
+                                            <div class="font-semibold absolute -top-8">Radius</div>
 
 
 
@@ -10954,15 +10954,39 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
     </script>
 
     <script>
+        // Function to convert string in Rupiah format to number
+        // function convertToNumber(rupiah) {
+        // return parseInt(rupiah.replace('Rp ', '').replace('.', '').replace('.', ''));
+        // }
+
+        // // Data dalam format Rupiah
+        // const dataBerasCianjurKepala = ["Rp 14.000", "Rp 16.000.000", "Rp 18.000.000", "Rp 19.000.000", "Rp 20.000.000", "Rp 15.000.000", "Rp 17.000.000"];
+        // const dataBerasCianjurSlyp = ["Rp 15.000.000", "Rp 17.000.000", "Rp 16.000.000", "Rp 18.000.000", "Rp 19.000.000", "Rp 14.000.000", "Rp 20.000.000"];
+        // const dataBerasSetra = ["Rp 18.000.000", "Rp 20.000.000", "Rp 15.000.000", "Rp 17.000.000", "Rp 14.000.000", "Rp 19.000.000", "Rp 16.000.000"];
+        // const dataBerasSaigon = ["Rp 16.000.000", "Rp 18.000.000", "Rp 19.000.000", "Rp 20.000.000", "Rp 17.000.000", "Rp 14.000.000", "Rp 15.000.000"];
+        // const dataBerasMuncul1 = ["Rp 17.000.000", "Rp 14.000.000", "Rp 16.000.000", "Rp 20.000.000", "Rp 18.000.000", "Rp 15.000.000", "Rp 19.000.000"];
+        // const dataBerasMuncul2 = ["Rp 15.000.000", "Rp 17.000.000", "Rp 19.000.000", "Rp 18.000.000", "Rp 20.000.000", "Rp 14.000.000", "Rp 16.000.000"];
+        // const dataBerasMuncul3 = ["Rp 16.000.000", "Rp 18.000.000", "Rp 20.000.000", "Rp 19.000.000", "Rp 17.000.000", "Rp 14.000.000", "Rp 15.000.000"];
+
+        // // Convert string in Rupiah format to number
+        // const convertedDataBerasCianjurKepala = dataBerasCianjurKepala.map(convertToNumber);
+        // const convertedDataBerasCianjurSlyp = dataBerasCianjurSlyp.map(convertToNumber);
+        // const convertedDataBerasSetra = dataBerasSetra.map(convertToNumber);
+        // const convertedDataBerasSaigon = dataBerasSaigon.map(convertToNumber);
+        // const convertedDataBerasMuncul1 = dataBerasMuncul1.map(convertToNumber);
+        // const convertedDataBerasMuncul2 = dataBerasMuncul2.map(convertToNumber);
+        // const convertedDataBerasMuncul3 = dataBerasMuncul3.map(convertToNumber);
+
+
+
         // Setting options for the second line chart
         new Chart(document.getElementById("myChart4"), {
             type: 'line'
             , data: {
-                labels: ["13-3-2024", "14-3-2024", "15-3-2024", "16-3-2024", "17-3-2024", "18-3-2024", "19-3-2024"]
-
+                labels: ["13/3", "14/3", "15/3", "16/3", "17/3", "18/3", "19/3"]
                 , datasets: [{
                         label: 'Beras Cianjur Kepala'
-                        , data: [70, 28, 49, 96, 99, 42, 25]
+                        , data: [14, 16, 18, 19, 20, 15, 17]
                         , borderColor: '#DAA520'
                         , backgroundColor: '#DAA520'
                         , borderWidth: 1
@@ -10971,7 +10995,8 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                     }
                     , {
                         label: 'Beras Cianjur Slyp'
-                        , data: [57, 99, 73, 37, 50, 91, 42]
+                        , data: [15, 17, 16, 18, 19, 14, 20]
+
                         , borderColor: '#FF0000'
                         , backgroundColor: '#FF0000'
                         , borderWidth: 1
@@ -10980,7 +11005,8 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                     }
                     , {
                         label: 'Beras Setra'
-                        , data: [32, 24, 35, 62, 80, 88, 99]
+                        , data: [18, 20, 15, 17, 14, 19, 16]
+
                         , borderColor: '#9400D3'
                         , backgroundColor: '#9400D3'
                         , borderWidth: 1
@@ -10989,7 +11015,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                     }
                     , {
                         label: 'Beras Saigon'
-                        , data: [30, 27, 88, 24, 71, 38, 39]
+                        , data: [16, 18, 19, 20, 17, 14, 15]
                         , borderColor: '#FFA07A'
                         , backgroundColor: '#FFA07A'
                         , borderWidth: 1
@@ -10998,7 +11024,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                     }
                     , {
                         label: 'Beras Muncul 1'
-                        , data: [34, 38, 24, 65, 76, 35, 82]
+                        , data: [17, 14, 16, 20, 18, 15, 19]
                         , borderColor: '#20B2AA'
                         , backgroundColor: '#20B2AA'
                         , borderWidth: 1
@@ -11007,7 +11033,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                     }
                     , {
                         label: 'Beras Muncul 2'
-                        , data: [58, 67, 84, 95, 55, 31, 84]
+                        , data: [15, 17, 19, 18, 20, 14, 16]
                         , borderColor: '#778899'
                         , backgroundColor: '#778899'
                         , borderWidth: 1
@@ -11016,7 +11042,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                     }
                     , {
                         label: 'Beras Muncul 3'
-                        , data: [91, 93, 58, 90, 96, 64, 54]
+                        , data: [16, 18, 20, 19, 17, 14, 15]
                         , borderColor: '#B0C4DE'
                         , backgroundColor: '#B0C4DE'
                         , borderWidth: 1
@@ -11025,21 +11051,22 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                     }
                 ]
             }
-
-
-
             , options: {
-                ...genericOptions
-                , scales: {
+                scales: {
                     y: {
                         display: true
-                        , beginAtZero: true
                         , ticks: {
-                            stepSize: 50
+                            callback: function(value, index, values) {
+                                if (value === 0 || value === 14 || value === 16 || value === 18 || value === 20) {
+                                    return value;
+                                } else {
+                                    return '';
+                                }
+                            }
                         }
                         , title: {
                             display: true
-                            , text: "Volume (ton)"
+                            , text: "Harga (Rp)"
                             , font: {
                                 size: 13
                                 , weight: "bold"
@@ -11081,6 +11108,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
         });
 
     </script>
+
 
 
 
