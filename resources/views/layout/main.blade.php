@@ -622,7 +622,133 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             <div class="hidden text-sm pb-[10rem]" id="content-8">
                                 <div class="w-full h-[50vh] flex flex-col">
 
-                                    <h5 class="font-bold text-md text-center mt-4">Persil</h5>
+                                    <h5 class="mt-4 mb-3.5 font-bold text-md text-center">Informasi Persil</h5>
+
+
+                                    {{-- byeeeee --}}
+
+                                    <div class="w-full flex flex-col text-sm text-black informasi_persil">
+
+                                        <div class="grid grid-cols-1 justify-items-center mt-2">
+
+                                            <div class="">Tanggal 19 Maret 2024</div>
+
+                                        </div>
+                                        <div class="grid grid-cols-1 justify-items-center mt-2.5 mb-2">
+
+                                            <div class="">
+                                                <img src="{{ asset('assets/tanam_padi.png') }}" alt="" class="w-[24vw] h-[24vh]">
+                                            </div>
+                                        </div>
+
+                                        <div class="grid grid-cols-2 mt-2">
+                                            <div class="">Catatan</div>
+                                            <div>
+                                                lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                                        </div>
+
+                                        <div class="grid grid-cols-2 mt-2">
+                                            <div class="">Pemilik Lahan</div>
+
+                                            <div>Kasdi</div>
+
+                                        </div>
+
+                                        <div class="grid grid-cols-2 mt-2">
+                                            <div class="">Luas (m<sup>2</sup>)</div>
+
+
+                                            <div>3.000</div>
+                                        </div>
+
+                                        <div class="grid grid-cols-2 mt-2">
+                                            <div class="">Kesuburan Tanah</div>
+
+                                            <div class="grid grid-cols-1">
+                                                <div class="grid grid-cols-2">
+                                                    <div class="grid grid-cols-[25px,1fr]">
+                                                        <div>pH</div>
+                                                        <div>6.3</div>
+                                                    </div>
+                                                    <div class="grid grid-cols-[25px,1fr]">
+                                                        <div>P</div>
+                                                        <div>120 ppm</div>
+                                                    </div>
+                                                </div>
+                                                <div class="grid grid-cols-2">
+                                                    <div class="grid grid-cols-[25px,1fr]">
+                                                        <div>K</div>
+                                                        <div>200 ppm</div>
+                                                    </div>
+                                                    <div class="grid grid-cols-[25px,1fr]">
+                                                        <div>Mg</div>
+                                                        <div>120 ppm</div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="grid grid-cols-2 mt-2">
+                                            <div class="">Penyewa Lahan</div>
+                                            <div>Tanjungsiang</div>
+                                        </div>
+
+                                        <div class="grid grid-cols-2 mt-5">
+                                            <div class="">Jumlah Penggarap</div>
+                                            <div>6</div>
+                                        </div>
+
+
+                                        <div class="grid grid-cols-2 mt-2">
+                                            <div class="">Modal Kerja</div>
+                                            <div>Rp 7.000.000</div>
+                                        </div>
+                                        <div class="grid grid-cols-2 mt-2">
+                                            <div class="">Sumber Pembiayaan</div>
+                                            <div>Modal Sendiri</div>
+                                        </div>
+                                        <div class="grid grid-cols-2 mt-2">
+                                            <div class="">Komoditi Tanam</div>
+                                            <div>Beras Cianjur</div>
+                                        </div>
+                                        <div class="grid grid-cols-2 mt-2">
+                                            <div class="">Periode Tanam</div>
+                                            <div>1 Maret - 30 Juni 2024</div>
+                                        </div>
+                                        <div class="grid grid-cols-2 mt-5">
+                                            <div class="">
+                                                Tahap Tanam</div>
+                                            <div class="flex flex-col">
+                                                <div class="inline-flex items-center">
+                                                    <img src=/assets/check.png alt="" class="w-2.5 h-2.5 object-contain mr-1">
+                                                    Pembajakan</div>
+                                                <div class="inline-flex items-center">
+                                                    <img src=/assets/check.png alt="" class="w-2.5 h-2.5 object-contain mr-1">
+                                                    Pembenihan</div>
+                                                <div class="inline-flex items-center">
+                                                    <img src=/assets/check.png alt="" class="w-2.5 h-2.5 object-contain mr-1">
+                                                    Pembajakan 1</div>
+                                                <div class="ml-[0.9rem]">Pemupukan 2</div>
+                                                <div class="ml-[0.9rem]">Pemupukan 3</div>
+
+
+                                            </div>
+
+                                        </div>
+                                        <div class="grid grid-cols-2 mt-2">
+                                            <div class="">Perkiraan Panen</div>
+                                            <div>7.000 ton</div>
+
+                                        </div>
+                                        <div class="grid grid-cols-2 mt-2">
+                                            <div class="">Valuasi</div>
+                                            <div>Rp 50.000.000</div>
+
+                                        </div>
+
+                                    </div>
+
 
                                 </div>
                             </div>

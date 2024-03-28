@@ -3322,7 +3322,7 @@ map.on("mouseenter", "sewa_fill", (e) => {
     <div class="card-body p-2">
       <h6 class="mt-0 mb-2 card-title border-bottom">${dt["Nama"]}</h6>
       <div style="line-height: 1.2;">
-        <span class="d-block"><b>Harga Sewa :</b> Rp ${separatorNum(
+        <span class="d-block"><b>Harga Sewass :</b> Rp ${separatorNum(
             dt["Sewa"]
         )}/m&sup2; per tahun</span>
         <span class="d-block"><b>Alamat :</b> ${dt["Alamat"]}</span>
