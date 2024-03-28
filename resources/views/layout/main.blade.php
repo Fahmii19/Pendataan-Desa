@@ -960,18 +960,20 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                     <!-- Atas -->
                     <div class="w-full flex flex-col relative">
                         <!-- bug_chips -->
-                        <div class="w-full flex flex-row justify-center mx-3 my-4">
+                        <div class="w-full flex flex-row justify-center mx-3 my-4" id="btn-titik">
+
                             <!--  -->
 
                             <div>
-                                <button class="inline-flex justify-center items-center px-3 h-8 text-sm font-medium rounded-full shadow-sm focus:outline-none focus:ring-0 bg-white text-black mr-3">
+                                <button id="iumk" class="inline-flex justify-center items-center px-3 h-8 text-sm font-medium rounded-full shadow-sm focus:outline-none focus:ring-0 bg-white text-black mr-3">
+
                                     <span class="font-semibold tracking-wider">Penggilingan Beras</span>
                                 </button>
                             </div>
                             <!--  -->
 
                             <div>
-                                <button class="inline-flex justify-center items-center px-3 h-8 text-sm font-medium rounded-full shadow-sm focus:outline-none focus:ring-0 bg-white text-black mr-3">
+                                <button id="nib" class="inline-flex justify-center items-center px-3 h-8 text-sm font-medium rounded-full shadow-sm focus:outline-none focus:ring-0 bg-white text-black mr-3">
                                     <span class="font-semibold tracking-wider">Lumbung Desa</span>
                                 </button>
                             </div>
@@ -979,7 +981,8 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             <!--  -->
 
                             <div>
-                                <button class="inline-flex justify-center items-center px-3 h-8 text-sm font-medium rounded-full shadow-sm focus:outline-none focus:ring-0 bg-white text-black mr-3">
+                                <button id="sewa_kantor" class="inline-flex justify-center items-center px-3 h-8 text-sm font-medium rounded-full shadow-sm focus:outline-none focus:ring-0 bg-white text-black mr-3">
+
                                     <span class="font-semibold tracking-wider">Pasar Induk</span>
                                 </button>
                             </div>

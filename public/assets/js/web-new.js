@@ -222,37 +222,7 @@ map.loadImage(`/assets/gambar/ICON.png`, function (error, image) {
 });
 
 // For poi_dot
-let poi_icon = [
-    "apartemen.png",
-    "bandara.png",
-    "certified.png",
-    "faskes.png",
-    "gereja.png",
-    "halte.png",
-    "hotel.png",
-    "historic.png",
-    "jasa.png",
-    "kantor.png",
-    "klenteng.png",
-    "laut.png",
-    "mall.png",
-    "masjid.png",
-    "market.png",
-    "office.png",
-    "pelabuhan.png",
-    "perdagangan.png",
-    "perpustakaan.png",
-    "pura.png",
-    "produksi.png",
-    "restoran.png",
-    "sekolah.png",
-    "spbu.png",
-    "stasiun.png",
-    "shop.png",
-    "tollgate.png",
-    "terminal.png",
-    "wilayah.png",
-];
+let poi_icon = ["certified.png", "office.png", "perdagangan.png"];
 
 poi_icon.forEach((icon) => {
     map.loadImage(`assets/gambar/icons/${icon}`, (error, image) => {
