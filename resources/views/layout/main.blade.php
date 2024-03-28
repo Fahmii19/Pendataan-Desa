@@ -647,12 +647,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                                 lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
                                         </div>
 
-                                        <div class="grid grid-cols-2 mt-2">
-                                            <div class="">Pemilik Lahan</div>
 
-                                            <div>Kasdi</div>
-
-                                        </div>
 
                                         <div class="grid grid-cols-2 mt-2">
                                             <div class="">Luas (m<sup>2</sup>)</div>
@@ -689,12 +684,19 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                             </div>
                                         </div>
 
-                                        <div class="grid grid-cols-2 mt-2">
-                                            <div class="">Penyewa Lahan</div>
-                                            <div>Tanjungsiang</div>
+                                        <div class="grid grid-cols-2 mt-4">
+                                            <div class="">Pemilik Lahan</div>
+
+                                            <div>Kasdi</div>
+
                                         </div>
 
-                                        <div class="grid grid-cols-2 mt-5">
+                                        <div class="grid grid-cols-2 mt-2">
+                                            <div class="">Penyewa Lahan</div>
+                                            <div>Budi</div>
+                                        </div>
+
+                                        <div class="grid grid-cols-2 mt-2">
                                             <div class="">Jumlah Penggarap</div>
                                             <div>6</div>
                                         </div>
@@ -705,10 +707,20 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                             <div>Rp 7.000.000</div>
                                         </div>
                                         <div class="grid grid-cols-2 mt-2">
+                                            <div class="">Valuasi</div>
+                                            <div>Rp 50.000.000</div>
+
+                                        </div>
+
+
+                                        <div class="grid grid-cols-2 mt-2">
                                             <div class="">Sumber Pembiayaan</div>
                                             <div>Modal Sendiri</div>
                                         </div>
-                                        <div class="grid grid-cols-2 mt-2">
+
+
+
+                                        <div class="grid grid-cols-2 mt-4">
                                             <div class="">Komoditi Tanam</div>
                                             <div>Beras Cianjur</div>
                                         </div>
@@ -716,7 +728,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                             <div class="">Periode Tanam</div>
                                             <div>1 Maret - 30 Juni 2024</div>
                                         </div>
-                                        <div class="grid grid-cols-2 mt-5">
+                                        <div class="grid grid-cols-2 mt-2">
                                             <div class="">
                                                 Tahap Tanam</div>
                                             <div class="flex flex-col">
@@ -736,16 +748,12 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                             </div>
 
                                         </div>
-                                        <div class="grid grid-cols-2 mt-2">
+                                        <div class="grid grid-cols-2 mt-2 mb-2">
                                             <div class="">Perkiraan Panen</div>
                                             <div>7.000 ton</div>
 
                                         </div>
-                                        <div class="grid grid-cols-2 mt-2">
-                                            <div class="">Valuasi</div>
-                                            <div>Rp 50.000.000</div>
 
-                                        </div>
 
                                     </div>
 
