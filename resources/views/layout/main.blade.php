@@ -964,17 +964,18 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                             <!--  -->
 
+
                             <div>
                                 <button id="iumk" class="inline-flex justify-center items-center px-3 h-8 text-sm font-medium rounded-full shadow-sm focus:outline-none focus:ring-0 bg-white text-black mr-3">
 
-                                    <span class="font-semibold tracking-wider">Penggilingan Beras</span>
+                                    <span class="tracking-wider">Penggilingan Beras</span>
                                 </button>
                             </div>
                             <!--  -->
 
                             <div>
                                 <button id="nib" class="inline-flex justify-center items-center px-3 h-8 text-sm font-medium rounded-full shadow-sm focus:outline-none focus:ring-0 bg-white text-black mr-3">
-                                    <span class="font-semibold tracking-wider">Lumbung Desa</span>
+                                    <span class="tracking-wider">Lumbung Desa</span>
                                 </button>
                             </div>
 
@@ -983,7 +984,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             <div>
                                 <button id="sewa_kantor" class="inline-flex justify-center items-center px-3 h-8 text-sm font-medium rounded-full shadow-sm focus:outline-none focus:ring-0 bg-white text-black mr-3">
 
-                                    <span class="font-semibold tracking-wider">Pasar Induk</span>
+                                    <span class="tracking-wider">Pasar Induk</span>
                                 </button>
                             </div>
 

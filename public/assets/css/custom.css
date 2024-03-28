@@ -116,7 +116,8 @@ input[type="number"] {
 }
 
 .active-chip {
-    background: orange !important;
+    background: #e0ecfd !important;
+    color: #0e65d6 !important;
 }
 
 #legends {
