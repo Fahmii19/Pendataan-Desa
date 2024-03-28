@@ -200,7 +200,7 @@ let desc_pola = {
 
 //Token
 let token =
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTE0Mzk5OTIsIm5hbWUiOiJhZG1pbiJ9.q0dE4itQi0sJQ3-qABWZyYjYGTx5PRrLTH-tOZ6pTs8";
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE4Mzc3NDgzNzcsIm5hbWUiOiJhZG1pbiJ9.c0WrPQ3nLxUpFatkvX-5LtIOCRp0y6BlEB7iFqCHaUE";
 
 //Initialize the map
 mapboxgl.accessToken =
