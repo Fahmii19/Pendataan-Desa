@@ -8517,25 +8517,39 @@ const filterLayerButton = () => {
     };
 
     info_layer.forEach((el) => {
-        //Active Button Layer
+        // Active/Deactive Button Layer and Toggle Info Layer
         $(`#${el.button}`).click(() => {
-            activeButtonLayer("btn-titik", el.button);
-            //Show Info Layer
-            showInfoLayer(el.info);
+            // Check if the button is already active
+            if ($(`#${el.button}`).hasClass("active-chip")) {
+                // If active, remove active class and hide info
+                $(`#${el.button}`).removeClass("active-chip");
+                $(`.${el.info}`).hide();
 
-            //Logical On Off Layer
-            $(`#${el.layer}`).trigger("click");
-            //On Off Layer
-            onOffLayerFilter(el.layer);
+                // Uncheck and trigger change
+                $(`#${el.layer}`).prop("checked", false).trigger("change");
+
+                // Additional: If you need to stop any action, like stopping a loading process
+                window.stop(); // Depending on what you want to stop, this might need to be adjusted
+            } else {
+                // If not active, first remove all active classes and hide all infos
+                $(".active-chip").removeClass("active-chip");
+                // Hide all infos, adjust this selector to match your HTML structure
+                $(".info-class").hide(); // Replace '.info-class' with a common class all your info elements share
+
+                // Then activate the clicked button and show its info
+                activeButtonLayer("btn-titik", el.button);
+                showInfoLayer(el.info);
+
+                // Check the layer and trigger click for on/off layer
+                $(`#${el.layer}`).trigger("click");
+                onOffLayerFilter(el.layer);
+            }
         });
 
-        //Remove Info Layer
+        // Remove Info Layer
         $(`#${el.removel}`).click(() => {
             $(`.${el.info}`).hide();
-            //Remove Active Button Layer
             $(`#${el.button}`).removeClass("active-chip");
-
-            //Logical Click
             $(`#${el.layer}`).prop("checked", false).trigger("change");
             window.stop();
         });
