@@ -1080,21 +1080,104 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                         <!-- Konten Keenam -->
                         <div class="hidden text-sm pb-2" id="content-6">
 
-                            <div class="h-[50vh] flex flex-col">
+                            <div class="h-[80vh] flex flex-col">
 
                                 <h5 class="font-bold text-md text-center mt-4">Distribusi Pembiayaan</h5>
 
                                 <div class="w-full flex justify-center">
                                     <div style="width:65%;">
                                         <canvas class="mt-2" id="distribusiPembiayaan" width="100" height="100"></canvas>
-
                                     </div>
                                 </div>
 
 
                                 {{-- --}}
 
-                                <div class="w-full border mt-3">a</div>
+                                <div class="w-full mt-5">
+
+                                    <!-- Dropdown Filter -->
+                                    <div class="flex items-center">
+                                        <div class="relative inline-block text-left">
+                                            <button id="dropdown-button-pencarian" class="inline-flex justify-between items-center pl-1 w-40 h-8 text-sm font-medium text-black bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-0">
+                                                <span id="selected-item" class="pl-2">Pilih</span>
+
+                                                <svg id="arrow-icon-pencarian" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 transition-transform duration-200 transform" viewBox="0 0 20 20" fill="currentColor">
+                                                    <path fill-rule="evenodd" d="M6.293 9.293a1 1 0 011.414 0L10 11.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                                </svg>
+                                            </button>
+
+                                            <div id="dropdown-menu-pencarian" class="hidden origin-top-right absolute right-0 mt-2 w-40 rounded-md bg-white ring-1 ring-black ring-opacity-5 z-10">
+                                                <div class="py-2 p-2" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-button-pencarian">
+                                                    <a id="item-padi-sawah" class="flex block rounded-md px-1 py-1 text-sm text-black hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem">
+                                                        Padi Sawah
+                                                    </a>
+                                                    <a id="item-padi-ladang" class="flex block rounded-md px-1 py-1 text-sm text-black hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem">
+                                                        Padi Ladang
+                                                    </a>
+                                                    <a id="item-jagung" class="flex block rounded-md px-1 py-1 text-sm text-black hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem">
+                                                        Jagung
+                                                    </a>
+                                                    <a id="item-kedelai" class="flex block rounded-md px-1 py-1 text-sm text-black hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem">
+                                                        Kedelai
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+
+                                {{-- --}}
+
+                                <div class="w-full grid grid-cols-2 gap-x-3 mt-3">
+
+                                    <div class="w-full flex flex-col text-sm text-black">
+
+                                        <div class="grid grid-cols-2 mt-2">
+                                            <div class="font-semibold">g</div>
+                                            <div id="distribusi_g">0%</div>
+                                        </div>
+                                        <div class="grid grid-cols-2 mt-2">
+                                            <div class="font-semibold">WACC</div>
+                                            <div id="distribusi_wacc">0%</div>
+                                        </div>
+
+                                        <div class="grid grid-cols-2 mt-2">
+                                            <div class="font-semibold">OP</div>
+                                            <div id="distribusi_op">0%</div>
+                                        </div>
+                                        <div class="grid grid-cols-2 mt-2">
+                                            <div class="font-semibold">CR</div>
+                                            <div id="distribusi_cr">0</div>
+                                        </div>
+                                        <div class="grid grid-cols-2 mt-2">
+                                            <div class="font-semibold">Capital</div>
+                                            <div id="distribusi_capital">0</div>
+                                        </div>
+                                        <div class="grid grid-cols-2 mt-2">
+                                            <div class="font-semibold">EVA</div>
+                                            <div id="distribusi_eva" class="text-red-500">0</div>
+                                        </div>
+
+
+
+
+
+                                    </div>
+
+                                    <div class="flex flex-col">
+                                        <div class="font-semibold">Ket</div>
+                                        <div class="">Growth Rate</div>
+                                        <div class="">Discount Rate</div>
+                                        <div class="">Operating Profitability</div>
+                                        <div class="">Capital Requirement</div>
+                                    </div>
+
+
+
+                                </div>
 
 
 
@@ -10369,6 +10452,71 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
 
 
+
+
+    <script>
+        $(document).ready(function() {
+            const dataInformasi = {
+                "Padi Sawah": {
+                    "g": "4%"
+                    , "wacc": "10,00%"
+                    , "op": "56,04%"
+                    , "cr": "18,44"
+                    , "capital": "500.000.000"
+                    , "eva": "-50.000.000"
+                }
+                , "Padi Ladang": {
+                    "g": "5%"
+                    , "wacc": "11,00%"
+                    , "op": "57,04%"
+                    , "cr": "19,44"
+                    , "capital": "600.000.000"
+                    , "eva": "-60.000.000"
+                }
+                , "Jagung": {
+                    "g": "6%"
+                    , "wacc": "12,00%"
+                    , "op": "58,00%"
+                    , "cr": "20,50"
+                    , "capital": "700.000.000"
+                    , "eva": "-70.000.000"
+                }
+                , "Kedelai": {
+                    "g": "7%"
+                    , "wacc": "13,00%"
+                    , "op": "59,00%"
+                    , "cr": "21,50"
+                    , "capital": "800.000.000"
+                    , "eva": "-80.000.000"
+                }
+            };
+
+            $("#dropdown-button-pencarian").click(function() {
+                $("#dropdown-menu-pencarian").toggle();
+                $("#arrow-icon-pencarian").toggleClass("rotate-180");
+            });
+
+            $("#dropdown-menu-pencarian a").click(function() {
+                var selectedItemText = $(this).text().trim();
+                $("#selected-item").text(selectedItemText);
+
+                if (dataInformasi[selectedItemText]) {
+                    console.log("Data untuk", selectedItemText, "ditemukan.");
+                    $("#distribusi_g").text(dataInformasi[selectedItemText].g);
+                    $("#distribusi_wacc").text(dataInformasi[selectedItemText].wacc);
+                    $("#distribusi_op").text(dataInformasi[selectedItemText].op);
+                    $("#distribusi_cr").text(dataInformasi[selectedItemText].cr);
+                    $("#distribusi_capital").text(dataInformasi[selectedItemText].capital);
+                    $("#distribusi_eva").text(dataInformasi[selectedItemText].eva);
+                } else {
+                    console.error("Data untuk", selectedItemText, "tidak ditemukan.");
+                }
+
+                $("#dropdown-menu-pencarian").hide();
+            });
+        });
+
+    </script>
 
 
 
