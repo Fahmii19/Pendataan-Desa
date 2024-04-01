@@ -707,9 +707,9 @@ map.on("style.load", () => {
 
 window.onload = function () {
     // noo1
-    // var checkbox = document.getElementById("urban_fill");
-    // checkbox.checked = true;
-    // getDataSource("urban", localStorage.getItem("kelurahan"));
+    var checkbox = document.getElementById("urban_fill");
+    checkbox.checked = true;
+    getDataSource("urban", localStorage.getItem("kelurahan"));
 
     // Opsional: Memicu event 'change' jika ada logika tambahan yang tergantung pada ini
     // Ini bisa berguna jika ada event handler yang terpasang pada checkbox ini
