@@ -3073,11 +3073,6 @@ map.on("mousemove", "urban_fill", (e) => {
                                                 <div>Beras Setra</div>
                                             </div>
 
-                                            <div class="flex flex-col mb-1 mr-2.5">
-                                                <div class="font-semibold">Skema Pembiayaan</div>
-                                                <div>Modal sendiri</div>
-                                            </div>
-
 
                                             <div class="flex flex-col mb-1 mr-2.5">
                                                 <div class="font-semibold">Periode Tanam</div>
@@ -3094,15 +3089,15 @@ map.on("mousemove", "urban_fill", (e) => {
                                                     Pembenihan</div>
                                                 <div class="inline-flex items-center">
                                                     <img src=/assets/check.png alt="" class="w-2.5 h-2.5 object-contain mr-1">
-                                                    Pembajakan 1</div>
-                                                <div class="ml-[0.9rem]">Pemupukan 2</div>
-                                                <div class="ml-[0.9rem]">Pemupukan 3</div>
+                                                    Pemupukan I</div>
+                                                <div class="ml-[0.9rem]">Pemupukan II</div>
+                                                <div class="ml-[0.9rem]">Pemupukan III</div>
 
                                             </div>
 
                                             <div class="flex flex-col mb-1 mr-2.5">
                                                 <div class="font-semibold">Perkiraan Panen</div>
-                                                <div>7.000 kg</div>
+                                                <div>70.000 kg</div>
                                             </div>
 
                                             <div class="flex flex-col mb-1 mr-2.5">

@@ -650,10 +650,11 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
 
                                         <div class="grid grid-cols-2 mt-2">
-                                            <div class="">Luas (m<sup>2</sup>)</div>
+                                            <div class="">Luas</div>
 
 
-                                            <div>3.000</div>
+                                            <div>3.000 (m<sup>2</sup>)</div>
+
                                         </div>
 
                                         <div class="grid grid-cols-2 mt-2">
@@ -687,12 +688,12 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                         <div class="grid grid-cols-2 mt-4">
                                             <div class="">Pemilik Lahan</div>
 
-                                            <div>Kasdi</div>
+                                            <div>Asep Komarudi</div>
 
                                         </div>
 
                                         <div class="grid grid-cols-2 mt-2">
-                                            <div class="">Penyewa Lahan</div>
+                                            <div class="">Ujang Septiana</div>
                                             <div>Budi</div>
                                         </div>
 
@@ -740,9 +741,10 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                                     Pembenihan</div>
                                                 <div class="inline-flex items-center">
                                                     <img src=/assets/check.png alt="" class="w-3 h-3 object-contain mr-2.5">
-                                                    Pembajakan 1</div>
-                                                <div class="ml-[1.4rem]">Pemupukan 2</div>
-                                                <div class="ml-[1.4rem]">Pemupukan 3</div>
+                                                    Pemupukan I</div>
+
+                                                <div class="ml-[1.4rem]">Pemupukan II</div>
+                                                <div class="ml-[1.4rem]">Pemupukan III</div>
 
 
                                             </div>
