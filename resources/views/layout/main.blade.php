@@ -634,27 +634,29 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                         <div class="grid grid-cols-1 justify-items-center mt-2">
                                             <div class="w-full flex flex-row justify-center items-center">
                                                 <div class="h-full flex items-center">
-                                                    <img id="prev-informasi-persil" src="/assets/neww/left2.png" alt="" class="w-5 h-5 object-contain cursor-pointer opacity-50 cursor-not-allowed" disabled>
+                                                    <div id="prev-wrapper" class="border border-red-500 rounded-full">
+                                                        <img id="prev-informasi-persil" src="/assets/neww/left-off.png" alt="" class="w-5 h-5 object-contain cursor-pointer">
+                                                    </div>
                                                 </div>
                                                 <div class="mx-2 mt-[0.1rem]" id="tgl-update-persil">19 Maret 2024</div>
                                                 <div class="h-full flex items-center">
-                                                    <img id="next-informasi-persil" src="/assets/neww/right2.png" alt="" class="w-5 h-5 object-contain cursor-pointer">
+                                                    <div id="next-wrapper" class="rounded-full">
+                                                        <img id="next-informasi-persil" src="/assets/neww/right-on.png" alt="" class="w-5 h-5 object-contain cursor-pointer">
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <div class="flex flex-col informasi_persil_komoditi">
+
+                                        <div id="informasi_persil_komoditi" class="flex flex-col">
                                             <div class="grid grid-cols-1 justify-items-center mt-2.5 mb-2">
-                                                <div class="" id="gambar_persil">
-                                                    <img src="assets/neww/padi1.jpg" alt="" class="w-[24vw] h-[24vh]">
+                                                <div id="gambar_persil">
+                                                    <img src="" alt="" class="w-[24vw] h-[24vh]">
                                                 </div>
                                             </div>
-
                                             <div class="grid grid-cols-2 mt-2">
-                                                <div id="catatan_persil" class="">Catatan</div>
-                                                <div>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                                </div>
+                                                <div id="catatan_persil">Catatan</div>
+                                                <div id="catatan_isi"></div>
                                             </div>
                                         </div>
 
@@ -10297,47 +10299,64 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
     {{-- Next Persil Informasi  --}}
 
     <script>
+        // Data untuk informasi persil
         const dataPersil = [{
                 tanggal: "19 Maret 2024"
-                , gambar: "assets/neww/padi1.jpg"
+                , gambar: "/assets/neww/padi1.jpg"
                 , catatan: "Hama tikus menyerang persil 1. Sebaiknya segera diatasi."
-            },
-            // 23
-            {
-                tanggal: "23 Maret 2024"
-                , gambar: "assets/neww/padi2.jpg"
-                , catatan: "Kurang air untuk seminggu ini karena sungai sedang kering."
-
-            },
-            // 27
-            {
-                tanggal: "27 Maret 2024"
-                , gambar: "assets/neww/padi3.png"
-                , catatan: "Sementara beli air dari tetangga untuk mengairi sawah."
-
             }
-        , ];
+            , {
+                tanggal: "23 Maret 2024"
+                , gambar: "/assets/neww/padi2.jpg"
+                , catatan: "Kurang air untuk seminggu ini karena sungai sedang kering."
+            }
+            , {
+                tanggal: "27 Maret 2024"
+                , gambar: "/assets/neww/padi3.png"
+                , catatan: "Sementara beli air dari tetangga untuk mengairi sawah."
+            }
+        ];
 
         let currentIndex = 0;
 
-        function updateInformasiPersil() {
-            $("#tgl-update-persil").text(dataPersil[currentIndex].tanggal);
-            $("#gambar_persil img").attr("src", dataPersil[currentIndex].gambar);
-            $("#catatan_persil").next().text(dataPersil[currentIndex].catatan);
-
-            $("#prev-informasi-persil").toggleClass("opacity-50 cursor-not-allowed", currentIndex === 0).prop('disabled', currentIndex === 0);
-            $("#next-informasi-persil").toggleClass("opacity-50 cursor-not-allowed", currentIndex === dataPersil.length - 1).prop('disabled', currentIndex === dataPersil.length - 1);
-        }
-
         $(document).ready(function() {
+            // Fungsi untuk memperbarui informasi persil
+            function updateInformasiPersil() {
+                $("#tgl-update-persil").text(dataPersil[currentIndex].tanggal);
+                $("#gambar_persil img").attr("src", dataPersil[currentIndex].gambar);
+                $("#catatan_isi").text(dataPersil[currentIndex].catatan);
+
+                // Update status dan gambar tombol prev
+                if (currentIndex === 0) {
+                    $("#prev-informasi-persil").attr("src", "/assets/neww/left-off.png");
+                    $("#prev-wrapper").addClass("border border-red-500");
+                } else {
+                    $("#prev-informasi-persil").attr("src", "/assets/neww/left-on.png");
+                    $("#prev-wrapper").removeClass("border border-red-500");
+                }
+
+                // Update status dan gambar tombol next
+                if (currentIndex === dataPersil.length - 1) {
+                    $("#next-informasi-persil").attr("src", "/assets/neww/right-off.png");
+                    $("#next-wrapper").addClass("border border-red-500");
+                } else {
+                    $("#next-informasi-persil").attr("src", "/assets/neww/right-on.png");
+                    $("#next-wrapper").removeClass("border border-red-500");
+                }
+            }
+
+            // Memperbarui informasi persil saat dokumen siap
             updateInformasiPersil();
 
+            // Menangani klik pada tombol "next"
             $("#next-informasi-persil").click(function() {
                 if (currentIndex < dataPersil.length - 1) {
                     currentIndex++;
                     updateInformasiPersil();
                 }
             });
+
+            // Menangani klik pada tombol "prev"
             $("#prev-informasi-persil").click(function() {
                 if (currentIndex > 0) {
                     currentIndex--;
