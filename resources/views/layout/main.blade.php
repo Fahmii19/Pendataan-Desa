@@ -733,16 +733,16 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                                 Tahap Tanam</div>
                                             <div class="flex flex-col">
                                                 <div class="inline-flex items-center">
-                                                    <img src=/assets/check.png alt="" class="w-2.5 h-2.5 object-contain mr-1">
+                                                    <img src=/assets/check.png alt="" class="w-3 h-3 object-contain mr-2.5">
                                                     Pembajakan</div>
                                                 <div class="inline-flex items-center">
-                                                    <img src=/assets/check.png alt="" class="w-2.5 h-2.5 object-contain mr-1">
+                                                    <img src=/assets/check.png alt="" class="w-3 h-3 object-contain mr-2.5">
                                                     Pembenihan</div>
                                                 <div class="inline-flex items-center">
-                                                    <img src=/assets/check.png alt="" class="w-2.5 h-2.5 object-contain mr-1">
+                                                    <img src=/assets/check.png alt="" class="w-3 h-3 object-contain mr-2.5">
                                                     Pembajakan 1</div>
-                                                <div class="ml-[0.9rem]">Pemupukan 2</div>
-                                                <div class="ml-[0.9rem]">Pemupukan 3</div>
+                                                <div class="ml-[1.4rem]">Pemupukan 2</div>
+                                                <div class="ml-[1.4rem]">Pemupukan 3</div>
 
 
                                             </div>
@@ -750,7 +750,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                         </div>
                                         <div class="grid grid-cols-2 mt-2 mb-2">
                                             <div class="">Perkiraan Panen</div>
-                                            <div>7.000 ton</div>
+                                            <div>70 ton</div>
 
                                         </div>
 
@@ -1347,7 +1347,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                 <div class="box_kesuburan hidden w-[9.2vw] h-[17.7vh] text-xs rounded-sm bg-white flex flex-col items-center pt-2 mr-3">
                                     <div class="flex flex-col w-full">
 
-                                        <div class="w-full flex justify-center font-semibold mb-0.5">Kesuburan Tanah (pH)</div>
+                                        <div class="w-full flex justify-center font-semibold mb-0.5">Kesuburan Lahan (pH)</div>
 
 
                                         <div class="inline-flex items-center ml-2">
@@ -11181,7 +11181,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                 labels: ["13/3", "14/3", "15/3", "16/3", "17/3", "18/3", "19/3"]
                 , datasets: [{
                         label: 'Beras Cianjur Kepala'
-                        , data: [14, 16, 18, 19, 20, 15, 17]
+                        , data: [19.5, 19.3, 19.4, 19.6, 19.7, 19.5, 19.2]
                         , borderColor: '#DAA520'
                         , backgroundColor: '#DAA520'
                         , borderWidth: 1
@@ -11191,7 +11191,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                     }
                     , {
                         label: 'Beras Cianjur Slyp'
-                        , data: [15, 17, 16, 18, 19, 14, 20]
+                        , data: [18.1, 18.2, 18.3, 18.1, 18.2, 18.2, 18.1]
                         , borderColor: '#FF0000'
                         , backgroundColor: '#FF0000'
                         , borderWidth: 1
@@ -11201,7 +11201,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                     }
                     , {
                         label: 'Beras Setra'
-                        , data: [18, 20, 15, 17, 14, 19, 16]
+                        , data: [16.1, 16.5, 16.3, 16.6, 16.4, 16.5, 16.4]
                         , borderColor: '#9400D3'
                         , backgroundColor: '#9400D3'
                         , borderWidth: 1
@@ -11211,7 +11211,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                     }
                     , {
                         label: 'Beras Saigon'
-                        , data: [16, 18, 19, 20, 17, 14, 15]
+                        , data: [16, 15.9, 16, 15.8, 16, 15.9, 16]
                         , borderColor: '#FFA07A'
                         , backgroundColor: '#FFA07A'
                         , borderWidth: 1
@@ -11221,7 +11221,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                     }
                     , {
                         label: 'Beras Muncul 1'
-                        , data: [17, 14, 16, 20, 18, 15, 19]
+                        , data: [15.2, 15.4, 15.5, 15.6, 15.4, 15.7, 15.8]
                         , borderColor: '#20B2AA'
                         , backgroundColor: '#20B2AA'
                         , borderWidth: 1
@@ -11231,7 +11231,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                     }
                     , {
                         label: 'Beras Muncul 2'
-                        , data: [15, 17, 19, 18, 20, 14, 16]
+                        , data: [15, 15.2, 15.1, 15, 15.2, 15.3, 15.2]
                         , borderColor: '#778899'
                         , backgroundColor: '#778899'
                         , borderWidth: 1
@@ -11241,7 +11241,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                     }
                     , {
                         label: 'Beras Muncul 3'
-                        , data: [16, 18, 20, 19, 17, 14, 15]
+                        , data: [14.1, 14.2, 14.4, 14.3, 14.5, 14.3, 14.2]
                         , borderColor: '#B0C4DE'
                         , backgroundColor: '#B0C4DE'
                         , borderWidth: 1
