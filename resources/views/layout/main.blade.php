@@ -501,8 +501,16 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                     <h5 class="mt-4 font-bold text-md text-center">Distribusi Komoditi Tanam</h5>
                                     <div class="w-full flex justify-center">
-                                        <div style="width:55%;">
+                                        <div style="width:58%;">
                                             <canvas class="mt-2" id="produksiPertanian" width="100" height="100"></canvas>
+                                        </div>
+                                    </div>
+
+                                    <h5 class="mt-4 font-bold text-md text-center">Distribusi Pembiayaan</h5>
+                                    <div class="w-full flex justify-center">
+                                        <div style="width:60%;">
+                                            <canvas class="mt-2" id="distribusiPembiayaan" width="100" height="100"></canvas>
+
                                         </div>
                                     </div>
 
@@ -1082,23 +1090,17 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                             <div class="h-[80vh] flex flex-col">
 
-                                <h5 class="font-bold text-md text-center mt-4">Distribusi Pembiayaan</h5>
 
-                                <div class="w-full flex justify-center">
-                                    <div style="width:65%;">
-                                        <canvas class="mt-2" id="distribusiPembiayaan" width="100" height="100"></canvas>
-                                    </div>
-                                </div>
 
 
                                 {{-- --}}
 
-                                <div class="w-full mt-5">
+                                <div class="w-full grid grid-cols-[100px,150px] mt-5">
 
                                     <!-- Dropdown Filter -->
-                                    <div class="flex items-center">
+                                    <div class="col-span-2 border w-full flex justify-center  mb-1">
                                         <div class="relative inline-block text-left">
-                                            <button id="dropdown-button-pencarian" class="inline-flex justify-between items-center pl-1 w-40 h-8 text-sm font-medium text-black bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-0">
+                                            <button id="dropdown-button-pencarian" class="inline-flex justify-between items-center pl-1 w-[8rem] h-[1.8rem] text-sm font-medium text-black bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-0">
                                                 <span id="selected-item" class="pl-2">Pilih</span>
 
                                                 <svg id="arrow-icon-pencarian" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 transition-transform duration-200 transform" viewBox="0 0 20 20" fill="currentColor">
@@ -1127,54 +1129,55 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
 
 
-                                </div>
+                                    <div class="w-full text-xs flex flex-col ">
+                                        {{-- <div class="h-[4.2vh] mb-1 ">&nbsp;</div> --}}
+                                        <div class="mb-1">g</div>
+                                        <div class="mb-1">WACC</div>
+                                        <div class="mb-1">OP</div>
+                                        <div class="mb-1">CR</div>
+                                        <div class="mb-1">Capital</div>
+                                        <div class="mb-1">NOWC</div>
+                                        <div class="mb-1">Net Op Cap</div>
+                                        <div class="mb-1">Sales</div>
+                                        <div class="mb-1">NOI</div>
+                                        <div class="mb-1">Value Op</div>
+                                        <div class="mb-1">ROIC</div>
+                                        <div class="mb-1">EVA</div>
+                                    </div>
 
-                                {{-- --}}
+                                    <div class="w-full flex flex-col ">
 
-                                <div class="w-full grid grid-cols-2 gap-x-3 mt-3">
 
-                                    <div class="w-full flex flex-col text-sm text-black">
+                                        <div class="flex justify-end text-xs mb-1" id="distribusi_g">0%</div>
 
-                                        <div class="grid grid-cols-2 mt-2">
-                                            <div class="font-semibold">g</div>
-                                            <div id="distribusi_g">0%</div>
-                                        </div>
-                                        <div class="grid grid-cols-2 mt-2">
-                                            <div class="font-semibold">WACC</div>
-                                            <div id="distribusi_wacc">0%</div>
-                                        </div>
+                                        <div class="flex justify-end text-xs mb-1" id="distribusi_wacc">0%</div>
 
-                                        <div class="grid grid-cols-2 mt-2">
-                                            <div class="font-semibold">OP</div>
-                                            <div id="distribusi_op">0%</div>
-                                        </div>
-                                        <div class="grid grid-cols-2 mt-2">
-                                            <div class="font-semibold">CR</div>
-                                            <div id="distribusi_cr">0</div>
-                                        </div>
-                                        <div class="grid grid-cols-2 mt-2">
-                                            <div class="font-semibold">Capital</div>
-                                            <div id="distribusi_capital">0</div>
-                                        </div>
-                                        <div class="grid grid-cols-2 mt-2">
-                                            <div class="font-semibold">EVA</div>
-                                            <div id="distribusi_eva" class="text-red-500">0</div>
-                                        </div>
+                                        <div class="flex justify-end text-xs mb-1" id="distribusi_op">0%</div>
+
+                                        <div class="flex justify-end text-xs mb-1" id="distribusi_cr">0%</div>
+
+                                        <div class="flex justify-end text-xs mb-1" id="distribusi_capital">0%</div>
+
+                                        <div class="flex justify-end text-xs mb-1" id="distribusi_nowc">0%</div>
+
+                                        <div class="flex justify-end text-xs mb-1" id="distribusi_netOpCap">0%</div>
+
+                                        <div class="flex justify-end text-xs mb-1" id="distribusi_sales">0%</div>
+
+                                        <div class="flex justify-end text-xs mb-1" id="distribusi_noi">0%</div>
+
+                                        <div class="flex justify-end text-xs mb-1" id="distribusi_valueOp">0%</div>
+
+                                        <div class="flex justify-end text-xs mb-1" id="distribusi_roic">0%</div>
+
+                                        <div class="flex justify-end text-xs mb-1" id="distribusi_eva">0%</div>
+
 
 
 
 
 
                                     </div>
-
-                                    <div class="flex flex-col">
-                                        <div class="font-semibold">Ket</div>
-                                        <div class="">Growth Rate</div>
-                                        <div class="">Discount Rate</div>
-                                        <div class="">Operating Profitability</div>
-                                        <div class="">Capital Requirement</div>
-                                    </div>
-
 
 
                                 </div>
@@ -10463,6 +10466,12 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                     , "op": "56,04%"
                     , "cr": "18,44"
                     , "capital": "500.000.000"
+                    , "nowc": "100.000.000"
+                    , "netOpCap": "200.000.000"
+                    , "sales": "1.000.000.000"
+                    , "noi": "150.000.000"
+                    , "valueOp": "250.000.000"
+                    , "roic": "5%"
                     , "eva": "-50.000.000"
                 }
                 , "Padi Ladang": {
@@ -10471,6 +10480,12 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                     , "op": "57,04%"
                     , "cr": "19,44"
                     , "capital": "600.000.000"
+                    , "nowc": "110.000.000"
+                    , "netOpCap": "210.000.000"
+                    , "sales": "1.100.000.000"
+                    , "noi": "160.000.000"
+                    , "valueOp": "260.000.000"
+                    , "roic": "6%"
                     , "eva": "-60.000.000"
                 }
                 , "Jagung": {
@@ -10479,6 +10494,12 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                     , "op": "58,00%"
                     , "cr": "20,50"
                     , "capital": "700.000.000"
+                    , "nowc": "120.000.000"
+                    , "netOpCap": "220.000.000"
+                    , "sales": "1.200.000.000"
+                    , "noi": "170.000.000"
+                    , "valueOp": "270.000.000"
+                    , "roic": "7%"
                     , "eva": "-70.000.000"
                 }
                 , "Kedelai": {
@@ -10487,9 +10508,17 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                     , "op": "59,00%"
                     , "cr": "21,50"
                     , "capital": "800.000.000"
+                    , "nowc": "130.000.000"
+                    , "netOpCap": "230.000.000"
+                    , "sales": "1.300.000.000"
+                    , "noi": "180.000.000"
+                    , "valueOp": "280.000.000"
+                    , "roic": "8%"
                     , "eva": "-80.000.000"
                 }
             };
+
+
 
             $("#dropdown-button-pencarian").click(function() {
                 $("#dropdown-menu-pencarian").toggle();
@@ -10507,8 +10536,15 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                     $("#distribusi_op").text(dataInformasi[selectedItemText].op);
                     $("#distribusi_cr").text(dataInformasi[selectedItemText].cr);
                     $("#distribusi_capital").text(dataInformasi[selectedItemText].capital);
+                    $("#distribusi_nowc").text(dataInformasi[selectedItemText].nowc);
+                    $("#distribusi_netOpCap").text(dataInformasi[selectedItemText].netOpCap);
+                    $("#distribusi_sales").text(dataInformasi[selectedItemText].sales);
+                    $("#distribusi_noi").text(dataInformasi[selectedItemText].noi);
+                    $("#distribusi_valueOp").text(dataInformasi[selectedItemText].valueOp);
+                    $("#distribusi_roic").text(dataInformasi[selectedItemText].roic);
                     $("#distribusi_eva").text(dataInformasi[selectedItemText].eva);
                 } else {
+
                     console.error("Data untuk", selectedItemText, "tidak ditemukan.");
                 }
 
