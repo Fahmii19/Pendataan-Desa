@@ -1294,6 +1294,9 @@ video {
 .cursor-pointer {
   cursor: pointer;
 }
+.cursor-not-allowed {
+  cursor: not-allowed;
+}
 .resize {
   resize: both;
 }
@@ -2171,6 +2174,9 @@ video {
 }
 .opacity-\[0\.8\] {
   opacity: 0.8;
+}
+.opacity-50 {
+  opacity: 0.5;
 }
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);

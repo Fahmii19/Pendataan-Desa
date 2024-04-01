@@ -631,38 +631,34 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                         {{-- new1 --}}
 
-
                                         <div class="grid grid-cols-1 justify-items-center mt-2">
-
                                             <div class="w-full flex flex-row justify-center items-center">
                                                 <div class="h-full flex items-center">
-                                                    <img id="prev-informasi-persil" src="/assets/neww/arrow-left2.png" alt="" class="w-4 h-4 object-contain cursor-pointer ">
+                                                    <img id="prev-informasi-persil" src="/assets/neww/left2.png" alt="" class="w-4 h-4 object-contain cursor-pointer opacity-50 cursor-not-allowed" disabled>
                                                 </div>
-                                                <div class="mx-2 mt-[0.1rem]">19 Marets 2024</div>
+                                                <div class="mx-2 mt-[0.1rem]" id="tgl-update-persil">19 Maret 2024</div>
                                                 <div class="h-full flex items-center">
-                                                    <img id="next-informasi-persil" src="/assets/neww/arrow-right2.png" alt="" class="w-4 h-4 object-contain cursor-pointer ">
+                                                    <img id="next-informasi-persil" src="/assets/neww/right2.png" alt="" class="w-4 h-4 object-contain cursor-pointer">
                                                 </div>
                                             </div>
-
-
                                         </div>
 
                                         <div class="flex flex-col informasi_persil_komoditi">
                                             <div class="grid grid-cols-1 justify-items-center mt-2.5 mb-2">
-
-                                                <div class="">
-                                                    <img src="{{ asset('assets/tanam_padi.png') }}" alt="" class="w-[24vw] h-[24vh]">
+                                                <div class="" id="gambar_persil">
+                                                    <img src="assets/neww/padi1.jpg" alt="" class="w-[24vw] h-[24vh]">
                                                 </div>
                                             </div>
 
                                             <div class="grid grid-cols-2 mt-2">
-                                                <div class="">Catatan</div>
+                                                <div id="catatan_persil" class="">Catatan</div>
                                                 <div>
-                                                    lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                </div>
                                             </div>
-
-
                                         </div>
+
+
 
 
 
@@ -10293,6 +10289,60 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
     </script>
 
+
+    {{-- Next Persil Informasi  --}}
+
+    <script>
+        const dataPersil = [{
+                tanggal: "19 Maret 2024"
+                , gambar: "assets/neww/padi1.jpg"
+                , catatan: "Catatan untuk 19 Maret 2024. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            },
+            // 23
+            {
+                tanggal: "23 Maret 2024"
+                , gambar: "assets/neww/padi2.jpg"
+                , catatan: "Catatan untuk 23 Maret 2024. consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+
+            },
+            // 27
+            {
+                tanggal: "27 Maret 2024"
+                , gambar: "assets/neww/padi3.png"
+                , catatan: "Catatan untuk 27 Maret 2024. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed "
+
+            }
+        , ];
+
+        let currentIndex = 0;
+
+        function updateInformasiPersil() {
+            $("#tgl-update-persil").text(dataPersil[currentIndex].tanggal);
+            $("#gambar_persil img").attr("src", dataPersil[currentIndex].gambar);
+            $("#catatan_persil").next().text(dataPersil[currentIndex].catatan);
+
+            $("#prev-informasi-persil").toggleClass("opacity-50 cursor-not-allowed", currentIndex === 0).prop('disabled', currentIndex === 0);
+            $("#next-informasi-persil").toggleClass("opacity-50 cursor-not-allowed", currentIndex === dataPersil.length - 1).prop('disabled', currentIndex === dataPersil.length - 1);
+        }
+
+        $(document).ready(function() {
+            updateInformasiPersil();
+
+            $("#next-informasi-persil").click(function() {
+                if (currentIndex < dataPersil.length - 1) {
+                    currentIndex++;
+                    updateInformasiPersil();
+                }
+            });
+            $("#prev-informasi-persil").click(function() {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    updateInformasiPersil();
+                }
+            });
+        });
+
+    </script>
 
 
 
