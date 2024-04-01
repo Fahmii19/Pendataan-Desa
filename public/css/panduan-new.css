@@ -891,6 +891,9 @@ video {
 .mt-\[-2rem\] {
   margin-top: -2rem;
 }
+.mt-\[0\.1rem\] {
+  margin-top: 0.1rem;
+}
 .mt-\[0\.250rem\] {
   margin-top: 0.250rem;
 }

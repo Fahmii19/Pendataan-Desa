@@ -629,22 +629,39 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                     <div class="w-full flex flex-col text-sm text-black informasi_persil">
 
+                                        {{-- new1 --}}
+
+
                                         <div class="grid grid-cols-1 justify-items-center mt-2">
 
-                                            <div class="">Tanggal 19 Maret 2024</div>
-
-                                        </div>
-                                        <div class="grid grid-cols-1 justify-items-center mt-2.5 mb-2">
-
-                                            <div class="">
-                                                <img src="{{ asset('assets/tanam_padi.png') }}" alt="" class="w-[24vw] h-[24vh]">
+                                            <div class="w-full flex flex-row justify-center items-center">
+                                                <div class="h-full flex items-center">
+                                                    <img id="prev-informasi-persil" src="/assets/neww/arrow-left2.png" alt="" class="w-4 h-4 object-contain cursor-pointer ">
+                                                </div>
+                                                <div class="mx-2 mt-[0.1rem]">19 Marets 2024</div>
+                                                <div class="h-full flex items-center">
+                                                    <img id="next-informasi-persil" src="/assets/neww/arrow-right2.png" alt="" class="w-4 h-4 object-contain cursor-pointer ">
+                                                </div>
                                             </div>
+
+
                                         </div>
 
-                                        <div class="grid grid-cols-2 mt-2">
-                                            <div class="">Catatan</div>
-                                            <div>
-                                                lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                                        <div class="flex flex-col informasi_persil_komoditi">
+                                            <div class="grid grid-cols-1 justify-items-center mt-2.5 mb-2">
+
+                                                <div class="">
+                                                    <img src="{{ asset('assets/tanam_padi.png') }}" alt="" class="w-[24vw] h-[24vh]">
+                                                </div>
+                                            </div>
+
+                                            <div class="grid grid-cols-2 mt-2">
+                                                <div class="">Catatan</div>
+                                                <div>
+                                                    lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                                            </div>
+
+
                                         </div>
 
 
