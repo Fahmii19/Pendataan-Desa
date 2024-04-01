@@ -634,11 +634,11 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                         <div class="grid grid-cols-1 justify-items-center mt-2">
                                             <div class="w-full flex flex-row justify-center items-center">
                                                 <div class="h-full flex items-center">
-                                                    <img id="prev-informasi-persil" src="/assets/neww/left2.png" alt="" class="w-4 h-4 object-contain cursor-pointer opacity-50 cursor-not-allowed" disabled>
+                                                    <img id="prev-informasi-persil" src="/assets/neww/left2.png" alt="" class="w-5 h-5 object-contain cursor-pointer opacity-50 cursor-not-allowed" disabled>
                                                 </div>
                                                 <div class="mx-2 mt-[0.1rem]" id="tgl-update-persil">19 Maret 2024</div>
                                                 <div class="h-full flex items-center">
-                                                    <img id="next-informasi-persil" src="/assets/neww/right2.png" alt="" class="w-4 h-4 object-contain cursor-pointer">
+                                                    <img id="next-informasi-persil" src="/assets/neww/right2.png" alt="" class="w-5 h-5 object-contain cursor-pointer">
                                                 </div>
                                             </div>
                                         </div>
@@ -666,7 +666,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                             <div class="">Luas</div>
 
 
-                                            <div>3.000 (m<sup>2</sup>)</div>
+                                            <div>3.000 m<sup>2</sup></div>
 
                                         </div>
 
@@ -1089,6 +1089,10 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                     </div>
                                 </div>
 
+
+                                {{-- --}}
+
+                                <div class="w-full border mt-3">a</div>
 
 
 
@@ -9522,7 +9526,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                 });
             });
 
-            activateTab("btn-1");
+            activateTab("btn-6");
         });
 
     </script>
@@ -10296,20 +10300,20 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
         const dataPersil = [{
                 tanggal: "19 Maret 2024"
                 , gambar: "assets/neww/padi1.jpg"
-                , catatan: "Catatan untuk 19 Maret 2024. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                , catatan: "Hama tikus menyerang persil 1. Sebaiknya segera diatasi."
             },
             // 23
             {
                 tanggal: "23 Maret 2024"
                 , gambar: "assets/neww/padi2.jpg"
-                , catatan: "Catatan untuk 23 Maret 2024. consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+                , catatan: "Kurang air untuk seminggu ini karena sungai sedang kering."
 
             },
             // 27
             {
                 tanggal: "27 Maret 2024"
                 , gambar: "assets/neww/padi3.png"
-                , catatan: "Catatan untuk 27 Maret 2024. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed "
+                , catatan: "Sementara beli air dari tetangga untuk mengairi sawah."
 
             }
         , ];
