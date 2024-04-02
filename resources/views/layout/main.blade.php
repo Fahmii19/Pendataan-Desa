@@ -1151,7 +1151,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                     <div class="w-full flex flex-col ">
 
 
-                                        <div class="flex flex-row justify-end text-sm mb-1 font-bold flex justify-center">Rp</div>
+                                        <div class="flex flex-row justify-end text-sm mb-1 font-bold flex justify-center">Nilai</div>
 
 
                                         <div class="flex justify-end text-sm mb-1" id="distribusi_g">0%</div>
@@ -1162,17 +1162,42 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                         <div class="flex justify-end text-sm mb-1" id="distribusi_cr">0%</div>
 
-                                        <div class="flex justify-end text-sm mb-1" id="distribusi_capital">0%</div>
 
-                                        <div class="flex justify-end text-sm mb-1" id="distribusi_nowc">0%</div>
+                                        <div class="text-sm mb-1 flex flex-row justify-between">
+                                            <div class="">Rp</div>
+                                            <div id="distribusi_capital">0%</div>
 
-                                        <div class="flex justify-end text-sm mb-1" id="distribusi_netOpCap">0%</div>
+                                        </div>
 
-                                        <div class="flex justify-end text-sm mb-1" id="distribusi_sales">0%</div>
 
-                                        <div class="flex justify-end text-sm mb-1" id="distribusi_noi">0%</div>
 
-                                        <div class="flex justify-end text-sm mb-1" id="distribusi_valueOp">0%</div>
+                                        <div class="text-sm mb-1 flex flex-row justify-between">
+                                            <div class="">Rp</div>
+                                            <div id="distribusi_nowc">0%</div>
+                                        </div>
+                                        <div class="text-sm mb-1 flex flex-row justify-between">
+                                            <div class="">Rp</div>
+                                            <div id="distribusi_netOpCap">0%</div>
+
+                                        </div>
+                                        <div class="text-sm mb-1 flex flex-row justify-between">
+                                            <div class="">Rp</div>
+                                            <div id="distribusi_sales">0%</div>
+
+                                        </div>
+                                        <div class="text-sm mb-1 flex flex-row justify-between">
+                                            <div class="">Rp</div>
+                                            <div id="distribusi_noi">0%</div>
+
+                                        </div>
+                                        <div class="text-sm mb-1 flex flex-row justify-between">
+                                            <div class="">Rp</div>
+                                            <div id="distribusi_valueOp">0%</div>
+
+                                        </div>
+
+
+
 
                                         <div class="flex justify-end text-sm mb-1" id="distribusi_roic">0%</div>
 
