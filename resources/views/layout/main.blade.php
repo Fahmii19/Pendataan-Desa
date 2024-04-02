@@ -1184,74 +1184,223 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                 <h5 class="font-bold text-md text-center mt-4 mb-1">Keterangan</h5>
 
 
-                                <div class="w-full grid grid-cols-[120px,200px] mt-3">
-
-                                    <div class="w-full text-sm flex flex-col ">
-                                        {{-- <div class="h-[4.2vh] mb-1 ">&nbsp;</div> --}}
-                                        <div class="mb-1">g</div>
-                                        <div class="mb-1">WACC</div>
-                                        <div class="mb-1">OP</div>
-
-                                        <div class="mb-1">CR</div>
-
-                                        <div class="mb-1">Capital</div>
-
-                                        <div class="mb-1">NOWC</div>
-
-                                        <div class="mb-1">Net Op Cap</div>
-
-                                        <div class="mb-1">Sales</div>
-
-                                        <div class="mb-1">NOI</div>
-
-                                        <div class="mb-1">Value Op</div>
-
-                                        <div class="mb-1">ROIC</div>
-
-                                        <div class="mb-1">EVA</div>
+                                <div class="w-full grid grid-cols-1 mt-3">
 
 
+                                    {{-- --}}
+
+                                    <div class="grid grid-cols-[120px,200px] mb-0">
+
+                                        <div class="w-full text-xs flex flex-col ">
+                                            <div class="">g
+
+                                            </div>
+
+                                        </div>
+
+
+                                        <div class="w-full flex flex-col ">
+
+                                            <div class="w-full flex justify-start text-xs mb-1 text-left" id="">Growth Rate</div>
+
+
+
+                                        </div>
                                     </div>
 
+                                    {{-- --}}
 
-                                    <div class="w-full flex flex-col ">
+                                    <div class="grid grid-cols-[120px,200px] mb-0">
 
+                                        <div class="w-full text-xs flex flex-col ">
+                                            <div class="">WACC</div>
 
-
-
-                                        <div class="flex justify-end text-sm mb-1" id="">Growth Rate</div>
-
-
-                                        <div class="flex justify-end text-sm mb-1" id="">Discount Rate</div>
-
-                                        <div class="flex justify-end text-sm mb-1" id="">Operating Profitability</div>
-
-                                        <div class="flex justify-end text-sm mb-1" id="">Capital Requirement</div>
-
-                                        <div class="flex justify-end text-sm mb-1 text-right" id="">Op. Long Term Asset dengan Harga Tanah = 1000 m<sup>2</sup></div>
+                                        </div>
 
 
-                                        <div class="flex justify-end text-sm mb-1" id="">Working Cap per tahun</div>
+                                        <div class="w-full flex flex-col ">
 
-                                        <div class="flex justify-end text-sm mb-1" id="">Net Op. Capital</div>
-
-                                        <div class="flex justify-end text-sm mb-1" id="">Panen 4x per tahun</div>
-
-                                        <div class="flex justify-end text-sm mb-1" id="">Net Operating Income</div>
-
-                                        <div class="flex justify-end text-sm mb-1" id="">DCF Method</div>
-
-                                        <div class="flex justify-end text-sm mb-1" id="">Return on Investment Capital</div>
-
-                                        <div class="flex justify-end text-sm mb-1" id="">Economic Value Added</div>
+                                            <div class="w-full flex justify-start text-xs mb-1 text-left" id="">Discount Rate</div>
 
 
-
-
+                                        </div>
                                     </div>
+                                    {{-- --}}
+
+                                    <div class="grid grid-cols-[120px,200px] mb-0">
+
+                                        <div class="w-full text-xs flex flex-col ">
+                                            <div class="">OP</div>
+
+                                        </div>
+
+
+                                        <div class="w-full flex flex-col ">
+
+                                            <div class="w-full flex justify-start text-xs mb-1 text-left" id="">Operating Profitability</div>
+
+
+                                        </div>
+                                    </div>
+                                    {{-- --}}
+
+                                    <div class="grid grid-cols-[120px,200px] mb-0">
+
+                                        <div class="w-full text-xs flex flex-col ">
+                                            <div class="">CR</div>
+
+                                        </div>
+
+
+                                        <div class="w-full flex flex-col ">
+
+                                            <div class="w-full flex justify-start text-xs mb-1 text-left" id="">Capital Requirement</div>
+
+
+                                        </div>
+                                    </div>
+                                    {{-- --}}
+
+                                    <div class="grid grid-cols-[120px,200px] mb-0">
+
+                                        <div class="w-full text-xs flex flex-col ">
+                                            <div class="">Capital</div>
+
+                                        </div>
+
+
+                                        <div class="w-full flex flex-col ">
+
+                                            <div class="w-full flex justify-start text-xs mb-1 text-left" id="">Op. Long Term Asset dengan Harga Tanah = 1000 m2</div>
+
+
+                                        </div>
+                                    </div>
+                                    {{-- --}}
+
+                                    <div class="grid grid-cols-[120px,200px] mb-0">
+
+                                        <div class="w-full text-xs flex flex-col ">
+                                            <div class="">NOWC</div>
+
+                                        </div>
+
+
+                                        <div class="w-full flex flex-col ">
+
+                                            <div class="w-full flex justify-start text-xs mb-1 text-left" id="">Working Cap per tahun</div>
+
+
+                                        </div>
+                                    </div>
+                                    {{-- --}}
+
+
+                                    <div class="grid grid-cols-[120px,200px] mb-0">
+
+                                        <div class="w-full text-xs flex flex-col ">
+                                            <div class="">Net Op Cap</div>
+
+                                        </div>
+
+
+                                        <div class="w-full flex flex-col ">
+
+                                            <div class="w-full flex justify-start text-xs mb-1 text-left text-left" id="">
+                                                Net Op. Capital
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    {{-- --}}
+
+                                    <div class="grid grid-cols-[120px,200px] mb-0">
+
+                                        <div class="w-full text-xs flex flex-col ">
+                                            <div class="">Sales</div>
+
+                                        </div>
+
+
+                                        <div class="w-full flex flex-col ">
+
+                                            <div class="w-full flex justify-start text-xs mb-1 text-left" id="">Panen 4x per tahun</div>
+
+
+                                        </div>
+                                    </div>
+                                    {{-- --}}
+
+                                    <div class="grid grid-cols-[120px,200px] mb-0">
+
+                                        <div class="w-full text-xs flex flex-col ">
+                                            <div class="">NOI</div>
+
+                                        </div>
+
+
+                                        <div class="w-full flex flex-col ">
+
+                                            <div class="w-full flex justify-start text-xs mb-1 text-left" id="">Net Operating Income</div>
+
+
+                                        </div>
+                                    </div>
+                                    {{-- --}}
+
+                                    <div class="grid grid-cols-[120px,200px] mb-0">
+
+                                        <div class="w-full text-xs flex flex-col ">
+                                            <div class="">Value Op</div>
+
+                                        </div>
+
+
+                                        <div class="w-full flex flex-col ">
+
+                                            <div class="w-full flex justify-start text-xs mb-1 text-left" id="">DCF Method</div>
+
+
+                                        </div>
+                                    </div>
+                                    {{-- --}}
+
+                                    <div class="grid grid-cols-[120px,200px] mb-0">
+
+                                        <div class="w-full text-xs flex flex-col ">
+                                            <div class="">ROIC</div>
+
+                                        </div>
+
+
+                                        <div class="w-full flex flex-col ">
+
+                                            <div class="w-full flex justify-start text-xs mb-1 text-left" id="">Return on Investment Capital</div>
+
+
+                                        </div>
+                                    </div>
+                                    {{-- --}}
+
+                                    <div class="grid grid-cols-[120px,200px] mb-0">
+
+                                        <div class="w-full text-xs flex flex-col ">
+                                            <div class="">EVA</div>
+
+                                        </div>
+
+
+                                        <div class="w-full flex flex-col ">
+
+                                            <div class="w-full flex justify-start text-xs mb-1 text-left" id="">Economic Value Added</div>
+
+
+                                        </div>
+                                    </div>
+
+                                    {{-- --}}
+
                                 </div>
-
-
 
 
 
