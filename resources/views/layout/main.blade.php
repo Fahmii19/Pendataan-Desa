@@ -1174,11 +1174,31 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                         <div class="flex justify-end text-sm mb-1 text-red-500 font-bold" id="distribusi_eva">0%</div>
 
+                                    </div>
+                                </div>
 
 
+                                <div class="w-full grid grid-cols-[100px,150px] mt-3">
 
+                                    <div class="col-span-2 w-full text-sm flex flex-col ">
+                                        {{-- <div class="h-[4.2vh] mb-1 ">&nbsp;</div> --}}
+                                        <div class="mb-1 font-bold text-center">Keterangan</div>
+                                        <div class="mb-1">Growth Rate</div>
 
+                                        <div class="mb-1">Discount Rate</div>
 
+                                        <div class="mb-1">Operating Profitability</div>
+
+                                        <div class="mb-1">Capital Requirement</div>
+
+                                        <div class="mb-1">Op. Long Term Asset dengan Harga Tanah = 1000 m2</div>
+                                        <div class="mb-1">Working Cap per tahun</div>
+                                        <div class="mb-1">Net Op. Capital</div>
+                                        <div class="mb-1">Panen 4x per tahun</div>
+                                        <div class="mb-1">Net Operating Income</div>
+                                        <div class="mb-1">DCF Method</div>
+                                        <div class="mb-1">Return on Investment Capital</div>
+                                        <div class="mb-1">Economic Value Added</div>
 
                                     </div>
 
