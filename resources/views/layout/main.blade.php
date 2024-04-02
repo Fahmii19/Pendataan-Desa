@@ -1090,17 +1090,17 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                             <div class="h-[80vh] flex flex-col">
 
-
-
-
                                 {{-- --}}
 
-                                <div class="w-full grid grid-cols-[100px,150px] mt-5">
+                                <h5 class="font-bold text-md text-center mt-4 mb-3">Financial</h5>
+
+
+                                <div class="w-full grid grid-cols-[100px,150px]">
 
                                     <!-- Dropdown Filter -->
-                                    <div class="col-span-2 border w-full flex justify-center  mb-1">
+                                    <div class="col-span-2 w-full flex justify-end  mb-2">
                                         <div class="relative inline-block text-left">
-                                            <button id="dropdown-button-pencarian" class="inline-flex justify-between items-center pl-1 w-[8rem] h-[1.8rem] text-sm font-medium text-black bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-0">
+                                            <button id="dropdown-button-pencarian" class="inline-flex justify-between items-center pl-1 w-[10rem] h-[1.8rem] text-sm font-medium text-black bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-0">
                                                 <span id="selected-item" class="pl-2">Pilih</span>
 
                                                 <svg id="arrow-icon-pencarian" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 transition-transform duration-200 transform" viewBox="0 0 20 20" fill="currentColor">
@@ -1108,7 +1108,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                                 </svg>
                                             </button>
 
-                                            <div id="dropdown-menu-pencarian" class="hidden origin-top-right absolute right-0 mt-2 w-40 rounded-md bg-white ring-1 ring-black ring-opacity-5 z-10">
+                                            <div id="dropdown-menu-pencarian" class="hidden origin-top-right absolute mt-2 w-40 rounded-md bg-white ring-1 ring-black ring-opacity-5 z-10">
                                                 <div class="py-2 p-2" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-button-pencarian">
                                                     <a id="item-padi-sawah" class="flex block rounded-md px-1 py-1 text-sm text-black hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem">
                                                         Padi Sawah
@@ -1170,7 +1170,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                         <div class="flex justify-end text-xs mb-1" id="distribusi_roic">0%</div>
 
-                                        <div class="flex justify-end text-xs mb-1" id="distribusi_eva">0%</div>
+                                        <div class="flex justify-end text-xs mb-1 text-red-500" id="distribusi_eva">0%</div>
 
 
 
