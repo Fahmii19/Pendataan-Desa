@@ -1092,22 +1092,20 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                 {{-- --}}
 
-                                <h5 class="font-bold text-md text-center mt-4 mb-3">Financial</h5>
+                                <h5 class="font-bold text-md text-center mt-4 mb-3">Finansial</h5>
 
 
                                 <div class="w-full grid grid-cols-[100px,150px]">
 
                                     <!-- Dropdown Filter -->
-                                    <div class="col-span-2 w-full flex justify-end  mb-2">
+                                    <div class="col-span-2 w-full flex justify-end mb-3">
                                         <div class="relative inline-block text-left">
                                             <button id="dropdown-button-pencarian" class="inline-flex justify-between items-center pl-1 w-[10rem] h-[1.8rem] text-sm font-medium text-black bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-0">
-                                                <span id="selected-item" class="pl-2">Pilih</span>
-
+                                                <span id="selected-item" class="pl-2">Padi Sawah</span>
                                                 <svg id="arrow-icon-pencarian" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 transition-transform duration-200 transform" viewBox="0 0 20 20" fill="currentColor">
                                                     <path fill-rule="evenodd" d="M6.293 9.293a1 1 0 011.414 0L10 11.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path>
                                                 </svg>
                                             </button>
-
                                             <div id="dropdown-menu-pencarian" class="hidden origin-top-right absolute mt-2 w-40 rounded-md bg-white ring-1 ring-black ring-opacity-5 z-10">
                                                 <div class="py-2 p-2" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-button-pencarian">
                                                     <a id="item-padi-sawah" class="flex block rounded-md px-1 py-1 text-sm text-black hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem">
@@ -1129,8 +1127,10 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
 
 
-                                    <div class="w-full text-xs flex flex-col ">
+
+                                    <div class="w-full text-sm flex flex-col ">
                                         {{-- <div class="h-[4.2vh] mb-1 ">&nbsp;</div> --}}
+                                        <div class="mb-1 font-bold">Koefisien</div>
                                         <div class="mb-1">g</div>
                                         <div class="mb-1">WACC</div>
                                         <div class="mb-1">OP</div>
@@ -1148,29 +1148,32 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                     <div class="w-full flex flex-col ">
 
 
-                                        <div class="flex justify-end text-xs mb-1" id="distribusi_g">0%</div>
+                                        <div class="flex justify-end text-sm mb-1 font-bold">Rp</div>
 
-                                        <div class="flex justify-end text-xs mb-1" id="distribusi_wacc">0%</div>
+                                        <div class="flex justify-end text-sm mb-1" id="distribusi_g">0%</div>
 
-                                        <div class="flex justify-end text-xs mb-1" id="distribusi_op">0%</div>
+                                        <div class="flex justify-end text-sm mb-1" id="distribusi_wacc">0%</div>
 
-                                        <div class="flex justify-end text-xs mb-1" id="distribusi_cr">0%</div>
+                                        <div class="flex justify-end text-sm mb-1" id="distribusi_op">0%</div>
 
-                                        <div class="flex justify-end text-xs mb-1" id="distribusi_capital">0%</div>
+                                        <div class="flex justify-end text-sm mb-1" id="distribusi_cr">0%</div>
 
-                                        <div class="flex justify-end text-xs mb-1" id="distribusi_nowc">0%</div>
+                                        <div class="flex justify-end text-sm mb-1" id="distribusi_capital">0%</div>
 
-                                        <div class="flex justify-end text-xs mb-1" id="distribusi_netOpCap">0%</div>
+                                        <div class="flex justify-end text-sm mb-1" id="distribusi_nowc">0%</div>
 
-                                        <div class="flex justify-end text-xs mb-1" id="distribusi_sales">0%</div>
+                                        <div class="flex justify-end text-sm mb-1" id="distribusi_netOpCap">0%</div>
 
-                                        <div class="flex justify-end text-xs mb-1" id="distribusi_noi">0%</div>
+                                        <div class="flex justify-end text-sm mb-1" id="distribusi_sales">0%</div>
 
-                                        <div class="flex justify-end text-xs mb-1" id="distribusi_valueOp">0%</div>
+                                        <div class="flex justify-end text-sm mb-1" id="distribusi_noi">0%</div>
 
-                                        <div class="flex justify-end text-xs mb-1" id="distribusi_roic">0%</div>
+                                        <div class="flex justify-end text-sm mb-1" id="distribusi_valueOp">0%</div>
 
-                                        <div class="flex justify-end text-xs mb-1 text-red-500" id="distribusi_eva">0%</div>
+                                        <div class="flex justify-end text-sm mb-1" id="distribusi_roic">0%</div>
+
+                                        <div class="flex justify-end text-sm mb-1 text-red-500 font-bold" id="distribusi_eva">0%</div>
+
 
 
 
@@ -10518,7 +10521,27 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                 }
             };
 
-
+            function tampilkanInformasi(selectedItemText) {
+                $("#selected-item").text(selectedItemText);
+                const data = dataInformasi[selectedItemText];
+                if (data) {
+                    console.log("Data untuk", selectedItemText, "ditemukan.");
+                    $("#distribusi_g").text(data.g);
+                    $("#distribusi_wacc").text(data.wacc);
+                    $("#distribusi_op").text(data.op);
+                    $("#distribusi_cr").text(data.cr);
+                    $("#distribusi_capital").text(data.capital);
+                    $("#distribusi_nowc").text(data.nowc);
+                    $("#distribusi_netOpCap").text(data.netOpCap);
+                    $("#distribusi_sales").text(data.sales);
+                    $("#distribusi_noi").text(data.noi);
+                    $("#distribusi_valueOp").text(data.valueOp);
+                    $("#distribusi_roic").text(data.roic);
+                    $("#distribusi_eva").text(data.eva);
+                } else {
+                    console.error("Data untuk", selectedItemText, "tidak ditemukan.");
+                }
+            }
 
             $("#dropdown-button-pencarian").click(function() {
                 $("#dropdown-menu-pencarian").toggle();
@@ -10527,32 +10550,17 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
             $("#dropdown-menu-pencarian a").click(function() {
                 var selectedItemText = $(this).text().trim();
-                $("#selected-item").text(selectedItemText);
-
-                if (dataInformasi[selectedItemText]) {
-                    console.log("Data untuk", selectedItemText, "ditemukan.");
-                    $("#distribusi_g").text(dataInformasi[selectedItemText].g);
-                    $("#distribusi_wacc").text(dataInformasi[selectedItemText].wacc);
-                    $("#distribusi_op").text(dataInformasi[selectedItemText].op);
-                    $("#distribusi_cr").text(dataInformasi[selectedItemText].cr);
-                    $("#distribusi_capital").text(dataInformasi[selectedItemText].capital);
-                    $("#distribusi_nowc").text(dataInformasi[selectedItemText].nowc);
-                    $("#distribusi_netOpCap").text(dataInformasi[selectedItemText].netOpCap);
-                    $("#distribusi_sales").text(dataInformasi[selectedItemText].sales);
-                    $("#distribusi_noi").text(dataInformasi[selectedItemText].noi);
-                    $("#distribusi_valueOp").text(dataInformasi[selectedItemText].valueOp);
-                    $("#distribusi_roic").text(dataInformasi[selectedItemText].roic);
-                    $("#distribusi_eva").text(dataInformasi[selectedItemText].eva);
-                } else {
-
-                    console.error("Data untuk", selectedItemText, "tidak ditemukan.");
-                }
-
+                tampilkanInformasi(selectedItemText);
                 $("#dropdown-menu-pencarian").hide();
             });
+
+            // Memuat informasi "Padi Sawah" saat halaman dimuat
+            tampilkanInformasi("Padi Sawah");
         });
 
     </script>
+
+
 
 
 
