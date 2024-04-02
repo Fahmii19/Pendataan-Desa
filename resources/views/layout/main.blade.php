@@ -1095,10 +1095,10 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                 <h5 class="font-bold text-md text-center mt-4 mb-3">Finansial</h5>
 
 
-                                <div class="w-full grid grid-cols-[100px,150px]">
+                                <div class="w-full grid grid-cols-[150px,50px,120px]">
 
                                     <!-- Dropdown Filter -->
-                                    <div class="col-span-2 w-full flex justify-end mb-3">
+                                    <div class="col-span-3 w-full flex justify-beetwen mb-3">
                                         <div class="relative inline-block text-left">
                                             <button id="dropdown-button-pencarian" class="inline-flex justify-between items-center pl-1 w-[10rem] h-[1.8rem] text-sm font-medium text-black bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-0">
                                                 <span id="selected-item" class="pl-2">Padi Sawah</span>
@@ -1123,14 +1123,15 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="w-full flex justify-end items-center text-blue-500 cursor-pointer">
+                                            <a href="#" target="_blank">Detil</a>
+                                        </div>
                                     </div>
-
-
 
 
                                     <div class="w-full text-sm flex flex-col ">
                                         {{-- <div class="h-[4.2vh] mb-1 ">&nbsp;</div> --}}
-                                        <div class="mb-1 font-bold">Koefisien</div>
+                                        <div class="mb-1 font-bold flex justify-center">Koefisien</div>
                                         <div class="mb-1">g</div>
                                         <div class="mb-1">WACC</div>
                                         <div class="mb-1">OP</div>
@@ -1145,10 +1146,13 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                         <div class="mb-1">EVA</div>
                                     </div>
 
+                                    <div class="w-full">&nbsp;</div>
+
                                     <div class="w-full flex flex-col ">
 
 
-                                        <div class="flex justify-end text-sm mb-1 font-bold">Rp</div>
+                                        <div class="flex flex-row justify-end text-sm mb-1 font-bold flex justify-center">Rp</div>
+
 
                                         <div class="flex justify-end text-sm mb-1" id="distribusi_g">0%</div>
 
@@ -1177,33 +1181,76 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                     </div>
                                 </div>
 
+                                <h5 class="font-bold text-md text-center mt-4 mb-1">Keterangan</h5>
 
-                                <div class="w-full grid grid-cols-[100px,150px] mt-3">
 
-                                    <div class="col-span-2 w-full text-sm flex flex-col ">
+                                <div class="w-full grid grid-cols-[120px,200px] mt-3">
+
+                                    <div class="w-full text-sm flex flex-col ">
                                         {{-- <div class="h-[4.2vh] mb-1 ">&nbsp;</div> --}}
-                                        <div class="mb-1 font-bold text-center">Keterangan</div>
-                                        <div class="mb-1">Growth Rate</div>
+                                        <div class="mb-1">g</div>
+                                        <div class="mb-1">WACC</div>
+                                        <div class="mb-1">OP</div>
 
-                                        <div class="mb-1">Discount Rate</div>
+                                        <div class="mb-1">CR</div>
 
-                                        <div class="mb-1">Operating Profitability</div>
+                                        <div class="mb-1">Capital</div>
 
-                                        <div class="mb-1">Capital Requirement</div>
+                                        <div class="mb-1">NOWC</div>
 
-                                        <div class="mb-1">Op. Long Term Asset dengan Harga Tanah = 1000 m2</div>
-                                        <div class="mb-1">Working Cap per tahun</div>
-                                        <div class="mb-1">Net Op. Capital</div>
-                                        <div class="mb-1">Panen 4x per tahun</div>
-                                        <div class="mb-1">Net Operating Income</div>
-                                        <div class="mb-1">DCF Method</div>
-                                        <div class="mb-1">Return on Investment Capital</div>
-                                        <div class="mb-1">Economic Value Added</div>
+                                        <div class="mb-1">Net Op Cap</div>
+
+                                        <div class="mb-1">Sales</div>
+
+                                        <div class="mb-1">NOI</div>
+
+                                        <div class="mb-1">Value Op</div>
+
+                                        <div class="mb-1">ROIC</div>
+
+                                        <div class="mb-1">EVA</div>
+
 
                                     </div>
 
 
+                                    <div class="w-full flex flex-col ">
+
+
+
+
+                                        <div class="flex justify-end text-sm mb-1" id="">Growth Rate</div>
+
+
+                                        <div class="flex justify-end text-sm mb-1" id="">Discount Rate</div>
+
+                                        <div class="flex justify-end text-sm mb-1" id="">Operating Profitability</div>
+
+                                        <div class="flex justify-end text-sm mb-1" id="">Capital Requirement</div>
+
+                                        <div class="flex justify-end text-sm mb-1 text-right" id="">Op. Long Term Asset dengan Harga Tanah = 1000 m<sup>2</sup></div>
+
+
+                                        <div class="flex justify-end text-sm mb-1" id="">Working Cap per tahun</div>
+
+                                        <div class="flex justify-end text-sm mb-1" id="">Net Op. Capital</div>
+
+                                        <div class="flex justify-end text-sm mb-1" id="">Panen 4x per tahun</div>
+
+                                        <div class="flex justify-end text-sm mb-1" id="">Net Operating Income</div>
+
+                                        <div class="flex justify-end text-sm mb-1" id="">DCF Method</div>
+
+                                        <div class="flex justify-end text-sm mb-1" id="">Return on Investment Capital</div>
+
+                                        <div class="flex justify-end text-sm mb-1" id="">Economic Value Added</div>
+
+
+
+
+                                    </div>
                                 </div>
+
 
 
 
