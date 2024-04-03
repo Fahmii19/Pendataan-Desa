@@ -1095,55 +1095,68 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                 <h5 class="font-bold text-md text-center mt-4 mb-3">Finansial</h5>
 
 
-                                <div class="w-full grid grid-cols-[150px,50px,120px]">
+                                <div class="w-full grid grid-cols-[200px,50px,120px]">
 
                                     <!-- Dropdown Filter -->
                                     <div class="col-span-3 w-full flex justify-beetwen mb-3">
-                                        <div class="relative inline-block text-left">
-                                            <button id="dropdown-button-pencarian" class="inline-flex justify-between items-center pl-1 w-[10rem] h-[1.8rem] text-sm font-medium text-black bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-0">
-                                                <span id="selected-item" class="pl-2">Padi Sawah</span>
-                                                <svg id="arrow-icon-pencarian" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 transition-transform duration-200 transform" viewBox="0 0 20 20" fill="currentColor">
-                                                    <path fill-rule="evenodd" d="M6.293 9.293a1 1 0 011.414 0L10 11.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                                                </svg>
-                                            </button>
-                                            <div id="dropdown-menu-pencarian" class="hidden origin-top-right absolute mt-2 w-40 rounded-md bg-white ring-1 ring-black ring-opacity-5 z-10">
-                                                <div class="py-2 p-2" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-button-pencarian">
-                                                    <a id="item-padi-sawah" class="flex block rounded-md px-1 py-1 text-sm text-black hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem">
-                                                        Padi Sawah
-                                                    </a>
-                                                    <a id="item-padi-ladang" class="flex block rounded-md px-1 py-1 text-sm text-black hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem">
-                                                        Padi Ladang
-                                                    </a>
-                                                    <a id="item-jagung" class="flex block rounded-md px-1 py-1 text-sm text-black hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem">
-                                                        Jagung
-                                                    </a>
-                                                    <a id="item-kedelai" class="flex block rounded-md px-1 py-1 text-sm text-black hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem">
-                                                        Kedelai
-                                                    </a>
+                                        <div class="w-full grid grid-cols-[100px,1fr]">
+
+                                            <div class="relative inline-block text-left">
+                                                <button id="dropdown-button-pencarian" class="inline-flex justify-between items-center pl-1 w-[17rem] h-[1.8rem] text-sm font-medium text-black bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-0">
+                                                    <span id="selected-item" class="pl-2">Padi Sawah</span>
+                                                    <svg id="arrow-icon-pencarian" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 transition-transform duration-200 transform" viewBox="0 0 20 20" fill="currentColor">
+                                                        <path fill-rule="evenodd" d="M6.293 9.293a1 1 0 011.414 0L10 11.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                                    </svg>
+                                                </button>
+                                                <div id="dropdown-menu-pencarian" class="hidden origin-top-right absolute mt-2 w-[17rem] rounded-md bg-white ring-1 ring-black ring-opacity-5 z-10">
+
+                                                    <div class="py-2 p-2" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-button-pencarian">
+                                                        <a id="item-padi-sawah" class="flex block rounded-md px-1 py-1 text-sm text-black hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem">
+                                                            Padi Sawah
+                                                        </a>
+                                                        <a id="item-padi-ladang" class="flex block rounded-md px-1 py-1 text-sm text-black hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem">
+                                                            Padi Ladang
+                                                        </a>
+                                                        <a id="item-jagung" class="flex block rounded-md px-1 py-1 text-sm text-black hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem">
+                                                            Jagung
+                                                        </a>
+                                                        <a id="item-kedelai" class="flex block rounded-md px-1 py-1 text-sm text-black hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem">
+                                                            Kedelai
+                                                        </a>
+                                                    </div>
                                                 </div>
                                             </div>
+                                            <div class="w-full flex justify-end items-center text-blue-500 cursor-pointer">
+                                                <a href="https://google.com/" target="_blank">Detil</a>
+
+                                            </div>
+
+
                                         </div>
-                                        <div class="w-full flex justify-end items-center text-blue-500 cursor-pointer">
-                                            <a href="#" target="_blank">Detil</a>
-                                        </div>
+
                                     </div>
 
 
                                     <div class="w-full text-sm flex flex-col ">
                                         {{-- <div class="h-[4.2vh] mb-1 ">&nbsp;</div> --}}
                                         <div class="mb-1 font-bold flex justify-center">Koefisien</div>
-                                        <div class="mb-1">g</div>
+                                        <div class="mb-1">Growth rate</div>
                                         <div class="mb-1">WACC</div>
-                                        <div class="mb-1">OP</div>
-                                        <div class="mb-1">CR</div>
+                                        <div class="mb-1">
+                                            Operating profitability</div>
+
+                                        <div class="mb-1">
+                                            Capital requirement</div>
+
                                         <div class="mb-1">Capital</div>
                                         <div class="mb-1">NOWC</div>
-                                        <div class="mb-1">Net Op Cap</div>
+                                        <div class="mb-1">Net Operating Capital</div>
                                         <div class="mb-1">Sales</div>
-                                        <div class="mb-1">NOI</div>
-                                        <div class="mb-1">Value Op</div>
+                                        <div class="mb-1">Net Operating Income</div>
+                                        <div class="mb-1">Valuasi (Metode DCF)</div>
                                         <div class="mb-1">ROIC</div>
-                                        <div class="mb-1">EVA</div>
+                                        <div class="mb-1">
+                                            Economic Value Added</div>
                                     </div>
 
                                     <div class="w-full">&nbsp;</div>
@@ -1214,79 +1227,8 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                     {{-- --}}
 
-                                    <div class="grid grid-cols-[120px,200px] mb-0">
 
-                                        <div class="w-full text-xs flex flex-col ">
-                                            <div class="">g
-
-                                            </div>
-
-                                        </div>
-
-
-                                        <div class="w-full flex flex-col ">
-
-                                            <div class="w-full flex justify-start text-xs mb-1 text-left" id="">Growth Rate</div>
-
-
-
-                                        </div>
-                                    </div>
-
-                                    {{-- --}}
-
-                                    <div class="grid grid-cols-[120px,200px] mb-0">
-
-                                        <div class="w-full text-xs flex flex-col ">
-                                            <div class="">WACC</div>
-
-                                        </div>
-
-
-                                        <div class="w-full flex flex-col ">
-
-                                            <div class="w-full flex justify-start text-xs mb-1 text-left" id="">Discount Rate</div>
-
-
-                                        </div>
-                                    </div>
-                                    {{-- --}}
-
-                                    <div class="grid grid-cols-[120px,200px] mb-0">
-
-                                        <div class="w-full text-xs flex flex-col ">
-                                            <div class="">OP</div>
-
-                                        </div>
-
-
-                                        <div class="w-full flex flex-col ">
-
-                                            <div class="w-full flex justify-start text-xs mb-1 text-left" id="">Operating Profitability</div>
-
-
-                                        </div>
-                                    </div>
-                                    {{-- --}}
-
-                                    <div class="grid grid-cols-[120px,200px] mb-0">
-
-                                        <div class="w-full text-xs flex flex-col ">
-                                            <div class="">CR</div>
-
-                                        </div>
-
-
-                                        <div class="w-full flex flex-col ">
-
-                                            <div class="w-full flex justify-start text-xs mb-1 text-left" id="">Capital Requirement</div>
-
-
-                                        </div>
-                                    </div>
-                                    {{-- --}}
-
-                                    <div class="grid grid-cols-[120px,200px] mb-0">
+                                    <div class="grid grid-cols-[140px,230px] mb-0">
 
                                         <div class="w-full text-xs flex flex-col ">
                                             <div class="">Capital</div>
@@ -1296,14 +1238,14 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                         <div class="w-full flex flex-col ">
 
-                                            <div class="w-full flex justify-start text-xs mb-1 text-left" id="">Op. Long Term Asset dengan Harga Tanah = 1000 m2</div>
+                                            <div class="w-full flex justify-start text-xs mb-1 text-left" id="">Operating Long Term Asset dengan asumsi harga tanah Rp 100.000 / m2</div>
 
 
                                         </div>
                                     </div>
                                     {{-- --}}
 
-                                    <div class="grid grid-cols-[120px,200px] mb-0">
+                                    <div class="grid grid-cols-[140px,230px] mb-0">
 
                                         <div class="w-full text-xs flex flex-col ">
                                             <div class="">NOWC</div>
@@ -1313,33 +1255,18 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                         <div class="w-full flex flex-col ">
 
-                                            <div class="w-full flex justify-start text-xs mb-1 text-left" id="">Working Cap per tahun</div>
+                                            <div class="w-full flex justify-start text-xs mb-1 text-left" id="">Working capital per tahun</div>
 
 
-                                        </div>
-                                    </div>
-                                    {{-- --}}
-
-
-                                    <div class="grid grid-cols-[120px,200px] mb-0">
-
-                                        <div class="w-full text-xs flex flex-col ">
-                                            <div class="">Net Op Cap</div>
-
-                                        </div>
-
-
-                                        <div class="w-full flex flex-col ">
-
-                                            <div class="w-full flex justify-start text-xs mb-1 text-left text-left" id="">
-                                                Net Op. Capital
-                                            </div>
 
                                         </div>
                                     </div>
                                     {{-- --}}
 
-                                    <div class="grid grid-cols-[120px,200px] mb-0">
+
+
+
+                                    <div class="grid grid-cols-[140px,230px] mb-0">
 
                                         <div class="w-full text-xs flex flex-col ">
                                             <div class="">Sales</div>
@@ -1349,48 +1276,16 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                         <div class="w-full flex flex-col ">
 
-                                            <div class="w-full flex justify-start text-xs mb-1 text-left" id="">Panen 4x per tahun</div>
+                                            <div class="w-full flex justify-start text-xs mb-1 text-left" id="">Asumsi panen 4x per tahun</div>
 
 
                                         </div>
                                     </div>
                                     {{-- --}}
 
-                                    <div class="grid grid-cols-[120px,200px] mb-0">
-
-                                        <div class="w-full text-xs flex flex-col ">
-                                            <div class="">NOI</div>
-
-                                        </div>
 
 
-                                        <div class="w-full flex flex-col ">
-
-                                            <div class="w-full flex justify-start text-xs mb-1 text-left" id="">Net Operating Income</div>
-
-
-                                        </div>
-                                    </div>
-                                    {{-- --}}
-
-                                    <div class="grid grid-cols-[120px,200px] mb-0">
-
-                                        <div class="w-full text-xs flex flex-col ">
-                                            <div class="">Value Op</div>
-
-                                        </div>
-
-
-                                        <div class="w-full flex flex-col ">
-
-                                            <div class="w-full flex justify-start text-xs mb-1 text-left" id="">DCF Method</div>
-
-
-                                        </div>
-                                    </div>
-                                    {{-- --}}
-
-                                    <div class="grid grid-cols-[120px,200px] mb-0">
+                                    <div class="grid grid-cols-[140px,230px] mb-0">
 
                                         <div class="w-full text-xs flex flex-col ">
                                             <div class="">ROIC</div>
@@ -1405,23 +1300,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                         </div>
                                     </div>
-                                    {{-- --}}
 
-                                    <div class="grid grid-cols-[120px,200px] mb-0">
-
-                                        <div class="w-full text-xs flex flex-col ">
-                                            <div class="">EVA</div>
-
-                                        </div>
-
-
-                                        <div class="w-full flex flex-col ">
-
-                                            <div class="w-full flex justify-start text-xs mb-1 text-left" id="">Economic Value Added</div>
-
-
-                                        </div>
-                                    </div>
 
                                     {{-- --}}
 
