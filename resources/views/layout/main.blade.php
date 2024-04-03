@@ -1099,16 +1099,22 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                     <!-- Dropdown Filter -->
                                     <div class="col-span-3 w-full flex justify-beetwen mb-3">
-                                        <div class="w-full grid grid-cols-[100px,1fr]">
+                                        <div class="w-full grid grid-cols-[1fr,1fr]">
 
-                                            <div class="relative inline-block text-left">
-                                                <button id="dropdown-button-pencarian" class="inline-flex justify-between items-center pl-1 w-[17rem] h-[1.8rem] text-sm font-medium text-black bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-0">
+
+
+                                            <div class="w-full flex justify-start items-center cursor-pointer">
+                                                <span class="font-semibold">Komoditi</span>
+                                            </div>
+
+                                            <div class="relative inline-block text-left flex justify-end">
+                                                <button id="dropdown-button-pencarian" class="inline-flex justify-between items-center pl-1 w-[11rem] h-[1.8rem] text-sm font-medium text-black bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-0">
                                                     <span id="selected-item" class="pl-2">Padi Sawah</span>
                                                     <svg id="arrow-icon-pencarian" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 transition-transform duration-200 transform" viewBox="0 0 20 20" fill="currentColor">
                                                         <path fill-rule="evenodd" d="M6.293 9.293a1 1 0 011.414 0L10 11.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path>
                                                     </svg>
                                                 </button>
-                                                <div id="dropdown-menu-pencarian" class="hidden origin-top-right absolute mt-2 w-[17rem] rounded-md bg-white ring-1 ring-black ring-opacity-5 z-10">
+                                                <div id="dropdown-menu-pencarian" class="hidden origin-top-right absolute mt-2 w-[11rem] rounded-md bg-white ring-1 ring-black ring-opacity-5 z-10">
 
                                                     <div class="py-2 p-2" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-button-pencarian">
                                                         <a id="item-padi-sawah" class="flex block rounded-md px-1 py-1 text-sm text-black hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem">
@@ -1126,15 +1132,342 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="w-full flex justify-end items-center text-blue-500 cursor-pointer">
-                                                <a href="https://google.com/" target="_blank">Detil</a>
 
-                                            </div>
 
 
                                         </div>
 
                                     </div>
+
+                                    <div class="w-full col-span-3 flex flex-col mb-[3rem]">
+                                        {{-- --}}
+                                        <div class="grid grid-cols-[205px,164px] ">
+                                            <div class=" h-[3.5vh] w-full  flex justify-center items-center font-semibold">&nbsp;</div>
+
+                                            <div class="h-[3.5vh] grid grid-col">
+
+                                                <div class="flex flex-row">
+                                                    <div class="basis-7/12 flex justify-center items-center font-semibold text-center text-xs">x Rp 1.000</div>
+                                                    <div class="basis-5/12 flex items-center font-semibold relative">
+                                                        <span class="absolute right-4 text-xs">%</span>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {{-- --}}
+                                        <div class="grid grid-cols-[205px,164px]">
+
+                                            {{-- Produksi a --}}
+                                            <div class="w-full flex flex-col">
+                                                <div class="font-semibold">Produksi</div>
+                                            </div>
+
+                                            {{-- Produksi a --}}
+
+                                            <div class="flex flex-row">
+                                                <div class="font-semibold flex justify-end basis-7/12">18 514,84</div>
+
+                                                <div class="font-semibold flex justify-end basis-5/12">100,00 </div>
+
+                                            </div>
+
+                                            {{-- Produksi a --}}
+
+                                            <div class="w-full flex flex-col">
+                                                <div class="">Utama</div>
+                                            </div>
+
+                                            {{-- Produksi a --}}
+
+                                            <div class="flex flex-row">
+                                                <div class=" flex justify-end basis-7/12">18 514,84</div>
+
+                                                <div class=" flex justify-end basis-5/12">100,00 </div>
+
+                                            </div>
+
+
+                                            {{-- Produksi a --}}
+
+                                            <div class="w-full flex flex-col">
+                                                <div>Ikutan</div>
+                                            </div>
+
+                                            {{-- Produksi a --}}
+
+                                            <div class="flex flex-row">
+                                                <div class=" flex justify-end basis-7/12">35,45</div>
+
+                                                <div class=" flex justify-end basis-5/12">0.26</div>
+
+                                            </div>
+
+                                            {{-- Ongkos Produksi --}}
+                                            <div class="w-full flex flex-col">
+                                                <div class="font-semibold">Ongkos Produksi</div>
+                                            </div>
+
+                                            {{-- Ongkos Produksi --}}
+
+                                            <div class="flex flex-row">
+                                                <div class="font-semibold flex justify-end basis-7/12">18 514,84</div>
+
+                                                <div class="font-semibold  flex justify-end basis-5/12">100,00 </div>
+
+                                            </div>
+
+
+                                            {{-- Ongkos Produksi --}}
+                                            <div class="w-full flex flex-col">
+                                                <div>Benih</div>
+                                            </div>
+
+                                            {{-- Ongkos Produksi --}}
+                                            <div class="flex flex-row">
+                                                <div class=" flex justify-end basis-7/12">35,45</div>
+                                                <div class=" flex justify-end basis-5/12">0.26</div>
+                                            </div>
+
+                                            {{-- Ongkos Produksi --}}
+                                            <div class="w-full flex flex-col">
+                                                <div>Pupuk</div>
+                                            </div>
+
+                                            {{-- Ongkos Produksi --}}
+                                            <div class="flex flex-row">
+                                                <div class=" flex justify-end basis-7/12">35,45</div>
+                                                <div class=" flex justify-end basis-5/12">0.26</div>
+                                            </div>
+
+                                            {{-- Ongkos Produksi --}}
+                                            <div class="w-full flex flex-col">
+                                                <div>Pupuk</div>
+                                            </div>
+
+                                            {{-- Ongkos Produksi --}}
+                                            <div class="flex flex-row">
+                                                <div class=" flex justify-end basis-7/12">35,45</div>
+                                                <div class=" flex justify-end basis-5/12">0.26</div>
+                                            </div>
+
+                                            {{-- Ongkos Produksi --}}
+                                            <div class="w-full flex flex-col">
+                                                <div>Pestisida</div>
+                                            </div>
+
+                                            {{-- Ongkos Produksi --}}
+                                            <div class="flex flex-row">
+                                                <div class=" flex justify-end basis-7/12">35,45</div>
+                                                <div class=" flex justify-end basis-5/12">0.26</div>
+                                            </div>
+
+                                            {{-- Ongkos Produksi --}}
+                                            <div class="w-full flex flex-col">
+                                                <div>Tenaga kerja dan jasa pertanian</div>
+                                            </div>
+
+                                            {{-- Ongkos Produksi --}}
+                                            <div class="flex flex-row">
+                                                <div class=" flex justify-end basis-7/12">35,45</div>
+                                                <div class=" flex justify-end basis-5/12">0.26</div>
+                                            </div>
+
+                                            {{-- Ongkos Produksi --}}
+                                            <div class="w-full flex flex-col">
+                                                <div>a. Tenaga kerja dibayar</div>
+                                            </div>
+
+                                            {{-- Ongkos Produksi --}}
+                                            <div class="flex flex-row">
+                                                <div class=" flex justify-end basis-7/12">35,45</div>
+                                                <div class=" flex justify-end basis-5/12">0.26</div>
+                                            </div>
+
+                                            {{-- Ongkos Produksi --}}
+                                            <div class="w-full flex flex-col">
+                                                <div>b. Tenaga kerja tidak dibayar</div>
+                                            </div>
+
+                                            {{-- Ongkos Produksi --}}
+                                            <div class="flex flex-row">
+                                                <div class=" flex justify-end basis-7/12">35,45</div>
+                                                <div class=" flex justify-end basis-5/12">0.26</div>
+                                            </div>
+
+                                            {{-- Ongkos Produksi --}}
+                                            <div class="w-full flex flex-col">
+                                                <div>c. Jasa pertanian</div>
+                                            </div>
+
+                                            {{-- Ongkos Produksi --}}
+                                            <div class="flex flex-row">
+                                                <div class=" flex justify-end basis-7/12">35,45</div>
+                                                <div class=" flex justify-end basis-5/12">0.26</div>
+                                            </div>
+
+                                            {{-- Ongkos Produksi --}}
+                                            <div class="w-full flex flex-col">
+                                                <div>Sewa lahan</div>
+                                            </div>
+
+                                            {{-- Ongkos Produksi --}}
+                                            <div class="flex flex-row">
+                                                <div class=" flex justify-end basis-7/12">35,45</div>
+                                                <div class=" flex justify-end basis-5/12">0.26</div>
+                                            </div>
+
+                                            {{-- Ongkos Produksi --}}
+                                            <div class="w-full flex flex-col">
+                                                <div>PBB</div>
+                                            </div>
+
+                                            {{-- Ongkos Produksi --}}
+                                            <div class="flex flex-row">
+                                                <div class=" flex justify-end basis-7/12">35,45</div>
+                                                <div class=" flex justify-end basis-5/12">0.26</div>
+                                            </div>
+
+                                            {{-- Ongkos Produksi --}}
+                                            <div class="w-full flex flex-col">
+                                                <div>Bunga pinjaman </div>
+                                            </div>
+
+                                            {{-- Ongkos Produksi --}}
+                                            <div class="flex flex-row">
+                                                <div class=" flex justify-end basis-7/12">35,45</div>
+                                                <div class=" flex justify-end basis-5/12">0.26</div>
+                                            </div>
+
+                                            {{-- Ongkos Produksi --}}
+                                            <div class="w-full flex flex-col">
+                                                <div>Retribusi</div>
+                                            </div>
+
+                                            {{-- Ongkos Produksi --}}
+                                            <div class="flex flex-row">
+                                                <div class=" flex justify-end basis-7/12">35,45</div>
+                                                <div class=" flex justify-end basis-5/12">0.26</div>
+                                            </div>
+
+                                            {{-- Ongkos Produksi --}}
+                                            <div class="w-full flex flex-col">
+                                                <div>Premi asuransi</div>
+                                            </div>
+
+                                            {{-- Ongkos Produksi --}}
+                                            <div class="flex flex-row">
+                                                <div class=" flex justify-end basis-7/12">35,45</div>
+                                                <div class=" flex justify-end basis-5/12">0.26</div>
+                                            </div>
+
+                                            {{-- Ongkos Produksi --}}
+                                            <div class="w-full flex flex-col">
+                                                <div>Sewa alat</div>
+                                            </div>
+
+                                            {{-- Ongkos Produksi --}}
+                                            <div class="flex flex-row">
+                                                <div class=" flex justify-end basis-7/12">35,45</div>
+                                                <div class=" flex justify-end basis-5/12">0.26</div>
+                                            </div>
+
+                                            {{-- Ongkos Produksi --}}
+                                            <div class="w-full flex flex-col">
+                                                <div>Penyusutan</div>
+                                            </div>
+
+                                            {{-- Ongkos Produksi --}}
+                                            <div class="flex flex-row">
+                                                <div class=" flex justify-end basis-7/12">35,45</div>
+                                                <div class=" flex justify-end basis-5/12">0.26</div>
+                                            </div>
+
+                                            {{-- Ongkos Produksi --}}
+                                            <div class="w-full flex flex-col">
+                                                <div>Bahan bakar</div>
+                                            </div>
+
+                                            {{-- Ongkos Produksi --}}
+                                            <div class="flex flex-row">
+                                                <div class=" flex justify-end basis-7/12">35,45</div>
+                                                <div class=" flex justify-end basis-5/12">0.26</div>
+                                            </div>
+
+                                            {{-- Ongkos Produksi --}}
+                                            <div class="w-full flex flex-col">
+                                                <div>a. BBM</div>
+                                            </div>
+
+                                            {{-- Ongkos Produksi --}}
+                                            <div class="flex flex-row">
+                                                <div class=" flex justify-end basis-7/12">35,45</div>
+                                                <div class=" flex justify-end basis-5/12">0.26</div>
+                                            </div>
+
+                                            {{-- Ongkos Produksi --}}
+                                            <div class="w-full flex flex-col">
+                                                <div>b. BBG</div>
+                                            </div>
+
+                                            {{-- Ongkos Produksi --}}
+                                            <div class="flex flex-row">
+                                                <div class=" flex justify-end basis-7/12">35,45</div>
+                                                <div class=" flex justify-end basis-5/12">0.26</div>
+                                            </div>
+
+
+                                            {{-- Ongkos Produksi --}}
+                                            <div class="w-full flex flex-col">
+                                                <div>Lainnya</div>
+                                            </div>
+
+                                            {{-- Ongkos Produksi --}}
+                                            <div class="flex flex-row">
+                                                <div class=" flex justify-end basis-7/12">35,45</div>
+                                                <div class=" flex justify-end basis-5/12">0.26</div>
+                                            </div>
+
+
+                                            {{-- Ongkos Produksi --}}
+                                            <div class="w-full flex flex-col">
+                                                <div class="font-semibold">Pendapatan (C)</div>
+
+                                            </div>
+
+                                            {{-- Ongkos Produksi --}}
+
+                                            <div class="flex flex-row">
+                                                <div class="font-semibold flex justify-end basis-7/12">18 514,84</div>
+
+                                                <div class="font-semibold  flex justify-end basis-5/12">100,00 </div>
+
+                                            </div>
+
+
+                                            {{-- Ongkos Produksi --}}
+                                            <div class="w-full flex flex-col">
+                                                <div class="font-semibold">Rasio C/B</div>
+
+                                            </div>
+
+                                            {{-- Ongkos Produksi --}}
+
+                                            <div class="flex flex-row w-full justify-center">
+                                                <div class="w-full font-semibold text-center">0.37</div>
+                                            </div>
+
+
+                                            {{-- --}}
+                                            {{-- --}}
+                                            {{-- --}}
+
+                                        </div>
+
+
+
+                                    </div>
+
 
 
                                     <div class="w-full text-sm flex flex-col ">
@@ -9737,7 +10070,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                 });
             });
 
-            activateTab("btn-1");
+            activateTab("btn-6");
         });
 
     </script>
