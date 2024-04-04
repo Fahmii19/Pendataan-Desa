@@ -11071,11 +11071,8 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                         }
 
 
-                    },
-                    //
-                    //
-
-                }
+                    }
+                , }
                 , "Padi Ladang": {
                     "g": "5%"
                     , "wacc": "11,00%"
@@ -11089,6 +11086,131 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                     , "valueOp": "260.000.000"
                     , "roic": "6%"
                     , "eva": "-60.000.000"
+                    , "produksi": {
+                        "utama": {
+                            "nilaiRupiah": 1843765
+                            , "persentase": 99.99
+                        }
+                        , "ikutan": {
+                            "nilaiRupiah": 7719
+                            , "persentase": 0.42
+                        }
+                        , "total": {
+                            "nilaiRupiah": 1851484
+                            , "persentase": 100
+                        }
+                        //
+                        , "ongkos_produksi_a": {
+                            "nilaiRupiah": 1355930
+                            , "persentase": 99
+                        }
+                        , "benih_a": {
+                            "nilaiRupiah": 51436
+                            , "persentase": 3.79
+                        }
+
+                        , "pupuk_a": {
+                            "nilaiRupiah": 127800
+                            , "persentase": 9.43
+                        }
+
+                        , "pestisida_a": {
+
+                            "nilaiRupiah": 569.55
+                            , "persentase": 4.20
+                        }
+
+                        , "tenagakerja_a": {
+
+                            "nilaiRupiah": 661519
+                            , "persentase": 48.79
+                        }
+
+                        , "tenagabayar_a": {
+
+                            "nilaiRupiah": 228209
+                            , "persentase": 16.83
+                        }
+
+                        , "tenagatidakdibayar_a": {
+
+                            "nilaiRupiah": 194697
+                            , "persentase": 14.36
+                        }
+
+                        //
+                        //
+
+                        , "jasapertanian_a": {
+
+
+                            "nilaiRupiah": 238613
+                            , "persentase": 17.60
+                        }
+
+
+                        , "sewalahan_a": {
+
+
+                            "nilaiRupiah": 347236
+                            , "persentase": 25.61
+                        }
+
+                        , "pbb_a": {
+
+
+                            "nilaiRupiah": 80.10
+                            , "persentase": 0.59
+                        }
+
+                        , "bunga_a": {
+
+
+                            "nilaiRupiah": 35.48
+                            , "persentase": 0.26
+                        }
+
+                        , "retribusi_a": {
+
+
+                            "nilaiRupiah": 78.30
+                            , "persentase": 0.58
+                        }
+
+                        , "premi_a": {
+                            "nilaiRupiah": 1.77
+                            , "persentase": 0.01
+                        }
+
+                        , "sewaalat_a": {
+                            "nilaiRupiah": 39881
+                            , "persentase": 2.94
+                        }
+
+                        , "penyusutan_a": {
+                            "nilaiRupiah": 21139
+                            , "persentase": 1.56
+                        }
+
+                        , "lainnya_a": {
+                            "nilaiRupiah": 17609
+
+                            , "persentase": 1.30
+
+                        }
+
+                        , "pendapatan_a": {
+                            "nilaiRupiah": 495554
+                            , "persentase": 1.30
+                        }
+                        , "rasio_a": {
+                            "nilaiRupiah": 1851484
+                            , "persentase": 0.37
+                        }
+
+
+                    },
+
 
 
                 }
@@ -11105,6 +11227,131 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                     , "valueOp": "270.000.000"
                     , "roic": "7%"
                     , "eva": "-70.000.000"
+                    , "produksi": {
+                        "utama": {
+                            "nilaiRupiah": 1843765
+                            , "persentase": 99.99
+                        }
+                        , "ikutan": {
+                            "nilaiRupiah": 7719
+                            , "persentase": 0.42
+                        }
+                        , "total": {
+                            "nilaiRupiah": 1851484
+                            , "persentase": 100
+                        }
+                        //
+                        , "ongkos_produksi_a": {
+                            "nilaiRupiah": 1355930
+                            , "persentase": 99
+                        }
+                        , "benih_a": {
+                            "nilaiRupiah": 51436
+                            , "persentase": 3.79
+                        }
+
+                        , "pupuk_a": {
+                            "nilaiRupiah": 127800
+                            , "persentase": 9.43
+                        }
+
+                        , "pestisida_a": {
+
+                            "nilaiRupiah": 569.55
+                            , "persentase": 4.20
+                        }
+
+                        , "tenagakerja_a": {
+
+                            "nilaiRupiah": 661519
+                            , "persentase": 48.79
+                        }
+
+                        , "tenagabayar_a": {
+
+                            "nilaiRupiah": 228209
+                            , "persentase": 16.83
+                        }
+
+                        , "tenagatidakdibayar_a": {
+
+                            "nilaiRupiah": 194697
+                            , "persentase": 14.36
+                        }
+
+                        //
+                        //
+
+                        , "jasapertanian_a": {
+
+
+                            "nilaiRupiah": 238613
+                            , "persentase": 17.60
+                        }
+
+
+                        , "sewalahan_a": {
+
+
+                            "nilaiRupiah": 347236
+                            , "persentase": 25.61
+                        }
+
+                        , "pbb_a": {
+
+
+                            "nilaiRupiah": 80.10
+                            , "persentase": 0.59
+                        }
+
+                        , "bunga_a": {
+
+
+                            "nilaiRupiah": 35.48
+                            , "persentase": 0.26
+                        }
+
+                        , "retribusi_a": {
+
+
+                            "nilaiRupiah": 78.30
+                            , "persentase": 0.58
+                        }
+
+                        , "premi_a": {
+                            "nilaiRupiah": 1.77
+                            , "persentase": 0.01
+                        }
+
+                        , "sewaalat_a": {
+                            "nilaiRupiah": 39881
+                            , "persentase": 2.94
+                        }
+
+                        , "penyusutan_a": {
+                            "nilaiRupiah": 21139
+                            , "persentase": 1.56
+                        }
+
+                        , "lainnya_a": {
+                            "nilaiRupiah": 17609
+
+                            , "persentase": 1.30
+
+                        }
+
+                        , "pendapatan_a": {
+                            "nilaiRupiah": 495554
+                            , "persentase": 1.30
+                        }
+                        , "rasio_a": {
+                            "nilaiRupiah": 1851484
+                            , "persentase": 0.37
+                        }
+
+
+                    },
+
                 }
                 , "Kedelai": {
                     "g": "7%"
@@ -11119,6 +11366,131 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                     , "valueOp": "280.000.000"
                     , "roic": "8%"
                     , "eva": "-80.000.000"
+                    , "produksi": {
+                        "utama": {
+                            "nilaiRupiah": 1843765
+                            , "persentase": 99.99
+                        }
+                        , "ikutan": {
+                            "nilaiRupiah": 7719
+                            , "persentase": 0.42
+                        }
+                        , "total": {
+                            "nilaiRupiah": 1851484
+                            , "persentase": 100
+                        }
+                        //
+                        , "ongkos_produksi_a": {
+                            "nilaiRupiah": 1355930
+                            , "persentase": 99
+                        }
+                        , "benih_a": {
+                            "nilaiRupiah": 51436
+                            , "persentase": 3.79
+                        }
+
+                        , "pupuk_a": {
+                            "nilaiRupiah": 127800
+                            , "persentase": 9.43
+                        }
+
+                        , "pestisida_a": {
+
+                            "nilaiRupiah": 569.55
+                            , "persentase": 4.20
+                        }
+
+                        , "tenagakerja_a": {
+
+                            "nilaiRupiah": 661519
+                            , "persentase": 48.79
+                        }
+
+                        , "tenagabayar_a": {
+
+                            "nilaiRupiah": 228209
+                            , "persentase": 16.83
+                        }
+
+                        , "tenagatidakdibayar_a": {
+
+                            "nilaiRupiah": 194697
+                            , "persentase": 14.36
+                        }
+
+                        //
+                        //
+
+                        , "jasapertanian_a": {
+
+
+                            "nilaiRupiah": 238613
+                            , "persentase": 17.60
+                        }
+
+
+                        , "sewalahan_a": {
+
+
+                            "nilaiRupiah": 347236
+                            , "persentase": 25.61
+                        }
+
+                        , "pbb_a": {
+
+
+                            "nilaiRupiah": 80.10
+                            , "persentase": 0.59
+                        }
+
+                        , "bunga_a": {
+
+
+                            "nilaiRupiah": 35.48
+                            , "persentase": 0.26
+                        }
+
+                        , "retribusi_a": {
+
+
+                            "nilaiRupiah": 78.30
+                            , "persentase": 0.58
+                        }
+
+                        , "premi_a": {
+                            "nilaiRupiah": 1.77
+                            , "persentase": 0.01
+                        }
+
+                        , "sewaalat_a": {
+                            "nilaiRupiah": 39881
+                            , "persentase": 2.94
+                        }
+
+                        , "penyusutan_a": {
+                            "nilaiRupiah": 21139
+                            , "persentase": 1.56
+                        }
+
+                        , "lainnya_a": {
+                            "nilaiRupiah": 17609
+
+                            , "persentase": 1.30
+
+                        }
+
+                        , "pendapatan_a": {
+                            "nilaiRupiah": 495554
+                            , "persentase": 1.30
+                        }
+                        , "rasio_a": {
+                            "nilaiRupiah": 1851484
+                            , "persentase": 0.37
+                        }
+
+
+                    },
+
                 }
             };
 
@@ -11127,7 +11499,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                 $("#selected-item").text(selectedItemText);
                 const data = dataInformasi[selectedItemText];
                 if (data) {
-                    console.log("Data untuk", selectedItemText, "ditemukan.");
+                    // console.log("Data untuk", selectedItemText, "ditemukan.");
                     $("#distribusi_g").text(data.g);
                     $("#distribusi_wacc").text(data.wacc);
                     $("#distribusi_op").text(data.op);
@@ -11140,8 +11512,6 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                     $("#distribusi_valueOp").text(data.valueOp);
                     $("#distribusi_roic").text(data.roic);
                     $("#distribusi_eva").text(data.eva);
-
-                    //
                     $("#utama_a").text(data.produksi.utama.nilaiRupiah.toLocaleString("id-ID"));
                     $("#utama_b").text(data.produksi.utama.persentase.toFixed(2).replace('.', '.'));
 
@@ -11175,7 +11545,6 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                     $("#jasapertanian_a").text(data.produksi.jasapertanian_a.nilaiRupiah.toLocaleString("id-ID"));
                     $("#jasapertanian_b").text(data.produksi.jasapertanian_a.persentase.toFixed(2).replace('.', '.'));
 
-                    //
 
                     $("#sewalahan_a").text(data.produksi.sewalahan_a.nilaiRupiah.toLocaleString("id-ID"));
                     $("#sewalahan_b").text(data.produksi.sewalahan_a.persentase.toFixed(2).replace('.', '.'));
@@ -11212,23 +11581,25 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                     $("#rasio_a").text(data.produksi.rasio_a.persentase.toFixed(2).replace('.', '.'));
 
 
-
-                    // rasio
-
-
-
-
-
-
-                    //
                 } else {
                     console.error("Data untuk", selectedItemText, "tidak ditemukan.");
                 }
             }
 
-            $("#dropdown-button-pencarian").click(function() {
+
+            // Menutup dropdown jika klik diluar dropdown
+            $(document).on('click', function(e) {
+                var target = $(e.target);
+                if (!target.closest('#dropdown-button-pencarian').length && !target.closest('#dropdown-menu-pencarian').length) {
+                    $('#dropdown-menu-pencarian').hide();
+                    $("#arrow-icon-pencarian").removeClass("rotate-180");
+                }
+            });
+
+            $("#dropdown-button-pencarian").click(function(e) {
                 $("#dropdown-menu-pencarian").toggle();
                 $("#arrow-icon-pencarian").toggleClass("rotate-180");
+                e.stopPropagation(); // Mencegah event click menyebar ke dokumen
             });
 
             $("#dropdown-menu-pencarian a").click(function() {
@@ -11239,6 +11610,9 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
             // Memuat informasi "Padi Sawah" saat halaman dimuat
             tampilkanInformasi("Padi Sawah");
+
+
+
         });
 
     </script>
