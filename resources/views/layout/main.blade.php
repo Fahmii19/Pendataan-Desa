@@ -509,7 +509,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
 
 
-                                    <h5 class="mt-4 mb-3.5 font-bold text-md text-center">Usaha Pertanian</h5>
+                                    <h5 class="mt-4 mb-3.5 font-bold text-md text-center tess">Usaha Pertanian</h5>
 
                                     <div class="w-full flex flex-col text-sm text-black">
 

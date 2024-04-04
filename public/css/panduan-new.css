@@ -588,9 +588,6 @@ video {
 .right-2 {
   right: 0.5rem;
 }
-.right-4 {
-  right: 1rem;
-}
 .top-0 {
   top: 0px;
 }
@@ -671,6 +668,9 @@ video {
 .my-7 {
   margin-top: 1.75rem;
   margin-bottom: 1.75rem;
+}
+.\!mt-\[2rem\] {
+  margin-top: 2rem !important;
 }
 .-mb-16 {
   margin-bottom: -4rem;
@@ -759,14 +759,11 @@ video {
 .mb-\[2\.8vh\] {
   margin-bottom: 2.8vh;
 }
-.mb-\[2rem\] {
-  margin-bottom: 2rem;
+.mb-\[3\.8rem\] {
+  margin-bottom: 3.8rem;
 }
 .mb-\[3rem\] {
   margin-bottom: 3rem;
-}
-.mb-\[4\.4rem\] {
-  margin-bottom: 4.4rem;
 }
 .me-3 {
   margin-inline-end: 0.75rem;
@@ -936,21 +933,6 @@ video {
 .mt-auto {
   margin-top: auto;
 }
-.mb-\[1\.5rem\] {
-  margin-bottom: 1.5rem;
-}
-.mb-\[3\.5rem\] {
-  margin-bottom: 3.5rem;
-}
-.mb-\[3\.8rem\] {
-  margin-bottom: 3.8rem;
-}
-.\!mt-\[1\.5rem\] {
-  margin-top: 1.5rem !important;
-}
-.\!mt-\[2rem\] {
-  margin-top: 2rem !important;
-}
 .block {
   display: block;
 }
@@ -1086,6 +1068,12 @@ video {
 .h-\[4\.2vh\] {
   height: 4.2vh;
 }
+.h-\[40vh\] {
+  height: 40vh;
+}
+.h-\[41vh\] {
+  height: 41vh;
+}
 .h-\[4rem\] {
   height: 4rem;
 }
@@ -1115,12 +1103,6 @@ video {
 }
 .h-screen {
   height: 100vh;
-}
-.h-\[41vh\] {
-  height: 41vh;
-}
-.h-\[40vh\] {
-  height: 40vh;
 }
 .max-h-\[20rem\] {
   max-height: 20rem;
@@ -1218,8 +1200,8 @@ video {
 .w-\[3\.5rem\] {
   width: 3.5rem;
 }
-.w-\[39\.5vw\] {
-  width: 39.5vw;
+.w-\[30\.7vw\] {
+  width: 30.7vw;
 }
 .w-\[40vw\] {
   width: 40vw;
@@ -1247,9 +1229,6 @@ video {
 }
 .w-screen {
   width: 100vw;
-}
-.w-\[30\.7vw\] {
-  width: 30.7vw;
 }
 .max-w-2xl {
   max-width: 42rem;
@@ -1772,10 +1751,6 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(248 250 252 / var(--tw-bg-opacity));
 }
-.bg-teal-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(20 184 166 / var(--tw-bg-opacity));
-}
 .bg-transparent {
   background-color: transparent;
 }
@@ -1934,12 +1909,6 @@ video {
 .py-\[0\.9vh\] {
   padding-top: 0.9vh;
   padding-bottom: 0.9vh;
-}
-.pb-0 {
-  padding-bottom: 0px;
-}
-.pb-0\.5 {
-  padding-bottom: 0.125rem;
 }
 .pb-1 {
   padding-bottom: 0.25rem;

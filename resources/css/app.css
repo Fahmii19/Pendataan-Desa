@@ -2071,10 +2071,16 @@ div.jfilestyle input {
     }
 }
 
+/* PENDATAAN DESA */
+
 /* Pindes */
 
 .hapus_focus_checkbox:focus {
     outline: none !important;
     box-shadow: none !important;
     border: none !important;
+}
+
+.tess {
+    @apply text-red-500 !important;
 }
