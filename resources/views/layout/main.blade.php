@@ -11096,7 +11096,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             , "persentase": 0.42
                         }
                         , "total": {
-                            "nilaiRupiah": 1851484
+                            "nilaiRupiah": 2051484
                             , "persentase": 100
                         }
                         //
@@ -11237,7 +11237,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             , "persentase": 0.42
                         }
                         , "total": {
-                            "nilaiRupiah": 1851484
+                            "nilaiRupiah": 1651484
                             , "persentase": 100
                         }
                         //
