@@ -1718,7 +1718,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             <div class="flex flex-row w-full mb-3 ml-[1.2vw] relative">
                                 {{-- hidden --}}
 
-                                <div class="w-[39.5vw] h-[17.7vh] text-xs py-2 px-1 rounded-sm bg-white flex flex-col mr-3 legend_komoditi hidden">
+                                <div class="w-[30.7vw] h-[17.7vh] text-xs py-2 px-1 rounded-sm bg-white flex flex-col mr-3 legend_komoditi hidden">
 
 
 
@@ -1762,7 +1762,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                         </div>
 
                                         <div class="flex flex-col ml-3.5">
-                                            <div class="font-semibold mb-0.5 text-center">Luas Lahan (m<sup>2</sup>)</div>
+                                            <div class="font-semibold mb-0.5 text-center">Luas (m<sup>2</sup>)</div>
 
                                             <div class="flex flex-col text-right">
                                                 <div>11,000</div>
@@ -1775,7 +1775,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                         </div>
                                         <div class="flex flex-col ml-3.5">
-                                            <div class="font-semibold mb-0.5 text-center">Perkiraan Panen (Ton)</div>
+                                            <div class="font-semibold mb-0.5 text-center">Panen (ton)</div>
 
                                             <div class="flex flex-col text-center">
                                                 <div>17</div>
@@ -1787,7 +1787,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                             {{-- --}}
                                         </div>
                                         <div class="flex flex-col ml-3.5">
-                                            <div class="font-semibold mb-0.5 text-center">Harga Pasar (Rp)</div>
+                                            <div class="font-semibold mb-0.5 text-center">Harga (Rp)</div>
                                             <div class="flex flex-col text-right">
                                                 <div>25,500</div>
                                                 <div>27,500</div>
@@ -1795,11 +1795,11 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                                 <div>15,500</div>
                                                 <div>13,500</div>
                                             </div>
-                                            <div class="mt-0.5 text-right font-semibold">Jumlah</div>
+                                            <div class="mt-0.5 text-right font-semibold">Total</div>
 
                                         </div>
                                         <div class="flex flex-col ml-3.5">
-                                            <div class="font-semibold mb-0.5 text-center">Total</div>
+                                            <div class="font-semibold mb-0.5 text-center">Jumlah (Rp)</div>
 
 
                                             <div class="flex flex-col text-right">
@@ -1830,7 +1830,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                     <div class="flex flex-col w-full">
 
-                                        <div class="w-full flex justify-center font-semibold mb-0.5">Curah Hujan (mm/hr)</div>
+                                        <div class="w-full flex justify-center font-semibold mb-0.5">Curah Hujan (mm/hari)</div>
 
 
                                         <div class="inline-flex items-center ml-2">
@@ -1876,7 +1876,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                     <div class="flex flex-col w-full">
 
-                                        <div class="w-full flex justify-center font-semibold mb-0.5">Usia Tanaman (mgg)</div>
+                                        <div class="w-full flex justify-center font-semibold mb-0.5">Usia Tanaman (minggu)</div>
 
 
                                         <div class="inline-flex items-center ml-2">

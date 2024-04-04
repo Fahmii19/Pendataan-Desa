@@ -1247,6 +1247,9 @@ video {
 .w-screen {
   width: 100vw;
 }
+.w-\[30\.7vw\] {
+  width: 30.7vw;
+}
 .max-w-2xl {
   max-width: 42rem;
 }
