@@ -3163,7 +3163,8 @@ map.on("mousemove", "urban_fill", (e) => {
         coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
     }
 
-    popup.setLngLat(coordinates).setHTML(content).addTo(map);
+    // popup tidak muncul karna di nonaktifkan
+    // popup.setLngLat(coordinates).setHTML(content).addTo(map);
 });
 
 map.on("mouseleave", "urban_fill", () => {
