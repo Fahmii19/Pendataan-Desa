@@ -134,7 +134,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                     <div class="w-[20vw]">
 
                                         <div class="for_web input-group input-group-md mb-1">
-                                            <input type="search" id="cari_wilayah" class="form-control tombol_search py-2 border-right-0 border" placeholder="Cari nama tempat ..." autocomplete="off">
+                                            <input style="height:1.8rem;" type="search" id="cari_wilayah" class="form-control tombol_search py-2 border-right-0 border" placeholder="Cari nama tempat ..." autocomplete="off">
 
 
                                             <!-- Ori -->
@@ -149,7 +149,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
 
                                             <span class="input-group-append">
-                                                <button class="btn btn-secondary tombol_search border-left-0 border" type="button">
+                                                <button style="height:1.8rem;" class="btn btn-secondary tombol_search border-left-0 border flex justify-center items-center" type="button">
                                                     <i class="fa fa-search"></i>
                                                 </button>
 
@@ -1830,7 +1830,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                     <div class="flex flex-col w-full">
 
-                                        <div class="w-full flex justify-center font-semibold mb-0.5">Curah Hujan (mm/hari)</div>
+                                        <div class="w-full flex justify-center font-semibold mb-0.5">Curah Hujan (mm/hr)</div>
 
 
                                         <div class="inline-flex items-center ml-2">
@@ -1876,7 +1876,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                     <div class="flex flex-col w-full">
 
-                                        <div class="w-full flex justify-center font-semibold mb-0.5">Usia Tanaman (minggu)</div>
+                                        <div class="w-full flex justify-center font-semibold mb-0.5">Usia Tanaman (mgg)</div>
 
 
                                         <div class="inline-flex items-center ml-2">
@@ -10670,19 +10670,20 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
         const barChartData = {
             labels: ["15-20", "21-25", "26-30", "31-35", "36-40"]
             , datasets: [{
+                    label: "Pemilik"
+                    , backgroundColor: "#ffba44"
+                    , data: [31, 32, 37, 21, 45]
+                    , barThickness: 7 // Atur lebar bar menjadi 7 pixel
+                }, {
+
                     label: "Penyewa"
                     , backgroundColor: "#879fd1"
                     , data: [17, 20, 25, 20, 23]
                     , barThickness: 7 // Atur lebar bar menjadi 7 pixel
                 }
+
                 , {
-                    label: "Pemilik"
-                    , backgroundColor: "#ffba44"
-                    , data: [31, 32, 37, 21, 45]
-                    , barThickness: 7 // Atur lebar bar menjadi 7 pixel
-                }
-                , {
-                    label: "Petani"
+                    label: "Penggarap"
                     , backgroundColor: "#5dc8f0"
                     , data: [30, 41, 45, 46, 49]
                     , barThickness: 7 // Atur lebar bar menjadi 7 pixel
