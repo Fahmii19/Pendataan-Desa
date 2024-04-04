@@ -2080,7 +2080,3 @@ div.jfilestyle input {
     box-shadow: none !important;
     border: none !important;
 }
-
-.tess {
-    @apply text-red-500 !important;
-}

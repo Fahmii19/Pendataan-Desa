@@ -20,6 +20,10 @@ mix.js("resources/js/app.js", "public/js")
     .postCss("resources/css/panduan-new.css", "public/css/panduan-new.css", [
         require("tailwindcss"),
         require("autoprefixer"),
+    ])
+    .postCss("resources/css/pandes.css", "public/css/pandes.css", [
+        require("tailwindcss"),
+        require("autoprefixer"),
     ]);
 
 mix.browserSync({

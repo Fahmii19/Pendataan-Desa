@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scrollbar-firefox {
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
+
+.scrollbar::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    /* margin-bottom: 0.5rem; */
+}
+
+.scrollbar::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    /* margin-top: -0.1rem; */
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 5px;
+    /* height: 10px; */
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: blue;
+    display: none;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background: rgb(161 161 170);
+    border-radius: 100vh;
+    border: 2px solid rgb(161 161 170);
+    margin-top: 50% !important;
+    top: 50% !important;
+    position: relative !important;
+}
+
+.tess {
+    @apply text-red-600 !important;
+}
+
+/* Mobile first: Gaya ini berlaku untuk semua ukuran layar */
+.element {
+    background-color: blue; /* Warna ini berlaku untuk layar di bawah 640px */
+}
+
+/* sm breakpoint: 640px */
+@media (min-width: 640px) {
+    .tess {
+        @apply text-red-600 !important;
+    }
+}
+
+/* md breakpoint: 768px */
+@media (min-width: 768px) {
+    .tess {
+        @apply text-red-600 !important;
+    }
+}
+
+/* lg breakpoint: 1024px */
+@media (min-width: 1024px) {
+    .tess {
+        @apply text-red-600 !important;
+    }
+}
+
+/* xl breakpoint: 1280px */
+@media (min-width: 1280px) {
+    .tess {
+        @apply text-red-600 !important;
+    }
+}
+
+/* 2xl breakpoint: 1536px */
+@media (min-width: 1536px) {
+    .tess {
+        @apply text-red-600 !important;
+    }
+}

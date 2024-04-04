@@ -15,13 +15,15 @@
 
     {{-- Pendataan Desa --}}
 
+    {{-- <link rel="stylesheet" href="{{ asset('css/pandes.css') }}"> --}}
+
+
+
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.5/dist/flowbite.min.css" />
 
     <link rel="stylesheet" href="{{ asset('assets/css/panduan.css') }}">
 
     <script src="https://cdn.tailwindcss.com"></script>
-
-
 
 
 
@@ -509,7 +511,10 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
 
 
-                                    <h5 class="mt-4 mb-3.5 font-bold text-md text-center tess">Usaha Pertanian</h5>
+                                    <h5 class="mt-4 mb-3.5 font-bold text-md text-center">Usaha Pertanian</h5>
+                                    <div class=" tess">Tess</div>
+
+
 
                                     <div class="w-full flex flex-col text-sm text-black">
 
