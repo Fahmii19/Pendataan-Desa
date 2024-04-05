@@ -10755,7 +10755,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                 });
             });
 
-            activateTab("btn-6");
+            activateTab("btn-1");
         });
 
     </script>
