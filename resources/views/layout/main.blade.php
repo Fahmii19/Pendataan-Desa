@@ -1164,18 +1164,18 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                 {{-- --}}
 
-                                <h5 class="font-bold text-lg text-center mt-4 mb-3">Finansial</h5>
+                                <h5 class="font-bold text-sm text-center mt-4 mb-3">Finansial</h5>
 
 
 
                                 <div class="" id="tabsContainer">
                                     <ul class="flex border-b" id="tabs">
                                         <li class="tab-item mr-0 -mb-px" data-tab="1">
-                                            <a href="#" class="tab-link bg-white inline-block py-2 px-2.5 font-semibold cursor-pointer text-blue-700 no-underline hover:no-underline -mb-px border-l border-t border-r rounded-t-lg">Proyeksi</a>
+                                            <a href="#" class="tab-link bg-white inline-block py-2 px-2.5 font-semibold cursor-pointer text-blue-700 no-underline hover:no-underline -mb-px border-l border-t border-r rounded-t-lg text-xs">Proyeksi</a>
 
                                         </li>
                                         <li class="tab-item mr-0" data-tab="2">
-                                            <a href="#" class="tab-link bg-white inline-block py-2 px-2.5 font-semibold cursor-pointer text-blue-700 no-underline hover:no-underline -mb-px border-l border-t border-r rounded-t-lg">Asumsi</a>
+                                            <a href="#" class="tab-link bg-white inline-block py-2 px-2.5 font-semibold cursor-pointer text-blue-700 no-underline hover:no-underline -mb-px border-l border-t border-r rounded-t-lg text-xs">Asumsi</a>
 
                                         </li>
                                     </ul>
@@ -1198,11 +1198,10 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                             <div class="w-full grid grid-cols-[200px,50px,120px]">
 
-                                                <!-- Dropdown Filter -->
                                                 <div class="col-span-3 w-full flex justify-beetwen mb-3">
                                                     <div class="w-full grid grid-cols-[1fr,1fr]">
 
-                                                        <div class="col-span-3 grid cols-1 w-full flex justify-left mb-3 mt-3">
+                                                        <div class="col-span-3 grid cols-1 w-full flex justify-left mb-1 mt-3">
 
 
 
@@ -1210,7 +1209,9 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                                             <div class="grid grid-cols-2">
                                                                 <div class="">Luas Lahan</div>
-                                                                <div> 3.000 m²</div>
+                                                                <div style="
+    margin-left: 3.8rem;
+"> 3.000 m²</div>
 
                                                             </div>
 
@@ -1221,7 +1222,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
 
                                                         <div class="w-full flex justify-start items-center cursor-pointer">
-                                                            <span class="font-semibold">Komoditi</span>
+                                                            <span class="">Komoditi</span>
                                                         </div>
 
                                                         <div class="relative inline-block text-left flex justify-end">
@@ -1256,6 +1257,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                                 </div>
 
+
                                                 <div class="w-full col-span-3 flex flex-col mb-[3rem]">
                                                     {{-- --}}
                                                     <div class="grid grid-cols-[205px,164px] ">
@@ -1266,7 +1268,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                                             <div class="flex flex-row">
                                                                 <div class="basis-7/12 flex justify-center items-center font-semibold text-center text-xs">x Rp 1.000</div>
                                                                 <div class="basis-5/12 flex items-center font-semibold relative">
-                                                                    <span class="absolute right-2 text-xs">%</span>
+                                                                    <span class="absolute right-5 text-xs">%</span>
 
                                                                 </div>
                                                             </div>
@@ -1815,8 +1817,8 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                                 <div class="col-span-3 w-full flex justify-beetwen mb-3">
                                                     <div class="w-full grid grid-cols-[1fr,1fr]">
 
-                                                        <div class="col-span-3 w-full flex justify-center mb-3 mt-3">
-                                                            1 x panen per hektar
+                                                        <div class="col-span-3 w-full flex justify-left mb-1 mt-3">
+                                                            1x panen per hektar
 
                                                         </div>
 
@@ -1825,7 +1827,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
 
                                                         <div class="w-full flex justify-start items-center cursor-pointer">
-                                                            <span class="font-semibold">Komoditi</span>
+                                                            <span class="">Komoditi</span>
                                                         </div>
 
                                                         <div class="relative inline-block text-left flex justify-end">
@@ -1870,7 +1872,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                                             <div class="flex flex-row">
                                                                 <div class="basis-7/12 flex justify-center items-center font-semibold text-center text-xs">x Rp 1.000</div>
                                                                 <div class="basis-5/12 flex items-center font-semibold relative">
-                                                                    <span class="absolute right-2 text-xs">%</span>
+                                                                    <span class="absolute right-5 text-xs">%</span>
 
                                                                 </div>
                                                             </div>
@@ -2460,7 +2462,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                                 <div>15,500</div>
                                                 <div>13,500</div>
                                             </div>
-                                            <div class="mt-0.5 text-right font-semibold">Total</div>
+                                            <div class="mt-0.5 text-right font-semibold">Total (Rp)</div>
 
                                         </div>
                                         <div class="flex flex-col ml-3.5">
