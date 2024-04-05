@@ -2226,6 +2226,9 @@ video {
 .underline {
   text-decoration-line: underline;
 }
+.no-underline {
+  text-decoration-line: none;
+}
 .underline-offset-4 {
   text-underline-offset: 4px;
 }
@@ -2523,6 +2526,10 @@ ul > li:before {
 .hover\:text-blue-700:hover {
   --tw-text-opacity: 1;
   color: rgb(29 78 216 / var(--tw-text-opacity));
+}
+
+.hover\:no-underline:hover {
+  text-decoration-line: none;
 }
 
 .hover\:ring-stone-300:hover {
