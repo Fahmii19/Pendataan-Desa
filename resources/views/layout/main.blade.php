@@ -310,24 +310,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                 </div>
                             </div>
 
-                            {{-- Button Keenam --}}
-                            <div>
-                                <div class="flex justify-start items-center">
-                                    <button style="outline:none !important;" class="inline-block h-10 w-10 flex justify-center items-center border border-blue-500 rounded-full" id="btn-6" data-tooltip-target="tooltip-no-arrow-6" data-tooltip-placement="bottom">
 
-                                        <img src="{{ asset('assets/neww/rp-off.png') }}" alt="" class="w-[1.1rem] h-[1.1rem] ml-0.5 mt-0.5 object-contain">
-
-
-                                    </button>
-
-                                    {{-- --}}
-                                    <div id="tooltip-no-arrow-6" role="tooltip" class="absolute z-10 invisible inline-block px-2 py-1 text-xs font-medium text-black bg-white border rounded-lg ">
-                                        Finansial
-                                    </div>
-
-
-                                </div>
-                            </div>
 
 
 
@@ -459,6 +442,26 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                 </div>
                             </div>
 
+                            {{-- Button Keenam --}}
+                            <div>
+                                <div class="flex justify-start items-center">
+                                    <button style="outline:none !important;" class="inline-block h-10 w-10 flex justify-center items-center border border-blue-500 rounded-full" id="btn-6" data-tooltip-target="tooltip-no-arrow-6" data-tooltip-placement="bottom">
+
+                                        <img src="{{ asset('assets/neww/rp-off.png') }}" alt="" class="w-[1.1rem] h-[1.1rem] ml-0.5 mt-0.5 object-contain">
+
+
+                                    </button>
+
+                                    {{-- --}}
+                                    <div id="tooltip-no-arrow-6" role="tooltip" class="absolute z-10 invisible inline-block px-2 py-1 text-xs font-medium text-black bg-white border rounded-lg ">
+                                        Finansial
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+
 
 
 
@@ -512,7 +515,6 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
 
                                     <h5 class="mt-4 mb-3.5 font-bold text-md text-center">Usaha Pertanian</h5>
-                                    <div class=" tess">Tess</div>
 
 
 
@@ -1043,7 +1045,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                         <!-- Konten Kelima -->
                         <div class="hidden text-sm pb-2" id="content-5">
 
-                            <div class="h-[50vh] flex flex-col mb-[3.8rem]">
+                            <div class="h-[25vh] flex flex-col">
 
                                 <h5 class="font-bold text-md text-center mt-4">Persediaan Pupuk</h5>
 
@@ -1057,95 +1059,34 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                 <div class="grid grid-cols-1 mt-3">
 
-                                    <div class="grid grid-cols-[1fr,1fr,100px] font-bold text-md mt-2 mb-1">
-                                        <div class="">Beras</div>
-                                        <div class=" text-right">kg</div>
-                                    </div>
+                                    <div class="grid grid-cols-[1fr,100px,100px] text-md mt-2 mb-1">
+                                        <div class="w-full grid grid-cols-1">
+                                            <div class="">&nbsp;</div>
+                                            <div class="mt-1">Pupuk Urea</div>
+                                            <div class="">Pupuk NPK</div>
+                                            <div class="">Pupuk NPK Khusus</div>
+                                        </div>
 
-                                    <div class="grid grid-cols-[1fr,1fr,100px]">
-                                        <div class="">Pupuk Urea</div>
-                                        <div class=" text-right">200</div>
-                                    </div>
-
-                                    <div class="grid grid-cols-[1fr,1fr,100px]">
-                                        <div class="">Pupuk NPK</div>
-
-                                        <div class=" text-right">200</div>
-                                    </div>
-
-                                    <div class="grid grid-cols-[1fr,1fr,100px]">
-                                        <div class="">Pupuk NPK Khusus</div>
-                                        <div class=" text-right">180</div>
-                                    </div>
-
-                                    {{-- --}}
-                                </div>
-                                {{-- --}}
-                                <div class="grid grid-cols-1 mt-3">
+                                        <div class="w-full grid grid-cols-1 place-items-center">
+                                            <div class="font-semibold">Alokasi (kg)</div>
+                                            <div class="mt-1">100</div>
+                                            <div class="">200</div>
+                                            <div class="">150</div>
+                                        </div>
+                                        <div class="w-full grid grid-cols-1 place-items-center">
+                                            <div class="font-semibold">Terpakai (kg)</div>
+                                            <div class="mt-1">20</div>
+                                            <div class="">70</div>
+                                            <div class="">50</div>
 
 
-                                    <div class="grid grid-cols-[1fr,1fr,100px] font-bold text-md mt-2 mb-1">
-                                        <div class="">Bawang</div>
-                                        <div class=" text-right">kg</div>
-                                    </div>
-
-
-                                    <div class="grid grid-cols-[1fr,1fr,100px]">
-                                        <div class="">Pupuk Urea</div>
-                                        <div class=" text-right">200</div>
-                                    </div>
-
-                                    <div class="grid grid-cols-[1fr,1fr,100px]">
-                                        <div class="">Pupuk NPK</div>
-
-                                        <div class=" text-right">170</div>
-
-                                    </div>
-
-                                    <div class="grid grid-cols-[1fr,1fr,100px]">
-                                        <div class="">Pupuk NPK Khusus</div>
-
-                                        <div class=" text-right">180</div>
+                                        </div>
 
                                     </div>
 
                                     {{-- --}}
                                 </div>
-                                {{-- --}}
-                                <div class="grid grid-cols-1 mt-3">
 
-
-
-                                    <div class="grid grid-cols-[1fr,1fr,100px] font-bold text-md mt-2 mb-1">
-                                        <div class="">Cabe</div>
-                                        <div class=" text-right">kg</div>
-                                    </div>
-
-
-
-
-
-                                    <div class="grid grid-cols-[1fr,1fr,100px]">
-                                        <div class="">Pupuk Urea</div>
-                                        <div class=" text-right">200</div>
-                                    </div>
-
-                                    <div class="grid grid-cols-[1fr,1fr,100px]">
-                                        <div class="">Pupuk NPK</div>
-
-                                        <div class=" text-right">170</div>
-
-                                    </div>
-
-                                    <div class="grid grid-cols-[1fr,1fr,100px]">
-                                        <div class="">Pupuk NPK Khusus</div>
-
-                                        <div class=" text-right">180</div>
-
-                                    </div>
-
-                                    {{-- --}}
-                                </div>
 
                                 {{-- jarak ke bawah --}}
                                 {{-- --}}
@@ -1208,7 +1149,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
 
                                                             <div class="grid grid-cols-2">
-                                                                <div class="">Luas Lahan</div>
+                                                                <div class="">1x Panen Untuk Luas Lahan</div>
                                                                 <div style="
     margin-left: 3.8rem;
 "> 3.000 m²</div>
@@ -1652,13 +1593,13 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                                     <div class="flex justify-end text-sm mb-1" id="xdistribusi_g">4%%</div>
 
 
-                                                    <div class="flex justify-end text-sm mb-1" id="xdistribusi_wacc">10,00%</div>
+                                                    <div class="flex justify-end text-sm mb-1" id="xdistribusi_wacc">10.00%</div>
 
 
-                                                    <div class="flex justify-end text-sm mb-1" id="xdistribusi_op">56,04%</div>
+                                                    <div class="flex justify-end text-sm mb-1" id="xdistribusi_op">56.04%</div>
 
 
-                                                    <div class="flex justify-end text-sm mb-1" id="xdistribusi_cr">18,44</div>
+                                                    <div class="flex justify-end text-sm mb-1" id="xdistribusi_cr">18.44</div>
 
 
 
@@ -1818,7 +1759,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                                     <div class="w-full grid grid-cols-[1fr,1fr]">
 
                                                         <div class="col-span-3 w-full flex justify-left mb-1 mt-3">
-                                                            1x panen per hektar
+                                                            1x Panen Per Hektar
 
                                                         </div>
 
@@ -2471,16 +2412,16 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                             <div class="flex flex-col text-right">
 
-                                                <div>4,768,500,000</div>
-                                                <div>17,820,000,000</div>
-                                                <div>9,292,500,000</div>
-                                                <div>19,313,000,000</div>
-                                                <div>2,916,000,000</div>
+                                                <div>4.768.500.000</div>
+                                                <div>17.820.000.000</div>
+                                                <div>9.292.500.000</div>
+                                                <div>19.313.000.000</div>
+                                                <div>2.916.000.000</div>
 
 
                                             </div>
 
-                                            <div class="font-semibold mt-0.5">54,110,000,000</div>
+                                            <div class="font-semibold mt-0.5">54.110.000.000</div>
                                         </div>
 
 
@@ -10755,7 +10696,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                 });
             });
 
-            activateTab("btn-1");
+            activateTab("btn-5");
         });
 
     </script>
@@ -11604,9 +11545,9 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
             const dataInformasi = {
                 "Padi Sawah": {
                     "g": "4%"
-                    , "wacc": "10,00%"
-                    , "op": "56,04%"
-                    , "cr": "18,44"
+                    , "wacc": "10.00%"
+                    , "op": "56.04%"
+                    , "cr": "18.44"
                     , "capital": "500.000.000"
                     , "nowc": "100.000.000"
                     , "netOpCap": "200.000.000"
