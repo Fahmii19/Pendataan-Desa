@@ -1175,7 +1175,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                         </li>
                                         <li class="tab-item mr-0" data-tab="2">
-                                            <a href="#" class="tab-link bg-white inline-block py-2 px-2.5 font-semibold cursor-pointer text-blue-700 no-underline hover:no-underline -mb-px border-l border-t border-r rounded-t-lg text-xs">Asumsi</a>
+                                            <a href="#" class="tab-link bg-white inline-block py-2 px-2.5 font-semibold cursor-pointer text-blue-700 no-underline hover:no-underline -mb-px border-l border-t border-r rounded-t-lg text-xs -ml-0.5">Asumsi</a>
 
                                         </li>
                                     </ul>
