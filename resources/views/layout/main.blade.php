@@ -766,6 +766,12 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                             <div>Asep Komarudi</div>
 
                                         </div>
+                                        <div class="grid grid-cols-2 mt-2">
+                                            <div class="">Status Lahan</div>
+
+                                            <div>Hak Milik</div>
+
+                                        </div>
 
                                         <div class="grid grid-cols-2 mt-2">
                                             <div class="">Penyewa Lahan</div>
@@ -1161,501 +1167,524 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                 <h5 class="font-bold text-md text-center mt-4 mb-3">Finansial</h5>
 
 
-                                <div class="w-full grid grid-cols-[200px,50px,120px]">
 
-                                    <!-- Dropdown Filter -->
-                                    <div class="col-span-3 w-full flex justify-beetwen mb-3">
-                                        <div class="w-full grid grid-cols-[1fr,1fr]">
+                                <div class="" id="tabsContainer">
+                                    <ul class="flex border-b" id="tabs">
+                                        <li class="tab-item -mb-px mr-1" data-tab="1">
+                                            <a href="#" class="tab-link bg-white inline-block py-2 px-4 font-semibold cursor-pointer text-blue-700">Proyeksi</a>
+                                        </li>
+                                        <li class="tab-item mr-1" data-tab="2">
+                                            <a href="#" class="tab-link bg-white inline-block py-2 px-4 font-semibold cursor-pointer text-black">Asumsi</a>
+                                        </li>
+
+                                    </ul>
+                                    <div class="w-full mt-2">
+                                        <div class="tab-content" data-content="1">Tab #1</div>
+                                        <div class="tab-content hidden" data-content="2">
+
+                                            <h5 class="font-bold text-md text-center mt-4 mb-4">1 x panen per hektar</h5>
+
+
+                                            <div class="w-full grid grid-cols-[200px,50px,120px]">
+
+                                                <!-- Dropdown Filter -->
+                                                <div class="col-span-3 w-full flex justify-beetwen mb-3">
+                                                    <div class="w-full grid grid-cols-[1fr,1fr]">
 
 
 
-                                            <div class="w-full flex justify-start items-center cursor-pointer">
-                                                <span class="font-semibold">Komoditi</span>
-                                            </div>
+                                                        <div class="w-full flex justify-start items-center cursor-pointer">
+                                                            <span class="font-semibold">Komoditi</span>
+                                                        </div>
 
-                                            <div class="relative inline-block text-left flex justify-end">
-                                                <button id="dropdown-button-pencarian" class="inline-flex justify-between items-center pl-1 w-[9.5rem] h-[1.8rem] text-sm font-medium text-black bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-0">
-                                                    <span id="selected-item" class="pl-2">Padi Sawah</span>
-                                                    <svg id="arrow-icon-pencarian" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 transition-transform duration-200 transform" viewBox="0 0 20 20" fill="currentColor">
-                                                        <path fill-rule="evenodd" d="M6.293 9.293a1 1 0 011.414 0L10 11.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                                                    </svg>
-                                                </button>
-                                                <div id="dropdown-menu-pencarian" class="hidden origin-top-right absolute !mt-[2rem] w-[9.5rem] rounded-md bg-white ring-1 ring-black ring-opacity-5 z-10">
+                                                        <div class="relative inline-block text-left flex justify-end">
+                                                            <button id="dropdown-button-pencarian" class="inline-flex justify-between items-center pl-1 w-[9.5rem] h-[1.8rem] text-sm font-medium text-black bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-0">
+                                                                <span id="selected-item" class="pl-2">Padi Sawah</span>
+                                                                <svg id="arrow-icon-pencarian" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 transition-transform duration-200 transform" viewBox="0 0 20 20" fill="currentColor">
+                                                                    <path fill-rule="evenodd" d="M6.293 9.293a1 1 0 011.414 0L10 11.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                                                </svg>
+                                                            </button>
+                                                            <div id="dropdown-menu-pencarian" class="hidden origin-top-right absolute !mt-[2rem] w-[9.5rem] rounded-md bg-white ring-1 ring-black ring-opacity-5 z-10">
 
-                                                    <div class="py-2 p-2" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-button-pencarian">
-                                                        <a id="item-padi-sawah" class="flex block rounded-md px-1 py-1 text-sm text-black hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem">
-                                                            Padi Sawah
-                                                        </a>
-                                                        <a id="item-padi-ladang" class="flex block rounded-md px-1 py-1 text-sm text-black hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem">
-                                                            Padi Ladang
-                                                        </a>
-                                                        <a id="item-jagung" class="flex block rounded-md px-1 py-1 text-sm text-black hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem">
-                                                            Jagung
-                                                        </a>
-                                                        <a id="item-kedelai" class="flex block rounded-md px-1 py-1 text-sm text-black hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem">
-                                                            Kedelai
-                                                        </a>
+                                                                <div class="py-2 p-2" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-button-pencarian">
+                                                                    <a id="item-padi-sawah" class="flex block rounded-md px-1 py-1 text-sm text-black hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem">
+                                                                        Padi Sawah
+                                                                    </a>
+                                                                    <a id="item-padi-ladang" class="flex block rounded-md px-1 py-1 text-sm text-black hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem">
+                                                                        Padi Ladang
+                                                                    </a>
+                                                                    <a id="item-jagung" class="flex block rounded-md px-1 py-1 text-sm text-black hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem">
+                                                                        Jagung
+                                                                    </a>
+                                                                    <a id="item-kedelai" class="flex block rounded-md px-1 py-1 text-sm text-black hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem">
+                                                                        Kedelai
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+
                                                     </div>
+
+                                                </div>
+
+                                                <div class="w-full col-span-3 flex flex-col mb-[3rem]">
+                                                    {{-- --}}
+                                                    <div class="grid grid-cols-[205px,164px] ">
+                                                        <div class=" h-[3.5vh] w-full  flex justify-center items-center font-semibold">&nbsp;</div>
+
+                                                        <div class="h-[3.5vh] grid grid-col">
+
+                                                            <div class="flex flex-row">
+                                                                <div class="basis-7/12 flex justify-center items-center font-semibold text-center text-xs">x Rp 1.000</div>
+                                                                <div class="basis-5/12 flex items-center font-semibold relative">
+                                                                    <span class="absolute right-2 text-xs">%</span>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    {{-- --}}
+                                                    <div class="grid grid-cols-[205px,164px]">
+
+                                                        {{-- Produksi a --}}
+                                                        <div class="w-full flex flex-col">
+                                                            <div class="font-semibold">Produksi (A)</div>
+                                                        </div>
+
+                                                        {{-- Produksi a --}}
+
+                                                        <div class="flex flex-row">
+                                                            <div id="total_a" class="font-semibold flex justify-end basis-7/12">0</div>
+
+                                                            <div id="total_b" id="" class="font-semibold flex justify-end basis-5/12">0 </div>
+
+
+                                                        </div>
+
+                                                        {{-- Produksi a --}}
+
+                                                        <div class="w-full flex flex-col">
+                                                            <div class="">Utama</div>
+                                                        </div>
+
+                                                        {{-- Produksi a --}}
+
+                                                        <div class="flex flex-row">
+                                                            <div id="utama_a" class=" flex justify-end basis-7/12">0</div>
+
+                                                            <div id="utama_b" class=" flex justify-end basis-5/12">0</div>
+
+                                                        </div>
+
+
+                                                        {{-- Produksi a --}}
+
+                                                        <div class="w-full flex flex-col">
+                                                            <div>Ikutan</div>
+                                                        </div>
+
+                                                        {{-- Produksi a --}}
+
+                                                        <div class="flex flex-row">
+                                                            <div id="ikutan_a" class=" flex justify-end basis-7/12">0</div>
+
+                                                            <div id="ikutan_b" class=" flex justify-end basis-5/12">0</div>
+
+                                                        </div>
+
+                                                        {{-- Ongkos Produksi --}}
+                                                        <div class="w-full flex flex-col">
+                                                            <div class="font-semibold">Ongkos Produksi (B)</div>
+                                                        </div>
+
+                                                        {{-- Ongkos Produksi --}}
+
+                                                        <div class="flex flex-row">
+                                                            <div id="ongkos_produksi_a" class="font-semibold flex justify-end basis-7/12">0</div>
+
+                                                            <div id="ongkos_produksi_b" class="font-semibold  flex justify-end basis-5/12">0 </div>
+
+                                                        </div>
+
+
+                                                        {{-- Ongkos Produksi --}}
+                                                        <div class="w-full flex flex-col">
+                                                            <div>Benih</div>
+                                                        </div>
+
+                                                        {{-- Ongkos Produksi --}}
+                                                        <div class="flex flex-row">
+                                                            <div id="benih_a" class=" flex justify-end basis-7/12">0</div>
+                                                            <div id="benih_b" class=" flex justify-end basis-5/12">0</div>
+                                                        </div>
+
+                                                        {{-- Ongkos Produksi --}}
+                                                        <div class="w-full flex flex-col">
+                                                            <div>Pupuk</div>
+                                                        </div>
+
+                                                        {{-- Ongkos Produksi --}}
+                                                        <div class="flex flex-row">
+                                                            <div id="pupuk_a" class=" flex justify-end basis-7/12">0</div>
+                                                            <div id="pupuk_b" class=" flex justify-end basis-5/12">0</div>
+                                                        </div>
+
+                                                        {{-- Ongkos Produksi --}}
+                                                        <div class="w-full flex flex-col">
+                                                            <div>Pestisida</div>
+                                                        </div>
+
+                                                        {{-- Ongkos Produksi --}}
+                                                        <div class="flex flex-row">
+                                                            <div id="pestisida_a" class=" flex justify-end basis-7/12">0</div>
+                                                            <div id="pestisida_b" class=" flex justify-end basis-5/12">0</div>
+                                                        </div>
+
+                                                        {{-- Ongkos Produksi --}}
+                                                        <div class="w-full flex flex-col">
+                                                            <div>Tenaga kerja dan jasa pertanian</div>
+                                                        </div>
+
+                                                        {{-- Ongkos Produksi --}}
+                                                        <div class="flex flex-row">
+                                                            <div id="tenagakerja_a" class=" flex justify-end basis-7/12">0</div>
+                                                            <div id="tenagakerja_b" class=" flex justify-end basis-5/12">0</div>
+                                                        </div>
+
+                                                        {{-- Ongkos Produksi --}}
+                                                        <div class="w-full flex flex-col">
+                                                            <div>a. Tenaga kerja dibayar</div>
+                                                        </div>
+
+                                                        {{-- Ongkos Produksi --}}
+                                                        <div class="flex flex-row">
+                                                            <div id="tenagabayar_a" class=" flex justify-end basis-7/12">0</div>
+                                                            <div id="tenagabayar_b" class=" flex justify-end basis-5/12">0</div>
+                                                        </div>
+
+                                                        {{-- Ongkos Produksi --}}
+                                                        <div class="w-full flex flex-col">
+                                                            <div>b. Tenaga kerja tidak dibayar</div>
+                                                        </div>
+
+                                                        {{-- Ongkos Produksi --}}
+                                                        <div class="flex flex-row">
+                                                            <div id="tenagatidakdibayar_a" class=" flex justify-end basis-7/12">0</div>
+                                                            <div id="tenagatidakdibayar_b" class=" flex justify-end basis-5/12">0</div>
+                                                        </div>
+
+                                                        {{-- Ongkos Produksi --}}
+                                                        <div class="w-full flex flex-col">
+                                                            <div>c. Jasa pertanian</div>
+                                                        </div>
+
+                                                        {{-- Ongkos Produksi --}}
+                                                        <div class="flex flex-row">
+                                                            <div id="jasapertanian_a" class=" flex justify-end basis-7/12">0</div>
+                                                            <div id="jasapertanian_b" class=" flex justify-end basis-5/12">0</div>
+                                                        </div>
+
+                                                        {{-- Ongkos Produksi --}}
+                                                        <div class="w-full flex flex-col">
+                                                            <div>Sewa lahan</div>
+                                                        </div>
+
+                                                        {{-- Ongkos Produksi --}}
+                                                        <div class="flex flex-row">
+                                                            <div id="sewalahan_a" class=" flex justify-end basis-7/12">0</div>
+                                                            <div id="sewalahan_b" class=" flex justify-end basis-5/12">0</div>
+                                                        </div>
+
+                                                        {{-- Ongkos Produksi --}}
+                                                        <div class="w-full flex flex-col">
+                                                            <div>PBB</div>
+                                                        </div>
+
+                                                        {{-- Ongkos Produksi --}}
+                                                        <div class="flex flex-row">
+                                                            <div id="pbb_a" class=" flex justify-end basis-7/12">0</div>
+                                                            <div id="pbb_b" class=" flex justify-end basis-5/12">0</div>
+                                                        </div>
+
+                                                        {{-- Ongkos Produksi --}}
+                                                        <div class="w-full flex flex-col">
+                                                            <div>Bunga pinjaman </div>
+                                                        </div>
+
+                                                        {{-- Ongkos Produksi --}}
+                                                        <div class="flex flex-row">
+                                                            <div id="bunga_a" class=" flex justify-end basis-7/12">0</div>
+                                                            <div id="bunga_b" class=" flex justify-end basis-5/12">0</div>
+                                                        </div>
+
+                                                        {{-- Ongkos Produksi --}}
+                                                        <div class="w-full flex flex-col">
+                                                            <div>Premi asuransi</div>
+                                                        </div>
+
+                                                        {{-- Ongkos Produksi --}}
+                                                        <div class="flex flex-row">
+                                                            <div id="premi_a" class=" flex justify-end basis-7/12">0</div>
+                                                            <div id="premi_b" class=" flex justify-end basis-5/12">0</div>
+                                                        </div>
+
+                                                        {{-- Ongkos Produksi --}}
+                                                        <div class="w-full flex flex-col">
+                                                            <div>Sewa alat</div>
+                                                        </div>
+
+                                                        {{-- Ongkos Produksi --}}
+                                                        <div class="flex flex-row">
+                                                            <div id="sewa_a" class=" flex justify-end basis-7/12">0</div>
+                                                            <div id="sewa_b" class=" flex justify-end basis-5/12">0</div>
+                                                        </div>
+
+                                                        {{-- Ongkos Produksi --}}
+                                                        <div class="w-full flex flex-col">
+                                                            <div>Penyusutan</div>
+                                                        </div>
+
+                                                        {{-- Ongkos Produksi --}}
+                                                        <div class="flex flex-row">
+                                                            <div id="penyusutan_a" class=" flex justify-end basis-7/12">0</div>
+                                                            <div id="penyusutan_b" class=" flex justify-end basis-5/12">0</div>
+                                                        </div>
+
+
+                                                        {{-- Ongkos Produksi --}}
+                                                        <div class="w-full flex flex-col">
+                                                            <div>Lainnya</div>
+                                                        </div>
+
+                                                        {{-- Ongkos Produksi --}}
+                                                        <div class="flex flex-row">
+                                                            <div id="lainnya_a" class=" flex justify-end basis-7/12">0</div>
+                                                            <div id="lainnya_b" class=" flex justify-end basis-5/12">0</div>
+                                                        </div>
+
+
+                                                        {{-- Ongkos Produksi --}}
+                                                        <div class="w-full flex flex-col">
+                                                            <div class="font-semibold">Pendapatan (C)</div>
+
+                                                        </div>
+
+                                                        {{-- Ongkos Produksi --}}
+
+                                                        <div class="flex flex-row">
+                                                            <div id="pendapatan_a" class="font-semibold flex justify-end basis-7/12">0</div>
+
+                                                            <div id="pendapatan_b" class="font-semibold  flex justify-end basis-5/12">0 </div>
+
+                                                        </div>
+
+                                                        {{-- Ongkos Produksi --}}
+                                                        <div class="w-full flex flex-col">
+                                                            <div class="font-semibold">Rasio C/B</div>
+
+
+                                                        </div>
+
+                                                        {{-- Ongkos Produksi --}}
+
+                                                        <div class="flex flex-row">
+                                                            <div id="rasio_a" class="font-semibold flex justify-end basis-7/12">0</div>
+
+
+                                                            <div id="" class="font-semibold  flex justify-end basis-5/12">&nbsp; </div>
+
+                                                        </div>
+
+
+
+                                                        {{-- --}}
+                                                        {{-- --}}
+                                                        {{-- --}}
+
+                                                    </div>
+
+
+
+                                                </div>
+
+
+
+                                                <div class="w-full text-sm flex flex-col ">
+                                                    {{-- <div class="h-[4.2vh] mb-1 ">&nbsp;</div> --}}
+                                                    <div class="mb-1 font-bold flex justify-center">Koefisien</div>
+                                                    <div class="mb-1">Growth rate</div>
+                                                    <div class="mb-1">WACC</div>
+                                                    <div class="mb-1">
+                                                        Operating profitability</div>
+
+                                                    <div class="mb-1">
+                                                        Capital requirement</div>
+
+                                                    <div class="mb-1">Capital</div>
+                                                    <div class="mb-1">NOWC</div>
+                                                    <div class="mb-1">Net Operating Capital</div>
+                                                    <div class="mb-1">Sales</div>
+                                                    <div class="mb-1">Net Operating Income</div>
+                                                    <div class="mb-1">Valuasi (Metode DCF)</div>
+                                                    <div class="mb-1">ROIC</div>
+                                                    <div class="mb-1">
+                                                        Economic Value Added</div>
+                                                </div>
+
+                                                <div class="w-full">&nbsp;</div>
+
+                                                <div class="w-full flex flex-col ">
+
+
+                                                    <div class="flex flex-row justify-end text-sm mb-1 font-bold flex justify-center">Nilai</div>
+
+
+                                                    <div class="flex justify-end text-sm mb-1" id="distribusi_g">0%</div>
+
+                                                    <div class="flex justify-end text-sm mb-1" id="distribusi_wacc">0%</div>
+
+                                                    <div class="flex justify-end text-sm mb-1" id="distribusi_op">0%</div>
+
+                                                    <div class="flex justify-end text-sm mb-1" id="distribusi_cr">0%</div>
+
+
+                                                    <div class="text-sm mb-1 flex flex-row justify-between">
+                                                        <div class="">Rp</div>
+                                                        <div id="distribusi_capital">0%</div>
+
+                                                    </div>
+
+
+
+                                                    <div class="text-sm mb-1 flex flex-row justify-between">
+                                                        <div class="">Rp</div>
+                                                        <div id="distribusi_nowc">0%</div>
+                                                    </div>
+                                                    <div class="text-sm mb-1 flex flex-row justify-between">
+                                                        <div class="">Rp</div>
+                                                        <div id="distribusi_netOpCap">0%</div>
+
+                                                    </div>
+                                                    <div class="text-sm mb-1 flex flex-row justify-between">
+                                                        <div class="">Rp</div>
+                                                        <div id="distribusi_sales">0%</div>
+
+                                                    </div>
+                                                    <div class="text-sm mb-1 flex flex-row justify-between">
+                                                        <div class="">Rp</div>
+                                                        <div id="distribusi_noi">0%</div>
+
+                                                    </div>
+                                                    <div class="text-sm mb-1 flex flex-row justify-between">
+                                                        <div class="">Rp</div>
+                                                        <div id="distribusi_valueOp">0%</div>
+
+                                                    </div>
+
+
+
+
+                                                    <div class="flex justify-end text-sm mb-1" id="distribusi_roic">0%</div>
+
+                                                    <div class="flex justify-end text-sm mb-1 text-red-500 font-bold" id="distribusi_eva">0%</div>
+
                                                 </div>
                                             </div>
 
+                                            <h5 class="font-bold text-md text-center mt-4 mb-1">Keterangan</h5>
 
 
-                                        </div>
+                                            <div class="w-full grid grid-cols-1 mt-3">
 
-                                    </div>
 
-                                    <div class="w-full col-span-3 flex flex-col mb-[3rem]">
-                                        {{-- --}}
-                                        <div class="grid grid-cols-[205px,164px] ">
-                                            <div class=" h-[3.5vh] w-full  flex justify-center items-center font-semibold">&nbsp;</div>
+                                                {{-- --}}
 
-                                            <div class="h-[3.5vh] grid grid-col">
 
-                                                <div class="flex flex-row">
-                                                    <div class="basis-7/12 flex justify-center items-center font-semibold text-center text-xs">x Rp 1.000</div>
-                                                    <div class="basis-5/12 flex items-center font-semibold relative">
-                                                        <span class="absolute right-2 text-xs">%</span>
+                                                <div class="grid grid-cols-[140px,230px] mb-0">
+
+                                                    <div class="w-full text-xs flex flex-col ">
+                                                        <div class="">Capital</div>
+
+                                                    </div>
+
+
+                                                    <div class="w-full flex flex-col ">
+
+                                                        <div class="w-full flex justify-start text-xs mb-1 text-left relative" id="">Operating Long Term Asset dengan asumsi harga tanah Rp 100.000 /
+                                                            m²
+
+                                                        </div>
 
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        {{-- --}}
-                                        <div class="grid grid-cols-[205px,164px]">
+                                                {{-- --}}
 
-                                            {{-- Produksi a --}}
-                                            <div class="w-full flex flex-col">
-                                                <div class="font-semibold">Produksi (A)</div>
-                                            </div>
+                                                <div class="grid grid-cols-[140px,230px] mb-0">
 
-                                            {{-- Produksi a --}}
+                                                    <div class="w-full text-xs flex flex-col ">
+                                                        <div class="">NOWC</div>
 
-                                            <div class="flex flex-row">
-                                                <div id="total_a" class="font-semibold flex justify-end basis-7/12">0</div>
-
-                                                <div id="total_b" id="" class="font-semibold flex justify-end basis-5/12">0 </div>
+                                                    </div>
 
 
-                                            </div>
+                                                    <div class="w-full flex flex-col ">
 
-                                            {{-- Produksi a --}}
-
-                                            <div class="w-full flex flex-col">
-                                                <div class="">Utama</div>
-                                            </div>
-
-                                            {{-- Produksi a --}}
-
-                                            <div class="flex flex-row">
-                                                <div id="utama_a" class=" flex justify-end basis-7/12">0</div>
-
-                                                <div id="utama_b" class=" flex justify-end basis-5/12">0</div>
-
-                                            </div>
+                                                        <div class="w-full flex justify-start text-xs mb-1 text-left" id="">Working capital per tahun</div>
 
 
-                                            {{-- Produksi a --}}
 
-                                            <div class="w-full flex flex-col">
-                                                <div>Ikutan</div>
-                                            </div>
+                                                    </div>
+                                                </div>
+                                                {{-- --}}
 
-                                            {{-- Produksi a --}}
 
-                                            <div class="flex flex-row">
-                                                <div id="ikutan_a" class=" flex justify-end basis-7/12">0</div>
 
-                                                <div id="ikutan_b" class=" flex justify-end basis-5/12">0</div>
 
-                                            </div>
+                                                <div class="grid grid-cols-[140px,230px] mb-0">
 
-                                            {{-- Ongkos Produksi --}}
-                                            <div class="w-full flex flex-col">
-                                                <div class="font-semibold">Ongkos Produksi (B)</div>
-                                            </div>
+                                                    <div class="w-full text-xs flex flex-col ">
+                                                        <div class="">Sales</div>
 
-                                            {{-- Ongkos Produksi --}}
+                                                    </div>
 
-                                            <div class="flex flex-row">
-                                                <div id="ongkos_produksi_a" class="font-semibold flex justify-end basis-7/12">0</div>
 
-                                                <div id="ongkos_produksi_b" class="font-semibold  flex justify-end basis-5/12">0 </div>
+                                                    <div class="w-full flex flex-col ">
+
+                                                        <div class="w-full flex justify-start text-xs mb-1 text-left" id="">Asumsi panen 4x per tahun</div>
+
+
+                                                    </div>
+                                                </div>
+                                                {{-- --}}
+
+
+
+                                                <div class="grid grid-cols-[140px,230px] mb-0">
+
+                                                    <div class="w-full text-xs flex flex-col ">
+                                                        <div class="">ROIC</div>
+
+                                                    </div>
+
+
+                                                    <div class="w-full flex flex-col ">
+
+                                                        <div class="w-full flex justify-start text-xs mb-1 text-left" id="">Return on Investment Capital</div>
+
+
+                                                    </div>
+                                                </div>
+
+
+                                                {{-- --}}
 
                                             </div>
-
-
-                                            {{-- Ongkos Produksi --}}
-                                            <div class="w-full flex flex-col">
-                                                <div>Benih</div>
-                                            </div>
-
-                                            {{-- Ongkos Produksi --}}
-                                            <div class="flex flex-row">
-                                                <div id="benih_a" class=" flex justify-end basis-7/12">0</div>
-                                                <div id="benih_b" class=" flex justify-end basis-5/12">0</div>
-                                            </div>
-
-                                            {{-- Ongkos Produksi --}}
-                                            <div class="w-full flex flex-col">
-                                                <div>Pupuk</div>
-                                            </div>
-
-                                            {{-- Ongkos Produksi --}}
-                                            <div class="flex flex-row">
-                                                <div id="pupuk_a" class=" flex justify-end basis-7/12">0</div>
-                                                <div id="pupuk_b" class=" flex justify-end basis-5/12">0</div>
-                                            </div>
-
-                                            {{-- Ongkos Produksi --}}
-                                            <div class="w-full flex flex-col">
-                                                <div>Pestisida</div>
-                                            </div>
-
-                                            {{-- Ongkos Produksi --}}
-                                            <div class="flex flex-row">
-                                                <div id="pestisida_a" class=" flex justify-end basis-7/12">0</div>
-                                                <div id="pestisida_b" class=" flex justify-end basis-5/12">0</div>
-                                            </div>
-
-                                            {{-- Ongkos Produksi --}}
-                                            <div class="w-full flex flex-col">
-                                                <div>Tenaga kerja dan jasa pertanian</div>
-                                            </div>
-
-                                            {{-- Ongkos Produksi --}}
-                                            <div class="flex flex-row">
-                                                <div id="tenagakerja_a" class=" flex justify-end basis-7/12">0</div>
-                                                <div id="tenagakerja_b" class=" flex justify-end basis-5/12">0</div>
-                                            </div>
-
-                                            {{-- Ongkos Produksi --}}
-                                            <div class="w-full flex flex-col">
-                                                <div>a. Tenaga kerja dibayar</div>
-                                            </div>
-
-                                            {{-- Ongkos Produksi --}}
-                                            <div class="flex flex-row">
-                                                <div id="tenagabayar_a" class=" flex justify-end basis-7/12">0</div>
-                                                <div id="tenagabayar_b" class=" flex justify-end basis-5/12">0</div>
-                                            </div>
-
-                                            {{-- Ongkos Produksi --}}
-                                            <div class="w-full flex flex-col">
-                                                <div>b. Tenaga kerja tidak dibayar</div>
-                                            </div>
-
-                                            {{-- Ongkos Produksi --}}
-                                            <div class="flex flex-row">
-                                                <div id="tenagatidakdibayar_a" class=" flex justify-end basis-7/12">0</div>
-                                                <div id="tenagatidakdibayar_b" class=" flex justify-end basis-5/12">0</div>
-                                            </div>
-
-                                            {{-- Ongkos Produksi --}}
-                                            <div class="w-full flex flex-col">
-                                                <div>c. Jasa pertanian</div>
-                                            </div>
-
-                                            {{-- Ongkos Produksi --}}
-                                            <div class="flex flex-row">
-                                                <div id="jasapertanian_a" class=" flex justify-end basis-7/12">0</div>
-                                                <div id="jasapertanian_b" class=" flex justify-end basis-5/12">0</div>
-                                            </div>
-
-                                            {{-- Ongkos Produksi --}}
-                                            <div class="w-full flex flex-col">
-                                                <div>Sewa lahan</div>
-                                            </div>
-
-                                            {{-- Ongkos Produksi --}}
-                                            <div class="flex flex-row">
-                                                <div id="sewalahan_a" class=" flex justify-end basis-7/12">0</div>
-                                                <div id="sewalahan_b" class=" flex justify-end basis-5/12">0</div>
-                                            </div>
-
-                                            {{-- Ongkos Produksi --}}
-                                            <div class="w-full flex flex-col">
-                                                <div>PBB</div>
-                                            </div>
-
-                                            {{-- Ongkos Produksi --}}
-                                            <div class="flex flex-row">
-                                                <div id="pbb_a" class=" flex justify-end basis-7/12">0</div>
-                                                <div id="pbb_b" class=" flex justify-end basis-5/12">0</div>
-                                            </div>
-
-                                            {{-- Ongkos Produksi --}}
-                                            <div class="w-full flex flex-col">
-                                                <div>Bunga pinjaman </div>
-                                            </div>
-
-                                            {{-- Ongkos Produksi --}}
-                                            <div class="flex flex-row">
-                                                <div id="bunga_a" class=" flex justify-end basis-7/12">0</div>
-                                                <div id="bunga_b" class=" flex justify-end basis-5/12">0</div>
-                                            </div>
-
-                                            {{-- Ongkos Produksi --}}
-                                            <div class="w-full flex flex-col">
-                                                <div>Premi asuransi</div>
-                                            </div>
-
-                                            {{-- Ongkos Produksi --}}
-                                            <div class="flex flex-row">
-                                                <div id="premi_a" class=" flex justify-end basis-7/12">0</div>
-                                                <div id="premi_b" class=" flex justify-end basis-5/12">0</div>
-                                            </div>
-
-                                            {{-- Ongkos Produksi --}}
-                                            <div class="w-full flex flex-col">
-                                                <div>Sewa alat</div>
-                                            </div>
-
-                                            {{-- Ongkos Produksi --}}
-                                            <div class="flex flex-row">
-                                                <div id="sewa_a" class=" flex justify-end basis-7/12">0</div>
-                                                <div id="sewa_b" class=" flex justify-end basis-5/12">0</div>
-                                            </div>
-
-                                            {{-- Ongkos Produksi --}}
-                                            <div class="w-full flex flex-col">
-                                                <div>Penyusutan</div>
-                                            </div>
-
-                                            {{-- Ongkos Produksi --}}
-                                            <div class="flex flex-row">
-                                                <div id="penyusutan_a" class=" flex justify-end basis-7/12">0</div>
-                                                <div id="penyusutan_b" class=" flex justify-end basis-5/12">0</div>
-                                            </div>
-
-
-                                            {{-- Ongkos Produksi --}}
-                                            <div class="w-full flex flex-col">
-                                                <div>Lainnya</div>
-                                            </div>
-
-                                            {{-- Ongkos Produksi --}}
-                                            <div class="flex flex-row">
-                                                <div id="lainnya_a" class=" flex justify-end basis-7/12">0</div>
-                                                <div id="lainnya_b" class=" flex justify-end basis-5/12">0</div>
-                                            </div>
-
-
-                                            {{-- Ongkos Produksi --}}
-                                            <div class="w-full flex flex-col">
-                                                <div class="font-semibold">Pendapatan (C)</div>
-
-                                            </div>
-
-                                            {{-- Ongkos Produksi --}}
-
-                                            <div class="flex flex-row">
-                                                <div id="pendapatan_a" class="font-semibold flex justify-end basis-7/12">0</div>
-
-                                                <div id="pendapatan_b" class="font-semibold  flex justify-end basis-5/12">0 </div>
-
-                                            </div>
-
-                                            {{-- Ongkos Produksi --}}
-                                            <div class="w-full flex flex-col">
-                                                <div class="font-semibold">Rasio C/B</div>
-
-
-                                            </div>
-
-                                            {{-- Ongkos Produksi --}}
-
-                                            <div class="flex flex-row">
-                                                <div id="rasio_a" class="font-semibold flex justify-end basis-7/12">0</div>
-
-
-                                                <div id="" class="font-semibold  flex justify-end basis-5/12">&nbsp; </div>
-
-                                            </div>
-
-
-
-                                            {{-- --}}
-                                            {{-- --}}
-                                            {{-- --}}
-
-                                        </div>
-
-
-
-                                    </div>
-
-
-
-                                    <div class="w-full text-sm flex flex-col ">
-                                        {{-- <div class="h-[4.2vh] mb-1 ">&nbsp;</div> --}}
-                                        <div class="mb-1 font-bold flex justify-center">Koefisien</div>
-                                        <div class="mb-1">Growth rate</div>
-                                        <div class="mb-1">WACC</div>
-                                        <div class="mb-1">
-                                            Operating profitability</div>
-
-                                        <div class="mb-1">
-                                            Capital requirement</div>
-
-                                        <div class="mb-1">Capital</div>
-                                        <div class="mb-1">NOWC</div>
-                                        <div class="mb-1">Net Operating Capital</div>
-                                        <div class="mb-1">Sales</div>
-                                        <div class="mb-1">Net Operating Income</div>
-                                        <div class="mb-1">Valuasi (Metode DCF)</div>
-                                        <div class="mb-1">ROIC</div>
-                                        <div class="mb-1">
-                                            Economic Value Added</div>
-                                    </div>
-
-                                    <div class="w-full">&nbsp;</div>
-
-                                    <div class="w-full flex flex-col ">
-
-
-                                        <div class="flex flex-row justify-end text-sm mb-1 font-bold flex justify-center">Nilai</div>
-
-
-                                        <div class="flex justify-end text-sm mb-1" id="distribusi_g">0%</div>
-
-                                        <div class="flex justify-end text-sm mb-1" id="distribusi_wacc">0%</div>
-
-                                        <div class="flex justify-end text-sm mb-1" id="distribusi_op">0%</div>
-
-                                        <div class="flex justify-end text-sm mb-1" id="distribusi_cr">0%</div>
-
-
-                                        <div class="text-sm mb-1 flex flex-row justify-between">
-                                            <div class="">Rp</div>
-                                            <div id="distribusi_capital">0%</div>
-
-                                        </div>
-
-
-
-                                        <div class="text-sm mb-1 flex flex-row justify-between">
-                                            <div class="">Rp</div>
-                                            <div id="distribusi_nowc">0%</div>
-                                        </div>
-                                        <div class="text-sm mb-1 flex flex-row justify-between">
-                                            <div class="">Rp</div>
-                                            <div id="distribusi_netOpCap">0%</div>
-
-                                        </div>
-                                        <div class="text-sm mb-1 flex flex-row justify-between">
-                                            <div class="">Rp</div>
-                                            <div id="distribusi_sales">0%</div>
-
-                                        </div>
-                                        <div class="text-sm mb-1 flex flex-row justify-between">
-                                            <div class="">Rp</div>
-                                            <div id="distribusi_noi">0%</div>
-
-                                        </div>
-                                        <div class="text-sm mb-1 flex flex-row justify-between">
-                                            <div class="">Rp</div>
-                                            <div id="distribusi_valueOp">0%</div>
-
-                                        </div>
-
-
-
-
-                                        <div class="flex justify-end text-sm mb-1" id="distribusi_roic">0%</div>
-
-                                        <div class="flex justify-end text-sm mb-1 text-red-500 font-bold" id="distribusi_eva">0%</div>
-
-                                    </div>
-                                </div>
-
-                                <h5 class="font-bold text-md text-center mt-4 mb-1">Keterangan</h5>
-
-
-                                <div class="w-full grid grid-cols-1 mt-3">
-
-
-                                    {{-- --}}
-
-
-                                    <div class="grid grid-cols-[140px,230px] mb-0">
-
-                                        <div class="w-full text-xs flex flex-col ">
-                                            <div class="">Capital</div>
-
-                                        </div>
-
-
-                                        <div class="w-full flex flex-col ">
-
-                                            <div class="w-full flex justify-start text-xs mb-1 text-left relative" id="">Operating Long Term Asset dengan asumsi harga tanah Rp 100.000 /
-                                                m²
-
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    {{-- --}}
-
-                                    <div class="grid grid-cols-[140px,230px] mb-0">
-
-                                        <div class="w-full text-xs flex flex-col ">
-                                            <div class="">NOWC</div>
-
-                                        </div>
-
-
-                                        <div class="w-full flex flex-col ">
-
-                                            <div class="w-full flex justify-start text-xs mb-1 text-left" id="">Working capital per tahun</div>
-
 
 
                                         </div>
                                     </div>
-                                    {{-- --}}
-
-
-
-
-                                    <div class="grid grid-cols-[140px,230px] mb-0">
-
-                                        <div class="w-full text-xs flex flex-col ">
-                                            <div class="">Sales</div>
-
-                                        </div>
-
-
-                                        <div class="w-full flex flex-col ">
-
-                                            <div class="w-full flex justify-start text-xs mb-1 text-left" id="">Asumsi panen 4x per tahun</div>
-
-
-                                        </div>
-                                    </div>
-                                    {{-- --}}
-
-
-
-                                    <div class="grid grid-cols-[140px,230px] mb-0">
-
-                                        <div class="w-full text-xs flex flex-col ">
-                                            <div class="">ROIC</div>
-
-                                        </div>
-
-
-                                        <div class="w-full flex flex-col ">
-
-                                            <div class="w-full flex justify-start text-xs mb-1 text-left" id="">Return on Investment Capital</div>
-
-
-                                        </div>
-                                    </div>
-
-
-                                    {{-- --}}
-
                                 </div>
 
                                 {{-- jarak ke bawah --}}
@@ -10093,7 +10122,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                 });
             });
 
-            activateTab("btn-1");
+            activateTab("btn-6");
         });
 
     </script>
@@ -11625,6 +11654,48 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
 
 
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.tab-item');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            function changeTab(selectedTab) {
+                tabs.forEach(tab => {
+                    const tabLink = tab.querySelector('.tab-link');
+                    if (tab.dataset.tab === selectedTab) {
+                        tab.classList.add('-mb-px', 'border-l', 'border-t', 'border-r', 'rounded-t');
+                        tabLink.classList.add('text-blue-700');
+                        tabLink.classList.remove('text-black', 'hover:text-blue-700');
+                    } else {
+                        tab.classList.remove('-mb-px', 'border-l', 'border-t', 'border-r', 'rounded-t');
+                        tabLink.classList.add('text-black');
+                        tabLink.classList.remove('text-blue-700', 'hover:text-blue-700');
+                    }
+                });
+
+                tabContents.forEach(content => {
+                    if (content.dataset.content === selectedTab) {
+                        content.classList.remove('hidden');
+                    } else {
+                        content.classList.add('hidden');
+                    }
+                });
+            }
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function(e) {
+                    e.preventDefault(); // Prevent the link from redirecting
+                    const selectedTab = this.dataset.tab;
+                    changeTab(selectedTab);
+                });
+            });
+
+            // Initialize the first tab as active
+            changeTab('1');
+        });
+
+    </script>
 
 
 
