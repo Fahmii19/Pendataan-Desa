@@ -1918,6 +1918,10 @@ video {
   padding-top: 0.9vh;
   padding-bottom: 0.9vh;
 }
+.px-2\.5 {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
 .pb-1 {
   padding-bottom: 0.25rem;
 }
