@@ -1131,23 +1131,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                     <div class="w-full grid grid-cols-[200px,50px,120px]">
 
                                         <div class="col-span-3 w-full flex justify-beetwen mb-3">
-                                            <div class="w-full grid grid-cols-[1fr,1fr]">
-
-                                                <div class="col-span-3 grid cols-1 w-full flex justify-left mb-1 mt-3">
-
-
-
-
-
-                                                    <div class="grid grid-cols-2">
-                                                        <div class="">1x Panen Untuk Luas Lahan</div>
-                                                        <div style="margin-left: 3.8rem;"> 3.000 m²</div>
-
-                                                    </div>
-
-
-                                                </div>
-
+                                            <div class="w-full grid grid-cols-[1fr,1fr] mt-3">
 
 
 
@@ -1742,14 +1726,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                         <!-- Dropdown Filter -->
                                         <div class="col-span-3 w-full flex justify-beetwen mb-3">
-                                            <div class="w-full grid grid-cols-[1fr,1fr]">
-
-                                                <div class="col-span-3 w-full flex justify-left mb-1 mt-3">
-                                                    1x Panen Per Hektar
-
-                                                </div>
-
-
+                                            <div class="w-full grid grid-cols-[1fr,1fr] mt-3">
 
 
 
