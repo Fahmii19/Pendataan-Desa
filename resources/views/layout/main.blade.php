@@ -1172,7 +1172,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                         </div>
 
 
-                                        <div class="w-full col-span-3 flex flex-col mb-[3rem]">
+                                        <div class="w-full col-span-3 flex flex-col mb-[1rem]">
                                             {{-- --}}
                                             <div class="grid grid-cols-[205px,164px] ">
                                                 <div class=" h-[3.5vh] w-full  flex justify-center items-center font-semibold">&nbsp;</div>
@@ -1531,11 +1531,12 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                         </div>
 
+                                        <div class="w-full col-span-3 font-bold text-sm text-center mb-3">Asumsi</div>
 
 
                                         <div class="w-full text-sm flex flex-col ">
                                             {{-- <div class="h-[4.2vh] mb-1 ">&nbsp;</div> --}}
-                                            <div class="mb-1 font-bold flex justify-center">Koefisien</div>
+                                            {{-- <div class="mb-1 font-bold flex justify-center">Koefisien</div> --}}
                                             <div class="mb-1">Growth rate</div>
                                             <div class="mb-1">WACC</div>
                                             <div class="mb-1">
@@ -1555,12 +1556,13 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                                 Economic Value Added</div>
                                         </div>
 
+
                                         <div class="w-full">&nbsp;</div>
 
                                         <div class="w-full flex flex-col ">
 
 
-                                            <div class="flex flex-row justify-end text-sm mb-1 font-bold flex justify-center">Nilai</div>
+                                            {{-- <div class="flex flex-row justify-end text-sm mb-1 font-bold flex justify-center">Nilai</div> --}}
 
 
                                             <div class="flex justify-end text-sm mb-1" id="xdistribusi_g">4%%</div>
@@ -2051,7 +2053,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                         <div class="w-full text-sm flex flex-col ">
                                             {{-- <div class="h-[4.2vh] mb-1 ">&nbsp;</div> --}}
                                             <div class="mb-1 font-bold flex justify-center">Koefisien</div>
-                                            <div class="mb-1">Growth rate</div>
+                                            <div class="mb-1">Growth ratee</div>
                                             <div class="mb-1">WACC</div>
                                             <div class="mb-1">
                                                 Operating profitability</div>
@@ -2591,7 +2593,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                             <!-- Running Teks -->
                             <div class="w-full bg-white relative">
-                                <div class="w-[71vw] h-[4vh] flex justify-center items-center">
+                                <div class="w-[71vw] h-[3.1vh] flex justify-center items-center">
                                     <div class="teks-berjalan-pencarian w-full text-sm text-black whitespace-nowrap">
                                         Dalam konteks pertanian pedesaan, kemajuan terjadi melalui adopsi teknologi modern seperti irigasi otomatis, penggunaan pupuk organik, dan pelatihan petani tentang praktik berkelanjutan. Ini memungkinkan peningkatan produksi yang berkelanjutan sambil menjaga kelestarian lingkungan dan kemandirian lokal dalam pasokan pangan
 
