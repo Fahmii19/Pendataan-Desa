@@ -1108,7 +1108,25 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                 {{-- --}}
 
-                                <h5 class="font-bold text-sm text-center mt-4 mb-3">Finansial</h5>
+                                <div class="w-full grid grid-cols-1 mt-4">
+                                    <div class="flex justify-center">
+                                        <h5 class="font-bold text-sm text-center ">Finansial</h5>
+                                    </div>
+                                </div>
+                                {{-- --}}
+                                <div class="w-full grid grid-cols-1 mt-2 mb-3">
+                                    <div class="flex justify-end">
+                                        <a target="_blank" href="{{ asset('pdf_file/finansiall.pdf') }}"></i>
+
+                                            <button type="button" class="text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-xs px-2.5 py-0.5 text-center">
+                                                Cetak
+                                            </button>
+                                        </a>
+
+
+                                    </div>
+
+                                </div>
 
 
                                 <div class="w-full grid grid-rows-2">
@@ -1565,7 +1583,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                             {{-- <div class="flex flex-row justify-end text-sm mb-1 font-bold flex justify-center">Nilai</div> --}}
 
 
-                                            <div class="flex justify-end text-sm mb-1" id="xdistribusi_g">4%%</div>
+                                            <div class="flex justify-end text-sm mb-1" id="xdistribusi_g">4%</div>
 
 
                                             <div class="flex justify-end text-sm mb-1" id="xdistribusi_wacc">10.00%</div>
