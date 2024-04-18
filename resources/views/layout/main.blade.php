@@ -1220,12 +1220,9 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                                 {{-- Produksi a --}}
 
                                                 <div class="flex flex-row">
-                                                    <div id="xtotal_a" class="font-semibold flex justify-end basis-7/12">555.445.2</div>
+                                                    <div id="xtotal_a" class="font-semibold flex justify-end basis-7/12">18.514.840</div>
 
-
-                                                    <div id="xtotal_b" id="x" class="font-semibold flex justify-end basis-5/12">100.00 </div>
-
-
+                                                    <div id="xtotal_b" id="x" class="font-semibold flex justify-end basis-5/12">100,00</div>
 
                                                 </div>
 
@@ -1238,12 +1235,13 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                                 {{-- Produksi a --}}
 
                                                 <div class="flex flex-row">
-                                                    <div id="xutama_a" class=" flex justify-end basis-7/12">1.553.129.5
+                                                    <div id="xutama_a" class=" flex justify-end basis-7/12">18.437.650
 
 
                                                     </div>
 
-                                                    <div id="xutama_b" class=" flex justify-end basis-5/12">99.99</div>
+                                                    <div id="xutama_b" class=" flex justify-end basis-5/12">99,58</div>
+
 
 
                                                 </div>
@@ -1259,13 +1257,15 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                                 <div class="flex flex-row">
                                                     <div id="xikutan_a" class=" flex justify-end basis-7/12">
-                                                        2.315.7
+                                                        77.190
+
 
 
                                                     </div>
 
                                                     <div id="xikutan_b" class=" flex justify-end basis-5/12">
-                                                        0.42</div>
+                                                        0,42</div>
+
 
 
                                                 </div>
@@ -1278,11 +1278,12 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                                 {{-- Ongkos Produksi --}}
 
                                                 <div class="flex flex-row">
-                                                    <div id="xongkos_produksi_a" class="font-semibold flex justify-end basis-7/12">406.779.0
-
+                                                    <div id="xongkos_produksi_a" class="font-semibold flex justify-end basis-7/12">
+                                                        1.355.930
                                                     </div>
 
-                                                    <div id="xongkos_produksi_b" class="font-semibold  flex justify-end basis-5/12">99.00 </div>
+                                                    <div id="xongkos_produksi_b" class="font-semibold  flex justify-end basis-5/12">100,00 </div>
+
 
 
                                                 </div>
@@ -1295,10 +1296,12 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                                 {{-- Ongkos Produksi --}}
                                                 <div class="flex flex-row">
-                                                    <div id="xbenih_a" class=" flex justify-end basis-7/12">51.15.430.8
-
+                                                    <div id="xbenih_a" class=" flex justify-end basis-7/12">
+                                                        514.360
                                                     </div>
-                                                    <div id="xbenih_b" class=" flex justify-end basis-5/12">3.79</div>
+                                                    <div id="xbenih_b" class=" flex justify-end basis-5/12">
+                                                        3,79</div>
+
 
                                                 </div>
 
@@ -1309,12 +1312,10 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                                 {{-- Ongkos Produksi --}}
                                                 <div class="flex flex-row">
-                                                    <div id="xpupuk_a" class=" flex justify-end basis-7/12">38.340.0
-
-
+                                                    <div id="xpupuk_a" class=" flex justify-end basis-7/12">
+                                                        1.278.000
                                                     </div>
-                                                    <div id="xpupuk_b" class=" flex justify-end basis-5/12">9.43</div>
-
+                                                    <div id="xpupuk_b" class=" flex justify-end basis-5/12">9,43</div>
                                                 </div>
 
                                                 {{-- Ongkos Produksi --}}
@@ -1324,11 +1325,11 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                                 {{-- Ongkos Produksi --}}
                                                 <div class="flex flex-row">
-                                                    <div id="xpestisida_a" class=" flex justify-end basis-7/12">170.865
-
+                                                    <div id="xpestisida_a" class=" flex justify-end basis-7/12">569.550
 
                                                     </div>
-                                                    <div id="xpestisida_b" class=" flex justify-end basis-5/12">4.20</div>
+                                                    <div id="xpestisida_b" class=" flex justify-end basis-5/12">4,20</div>
+
 
                                                 </div>
 
@@ -1339,11 +1340,11 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                                 {{-- Ongkos Produksi --}}
                                                 <div class="flex flex-row">
-                                                    <div id="xtenagakerja_a" class=" flex justify-end basis-7/12">198.455.7
-
-
+                                                    <div id="xtenagakerja_a" class=" flex justify-end basis-7/12">
+                                                        6.615.190
                                                     </div>
-                                                    <div id="xtenagakerja_b" class=" flex justify-end basis-5/12">48.79</div>
+                                                    <div id="xtenagakerja_b" class=" flex justify-end basis-5/12">48,79</div>
+
 
                                                 </div>
 
@@ -1354,11 +1355,15 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                                 {{-- Ongkos Produksi --}}
                                                 <div class="flex flex-row">
-                                                    <div id="xtenagabayar_a" class=" flex justify-end basis-7/12">68.462.7
+                                                    <div id="xtenagabayar_a" class=" flex justify-end basis-7/12">2.282.090
+
+
 
 
                                                     </div>
-                                                    <div id="xtenagabayar_b" class=" flex justify-end basis-5/12">16.83</div>
+                                                    <div id="xtenagabayar_b" class=" flex justify-end basis-5/12">16,83</div>
+
+
 
                                                 </div>
 
@@ -1369,11 +1374,12 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                                 {{-- Ongkos Produksi --}}
                                                 <div class="flex flex-row">
-                                                    <div id="xtenagatidakdibayar_a" class=" flex justify-end basis-7/12">58.409.1
-
+                                                    <div id="xtenagatidakdibayar_a" class=" flex justify-end basis-7/12">
+                                                        1.946.970
 
                                                     </div>
-                                                    <div id="xtenagatidakdibayar_b" class=" flex justify-end basis-5/12">14.36</div>
+                                                    <div id="xtenagatidakdibayar_b" class=" flex justify-end basis-5/12">14,36</div>
+
 
                                                 </div>
 
@@ -1385,11 +1391,13 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                                 {{-- Ongkos Produksi --}}
                                                 <div class="flex flex-row">
                                                     <div id="xjasapertanian_a" class=" flex justify-end basis-7/12">
-                                                        71.583.9
+                                                        2.386.130
+
 
 
                                                     </div>
-                                                    <div id="xjasapertanian_b" class=" flex justify-end basis-5/12">17.60</div>
+                                                    <div id="xjasapertanian_b" class=" flex justify-end basis-5/12">17,60</div>
+
 
                                                 </div>
 
@@ -1400,11 +1408,14 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                                 {{-- Ongkos Produksi --}}
                                                 <div class="flex flex-row">
-                                                    <div id="xsewalahan_a" class=" flex justify-end basis-7/12">104.170.8
+                                                    <div id="xsewalahan_a" class=" flex justify-end basis-7/12">
+                                                        3.472.360
+
 
 
                                                     </div>
-                                                    <div id="xsewalahan_b" class=" flex justify-end basis-5/12">25.61</div>
+                                                    <div id="xsewalahan_b" class=" flex justify-end basis-5/12">25,61</div>
+
 
                                                 </div>
 
@@ -1415,11 +1426,13 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                                 {{-- Ongkos Produksi --}}
                                                 <div class="flex flex-row">
-                                                    <div id="xpbb_a" class=" flex justify-end basis-7/12">24.03
+                                                    <div id="xpbb_a" class=" flex justify-end basis-7/12">80.100
+
 
 
                                                     </div>
-                                                    <div id="xpbb_b" class=" flex justify-end basis-5/12">0.59</div>
+                                                    <div id="xpbb_b" class=" flex justify-end basis-5/12">0,59</div>
+
 
                                                 </div>
 
@@ -1430,11 +1443,13 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                                 {{-- Ongkos Produksi --}}
                                                 <div class="flex flex-row">
-                                                    <div id="xbunga_a" class=" flex justify-end basis-7/12">10.644
+                                                    <div id="xbunga_a" class=" flex justify-end basis-7/12">35.480
+
 
 
                                                     </div>
-                                                    <div id="xbunga_b" class=" flex justify-end basis-5/12">0.26</div>
+                                                    <div id="xbunga_b" class=" flex justify-end basis-5/12">0,26</div>
+
 
                                                 </div>
 
@@ -1445,11 +1460,12 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                                 {{-- Ongkos Produksi --}}
                                                 <div class="flex flex-row">
-                                                    <div id="xpremi_a" class=" flex justify-end basis-7/12">0.531
+                                                    <div id="xpremi_a" class=" flex justify-end basis-7/12">1.770
 
 
                                                     </div>
-                                                    <div id="xpremi_b" class=" flex justify-end basis-5/12">0.01</div>
+                                                    <div id="xpremi_b" class=" flex justify-end basis-5/12">0,01</div>
+
 
                                                 </div>
 
@@ -1460,10 +1476,12 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                                 {{-- Ongkos Produksi --}}
                                                 <div class="flex flex-row">
-                                                    <div id="xsewa_a" class=" flex justify-end basis-7/12">11.964.3</div>
+                                                    <div id="xsewa_a" class=" flex justify-end basis-7/12">398.810</div>
 
 
-                                                    <div id="xsewa_b" class=" flex justify-end basis-5/12">2.94</div>
+
+                                                    <div id="xsewa_b" class=" flex justify-end basis-5/12">2,94</div>
+
 
                                                 </div>
 
@@ -1474,11 +1492,14 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                                 {{-- Ongkos Produksi --}}
                                                 <div class="flex flex-row">
-                                                    <div id="xpenyusutan_a" class=" flex justify-end basis-7/12">6.341.7
+                                                    <div id="xpenyusutan_a" class=" flex justify-end basis-7/12">
+                                                        211.390
+
 
 
                                                     </div>
-                                                    <div id="xpenyusutan_b" class=" flex justify-end basis-5/12">1.56</div>
+                                                    <div id="xpenyusutan_b" class=" flex justify-end basis-5/12">1,56</div>
+
 
                                                 </div>
 
@@ -1490,10 +1511,12 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                                 {{-- Ongkos Produksi --}}
                                                 <div class="flex flex-row">
-                                                    <div id="xlainnya_a" class=" flex justify-end basis-7/12">5.282.7
+                                                    <div id="xlainnya_a" class=" flex justify-end basis-7/12">176.090
+
 
                                                     </div>
-                                                    <div id="xlainnya_b" class=" flex justify-end basis-5/12">1.30</div>
+                                                    <div id="xlainnya_b" class=" flex justify-end basis-5/12">1,30</div>
+
 
                                                 </div>
 
@@ -1507,14 +1530,16 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                                 {{-- Ongkos Produksi --}}
 
                                                 <div class="flex flex-row">
-                                                    <div id="xpendapatan_a" class="font-semibold flex justify-end basis-7/12">148.666.2
+                                                    <div id="xpendapatan_a" class="font-semibold flex justify-end basis-7/12">4.955.540
+
 
 
 
 
                                                     </div>
 
-                                                    <div id="xpendapatan_b" class="font-semibold  flex justify-end basis-5/12">1.30 </div>
+                                                    <div id="xpendapatan_b" class="font-semibold  flex justify-end basis-5/12">0,37 </div>
+
 
 
                                                 </div>
@@ -1529,7 +1554,8 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                                 {{-- Ongkos Produksi --}}
 
                                                 <div class="flex flex-row">
-                                                    <div id="xrasio_a" class="font-semibold flex justify-end basis-7/12">0.37
+                                                    <div id="xrasio_a" class="font-semibold flex justify-end basis-7/12">0.370
+
 
 
 
@@ -1589,21 +1615,19 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                             <div class="flex justify-end text-sm mb-1" id="xdistribusi_g">4%</div>
 
 
-                                            <div class="flex justify-end text-sm mb-1" id="xdistribusi_wacc">10.00%</div>
+                                            <div class="flex justify-end text-sm mb-1" id="xdistribusi_wacc">10,00%</div>
 
 
-                                            <div class="flex justify-end text-sm mb-1" id="xdistribusi_op">56.04%</div>
+                                            <div class="flex justify-end text-sm mb-1" id="xdistribusi_op">56,04%</div>
 
 
-                                            <div class="flex justify-end text-sm mb-1" id="xdistribusi_cr">18.44</div>
+                                            <div class="flex justify-end text-sm mb-1" id="xdistribusi_cr">18,44%</div>
 
 
 
                                             <div class="text-sm mb-1 flex flex-row justify-between">
                                                 <div class="">Rp</div>
                                                 <div id="xdistribusi_capital">500.000.000</div>
-
-
                                             </div>
 
 
@@ -1644,7 +1668,13 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                             <div class="flex justify-end text-sm mb-1" id="xdistribusi_roic">5%</div>
 
 
-                                            <div class="flex justify-end text-sm mb-1 text-red-500 font-bold" id="xdistribusi_eva">-50.000.000</div>
+                                            <div class="text-sm mb-1 flex flex-row justify-between">
+                                                <div class="">Rp</div>
+                                                <div id="xdistribusi_eva" class="text-red-500 font-bold">-50.000.000</div>
+                                            </div>
+
+
+                                            {{-- <div class="flex justify-end text-sm mb-1 " id="xdistribusi_eva"></div> --}}
 
 
                                         </div>
@@ -2148,7 +2178,13 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                             <div class="flex justify-end text-sm mb-1" id="distribusi_roic">0%</div>
 
-                                            <div class="flex justify-end text-sm mb-1 text-red-500 font-bold" id="distribusi_eva">0%</div>
+                                            {{-- <div class="flex justify-end text-sm mb-1 text-red-500 font-bold" id="distribusi_eva">0%</div> --}}
+
+                                            <div class="text-sm mb-1 flex flex-row justify-between">
+                                                <div class="">Rp</div>
+                                                <div id="distribusi_eva" class="text-red-500 font-bold">-50.000.000</div>
+                                            </div>
+
 
                                         </div>
                                     </div>
@@ -11556,9 +11592,9 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
             const dataInformasi = {
                 "Padi Sawah": {
                     "g": "4%"
-                    , "wacc": "10.00%"
-                    , "op": "56.04%"
-                    , "cr": "18.44"
+                    , "wacc": "10,00%"
+                    , "op": "56,04%"
+                    , "cr": "18,44%"
                     , "capital": "500.000.000"
                     , "nowc": "100.000.000"
                     , "netOpCap": "200.000.000"
