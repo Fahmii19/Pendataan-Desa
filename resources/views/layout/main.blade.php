@@ -1105,7 +1105,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                         <div class="hidden text-sm pb-2" id="content-6">
 
                             <div class="h-[80vh] flex flex-col">
-
+                                {{-- --}}
                                 {{-- --}}
 
                                 <div class="w-full grid grid-cols-1 mt-4">
