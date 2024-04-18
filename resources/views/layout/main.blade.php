@@ -766,11 +766,14 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                         </div>
 
                                         <div class="grid grid-cols-2 mt-4">
-                                            <div class="">Pemilik Lahan</div>
-
-                                            <div>Asep Komarudi</div>
-
+                                            <div class="">Periode Tanam</div>
+                                            <div>1 / 2024</div>
                                         </div>
+                                        <div class="grid grid-cols-2 mt-2">
+                                            <div class="">Pemilik Lahan</div>
+                                            <div>Asep Komarudi</div>
+                                        </div>
+
                                         <div class="grid grid-cols-2 mt-2">
                                             <div class="">Status Lahan</div>
 
