@@ -1554,7 +1554,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                                 {{-- Ongkos Produksi --}}
 
                                                 <div class="flex flex-row">
-                                                    <div id="xrasio_a" class="font-semibold flex justify-end basis-7/12">0.370
+                                                    <div id="xrasio_a" class="font-semibold flex justify-end basis-7/12">0,370
 
 
 
