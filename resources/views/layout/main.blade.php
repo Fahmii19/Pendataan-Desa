@@ -15,13 +15,13 @@
 
     {{-- Pendataan Desa --}}
 
-    {{-- <link rel="stylesheet" href="{{ asset('css/pandes.css') }}"> --}}
+    <link rel="stylesheet" href="{{ asset('css/pandes.css') }}">
 
 
 
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.5/dist/flowbite.min.css" />
 
-    <link rel="stylesheet" href="{{ asset('assets/css/panduan.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('assets/css/panduan.css') }}"> --}}
 
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -173,6 +173,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                     <input type="checkbox" class="h-3.5 w-3.5 form-check-input hapus_focus_checkbox focus:border focus:ring-0 focus:ring-offset-0 text-blue-600 border-gray-300 border rounded-sm" id="urban_fill" onchange="getDataSource('urban', localStorage.getItem('kelurahan'))">
 
                                     <label class="form-check-label ml-2 mt-1" for="transect_zone">Peta Profitabilitas Desa</label>
+
 
 
                                     <div class="form-check form-check-inline urban_fill mt-1 hidden">
@@ -2380,7 +2381,8 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                             <div class="flex flex-row w-full mb-3 ml-[1.2vw] relative">
                                 {{-- hidden --}}
 
-                                <div class="w-[30.7vw] h-[17.7vh] text-xs py-2 px-1 rounded-sm bg-white flex flex-col mr-3 legend_komoditi hidden">
+                                <div class="ukuran_legend_profit text-xs py-2 px-1 rounded-sm bg-white flex flex-col mr-3 legend_komoditi hidden">
+
 
 
 
@@ -2487,7 +2489,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                 </div>
 
                                 {{-- hidden --}}
-                                <div class=" box_prediksi_hujan hidden w-[9.2vw] h-[17.7vh] text-xs rounded-sm bg-white flex flex-col items-center pt-2 mr-3">
+                                <div class=" box_prediksi_hujan hidden text-xs rounded-sm bg-white flex flex-col items-center pt-2 mr-3">
 
 
                                     <div class="flex flex-col w-full">
@@ -2534,7 +2536,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                 </div>
 
-                                <div class=" box_usia_panen hidden w-[9.2vw] h-[17.7vh] text-xs rounded-sm bg-white flex flex-col items-center pt-2 mr-3">
+                                <div class=" box_usia_panen hidden text-xs rounded-sm bg-white flex flex-col items-center pt-2 mr-3">
 
                                     <div class="flex flex-col w-full">
 
@@ -2592,7 +2594,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                 </div>
 
 
-                                <div class="box_kesuburan hidden w-[9.2vw] h-[17.7vh] text-xs rounded-sm bg-white flex flex-col items-center pt-2 mr-3">
+                                <div class="box_kesuburan hidden text-xs rounded-sm bg-white flex flex-col items-center pt-2 mr-3">
                                     <div class="flex flex-col w-full">
 
                                         <div class="w-full flex justify-start font-semibold mb-0.5 ml-2">
