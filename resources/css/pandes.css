@@ -146,12 +146,12 @@
         @apply w-[30.7vw] h-[17.7vh];
     }
     .box_kesuburan {
-        @apply w-[9.2vw] h-[14.7vh];
+        @apply w-[9.2vw] h-[17.7vh];
     }
     .box_prediksi_hujan {
-        @apply w-[10vw] h-[14.7vh];
+        @apply w-[10vw] h-[17.7vh];
     }
     .box_usia_panen {
-        @apply w-[9.2vw] h-[14.7vh];
+        @apply w-[9.2vw] h-[17.7vh];
     }
 }
