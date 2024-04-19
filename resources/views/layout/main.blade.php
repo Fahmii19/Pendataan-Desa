@@ -1119,7 +1119,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                 {{-- --}}
                                 <div class="w-full grid grid-cols-1 mt-2 mb-3">
                                     <div class="flex justify-end">
-                                        <a target="_blank" href="{{ asset('pdf_file/Laporan_Keuangan_Finansial.pdf') }}"></i>
+                                        <a target="_blank" href="{{ asset('pdf_file/Laporan_Keuangan.pdf') }}"></i>
 
                                             <button type="button" class="text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-xs px-2.5 py-0.5 text-center">
                                                 Cetak
