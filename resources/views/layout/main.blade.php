@@ -1220,9 +1220,9 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                                 {{-- Produksi a --}}
 
                                                 <div class="flex flex-row">
-                                                    <div id="xtotal_a" class="font-semibold flex justify-end basis-7/12">18.514.840</div>
+                                                    <div id="xtotal_a" class="font-semibold flex justify-end basis-7/12">18,514,840</div>
 
-                                                    <div id="xtotal_b" id="x" class="font-semibold flex justify-end basis-5/12">100,00</div>
+                                                    <div id="xtotal_b" id="x" class="font-semibold flex justify-end basis-5/12">100</div>
 
                                                 </div>
 
@@ -1235,7 +1235,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                                 {{-- Produksi a --}}
 
                                                 <div class="flex flex-row">
-                                                    <div id="xutama_a" class=" flex justify-end basis-7/12">18.437.650
+                                                    <div id="xutama_a" class=" flex justify-end basis-7/12">18,437,650
 
 
                                                     </div>
@@ -1257,7 +1257,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                                 <div class="flex flex-row">
                                                     <div id="xikutan_a" class=" flex justify-end basis-7/12">
-                                                        77.190
+                                                        77,190
 
 
 
@@ -1279,10 +1279,10 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                                 <div class="flex flex-row">
                                                     <div id="xongkos_produksi_a" class="font-semibold flex justify-end basis-7/12">
-                                                        1.355.930
+                                                        1,355,930
                                                     </div>
 
-                                                    <div id="xongkos_produksi_b" class="font-semibold  flex justify-end basis-5/12">100,00 </div>
+                                                    <div id="xongkos_produksi_b" class="font-semibold  flex justify-end basis-5/12">100 </div>
 
 
 
@@ -1297,7 +1297,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                                 {{-- Ongkos Produksi --}}
                                                 <div class="flex flex-row">
                                                     <div id="xbenih_a" class=" flex justify-end basis-7/12">
-                                                        514.360
+                                                        514,360
                                                     </div>
                                                     <div id="xbenih_b" class=" flex justify-end basis-5/12">
                                                         3,79</div>
@@ -1313,7 +1313,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                                 {{-- Ongkos Produksi --}}
                                                 <div class="flex flex-row">
                                                     <div id="xpupuk_a" class=" flex justify-end basis-7/12">
-                                                        1.278.000
+                                                        1,278,000
                                                     </div>
                                                     <div id="xpupuk_b" class=" flex justify-end basis-5/12">9,43</div>
                                                 </div>
@@ -1325,7 +1325,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                                 {{-- Ongkos Produksi --}}
                                                 <div class="flex flex-row">
-                                                    <div id="xpestisida_a" class=" flex justify-end basis-7/12">569.550
+                                                    <div id="xpestisida_a" class=" flex justify-end basis-7/12">569,550
 
                                                     </div>
                                                     <div id="xpestisida_b" class=" flex justify-end basis-5/12">4,20</div>
@@ -1341,7 +1341,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                                 {{-- Ongkos Produksi --}}
                                                 <div class="flex flex-row">
                                                     <div id="xtenagakerja_a" class=" flex justify-end basis-7/12">
-                                                        6.615.190
+                                                        6,615,190
                                                     </div>
                                                     <div id="xtenagakerja_b" class=" flex justify-end basis-5/12">48,79</div>
 
@@ -1355,7 +1355,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                                 {{-- Ongkos Produksi --}}
                                                 <div class="flex flex-row">
-                                                    <div id="xtenagabayar_a" class=" flex justify-end basis-7/12">2.282.090
+                                                    <div id="xtenagabayar_a" class=" flex justify-end basis-7/12">2,282,090
 
 
 
@@ -1375,7 +1375,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                                 {{-- Ongkos Produksi --}}
                                                 <div class="flex flex-row">
                                                     <div id="xtenagatidakdibayar_a" class=" flex justify-end basis-7/12">
-                                                        1.946.970
+                                                        1,946,970
 
                                                     </div>
                                                     <div id="xtenagatidakdibayar_b" class=" flex justify-end basis-5/12">14,36</div>
@@ -1391,7 +1391,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                                 {{-- Ongkos Produksi --}}
                                                 <div class="flex flex-row">
                                                     <div id="xjasapertanian_a" class=" flex justify-end basis-7/12">
-                                                        2.386.130
+                                                        2,386,130
 
 
 
@@ -1409,7 +1409,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                                 {{-- Ongkos Produksi --}}
                                                 <div class="flex flex-row">
                                                     <div id="xsewalahan_a" class=" flex justify-end basis-7/12">
-                                                        3.472.360
+                                                        3,472,360
 
 
 
@@ -1426,7 +1426,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                                 {{-- Ongkos Produksi --}}
                                                 <div class="flex flex-row">
-                                                    <div id="xpbb_a" class=" flex justify-end basis-7/12">80.100
+                                                    <div id="xpbb_a" class=" flex justify-end basis-7/12">80,100
 
 
 
@@ -1443,7 +1443,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                                 {{-- Ongkos Produksi --}}
                                                 <div class="flex flex-row">
-                                                    <div id="xbunga_a" class=" flex justify-end basis-7/12">35.480
+                                                    <div id="xbunga_a" class=" flex justify-end basis-7/12">35,480
 
 
 
@@ -1460,7 +1460,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                                 {{-- Ongkos Produksi --}}
                                                 <div class="flex flex-row">
-                                                    <div id="xpremi_a" class=" flex justify-end basis-7/12">1.770
+                                                    <div id="xpremi_a" class=" flex justify-end basis-7/12">1,770
 
 
                                                     </div>
@@ -1476,7 +1476,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                                 {{-- Ongkos Produksi --}}
                                                 <div class="flex flex-row">
-                                                    <div id="xsewa_a" class=" flex justify-end basis-7/12">398.810</div>
+                                                    <div id="xsewa_a" class=" flex justify-end basis-7/12">398,810</div>
 
 
 
@@ -1493,7 +1493,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                                 {{-- Ongkos Produksi --}}
                                                 <div class="flex flex-row">
                                                     <div id="xpenyusutan_a" class=" flex justify-end basis-7/12">
-                                                        211.390
+                                                        211,390
 
 
 
@@ -1511,7 +1511,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                                 {{-- Ongkos Produksi --}}
                                                 <div class="flex flex-row">
-                                                    <div id="xlainnya_a" class=" flex justify-end basis-7/12">176.090
+                                                    <div id="xlainnya_a" class=" flex justify-end basis-7/12">176,090
 
 
                                                     </div>
@@ -1530,7 +1530,7 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                                 {{-- Ongkos Produksi --}}
 
                                                 <div class="flex flex-row">
-                                                    <div id="xpendapatan_a" class="font-semibold flex justify-end basis-7/12">4.955.540
+                                                    <div id="xpendapatan_a" class="font-semibold flex justify-end basis-7/12">4,955,540
 
 
 
@@ -12169,72 +12169,72 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                     $("#distribusi_roic").text(data.roic);
                     $("#distribusi_eva").text(data.eva);
                     $("#utama_a").text(data.produksi.utama.nilaiRupiah.toLocaleString("id-ID"));
-                    $("#utama_b").text(data.produksi.utama.persentase.toFixed(2).replace('.', '.'));
+                    $("#utama_b").text(data.produksi.utama.persentase.toFixed(2).replace(',', ','));
 
                     $("#ikutan_a").text(data.produksi.ikutan.nilaiRupiah.toLocaleString("id-ID"));
-                    $("#ikutan_b").text(data.produksi.ikutan.persentase.toFixed(2).replace('.', '.'));
+                    $("#ikutan_b").text(data.produksi.ikutan.persentase.toFixed(2).replace(',', ','));
 
                     $("#total_a").text(data.produksi.total.nilaiRupiah.toLocaleString("id-ID"));
-                    $("#total_b").text(data.produksi.total.persentase.toFixed(2).replace('.', '.'));
+                    $("#total_b").text(data.produksi.total.persentase.toFixed(2).replace(',', ','));
 
                     $("#ongkos_produksi_a").text(data.produksi.ongkos_produksi_a.nilaiRupiah.toLocaleString("id-ID"));
-                    $("#ongkos_produksi_b").text(data.produksi.ongkos_produksi_a.persentase.toFixed(2).replace('.', '.'));
+                    $("#ongkos_produksi_b").text(data.produksi.ongkos_produksi_a.persentase.toFixed(2).replace(',', ','));
 
                     $("#benih_a").text(data.produksi.benih_a.nilaiRupiah.toLocaleString("id-ID"));
-                    $("#benih_b").text(data.produksi.benih_a.persentase.toFixed(2).replace('.', '.'));
+                    $("#benih_b").text(data.produksi.benih_a.persentase.toFixed(2).replace(',', ','));
 
                     $("#pupuk_a").text(data.produksi.pupuk_a.nilaiRupiah.toLocaleString("id-ID"));
-                    $("#pupuk_b").text(data.produksi.pupuk_a.persentase.toFixed(2).replace('.', '.'));
+                    $("#pupuk_b").text(data.produksi.pupuk_a.persentase.toFixed(2).replace(',', ','));
 
                     $("#pestisida_a").text(data.produksi.pestisida_a.nilaiRupiah.toLocaleString("id-ID"));
-                    $("#pestisida_b").text(data.produksi.pestisida_a.persentase.toFixed(2).replace('.', '.'));
+                    $("#pestisida_b").text(data.produksi.pestisida_a.persentase.toFixed(2).replace(',', ','));
 
                     $("#tenagakerja_a").text(data.produksi.tenagakerja_a.nilaiRupiah.toLocaleString("id-ID"));
-                    $("#tenagakerja_b").text(data.produksi.tenagakerja_a.persentase.toFixed(2).replace('.', '.'));
+                    $("#tenagakerja_b").text(data.produksi.tenagakerja_a.persentase.toFixed(2).replace(',', ','));
 
                     $("#tenagabayar_a").text(data.produksi.tenagabayar_a.nilaiRupiah.toLocaleString("id-ID"));
-                    $("#tenagabayar_b").text(data.produksi.tenagabayar_a.persentase.toFixed(2).replace('.', '.'));
+                    $("#tenagabayar_b").text(data.produksi.tenagabayar_a.persentase.toFixed(2).replace(',', ','));
 
                     $("#tenagatidakdibayar_a").text(data.produksi.tenagatidakdibayar_a.nilaiRupiah.toLocaleString("id-ID"));
-                    $("#tenagatidakdibayar_b").text(data.produksi.tenagatidakdibayar_a.persentase.toFixed(2).replace('.', '.'));
+                    $("#tenagatidakdibayar_b").text(data.produksi.tenagatidakdibayar_a.persentase.toFixed(2).replace(',', ','));
 
                     $("#jasapertanian_a").text(data.produksi.jasapertanian_a.nilaiRupiah.toLocaleString("id-ID"));
-                    $("#jasapertanian_b").text(data.produksi.jasapertanian_a.persentase.toFixed(2).replace('.', '.'));
+                    $("#jasapertanian_b").text(data.produksi.jasapertanian_a.persentase.toFixed(2).replace(',', ','));
 
 
                     $("#sewalahan_a").text(data.produksi.sewalahan_a.nilaiRupiah.toLocaleString("id-ID"));
-                    $("#sewalahan_b").text(data.produksi.sewalahan_a.persentase.toFixed(2).replace('.', '.'));
+                    $("#sewalahan_b").text(data.produksi.sewalahan_a.persentase.toFixed(2).replace(',', ','));
 
                     $("#sewalahan_a").text(data.produksi.sewalahan_a.nilaiRupiah.toLocaleString("id-ID"));
-                    $("#sewalahan_b").text(data.produksi.sewalahan_a.persentase.toFixed(2).replace('.', '.'));
+                    $("#sewalahan_b").text(data.produksi.sewalahan_a.persentase.toFixed(2).replace(',', ','));
 
                     $("#pbb_a").text(data.produksi.pbb_a.nilaiRupiah.toLocaleString("id-ID"));
-                    $("#pbb_b").text(data.produksi.pbb_a.persentase.toFixed(2).replace('.', '.'));
+                    $("#pbb_b").text(data.produksi.pbb_a.persentase.toFixed(2).replace(',', ','));
 
                     $("#bunga_a").text(data.produksi.bunga_a.nilaiRupiah.toLocaleString("id-ID"));
-                    $("#bunga_b").text(data.produksi.bunga_a.persentase.toFixed(2).replace('.', '.'));
+                    $("#bunga_b").text(data.produksi.bunga_a.persentase.toFixed(2).replace(',', ','));
 
                     $("#retribusi_a").text(data.produksi.retribusi_a.nilaiRupiah.toLocaleString("id-ID"));
-                    $("#retribusi_b").text(data.produksi.retribusi_a.persentase.toFixed(2).replace('.', '.'));
+                    $("#retribusi_b").text(data.produksi.retribusi_a.persentase.toFixed(2).replace(',', ','));
 
                     $("#premi_a").text(data.produksi.premi_a.nilaiRupiah.toLocaleString("id-ID"));
-                    $("#premi_b").text(data.produksi.premi_a.persentase.toFixed(2).replace('.', '.'));
+                    $("#premi_b").text(data.produksi.premi_a.persentase.toFixed(2).replace(',', ','));
 
                     $("#sewa_a").text(data.produksi.sewaalat_a.nilaiRupiah.toLocaleString("id-ID"));
-                    $("#sewa_b").text(data.produksi.sewaalat_a.persentase.toFixed(2).replace('.', '.'));
+                    $("#sewa_b").text(data.produksi.sewaalat_a.persentase.toFixed(2).replace(',', ','));
 
                     $("#penyusutan_a").text(data.produksi.penyusutan_a.nilaiRupiah.toLocaleString("id-ID"));
-                    $("#penyusutan_b").text(data.produksi.penyusutan_a.persentase.toFixed(2).replace('.', '.'));
+                    $("#penyusutan_b").text(data.produksi.penyusutan_a.persentase.toFixed(2).replace(',', ','));
 
                     // lainnya
                     $("#lainnya_a").text(data.produksi.lainnya_a.nilaiRupiah.toLocaleString("id-ID"));
-                    $("#lainnya_b").text(data.produksi.lainnya_a.persentase.toFixed(2).replace('.', '.'));
+                    $("#lainnya_b").text(data.produksi.lainnya_a.persentase.toFixed(2).replace(',', ','));
 
                     // pendaptan c
                     $("#pendapatan_a").text(data.produksi.pendapatan_a.nilaiRupiah.toLocaleString("id-ID"));
-                    $("#pendapatan_b").text(data.produksi.pendapatan_a.persentase.toFixed(2).replace('.', '.'));
+                    $("#pendapatan_b").text(data.produksi.pendapatan_a.persentase.toFixed(2).replace(',', ','));
 
-                    $("#rasio_a").text(data.produksi.rasio_a.persentase.toFixed(2).replace('.', '.'));
+                    $("#rasio_a").text(data.produksi.rasio_a.persentase.toFixed(2).replace(',', ','));
 
 
                 } else {
