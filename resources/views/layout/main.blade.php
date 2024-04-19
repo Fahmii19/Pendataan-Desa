@@ -842,8 +842,14 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                         <div class="grid grid-cols-2 mt-2 mb-2">
                                             <div class="">Perkiraan Panen</div>
                                             <div>70 ton</div>
-
                                         </div>
+
+                                        <div class="grid grid-cols-2 mt-2">
+                                            <div class="">Realisasi Panen</div>
+                                            <div>&nbsp;</div>
+                                        </div>
+
+
 
 
                                     </div>
@@ -1121,7 +1127,8 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                     <div class="flex justify-end">
                                         <a target="_blank" href="{{ asset('pdf_file/Laporan_Keuangan.pdf') }}"></i>
 
-                                            <button type="button" class="text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-xs px-2.5 py-0.5 text-center">
+                                            <button type="button" style="outline:none !important;" class="text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-0 focus:ring-blue-300 font-medium rounded-lg text-xs px-2.5 py-0.5 text-center">
+
                                                 Cetak
                                             </button>
                                         </a>
@@ -2531,7 +2538,12 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
 
                                     <div class="flex flex-col w-full">
 
-                                        <div class="w-full flex justify-center font-semibold mb-0.5">Usia Tanaman (minggu)</div>
+                                        <div class="w-full flex justify-start font-semibold mb-0.5 ml-2">
+
+                                            Usia (minggu)
+
+
+                                        </div>
 
 
                                         <div class="inline-flex items-center ml-2">
@@ -2583,7 +2595,12 @@ Bintang 3 ke atas', 'Gedung Peribadatan', 'Perpustakaan', 'Bar', 'Perkumpulan So
                                 <div class="box_kesuburan hidden w-[9.2vw] h-[17.7vh] text-xs rounded-sm bg-white flex flex-col items-center pt-2 mr-3">
                                     <div class="flex flex-col w-full">
 
-                                        <div class="w-full flex justify-center font-semibold mb-0.5">Kesuburan Lahan (pH)</div>
+                                        <div class="w-full flex justify-start font-semibold mb-0.5 ml-2">
+
+                                            pH Tanah
+
+
+                                        </div>
 
 
                                         <div class="inline-flex items-center ml-2">
