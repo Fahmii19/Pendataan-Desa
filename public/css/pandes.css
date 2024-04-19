@@ -1031,9 +1031,6 @@ video {
 .h-\[15rem\] {
   height: 15rem;
 }
-.h-\[17\.7vh\] {
-  height: 17.7vh;
-}
 .h-\[17px\] {
   height: 17px;
 }
@@ -1214,9 +1211,6 @@ video {
 .w-\[3\.5rem\] {
   width: 3.5rem;
 }
-.w-\[30\.7vw\] {
-  width: 30.7vw;
-}
 .w-\[40vw\] {
   width: 40vw;
 }
@@ -1228,9 +1222,6 @@ video {
 }
 .w-\[71vw\] {
   width: 71vw;
-}
-.w-\[9\.2vw\] {
-  width: 9.2vw;
 }
 .w-\[9\.5rem\] {
   width: 9.5rem;
@@ -2407,11 +2398,6 @@ video {
     position: relative !important;
 }
 
-.tess {
-  --tw-text-opacity: 1 !important;
-  color: rgb(220 38 38 / var(--tw-text-opacity)) !important;
-}
-
 /* Mobile first: Gaya ini berlaku untuk semua ukuran layar */
 .element {
     background-color: blue; /* Warna ini berlaku untuk layar di bawah 640px */
@@ -2419,41 +2405,143 @@ video {
 
 /* sm breakpoint: 640px */
 @media (min-width: 640px) {
-    .tess {
-    --tw-text-opacity: 1 !important;
-    color: rgb(220 38 38 / var(--tw-text-opacity)) !important;
+    .ukuran_legend_profit {
+    height: 17.7vh;
+    width: 30.7vw;
+  }
+    .box_kesuburan {
+    height: 14.7vh;
+    width: 9.2vw;
+  }
+    .box_prediksi_hujan {
+    height: 14.7vh;
+    width: 10vw;
+  }
+    .box_usia_panen {
+    height: 14.7vh;
+    width: 9.2vw;
   }
 }
 
 /* md breakpoint: 768px */
 @media (min-width: 768px) {
-    .tess {
-    --tw-text-opacity: 1 !important;
-    color: rgb(220 38 38 / var(--tw-text-opacity)) !important;
+    .ukuran_legend_profit {
+    height: 17.7vh;
+    width: 30.7vw;
+  }
+    .box_kesuburan {
+    height: 14.7vh;
+    width: 9.2vw;
+  }
+    .box_prediksi_hujan {
+    height: 14.7vh;
+    width: 10vw;
+  }
+    .box_usia_panen {
+    height: 14.7vh;
+    width: 9.2vw;
   }
 }
 
 /* lg breakpoint: 1024px */
 @media (min-width: 1024px) {
-    .tess {
-    --tw-text-opacity: 1 !important;
-    color: rgb(220 38 38 / var(--tw-text-opacity)) !important;
+    .ukuran_legend_profit {
+    height: 17.7vh;
+    width: 30.7vw;
+  }
+    .box_kesuburan {
+    height: 14.7vh;
+    width: 9.2vw;
+  }
+    .box_prediksi_hujan {
+    height: 14.7vh;
+    width: 10vw;
+  }
+    .box_usia_panen {
+    height: 14.7vh;
+    width: 9.2vw;
   }
 }
 
 /* xl breakpoint: 1280px */
 @media (min-width: 1280px) {
-    .tess {
-    --tw-text-opacity: 1 !important;
-    color: rgb(220 38 38 / var(--tw-text-opacity)) !important;
+    .ukuran_legend_profit {
+    height: 17.7vh;
+    width: 30.7vw;
+  }
+    .box_kesuburan {
+    height: 14.7vh;
+    width: 9.2vw;
+  }
+    .box_prediksi_hujan {
+    height: 14.7vh;
+    width: 10vw;
+  }
+    .box_usia_panen {
+    height: 14.7vh;
+    width: 9.2vw;
+  }
+}
+
+/* xl breakpoint: 1280px */
+@media (min-width: 1380px) {
+    .ukuran_legend_profit {
+    height: 14.7vh;
+    width: 32.7vw;
+  }
+
+    .box_kesuburan {
+    height: 14.7vh;
+    width: 9.2vw;
+  }
+    .box_prediksi_hujan {
+    height: 14.7vh;
+    width: 10vw;
+  }
+    .box_usia_panen {
+    height: 14.7vh;
+    width: 9.2vw;
+  }
+}
+
+/* xl breakpoint: 1280px */
+@media (min-width: 1480px) {
+    .ukuran_legend_profit {
+    height: 17.7vh;
+    width: 30.7vw;
+  }
+
+    .box_kesuburan {
+    height: 14.7vh;
+    width: 9.2vw;
+  }
+    .box_prediksi_hujan {
+    height: 14.7vh;
+    width: 10vw;
+  }
+    .box_usia_panen {
+    height: 14.7vh;
+    width: 9.2vw;
   }
 }
 
 /* 2xl breakpoint: 1536px */
 @media (min-width: 1536px) {
-    .tess {
-    --tw-text-opacity: 1 !important;
-    color: rgb(220 38 38 / var(--tw-text-opacity)) !important;
+    .ukuran_legend_profit {
+    height: 17.7vh;
+    width: 30.7vw;
+  }
+    .box_kesuburan {
+    height: 14.7vh;
+    width: 9.2vw;
+  }
+    .box_prediksi_hujan {
+    height: 14.7vh;
+    width: 10vw;
+  }
+    .box_usia_panen {
+    height: 14.7vh;
+    width: 9.2vw;
   }
 }
 .hover\:rounded-lg:hover {

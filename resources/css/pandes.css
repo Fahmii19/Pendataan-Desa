@@ -37,10 +37,6 @@
     position: relative !important;
 }
 
-.tess {
-    @apply text-red-600 !important;
-}
-
 /* Mobile first: Gaya ini berlaku untuk semua ukuran layar */
 .element {
     background-color: blue; /* Warna ini berlaku untuk layar di bawah 640px */
@@ -48,35 +44,114 @@
 
 /* sm breakpoint: 640px */
 @media (min-width: 640px) {
-    .tess {
-        @apply text-red-600 !important;
+    .ukuran_legend_profit {
+        @apply w-[30.7vw] h-[17.7vh];
+    }
+    .box_kesuburan {
+        @apply w-[9.2vw] h-[14.7vh];
+    }
+    .box_prediksi_hujan {
+        @apply w-[10vw] h-[14.7vh];
+    }
+    .box_usia_panen {
+        @apply w-[9.2vw] h-[14.7vh];
     }
 }
 
 /* md breakpoint: 768px */
 @media (min-width: 768px) {
-    .tess {
-        @apply text-red-600 !important;
+    .ukuran_legend_profit {
+        @apply w-[30.7vw] h-[17.7vh];
+    }
+    .box_kesuburan {
+        @apply w-[9.2vw] h-[14.7vh];
+    }
+    .box_prediksi_hujan {
+        @apply w-[10vw] h-[14.7vh];
+    }
+    .box_usia_panen {
+        @apply w-[9.2vw] h-[14.7vh];
     }
 }
 
 /* lg breakpoint: 1024px */
 @media (min-width: 1024px) {
-    .tess {
-        @apply text-red-600 !important;
+    .ukuran_legend_profit {
+        @apply w-[30.7vw] h-[17.7vh];
+    }
+    .box_kesuburan {
+        @apply w-[9.2vw] h-[14.7vh];
+    }
+    .box_prediksi_hujan {
+        @apply w-[10vw] h-[14.7vh];
+    }
+    .box_usia_panen {
+        @apply w-[9.2vw] h-[14.7vh];
     }
 }
 
 /* xl breakpoint: 1280px */
 @media (min-width: 1280px) {
-    .tess {
-        @apply text-red-600 !important;
+    .ukuran_legend_profit {
+        @apply w-[30.7vw] h-[17.7vh];
+    }
+    .box_kesuburan {
+        @apply w-[9.2vw] h-[14.7vh];
+    }
+    .box_prediksi_hujan {
+        @apply w-[10vw] h-[14.7vh];
+    }
+    .box_usia_panen {
+        @apply w-[9.2vw] h-[14.7vh];
+    }
+}
+
+/* xl breakpoint: 1280px */
+@media (min-width: 1380px) {
+    .ukuran_legend_profit {
+        @apply w-[32.7vw] h-[14.7vh];
+    }
+
+    .box_kesuburan {
+        @apply w-[9.2vw] h-[14.7vh];
+    }
+    .box_prediksi_hujan {
+        @apply w-[10vw] h-[14.7vh];
+    }
+    .box_usia_panen {
+        @apply w-[9.2vw] h-[14.7vh];
+    }
+}
+
+/* xl breakpoint: 1280px */
+@media (min-width: 1480px) {
+    .ukuran_legend_profit {
+        @apply w-[30.7vw] h-[17.7vh];
+    }
+
+    .box_kesuburan {
+        @apply w-[9.2vw] h-[14.7vh];
+    }
+    .box_prediksi_hujan {
+        @apply w-[10vw] h-[14.7vh];
+    }
+    .box_usia_panen {
+        @apply w-[9.2vw] h-[14.7vh];
     }
 }
 
 /* 2xl breakpoint: 1536px */
 @media (min-width: 1536px) {
-    .tess {
-        @apply text-red-600 !important;
+    .ukuran_legend_profit {
+        @apply w-[30.7vw] h-[17.7vh];
+    }
+    .box_kesuburan {
+        @apply w-[9.2vw] h-[14.7vh];
+    }
+    .box_prediksi_hujan {
+        @apply w-[10vw] h-[14.7vh];
+    }
+    .box_usia_panen {
+        @apply w-[9.2vw] h-[14.7vh];
     }
 }
