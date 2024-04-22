@@ -70,7 +70,7 @@
       <!--  -->
       <div class="h-[100vh] overflow-hidden grid grid-cols-1">
         <div class="w-full h-[100vh] relative">
-          <div id="map" class="w-full h-full absolute"></div>
+          <!--  -->
 
           <div class="w-full h-full grid grid-cols-[425px,1fr]">
             <!-- Pertama -->
@@ -2629,51 +2629,54 @@
             </div>
 
             <!-- Kedua -->
-            <div class="flex flex-col justify-between">
-              <!-- Atas -->
-              <div class="w-full flex flex-col relative">
-                <div id="btn-titik"></div>
-                <!--  -->
-                <div class="w-full flex flex-row justify-center mx-3 my-4">
+
+            <!--  -->
+            <div class="grid grid-rows-1 w-full h-screen relative">
+              <div id="mapSoaraja" class="w-full h-full"></div>
+              <div class="absolute top-0 w-full">
+                <div class="w-full flex flex-col relative">
+                  <div id="btn-titik"></div>
                   <!--  -->
+                  <div class="w-full flex flex-row justify-center my-4">
+                    <!--  -->
 
-                  <div>
-                    <button
-                      id=""
-                      class="inline-flex justify-center items-center px-4 h-8 text-sm font-medium rounded-full shadow-sm focus:outline-none focus:ring-0 bg-white text-black mr-3"
-                    >
-                      <span class="tracking-wider">Penggilingan Beras</span>
-                    </button>
+                    <div>
+                      <button
+                        id=""
+                        class="inline-flex justify-center items-center px-4 h-8 text-sm font-medium rounded-full shadow-sm focus:outline-none focus:ring-0 bg-white text-black mr-3"
+                      >
+                        <span class="tracking-wider">Penggilingan Beras</span>
+                      </button>
+                    </div>
+                    <!--  -->
+
+                    <div>
+                      <button
+                        id=""
+                        class="inline-flex justify-center items-center px-4 h-8 text-sm font-medium rounded-full shadow-sm focus:outline-none focus:ring-0 bg-white text-black mr-3"
+                      >
+                        <span class="tracking-wider">Lumbung Desa</span>
+                      </button>
+                    </div>
+
+                    <!--  -->
+
+                    <div>
+                      <button
+                        id=""
+                        class="inline-flex justify-center items-center px-4 h-8 text-sm font-medium rounded-full shadow-sm focus:outline-none focus:ring-0 bg-white text-black mr-3"
+                      >
+                        <span class="tracking-wider">Pasar Induk</span>
+                      </button>
+                    </div>
+
+                    <!--  -->
                   </div>
-                  <!--  -->
-
-                  <div>
-                    <button
-                      id=""
-                      class="inline-flex justify-center items-center px-4 h-8 text-sm font-medium rounded-full shadow-sm focus:outline-none focus:ring-0 bg-white text-black mr-3"
-                    >
-                      <span class="tracking-wider">Lumbung Desa</span>
-                    </button>
-                  </div>
-
-                  <!--  -->
-
-                  <div>
-                    <button
-                      id=""
-                      class="inline-flex justify-center items-center px-4 h-8 text-sm font-medium rounded-full shadow-sm focus:outline-none focus:ring-0 bg-white text-black mr-3"
-                    >
-                      <span class="tracking-wider">Pasar Induk</span>
-                    </button>
-                  </div>
-
                   <!--  -->
                 </div>
-                <!--  -->
               </div>
 
-              <!-- Bawah -->
-              <div class="w-full flex items-stretch">
+              <div class="absolute bottom-0">
                 <div class="w-full flex flex-col self-end">
                   <!-- Legend -->
                   <div class="flex flex-row w-full mb-3 ml-[1.2vw] relative">
@@ -2950,7 +2953,7 @@
                   <!-- Running Teks -->
                   <div class="w-full bg-white relative">
                     <div
-                      class="w-[71vw] h-[3.1vh] flex justify-center items-center"
+                      class="w-[73vw] h-[3.1vh] flex justify-center items-center"
                     >
                       <div
                         class="teks-berjalan-pencarian w-full text-sm text-black whitespace-nowrap"
@@ -2968,17 +2971,17 @@
                 </div>
               </div>
             </div>
+
+            <!--  -->
           </div>
         </div>
       </div>
     </div>
     <!--  -->
     <!-- End Main -->
-    <script type="module" src="/main.js"></script>
 
     <!-- Custom JS -->
     <script type="module" src="./src/js/desa.js" defer></script>
-    <script type="module" src="./src/js/index.js" defer></script>
     <script type="module" src="./src/js/peta.js" defer></script>
 
     <!-- JQuery -->

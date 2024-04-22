@@ -1,3 +1,18 @@
+import rpOnImg from "../images/desa/rp-on.png";
+import saldoOnImg from "../images/desa/saldo-on.png";
+import penOnImg from "../images/desa/pen-on.png";
+import padi1Img from "../images/desa/padi1.jpg";
+import padi2Img from "../images/desa/padi2.jpg";
+import padi3Img from "../images/desa/padi3.png";
+import leftOffImg from "../images/desa/left-off.png";
+import leftOnImg from "../images/desa/left-on.png";
+
+import saldoOffImg from "../images/desa/saldo-off.png";
+import rpOffImg from "../images/desa/rp-off.png";
+import penOffImg from "../images/desa/pen-off.png";
+import rightOffImg from "../images/desa/right-off.png";
+import rightOnImg from "../images/desa/right-on.png";
+
 // Running Teks Berjalan
 $(document).ready(function () {
   $(".teks-berjalan-pencarian").marquee({
@@ -24,12 +39,12 @@ document.addEventListener("DOMContentLoaded", function () {
         btn.querySelector("svg").classList.add("text-blue-500");
         btn.querySelector("svg").classList.remove("text-white");
       } else if (btn.id === "btn-4") {
-        btn.querySelector("img").src = "./src/images/desa/saldo-off.png";
+        btn.querySelector("img").src = `${saldoOffImg}`;
       }
       if (btn.id === "btn-6") {
-        btn.querySelector("img").src = "./src/images/desa/rp-off.png";
+        btn.querySelector("img").src = `${rpOffImg}`;
       } else if (btn.id === "btn-8") {
-        btn.querySelector("img").src = "./src/images/desa/pen-off.png";
+        btn.querySelector("img").src = `${penOffImg}`;
       }
     });
 
@@ -45,11 +60,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     // Menangani penggantian gambar ketika tombol aktif
     if (btnId === "btn-6") {
-      activeBtn.querySelector("img").src = "./src/images/desa/rp-on.png";
+      activeBtn.querySelector("img").src = `${rpOnImg}`;
     } else if (btnId === "btn-4") {
-      activeBtn.querySelector("img").src = "./src/images/desa/saldo-on.png";
+      activeBtn.querySelector("img").src = `${saldoOnImg}`;
     } else if (btnId === "btn-8") {
-      activeBtn.querySelector("img").src = "./src/images/desa/pen-on.png";
+      activeBtn.querySelector("img").src = `${penOnImg}`;
     }
   }
 
@@ -784,17 +799,17 @@ window.togglePrediksiCurahHujan = function () {
 const dataPersil = [
   {
     tanggal: "19 Maret 2024",
-    gambar: "/./src/images/desa/padi1.jpg",
+    gambar: `${padi1Img}`,
     catatan: "Hama tikus menyerang persil 1. Sebaiknya segera diatasi.",
   },
   {
     tanggal: "23 Maret 2024",
-    gambar: "/./src/images/desa/padi2.jpg",
+    gambar: `${padi2Img}`,
     catatan: "Kurang air untuk seminggu ini karena sungai sedang kering.",
   },
   {
     tanggal: "27 Maret 2024",
-    gambar: "/./src/images/desa/padi3.png",
+    gambar: `${padi3Img}`,
     catatan: "Sementara beli air dari tetangga untuk mengairi sawah.",
   },
 ];
@@ -810,28 +825,19 @@ $(document).ready(function () {
 
     // Update status dan gambar tombol prev
     if (currentIndex === 0) {
-      $("#prev-informasi-persil").attr(
-        "src",
-        "/./src/images/desa/left-off.png"
-      );
+      $("#prev-informasi-persil").attr("src", leftOffImg);
       $("#prev-wrapper").addClass("border border-gray-300");
     } else {
-      $("#prev-informasi-persil").attr("src", "/./src/images/desa/left-on.png");
+      $("#prev-informasi-persil").attr("src", leftOnImg);
       $("#prev-wrapper").removeClass("border border-gray-300");
     }
 
     // Update status dan gambar tombol next
     if (currentIndex === dataPersil.length - 1) {
-      $("#next-informasi-persil").attr(
-        "src",
-        "/./src/images/desa/right-off.png"
-      );
+      $("#next-informasi-persil").attr("src", rightOffImg);
       $("#next-wrapper").addClass("border border-gray-300");
     } else {
-      $("#next-informasi-persil").attr(
-        "src",
-        "/./src/images/desa/right-on.png"
-      );
+      $("#next-informasi-persil").attr("src", rightOnImg);
       $("#next-wrapper").removeClass("border border-gray-500");
     }
   }
