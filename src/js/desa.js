@@ -1015,7 +1015,7 @@ document.addEventListener("DOMContentLoaded", function () {
   link.href = laporanKeuanganPDF;
 });
 
-// Pertama
+// Function Button Group Menu
 document.addEventListener("DOMContentLoaded", function () {
   const dataInformasi = {
     "Padi Sawah": {
