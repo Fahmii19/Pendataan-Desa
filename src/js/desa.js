@@ -971,4 +971,33 @@ document.addEventListener("DOMContentLoaded", function () {
 //
 //
 
-// test
+// Menutup dropdown jika klik diluar dropdown
+$(document).on("click", function (e) {
+  var target = $(e.target);
+  if (
+    !target.closest("#dropdown-button-pencarian").length &&
+    !target.closest("#dropdown-menu-pencarian").length
+  ) {
+    $("#dropdown-menu-pencarian").hide();
+    $("#arrow-icon-pencarian").removeClass("rotate-180");
+  }
+});
+
+$("#dropdown-button-pencarian").click(function (e) {
+  $("#dropdown-menu-pencarian").toggle();
+  $("#arrow-icon-pencarian").toggleClass("rotate-180");
+  e.stopPropagation(); // Mencegah event click menyebar ke dokumen
+});
+
+$("#dropdown-menu-pencarian a").click(function () {
+  var selectedItemText = $(this).text().trim();
+  tampilkanInformasi(selectedItemText);
+  $("#dropdown-menu-pencarian").hide();
+});
+
+//
+//
+//
+//
+
+//
