@@ -1223,3 +1223,125 @@ input[name="plan"]:checked ~ .menuKetigaAds {
   border-top-color: rgb(224 36 36) !important;
   margin-top: -1px;
 }
+
+/* Desa */
+
+.hapus_focus_checkbox:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  /* border: none !important; */
+}
+
+/* sm breakpoint: 640px */
+@media (min-width: 640px) {
+  .ukuran_legend_profit {
+    @apply w-[31.5vw] h-[17.7vh];
+  }
+  .box_kesuburan {
+    @apply w-[9.2vw] h-[14.7vh];
+  }
+  .box_prediksi_hujan {
+    @apply w-[10vw] h-[14.7vh];
+  }
+  .box_usia_panen {
+    @apply w-[9.2vw] h-[14.7vh];
+  }
+}
+
+/* md breakpoint: 768px */
+@media (min-width: 768px) {
+  .ukuran_legend_profit {
+    @apply w-[31.5vw] h-[17.7vh];
+  }
+  .box_kesuburan {
+    @apply w-[9.2vw] h-[14.7vh];
+  }
+  .box_prediksi_hujan {
+    @apply w-[10vw] h-[14.7vh];
+  }
+  .box_usia_panen {
+    @apply w-[9.2vw] h-[14.7vh];
+  }
+}
+
+/* lg breakpoint: 1024px */
+@media (min-width: 1024px) {
+  .ukuran_legend_profit {
+    @apply w-[31.5vw] h-[17.7vh];
+  }
+  .box_kesuburan {
+    @apply w-[9.2vw] h-[14.7vh];
+  }
+  .box_prediksi_hujan {
+    @apply w-[10vw] h-[14.7vh];
+  }
+  .box_usia_panen {
+    @apply w-[9.2vw] h-[14.7vh];
+  }
+}
+
+/* xl breakpoint: 1280px */
+@media (min-width: 1280px) {
+  .ukuran_legend_profit {
+    @apply w-[36.5vw] h-[14.7vh];
+  }
+  .box_kesuburan {
+    @apply w-[9.2vw] h-[14.7vh];
+  }
+  .box_prediksi_hujan {
+    @apply w-[10vw] h-[14.7vh];
+  }
+  .box_usia_panen {
+    @apply w-[9.2vw] h-[14.7vh];
+  }
+}
+
+/* xl breakpoint: 1280px */
+@media (min-width: 1380px) {
+  .ukuran_legend_profit {
+    @apply w-[34.2vw] h-[14.7vh];
+  }
+
+  .box_kesuburan {
+    @apply w-[9.2vw] h-[14.7vh];
+  }
+  .box_prediksi_hujan {
+    @apply w-[10vw] h-[14.7vh];
+  }
+  .box_usia_panen {
+    @apply w-[9.2vw] h-[14.7vh];
+  }
+}
+
+/* xl breakpoint: 1280px */
+@media (min-width: 1480px) {
+  .ukuran_legend_profit {
+    @apply w-[32.5vw] h-[14.7vh];
+  }
+
+  .box_kesuburan {
+    @apply w-[9.2vw] h-[14.7vh];
+  }
+  .box_prediksi_hujan {
+    @apply w-[10vw] h-[14.7vh];
+  }
+  .box_usia_panen {
+    @apply w-[9.2vw] h-[14.7vh];
+  }
+}
+
+/* 2xl breakpoint: 1536px */
+@media (min-width: 1536px) {
+  .ukuran_legend_profit {
+    @apply w-[31.3vw] h-[17.6vh];
+  }
+  .box_kesuburan {
+    @apply w-[9.2vw] h-[17.5vh];
+  }
+  .box_prediksi_hujan {
+    @apply w-[10vw] h-[17.5vh];
+  }
+  .box_usia_panen {
+    @apply w-[9.2vw] h-[17.5vh];
+  }
+}
