@@ -97,7 +97,7 @@
               <!--  -->
               <div class="w-full px-4">
                 <div class="grid grid-cols-1 gap-y-1 text-sm">
-                  <div class="grid grid-cols-[27px,1fr,39px]">
+                  <div class="grid grid-cols-[27px,1fr,39px] mb-1">
                     <div class=""></div>
                     <div class="w-[19.5vw] ml-2">
                       <div class="relative w-full h-[4.5vh]">
@@ -330,260 +330,245 @@
               </div>
 
               <!-- Button Grup Menu -->
-              <div class="w-full px-4 mt-[1.2rem] h-full flex flex-col">
+              <div class="w-full px-8 mt-[1.2rem] h-full flex flex-col">
+                <!--  -->
                 <div class="grid grid-cols-4 gap-y-7 py-4 border-b border-t">
                   <!-- Button Pertama -->
-                  <div>
-                    <div class="flex justify-start items-center relative">
-                      <button
-                        style="outline: none !important"
-                        class="h-10 w-10 z-10 flex justify-center items-center border bg-blue-500 border-blue-500 rounded-full outline-none"
-                        id="btn-1"
-                        data-tooltip-target="tooltip-no-arrow"
-                        data-tooltip-placement="bottom"
+                  <div class="flex justify-center items-center relative">
+                    <button
+                      style="outline: none !important"
+                      class="h-10 w-10 z-10 flex justify-center items-center border bg-blue-500 border-blue-500 rounded-full outline-none"
+                      id="btn-1"
+                      data-tooltip-target="tooltip-no-arrow"
+                      data-tooltip-placement="bottom"
+                    >
+                      <svg
+                        class="text-white h-[18px]"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="18"
+                        fill="currentColor"
+                        class="bi bi-map"
+                        viewBox="0 0 16 16"
                       >
-                        <svg
-                          class="text-white h-[18px]"
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="18"
-                          height="18"
-                          fill="currentColor"
-                          class="bi bi-map"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.5.5 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103M10 1.91l-4-.8v12.98l4 .8zm1 12.98 4-.8V1.11l-4 .8zm-6-.8V1.11l-4 .8v12.98z"
-                          />
-                        </svg>
-                      </button>
+                        <path
+                          fill-rule="evenodd"
+                          d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.5.5 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103M10 1.91l-4-.8v12.98l4 .8zm1 12.98 4-.8V1.11l-4 .8zm-6-.8V1.11l-4 .8v12.98z"
+                        />
+                      </svg>
+                    </button>
 
-                      <div
-                        id="tooltip-no-arrow"
-                        role="tooltip"
-                        class="absolute z-10 invisible inline-block px-2 py-1 text-xs font-medium text-black bg-white border rounded-lg"
-                      >
-                        Profil Desa
-                      </div>
+                    <div
+                      id="tooltip-no-arrow"
+                      role="tooltip"
+                      class="absolute z-10 invisible inline-block px-2 py-1 text-xs font-medium text-black bg-white border rounded-lg"
+                    >
+                      Profil Desa
                     </div>
                   </div>
 
                   <!-- Button Ketiga -->
-                  <div>
-                    <div class="flex justify-start items-center">
-                      <button
-                        style="outline: none !important"
-                        class="inline-block h-10 w-10 flex justify-center items-center border border-blue-500 rounded-full"
-                        id="btn-3"
-                        data-tooltip-target="tooltip-no-arrow-3"
-                        data-tooltip-placement="bottom"
+                  <div class="flex justify-center items-center">
+                    <button
+                      style="outline: none !important"
+                      class="inline-block h-10 w-10 flex justify-center items-center border border-blue-500 rounded-full"
+                      id="btn-3"
+                      data-tooltip-target="tooltip-no-arrow-3"
+                      data-tooltip-placement="bottom"
+                    >
+                      <svg
+                        class="text-[#007bff] h-[17px]"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17"
+                        height="17"
+                        fill="currentColor"
+                        class="bi bi-graph-up"
+                        viewBox="0 0 16 16"
                       >
-                        <svg
-                          class="text-[#007bff] h-[17px]"
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="17"
-                          height="17"
-                          fill="currentColor"
-                          class="bi bi-graph-up"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M0 0h1v15h15v1H0zm14.817 3.113a.5.5 0 0 1 .07.704l-4.5 5.5a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61 4.15-5.073a.5.5 0 0 1 .704-.07"
-                          />
-                        </svg>
-                      </button>
-                      <div
-                        id="tooltip-no-arrow-3"
-                        role="tooltip"
-                        class="absolute z-10 invisible inline-block px-2 py-1 text-xs font-medium text-black bg-white border rounded-lg"
-                      >
-                        Pasar Induk
-                      </div>
+                        <path
+                          fill-rule="evenodd"
+                          d="M0 0h1v15h15v1H0zm14.817 3.113a.5.5 0 0 1 .07.704l-4.5 5.5a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61 4.15-5.073a.5.5 0 0 1 .704-.07"
+                        />
+                      </svg>
+                    </button>
+                    <div
+                      id="tooltip-no-arrow-3"
+                      role="tooltip"
+                      class="absolute z-10 invisible inline-block px-2 py-1 text-xs font-medium text-black bg-white border rounded-lg"
+                    >
+                      Pasar Induk
                     </div>
                   </div>
 
                   <!-- Button Ketujuh -->
-                  <div>
-                    <div class="flex justify-start items-center">
-                      <button
-                        style="outline: none !important"
-                        class="inline-block h-10 w-10 flex justify-center items-center border border-blue-500 rounded-full"
-                        id="btn-7"
-                        data-tooltip-target="tooltip-no-arrow-7"
-                        data-tooltip-placement="bottom"
+                  <div class="flex justify-center items-center">
+                    <button
+                      style="outline: none !important"
+                      class="inline-block h-10 w-10 flex justify-center items-center border border-blue-500 rounded-full"
+                      id="btn-7"
+                      data-tooltip-target="tooltip-no-arrow-7"
+                      data-tooltip-placement="bottom"
+                    >
+                      <svg
+                        class="text-[#007bff] h-[19px]"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="19"
+                        height="19"
+                        fill="currentColor"
+                        class="bi bi-building"
+                        viewBox="0 0 16 16"
                       >
-                        <svg
-                          class="text-[#007bff] h-[19px]"
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="19"
-                          height="19"
-                          fill="currentColor"
-                          class="bi bi-building"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"
-                          />
-                          <path
-                            d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z"
-                          />
-                        </svg>
-                      </button>
-                      <div
-                        id="tooltip-no-arrow-7"
-                        role="tooltip"
-                        class="absolute z-10 invisible inline-block px-2 py-1 text-xs font-medium text-black bg-white border rounded-lg"
-                      >
-                        Patokan Harga
-                      </div>
+                        <path
+                          d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"
+                        />
+                        <path
+                          d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z"
+                        />
+                      </svg>
+                    </button>
+                    <div
+                      id="tooltip-no-arrow-7"
+                      role="tooltip"
+                      class="absolute z-10 invisible inline-block px-2 py-1 text-xs font-medium text-black bg-white border rounded-lg"
+                    >
+                      Patokan Harga
                     </div>
                   </div>
 
                   <!-- Button Keempat -->
-                  <div>
-                    <div class="flex justify-start items-center">
-                      <button
-                        style="outline: none !important"
-                        class="inline-block h-10 w-10 flex justify-center items-center border border-blue-500 rounded-full"
-                        id="btn-4"
-                        data-tooltip-target="tooltip-no-arrow-4"
-                        data-tooltip-placement="bottom"
-                      >
-                        <img
-                          src="./src/images/desa/right-off.png"
-                          alt=""
-                          class="w-[1.4rem] h-[1.4rem] ml-0.5 object-contain"
-                        />
-                      </button>
-                      <div
-                        id="tooltip-no-arrow-4"
-                        role="tooltip"
-                        class="absolute z-10 invisible inline-block px-2 py-1 text-xs font-medium text-black bg-white border rounded-lg"
-                      >
-                        Saldo Lumbung
-                      </div>
+                  <div class="flex justify-center items-center">
+                    <button
+                      style="outline: none !important"
+                      class="inline-block h-10 w-10 flex justify-center items-center border border-blue-500 rounded-full"
+                      id="btn-4"
+                      data-tooltip-target="tooltip-no-arrow-4"
+                      data-tooltip-placement="bottom"
+                    >
+                      <img
+                        src="./src/images/desa/right-off.png"
+                        alt=""
+                        class="w-[1.4rem] h-[1.4rem] ml-0.5 object-contain"
+                      />
+                    </button>
+                    <div
+                      id="tooltip-no-arrow-4"
+                      role="tooltip"
+                      class="absolute z-10 invisible inline-block px-2 py-1 text-xs font-medium text-black bg-white border rounded-lg"
+                    >
+                      Saldo Lumbung
                     </div>
                   </div>
 
                   <!-- Button Kedua -->
-                  <div>
-                    <div class="flex justify-start items-center">
-                      <button
-                        style="outline: none !important"
-                        class="inline-block h-10 w-10 flex justify-center items-center border border-blue-500 rounded-full"
-                        id="btn-2"
-                        data-tooltip-target="tooltip-no-arrow-2"
-                        data-tooltip-placement="bottom"
+                  <div class="flex justify-center items-center">
+                    <button
+                      style="outline: none !important"
+                      class="inline-block h-10 w-10 flex justify-center items-center border border-blue-500 rounded-full"
+                      id="btn-2"
+                      data-tooltip-target="tooltip-no-arrow-2"
+                      data-tooltip-placement="bottom"
+                    >
+                      <svg
+                        class="text-[#007bff] h-[21px]"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="21"
+                        height="21"
+                        fill="currentColor"
+                        class="bi bi-cloud-drizzle"
+                        viewBox="0 0 16 16"
                       >
-                        <svg
-                          class="text-[#007bff] h-[21px]"
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="21"
-                          height="21"
-                          fill="currentColor"
-                          class="bi bi-cloud-drizzle"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            d="M4.158 12.025a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 0 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317m6 0a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 0 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317m-3.5 1.5a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 0 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317m6 0a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 1 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317m.747-8.498a5.001 5.001 0 0 0-9.499-1.004A3.5 3.5 0 1 0 3.5 11H13a3 3 0 0 0 .405-5.973M8.5 2a4 4 0 0 1 3.976 3.555.5.5 0 0 0 .5.445H13a2 2 0 0 1 0 4H3.5a2.5 2.5 0 1 1 .605-4.926.5.5 0 0 0 .596-.329A4 4 0 0 1 8.5 2"
-                          />
-                        </svg>
-                      </button>
-
-                      <div
-                        id="tooltip-no-arrow-2"
-                        role="tooltip"
-                        class="absolute z-10 invisible inline-block px-2 py-1 text-xs font-medium text-black bg-white border rounded-lg"
-                      >
-                        Prakiraan Cuaca
-                      </div>
-                    </div>
-                  </div>
-
-                  <div>
-                    <div class="flex justify-start items-center">
-                      <button
-                        style="outline: none !important"
-                        class="inline-block h-10 w-10 flex justify-center items-center border border-blue-500 rounded-full"
-                        id="btn-5"
-                        data-tooltip-target="tooltip-no-arrow-5"
-                        data-tooltip-placement="bottom"
-                      >
-                        <svg
-                          class="text-[#007bff] h-[27px]"
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="27"
-                          height="27"
-                          fill="currentColor"
-                          class="bi bi-flower3"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            d="M11.424 8c.437-.052.811-.136 1.04-.268a2 2 0 0 0-2-3.464c-.229.132-.489.414-.752.767C9.886 4.63 10 4.264 10 4a2 2 0 1 0-4 0c0 .264.114.63.288 1.035-.263-.353-.523-.635-.752-.767a2 2 0 0 0-2 3.464c.229.132.603.216 1.04.268-.437.052-.811.136-1.04.268a2 2 0 1 0 2 3.464c.229-.132.489-.414.752-.767C6.114 11.37 6 11.736 6 12a2 2 0 1 0 4 0c0-.264-.114-.63-.288-1.035.263.353.523.635.752.767a2 2 0 1 0 2-3.464c-.229-.132-.603-.216-1.04-.268M9 4a2 2 0 0 1-.045.205q-.059.2-.183.484a13 13 0 0 1-.637 1.223L8 6.142l-.135-.23a13 13 0 0 1-.637-1.223 4 4 0 0 1-.183-.484A2 2 0 0 1 7 4a1 1 0 1 1 2 0M3.67 5.5a1 1 0 0 1 1.366-.366 2 2 0 0 1 .156.142q.142.15.326.4c.245.333.502.747.742 1.163l.13.232-.265.002a13 13 0 0 1-1.379-.06 4 4 0 0 1-.51-.083 2 2 0 0 1-.2-.064A1 1 0 0 1 3.67 5.5m1.366 5.366a1 1 0 0 1-1-1.732l.047-.02q.055-.02.153-.044.202-.048.51-.083a13 13 0 0 1 1.379-.06q.135 0 .266.002l-.131.232c-.24.416-.497.83-.742 1.163a4 4 0 0 1-.327.4 2 2 0 0 1-.155.142M9 12a1 1 0 0 1-2 0 2 2 0 0 1 .045-.206q.058-.198.183-.483c.166-.378.396-.808.637-1.223L8 9.858l.135.23c.241.415.47.845.637 1.223q.124.285.183.484A1.3 1.3 0 0 1 9 12m3.33-6.5a1 1 0 0 1-.366 1.366 2 2 0 0 1-.2.064q-.202.048-.51.083c-.412.045-.898.061-1.379.06q-.135 0-.266-.002l.131-.232c.24-.416.497-.83.742-1.163a4 4 0 0 1 .327-.4q.07-.074.114-.11l.041-.032a1 1 0 0 1 1.366.366m-1.366 5.366a2 2 0 0 1-.155-.141 4 4 0 0 1-.327-.4A13 13 0 0 1 9.74 9.16l-.13-.232.265-.002c.48-.001.967.015 1.379.06q.308.035.51.083.098.024.153.044l.048.02a1 1 0 1 1-1 1.732zM8 9a1 1 0 1 1 0-2 1 1 0 0 1 0 2"
-                          />
-                        </svg>
-                      </button>
-
-                      <div
-                        id="tooltip-no-arrow-5"
-                        role="tooltip"
-                        class="absolute z-10 invisible inline-block px-2 py-1 text-xs font-medium text-black bg-white border rounded-lg"
-                      >
-                        Persediaan Pupuk
-                      </div>
-                    </div>
-                  </div>
-
-                  <div>
-                    <div class="flex justify-start items-center">
-                      <button
-                        style="outline: none !important"
-                        class="inline-block h-10 w-10 flex justify-center items-center border border-blue-500 rounded-full"
-                        id="btn-8"
-                        data-tooltip-target="tooltip-no-arrow-8"
-                        data-tooltip-placement="bottom"
-                      >
-                        <img
-                          src=""
-                          alt=""
-                          class="w-[1.4rem] h-[1.4rem] object-contain"
+                        <path
+                          d="M4.158 12.025a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 0 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317m6 0a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 0 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317m-3.5 1.5a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 0 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317m6 0a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 1 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317m.747-8.498a5.001 5.001 0 0 0-9.499-1.004A3.5 3.5 0 1 0 3.5 11H13a3 3 0 0 0 .405-5.973M8.5 2a4 4 0 0 1 3.976 3.555.5.5 0 0 0 .5.445H13a2 2 0 0 1 0 4H3.5a2.5 2.5 0 1 1 .605-4.926.5.5 0 0 0 .596-.329A4 4 0 0 1 8.5 2"
                         />
-                      </button>
+                      </svg>
+                    </button>
 
-                      <div
-                        id="tooltip-no-arrow-8"
-                        role="tooltip"
-                        class="absolute z-10 invisible inline-block px-2 py-1 text-xs font-medium text-black bg-white border rounded-lg"
-                      >
-                        Informasi Persil
-                      </div>
+                    <div
+                      id="tooltip-no-arrow-2"
+                      role="tooltip"
+                      class="absolute z-10 invisible inline-block px-2 py-1 text-xs font-medium text-black bg-white border rounded-lg"
+                    >
+                      Prakiraan Cuaca
                     </div>
                   </div>
 
-                  <div>
-                    <div class="flex justify-start items-center">
-                      <button
-                        style="outline: none !important"
-                        class="inline-block h-10 w-10 flex justify-center items-center border border-blue-500 rounded-full"
-                        id="btn-6"
-                        data-tooltip-target="tooltip-no-arrow-6"
-                        data-tooltip-placement="bottom"
+                  <div class="flex justify-center items-center">
+                    <button
+                      style="outline: none !important"
+                      class="inline-block h-10 w-10 flex justify-center items-center border border-blue-500 rounded-full"
+                      id="btn-5"
+                      data-tooltip-target="tooltip-no-arrow-5"
+                      data-tooltip-placement="bottom"
+                    >
+                      <svg
+                        class="text-[#007bff] h-[27px]"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="27"
+                        height="27"
+                        fill="currentColor"
+                        class="bi bi-flower3"
+                        viewBox="0 0 16 16"
                       >
-                        <img
-                          src="./src/images/desa/right-off.png"
-                          alt=""
-                          class="w-[1.1rem] h-[1.1rem] ml-0.5 mt-0.5 object-contain"
+                        <path
+                          d="M11.424 8c.437-.052.811-.136 1.04-.268a2 2 0 0 0-2-3.464c-.229.132-.489.414-.752.767C9.886 4.63 10 4.264 10 4a2 2 0 1 0-4 0c0 .264.114.63.288 1.035-.263-.353-.523-.635-.752-.767a2 2 0 0 0-2 3.464c.229.132.603.216 1.04.268-.437.052-.811.136-1.04.268a2 2 0 1 0 2 3.464c.229-.132.489-.414.752-.767C6.114 11.37 6 11.736 6 12a2 2 0 1 0 4 0c0-.264-.114-.63-.288-1.035.263.353.523.635.752.767a2 2 0 1 0 2-3.464c-.229-.132-.603-.216-1.04-.268M9 4a2 2 0 0 1-.045.205q-.059.2-.183.484a13 13 0 0 1-.637 1.223L8 6.142l-.135-.23a13 13 0 0 1-.637-1.223 4 4 0 0 1-.183-.484A2 2 0 0 1 7 4a1 1 0 1 1 2 0M3.67 5.5a1 1 0 0 1 1.366-.366 2 2 0 0 1 .156.142q.142.15.326.4c.245.333.502.747.742 1.163l.13.232-.265.002a13 13 0 0 1-1.379-.06 4 4 0 0 1-.51-.083 2 2 0 0 1-.2-.064A1 1 0 0 1 3.67 5.5m1.366 5.366a1 1 0 0 1-1-1.732l.047-.02q.055-.02.153-.044.202-.048.51-.083a13 13 0 0 1 1.379-.06q.135 0 .266.002l-.131.232c-.24.416-.497.83-.742 1.163a4 4 0 0 1-.327.4 2 2 0 0 1-.155.142M9 12a1 1 0 0 1-2 0 2 2 0 0 1 .045-.206q.058-.198.183-.483c.166-.378.396-.808.637-1.223L8 9.858l.135.23c.241.415.47.845.637 1.223q.124.285.183.484A1.3 1.3 0 0 1 9 12m3.33-6.5a1 1 0 0 1-.366 1.366 2 2 0 0 1-.2.064q-.202.048-.51.083c-.412.045-.898.061-1.379.06q-.135 0-.266-.002l.131-.232c.24-.416.497-.83.742-1.163a4 4 0 0 1 .327-.4q.07-.074.114-.11l.041-.032a1 1 0 0 1 1.366.366m-1.366 5.366a2 2 0 0 1-.155-.141 4 4 0 0 1-.327-.4A13 13 0 0 1 9.74 9.16l-.13-.232.265-.002c.48-.001.967.015 1.379.06q.308.035.51.083.098.024.153.044l.048.02a1 1 0 1 1-1 1.732zM8 9a1 1 0 1 1 0-2 1 1 0 0 1 0 2"
                         />
-                      </button>
+                      </svg>
+                    </button>
 
-                      <div
-                        id="tooltip-no-arrow-6"
-                        role="tooltip"
-                        class="absolute z-10 invisible inline-block px-2 py-1 text-xs font-medium text-black bg-white border rounded-lg"
-                      >
-                        Finansial
-                      </div>
+                    <div
+                      id="tooltip-no-arrow-5"
+                      role="tooltip"
+                      class="absolute z-10 invisible inline-block px-2 py-1 text-xs font-medium text-black bg-white border rounded-lg"
+                    >
+                      Persediaan Pupuk
+                    </div>
+                  </div>
+
+                  <div class="flex justify-center items-center">
+                    <button
+                      style="outline: none !important"
+                      class="inline-block h-10 w-10 flex justify-center items-center border border-blue-500 rounded-full"
+                      id="btn-8"
+                      data-tooltip-target="tooltip-no-arrow-8"
+                      data-tooltip-placement="bottom"
+                    >
+                      <img
+                        src=""
+                        alt=""
+                        class="w-[1.4rem] h-[1.4rem] object-contain"
+                      />
+                    </button>
+
+                    <div
+                      id="tooltip-no-arrow-8"
+                      role="tooltip"
+                      class="absolute z-10 invisible inline-block px-2 py-1 text-xs font-medium text-black bg-white border rounded-lg"
+                    >
+                      Informasi Persil
+                    </div>
+                  </div>
+
+                  <div class="flex justify-center items-center">
+                    <button
+                      style="outline: none !important"
+                      class="inline-block h-10 w-10 flex justify-center items-center border border-blue-500 rounded-full"
+                      id="btn-6"
+                      data-tooltip-target="tooltip-no-arrow-6"
+                      data-tooltip-placement="bottom"
+                    >
+                      <img
+                        src="./src/images/desa/right-off.png"
+                        alt=""
+                        class="w-[1.1rem] h-[1.1rem] ml-0.5 mt-0.5 object-contain"
+                      />
+                    </button>
+
+                    <div
+                      id="tooltip-no-arrow-6"
+                      role="tooltip"
+                      class="absolute z-10 invisible inline-block px-2 py-1 text-xs font-medium text-black bg-white border rounded-lg"
+                    >
+                      Finansial
                     </div>
                   </div>
                 </div>
@@ -1275,7 +1260,7 @@
                         >
                           <div class="w-full grid grid-cols-[1fr,1fr] mt-3">
                             <div
-                              class="w-full flex justify-start items-center cursor-pointer"
+                              class="w-full flex justify-center items-center cursor-pointer"
                             >
                               <span class="">Komoditi</span>
                             </div>
@@ -1956,7 +1941,7 @@
                         >
                           <div class="w-full grid grid-cols-[1fr,1fr] mt-3">
                             <div
-                              class="w-full flex justify-start items-center cursor-pointer"
+                              class="w-full flex justify-center items-center cursor-pointer"
                             >
                               <span class="">Komoditi</span>
                             </div>
