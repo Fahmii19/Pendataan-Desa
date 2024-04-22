@@ -101,7 +101,31 @@
                     <div class=""></div>
                     <div class="">
                       <div class="w-[20vw]">
-                        <div
+                        <div class="relative w-full h-[4.5vh]">
+                          <input
+                            class="w-full h-full border border-gray-200 rounded-md focus:outline-none focus:outline-none focus:ring-0 text-sm focus:border-gray-200"
+                            type="search"
+                            placeholder="Cari nama tempat ..."
+                          />
+                          <button
+                            class="absolute inset-y-0 right-0 flex items-center px-2.5 text-gray-700 bg-gray-100 border border-gray-300 rounded-r-md hover:bg-gray-200 focus:outline-none focus:outline-none focus:ring-0"
+                          >
+                            <svg
+                              class="h-5 w-5"
+                              fill="currentColor"
+                              viewBox="0 0 20 20"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M14.795 13.408l5.204 5.204a1 1 0 01-1.414 1.414l-5.204-5.204a7.5 7.5 0 111.414-1.414zM8.5 14A5.5 5.5 0 103 8.5 5.506 5.506 0 008.5 14z"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+
+                        <!-- <div
                           class="input-group relative flex flex-wrap items-stretch w-full mb-4"
                         >
                           <input
@@ -111,7 +135,7 @@
                             aria-label="Search"
                             aria-describedby="button-addon2"
                           />
-                        </div>
+                        </div> -->
                         <!-- <input
                           class="border-2 border-gray-300 bg-white h-8 w-full px-5 pr-16 rounded-lg text-sm focus:outline-none focus:ring-0"
                           type="search"
@@ -429,7 +453,7 @@
                         data-tooltip-placement="bottom"
                       >
                         <img
-                          src="./src/images/desa/saldo-off.png"
+                          src="./src/images/desa/right-off.png"
                           alt=""
                           class="w-[1.4rem] h-[1.4rem] ml-0.5 object-contain"
                         />
@@ -523,7 +547,7 @@
                         data-tooltip-placement="bottom"
                       >
                         <img
-                          src="./src/images/desa/right-off.png"
+                          src=""
                           alt=""
                           class="w-[1.4rem] h-[1.4rem] object-contain"
                         />
@@ -4493,16 +4517,13 @@
             if (btn.querySelector("svg")) {
               btn.querySelector("svg").classList.add("text-blue-500");
               btn.querySelector("svg").classList.remove("text-white");
+            } else if (btn.id === "btn-4") {
+              btn.querySelector("img").src = "./src/images/desa/saldo-off.png";
             }
-            // Menangani penggantian gambar untuk tombol "btn-6" dan "btn-4"
             if (btn.id === "btn-6") {
               btn.querySelector("img").src = "./src/images/desa/rp-off.png";
-            } else if (btn.id === "btn-4") {
-              btn.querySelector("img").src = "./src/gambar/desa/saldo-off.png";
-            }
-            // Menambahkan kondisi untuk "btn-8"
-            else if (btn.id === "btn-8") {
-              btn.querySelector("img").src = "./src/images/desa/pen-off.png"; // Ganti dengan path gambar off yang benar
+            } else if (btn.id === "btn-8") {
+              btn.querySelector("img").src = "./src/images/desa/pen-off.png";
             }
           });
 
@@ -4522,10 +4543,8 @@
           } else if (btnId === "btn-4") {
             activeBtn.querySelector("img").src =
               "./src/images/desa/saldo-on.png";
-          }
-          // Menambahkan kondisi untuk "btn-8"
-          else if (btnId === "btn-8") {
-            activeBtn.querySelector("img").src = "./src/images/desa/pen-on.png"; // Ganti dengan path gambar on yang benar
+          } else if (btnId === "btn-8") {
+            activeBtn.querySelector("img").src = "./src/images/desa/pen-on.png";
           }
         }
 
