@@ -1,3 +1,4 @@
+// Gambar
 import rpOnImg from "../images/desa/rp-on.png";
 import saldoOnImg from "../images/desa/saldo-on.png";
 import penOnImg from "../images/desa/pen-on.png";
@@ -6,12 +7,14 @@ import padi2Img from "../images/desa/padi2.jpg";
 import padi3Img from "../images/desa/padi3.png";
 import leftOffImg from "../images/desa/left-off.png";
 import leftOnImg from "../images/desa/left-on.png";
-
 import saldoOffImg from "../images/desa/saldo-off.png";
 import rpOffImg from "../images/desa/rp-off.png";
 import penOffImg from "../images/desa/pen-off.png";
 import rightOffImg from "../images/desa/right-off.png";
 import rightOnImg from "../images/desa/right-on.png";
+
+// Dokumen
+import laporanKeuanganPDF from "../Laporan_Keuangan.pdf";
 
 // Running Teks Berjalan
 $(document).ready(function () {
@@ -1006,4 +1009,8 @@ $("#dropdown-menu-pencarian a").click(function () {
 //
 //
 
-//
+// Cetak PDF Finansial
+document.addEventListener("DOMContentLoaded", function () {
+  const link = document.getElementById("cetakPDF");
+  link.href = laporanKeuanganPDF;
+});
