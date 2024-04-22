@@ -731,7 +731,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 // Function Togle Checkbox
 
-function toggleUsiaTanam() {
+window.toggleUsiaTanam = function () {
   const mapContainer = document.querySelector(".box_usia_panen");
 
   const checkbox = document.getElementById("fertility_map_checkbox");
@@ -740,9 +740,9 @@ function toggleUsiaTanam() {
   } else {
     mapContainer.classList.add("hidden");
   }
-}
+};
 
-function toggleKesuburan() {
+window.toggleKesuburan = function () {
   const mapContainer = document.querySelector(".box_kesuburan");
   const checkbox = document.getElementById("fertility_kesuburan_map");
 
@@ -751,9 +751,9 @@ function toggleKesuburan() {
   } else {
     mapContainer.classList.add("hidden");
   }
-}
+};
 
-function toggleKomoditi() {
+window.toggleKomoditi = function () {
   const mapContainer = document.querySelector(".ukuran_legend_profit");
   const checkbox = document.getElementById("fertility_komoditi_map");
   if (checkbox.checked) {
@@ -761,9 +761,9 @@ function toggleKomoditi() {
   } else {
     mapContainer.classList.add("hidden");
   }
-}
+};
 
-function togglePrediksiCurahHujan() {
+window.togglePrediksiCurahHujan = function () {
   const prediksiCurahHujanContainer = document.querySelector(
     ".box_prediksi_hujan"
   );
@@ -773,7 +773,7 @@ function togglePrediksiCurahHujan() {
   } else {
     prediksiCurahHujanContainer.classList.add("hidden");
   }
-}
+};
 
 //
 //
