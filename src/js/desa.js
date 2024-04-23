@@ -1499,3 +1499,55 @@ document.addEventListener("DOMContentLoaded", function () {
     localStorage.removeItem("kontenAgregatsUpdated");
   }
 });
+
+// Toggle Button Kabupaten
+function toggleKecamatan() {
+  let konten = document.querySelector(".konten_kecamatan");
+
+  if (konten.classList.contains("hidden")) {
+    konten.classList.remove("hidden");
+  } else {
+    konten.classList.add("hidden");
+  }
+}
+document
+  .querySelector(".btn_kecamatan")
+  .addEventListener("click", toggleKecamatan);
+
+// Toggle Button kabupaten
+
+function toggleKabupaten() {
+  let konten = document.querySelector(".konten_kabupaten");
+
+  if (konten.classList.contains("hidden")) {
+    konten.classList.remove("hidden");
+  } else {
+    konten.classList.add("hidden");
+  }
+}
+
+document
+  .querySelector(".btn_kabupaten")
+  .addEventListener("click", toggleKabupaten);
+
+// Toggle
+function toggleDropdownAndRotateIcon() {
+  let judulKabupaten = document.querySelector(".hidden_judul_kabupaten");
+  let kontenKabupaten = document.querySelector(".konten_kabupaten");
+  let svgIcon = document.querySelector(".btn_dropdown_open_kabupaten svg");
+
+  judulKabupaten.classList.toggle("hidden");
+  kontenKabupaten.classList.add("hidden");
+
+  //
+
+  if (svgIcon.classList.contains("rotate-icon")) {
+    svgIcon.classList.remove("rotate-icon");
+  } else {
+    svgIcon.classList.add("rotate-icon");
+  }
+}
+
+document
+  .querySelector(".btn_dropdown_open_kabupaten")
+  .addEventListener("click", toggleDropdownAndRotateIcon);

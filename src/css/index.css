@@ -1226,6 +1226,31 @@ input[name="plan"]:checked ~ .menuKetigaAds {
 
 /* Desa */
 
+/*  */
+
+/* .btn-stick3 {
+  background-image: url("../images/desa/check.png") !important;
+  background-position: 50% !important;
+  background-repeat: no-repeat !important;
+  display: block !important;
+  background-size: inherit !important;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  width: 60% !important;
+  height: 60% !important;
+} */
+
+.rotate-icon {
+  transform: rotate(180deg); /* Rotates the icon 180 degrees */
+  transition: transform 0.3s ease; /* Smooth transition for the rotation */
+}
+
+/*  */
+
+.mapboxgl-ctrl-group button {
+  background-color: white !important;
+}
+
 .komponen_dua_grid_form_layer {
   @apply grid grid-cols-[425px,1fr];
 }

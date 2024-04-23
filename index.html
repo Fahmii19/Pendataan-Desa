@@ -93,6 +93,7 @@
                   </div>
                 </div>
               </div>
+
               <!--  -->
               <div class="w-full px-5">
                 <div class="grid grid-cols-1 gap-y-1 text-sm">
@@ -140,25 +141,6 @@
                         class="form-check-label ml-2 mt-1"
                         for="fertility_komoditi_map"
                         >Peta Profitabilitas Desa
-
-                        <span
-                          class="text-white material-design-icon apps-icon text-white"
-                          aria-hidden="true"
-                          role="img"
-                          ><svg
-                            fill="currentColor"
-                            class="material-design-icon__svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              d="M16,20H20V16H16M16,14H20V10H16M10,8H14V4H10M16,8H20V4H16M10,14H14V10H10M4,14H8V10H4M4,20H8V16H4M10,20H14V16H10M4,8H8V4H4V8Z"
-                            >
-                              <!---->
-                            </path>
-                          </svg></span
-                        >
                       </label>
 
                       <div
@@ -615,7 +597,7 @@
                       </h5>
 
                       <div class="w-full flex flex-col text-sm text-black">
-                        <div class="grid grid-cols-2 mt-0">
+                        <div class="grid grid-cols-2 mb-4">
                           <div>&nbsp;</div>
 
                           <div>
@@ -624,7 +606,7 @@
                               onclick="ButtonAgregat()"
                               type="button"
                               style="outline: none !important"
-                              class="text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-0 focus:ring-blue-300 font-medium rounded-full text-xs px-2 py-0.5 text-center"
+                              class="text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-0 focus:ring-blue-300 font-medium rounded-full text-xs px-2.5 py-0.5 text-center"
                             >
                               Agregat
                             </button>
@@ -3023,27 +3005,127 @@
               <!-- tea5 -->
               <div class="absolute bottom-top konten_agregat hidden">
                 <!-- <div class="bg-white">sadasasas</div> -->
-                <div
-                  class="h-[100vh] w-[100vw] flex bg-white justify-center border border-red-500"
-                >
-                  <div class="flex flex-col">
-                    <div class="">Binong</div>
-                    <div class="">Cicadas</div>
-                    <div class="">Citrajaya</div>
-                    <div class="">Karangsari</div>
-                    <div class="">Karangwangi</div>
-                    <div class="">Kediri</div>
-                    <div class="">Kihiyang</div>
-                    <div class="">Mulyasari</div>
-                    <div class="">Nangerang</div>
+                <div class="h-[100vh] w-[100vw] flex bg-white justify-center">
+                  <div
+                    class="h-full w-[27vw] grid grid-cols-1 border border-gray-500"
+                  >
+                    <!--  -->
+
+                    <!--  -->
+                    <div class="w-full flex flex-col">
+                      <div class="w-full text-lg font-bold py-3 text-center">
+                        Agregat
+                      </div>
+
+                      <!-- button kecamatan -->
+                      <div class="w-full grid grid-cols-[1fr,1fr,55px]">
+                        <div
+                          class="w-full cursor-pointer font-bold btn_kecamatan"
+                        >
+                          Tanjungsiang
+                        </div>
+                        <div class="flex justify-end">
+                          <div class="w-full grid grid-cols-[40px,1fr]">
+                            <div class="w-full flex justify-center">Rp</div>
+                            <div class="w-full flex justify-end">
+                              100.000.000.000
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex justify-center items-end">
+                          <div
+                            class="border-2 border-black rounded-full w-5 h-5 flex justify-center items-center cursor-pointer btn_dropdown_open_kabupaten"
+                          >
+                            <svg
+                              class="w-4 h-4 text-gray-800 dark:text-white"
+                              aria-hidden="true"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="m5 15 7-7 7 7"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- konten kecamatan-->
+                      <div
+                        class="konten_kecamatan col-span-3 grid grid-cols-[1fr,1fr,55px] hidden"
+                      >
+                        <div class="col-span-2 grid grid-cols-2 w-full">
+                          <div class="">Cicadas</div>
+                          <div class="flex justify-end">
+                            <div class="w-full grid grid-cols-[40px,1fr]">
+                              <div class="w-full flex justify-center">Rp</div>
+                              <div class="w-full flex justify-end">
+                                5.000.000.000
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-span-2 grid grid-cols-2 w-full">
+                          <div class="">Karangwangi</div>
+                          <div class="flex justify-end">
+                            <div class="w-full grid grid-cols-[40px,1fr]">
+                              <div class="w-full flex justify-center">Rp</div>
+                              <div class="w-full flex justify-end">
+                                9.000.000.000
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--  -->
+
+                      <!-- button kabupaten -->
+                      <div
+                        class="w-full grid grid-cols-[1fr,1fr,55px] mt-7 hidden_judul_kabupaten hidden"
+                      >
+                        <div
+                          class="w-full cursor-pointer font-bold btn_kabupaten"
+                        >
+                          Kab. Subang
+                        </div>
+                        <div class="flex justify-end">
+                          <div class="w-full grid grid-cols-[40px,1fr]">
+                            <div class="w-full flex justify-center">Rp</div>
+                            <div class="w-full flex justify-end">
+                              500.000.000.000
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flex justify-center items-end">&nbsp;</div>
+                      </div>
+                      <!-- konten kabupaten-->
+                      <div
+                        class="konten_kabupaten col-span-3 grid grid-cols-[1fr,1fr,55px] hidden"
+                      >
+                        <div class="col-span-2 grid grid-cols-2 w-full">
+                          <div class="">Tanjungsia</div>
+                          <div class="flex justify-end">
+                            <div class="w-full grid grid-cols-[40px,1fr]">
+                              <div class="w-full flex justify-center">Rp</div>
+                              <div class="w-full flex justify-end">
+                                9.000.000.000
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!--  -->
+                    </div>
+
+                    <!--  -->
                   </div>
-                  <!-- <div
-                    class="h-full w-[50vw] grid grid-row-3 border border-blue-500"
-                    >
-                    <div>sadsa</div>
-                    <div>sadsa</div>
-                    <div>sadsa</div>
-                  </div> -->
                 </div>
               </div>
             </div>
