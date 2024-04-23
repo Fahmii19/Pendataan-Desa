@@ -1,30 +1,22 @@
 /** @type {import('tailwindcss').Config} */
-
-//tailwin.config
 module.exports = {
-    purge: ["./resources/**/*.blade.php", "./resources/**/*.js"],
-    darkMode: false,
-    theme: {
-        extend: {
-            padding: {
-                "5px": "5px",
-            },
-            fontFamily: {
-                roboto: "'Roboto', sans-serif",
-            },
-        },
+  content: ["*.{html,js}", "./node_modules/flowbite/**/*.js"],
+  theme: {
+    screens: {
+      xs: "320px",
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
     },
-    variants: {
-        extend: {
-            backgroundColor: ["active"],
-        },
+    extend: {
+      fontFamily: {
+        lobster: ['"Lobster"'],
+        sf_pro_reguler: ["Font SF-Pro reguler"],
+        sf_pro_bold: ["Font SF-Pro bold"],
+        sf_pro_medium: ["Font SF-Pro medium"],
+      },
     },
-    fontFamily: {
-        sans: ["Roboto", "sans-serif", "Arial"],
-    },
-    plugins: [
-        require("tailwind-scrollbar"),
-        require("tailwindcss"),
-        require("autoprefixer"),
-    ],
+  },
+  plugins: [require("flowbite/plugin")],
 };
