@@ -1458,22 +1458,44 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 window.ButtonAgregat = function () {
-  // Mengganti kelas untuk elemen dengan kelas 'komponen_dua_grid_form_layer'
-  var komponenDua = document.querySelector(".komponen_dua_grid_form_layer");
-  if (komponenDua) {
-    komponenDua.classList.remove("komponen_dua_grid_form_layer");
-    komponenDua.classList.add("komponen_satu_grid_form_layer");
-  }
+  // Simpan kondisi di localStorage
+  localStorage.setItem("komponenDuaUpdated", "true");
+  localStorage.setItem("hiddenAgregatsUpdated", "true");
+  localStorage.setItem("kontenAgregatsUpdated", "true");
 
-  // Menambahkan kelas 'hidden' ke semua elemen dengan kelas 'hidden_agregat'
-  var hiddenAgregats = document.querySelectorAll(".hidden_agregat");
-  hiddenAgregats.forEach(function (hiddenAgregat) {
-    hiddenAgregat.classList.add("hidden");
-  });
-
-  // Menghapus kelas 'hidden' dari semua elemen dengan kelas 'konten_agregat'
-  var kontenAgregats = document.querySelectorAll(".konten_agregat");
-  kontenAgregats.forEach(function (kontenAgregat) {
-    kontenAgregat.classList.remove("hidden");
-  });
+  // Buka tab baru dengan parameter khusus
+  window.open(window.location.href + "?updateDOM=true", "_blank");
 };
+
+document.addEventListener("DOMContentLoaded", function () {
+  var params = new URLSearchParams(window.location.search);
+  if (params.get("updateDOM") === "true") {
+    // Hanya terapkan perubahan jika URL mengandung parameter yang tepat
+    if (localStorage.getItem("komponenDuaUpdated") === "true") {
+      var komponenDua = document.querySelector(".komponen_dua_grid_form_layer");
+      if (komponenDua) {
+        komponenDua.classList.remove("komponen_dua_grid_form_layer");
+        komponenDua.classList.add("komponen_satu_grid_form_layer");
+      }
+    }
+
+    if (localStorage.getItem("hiddenAgregatsUpdated") === "true") {
+      var hiddenAgregats = document.querySelectorAll(".hidden_agregat");
+      hiddenAgregats.forEach(function (hiddenAgregat) {
+        hiddenAgregat.classList.add("hidden");
+      });
+    }
+
+    if (localStorage.getItem("kontenAgregatsUpdated") === "true") {
+      var kontenAgregats = document.querySelectorAll(".konten_agregat");
+      kontenAgregats.forEach(function (kontenAgregat) {
+        kontenAgregat.classList.remove("hidden");
+      });
+    }
+
+    // Bersihkan localStorage setelah perubahan diterapkan
+    localStorage.removeItem("komponenDuaUpdated");
+    localStorage.removeItem("hiddenAgregatsUpdated");
+    localStorage.removeItem("kontenAgregatsUpdated");
+  }
+});
