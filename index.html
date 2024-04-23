@@ -130,8 +130,7 @@
                         type="checkbox"
                         class="h-3.5 w-3.5 form-check-input hapus_focus_checkbox focus:border focus:ring-0 focus:ring-offset-0 text-blue-600 border-gray-300 border rounded-sm"
                         id="fertility_komoditi_map"
-                        checked
-                        onchange="toggleKomoditi();OnOffLayer('persil-fill')"
+                        onchange="toggleKomoditi();"
                       />
 
                       <label
@@ -167,7 +166,8 @@
                         type="checkbox"
                         class="h-3.5 w-3.5 form-check-input hapus_focus_checkbox focus:border focus:ring-0 focus:ring-offset-0 text-blue-600 border-gray-300 border rounded-sm"
                         id="fertility_kesuburan_map"
-                        onchange="toggleKesuburan()"
+                        checked
+                        onchange="toggleKesuburan();OnOffLayer('persil-fill')"
                       />
 
                       <label
@@ -223,7 +223,7 @@
                         type="checkbox"
                         class="h-3.5 w-3.5 form-check-input hapus_focus_checkbox focus:border focus:ring-0 focus:ring-offset-0 text-blue-600 border-gray-300 border rounded-sm"
                         id="fertility_map"
-                        onchange="getDataSource('fertility', localStorage.getItem('kelurahan'))"
+                        onchange="OnOffLayer('sungai-line')"
                       />
                       <label
                         class="form-check-label ml-2 mt-1"
@@ -256,7 +256,7 @@
                         type="checkbox"
                         class="h-3.5 w-3.5 form-check-input hapus_focus_checkbox focus:border focus:ring-0 focus:ring-offset-0 text-blue-600 border-gray-300 border rounded-sm"
                         id="prediksi_curah_hujan_checkbox"
-                        onchange="togglePrediksiCurahHujan()"
+                        onchange="togglePrediksiCurahHujan();OnOffLayer('hujan-fill')"
                       />
                       <label
                         class="form-check-label ml-2 mt-1"

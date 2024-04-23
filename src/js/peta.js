@@ -1,5 +1,6 @@
 const base_url = "https://desa.pintoinvest.com/server/api/v1";
 const list_layers = ["persil"];
+const list_layers_default = ["persil"];
 
 mapboxgl.accessToken =
   "pk.eyJ1IjoibWVudGhvZWxzciIsImEiOiJja3M0MDZiMHMwZW83MnVwaDZ6Z2NhY2JxIn0.vQFxEZsM7Vvr-PX3FMOGiQ";
@@ -14,7 +15,7 @@ const map = new mapboxgl.Map({
 
 map.on("style.load", () => {
   map.on("load", () => {
-    list_layers.forEach((source) => {
+    list_layers_default.forEach((source) => {
       AddSource(source);
     });
   });
@@ -31,12 +32,53 @@ const AddLayers = (source) => {
           visibility: "visible",
         },
         paint: {
-          "fill-color": "#088",
-          "fill-opacity": 0.8,
+          "fill-color": [
+            "interpolate",
+            ["linear"],
+            ["get", "ph"],
+            2,
+            "#D7CCC8",
+            4,
+            "#BCAAA4",
+            6,
+            "#A1887F",
+            8,
+            "#8D6E63",
+            10,
+            "#795548",
+          ],
+          "fill-opacity": 1,
         },
       });
       break;
-
+    case "sungai":
+      map.addLayer({
+        id: "sungai-line",
+        type: "line",
+        source: source,
+        layout: {
+          visibility: "visible",
+        },
+        paint: {
+          "line-color": "#2196F3",
+          "line-width": 2,
+        },
+      });
+      break;
+    case "hujan":
+      map.addLayer({
+        id: "hujan-fill",
+        type: "fill",
+        source: source,
+        layout: {
+          visibility: "visible",
+        },
+        paint: {
+          "fill-color": "blue",
+          "fill-opacity": 0.5,
+          "fill-outline-color": "#fff",
+        },
+      });
     default:
       break;
   }
@@ -56,7 +98,14 @@ const AddSource = async (source) => {
 };
 
 window.OnOffLayer = (layer) => {
-  console.log(map.getLayoutProperty(layer, "visibility"));
+  if (map.getLayer(layer)) {
+    HideAndShow(layer);
+  } else {
+    AddSource(layer.split("-")[0]);
+  }
+};
+
+const HideAndShow = (layer) => {
   if (map.getLayoutProperty(layer, "visibility") === "visible") {
     map.setLayoutProperty(layer, "visibility", "none");
   } else {
