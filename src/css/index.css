@@ -1226,6 +1226,14 @@ input[name="plan"]:checked ~ .menuKetigaAds {
 
 /* Desa */
 
+.komponen_dua_grid_form_layer {
+  @apply grid grid-cols-[425px,1fr];
+}
+
+.komponen_satu_grid_form_layer {
+  @apply grid grid-cols-1;
+}
+
 .hapus_focus_checkbox:focus {
   outline: none !important;
   box-shadow: none !important;

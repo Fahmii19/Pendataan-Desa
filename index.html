@@ -72,10 +72,12 @@
         <div class="w-full h-[100vh] relative">
           <!--  -->
 
-          <div class="w-full h-full grid grid-cols-[425px,1fr]">
+          <!-- tea1 -->
+          <div class="w-full h-full komponen_dua_grid_form_layer">
             <!-- Pertama -->
+            <!-- tea2 -->
             <div
-              class="w-full bg-white flex flex-col z-10 h-screen overflow-y-auto overflow-x-hidden scrollbar"
+              class="w-full bg-white flex flex-col z-10 h-screen overflow-y-auto overflow-x-hidden scrollbar hidden_agregat"
             >
               <!-- logo -->
               <div class="w-full h-[14vh] mt-[4.5vh] mb-[4vh]">
@@ -617,15 +619,15 @@
                           <div>&nbsp;</div>
 
                           <div>
-                            <a target="_blank" href="#">
-                              <button
-                                type="button"
-                                style="outline: none !important"
-                                class="text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-0 focus:ring-blue-300 font-medium rounded-full text-xs px-2 py-0.5 text-center"
-                              >
-                                Agregat
-                              </button>
-                            </a>
+                            <button
+                              id="btnAgregat"
+                              onclick="ButtonAgregat()"
+                              type="button"
+                              style="outline: none !important"
+                              class="text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-0 focus:ring-blue-300 font-medium rounded-full text-xs px-2 py-0.5 text-center"
+                            >
+                              Agregat
+                            </button>
                           </div>
                         </div>
 
@@ -2680,7 +2682,8 @@
             <!--  -->
             <div class="grid grid-rows-1 w-full h-screen relative">
               <div id="mapSoaraja" class="w-full h-full"></div>
-              <div class="absolute top-0 w-full">
+              <!-- tea3 -->
+              <div class="absolute top-0 w-full hidden_agregat">
                 <div class="w-full flex flex-col relative">
                   <div id="btn-titik"></div>
                   <!--  -->
@@ -2722,8 +2725,8 @@
                   <!--  -->
                 </div>
               </div>
-
-              <div class="absolute bottom-0">
+              <!-- tea4 -->
+              <div class="absolute bottom-0 hidden_agregat">
                 <div class="w-full flex flex-col self-end">
                   <!-- Legend -->
                   <div class="flex flex-row w-full mb-3 ml-[1.2vw] relative">
@@ -3015,6 +3018,31 @@
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+              <!-- tea5 -->
+              <div class="absolute bottom-0 konten_agregat hidden">
+                <div
+                  class="h-[100vh] w-[100vw] w-full flex bg-white justify-center border border-red-500"
+                >
+                  <div class="flex flex-col">
+                    <div class="">Binong</div>
+                    <div class="">Cicadas</div>
+                    <div class="">Citrajaya</div>
+                    <div class="">Karangsari</div>
+                    <div class="">Karangwangi</div>
+                    <div class="">Kediri</div>
+                    <div class="">Kihiyang</div>
+                    <div class="">Mulyasari</div>
+                    <div class="">Nangerang</div>
+                  </div>
+                  <!-- <div
+                    class="h-full w-[50vw] grid grid-row-3 border border-blue-500"
+                    >
+                    <div>sadsa</div>
+                    <div>sadsa</div>
+                    <div>sadsa</div>
+                  </div> -->
                 </div>
               </div>
             </div>

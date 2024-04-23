@@ -1015,7 +1015,6 @@ document.addEventListener("DOMContentLoaded", function () {
   link.href = laporanKeuanganPDF;
 });
 
-// Function Button Group Menu
 document.addEventListener("DOMContentLoaded", function () {
   const dataInformasi = {
     "Padi Sawah": {
@@ -1457,3 +1456,24 @@ document.addEventListener("DOMContentLoaded", function () {
   // Memuat informasi "Padi Sawah" saat halaman dimuat
   tampilkanInformasi("Padi Sawah");
 });
+
+window.ButtonAgregat = function () {
+  // Mengganti kelas untuk elemen dengan kelas 'komponen_dua_grid_form_layer'
+  var komponenDua = document.querySelector(".komponen_dua_grid_form_layer");
+  if (komponenDua) {
+    komponenDua.classList.remove("komponen_dua_grid_form_layer");
+    komponenDua.classList.add("komponen_satu_grid_form_layer");
+  }
+
+  // Menambahkan kelas 'hidden' ke semua elemen dengan kelas 'hidden_agregat'
+  var hiddenAgregats = document.querySelectorAll(".hidden_agregat");
+  hiddenAgregats.forEach(function (hiddenAgregat) {
+    hiddenAgregat.classList.add("hidden");
+  });
+
+  // Menghapus kelas 'hidden' dari semua elemen dengan kelas 'konten_agregat'
+  var kontenAgregats = document.querySelectorAll(".konten_agregat");
+  kontenAgregats.forEach(function (kontenAgregat) {
+    kontenAgregat.classList.remove("hidden");
+  });
+};
