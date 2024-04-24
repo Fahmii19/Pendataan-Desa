@@ -140,7 +140,7 @@ if (controlGroup) {
     role="tooltip"
     class="absolute z-10 invisible inline-block px-2 py-1 text-sm font-medium text-black bg-white rounded-lg shadow-sm opacity-0 tooltip"
   >
-    My Location
+    Ukur Jarak
     <div class="tooltip-arrow" data-popper-arrow></div>
   </div>
 `;
@@ -202,7 +202,7 @@ if (controlGroup) {
     role="tooltip"
     class="absolute z-10 invisible inline-block px-2 py-1 text-sm font-medium text-black bg-white rounded-lg shadow-sm opacity-0 tooltip"
   >
-    Poligon
+    Ukur Luas
     <div class="tooltip-arrow" data-popper-arrow></div>
   </div>
 `;
