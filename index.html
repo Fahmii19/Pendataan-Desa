@@ -176,7 +176,7 @@
                       <label
                         class="form-check-label ml-2 mt-1"
                         for="fertility_kesuburan_map"
-                        >Peta Kesuburan Lahan</label
+                        >Peta Ph Tanah</label
                       >
 
                       <div
@@ -592,24 +592,32 @@
                         </div>
                       </div>
 
-                      <h5 class="mt-5 mb-4 font-bold text-md text-center">
+                      <h5 class="mt-5 mb-3 font-bold text-md text-center">
                         Profitabilitas Desa
                       </h5>
 
                       <div class="w-full flex flex-col text-sm text-black">
-                        <div class="grid grid-cols-2 mb-4">
-                          <div>&nbsp;</div>
+                        <div class="grid grid-cols-[205px,164px] mb-3">
+                          <div
+                            class="h-[3.5vh] w-full flex justify-center items-center font-semibold"
+                          >
+                            &nbsp;
+                          </div>
 
-                          <div>
-                            <button
-                              id="btnAgregat"
-                              onclick="ButtonAgregat()"
-                              type="button"
-                              style="outline: none !important"
-                              class="text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-0 focus:ring-blue-300 font-medium rounded-full text-xs px-2.5 py-0.5 text-center"
+                          <div class="h-[3.5vh] grid grid-col">
+                            <div
+                              class="w-full h-full flex justify-end items-center"
                             >
-                              Agregat
-                            </button>
+                              <button
+                                id="btnAgregat"
+                                onclick="ButtonAgregat()"
+                                type="button"
+                                style="outline: none !important"
+                                class="text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-0 focus:ring-blue-300 font-medium rounded-full text-xs px-2.5 py-0.5 text-center"
+                              >
+                                Agregasi
+                              </button>
+                            </div>
                           </div>
                         </div>
 
@@ -1221,17 +1229,27 @@
                       </div>
                     </div>
 
-                    <div class="w-full grid grid-cols-1 mt-2 mb-3">
-                      <div class="flex justify-end">
-                        <a target="_blank" id="cetakPDF">
-                          <button
-                            type="button"
-                            style="outline: none !important"
-                            class="text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-0 focus:ring-blue-300 font-medium rounded-lg text-xs px-2.5 py-0.5 text-center"
-                          >
-                            Cetak
-                          </button>
-                        </a>
+                    <div class="grid grid-cols-[205px,164px] mt-2 mb-3">
+                      <div
+                        class="h-[3.5vh] w-full flex justify-center items-center font-semibold"
+                      >
+                        &nbsp;
+                      </div>
+
+                      <div class="h-[3.5vh] grid grid-col">
+                        <div
+                          class="w-full h-full flex justify-end items-center"
+                        >
+                          <a target="_blank" id="cetakPDF">
+                            <button
+                              type="button"
+                              style="outline: none !important"
+                              class="text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-0 focus:ring-blue-300 font-medium rounded-lg text-xs px-2.5 py-0.5 text-center"
+                            >
+                              Cetak
+                            </button>
+                          </a>
+                        </div>
                       </div>
                     </div>
 
@@ -3024,7 +3042,7 @@
                     <!--  -->
                     <div class="w-full flex flex-col">
                       <div class="w-full text-lg font-bold py-3 text-center">
-                        Agregat
+                        Agregasi
                       </div>
 
                       <!-- button kecamatan -->
