@@ -1500,54 +1500,41 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// Toggle Button Kabupaten
-function toggleKecamatan() {
-  let konten = document.querySelector(".konten_kecamatan");
-
-  if (konten.classList.contains("hidden")) {
-    konten.classList.remove("hidden");
-  } else {
-    konten.classList.add("hidden");
-  }
-}
-document
-  .querySelector(".btn_kecamatan")
-  .addEventListener("click", toggleKecamatan);
-
-// Toggle Button kabupaten
-
-function toggleKabupaten() {
-  let konten = document.querySelector(".konten_kabupaten");
-
-  if (konten.classList.contains("hidden")) {
-    konten.classList.remove("hidden");
-  } else {
-    konten.classList.add("hidden");
-  }
+function toggleDropdownAndRotateIcon(
+  btnClass,
+  svgClass,
+  contentClass,
+  otherContentClass
+) {
+  let svgIcon = document.querySelector(`.${svgClass} svg`);
+  svgIcon.classList.toggle("rotate-icon");
+  var content = document.querySelector(`.${contentClass}`);
+  content.classList.toggle("hidden");
+  var otherContent = document.querySelector(`.${otherContentClass}`);
+  otherContent.classList.add("hidden");
 }
 
 document
-  .querySelector(".btn_kabupaten")
-  .addEventListener("click", toggleKabupaten);
-
-// Toggle
-function toggleDropdownAndRotateIcon() {
-  let judulKabupaten = document.querySelector(".hidden_judul_kabupaten");
-  let kontenKabupaten = document.querySelector(".konten_kabupaten");
-  let svgIcon = document.querySelector(".btn_dropdown_open_kabupaten svg");
-
-  judulKabupaten.classList.toggle("hidden");
-  kontenKabupaten.classList.add("hidden");
-
-  //
-
-  if (svgIcon.classList.contains("rotate-icon")) {
-    svgIcon.classList.remove("rotate-icon");
-  } else {
-    svgIcon.classList.add("rotate-icon");
-  }
-}
+  .querySelector(".btn_dropdown_open_kabupaten_1")
+  .addEventListener("click", function () {
+    toggleDropdownAndRotateIcon(
+      ".btn_dropdown_open_kabupaten_1",
+      "btn_dropdown_open_kabupaten_1",
+      "data_konten_kelurahan_hidden_1",
+      "data_konten_kelurahan_hidden_2"
+    );
+  });
 
 document
-  .querySelector(".btn_dropdown_open_kabupaten")
-  .addEventListener("click", toggleDropdownAndRotateIcon);
+  .querySelector(".btn_dropdown_open_kabupaten_2")
+  .addEventListener("click", function () {
+    toggleDropdownAndRotateIcon(
+      ".btn_dropdown_open_kabupaten_2",
+      "btn_dropdown_open_kabupaten_2",
+      "data_konten_kelurahan_hidden_2",
+      "data_konten_kelurahan_hidden_1"
+    );
+  });
+
+// Trigger click event on btn_dropdown_open_kabupaten_1 to initially show data_konten_kelurahan_hidden_1
+document.querySelector(".btn_dropdown_open_kabupaten_1").click();
