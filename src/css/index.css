@@ -316,21 +316,25 @@
   box-shadow: none !important;
 }
 
+.btn-zoom-in {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
 /* Layer and Location Icons */
 .btn-layer {
-  background-image: url("../images/layer-map.png");
+  background-image: url("../images/gm1/layers.png");
   background-position: 50% !important;
   background-repeat: no-repeat !important;
   display: block !important;
   background-size: inherit !important;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+
   width: 65% !important;
   height: 65% !important;
 }
 
 .btn-location {
-  background-image: url("../images/gm1/my-location.png");
+  background-image: url("../images/gm1/ukur_jarak.png");
   background-position: 50% !important;
   background-repeat: no-repeat !important;
   display: block !important;
@@ -377,7 +381,7 @@
 }
 
 .btn-stick3 {
-  background-image: url("../images/gm1/pentagon-off.png") !important;
+  background-image: url("../images/gm1/ukur_luas.png") !important;
   background-position: 50% !important;
   background-repeat: no-repeat !important;
   display: block !important;
@@ -1249,6 +1253,18 @@ input[name="plan"]:checked ~ .menuKetigaAds {
 
 .mapboxgl-ctrl-group button {
   background-color: white !important;
+}
+
+.active-button {
+  background-color: #e2e8f0 !important;
+}
+
+.custom-control-button {
+  background-color: white;
+}
+
+.custom-control-button.active-button {
+  background-color: #e2e8f0;
 }
 
 .komponen_dua_grid_form_layer {
