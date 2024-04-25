@@ -1500,7 +1500,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-function toggleDropdownAndRotateIcon(
+// Function to toggle dropdown with slide effect
+function toggleDropdownAndSlide(
   btnClass,
   svgClass,
   contentClass,
@@ -1508,16 +1509,57 @@ function toggleDropdownAndRotateIcon(
 ) {
   let svgIcon = document.querySelector(`.${svgClass} svg`);
   svgIcon.classList.toggle("rotate-icon");
+
   var content = document.querySelector(`.${contentClass}`);
-  content.classList.toggle("hidden");
   var otherContent = document.querySelector(`.${otherContentClass}`);
-  otherContent.classList.add("hidden");
+
+  // Check if content is currently hidden
+  var isHidden = content.classList.contains("hidden");
+
+  // Toggle visibility with slide effect
+  if (isHidden) {
+    content.classList.remove("hidden");
+    slideDown(content);
+    otherContent.classList.add("hidden");
+    slideUp(otherContent);
+  } else {
+    slideUp(content);
+    setTimeout(() => {
+      content.classList.add("hidden");
+      content.style.removeProperty("height"); // Remove height property after animation
+    }, 300); // Match the transition duration in CSS
+  }
 }
 
+// Function to slide up an element
+function slideUp(element) {
+  element.style.transition = "height 0.3s ease";
+  element.style.overflow = "hidden";
+  element.style.height = "0";
+}
+
+// Function to slide down an element
+function slideDown(element) {
+  element.classList.remove("hidden"); // Ensure element is visible for measurement
+  let height = element.scrollHeight + "px";
+  element.style.height = height;
+}
+
+// Toggle dropdown 1 when the page loads
+window.addEventListener("load", function () {
+  toggleDropdownAndSlide(
+    ".btn_dropdown_open_kabupaten_1",
+    "btn_dropdown_open_kabupaten_1",
+    "data_konten_kelurahan_hidden_1",
+    "data_konten_kelurahan_hidden_2"
+  );
+});
+
+// Event listeners for dropdown buttons
 document
   .querySelector(".btn_dropdown_open_kabupaten_1")
   .addEventListener("click", function () {
-    toggleDropdownAndRotateIcon(
+    toggleDropdownAndSlide(
       ".btn_dropdown_open_kabupaten_1",
       "btn_dropdown_open_kabupaten_1",
       "data_konten_kelurahan_hidden_1",
@@ -1528,13 +1570,10 @@ document
 document
   .querySelector(".btn_dropdown_open_kabupaten_2")
   .addEventListener("click", function () {
-    toggleDropdownAndRotateIcon(
+    toggleDropdownAndSlide(
       ".btn_dropdown_open_kabupaten_2",
       "btn_dropdown_open_kabupaten_2",
       "data_konten_kelurahan_hidden_2",
       "data_konten_kelurahan_hidden_1"
     );
   });
-
-// Trigger click event on btn_dropdown_open_kabupaten_1 to initially show data_konten_kelurahan_hidden_1
-document.querySelector(".btn_dropdown_open_kabupaten_1").click();

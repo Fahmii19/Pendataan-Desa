@@ -1249,6 +1249,12 @@ input[name="plan"]:checked ~ .menuKetigaAds {
   transition: transform 0.3s ease; /* Smooth transition for the rotation */
 }
 
+.data_konten_kelurahan_hidden_1,
+.data_konten_kelurahan_hidden_2 {
+  transition: height 0.3s ease;
+  overflow: hidden;
+}
+
 /*  */
 
 .mapboxgl-ctrl-group button {
