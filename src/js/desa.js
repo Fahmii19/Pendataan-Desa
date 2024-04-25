@@ -1500,18 +1500,73 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+// Event listeners for dropdown buttons
+document
+  .querySelector(".btn_dropdown_open_kabupaten_1")
+  .addEventListener("click", function () {
+    toggleDropdownAndSlide(
+      ".btn_dropdown_open_kabupaten_1",
+      "btn_dropdown_open_kabupaten_1",
+      "data_konten_kelurahan_hidden_1",
+      "data_konten_kelurahan_hidden_2",
+      "data_konten_kelurahan_hidden_3",
+      "data_konten_kelurahan_hidden_4"
+    );
+  });
+
+document
+  .querySelector(".btn_dropdown_open_kabupaten_2")
+  .addEventListener("click", function () {
+    toggleDropdownAndSlide(
+      ".btn_dropdown_open_kabupaten_2",
+      "btn_dropdown_open_kabupaten_2",
+      "data_konten_kelurahan_hidden_2",
+      "data_konten_kelurahan_hidden_1",
+      "data_konten_kelurahan_hidden_3",
+      "data_konten_kelurahan_hidden_4"
+    );
+  });
+
+document
+  .querySelector(".btn_dropdown_open_kabupaten_3")
+  .addEventListener("click", function () {
+    toggleDropdownAndSlide(
+      ".btn_dropdown_open_kabupaten_3",
+      "btn_dropdown_open_kabupaten_3",
+      "data_konten_kelurahan_hidden_3",
+      "data_konten_kelurahan_hidden_4",
+      "data_konten_kelurahan_hidden_1",
+      "data_konten_kelurahan_hidden_2"
+    );
+  });
+
+document
+  .querySelector(".btn_dropdown_open_kabupaten_4")
+  .addEventListener("click", function () {
+    toggleDropdownAndSlide(
+      ".btn_dropdown_open_kabupaten_4",
+      "btn_dropdown_open_kabupaten_4",
+      "data_konten_kelurahan_hidden_4",
+      "data_konten_kelurahan_hidden_3",
+      "data_konten_kelurahan_hidden_1",
+      "data_konten_kelurahan_hidden_2"
+    );
+  });
+
 // Function to toggle dropdown with slide effect
 function toggleDropdownAndSlide(
   btnClass,
   svgClass,
   contentClass,
-  otherContentClass
+  ...otherContentClasses
 ) {
   let svgIcon = document.querySelector(`.${svgClass} svg`);
   svgIcon.classList.toggle("rotate-icon");
 
   var content = document.querySelector(`.${contentClass}`);
-  var otherContent = document.querySelector(`.${otherContentClass}`);
+  var otherContents = otherContentClasses.map((className) =>
+    document.querySelector(`.${className}`)
+  );
 
   // Check if content is currently hidden
   var isHidden = content.classList.contains("hidden");
@@ -1520,8 +1575,8 @@ function toggleDropdownAndSlide(
   if (isHidden) {
     content.classList.remove("hidden");
     slideDown(content);
-    otherContent.classList.add("hidden");
-    slideUp(otherContent);
+    otherContents.forEach((element) => element.classList.add("hidden"));
+    otherContents.forEach((element) => slideUp(element));
   } else {
     slideUp(content);
     setTimeout(() => {
@@ -1551,29 +1606,8 @@ window.addEventListener("load", function () {
     ".btn_dropdown_open_kabupaten_1",
     "btn_dropdown_open_kabupaten_1",
     "data_konten_kelurahan_hidden_1",
-    "data_konten_kelurahan_hidden_2"
+    "data_konten_kelurahan_hidden_2",
+    "data_konten_kelurahan_hidden_3",
+    "data_konten_kelurahan_hidden_4"
   );
 });
-
-// Event listeners for dropdown buttons
-document
-  .querySelector(".btn_dropdown_open_kabupaten_1")
-  .addEventListener("click", function () {
-    toggleDropdownAndSlide(
-      ".btn_dropdown_open_kabupaten_1",
-      "btn_dropdown_open_kabupaten_1",
-      "data_konten_kelurahan_hidden_1",
-      "data_konten_kelurahan_hidden_2"
-    );
-  });
-
-document
-  .querySelector(".btn_dropdown_open_kabupaten_2")
-  .addEventListener("click", function () {
-    toggleDropdownAndSlide(
-      ".btn_dropdown_open_kabupaten_2",
-      "btn_dropdown_open_kabupaten_2",
-      "data_konten_kelurahan_hidden_2",
-      "data_konten_kelurahan_hidden_1"
-    );
-  });
