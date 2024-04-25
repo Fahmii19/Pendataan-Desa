@@ -66,6 +66,9 @@ const AddLayers = (source) => {
       });
       break;
     case "hujan":
+      const day =
+        document.querySelector("input[name='curah_hujan']:checked")?.value ??
+        30;
       map.addLayer({
         id: "hujan-fill",
         type: "fill",
@@ -74,7 +77,7 @@ const AddLayers = (source) => {
           visibility: "visible",
         },
         paint: {
-          "fill-color": "blue",
+          "fill-color": ["get", `color_${day}`],
           "fill-opacity": 0.5,
           "fill-outline-color": "#fff",
         },
@@ -113,6 +116,12 @@ const HideAndShow = (layer) => {
   }
 };
 
-map.on("dragend", () => {
-  console.log(map.getCenter());
+// Change Color Layer hujan-fill By Param
+document.querySelectorAll("input[name='curah_hujan']").forEach((input) => {
+  input.addEventListener("change", (e) => {
+    const day = e.target.value;
+    if (map.getLayer("hujan-fill")) {
+      map.setPaintProperty("hujan-fill", "fill-color", ["get", `color_${day}`]);
+    }
+  });
 });
