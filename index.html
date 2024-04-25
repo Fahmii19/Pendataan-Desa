@@ -1293,7 +1293,7 @@
                         >
                           <div class="w-full grid grid-cols-[1fr,1fr] mt-3">
                             <div
-                              class="w-full flex justify-center items-center cursor-pointer"
+                              class="w-full flex justify-start items-center cursor-pointer"
                             >
                               <span class="">Komoditi</span>
                             </div>
@@ -2745,271 +2745,281 @@
                 <div class="w-full flex flex-col self-end">
                   <!-- Legend -->
                   <div class="flex flex-row w-full mb-3 ml-[1.2vw] relative">
-                    <div
-                      class="ukuran_legend_profit text-xs py-2 px-1 rounded-sm bg-white flex flex-col mr-3 legend_komoditi hidden"
-                    >
-                      <div class="flex flex-row mb-2.5">
-                        <div class="flex flex-col ml-[0.45rem]">
-                          <div class="font-semibold mb-0.5 text-center">
-                            Komoditi
-                          </div>
-
-                          <div class="flex flex-col">
-                            <div class="inline-flex items-center">
-                              <div
-                                class="w-2.5 h-2.5 bg-[#5C5C5C] rounded-xs mr-1"
-                              ></div>
-                              <div>Beras Cianjur Kepala</div>
-                            </div>
-                            <div class="inline-flex items-center">
-                              <div
-                                class="w-2.5 h-2.5 bg-[#C78E28] rounded-xs mr-1"
-                              ></div>
-
-                              <div>Beras Setra</div>
+                    <div class="ukuran_legend_profit_container mr-3">
+                      <div
+                        class="ukuran_legend_profit hidden text-xs py-2 px-1 rounded-sm bg-white flex flex-col legend_komoditi"
+                      >
+                        <div class="flex flex-row mb-2.5">
+                          <div class="flex flex-col ml-[0.45rem]">
+                            <div class="font-semibold mb-0.5 text-center">
+                              Komoditi
                             </div>
 
-                            <div class="inline-flex items-center">
-                              <div
-                                class="w-2.5 h-2.5 bg-[#38A800] rounded-xs mr-1"
-                              ></div>
-                              <div>Cabe Merah Keriting</div>
+                            <div class="flex flex-col">
+                              <div class="inline-flex items-center">
+                                <div
+                                  class="w-2.5 h-2.5 bg-[#5C5C5C] rounded-xs mr-1"
+                                ></div>
+                                <div>Beras Cianjur Kepala</div>
+                              </div>
+                              <div class="inline-flex items-center">
+                                <div
+                                  class="w-2.5 h-2.5 bg-[#C78E28] rounded-xs mr-1"
+                                ></div>
+
+                                <div>Beras Setra</div>
+                              </div>
+
+                              <div class="inline-flex items-center">
+                                <div
+                                  class="w-2.5 h-2.5 bg-[#38A800] rounded-xs mr-1"
+                                ></div>
+                                <div>Cabe Merah Keriting</div>
+                              </div>
+                              <div class="inline-flex items-center">
+                                <div
+                                  class="w-2.5 h-2.5 bg-[#42A097] rounded-xs mr-1"
+                                ></div>
+                                <div>Cabe Rawit Merah</div>
+                              </div>
+                              <div class="inline-flex items-center">
+                                <div
+                                  class="w-2.5 h-2.5 bg-[#46A042] rounded-xs mr-1"
+                                ></div>
+                                <div>Bawang Merah</div>
+                              </div>
                             </div>
-                            <div class="inline-flex items-center">
-                              <div
-                                class="w-2.5 h-2.5 bg-[#42A097] rounded-xs mr-1"
-                              ></div>
-                              <div>Cabe Rawit Merah</div>
+                          </div>
+
+                          <div class="flex flex-col ml-3.5">
+                            <div class="font-semibold mb-0.5 text-center">
+                              Luas (m<sup>2</sup>)
                             </div>
-                            <div class="inline-flex items-center">
-                              <div
-                                class="w-2.5 h-2.5 bg-[#46A042] rounded-xs mr-1"
-                              ></div>
-                              <div>Bawang Merah</div>
+
+                            <div class="flex flex-col text-right">
+                              <div>11,000</div>
+                              <div>54,000</div>
+                              <div>21,000</div>
+                              <div>89,000</div>
+                              <div>12,000</div>
                             </div>
                           </div>
-                        </div>
+                          <div class="flex flex-col ml-3.5">
+                            <div class="font-semibold mb-0.5 text-center">
+                              Panen (ton)
+                            </div>
 
-                        <div class="flex flex-col ml-3.5">
-                          <div class="font-semibold mb-0.5 text-center">
-                            Luas (m<sup>2</sup>)
+                            <div class="flex flex-col text-center">
+                              <div>17</div>
+                              <div>12</div>
+                              <div>15</div>
+                              <div>14</div>
+                              <div>18</div>
+                            </div>
                           </div>
+                          <div class="flex flex-col ml-3.5">
+                            <div class="font-semibold mb-0.5 text-center">
+                              Harga (Rp)
+                            </div>
+                            <div class="flex flex-col text-right">
+                              <div>25,500</div>
+                              <div>27,500</div>
+                              <div>29,500</div>
+                              <div>15,500</div>
+                              <div>13,500</div>
+                            </div>
+                            <div class="mt-0.5 text-right font-semibold">
+                              Total (Rp)
+                            </div>
+                          </div>
+                          <div class="flex flex-col ml-3.5">
+                            <div class="font-semibold mb-0.5 text-center">
+                              Jumlah (Rp)
+                            </div>
 
-                          <div class="flex flex-col text-right">
-                            <div>11,000</div>
-                            <div>54,000</div>
-                            <div>21,000</div>
-                            <div>89,000</div>
-                            <div>12,000</div>
-                          </div>
-                        </div>
-                        <div class="flex flex-col ml-3.5">
-                          <div class="font-semibold mb-0.5 text-center">
-                            Panen (ton)
-                          </div>
+                            <div class="flex flex-col text-right">
+                              <div>4.768.500.000</div>
+                              <div>17.820.000.000</div>
+                              <div>9.292.500.000</div>
+                              <div>19.313.000.000</div>
+                              <div>2.916.000.000</div>
+                            </div>
 
-                          <div class="flex flex-col text-center">
-                            <div>17</div>
-                            <div>12</div>
-                            <div>15</div>
-                            <div>14</div>
-                            <div>18</div>
+                            <div class="font-semibold mt-0.5">
+                              54.110.000.000
+                            </div>
                           </div>
-                        </div>
-                        <div class="flex flex-col ml-3.5">
-                          <div class="font-semibold mb-0.5 text-center">
-                            Harga (Rp)
-                          </div>
-                          <div class="flex flex-col text-right">
-                            <div>25,500</div>
-                            <div>27,500</div>
-                            <div>29,500</div>
-                            <div>15,500</div>
-                            <div>13,500</div>
-                          </div>
-                          <div class="mt-0.5 text-right font-semibold">
-                            Total (Rp)
-                          </div>
-                        </div>
-                        <div class="flex flex-col ml-3.5">
-                          <div class="font-semibold mb-0.5 text-center">
-                            Jumlah (Rp)
-                          </div>
-
-                          <div class="flex flex-col text-right">
-                            <div>4.768.500.000</div>
-                            <div>17.820.000.000</div>
-                            <div>9.292.500.000</div>
-                            <div>19.313.000.000</div>
-                            <div>2.916.000.000</div>
-                          </div>
-
-                          <div class="font-semibold mt-0.5">54.110.000.000</div>
                         </div>
                       </div>
                     </div>
 
-                    <div
-                      class="box_prediksi_hujan hidden text-xs rounded-sm bg-white flex flex-col items-center pt-2 mr-3"
-                    >
-                      <div class="flex flex-col w-full">
-                        <div
-                          class="w-full flex justify-center font-semibold mb-0.5"
-                        >
-                          Curah Hujan (mm/hari)
-                        </div>
+                    <div class="box_kesuburan_container mr-3">
+                      <div
+                        class="box_kesuburan hidden text-xs rounded-sm bg-white flex flex-col items-center pt-2"
+                      >
+                        <div class="flex flex-col w-full">
+                          <div
+                            class="w-full flex justify-start font-semibold mb-0.5 ml-2"
+                          >
+                            pH Tanah
+                          </div>
 
-                        <div class="inline-flex items-center ml-2">
-                          <div
-                            class="w-2.5 h-2.5 bg-[#99CCFF] rounded-xs mr-1"
-                          ></div>
-                          <div>0</div>
-                        </div>
-                        <div class="inline-flex items-center ml-2">
-                          <div
-                            class="w-2.5 h-2.5 bg-[#66B2FF] rounded-xs mr-1"
-                          ></div>
-                          <div>0.5 – 20</div>
-                        </div>
+                          <div class="inline-flex items-center ml-2">
+                            <div
+                              class="w-2.5 h-2.5 bg-[#D7CCC8] rounded-xs mr-1"
+                            ></div>
 
-                        <div class="inline-flex items-center ml-2">
-                          <div
-                            class="w-2.5 h-2.5 bg-[#3399FF] rounded-xs mr-1"
-                          ></div>
-                          <div>20 – 50</div>
-                        </div>
-                        <div class="inline-flex items-center ml-2">
-                          <div
-                            class="w-2.5 h-2.5 bg-[#0066FF] rounded-xs mr-1"
-                          ></div>
-                          <div>50 – 100</div>
-                        </div>
-                        <div class="inline-flex items-center ml-2">
-                          <div
-                            class="w-2.5 h-2.5 bg-[#004CFF] rounded-xs mr-1"
-                          ></div>
-                          <div>100 – 150</div>
-                        </div>
+                            <div>0 - 2</div>
+                          </div>
+                          <div class="inline-flex items-center ml-2">
+                            <div
+                              class="w-2.5 h-2.5 bg-[#BCAAA4] rounded-xs mr-1"
+                            ></div>
 
-                        <div class="inline-flex items-center ml-2">
-                          <div
-                            class="w-2.5 h-2.5 bg-[#0033FF] rounded-xs mr-1"
-                          ></div>
-                          <div>> 150</div>
+                            <div>2 – 4</div>
+                          </div>
+
+                          <div class="inline-flex items-center ml-2">
+                            <div
+                              class="w-2.5 h-2.5 bg-[#A1887F] rounded-xs mr-1"
+                            ></div>
+
+                            <div>4 – 6</div>
+                          </div>
+                          <div class="inline-flex items-center ml-2">
+                            <div
+                              class="w-2.5 h-2.5 bg-[#8D6E63] rounded-xs mr-1"
+                            ></div>
+
+                            <div>6 – 8</div>
+                          </div>
+                          <div class="inline-flex items-center ml-2">
+                            <div
+                              class="w-2.5 h-2.5 bg-[#795548] rounded-xs mr-1"
+                            ></div>
+
+                            <div>8 – 10</div>
+                          </div>
+
+                          <div class="inline-flex items-center ml-2">
+                            <div
+                              class="w-2.5 h-2.5 bg-[#6D4C41] rounded-xs mr-1"
+                            ></div>
+
+                            <div>10 - 12</div>
+                          </div>
                         </div>
                       </div>
                     </div>
 
-                    <div
-                      class="box_usia_panen hidden text-xs rounded-sm bg-white flex flex-col items-center pt-2 mr-3"
-                    >
-                      <div class="flex flex-col w-full">
-                        <div
-                          class="w-full flex justify-start font-semibold mb-0.5 ml-2"
-                        >
-                          Usia (minggu)
-                        </div>
-
-                        <div class="inline-flex items-center ml-2">
+                    <div class="box_usia_panen_container mr-3">
+                      <div
+                        class="box_usia_panen hidden text-xs rounded-sm bg-white flex flex-col items-center pt-2"
+                      >
+                        <div class="flex flex-col w-full">
                           <div
-                            class="w-2.5 h-2.5 bg-[#C8E6C9] rounded-xs mr-1"
-                          ></div>
+                            class="w-full flex justify-start font-semibold mb-0.5 ml-2"
+                          >
+                            Usia (minggu)
+                          </div>
 
-                          <div>0 - 2</div>
-                        </div>
-                        <div class="inline-flex items-center ml-2">
-                          <div
-                            class="w-2.5 h-2.5 bg-[#A3D9A5] rounded-xs mr-1"
-                          ></div>
+                          <div class="inline-flex items-center ml-2">
+                            <div
+                              class="w-2.5 h-2.5 bg-[#C8E6C9] rounded-xs mr-1"
+                            ></div>
 
-                          <div>2 – 4</div>
-                        </div>
+                            <div>0 - 2</div>
+                          </div>
+                          <div class="inline-flex items-center ml-2">
+                            <div
+                              class="w-2.5 h-2.5 bg-[#A3D9A5] rounded-xs mr-1"
+                            ></div>
 
-                        <div class="inline-flex items-center ml-2">
-                          <div
-                            class="w-2.5 h-2.5 bg-[#72C074] rounded-xs mr-1"
-                          ></div>
+                            <div>2 – 4</div>
+                          </div>
 
-                          <div>4 – 6</div>
-                        </div>
-                        <div class="inline-flex items-center ml-2">
-                          <div
-                            class="w-2.5 h-2.5 bg-[#42A842] rounded-xs mr-1"
-                          ></div>
+                          <div class="inline-flex items-center ml-2">
+                            <div
+                              class="w-2.5 h-2.5 bg-[#72C074] rounded-xs mr-1"
+                            ></div>
 
-                          <div>6 – 8</div>
-                        </div>
-                        <div class="inline-flex items-center ml-2">
-                          <div
-                            class="w-2.5 h-2.5 bg-[#008A00] rounded-xs mr-1"
-                          ></div>
+                            <div>4 – 6</div>
+                          </div>
+                          <div class="inline-flex items-center ml-2">
+                            <div
+                              class="w-2.5 h-2.5 bg-[#42A842] rounded-xs mr-1"
+                            ></div>
 
-                          <div>8 – 10</div>
-                        </div>
+                            <div>6 – 8</div>
+                          </div>
+                          <div class="inline-flex items-center ml-2">
+                            <div
+                              class="w-2.5 h-2.5 bg-[#008A00] rounded-xs mr-1"
+                            ></div>
 
-                        <div class="inline-flex items-center ml-2">
-                          <div
-                            class="w-2.5 h-2.5 bg-[#005700] rounded-xs mr-1"
-                          ></div>
+                            <div>8 – 10</div>
+                          </div>
 
-                          <div>10 - 12</div>
+                          <div class="inline-flex items-center ml-2">
+                            <div
+                              class="w-2.5 h-2.5 bg-[#005700] rounded-xs mr-1"
+                            ></div>
+
+                            <div>10 - 12</div>
+                          </div>
                         </div>
                       </div>
                     </div>
 
-                    <div
-                      class="box_kesuburan hidden text-xs rounded-sm bg-white flex flex-col items-center pt-2 mr-3"
-                    >
-                      <div class="flex flex-col w-full">
-                        <div
-                          class="w-full flex justify-start font-semibold mb-0.5 ml-2"
-                        >
-                          pH Tanah
-                        </div>
-
-                        <div class="inline-flex items-center ml-2">
+                    <div class="box_prediksi_hujan_container mr-3">
+                      <div
+                        class="box_prediksi_hujan hidden text-xs rounded-sm bg-white flex flex-col items-center pt-2"
+                      >
+                        <div class="flex flex-col w-full">
                           <div
-                            class="w-2.5 h-2.5 bg-[#D7CCC8] rounded-xs mr-1"
-                          ></div>
+                            class="w-full flex justify-center font-semibold mb-0.5"
+                          >
+                            Curah Hujan (mm/hari)
+                          </div>
 
-                          <div>0 - 2</div>
-                        </div>
-                        <div class="inline-flex items-center ml-2">
-                          <div
-                            class="w-2.5 h-2.5 bg-[#BCAAA4] rounded-xs mr-1"
-                          ></div>
+                          <div class="inline-flex items-center ml-2">
+                            <div
+                              class="w-2.5 h-2.5 bg-[#99CCFF] rounded-xs mr-1"
+                            ></div>
+                            <div>0</div>
+                          </div>
+                          <div class="inline-flex items-center ml-2">
+                            <div
+                              class="w-2.5 h-2.5 bg-[#66B2FF] rounded-xs mr-1"
+                            ></div>
+                            <div>0.5 – 20</div>
+                          </div>
 
-                          <div>2 – 4</div>
-                        </div>
+                          <div class="inline-flex items-center ml-2">
+                            <div
+                              class="w-2.5 h-2.5 bg-[#3399FF] rounded-xs mr-1"
+                            ></div>
+                            <div>20 – 50</div>
+                          </div>
+                          <div class="inline-flex items-center ml-2">
+                            <div
+                              class="w-2.5 h-2.5 bg-[#0066FF] rounded-xs mr-1"
+                            ></div>
+                            <div>50 – 100</div>
+                          </div>
+                          <div class="inline-flex items-center ml-2">
+                            <div
+                              class="w-2.5 h-2.5 bg-[#004CFF] rounded-xs mr-1"
+                            ></div>
+                            <div>100 – 150</div>
+                          </div>
 
-                        <div class="inline-flex items-center ml-2">
-                          <div
-                            class="w-2.5 h-2.5 bg-[#A1887F] rounded-xs mr-1"
-                          ></div>
-
-                          <div>4 – 6</div>
-                        </div>
-                        <div class="inline-flex items-center ml-2">
-                          <div
-                            class="w-2.5 h-2.5 bg-[#8D6E63] rounded-xs mr-1"
-                          ></div>
-
-                          <div>6 – 8</div>
-                        </div>
-                        <div class="inline-flex items-center ml-2">
-                          <div
-                            class="w-2.5 h-2.5 bg-[#795548] rounded-xs mr-1"
-                          ></div>
-
-                          <div>8 – 10</div>
-                        </div>
-
-                        <div class="inline-flex items-center ml-2">
-                          <div
-                            class="w-2.5 h-2.5 bg-[#6D4C41] rounded-xs mr-1"
-                          ></div>
-
-                          <div>10 - 12</div>
+                          <div class="inline-flex items-center ml-2">
+                            <div
+                              class="w-2.5 h-2.5 bg-[#0033FF] rounded-xs mr-1"
+                            ></div>
+                            <div>> 150</div>
+                          </div>
                         </div>
                       </div>
                     </div>
