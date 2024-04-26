@@ -1,3 +1,7 @@
+import PasarIcon from "../images/icons/pasar.png";
+import LumbungIcon from "../images/icons/lumbung.png";
+import PenggilinganIcon from "../images/icons/penggilingan.png";
+
 const base_url = "https://desa.pintoinvest.com/server/api/v1";
 const list_layers = ["persil"];
 const list_layers_default = ["persil"];
@@ -15,6 +19,21 @@ const map = new mapboxgl.Map({
 
 map.on("style.load", () => {
   map.on("load", () => {
+    // Load Image Icon
+    const iconMap = {
+      pasar: PasarIcon,
+      lumbung: LumbungIcon,
+      penggilingan: PenggilinganIcon,
+    };
+
+    Object.keys(iconMap).forEach((key) => {
+      map.loadImage(iconMap[key], (error, image) => {
+        if (error) throw error;
+        map.addImage(key, image);
+      });
+    });
+
+    // Add Layer Default
     list_layers_default.forEach((source) => {
       AddSource(source);
     });
@@ -82,6 +101,24 @@ const AddLayers = (source) => {
           "fill-outline-color": "#fff",
         },
       });
+      break;
+    case "fasilitas":
+      const category = document
+        .querySelector("[id^='chip-'].text-blue-500")
+        .id.split("-")[1];
+      map.addLayer({
+        id: "fasilitas-point",
+        type: "symbol",
+        source: source,
+        layout: {
+          "icon-image": category,
+          "icon-size": 0.05,
+          "icon-allow-overlap": true,
+          visibility: "visible",
+        },
+        filter: ["==", "jenis", category],
+      });
+      break;
     default:
       break;
   }
@@ -122,6 +159,45 @@ document.querySelectorAll("input[name='curah_hujan']").forEach((input) => {
     const day = e.target.value;
     if (map.getLayer("hujan-fill")) {
       map.setPaintProperty("hujan-fill", "fill-color", ["get", `color_${day}`]);
+    }
+  });
+});
+
+// Set Filter Fasilitas
+const filterFasilitas = (category) => {
+  const filter = ["==", "jenis", category];
+  if (map.getLayer("fasilitas-point")) {
+    map.setFilter("fasilitas-point", filter);
+    map.setLayoutProperty("fasilitas-point", "icon-image", category);
+  }
+};
+
+// Add Active Class if chip is clicked
+document.querySelectorAll("[id^='chip-']").forEach((chip) => {
+  chip.addEventListener("click", (e) => {
+    const id = chip.id;
+    const category = id.split("-")[1];
+    const id_clicked = document.querySelector(
+      "[id^='chip-'].text-blue-500"
+    )?.id;
+    document.querySelectorAll("[id^='chip-']").forEach((chip) => {
+      chip.classList.remove("text-blue-500");
+    });
+
+    // Remove Active Class
+    if (id === id_clicked) {
+      if (map.getLayer("fasilitas-point")) {
+        map.setLayoutProperty("fasilitas-point", "visibility", "none");
+      }
+    } else {
+      // Add Active Class
+      document.getElementById(id).classList.add("text-blue-500");
+      if (!map.getLayer("fasilitas-point")) {
+        AddSource("fasilitas");
+      } else {
+        map.setLayoutProperty("fasilitas-point", "visibility", "visible");
+        filterFasilitas(category);
+      }
     }
   });
 });
