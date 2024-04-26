@@ -1525,6 +1525,11 @@ document
     document.querySelectorAll(".judul_tjsiang").forEach((element) => {
       element.classList.add("font-bold");
     });
+
+    // Tambahkan kelas hidden pada elemen dengan kelas spasi_kel
+    document.querySelectorAll(".spasi_kel").forEach((element) => {
+      element.classList.add("hidden");
+    });
   });
 
 document
