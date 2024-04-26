@@ -1567,6 +1567,13 @@ function toggleDropdownAndSlide(
   contentClass,
   ...otherContentClasses
 ) {
+  let svgIcon = document.querySelector(`.${svgClass} svg`);
+  svgIcon.classList.toggle("rotate-icon");
+
+  // nulis html di js
+  // let html = `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path> </svg>`;
+  // document.querySelector(`.${svgClass}`).innerHTML = html;
+
   var content = document.querySelector(`.${contentClass}`);
   var otherContents = otherContentClasses.map((className) =>
     document.querySelector(`.${className}`)
@@ -1581,20 +1588,12 @@ function toggleDropdownAndSlide(
     slideDown(content);
     otherContents.forEach((element) => element.classList.add("hidden"));
     otherContents.forEach((element) => slideUp(element));
-    // Change SVG icon to minus when opening dropdown
-    svgIcon.innerHTML = `<svg class="w-2.5 h-2.5 text-black rotate-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14"></path>
-                                    </svg>`;
   } else {
     slideUp(content);
     setTimeout(() => {
       content.classList.add("hidden");
       content.style.removeProperty("height"); // Remove height property after animation
     }, 300); // Match the transition duration in CSS
-    // Change SVG icon to plus when closing dropdown
-    svgIcon.innerHTML = `<svg class="w-2.5 h-2.5 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7 7V5"></path>
-                                    </svg>`;
   }
 }
 
