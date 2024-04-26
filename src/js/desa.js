@@ -1500,11 +1500,9 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// Event listeners for dropdown buttons
 document
   .querySelector(".btn_dropdown_open_kabupaten_1")
   .addEventListener("click", function () {
-    // Memanggil fungsi toggleDropdownAndSlide untuk tombol dropdown 1
     toggleDropdownAndSlide(
       ".btn_dropdown_open_kabupaten_1",
       "btn_dropdown_open_kabupaten_1",
@@ -1514,19 +1512,16 @@ document
       "data_konten_kelurahan_hidden_4"
     );
 
-    // Menghapus kelas font-bold dari semua elemen dengan kelas judul selain judul_tjsiang
     document
       .querySelectorAll(".judul_binong, .judul_cibogo, .judul_cisalak")
       .forEach((element) => {
         element.classList.remove("font-bold");
       });
 
-    // Menambahkan kelas font-bold pada semua elemen dengan kelas judul_tjsiang
     document.querySelectorAll(".judul_tjsiang").forEach((element) => {
       element.classList.add("font-bold");
     });
 
-    // Tambahkan kelas hidden pada elemen dengan kelas spasi_kel
     document.querySelectorAll(".spasi_kel").forEach((element) => {
       element.classList.add("hidden");
     });
@@ -1535,7 +1530,6 @@ document
 document
   .querySelector(".btn_dropdown_open_kabupaten_2")
   .addEventListener("click", function () {
-    // Memanggil fungsi toggleDropdownAndSlide untuk tombol dropdown 2
     toggleDropdownAndSlide(
       ".btn_dropdown_open_kabupaten_2",
       "btn_dropdown_open_kabupaten_2",
@@ -1545,16 +1539,18 @@ document
       "data_konten_kelurahan_hidden_4"
     );
 
-    // Menghapus kelas font-bold dari semua elemen dengan kelas judul selain judul_binong
     document
       .querySelectorAll(".judul_tjsiang, .judul_cibogo, .judul_cisalak")
       .forEach((element) => {
         element.classList.remove("font-bold");
       });
 
-    // Menambahkan kelas font-bold pada semua elemen dengan kelas judul_binong
     document.querySelectorAll(".judul_binong").forEach((element) => {
       element.classList.add("font-bold");
+    });
+
+    document.querySelectorAll(".spasi_kel").forEach((element) => {
+      element.classList.remove("hidden");
     });
   });
 
@@ -1582,6 +1578,10 @@ document
     document.querySelectorAll(".judul_cibogo").forEach((element) => {
       element.classList.add("font-bold");
     });
+
+    document.querySelectorAll(".spasi_kel").forEach((element) => {
+      element.classList.remove("hidden");
+    });
   });
 
 document
@@ -1607,6 +1607,10 @@ document
     // Menambahkan kelas font-bold pada semua elemen dengan kelas judul_cisalak
     document.querySelectorAll(".judul_cisalak").forEach((element) => {
       element.classList.add("font-bold");
+    });
+
+    document.querySelectorAll(".spasi_kel").forEach((element) => {
+      element.classList.remove("hidden");
     });
   });
 
