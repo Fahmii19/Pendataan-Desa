@@ -1517,20 +1517,6 @@ document
       "data_konten_kelurahan_hidden_3",
       "data_konten_kelurahan_hidden_4"
     );
-
-    document
-      .querySelectorAll(".judul_binong, .judul_cibogo, .judul_cisalak")
-      .forEach((element) => {
-        element.classList.remove("font-bold");
-      });
-
-    document.querySelectorAll(".judul_tjsiang").forEach((element) => {
-      element.classList.add("font-bold");
-    });
-
-    document.querySelectorAll(".spasi_kel").forEach((element) => {
-      element.classList.add("hidden");
-    });
   });
 
 document
@@ -1544,20 +1530,6 @@ document
       "data_konten_kelurahan_hidden_3",
       "data_konten_kelurahan_hidden_4"
     );
-
-    document
-      .querySelectorAll(".judul_tjsiang, .judul_cibogo, .judul_cisalak")
-      .forEach((element) => {
-        element.classList.remove("font-bold");
-      });
-
-    document.querySelectorAll(".judul_binong").forEach((element) => {
-      element.classList.add("font-bold");
-    });
-
-    document.querySelectorAll(".spasi_kel").forEach((element) => {
-      element.classList.remove("hidden");
-    });
   });
 
 // Function to toggle dropdown with slide effect
@@ -1570,30 +1542,65 @@ function toggleDropdownAndSlide(
   let svgIcon = document.querySelector(`.${svgClass} svg`);
   svgIcon.classList.toggle("rotate-icon");
 
-  // nulis html di js
-  // let html = `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path> </svg>`;
-  // document.querySelector(`.${svgClass}`).innerHTML = html;
-
   var content = document.querySelector(`.${contentClass}`);
   var otherContents = otherContentClasses.map((className) =>
     document.querySelector(`.${className}`)
   );
 
-  // Check if content is currently hidden
   var isHidden = content.classList.contains("hidden");
 
-  // Toggle visibility with slide effect
+  // Handle visibility and font-bold class management together
   if (isHidden) {
     content.classList.remove("hidden");
     slideDown(content);
-    otherContents.forEach((element) => element.classList.add("hidden"));
-    otherContents.forEach((element) => slideUp(element));
+    manageFontBoldClasses(contentClass);
+
+    otherContents.forEach((element) => {
+      element.classList.add("hidden");
+      slideUp(element);
+    });
   } else {
     slideUp(content);
     setTimeout(() => {
       content.classList.add("hidden");
-      content.style.removeProperty("height"); // Remove height property after animation
+      content.style.removeProperty("height");
+
+      // Clear all font-bold classes when hiding content
+      document
+        .querySelectorAll(
+          ".judul_binong, .judul_tjsiang, .judul_cibogo, .judul_cisalak"
+        )
+        .forEach((element) => {
+          element.classList.remove("font-bold");
+        });
     }, 300); // Match the transition duration in CSS
+  }
+}
+
+// Function to manage font-bold based on visible content
+function manageFontBoldClasses(visibleContentClass) {
+  const boldClassMap = {
+    data_konten_kelurahan_hidden_1: ".judul_tjsiang",
+    data_konten_kelurahan_hidden_2: ".judul_binong",
+    // Add other mappings as necessary
+  };
+
+  // Remove font-bold from all
+  document
+    .querySelectorAll(
+      ".judul_binong, .judul_tjsiang, .judul_cibogo, .judul_cisalak"
+    )
+    .forEach((element) => {
+      element.classList.remove("font-bold");
+    });
+
+  // Add font-bold to the current active dropdown's titles
+  if (boldClassMap[visibleContentClass]) {
+    document
+      .querySelectorAll(boldClassMap[visibleContentClass])
+      .forEach((element) => {
+        element.classList.add("font-bold");
+      });
   }
 }
 
@@ -1613,7 +1620,6 @@ function slideDown(element) {
 
 // Toggle dropdown 1 when the page loads
 window.addEventListener("load", function () {
-  // Ketika halaman dimuat, panggil fungsi untuk toggle dropdown pertama
   toggleDropdownAndSlide(
     ".btn_dropdown_open_kabupaten_1",
     "btn_dropdown_open_kabupaten_1",
