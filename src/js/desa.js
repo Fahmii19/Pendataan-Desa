@@ -1511,7 +1511,6 @@ document
   .addEventListener("click", function () {
     toggleDropdownAndSlide(
       ".btn_dropdown_open_kabupaten_1",
-      "btn_dropdown_open_kabupaten_1",
       "data_konten_kelurahan_hidden_1",
       "data_konten_kelurahan_hidden_2",
       "data_konten_kelurahan_hidden_3",
@@ -1524,7 +1523,6 @@ document
   .addEventListener("click", function () {
     toggleDropdownAndSlide(
       ".btn_dropdown_open_kabupaten_2",
-      "btn_dropdown_open_kabupaten_2",
       "data_konten_kelurahan_hidden_2",
       "data_konten_kelurahan_hidden_1",
       "data_konten_kelurahan_hidden_3",
@@ -1535,12 +1533,12 @@ document
 // Function to toggle dropdown with slide effect
 function toggleDropdownAndSlide(
   btnClass,
-  svgClass,
   contentClass,
   ...otherContentClasses
 ) {
-  let svgIcon = document.querySelector(`.${svgClass} svg`);
-  svgIcon.classList.toggle("rotate-icon");
+  let button = document.querySelector(btnClass);
+  let svgPlus = button.querySelector(".icon_plus");
+  let svgMinus = button.querySelector(".icon_minus");
 
   var content = document.querySelector(`.${contentClass}`);
   var otherContents = otherContentClasses.map((className) =>
@@ -1549,15 +1547,30 @@ function toggleDropdownAndSlide(
 
   var isHidden = content.classList.contains("hidden");
 
-  // Handle visibility and font-bold class management together
   if (isHidden) {
     content.classList.remove("hidden");
     slideDown(content);
+
+    // Show minus icon and hide plus icon
+    svgMinus.classList.remove("hidden");
+    svgPlus.classList.add("hidden");
+
     manageFontBoldClasses(contentClass);
 
     otherContents.forEach((element) => {
       element.classList.add("hidden");
       slideUp(element);
+
+      // For each other content, reset icons back to default
+      let otherButton = document.querySelector(
+        "." +
+          element.className.split(" ")[1].trim() +
+          " .btn_dropdown_open_kabupaten"
+      );
+      if (otherButton) {
+        otherButton.querySelector(".icon_plus").classList.remove("hidden");
+        otherButton.querySelector(".icon_minus").classList.add("hidden");
+      }
     });
   } else {
     slideUp(content);
@@ -1565,14 +1578,15 @@ function toggleDropdownAndSlide(
       content.classList.add("hidden");
       content.style.removeProperty("height");
 
-      // Clear all font-bold classes when hiding content
+      // Show plus icon and hide minus icon when content is hidden
+      svgPlus.classList.remove("hidden");
+      svgMinus.classList.add("hidden");
+
       document
         .querySelectorAll(
           ".judul_binong, .judul_tjsiang, .judul_cibogo, .judul_cisalak"
         )
-        .forEach((element) => {
-          element.classList.remove("font-bold");
-        });
+        .forEach((element) => element.classList.remove("font-bold"));
     }, 300); // Match the transition duration in CSS
   }
 }
@@ -1582,25 +1596,18 @@ function manageFontBoldClasses(visibleContentClass) {
   const boldClassMap = {
     data_konten_kelurahan_hidden_1: ".judul_tjsiang",
     data_konten_kelurahan_hidden_2: ".judul_binong",
-    // Add other mappings as necessary
   };
 
-  // Remove font-bold from all
   document
     .querySelectorAll(
       ".judul_binong, .judul_tjsiang, .judul_cibogo, .judul_cisalak"
     )
-    .forEach((element) => {
-      element.classList.remove("font-bold");
-    });
+    .forEach((element) => element.classList.remove("font-bold"));
 
-  // Add font-bold to the current active dropdown's titles
   if (boldClassMap[visibleContentClass]) {
     document
       .querySelectorAll(boldClassMap[visibleContentClass])
-      .forEach((element) => {
-        element.classList.add("font-bold");
-      });
+      .forEach((element) => element.classList.add("font-bold"));
   }
 }
 
@@ -1622,14 +1629,12 @@ function slideDown(element) {
 window.addEventListener("load", function () {
   toggleDropdownAndSlide(
     ".btn_dropdown_open_kabupaten_1",
-    "btn_dropdown_open_kabupaten_1",
     "data_konten_kelurahan_hidden_1",
     "data_konten_kelurahan_hidden_2",
     "data_konten_kelurahan_hidden_3",
     "data_konten_kelurahan_hidden_4"
   );
 
-  // Tambahkan kelas font-bold pada elemen judul_tjsiang saat halaman dimuat
   document.querySelectorAll(".judul_tjsiang").forEach((element) => {
     element.classList.add("font-bold");
   });
