@@ -1493,6 +1493,13 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
 
+    if (localStorage.getItem("kontenAgregatsUpdate2d") === "true") {
+      var kontenAgregats = document.querySelectorAll(".komponen_agregasi");
+      kontenAgregats.forEach(function (kontenAgregat) {
+        kontenAgregat.classList.remove("hidden");
+      });
+    }
+
     // Bersihkan localStorage setelah perubahan diterapkan
     localStorage.removeItem("komponenDuaUpdated");
     localStorage.removeItem("hiddenAgregatsUpdated");

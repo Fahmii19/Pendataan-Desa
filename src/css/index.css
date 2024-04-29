@@ -1275,7 +1275,6 @@ input[name="plan"]:checked ~ .menuKetigaAds {
 
 .komponen_dua_grid_form_layer {
   @apply grid grid-cols-[425px,1fr];
-  /* @apply grid grid-cols-[1fr,200px]; */
 }
 
 .komponen_satu_grid_form_layer {
