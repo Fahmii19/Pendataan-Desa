@@ -3081,14 +3081,12 @@
                       <div
                         class="w-full grid grid-cols-[1fr,1fr,270px,270px,270px] text-sm"
                       >
+                        <!-- row Kelurahan dan Kecamatan -->
                         <div class="col-span-2 flex flex-row">
+                          <!-- Kelurahan -->
                           <div class="w-full grid grid-cols-1">
-                            <!-- kelurahan -->
-
-                            <!-- pertama -->
+                            <!-- judul kelurahan pertama -->
                             <div class="w-full flex flex-col">
-                              <!-- 1 -->
-                              <!-- <div class="spasi_kel">&nbsp;</div> -->
                               <div
                                 class="data_konten_kelurahan_hidden_1 hidden"
                               >
@@ -3119,51 +3117,10 @@
                                     </div>
                                   </div>
                                 </div>
-
-                                <div class="grid grid-cols-[120px,1fr]">
-                                  <div class="">Sirap</div>
-                                  <div
-                                    class="w-full grid grid-cols-[35px,140px]"
-                                  >
-                                    <div class="w-full flex justify-center">
-                                      Rp
-                                    </div>
-                                    <div class="w-full flex justify-end">
-                                      20.000.000.000
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="grid grid-cols-[120px,1fr]">
-                                  <div class="">Cibuluh</div>
-                                  <div
-                                    class="w-full grid grid-cols-[35px,140px]"
-                                  >
-                                    <div class="w-full flex justify-center">
-                                      Rp
-                                    </div>
-                                    <div class="w-full flex justify-end">
-                                      20.000.000.000
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="grid grid-cols-[120px,1fr]">
-                                  <div class="">Sindanglaya</div>
-                                  <div
-                                    class="w-full grid grid-cols-[35px,140px]"
-                                  >
-                                    <div class="w-full flex justify-center">
-                                      Rp
-                                    </div>
-                                    <div class="w-full flex justify-end">
-                                      20.000.000.000
-                                    </div>
-                                  </div>
-                                </div>
                               </div>
                             </div>
-                            <!-- kedua -->
+                            <!-- judul kelurahan kedua -->
                             <div class="w-full flex flex-col">
-                              <!-- 1 -->
                               <div class="spasi_kel">&nbsp;</div>
 
                               <div
@@ -3210,67 +3167,13 @@
                                     </div>
                                   </div>
                                 </div>
-                                <div class="grid grid-cols-[120px,1fr]">
-                                  <div class="">Binong</div>
-                                  <div
-                                    class="w-full grid grid-cols-[35px,140px]"
-                                  >
-                                    <div class="w-full flex justify-center">
-                                      Rp
-                                    </div>
-                                    <div class="w-full flex justify-end">
-                                      21.000.000.000
-                                    </div>
-                                  </div>
-                                </div>
-
-                                <div class="grid grid-cols-[120px,1fr]">
-                                  <div class="">Karangsari</div>
-                                  <div
-                                    class="w-full grid grid-cols-[35px,140px]"
-                                  >
-                                    <div class="w-full flex justify-center">
-                                      Rp
-                                    </div>
-                                    <div class="w-full flex justify-end">
-                                      21.000.000.000
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="grid grid-cols-[120px,1fr]">
-                                  <div class="">Kihiying</div>
-                                  <div
-                                    class="w-full grid grid-cols-[35px,140px]"
-                                  >
-                                    <div class="w-full flex justify-center">
-                                      Rp
-                                    </div>
-                                    <div class="w-full flex justify-end">
-                                      21.000.000.000
-                                    </div>
-                                  </div>
-                                </div>
-
-                                <div class="grid grid-cols-[120px,1fr]">
-                                  <div class="">Citrajaya</div>
-                                  <div
-                                    class="w-full grid grid-cols-[35px,140px]"
-                                  >
-                                    <div class="w-full flex justify-center">
-                                      Rp
-                                    </div>
-                                    <div class="w-full flex justify-end">
-                                      21.000.000.000
-                                    </div>
-                                  </div>
-                                </div>
                               </div>
                             </div>
-
-                            <!--  -->
                           </div>
+
+                          <!-- Kecamatan -->
                           <div class="w-full flex flex-col">
-                            <!-- kecamatan -->
+                            <!-- Judul Kecamatan pertama -->
                             <div
                               class="grid grid-cols-[160px,1fr] data_konten_kecamatan_hidden"
                             >
@@ -3280,9 +3183,11 @@
                                 <div>
                                   <div
                                     class="border-2 border-black rounded-full w-3.5 h-3.5 flex justify-center items-center cursor-pointer btn_dropdown_open_kabupaten_1"
+                                    data-dropdown="toggle"
+                                    data-targets="data_konten_kelurahan_hidden_1"
                                   >
                                     <svg
-                                      class="w-2.5 h-2.5 text-black icon_plus hidden"
+                                      class="w-2.5 h-2.5 text-black icon_plus_1"
                                       aria-hidden="true"
                                       xmlns="http://www.w3.org/2000/svg"
                                       width="24"
@@ -3298,9 +3203,8 @@
                                         d="M5 12h14m-7 7V5"
                                       ></path>
                                     </svg>
-
                                     <svg
-                                      class="w-2.5 h-2.5 text-black rotate-icon icon_minus"
+                                      class="w-2.5 h-2.5 text-black rotate-icon icon_minus_1 hidden"
                                       aria-hidden="true"
                                       xmlns="http://www.w3.org/2000/svg"
                                       width="24"
@@ -3320,9 +3224,7 @@
                                 </div>
                                 <div class="judul_tjsiang">Tanjung Siangg</div>
                               </div>
-                              <div
-                                class="w-full grid grid-cols-[35px,140px] font-bold"
-                              >
+                              <div class="w-full grid grid-cols-[35px,140px]">
                                 <div class="w-full flex justify-center">Rp</div>
                                 <div
                                   class="w-full flex flex-row justify-between items-start"
@@ -3331,7 +3233,7 @@
                                 </div>
                               </div>
                             </div>
-                            <!-- kecamatan -->
+                            <!-- Judul Kecamatan kedua -->
                             <div
                               class="grid grid-cols-[160px,1fr] data_konten_kecamatan_hidden"
                             >
@@ -3341,9 +3243,11 @@
                                 <div>
                                   <div
                                     class="border-2 border-black rounded-full w-3.5 h-3.5 flex justify-center items-center cursor-pointer btn_dropdown_open_kabupaten_2"
+                                    data-dropdown="toggle"
+                                    data-targets="data_konten_kelurahan_hidden_2"
                                   >
                                     <svg
-                                      class="w-2.5 h-2.5 text-black icon_plus"
+                                      class="w-2.5 h-2.5 text-black icon_plus_2"
                                       aria-hidden="true"
                                       xmlns="http://www.w3.org/2000/svg"
                                       width="24"
@@ -3359,9 +3263,8 @@
                                         d="M5 12h14m-7 7V5"
                                       ></path>
                                     </svg>
-
                                     <svg
-                                      class="w-2.5 h-2.5 text-black rotate-icon icon_minus hidden"
+                                      class="w-2.5 h-2.5 text-black rotate-icon icon_minus_2 hidden"
                                       aria-hidden="true"
                                       xmlns="http://www.w3.org/2000/svg"
                                       width="24"
@@ -3390,8 +3293,138 @@
                                 </div>
                               </div>
                             </div>
+                          </div>
+                        </div>
 
-                            <!--  -->
+                        <!-- row Kabupaten/Kota -->
+                        <div class="w-full border border-red-500">
+                          <!-- kabupaten pertama -->
+                          <div
+                            class="grid grid-cols-[100px,1fr] data_konten_kecamatan_hidden"
+                          >
+                            <div
+                              class="w-full grid grid-cols-[25px,1fr] items-center"
+                            >
+                              <div>
+                                <div
+                                  class="border-2 border-black rounded-full w-3.5 h-3.5 flex justify-center items-center cursor-pointer"
+                                >
+                                  <svg
+                                    class="w-2.5 h-2.5 text-black"
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path
+                                      stroke="currentColor"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-width="2"
+                                      d="M5 12h14m-7 7V5"
+                                    ></path>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="">Subangg</div>
+                            </div>
+                            <div class="w-full grid grid-cols-[35px,140px]">
+                              <div class="w-full flex justify-center">Rp</div>
+                              <div
+                                class="w-full flex flex-row justify-between items-start"
+                              >
+                                <div>100.000.000.000</div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- kabupaten kedua -->
+                          <div
+                            class="grid grid-cols-[100px,1fr] data_konten_kecamatan_hidden"
+                          >
+                            <div
+                              class="w-full grid grid-cols-[25px,1fr] items-center"
+                            >
+                              <div>
+                                <div
+                                  class="border-2 border-black rounded-full w-3.5 h-3.5 flex justify-center items-center cursor-pointer"
+                                >
+                                  <svg
+                                    class="w-2.5 h-2.5 text-black"
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path
+                                      stroke="currentColor"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-width="2"
+                                      d="M5 12h14m-7 7V5"
+                                    ></path>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="">Kuningan</div>
+                            </div>
+                            <div class="w-full grid grid-cols-[35px,140px]">
+                              <div class="w-full flex justify-center">Rp</div>
+                              <div
+                                class="w-full flex flex-row justify-between items-start"
+                              >
+                                <div>100.000.000.000</div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!--  -->
+                        </div>
+
+                        <!--  -->
+                        <div class="w-full">
+                          <div
+                            class="grid grid-cols-[100px,1fr] data_konten_kecamatan_hidden"
+                          >
+                            <div
+                              class="w-full grid grid-cols-[25px,1fr] items-center"
+                            >
+                              <div>
+                                <div
+                                  class="border-2 border-black rounded-full w-3.5 h-3.5 flex justify-center items-center cursor-pointer"
+                                >
+                                  <svg
+                                    class="w-2.5 h-2.5 text-black"
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path
+                                      stroke="currentColor"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-width="2"
+                                      d="M5 12h14m-7 7V5"
+                                    ></path>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="">Jawa Barat</div>
+                            </div>
+                            <div class="w-full grid grid-cols-[35px,140px]">
+                              <div class="w-full flex justify-center">Rp</div>
+                              <div
+                                class="w-full flex flex-row justify-between items-start"
+                              >
+                                <div>100.000.000.000</div>
+                              </div>
+                            </div>
                           </div>
                         </div>
 
@@ -3425,7 +3458,7 @@
                                   </svg>
                                 </div>
                               </div>
-                              <div class="judul_tjsiang">Subangg</div>
+                              <div class="">Indonesia</div>
                             </div>
                             <div class="w-full grid grid-cols-[35px,140px]">
                               <div class="w-full flex justify-center">Rp</div>
@@ -3437,108 +3470,9 @@
                             </div>
                           </div>
                         </div>
-                        <div class="w-full">
-                          <div
-                            class="grid grid-cols-[100px,1fr] data_konten_kecamatan_hidden"
-                          >
-                            <div
-                              class="w-full grid grid-cols-[25px,1fr] items-center"
-                            >
-                              <div>
-                                <div
-                                  class="border-2 border-black rounded-full w-3.5 h-3.5 flex justify-center items-center cursor-pointer"
-                                >
-                                  <svg
-                                    class="w-2.5 h-2.5 text-black"
-                                    aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                  >
-                                    <path
-                                      stroke="currentColor"
-                                      stroke-linecap="round"
-                                      stroke-linejoin="round"
-                                      stroke-width="2"
-                                      d="M5 12h14m-7 7V5"
-                                    ></path>
-                                  </svg>
-                                </div>
-                              </div>
-                              <div class="judul_tjsiang">Jawa Barat</div>
-                            </div>
-                            <div class="w-full grid grid-cols-[35px,140px]">
-                              <div class="w-full flex justify-center">Rp</div>
-                              <div
-                                class="w-full flex flex-row justify-between items-start"
-                              >
-                                <div>100.000.000.000</div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <!--  -->
-
-                        <div class="w-full">
-                          <div
-                            class="grid grid-cols-[100px,1fr] data_konten_kecamatan_hidden"
-                          >
-                            <div
-                              class="w-full grid grid-cols-[25px,1fr] items-center"
-                            >
-                              <div>
-                                <div
-                                  class="border-2 border-black rounded-full w-3.5 h-3.5 flex justify-center items-center cursor-pointer"
-                                >
-                                  <svg
-                                    class="w-2.5 h-2.5 text-black"
-                                    aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                  >
-                                    <path
-                                      stroke="currentColor"
-                                      stroke-linecap="round"
-                                      stroke-linejoin="round"
-                                      stroke-width="2"
-                                      d="M5 12h14m-7 7V5"
-                                    ></path>
-                                  </svg>
-                                </div>
-                              </div>
-                              <div class="judul_tjsiang">Indonesia</div>
-                            </div>
-                            <div class="w-full grid grid-cols-[35px,140px]">
-                              <div class="w-full flex justify-center">Rp</div>
-                              <div
-                                class="w-full flex flex-row justify-between items-start"
-                              >
-                                <div>100.000.000.000</div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <!--  -->
-
-                        <!--  -->
                       </div>
-
-                      <!--  -->
-
-                      <!--  -->
                     </div>
-
-                    <!--  -->
                   </div>
-
-                  <!--  -->
                 </div>
               </div>
             </div>

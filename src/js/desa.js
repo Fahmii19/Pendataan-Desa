@@ -1530,15 +1530,14 @@ document
     );
   });
 
-// Function to toggle dropdown with slide effect
 function toggleDropdownAndSlide(
   btnClass,
   contentClass,
   ...otherContentClasses
 ) {
   let button = document.querySelector(btnClass);
-  let svgPlus = button.querySelector(".icon_plus");
-  let svgMinus = button.querySelector(".icon_minus");
+  let svgPlus = button.querySelector(".icon_plus_1, .icon_plus_2");
+  let svgMinus = button.querySelector(".icon_minus_1, .icon_minus_2");
 
   var content = document.querySelector(`.${contentClass}`);
   var otherContents = otherContentClasses.map((className) =>
@@ -1551,25 +1550,33 @@ function toggleDropdownAndSlide(
     content.classList.remove("hidden");
     slideDown(content);
 
-    // Show minus icon and hide plus icon
+    // Tampilkan ikon minus dan sembunyikan ikon plus
     svgMinus.classList.remove("hidden");
     svgPlus.classList.add("hidden");
 
     manageFontBoldClasses(contentClass);
 
+    // Tutup konten lain dan atur ikon mereka
     otherContents.forEach((element) => {
-      element.classList.add("hidden");
-      slideUp(element);
-
-      // For each other content, reset icons back to default
-      let otherButton = document.querySelector(
-        "." +
-          element.className.split(" ")[1].trim() +
-          " .btn_dropdown_open_kabupaten"
-      );
-      if (otherButton) {
-        otherButton.querySelector(".icon_plus").classList.remove("hidden");
-        otherButton.querySelector(".icon_minus").classList.add("hidden");
+      if (!element.classList.contains("hidden")) {
+        element.classList.add("hidden");
+        slideUp(element);
+        let otherButton = document.querySelector(
+          `[data-targets*="${element.className.split(" ")[0]}"]`
+        );
+        console.log(otherButton);
+        if (otherButton) {
+          let otherSvgPlus = otherButton.querySelector(
+            ".icon_plus_1, .icon_plus_2"
+          );
+          let otherSvgMinus = otherButton.querySelector(
+            ".icon_minus_1, .icon_minus_2"
+          );
+          if (otherSvgPlus && otherSvgMinus) {
+            otherSvgPlus.classList.remove("hidden");
+            otherSvgMinus.classList.add("hidden");
+          }
+        }
       }
     });
   } else {
@@ -1577,65 +1584,42 @@ function toggleDropdownAndSlide(
     setTimeout(() => {
       content.classList.add("hidden");
       content.style.removeProperty("height");
-
-      // Show plus icon and hide minus icon when content is hidden
+      // Tampilkan ikon plus dan sembunyikan ikon minus
       svgPlus.classList.remove("hidden");
       svgMinus.classList.add("hidden");
-
-      document
-        .querySelectorAll(
-          ".judul_binong, .judul_tjsiang, .judul_cibogo, .judul_cisalak"
-        )
-        .forEach((element) => element.classList.remove("font-bold"));
-    }, 300); // Match the transition duration in CSS
+      resetFontBoldClasses();
+    }, 300);
   }
 }
 
-// Function to manage font-bold based on visible content
 function manageFontBoldClasses(visibleContentClass) {
   const boldClassMap = {
     data_konten_kelurahan_hidden_1: ".judul_tjsiang",
     data_konten_kelurahan_hidden_2: ".judul_binong",
   };
 
-  document
-    .querySelectorAll(
-      ".judul_binong, .judul_tjsiang, .judul_cibogo, .judul_cisalak"
-    )
-    .forEach((element) => element.classList.remove("font-bold"));
-
+  resetFontBoldClasses();
   if (boldClassMap[visibleContentClass]) {
     document
-      .querySelectorAll(boldClassMap[visibleContentClass])
-      .forEach((element) => element.classList.add("font-bold"));
+      .querySelector(boldClassMap[visibleContentClass])
+      .classList.add("font-bold");
   }
 }
 
-// Function to slide up an element
+function resetFontBoldClasses() {
+  document
+    .querySelectorAll(".judul_binong, .judul_tjsiang")
+    .forEach((element) => element.classList.remove("font-bold"));
+}
+
 function slideUp(element) {
   element.style.transition = "height 0.3s ease";
   element.style.overflow = "hidden";
   element.style.height = "0";
 }
 
-// Function to slide down an element
 function slideDown(element) {
-  element.classList.remove("hidden"); // Ensure element is visible for measurement
+  element.classList.remove("hidden");
   let height = element.scrollHeight + "px";
   element.style.height = height;
 }
-
-// Toggle dropdown 1 when the page loads
-window.addEventListener("load", function () {
-  toggleDropdownAndSlide(
-    ".btn_dropdown_open_kabupaten_1",
-    "data_konten_kelurahan_hidden_1",
-    "data_konten_kelurahan_hidden_2",
-    "data_konten_kelurahan_hidden_3",
-    "data_konten_kelurahan_hidden_4"
-  );
-
-  document.querySelectorAll(".judul_tjsiang").forEach((element) => {
-    element.classList.add("font-bold");
-  });
-});
