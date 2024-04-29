@@ -1282,6 +1282,10 @@ input[name="plan"]:checked ~ .menuKetigaAds {
   @apply grid grid-cols-1;
 }
 
+.komponen_custom_form_layer {
+  @apply grid grid-rows-2;
+}
+
 .hapus_focus_checkbox:focus {
   outline: none !important;
   box-shadow: none !important;

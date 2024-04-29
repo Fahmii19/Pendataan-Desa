@@ -1506,120 +1506,101 @@ document.addEventListener("DOMContentLoaded", function () {
 //
 //
 
-document
-  .querySelector(".btn_dropdown_open_kabupaten_1")
-  .addEventListener("click", function () {
-    toggleDropdownAndSlide(
-      ".btn_dropdown_open_kabupaten_1",
-      "data_konten_kelurahan_hidden_1",
-      "data_konten_kelurahan_hidden_2",
-      "data_konten_kelurahan_hidden_3",
-      "data_konten_kelurahan_hidden_4"
+document.addEventListener("DOMContentLoaded", function () {
+  // Function to hide all sections except the specified one
+  function hideAllSections(exceptSection = null) {
+    const sections = document.querySelectorAll(
+      ".data_agregasi_kelurahan, .data_agregasi_kecamatan, .data_agregasi_kabupaten, .data_agregasi_data_kelurahan, .data_agregasi_data_kabupaten"
     );
-  });
-
-document
-  .querySelector(".btn_dropdown_open_kabupaten_2")
-  .addEventListener("click", function () {
-    toggleDropdownAndSlide(
-      ".btn_dropdown_open_kabupaten_2",
-      "data_konten_kelurahan_hidden_2",
-      "data_konten_kelurahan_hidden_1",
-      "data_konten_kelurahan_hidden_3",
-      "data_konten_kelurahan_hidden_4"
-    );
-  });
-
-function toggleDropdownAndSlide(
-  btnClass,
-  contentClass,
-  ...otherContentClasses
-) {
-  let button = document.querySelector(btnClass);
-  let svgPlus = button.querySelector(".icon_plus_1, .icon_plus_2");
-  let svgMinus = button.querySelector(".icon_minus_1, .icon_minus_2");
-
-  var content = document.querySelector(`.${contentClass}`);
-  var otherContents = otherContentClasses.map((className) =>
-    document.querySelector(`.${className}`)
-  );
-
-  var isHidden = content.classList.contains("hidden");
-
-  if (isHidden) {
-    content.classList.remove("hidden");
-    slideDown(content);
-
-    // Tampilkan ikon minus dan sembunyikan ikon plus
-    svgMinus.classList.remove("hidden");
-    svgPlus.classList.add("hidden");
-
-    manageFontBoldClasses(contentClass);
-
-    // Tutup konten lain dan atur ikon mereka
-    otherContents.forEach((element) => {
-      if (!element.classList.contains("hidden")) {
-        element.classList.add("hidden");
-        slideUp(element);
-        let otherButton = document.querySelector(
-          `[data-targets*="${element.className.split(" ")[0]}"]`
-        );
-        console.log(otherButton);
-        if (otherButton) {
-          let otherSvgPlus = otherButton.querySelector(
-            ".icon_plus_1, .icon_plus_2"
-          );
-          let otherSvgMinus = otherButton.querySelector(
-            ".icon_minus_1, .icon_minus_2"
-          );
-          if (otherSvgPlus && otherSvgMinus) {
-            otherSvgPlus.classList.remove("hidden");
-            otherSvgMinus.classList.add("hidden");
-          }
-        }
+    sections.forEach((section) => {
+      if (section !== exceptSection) {
+        section.classList.add("hidden");
       }
     });
-  } else {
-    slideUp(content);
-    setTimeout(() => {
-      content.classList.add("hidden");
-      content.style.removeProperty("height");
-      // Tampilkan ikon plus dan sembunyikan ikon minus
-      svgPlus.classList.remove("hidden");
-      svgMinus.classList.add("hidden");
-      resetFontBoldClasses();
-    }, 300);
   }
-}
 
-function manageFontBoldClasses(visibleContentClass) {
-  const boldClassMap = {
-    data_konten_kelurahan_hidden_1: ".judul_tjsiang",
-    data_konten_kelurahan_hidden_2: ".judul_binong",
-  };
+  // Initially display the 'data_agregasi_kelurahan' section
+  const kelurahanSection = document.querySelector(".data_agregasi_kelurahan");
+  kelurahanSection.classList.remove("hidden");
 
-  resetFontBoldClasses();
-  if (boldClassMap[visibleContentClass]) {
-    document
-      .querySelector(boldClassMap[visibleContentClass])
-      .classList.add("font-bold");
-  }
-}
-
-function resetFontBoldClasses() {
+  // Toggle visibility of the 'data_agregasi_kecamatan' section on button click
   document
-    .querySelectorAll(".judul_binong, .judul_tjsiang")
-    .forEach((element) => element.classList.remove("font-bold"));
-}
+    .querySelectorAll(".btn_dropdown_open_kecamatan")
+    .forEach((button) => {
+      button.addEventListener("click", function () {
+        const kecamatanSection = document.querySelector(
+          ".data_agregasi_kecamatan"
+        );
+        if (kecamatanSection.classList.contains("hidden")) {
+          hideAllSections(kecamatanSection);
+          kecamatanSection.classList.remove("hidden");
+        } else {
+          kecamatanSection.classList.add("hidden");
+        }
+      });
+    });
 
-function slideUp(element) {
-  element.style.transition = "height 0.3s ease";
-  element.style.overflow = "hidden";
-  element.style.height = "0";
-}
+  // Toggle visibility of the 'data_agregasi_kabupaten' section on button click
+  document
+    .querySelectorAll(".btn_dropdown_open_kabupaten")
+    .forEach((button) => {
+      button.addEventListener("click", function () {
+        const kabupatenSection = document.querySelector(
+          ".data_agregasi_kabupaten"
+        );
+        if (kabupatenSection.classList.contains("hidden")) {
+          hideAllSections(kabupatenSection);
+          kabupatenSection.classList.remove("hidden");
+        } else {
+          kabupatenSection.classList.add("hidden");
+        }
+      });
+    });
 
-function slideDown(element) {
-  element.classList.remove("hidden");
-  let height = element.scrollHeight + "px";
-  element.style.height = height;
-}
+  // Toggle visibility of the 'data_agregasi_data_kelurahan' new data section on button click
+  document.querySelectorAll(".btn_dropdown_open_new_data").forEach((button) => {
+    button.addEventListener("click", function () {
+      const newKelurahanSection = document.querySelector(
+        ".data_agregasi_data_kelurahan"
+      );
+      if (newKelurahanSection.classList.contains("hidden")) {
+        hideAllSections(newKelurahanSection);
+        newKelurahanSection.classList.remove("hidden");
+      } else {
+        newKelurahanSection.classList.add("hidden");
+      }
+    });
+  });
+  // Toggle visibility of the 'data_agregasi_data_kelurahan' new data section on button click
+  document.querySelectorAll(".btn_open_data_kelurahan").forEach((button) => {
+    button.addEventListener("click", function () {
+      const newKelurahanSection = document.querySelector(
+        ".data_agregasi_kelurahan"
+      );
+      if (newKelurahanSection.classList.contains("hidden")) {
+        hideAllSections(newKelurahanSection);
+        newKelurahanSection.classList.remove("hidden");
+      } else {
+        newKelurahanSection.classList.add("hidden");
+      }
+    });
+  });
+
+  // Toggle visibility of the 'data_agregasi_data_kabupaten' new data section on button click
+  const newDataKabupatenButton = document.querySelector(
+    ".btn_data_agregasi_data_kabupaten"
+  );
+  if (newDataKabupatenButton) {
+    newDataKabupatenButton.addEventListener("click", function () {
+      const newDataKabupatenSection = document.querySelector(
+        ".data_agregasi_data_kabupaten"
+      );
+      if (newDataKabupatenSection.classList.contains("hidden")) {
+        hideAllSections(newDataKabupatenSection);
+        newDataKabupatenSection.classList.remove("hidden");
+      } else {
+        newDataKabupatenSection.classList.add("hidden");
+      }
+    });
+  }
+});
