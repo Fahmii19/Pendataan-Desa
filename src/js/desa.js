@@ -1462,6 +1462,7 @@ window.ButtonAgregat = function () {
   localStorage.setItem("komponenDuaUpdated", "true");
   localStorage.setItem("hiddenAgregatsUpdated", "true");
   localStorage.setItem("kontenAgregatsUpdated", "true");
+  localStorage.setItem("kontenAgregatsUpdated2", "true");
 
   // Buka tab baru dengan parameter khusus
   window.open(window.location.href + "?updateDOM=true", "_blank");
@@ -1475,7 +1476,7 @@ document.addEventListener("DOMContentLoaded", function () {
       var komponenDua = document.querySelector(".komponen_dua_grid_form_layer");
       if (komponenDua) {
         komponenDua.classList.remove("komponen_dua_grid_form_layer");
-        komponenDua.classList.add("komponen_satu_grid_form_layer");
+        komponenDua.classList.add("komponen_custom_form_layer");
       }
     }
 
@@ -1493,7 +1494,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
 
-    if (localStorage.getItem("kontenAgregatsUpdate2d") === "true") {
+    if (localStorage.getItem("kontenAgregatsUpdated2") === "true") {
       var kontenAgregats = document.querySelectorAll(".komponen_agregasi");
       kontenAgregats.forEach(function (kontenAgregat) {
         kontenAgregat.classList.remove("hidden");
@@ -1504,6 +1505,7 @@ document.addEventListener("DOMContentLoaded", function () {
     localStorage.removeItem("komponenDuaUpdated");
     localStorage.removeItem("hiddenAgregatsUpdated");
     localStorage.removeItem("kontenAgregatsUpdated");
+    localStorage.removeItem("kontenAgregatsUpdated2");
   }
 });
 
