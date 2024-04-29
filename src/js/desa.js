@@ -1471,7 +1471,7 @@ window.ButtonAgregat = function () {
 document.addEventListener("DOMContentLoaded", function () {
   var params = new URLSearchParams(window.location.search);
   if (params.get("updateDOM") === "true") {
-    // Hanya terapkan perubahan jika URL mengandung parameter yang tepat
+    // Apply changes if URL contains the correct parameter
     if (localStorage.getItem("komponenDuaUpdated") === "true") {
       var komponenDua = document.querySelector(".komponen_dua_grid_form_layer");
       if (komponenDua) {
@@ -1501,7 +1501,15 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
 
-    // Bersihkan localStorage setelah perubahan diterapkan
+    // Replace 'nilai_mapsoaraja' class with 'nilai_mapsoaraja_agregasi'
+    var nilaiMapsoarajaElements =
+      document.querySelectorAll(".nilai_mapsoaraja");
+    nilaiMapsoarajaElements.forEach(function (element) {
+      element.classList.remove("nilai_mapsoaraja");
+      element.classList.add("nilai_mapsoaraja_agregasi");
+    });
+
+    // Clear localStorage after changes are applied
     localStorage.removeItem("komponenDuaUpdated");
     localStorage.removeItem("hiddenAgregatsUpdated");
     localStorage.removeItem("kontenAgregatsUpdated");
