@@ -15,6 +15,7 @@ import rightOnImg from "../images/desa/right-on.png";
 
 // Dokumen
 import laporanKeuanganPDF from "../Laporan_Keuangan.pdf";
+import { data } from "autoprefixer";
 
 // Running Teks Berjalan
 $(document).ready(function () {
@@ -1523,4 +1524,77 @@ document.addEventListener("DOMContentLoaded", function () {
 //
 //
 
-// chart agregasii
+document.addEventListener("DOMContentLoaded", function () {
+  const openKecKelButtons = document.querySelectorAll(".btn_open_keckel");
+  const dataKelDesAggregasi = document.querySelectorAll(".data_agregasi_kec");
+  const data_agregasi_kel_binara = document.querySelector(
+    ".data_agregasi_kel_binara"
+  );
+
+  // Tampilkan data agregasi kelurahan Binara saat halaman dimuat
+  data_agregasi_kel_binara.classList.remove("hidden");
+
+  // Tampilkan data agregasi kecamatan saat halaman dimuat
+  dataKelDesAggregasi.forEach((dataAggregasi) => {
+    dataAggregasi.classList.remove("hidden");
+  });
+
+  //
+  const btn_keldes_tanjungsiang = document.querySelector(
+    ".btn_keldes_tanjungsiang"
+  );
+  const data_agregasi_kel_cisalak = document.querySelector(
+    ".data_agregasi_kel_cisalak"
+  );
+
+  //
+  const btn_keldes_binong = document.querySelector(".btn_keldes_binong");
+
+  // Untuk melacak apakah elemen terbuka atau tertutup
+  let isOpen = false;
+
+  openKecKelButtons.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      dataKelDesAggregasi.forEach((dataAggregasi) => {
+        // Toggle antara menampilkan dan menyembunyikan elemen terkait
+        if (isOpen) {
+          dataAggregasi.classList.add("hidden");
+          isOpen = false;
+        } else {
+          dataAggregasi.classList.remove("hidden");
+          isOpen = true;
+        }
+      });
+    });
+  });
+
+  // Tanjungsiang
+  btn_keldes_tanjungsiang.addEventListener("click", function () {
+    if (data_agregasi_kel_binara.classList.contains("hidden")) {
+      // Menyembunyikan konten binong saat btn_keldes_tanjungsiang diklik
+      if (!data_agregasi_kel_cisalak.classList.contains("hidden")) {
+        data_agregasi_kel_cisalak.classList.add("hidden");
+      }
+      // Menampilkan konten tanjungsiang saat btn_keldes_tanjungsiang diklik
+      data_agregasi_kel_binara.classList.remove("hidden");
+    } else {
+      // Menyembunyikan konten tanjungsiang saat btn_keldes_tanjungsiang diklik kembali
+      data_agregasi_kel_binara.classList.add("hidden");
+    }
+  });
+
+  // Binong
+  btn_keldes_binong.addEventListener("click", function () {
+    if (data_agregasi_kel_cisalak.classList.contains("hidden")) {
+      // Menyembunyikan konten tanjungsiang saat btn_keldes_binong diklik
+      if (!data_agregasi_kel_binara.classList.contains("hidden")) {
+        data_agregasi_kel_binara.classList.add("hidden");
+      }
+      // Menampilkan konten binong saat btn_keldes_binong diklik
+      data_agregasi_kel_cisalak.classList.remove("hidden");
+    } else {
+      // Menyembunyikan konten binong saat btn_keldes_binong diklik kembali
+      data_agregasi_kel_cisalak.classList.add("hidden");
+    }
+  });
+});
