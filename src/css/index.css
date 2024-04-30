@@ -129,6 +129,35 @@
   position: relative !important;
 }
 
+/* scrollbar */
+
+.scrollbar_agregasi::-webkit-scrollbar-track-piece:end {
+  background: transparent;
+}
+
+.scrollbar_agregasi::-webkit-scrollbar-track-piece:start {
+  background: transparent;
+}
+
+.scrollbar_agregasi::-webkit-scrollbar {
+  width: 2px;
+  height: auto;
+}
+
+.scrollbar_agregasi::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  display: none;
+}
+
+.scrollbar_agregasi::-webkit-scrollbar-thumb {
+  background: rgb(161 161 170);
+  border-radius: 100vh;
+  border: 2px solid rgb(161 161 170);
+  position: relative !important;
+}
+
+/*  */
+
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
 }
