@@ -316,21 +316,25 @@
   box-shadow: none !important;
 }
 
+.btn-zoom-in {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
 /* Layer and Location Icons */
 .btn-layer {
-  background-image: url("../images/layer-map.png");
+  background-image: url("../images/gm1/layers.png");
   background-position: 50% !important;
   background-repeat: no-repeat !important;
   display: block !important;
   background-size: inherit !important;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+
   width: 65% !important;
   height: 65% !important;
 }
 
 .btn-location {
-  background-image: url("../images/gm1/my-location.png");
+  background-image: url("../images/gm1/ukur_jarak.png");
   background-position: 50% !important;
   background-repeat: no-repeat !important;
   display: block !important;
@@ -377,7 +381,7 @@
 }
 
 .btn-stick3 {
-  background-image: url("../images/gm1/pentagon-off.png") !important;
+  background-image: url("../images/gm1/ukur_luas.png") !important;
   background-position: 50% !important;
   background-repeat: no-repeat !important;
   display: block !important;
@@ -1226,6 +1230,69 @@ input[name="plan"]:checked ~ .menuKetigaAds {
 
 /* Desa */
 
+/*  */
+
+/* .btn-stick3 {
+  background-image: url("../images/desa/check.png") !important;
+  background-position: 50% !important;
+  background-repeat: no-repeat !important;
+  display: block !important;
+  background-size: inherit !important;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  width: 60% !important;
+  height: 60% !important;
+} */
+
+.rotate-icon {
+  transform: rotate(180deg); /* Rotates the icon 180 degrees */
+  transition: transform 0.3s ease; /* Smooth transition for the rotation */
+}
+
+.data_konten_kelurahan_hidden_1,
+.data_konten_kelurahan_hidden_2 {
+  transition: height 0.3s ease;
+  overflow: hidden;
+}
+
+/*  */
+
+.mapboxgl-ctrl-group button {
+  background-color: white !important;
+}
+
+.active-button {
+  background-color: #e2e8f0 !important;
+}
+
+.custom-control-button {
+  background-color: white;
+}
+
+.custom-control-button.active-button {
+  background-color: #e2e8f0;
+}
+
+.komponen_dua_grid_form_layer {
+  @apply grid grid-cols-[425px,1fr];
+}
+
+.komponen_satu_grid_form_layer {
+  @apply grid grid-cols-1;
+}
+
+.komponen_custom_form_layer {
+  @apply grid grid-rows-2;
+}
+
+.nilai_mapsoaraja {
+  @apply w-full h-full;
+}
+
+.nilai_mapsoaraja_agregasi {
+  @apply !w-[100vw] h-full;
+}
+
 .hapus_focus_checkbox:focus {
   outline: none !important;
   box-shadow: none !important;
@@ -1234,14 +1301,26 @@ input[name="plan"]:checked ~ .menuKetigaAds {
 
 /* sm breakpoint: 640px */
 @media (min-width: 640px) {
+  .ukuran_legend_profit_container {
+    @apply w-[31.5vw] h-[17.7vh];
+  }
   .ukuran_legend_profit {
     @apply w-[31.5vw] h-[17.7vh];
   }
+  .box_kesuburan_container {
+    @apply w-[9.5vw] h-[14.7vh];
+  }
   .box_kesuburan {
-    @apply w-[9.2vw] h-[14.7vh];
+    @apply w-[9.5vw] h-[14.7vh];
+  }
+  .box_prediksi_hujan_container {
+    @apply w-[10vw] h-[14.7vh];
   }
   .box_prediksi_hujan {
     @apply w-[10vw] h-[14.7vh];
+  }
+  .box_usia_panen_container {
+    @apply w-[9.2vw] h-[14.7vh];
   }
   .box_usia_panen {
     @apply w-[9.2vw] h-[14.7vh];
@@ -1250,14 +1329,26 @@ input[name="plan"]:checked ~ .menuKetigaAds {
 
 /* md breakpoint: 768px */
 @media (min-width: 768px) {
+  .ukuran_legend_profit_container {
+    @apply w-[31.5vw] h-[17.7vh];
+  }
   .ukuran_legend_profit {
     @apply w-[31.5vw] h-[17.7vh];
   }
+  .box_kesuburan_container {
+    @apply w-[9.5vw] h-[14.7vh];
+  }
   .box_kesuburan {
-    @apply w-[9.2vw] h-[14.7vh];
+    @apply w-[9.5vw] h-[14.7vh];
+  }
+  .box_prediksi_hujan_container {
+    @apply w-[10vw] h-[14.7vh];
   }
   .box_prediksi_hujan {
     @apply w-[10vw] h-[14.7vh];
+  }
+  .box_usia_panen_container {
+    @apply w-[9.2vw] h-[14.7vh];
   }
   .box_usia_panen {
     @apply w-[9.2vw] h-[14.7vh];
@@ -1266,14 +1357,26 @@ input[name="plan"]:checked ~ .menuKetigaAds {
 
 /* lg breakpoint: 1024px */
 @media (min-width: 1024px) {
+  .ukuran_legend_profit_container {
+    @apply w-[31.5vw] h-[17.7vh];
+  }
   .ukuran_legend_profit {
     @apply w-[31.5vw] h-[17.7vh];
   }
+  .box_kesuburan_container {
+    @apply w-[9.5vw] h-[14.7vh];
+  }
   .box_kesuburan {
-    @apply w-[9.2vw] h-[14.7vh];
+    @apply w-[9.5vw] h-[14.7vh];
+  }
+  .box_prediksi_hujan_container {
+    @apply w-[10vw] h-[14.7vh];
   }
   .box_prediksi_hujan {
     @apply w-[10vw] h-[14.7vh];
+  }
+  .box_usia_panen_container {
+    @apply w-[9.2vw] h-[14.7vh];
   }
   .box_usia_panen {
     @apply w-[9.2vw] h-[14.7vh];
@@ -1282,14 +1385,26 @@ input[name="plan"]:checked ~ .menuKetigaAds {
 
 /* xl breakpoint: 1280px */
 @media (min-width: 1280px) {
+  .ukuran_legend_profit_container {
+    @apply w-[36.5vw] h-[14.7vh];
+  }
   .ukuran_legend_profit {
     @apply w-[36.5vw] h-[14.7vh];
   }
+  .box_kesuburan_container {
+    @apply w-[9.5vw] h-[14.7vh];
+  }
   .box_kesuburan {
-    @apply w-[9.2vw] h-[14.7vh];
+    @apply w-[9.5vw] h-[14.7vh];
+  }
+  .box_prediksi_hujan_container {
+    @apply w-[10vw] h-[14.7vh];
   }
   .box_prediksi_hujan {
     @apply w-[10vw] h-[14.7vh];
+  }
+  .box_usia_panen_container {
+    @apply w-[9.2vw] h-[14.7vh];
   }
   .box_usia_panen {
     @apply w-[9.2vw] h-[14.7vh];
@@ -1298,15 +1413,27 @@ input[name="plan"]:checked ~ .menuKetigaAds {
 
 /* xl breakpoint: 1280px */
 @media (min-width: 1380px) {
+  .ukuran_legend_profit_container {
+    @apply w-[34.2vw] h-[14.7vh];
+  }
   .ukuran_legend_profit {
     @apply w-[34.2vw] h-[14.7vh];
   }
 
+  .box_kesuburan_container {
+    @apply w-[9.5vw] h-[14.7vh];
+  }
   .box_kesuburan {
-    @apply w-[9.2vw] h-[14.7vh];
+    @apply w-[9.5vw] h-[14.7vh];
+  }
+  .box_prediksi_hujan_container {
+    @apply w-[10vw] h-[14.7vh];
   }
   .box_prediksi_hujan {
     @apply w-[10vw] h-[14.7vh];
+  }
+  .box_usia_panen_container {
+    @apply w-[9.2vw] h-[14.7vh];
   }
   .box_usia_panen {
     @apply w-[9.2vw] h-[14.7vh];
@@ -1315,15 +1442,27 @@ input[name="plan"]:checked ~ .menuKetigaAds {
 
 /* xl breakpoint: 1280px */
 @media (min-width: 1480px) {
+  .ukuran_legend_profit_container {
+    @apply w-[32.5vw] h-[14.7vh];
+  }
   .ukuran_legend_profit {
     @apply w-[32.5vw] h-[14.7vh];
   }
 
+  .box_kesuburan_container {
+    @apply w-[9.5vw] h-[14.7vh];
+  }
   .box_kesuburan {
-    @apply w-[9.2vw] h-[14.7vh];
+    @apply w-[9.5vw] h-[14.7vh];
+  }
+  .box_prediksi_hujan_container {
+    @apply w-[10vw] h-[14.7vh];
   }
   .box_prediksi_hujan {
     @apply w-[10vw] h-[14.7vh];
+  }
+  .box_usia_panen_container {
+    @apply w-[9.2vw] h-[14.7vh];
   }
   .box_usia_panen {
     @apply w-[9.2vw] h-[14.7vh];
@@ -1332,14 +1471,26 @@ input[name="plan"]:checked ~ .menuKetigaAds {
 
 /* 2xl breakpoint: 1536px */
 @media (min-width: 1536px) {
+  .ukuran_legend_profit_container {
+    @apply w-[31.3vw] h-[17.6vh];
+  }
   .ukuran_legend_profit {
     @apply w-[31.3vw] h-[17.6vh];
   }
+  .box_kesuburan_container {
+    @apply w-[9.5vw] h-[17.5vh];
+  }
   .box_kesuburan {
-    @apply w-[9.2vw] h-[17.5vh];
+    @apply w-[9.5vw] h-[17.5vh];
+  }
+  .box_prediksi_hujan_container {
+    @apply w-[10vw] h-[17.5vh];
   }
   .box_prediksi_hujan {
     @apply w-[10vw] h-[17.5vh];
+  }
+  .box_usia_panen_container {
+    @apply w-[9.2vw] h-[17.5vh];
   }
   .box_usia_panen {
     @apply w-[9.2vw] h-[17.5vh];

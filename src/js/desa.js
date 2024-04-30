@@ -1015,7 +1015,6 @@ document.addEventListener("DOMContentLoaded", function () {
   link.href = laporanKeuanganPDF;
 });
 
-// Function Button Group Menu
 document.addEventListener("DOMContentLoaded", function () {
   const dataInformasi = {
     "Padi Sawah": {
@@ -1457,3 +1456,71 @@ document.addEventListener("DOMContentLoaded", function () {
   // Memuat informasi "Padi Sawah" saat halaman dimuat
   tampilkanInformasi("Padi Sawah");
 });
+
+window.ButtonAgregat = function () {
+  // Simpan kondisi di localStorage
+  localStorage.setItem("komponenDuaUpdated", "true");
+  localStorage.setItem("hiddenAgregatsUpdated", "true");
+  localStorage.setItem("kontenAgregatsUpdated", "true");
+  localStorage.setItem("kontenAgregatsUpdated2", "true");
+
+  // Buka tab baru dengan parameter khusus
+  window.open(window.location.href + "?updateDOM=true", "_blank");
+};
+
+document.addEventListener("DOMContentLoaded", function () {
+  var params = new URLSearchParams(window.location.search);
+  if (params.get("updateDOM") === "true") {
+    // Apply changes if URL contains the correct parameter
+    if (localStorage.getItem("komponenDuaUpdated") === "true") {
+      var komponenDua = document.querySelector(".komponen_dua_grid_form_layer");
+      if (komponenDua) {
+        komponenDua.classList.remove("komponen_dua_grid_form_layer");
+        komponenDua.classList.add("komponen_custom_form_layer");
+      }
+    }
+
+    if (localStorage.getItem("hiddenAgregatsUpdated") === "true") {
+      var hiddenAgregats = document.querySelectorAll(".hidden_agregat");
+      hiddenAgregats.forEach(function (hiddenAgregat) {
+        hiddenAgregat.classList.add("hidden");
+      });
+    }
+
+    if (localStorage.getItem("kontenAgregatsUpdated") === "true") {
+      var kontenAgregats = document.querySelectorAll(".konten_agregat");
+      kontenAgregats.forEach(function (kontenAgregat) {
+        kontenAgregat.classList.remove("hidden");
+      });
+    }
+
+    if (localStorage.getItem("kontenAgregatsUpdated2") === "true") {
+      var kontenAgregats = document.querySelectorAll(".komponen_agregasi");
+      kontenAgregats.forEach(function (kontenAgregat) {
+        kontenAgregat.classList.remove("hidden");
+      });
+    }
+
+    // Replace 'nilai_mapsoaraja' class with 'nilai_mapsoaraja_agregasi'
+    var nilaiMapsoarajaElements =
+      document.querySelectorAll(".nilai_mapsoaraja");
+    nilaiMapsoarajaElements.forEach(function (element) {
+      element.classList.remove("nilai_mapsoaraja");
+      element.classList.add("nilai_mapsoaraja_agregasi");
+    });
+
+    // Clear localStorage after changes are applied
+    localStorage.removeItem("komponenDuaUpdated");
+    localStorage.removeItem("hiddenAgregatsUpdated");
+    localStorage.removeItem("kontenAgregatsUpdated");
+    localStorage.removeItem("kontenAgregatsUpdated2");
+  }
+});
+
+//
+//
+//
+//
+//
+
+// chart agregasii
