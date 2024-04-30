@@ -153,6 +153,16 @@ const HideAndShow = (layer) => {
   }
 };
 
+// Disabled radio button if checkbox is not checked
+document
+  .getElementById("prediksi_curah_hujan_checkbox")
+  .addEventListener("change", (e) => {
+    const radios = document.querySelectorAll("input[name='curah_hujan']");
+    radios.forEach((radio) => {
+      radio.disabled = !e.target.checked;
+    });
+  });
+
 // Change Color Layer hujan-fill By Param
 document.querySelectorAll("input[name='curah_hujan']").forEach((input) => {
   input.addEventListener("change", (e) => {
