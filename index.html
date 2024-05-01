@@ -73,11 +73,11 @@
           <!--  -->
 
           <!-- tea1 -->
-          <div class="w-full h-full komponen_custom_form_layer">
+          <div class="w-full h-full komponen_dua_grid_form_layer">
             <!-- Pertama -->
             <!-- tea2 -->
             <div
-              class="w-full bg-white flex flex-col z-10 h-screen overflow-y-auto overflow-x-hidden scrollbar hidden_agregat hidden"
+              class="w-full bg-white flex flex-col z-10 h-screen overflow-y-auto overflow-x-hidden scrollbar hidden_agregat"
             >
               <!-- logo -->
               <div class="w-full h-[14vh] mt-[4.5vh] mb-[4vh]">
@@ -2686,7 +2686,7 @@
 
             <!-- agregasi -->
             <div
-              class="w-full grid grid-cols-[1fr,400px,400px] relative bg-white komponen_agregasi"
+              class="w-full grid grid-cols-[1fr,300px,500px] relative bg-white komponen_agregasi hidden"
             >
               <!-- Judul -->
               <div
@@ -2707,7 +2707,7 @@
                       >
                         <li aria-current="page">
                           <div class="flex items-center">
-                            <span class="text-sm font-medium text-gray-500"
+                            <span class="text-xs font-medium text-gray-500"
                               >Indonesia</span
                             >
                           </div>
@@ -2730,7 +2730,7 @@
                               />
                             </svg>
                             <span
-                              class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400"
+                              class="ms-1 text-xs font-medium text-gray-500 md:ms-2 dark:text-gray-400"
                               >Prov. Jawa Barat</span
                             >
                           </div>
@@ -2753,7 +2753,7 @@
                               />
                             </svg>
                             <span
-                              class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400"
+                              class="ms-1 text-xs font-medium text-gray-500 md:ms-2 dark:text-gray-400"
                               >Kab. Subang</span
                             >
                           </div>
@@ -2776,7 +2776,7 @@
                               />
                             </svg>
                             <span
-                              class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400"
+                              class="ms-1 text-xs font-medium text-gray-500 md:ms-2 dark:text-gray-400"
                               >Kec. Tanjungsiang</span
                             >
                           </div>
@@ -2799,7 +2799,7 @@
                               />
                             </svg>
                             <span
-                              class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400"
+                              class="ms-1 text-xs font-medium text-gray-500 md:ms-2 dark:text-gray-400"
                               >Kel. Cimeuhmal</span
                             >
                           </div>
@@ -3288,27 +3288,31 @@
               <!-- informasi -->
               <div class="w-full mt-16">
                 <div class="w-full flex flex-col text-sm text-black mt-9 ml-3">
-                  <div class="grid grid-cols-2 mt-0">
+                  <div class="grid grid-cols-[1fr,100px] mt-0">
+                    <div class="">Kelurahan</div>
+                    <div>Cimeuhmal</div>
+                  </div>
+                  <div class="grid grid-cols-[1fr,100px] mt-0">
                     <div class="">Luas Lahan</div>
                     <div>500.000 m<sup>2</sup></div>
                   </div>
 
-                  <div class="grid grid-cols-2 mt-1">
+                  <div class="grid grid-cols-[1fr,100px] mt-1">
                     <div class="">Jumlah Pemilik Lahan</div>
                     <div>10</div>
                   </div>
 
-                  <div class="grid grid-cols-2 mt-1">
+                  <div class="grid grid-cols-[1fr,100px] mt-1">
                     <div class="">Jumlah Penyewa Lahan</div>
                     <div>300</div>
                   </div>
-                  <div class="grid grid-cols-2 mt-1">
+                  <div class="grid grid-cols-[1fr,100px] mt-1">
                     <div class="">Jumlah Petani Penggarap</div>
                     <div>300</div>
                   </div>
-                  <div class="grid grid-cols-2 mt-1">
+                  <div class="grid grid-cols-[1fr,100px] mt-1">
                     <div class="">Economic Value Added</div>
-                    <div>Rp 2.000.000.000</div>
+                    <div>Rp 2 M</div>
                   </div>
                 </div>
               </div>
@@ -3319,7 +3323,7 @@
                   <img
                     src="./src/images/desa/chart_agregasi.png"
                     alt=""
-                    class="w-[30vw] h-[30vh] object-contain"
+                    class="w-[30vw] h-[32vh] object-contain mt-5"
                   />
                 </div>
               </div>
@@ -3329,7 +3333,7 @@
             <div class="grid grid-rows-1 w-full h-full relative">
               <div id="mapSoaraja" class="w-screen h-screen"></div>
               <!-- tea3 -->
-              <div class="absolute top-0 w-full hidden_agregat hidden">
+              <div class="absolute top-0 w-full hidden_agregat">
                 <div class="w-full flex flex-col relative">
                   <div id="btn-titik"></div>
                   <!--  -->
@@ -3374,7 +3378,7 @@
                 </div>
               </div>
               <!-- tea4 -->
-              <div class="absolute bottom-0 hidden_agregat hidden">
+              <div class="absolute bottom-0 hidden_agregat">
                 <div class="w-full flex flex-col self-end">
                   <!-- Legend -->
                   <div class="flex flex-row w-full mb-3 ml-[1.2vw] relative">
