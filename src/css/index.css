@@ -1328,6 +1328,10 @@ input[name="plan"]:checked ~ .menuKetigaAds {
   /* border: none !important; */
 }
 
+/* .width_agregasi {
+  @apply !w-screen;
+} */
+
 /* sm breakpoint: 640px */
 @media (min-width: 640px) {
   .ukuran_legend_profit_container {
