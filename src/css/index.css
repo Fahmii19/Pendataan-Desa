@@ -331,15 +331,14 @@
 
 /*  */
 
+/* normal */
 /* Navigator MapboxGL */
 .mapboxgl-ctrl-top-right {
   right: 0vh !important;
-  top: 20.5vh !important;
-
-  /* ongoing */
-  /* top: 47.5vh !important; */
+  top: 47.5vh !important;
 }
 
+/* untuk agregasi */
 /* ongoing */
 .mapboxgl-ctrl-top-right_agregasi {
   right: 0vh !important;
@@ -1319,8 +1318,19 @@ input[name="plan"]:checked ~ .menuKetigaAds {
   @apply grid grid-cols-1;
 }
 
+.komponen_tiga_grid_agregasi_pertama {
+  @apply grid-rows-[1fr];
+}
+.komponen_tiga_grid_agregasi_kedua {
+  @apply grid-rows-[210px,25px,1fr];
+}
+
 .komponen_custom_form_layer {
   @apply grid grid-cols-2;
+}
+
+.komponen_hidden {
+  @apply hidden;
 }
 
 .nilai_mapsoaraja {
