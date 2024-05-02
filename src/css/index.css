@@ -334,11 +334,16 @@
 /* Navigator MapboxGL */
 .mapboxgl-ctrl-top-right {
   right: 0vh !important;
-  top: 47.5vh !important;
+  top: 20.5vh !important;
+
+  /* ongoing */
+  /* top: 47.5vh !important; */
 }
 
+/* ongoing */
 .mapboxgl-ctrl-top-right_agregasi {
-  display: none !important;
+  right: 0vh !important;
+  top: 20.5vh !important;
 }
 
 .mapboxgl-ctrl-group {
@@ -1315,7 +1320,7 @@ input[name="plan"]:checked ~ .menuKetigaAds {
 }
 
 .komponen_custom_form_layer {
-  @apply grid grid-rows-2;
+  @apply grid grid-cols-2;
 }
 
 .nilai_mapsoaraja {
