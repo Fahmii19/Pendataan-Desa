@@ -78,7 +78,7 @@
 
             <!-- Judul -->
             <div
-              class="col-span-2 py-5 w-full flex justify-center items-center font-bold text-2xl bg-white komponen_hidden"
+              class="col-span-2 py-5 w-full flex justify-center items-center font-bold text-2xl bg-white konten_agregat hidden"
             >
               Agregasi Profitabilitas Desa
             </div>
@@ -2706,7 +2706,7 @@
 
             <!-- agregasi -->
             <div
-              class="w-full grid grid-cols-1 relative bg-white komponen_agregasi komponen_hidden"
+              class="w-full grid grid-cols-1 relative bg-white komponen_agregasi hidden"
             >
               <!-- agregasi1 -->
               <div class="grid grid-cols-1 px-3 ml-4">
@@ -3167,7 +3167,7 @@
                           </div>
                         </div>
                         <!-- kedua kecamtan -->
-                        <div class="grid grid-cols-2">
+                        <div class="grid grid-cols-2 hidden">
                           <div class="flex flex-col">
                             <div class="w-full grid grid-cols-[1fr,30px]">
                               <div>Tanjungsiang</div>
@@ -3355,14 +3355,14 @@
             <!-- peta -->
             <div class="grid grid-rows-1 w-full h-full bg-white relative">
               <div class="flex flex-col">
-                <div class="grid grid-cols-[350px,1fr] komponen_hidden">
+                <div class="grid grid-cols-[350px,1fr] konten_agregat hidden">
                   <div class="text-md">Parameter Desa</div>
                   <div class="text-md ml-9">Data Historis</div>
                 </div>
 
                 <!--  -->
                 <div class="w-full h-full komponen_tiga_grid_agregasi_pertama">
-                  <div class="grid grid-cols-[350px,1fr] komponen_hidden">
+                  <div class="grid grid-cols-[350px,1fr] konten_agregat hidden">
                     <!--  informasi ongoing -->
                     <!--  -->
                     <div class="w-full flex flex-col text-black mt-6">
@@ -3411,16 +3411,18 @@
 
                     <!--  -->
                   </div>
-                  <div class="text-md w-full flex items-center komponen_hidden">
+                  <div
+                    class="text-md w-full flex items-center konten_agregat hidden"
+                  >
                     Peta Agregasi
                   </div>
-                  <div id="mapSoaraja" class="w-full h-full"></div>
+                  <div id="mapSoaraja" class="w-full h-full mt-1"></div>
                 </div>
                 <!--  -->
               </div>
 
               <!-- tea3 -->
-              <div class="absolute top-0 w-full hidden_agregat">
+              <div class="absolute top-0 w-full hidden_agregat hidden">
                 <div class="w-full flex flex-col relative">
                   <div id="btn-titik"></div>
                   <!--  -->
@@ -3465,7 +3467,7 @@
                 </div>
               </div>
               <!-- tea4 -->
-              <div class="absolute bottom-0 hidden_agregat">
+              <div class="absolute bottom-0 hidden_agregat hidden">
                 <div class="w-full flex flex-col self-end">
                   <!-- Legend -->
                   <div class="flex flex-row w-full mb-3 ml-[1.2vw] relative">
