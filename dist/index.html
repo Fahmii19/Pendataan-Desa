@@ -62,7 +62,7 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"
       charset="utf-8"
     ></script>
-    <script type="module" crossorigin src="./assets/index-fc6f4d13.js"></script>
+    <script type="module" crossorigin src="./assets/index-585cc75a.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/node-releases-bd3ac2a8.js">
     <link rel="modulepreload" crossorigin href="./assets/caniuse-lite-548bebad.js">
     <link rel="modulepreload" crossorigin href="./assets/electron-to-chromium-b46be654.js">
@@ -74,7 +74,7 @@
     <link rel="modulepreload" crossorigin href="./assets/postcss-value-parser-3ebb14b1.js">
     <link rel="modulepreload" crossorigin href="./assets/normalize-range-6cde8521.js">
     <link rel="modulepreload" crossorigin href="./assets/autoprefixer-8b6a301d.js">
-    <link rel="stylesheet" href="./assets/index-0589bf2e.css">
+    <link rel="stylesheet" href="./assets/index-67d2ebe6.css">
   </head>
 
   <body class="font-sf_pro_reguler">
@@ -87,6 +87,15 @@
 
           <!-- tea1 -->
           <div class="w-full h-full komponen_dua_grid_form_layer">
+            <!-- judul agregasi ongoing -->
+
+            <!-- Judul -->
+            <div
+              class="col-span-2 py-5 w-full flex justify-center items-center font-bold text-2xl bg-white konten_agregat hidden"
+            >
+              Agregasi Profitabilitas Desa
+            </div>
+
             <!-- Pertama -->
             <!-- tea2 -->
             <div
@@ -301,7 +310,7 @@
                       <label
                         for="tigapuluh_hari"
                         class="ms-2 text-sm radio_disabled text-gray-custom"
-                        >30 hariii</label
+                        >30 hari</label
                       >
                     </div>
                     <div class="w-full">
@@ -2710,21 +2719,18 @@
 
             <!-- agregasi -->
             <div
-              class="w-full grid grid-cols-[1fr,300px,500px] relative bg-white komponen_agregasi hidden"
+              class="w-full grid grid-cols-1 relative bg-white komponen_agregasi hidden"
             >
-              <!-- Judul -->
-              <div
-                class="absolute top-5 w-full flex justify-center items-center font-bold text-2xl"
-              >
-                Agregasi
-              </div>
               <!-- agregasi1 -->
-              <div class="grid grid-cols-1 px-2 mt-16 ml-8">
+              <div class="grid grid-cols-1 px-3 ml-4">
                 <!-- Pertama -->
 
-                <div class="grid grid-rows-1 py-2 text-md">
+                <div class="flex flex-col text-md">
+                  <!-- judul breadcrumb -->
+                  <div class="text-md">Wilayah Administrasi</div>
+
                   <!-- breadcrumb -->
-                  <div class="w-full mb-2">
+                  <div class="w-full mb-1 mt-1">
                     <nav class="flex" aria-label="Breadcrumb">
                       <ol
                         class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse"
@@ -2739,7 +2745,7 @@
                         <li aria-current="page">
                           <div class="flex items-center">
                             <svg
-                              class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1"
+                              class="w-2.5 h-2.5 text-gray-400 mx-1"
                               aria-hidden="true"
                               xmlns="http://www.w3.org/2000/svg"
                               fill="none"
@@ -2762,7 +2768,7 @@
                         <li aria-current="page">
                           <div class="flex items-center">
                             <svg
-                              class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1"
+                              class="w-2.5 h-2.5 text-gray-400 mx-1"
                               aria-hidden="true"
                               xmlns="http://www.w3.org/2000/svg"
                               fill="none"
@@ -2785,7 +2791,7 @@
                         <li aria-current="page">
                           <div class="flex items-center">
                             <svg
-                              class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1"
+                              class="w-2.5 h-2.5 text-gray-400 mx-1"
                               aria-hidden="true"
                               xmlns="http://www.w3.org/2000/svg"
                               fill="none"
@@ -2808,7 +2814,7 @@
                         <li aria-current="page">
                           <div class="flex items-center">
                             <svg
-                              class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1"
+                              class="w-2.5 h-2.5 text-gray-400 mx-1"
                               aria-hidden="true"
                               xmlns="http://www.w3.org/2000/svg"
                               fill="none"
@@ -2833,13 +2839,13 @@
                   </div>
                   <!-- new design1.1 -->
                   <div
-                    class="h-[38vh] w-full grid grid-cols-[100px,155px,130px,340px,1fr] text-sm overflow-y-auto overflow-x-hidden scrollbar_agregasi"
+                    class="h-[84.5vh] text-sm w-full grid grid-cols-[100px,155px,170px,340px,1fr] overflow-y-auto overflow-x-hidden scrollbar_agregasi"
                   >
                     <!-- Nasional -->
                     <div class="flex flex-col">
                       <div class="w-full flex flex-col">
                         <div class="w-full grid grid-cols-[1fr,30px]">
-                          <div>Indonesia</div>
+                          <div class="">Indonesia</div>
                           <div class="flex justify-center items-center">
                             <div class="btn_open_keckel_new">
                               <img
@@ -2864,7 +2870,7 @@
                       <!-- kab -->
                       <div class="w-full flex flex-col">
                         <div class="w-full grid grid-cols-[1fr,30px]">
-                          <div>Prov. Jawa Barat</div>
+                          <div>Jawa Barat</div>
                           <div class="flex justify-center items-center">
                             <div class="btn_open_keckel_new">
                               <img
@@ -2885,7 +2891,28 @@
                       <!-- kab -->
                       <div class="w-full flex flex-col">
                         <div class="w-full grid grid-cols-[1fr,30px]">
-                          <div>Prov. Jawa Tengah</div>
+                          <div>Jawa Tengah</div>
+                          <div class="flex justify-center items-center">
+                            <div class="btn_open_keckel_new">
+                              <img
+                                class="w-3 h-3 object-contain cursor-pointer icon_minus hidden"
+                                src="./assets/minus-191d18eb.png"
+                                alt=""
+                              />
+                              <img
+                                class="w-3 h-3 object-contain cursor-pointer icon_plus"
+                                src="./assets/plus-dde2a7ef.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="text-xs text-gray-500">Rp 67 M</div>
+                      </div>
+                      <!-- kab -->
+                      <div class="w-full flex flex-col">
+                        <div class="w-full grid grid-cols-[1fr,30px]">
+                          <div>Jawa Timur</div>
                           <div class="flex justify-center items-center">
                             <div class="btn_open_keckel_new">
                               <img
@@ -2909,7 +2936,7 @@
                       <!-- kab -->
                       <div class="w-full flex flex-col">
                         <div class="w-full grid grid-cols-[1fr,30px]">
-                          <div>Kab. Subang</div>
+                          <div>Subang</div>
                           <div class="flex justify-center items-center">
                             <div class="btn_open_keckel">
                               <img
@@ -2930,7 +2957,7 @@
                       <!-- kab -->
                       <div class="w-full flex flex-col">
                         <div class="w-full grid grid-cols-[1fr,30px]">
-                          <div>Kab. Kuningan</div>
+                          <div>Kuningan</div>
                           <div class="flex justify-center items-center">
                             <div class="btn_open_keckel">
                               <img
@@ -2948,6 +2975,72 @@
                         </div>
                         <div class="text-xs text-gray-500">Rp 70,3 M</div>
                       </div>
+                      <!-- kab -->
+                      <div class="w-full flex flex-col">
+                        <div class="w-full grid grid-cols-[1fr,30px]">
+                          <div>Bandung Barat</div>
+                          <div class="flex justify-center items-center">
+                            <div class="btn_open_keckel">
+                              <img
+                                class="w-3 h-3 object-contain cursor-pointer icon_minus hidden"
+                                src="./assets/minus-191d18eb.png"
+                                alt=""
+                              />
+                              <img
+                                class="w-3 h-3 object-contain cursor-pointer icon_plus"
+                                src="./assets/plus-dde2a7ef.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="text-xs text-gray-500">Rp 70,3 M</div>
+                      </div>
+
+                      <!-- kab -->
+                      <div class="w-full flex flex-col">
+                        <div class="w-full grid grid-cols-[1fr,30px]">
+                          <div>Pangandaran</div>
+                          <div class="flex justify-center items-center">
+                            <div class="btn_open_keckel">
+                              <img
+                                class="w-3 h-3 object-contain cursor-pointer icon_minus hidden"
+                                src="./assets/minus-191d18eb.png"
+                                alt=""
+                              />
+                              <img
+                                class="w-3 h-3 object-contain cursor-pointer icon_plus"
+                                src="./assets/plus-dde2a7ef.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="text-xs text-gray-500">Rp 70,3 M</div>
+                      </div>
+                      <!-- kab -->
+                      <div class="w-full flex flex-col">
+                        <div class="w-full grid grid-cols-[1fr,30px]">
+                          <div>Majalengka</div>
+                          <div class="flex justify-center items-center">
+                            <div class="btn_open_keckel">
+                              <img
+                                class="w-3 h-3 object-contain cursor-pointer icon_minus hidden"
+                                src="./assets/minus-191d18eb.png"
+                                alt=""
+                              />
+                              <img
+                                class="w-3 h-3 object-contain cursor-pointer icon_plus"
+                                src="./assets/plus-dde2a7ef.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="text-xs text-gray-500">Rp 70,3 M</div>
+                      </div>
+
+                      <!--  -->
                     </div>
 
                     <div class="flex flex-col">
@@ -2959,50 +3052,7 @@
                         <div class="grid grid-cols-2">
                           <div class="flex flex-col">
                             <div class="w-full grid grid-cols-[1fr,30px]">
-                              <div>Kec. Binong</div>
-                              <div class="flex justify-center items-center">
-                                <div class="btn_keldes_binong">
-                                  <img
-                                    class="w-3 h-3 object-contain cursor-pointer icon_minus hidden"
-                                    src="./assets/minus-191d18eb.png"
-                                    alt=""
-                                  />
-                                  <img
-                                    class="w-3 h-3 object-contain cursor-pointer icon_plus"
-                                    src="./assets/plus-dde2a7ef.png"
-                                    alt=""
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                            <div class="text-xs text-gray-500">Rp 20,3 M</div>
-                          </div>
-                          <!-- kekelurahan -->
-                          <div
-                            class="flex flex-col hidden data_agregasi_kel_cisalak"
-                          >
-                            <!-- datakel -->
-                            <div class="flex flex-col">
-                              <div class="w-full grid grid-cols-1">
-                                <div class="text-black">Kel. Cisalak</div>
-                              </div>
-                              <div class="text-xs text-gray-500">Rp 25 M</div>
-                            </div>
-                            <!-- datakel -->
-                            <div class="flex flex-col">
-                              <div class="w-full grid grid-cols-1">
-                                <div class="text-black">Kel. Cimeuhmal</div>
-                              </div>
-                              <div class="text-xs text-gray-500">Rp 25 M</div>
-                            </div>
-                            <!--  -->
-                          </div>
-                        </div>
-                        <!-- satu kecamtan -->
-                        <div class="grid grid-cols-2">
-                          <div class="flex flex-col">
-                            <div class="w-full grid grid-cols-[1fr,30px]">
-                              <div>Kec. Binong</div>
+                              <div>Serangpanjang</div>
                               <div class="flex justify-center items-center">
                                 <div class="btn_keldes_binong">
                                   <img
@@ -3027,25 +3077,26 @@
                             <!-- datakel -->
                             <div class="flex flex-col">
                               <div class="w-full grid grid-cols-1">
-                                <div class="text-black">Kel. Cisalak</div>
+                                <div class="text-black">Cisalak</div>
                               </div>
                               <div class="text-xs text-gray-500">Rp 25 M</div>
                             </div>
                             <!-- datakel -->
                             <div class="flex flex-col">
                               <div class="w-full grid grid-cols-1">
-                                <div class="text-black">Kel. Cimeuhmal</div>
+                                <div class="text-black">Cimeuhmal</div>
                               </div>
                               <div class="text-xs text-gray-500">Rp 25 M</div>
                             </div>
                             <!--  -->
                           </div>
                         </div>
+
                         <!-- satu kecamtan -->
                         <div class="grid grid-cols-2">
                           <div class="flex flex-col">
                             <div class="w-full grid grid-cols-[1fr,30px]">
-                              <div>Kec. Binong</div>
+                              <div>Jalan Cagak</div>
                               <div class="flex justify-center items-center">
                                 <div class="btn_keldes_binong">
                                   <img
@@ -3070,25 +3121,26 @@
                             <!-- datakel -->
                             <div class="flex flex-col">
                               <div class="w-full grid grid-cols-1">
-                                <div class="text-black">Kel. Cisalak</div>
+                                <div class="text-black">Cisalak</div>
                               </div>
                               <div class="text-xs text-gray-500">Rp 25 M</div>
                             </div>
                             <!-- datakel -->
                             <div class="flex flex-col">
                               <div class="w-full grid grid-cols-1">
-                                <div class="text-black">Kel. Cimeuhmal</div>
+                                <div class="text-black">Cimeuhmal</div>
                               </div>
                               <div class="text-xs text-gray-500">Rp 25 M</div>
                             </div>
                             <!--  -->
                           </div>
                         </div>
+
                         <!-- satu kecamtan -->
                         <div class="grid grid-cols-2">
                           <div class="flex flex-col">
                             <div class="w-full grid grid-cols-[1fr,30px]">
-                              <div>Kec. Binong</div>
+                              <div>Pagaden Barat</div>
                               <div class="flex justify-center items-center">
                                 <div class="btn_keldes_binong">
                                   <img
@@ -3113,14 +3165,14 @@
                             <!-- datakel -->
                             <div class="flex flex-col">
                               <div class="w-full grid grid-cols-1">
-                                <div class="text-black">Kel. Cisalak</div>
+                                <div class="text-black">Cisalak</div>
                               </div>
                               <div class="text-xs text-gray-500">Rp 25 M</div>
                             </div>
                             <!-- datakel -->
                             <div class="flex flex-col">
                               <div class="w-full grid grid-cols-1">
-                                <div class="text-black">Kel. Cimeuhmal</div>
+                                <div class="text-black">Cimeuhmal</div>
                               </div>
                               <div class="text-xs text-gray-500">Rp 25 M</div>
                             </div>
@@ -3128,10 +3180,10 @@
                           </div>
                         </div>
                         <!-- kedua kecamtan -->
-                        <div class="grid grid-cols-2">
+                        <div class="grid grid-cols-2 hidden">
                           <div class="flex flex-col">
                             <div class="w-full grid grid-cols-[1fr,30px]">
-                              <div>Kec. Tanjungsianggg</div>
+                              <div>Tanjungsiang</div>
                               <div class="flex justify-center items-center">
                                 <div class="btn_keldes_tanjungsiang">
                                   <img
@@ -3150,44 +3202,47 @@
 
                             <div class="text-xs text-gray-500">Rp 50 M</div>
                           </div>
+
                           <div
                             class="flex flex-col hidden data_agregasi_kel_binara"
                           >
                             <!-- datakel -->
                             <div class="flex flex-col">
                               <div class="w-full grid grid-cols-1">
-                                <div class="text-black">Kel. Binara</div>
+                                <div class="text-black">Cimeuhmal</div>
+                              </div>
+                              <div class="text-xs text-gray-500">Rp 25 M</div>
+                            </div>
+                            <!-- datakel -->
+
+                            <div class="flex flex-col">
+                              <div class="w-full grid grid-cols-1">
+                                <div class="text-black">Rancamanggung</div>
                               </div>
                               <div class="text-xs text-gray-400">Rp 25 M</div>
                             </div>
                             <!-- datakel -->
                             <div class="flex flex-col">
                               <div class="w-full grid grid-cols-1">
-                                <div class="text-black">Kel. Cimeuhmal</div>
+                                <div class="text-black">Kawungluwuk</div>
                               </div>
                               <div class="text-xs text-gray-500">Rp 25 M</div>
                             </div>
                             <!-- datakel -->
                             <div class="flex flex-col">
                               <div class="w-full grid grid-cols-1">
-                                <div class="text-black">Kel. Cimeuhmal</div>
+                                <div class="text-black">Gandasoli</div>
                               </div>
                               <div class="text-xs text-gray-500">Rp 25 M</div>
                             </div>
                             <!-- datakel -->
                             <div class="flex flex-col">
                               <div class="w-full grid grid-cols-1">
-                                <div class="text-black">Kel. Cimeuhmal</div>
+                                <div class="text-black">Cimeuhmal</div>
                               </div>
                               <div class="text-xs text-gray-500">Rp 25 M</div>
                             </div>
-                            <!-- datakel -->
-                            <div class="flex flex-col">
-                              <div class="w-full grid grid-cols-1">
-                                <div class="text-black">Kel. Cimeuhmal</div>
-                              </div>
-                              <div class="text-xs text-gray-500">Rp 25 M</div>
-                            </div>
+
                             <!--  -->
                           </div>
                         </div>
@@ -3212,7 +3267,7 @@
                         <div class="grid grid-cols-2">
                           <div class="flex flex-col">
                             <div class="w-full grid grid-cols-[1fr,30px]">
-                              <div>Kec. Binong</div>
+                              <div>Binong</div>
                               <div class="flex justify-center items-center">
                                 <div class="btn_keldes_binong_new">
                                   <img
@@ -3237,14 +3292,14 @@
                             <!-- datakel -->
                             <div class="flex flex-col">
                               <div class="w-full grid grid-cols-1">
-                                <div class="text-black">Kel. Cisalak</div>
+                                <div class="text-black">Cisalak</div>
                               </div>
                               <div class="text-xs text-gray-500">Rp 25 M</div>
                             </div>
                             <!-- datakel -->
                             <div class="flex flex-col">
                               <div class="w-full grid grid-cols-1">
-                                <div class="text-black">Kel. Cimeuhmal</div>
+                                <div class="text-black">Cimeuhmal</div>
                               </div>
                               <div class="text-xs text-gray-500">Rp 25 M</div>
                             </div>
@@ -3255,7 +3310,7 @@
                         <div class="grid grid-cols-2">
                           <div class="flex flex-col">
                             <div class="w-full grid grid-cols-[1fr,30px]">
-                              <div>Kec. Tanjungsianggg</div>
+                              <div>Tanjungsianggg</div>
                               <div class="flex justify-center items-center">
                                 <div class="btn_keldes_tanjungsiang_new">
                                   <img
@@ -3280,14 +3335,14 @@
                             <!-- datakel -->
                             <div class="flex flex-col">
                               <div class="w-full grid grid-cols-1">
-                                <div class="text-black">Kel. Binara</div>
+                                <div class="text-black">Binara</div>
                               </div>
                               <div class="text-xs text-gray-400">Rp 25 M</div>
                             </div>
                             <!-- datakel -->
                             <div class="flex flex-col">
                               <div class="w-full grid grid-cols-1">
-                                <div class="text-black">Kel. Cimeuhmal</div>
+                                <div class="text-black">Cimeuhmal</div>
                               </div>
                               <div class="text-xs text-gray-500">Rp 25 M</div>
                             </div>
@@ -3308,56 +3363,79 @@
 
                 <!--  -->
               </div>
-
-              <!-- informasi -->
-              <div class="w-full mt-16">
-                <div class="w-full flex flex-col text-sm text-black mt-9 ml-3">
-                  <div class="grid grid-cols-[1fr,100px] mt-0">
-                    <div class="">Kelurahan</div>
-                    <div>Cimeuhmal</div>
-                  </div>
-                  <div class="grid grid-cols-[1fr,100px] mt-0">
-                    <div class="">Luas Lahan</div>
-                    <div>500.000 m<sup>2</sup></div>
-                  </div>
-
-                  <div class="grid grid-cols-[1fr,100px] mt-1">
-                    <div class="">Jumlah Pemilik Lahan</div>
-                    <div>10</div>
-                  </div>
-
-                  <div class="grid grid-cols-[1fr,100px] mt-1">
-                    <div class="">Jumlah Penyewa Lahan</div>
-                    <div>300</div>
-                  </div>
-                  <div class="grid grid-cols-[1fr,100px] mt-1">
-                    <div class="">Jumlah Petani Penggarap</div>
-                    <div>300</div>
-                  </div>
-                  <div class="grid grid-cols-[1fr,100px] mt-1">
-                    <div class="">Economic Value Added</div>
-                    <div>Rp 2 M</div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Chart -->
-              <div class="p-2 w-full h-full">
-                <div class="w-full h-full flex items-center justify-center">
-                  <img
-                    src="./assets/chart_agregasi-692ddbd4.png"
-                    alt=""
-                    class="w-[30vw] h-[32vh] object-contain mt-5"
-                  />
-                </div>
-              </div>
             </div>
 
             <!-- peta -->
-            <div class="grid grid-rows-1 w-full h-full relative">
-              <div id="mapSoaraja" class="w-full h-full"></div>
+            <div class="grid grid-rows-1 w-full h-full bg-white relative">
+              <div class="flex flex-col">
+                <div class="grid grid-cols-[350px,1fr] konten_agregat hidden">
+                  <div class="text-md">Parameter Desa</div>
+                  <div class="text-md ml-9">Data Historis</div>
+                </div>
+
+                <!--  -->
+                <div class="w-full h-full komponen_tiga_grid_agregasi_pertama">
+                  <div class="grid grid-cols-[350px,1fr] konten_agregat hidden">
+                    <!--  informasi ongoing -->
+                    <!--  -->
+                    <div class="w-full flex flex-col text-black mt-6">
+                      <div class="w-full h-full text-sm">
+                        <div class="grid grid-cols-[200px,100px]">
+                          <div class="">Kelurahan</div>
+                          <div>Cimeuhmal</div>
+                        </div>
+                        <div class="grid grid-cols-[200px,100px] mt-1">
+                          <div class="">Luas Lahan Pertanian</div>
+                          <div>500.000 m<sup>2</sup></div>
+                        </div>
+
+                        <div class="grid grid-cols-[200px,100px] mt-1">
+                          <div class="">Pemilik Lahan</div>
+                          <div>10</div>
+                        </div>
+
+                        <div class="grid grid-cols-[200px,100px] mt-1">
+                          <div class="">Penyewa Lahan</div>
+                          <div>300</div>
+                        </div>
+                        <div class="grid grid-cols-[200px,100px] mt-1">
+                          <div class="">Petani Penggarap</div>
+                          <div>300</div>
+                        </div>
+                        <div class="grid grid-cols-[200px,100px] mt-1">
+                          <div class="">Economic Value Added</div>
+                          <div>Rp 2 M</div>
+                        </div>
+                      </div>
+                      <!--  -->
+
+                      <!--  -->
+                    </div>
+                    <!--  -->
+                    <!-- chart ongoing  -->
+
+                    <div class="w-full h-full flex justify-center">
+                      <img
+                        src="./assets/chart_agregasi-692ddbd4.png"
+                        alt=""
+                        class="w-[23vw] h-[32vh] object-contain mt-2"
+                      />
+                    </div>
+
+                    <!--  -->
+                  </div>
+                  <div
+                    class="text-md w-full flex items-center konten_agregat hidden"
+                  >
+                    Peta Agregasi
+                  </div>
+                  <div id="mapSoaraja" class="w-full h-full mt-1"></div>
+                </div>
+                <!--  -->
+              </div>
+
               <!-- tea3 -->
-              <div class="absolute top-0 w-full hidden_agregat">
+              <div class="absolute top-0 w-full hidden_agregat hidden">
                 <div class="w-full flex flex-col relative">
                   <div id="btn-titik"></div>
                   <!--  -->
@@ -3402,7 +3480,7 @@
                 </div>
               </div>
               <!-- tea4 -->
-              <div class="absolute bottom-0 hidden_agregat">
+              <div class="absolute bottom-0 hidden_agregat hidden">
                 <div class="w-full flex flex-col self-end">
                   <!-- Legend -->
                   <div class="flex flex-row w-full mb-3 ml-[1.2vw] relative">
