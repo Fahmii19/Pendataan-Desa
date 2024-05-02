@@ -786,6 +786,7 @@ window.togglePrediksiCurahHujan = function () {
   const prediksiCurahHujanContainer = document.querySelector(
     ".box_prediksi_hujan"
   );
+
   const checkbox = document.getElementById("prediksi_curah_hujan_checkbox");
   if (checkbox.checked) {
     prediksiCurahHujanContainer.classList.remove("hidden");
@@ -793,6 +794,37 @@ window.togglePrediksiCurahHujan = function () {
     prediksiCurahHujanContainer.classList.add("hidden");
   }
 };
+
+// Prediksi Rata-Rata Curah Hujan (BMKG)
+document.addEventListener("DOMContentLoaded", function () {
+  const checkbox = document.getElementById("prediksi_curah_hujan_checkbox");
+  const radios = document.querySelectorAll(".radio_prediksi");
+
+  // Function to toggle radio buttons' state, label styling, and color
+  function togglePrediksiCurahHujan() {
+    radios.forEach((radio) => {
+      const label = document.querySelector(`label[for="${radio.id}"]`); // Select the corresponding label using the 'for' attribute
+
+      radio.disabled = !checkbox.checked; // Toggle enabled state based on checkbox
+
+      if (checkbox.checked) {
+        label.classList.remove("radio_disabled", "text-gray-custom"); // Remove these classes when checkbox is checked
+        radio.classList.remove("text-gray-400"); // Remove the gray color
+        radio.classList.add("text-blue-600"); // Add the blue color
+      } else {
+        label.classList.add("radio_disabled", "text-gray-custom"); // Add these classes when checkbox is unchecked
+        radio.classList.remove("text-blue-600"); // Remove the blue color
+        radio.classList.add("text-gray-400"); // Add the gray color
+      }
+    });
+  }
+
+  // Set initial state based on checkbox
+  togglePrediksiCurahHujan();
+
+  // Attach the event listener to checkbox
+  checkbox.addEventListener("change", togglePrediksiCurahHujan);
+});
 
 //
 //
@@ -1004,6 +1036,12 @@ $("#dropdown-menu-pencarian a").click(function () {
   tampilkanInformasi(selectedItemText);
   $("#dropdown-menu-pencarian").hide();
 });
+
+//
+//
+//
+//
+//
 
 //
 //

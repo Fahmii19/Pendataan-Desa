@@ -16,6 +16,9 @@ module.exports = {
         sf_pro_bold: ["Font SF-Pro bold"],
         sf_pro_medium: ["Font SF-Pro medium"],
       },
+      colors: {
+        "gray-custom": "#6c757d",
+      },
     },
   },
   plugins: [require("flowbite/plugin")],

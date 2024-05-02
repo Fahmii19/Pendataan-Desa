@@ -1336,6 +1336,12 @@ input[name="plan"]:checked ~ .menuKetigaAds {
   @apply !w-screen;
 } */
 
+/* radio disabled */
+
+/* .radio_disabled {
+  @apply text-gray-custom;
+} */
+
 /* sm breakpoint: 640px */
 @media (min-width: 640px) {
   .ukuran_legend_profit_container {
