@@ -337,6 +337,10 @@
   top: 47.5vh !important;
 }
 
+.mapboxgl-ctrl-top-right_agregasi {
+  display: none !important;
+}
+
 .mapboxgl-ctrl-group {
   background-color: transparent !important;
 }
@@ -1318,9 +1322,9 @@ input[name="plan"]:checked ~ .menuKetigaAds {
   @apply w-full h-full;
 }
 
-.nilai_mapsoaraja_agregasi {
-  @apply !w-[100vw] h-full;
-}
+/* .nilai_mapsoaraja_agregasi {
+  @apply !w-[100vw];
+} */
 
 .hapus_focus_checkbox:focus {
   outline: none !important;

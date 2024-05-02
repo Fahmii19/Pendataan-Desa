@@ -1464,6 +1464,8 @@ window.ButtonAgregat = function () {
   localStorage.setItem("hiddenAgregatsUpdated", "true");
   localStorage.setItem("kontenAgregatsUpdated", "true");
   localStorage.setItem("kontenAgregatsUpdated2", "true");
+  localStorage.setItem("kontenAgregatsUpdated3", "true");
+  localStorage.setItem("kontenAgregatsUpdated4", "true");
 
   // Buka tab baru dengan parameter khusus
   window.open(window.location.href + "?updateDOM=true", "_blank");
@@ -1501,20 +1503,30 @@ document.addEventListener("DOMContentLoaded", function () {
         kontenAgregat.classList.remove("hidden");
       });
     }
+    if (localStorage.getItem("kontenAgregatsUpdated3") === "true") {
+      var kontenAgregats = document.querySelectorAll(
+        ".mapboxgl-ctrl-top-right"
+      );
+      kontenAgregats.forEach(function (elem) {
+        elem.classList.add("mapboxgl-ctrl-top-right_agregasi"); // Menambahkan class untuk styling
+      });
+    }
 
-    // Replace 'nilai_mapsoaraja' class with 'nilai_mapsoaraja_agregasi'
-    var nilaiMapsoarajaElements =
-      document.querySelectorAll(".nilai_mapsoaraja");
-    nilaiMapsoarajaElements.forEach(function (element) {
-      element.classList.remove("nilai_mapsoaraja");
-      element.classList.add("nilai_mapsoaraja_agregasi");
-    });
+    // if (localStorage.getItem("kontenAgregatsUpdated4") === "true") {
+    //   var mapSoaraja = document.getElementById("mapSoaraja");
+    //   if (mapSoaraja) {
+    //     mapSoaraja.style.width = "100vw!important";
+    //     mapSoaraja.style.height = "100vh";
+    //   }
+    // }
 
     // Clear localStorage after changes are applied
     localStorage.removeItem("komponenDuaUpdated");
     localStorage.removeItem("hiddenAgregatsUpdated");
     localStorage.removeItem("kontenAgregatsUpdated");
     localStorage.removeItem("kontenAgregatsUpdated2");
+    localStorage.removeItem("kontenAgregatsUpdated3");
+    localStorage.removeItem("kontenAgregatsUpdated4");
   }
 });
 
