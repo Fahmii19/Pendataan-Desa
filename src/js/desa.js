@@ -1575,7 +1575,7 @@ document.addEventListener("DOMContentLoaded", function () {
 //
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Mendapatkan tombol, ikon, dan konten yang relevan
+  // Mendapatkan tombol, ikon, dan konten yang relevan untuk Desa
   const btnOpenDesa1 = document.querySelector(".btn_open_desa_1");
   const iconPlus1 = btnOpenDesa1.querySelector(".icon_plus");
   const iconMinus1 = btnOpenDesa1.querySelector(".icon_minus");
@@ -1611,7 +1611,34 @@ document.addEventListener("DOMContentLoaded", function () {
     ".data_konten_kelurahan_hidden_5"
   );
 
-  // Fungsi untuk mengelola visibilitas ikon berdasarkan status konten
+  // Mendapatkan tombol, ikon, dan konten yang relevan untuk Kabupaten
+  const btnOpenKabupaten1 = document.querySelector(".btn_open_kabupaten_1");
+  const iconPlusKab1 = btnOpenKabupaten1.querySelector(".icon_plus");
+  const iconMinusKab1 = btnOpenKabupaten1.querySelector(".icon_minus");
+  const contentKabupaten1 = document.querySelectorAll(
+    ".data_konten_kabupaten_1"
+  );
+
+  const btnOpenKabupaten2 = document.querySelector(".btn_open_kabupaten_2");
+  const iconPlusKab2 = btnOpenKabupaten2.querySelector(".icon_plus");
+  const iconMinusKab2 = btnOpenKabupaten2.querySelector(".icon_minus");
+  const contentKabupaten2 = document.querySelectorAll(
+    ".data_konten_kabupaten_2"
+  );
+  const spasiKab = document.querySelectorAll(".spasi_kab"); // Selecting all spasi_kab elements
+
+  // Function to manage visibility of spasi_kab elements
+  function toggleSpasiKab(show) {
+    spasiKab.forEach((div) => {
+      if (show) {
+        div.classList.remove("hidden");
+      } else {
+        div.classList.add("hidden");
+      }
+    });
+  }
+
+  // Function to update icon visibility based on content visibility
   function updateIcons() {
     iconPlus1.classList.toggle(
       "hidden",
@@ -1621,7 +1648,6 @@ document.addEventListener("DOMContentLoaded", function () {
       "hidden",
       contentKelurahan1.classList.contains("hidden")
     );
-
     iconPlus2.classList.toggle(
       "hidden",
       !contentKelurahan2.classList.contains("hidden")
@@ -1630,7 +1656,6 @@ document.addEventListener("DOMContentLoaded", function () {
       "hidden",
       contentKelurahan2.classList.contains("hidden")
     );
-
     iconPlus3.classList.toggle(
       "hidden",
       !contentKelurahan3.classList.contains("hidden")
@@ -1639,29 +1664,58 @@ document.addEventListener("DOMContentLoaded", function () {
       "hidden",
       contentKelurahan3.classList.contains("hidden")
     );
+    iconPlus4.classList.toggle(
+      "hidden",
+      !contentKelurahan4.classList.contains("hidden")
+    );
+    iconMinus4.classList.toggle(
+      "hidden",
+      contentKelurahan4.classList.contains("hidden")
+    );
+    iconPlus5.classList.toggle(
+      "hidden",
+      !contentKelurahan5.classList.contains("hidden")
+    );
+    iconMinus5.classList.toggle(
+      "hidden",
+      contentKelurahan5.classList.contains("hidden")
+    );
   }
 
-  // Fungsi untuk menampilkan dan menyembunyikan konten
+  // Function to show or hide content
   function toggleContent(content) {
     const isHidden = content.classList.contains("hidden");
-    // Sembunyikan semua konten dulu
     contentKelurahan1.classList.add("hidden");
     contentKelurahan2.classList.add("hidden");
     contentKelurahan3.classList.add("hidden");
     contentKelurahan4.classList.add("hidden");
     contentKelurahan5.classList.add("hidden");
 
-    // Tampilkan atau sembunyikan konten yang relevan
     if (isHidden) {
       content.classList.remove("hidden");
     } else {
       content.classList.add("hidden");
     }
 
-    updateIcons(); // Perbarui ikon setiap kali konten ditoggle
+    updateIcons(); // Update icons after toggling content
   }
 
-  // Tambahkan event listener untuk ikon plus dan minus
+  // Function to handle kabupaten content and spasi_kab visibility
+  function toggleKabupaten(
+    contentToShow,
+    contentToHide,
+    iconPlus,
+    iconMinus,
+    showSpasi
+  ) {
+    contentToHide.forEach((el) => el.classList.add("hidden"));
+    iconPlus.classList.toggle("hidden");
+    iconMinus.classList.toggle("hidden");
+    contentToShow.forEach((el) => el.classList.toggle("hidden"));
+    toggleSpasiKab(showSpasi); // Update spasi_kab based on action
+  }
+
+  // Event listeners for plus and minus icons of villages and kabupatens
   iconPlus1.addEventListener("click", () => toggleContent(contentKelurahan1));
   iconMinus1.addEventListener("click", () => toggleContent(contentKelurahan1));
   iconPlus2.addEventListener("click", () => toggleContent(contentKelurahan2));
@@ -1673,7 +1727,29 @@ document.addEventListener("DOMContentLoaded", function () {
   iconPlus5.addEventListener("click", () => toggleContent(contentKelurahan5));
   iconMinus5.addEventListener("click", () => toggleContent(contentKelurahan5));
 
-  // Inisialisasi awal
+  btnOpenKabupaten1.addEventListener("click", () =>
+    toggleKabupaten(
+      Array.from(contentKabupaten1),
+      Array.from(contentKabupaten2),
+      iconPlusKab1,
+      iconMinusKab1,
+      false
+    )
+  );
+  btnOpenKabupaten2.addEventListener("click", () =>
+    toggleKabupaten(
+      Array.from(contentKabupaten2),
+      Array.from(contentKabupaten1),
+      iconPlusKab2,
+      iconMinusKab2,
+      true
+    )
+  );
+
+  // Initial visibility and icon setup
   updateIcons();
-  contentKelurahan1.classList.remove("hidden");
+  contentKelurahan1.classList.remove("hidden"); // Show first village content by default
+  Array.from(contentKabupaten1).forEach((el) => el.classList.remove("hidden")); // Show first kabupaten content by default
+  Array.from(contentKabupaten2).forEach((el) => el.classList.add("hidden")); // Hide second kabupaten content by default
+  toggleSpasiKab(false); // Initially hide all spasi_kab elements
 });

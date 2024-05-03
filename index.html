@@ -2827,7 +2827,7 @@
                   </div>
                   <!-- new design1.1 -->
                   <div
-                    class="h-[84.5vh] text-sm w-full grid grid-cols-[100px,140px,150px,305px,1fr] overflow-y-auto overflow-x-hidden scrollbar_agregasi"
+                    class="h-[84.5vh] text-sm w-full grid grid-cols-[100px,140px,455px,1fr] overflow-y-auto overflow-x-hidden scrollbar_agregasi"
                   >
                     <!-- Nasional -->
                     <div class="flex flex-col">
@@ -2919,14 +2919,15 @@
                         <div class="text-xs text-gray-500">Rp 67 M</div>
                       </div>
                     </div>
-                    <!--  -->
-                    <div class="flex flex-col">
+
+                    <!-- Main Kabupaten -->
+                    <div class="flex flex-col hidden">
                       <!-- kab -->
                       <div class="w-full flex flex-col">
                         <div class="w-full grid grid-cols-[1fr,30px]">
                           <div>Subanggg</div>
                           <div class="flex justify-center items-center">
-                            <div class="btn_open_keckel">
+                            <div class="btn">
                               <img
                                 class="w-3 h-3 object-contain cursor-pointer icon_minus"
                                 src="/src/images/desa/minus.png"
@@ -2948,7 +2949,7 @@
                         <div class="w-full grid grid-cols-[1fr,30px]">
                           <div>Bandung Barat</div>
                           <div class="flex justify-center items-center">
-                            <div class="btn_open_keckel">
+                            <div class="">
                               <img
                                 class="w-3 h-3 object-contain cursor-pointer icon_minus hidden"
                                 src="/src/images/desa/minus.png"
@@ -2972,268 +2973,681 @@
                       <!--  -->
 
                       <!-- Baris Kecamatan Dan Kelurahan -->
-                      <div class="w-full flex flex-row">
-                        <!--  -->
+                      <div class="w-full grid grid-cols-[150px,1fr]">
+                        <!-- Main Kabupaten  -->
                         <div class="w-full flex flex-col">
-                          <!-- Kecamatan Pertama -->
-                          <div
-                            class="grid grid-cols-[160px,1fr] hidden_kelurahan_satu border border-green-500"
-                          >
-                            <div class="w-full grid grid-cols-1 items-center">
-                              <div class="flex flex-col">
-                                <div class="grid grid-cols-[1fr,25px]">
-                                  <div class="flex justify-start items-start">
-                                    Tanjung Siangg
-                                  </div>
-                                  <div class="flex justify-center items-center">
-                                    <div class="btn_open_desa_1">
-                                      <img
-                                        class="w-3 h-3 object-contain cursor-pointer icon_minus hidden"
-                                        src="/src/images/desa/minus.png"
-                                        alt=""
-                                      />
-                                      <img
-                                        class="w-3 h-3 object-contain cursor-pointer icon_plus"
-                                        src="/src/images/desa/plus.png"
-                                        alt=""
-                                      />
-                                    </div>
-                                  </div>
-                                </div>
-
-                                <div class="text-xs text-gray-500">
-                                  Rp 20,3 M
-                                </div>
-                              </div>
-                              <!--  -->
-                            </div>
-                          </div>
-                          <!-- Kecamatan Kedua -->
-                          <div
-                            class="grid grid-cols-[160px,1fr] border border-yellow-500"
-                          >
-                            <div class="w-full grid grid-cols-1 items-center">
-                              <div class="flex flex-col">
-                                <div class="grid grid-cols-[1fr,25px]">
-                                  <div class="flex justify-start items-start">
-                                    Tanjung Siangg
-                                  </div>
-                                  <div class="flex justify-center items-center">
-                                    <div class="btn_open_desa_2">
-                                      <img
-                                        class="w-3 h-3 object-contain cursor-pointer icon_minus hidden"
-                                        src="/src/images/desa/minus.png"
-                                        alt=""
-                                      />
-                                      <img
-                                        class="w-3 h-3 object-contain cursor-pointer icon_plus"
-                                        src="/src/images/desa/plus.png"
-                                        alt=""
-                                      />
-                                    </div>
-                                  </div>
-                                </div>
-
-                                <div class="text-xs text-gray-500">
-                                  Rp 20,3 M
-                                </div>
-                              </div>
-                              <!--  -->
-                            </div>
-                          </div>
-                          <!-- Kecamatan Ketiga -->
-                          <div
-                            class="grid grid-cols-[160px,1fr] border border-yellow-500"
-                          >
-                            <div class="w-full grid grid-cols-1 items-center">
-                              <div class="flex flex-col">
-                                <div class="grid grid-cols-[1fr,25px]">
-                                  <div class="flex justify-start items-start">
-                                    Tanjung Siangg
-                                  </div>
-                                  <div class="flex justify-center items-center">
-                                    <div class="btn_open_desa_3">
-                                      <img
-                                        class="w-3 h-3 object-contain cursor-pointer icon_minus hidden"
-                                        src="/src/images/desa/minus.png"
-                                        alt=""
-                                      />
-                                      <img
-                                        class="w-3 h-3 object-contain cursor-pointer icon_plus"
-                                        src="/src/images/desa/plus.png"
-                                        alt=""
-                                      />
-                                    </div>
-                                  </div>
-                                </div>
-
-                                <div class="text-xs text-gray-500">
-                                  Rp 20,3 M
-                                </div>
-                              </div>
-                              <!--  -->
-                            </div>
-                          </div>
-                          <!-- Kecamatan Keempat -->
-                          <div
-                            class="grid grid-cols-[160px,1fr] border border-yellow-500"
-                          >
-                            <div class="w-full grid grid-cols-1 items-center">
-                              <div class="flex flex-col">
-                                <div class="grid grid-cols-[1fr,25px]">
-                                  <div class="flex justify-start items-start">
-                                    Tanjung Siangg
-                                  </div>
-                                  <div class="flex justify-center items-center">
-                                    <div class="btn_open_desa_4">
-                                      <img
-                                        class="w-3 h-3 object-contain cursor-pointer icon_minus hidden"
-                                        src="/src/images/desa/minus.png"
-                                        alt=""
-                                      />
-                                      <img
-                                        class="w-3 h-3 object-contain cursor-pointer icon_plus"
-                                        src="/src/images/desa/plus.png"
-                                        alt=""
-                                      />
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="text-xs text-gray-500">
-                                  Rp 20,3 M
+                          <!-- kab -->
+                          <div class="w-full flex flex-col">
+                            <div class="w-full grid grid-cols-[1fr,30px]">
+                              <div>Subangggg</div>
+                              <div class="flex justify-center items-center">
+                                <div class="btn_open_kabupaten_1">
+                                  <img
+                                    class="w-3 h-3 object-contain cursor-pointer icon_minus"
+                                    src="/src/images/desa/minus.png"
+                                    alt=""
+                                  />
+                                  <img
+                                    class="w-3 h-3 object-contain cursor-pointer icon_plus hidden"
+                                    src="/src/images/desa/plus.png"
+                                    alt=""
+                                  />
                                 </div>
                               </div>
                             </div>
+                            <div class="text-xs text-gray-500">Rp 70,3 M</div>
                           </div>
 
-                          <!-- Kecamatan Kelima -->
-                          <div
-                            class="grid grid-cols-[160px,1fr] border border-yellow-500"
-                          >
-                            <div class="w-full grid grid-cols-1 items-center">
-                              <div class="flex flex-col">
-                                <div class="grid grid-cols-[1fr,25px]">
-                                  <div class="flex justify-start items-start">
-                                    Tanjung Siangg5
-                                  </div>
-                                  <div class="flex justify-center items-center">
-                                    <div class="btn_open_desa_5">
-                                      <img
-                                        class="w-3 h-3 object-contain cursor-pointer icon_minus hidden"
-                                        src="/src/images/desa/minus.png"
-                                        alt=""
-                                      />
-                                      <img
-                                        class="w-3 h-3 object-contain cursor-pointer icon_plus"
-                                        src="/src/images/desa/plus.png"
-                                        alt=""
-                                      />
-                                    </div>
-                                  </div>
+                          <!-- kab -->
+                          <div class="w-full flex flex-col">
+                            <div class="w-full grid grid-cols-[1fr,30px]">
+                              <div>Bandung Barat</div>
+                              <div class="flex justify-center items-center">
+                                <div class="btn_open_kabupaten_2">
+                                  <img
+                                    class="w-3 h-3 object-contain cursor-pointer icon_minus hidden"
+                                    src="/src/images/desa/minus.png"
+                                    alt=""
+                                  />
+                                  <img
+                                    class="w-3 h-3 object-contain cursor-pointer icon_plus"
+                                    src="/src/images/desa/plus.png"
+                                    alt=""
+                                  />
                                 </div>
-                                <div class="text-xs text-gray-500">Rp 23 M</div>
                               </div>
                             </div>
+                            <div class="text-xs text-gray-500">Rp 70,3 M</div>
                           </div>
 
                           <!--  -->
                         </div>
 
-                        <div class="w-full grid grid-cols-1">
-                          <!-- Kelurahan Pertama -->
+                        <!-- test1 -->
+                        <div class="w-full grid grid-cols-2 gap-x-5">
+                          <!-- Main Kecamatan1  -->
                           <div
-                            class="w-full flex flex-col border border-green-500"
+                            class="w-full flex flex-col data_konten_kabupaten_1"
                           >
-                            <!-- <div class="spasi_kel">&nbsp;</div>
-                            <div class="spasi_kel">&nbsp;</div> -->
-                            <div class="data_konten_kelurahan_hidden_1">
-                              <div class="grid grid-cols-1">
-                                <div class="">Rancamanggung1</div>
-                                <div class="text-xs text-gray-500">Rp 25 M</div>
-                              </div>
+                            <!-- Kecamatan Pertama -->
+                            <div
+                              class="grid grid-cols-[160px,1fr] hidden_kelurahan_satu border border-green-500"
+                            >
+                              <div class="w-full grid grid-cols-1 items-center">
+                                <div class="flex flex-col">
+                                  <div class="grid grid-cols-[1fr,25px]">
+                                    <div class="flex justify-start items-start">
+                                      Tanjung Siangg
+                                    </div>
+                                    <div
+                                      class="flex justify-center items-center"
+                                    >
+                                      <div class="btn_open_desa_1">
+                                        <img
+                                          class="w-3 h-3 object-contain cursor-pointer icon_minus hidden"
+                                          src="/src/images/desa/minus.png"
+                                          alt=""
+                                        />
+                                        <img
+                                          class="w-3 h-3 object-contain cursor-pointer icon_plus"
+                                          src="/src/images/desa/plus.png"
+                                          alt=""
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
 
-                              <div class="grid grid-cols-1">
-                                <div class="">Gandasoli</div>
-                                <div class="text-xs text-gray-500">Rp 25 M</div>
+                                  <div class="text-xs text-gray-500">
+                                    Rp 20,3 M
+                                  </div>
+                                </div>
+                                <!--  -->
                               </div>
                             </div>
-                          </div>
-                          <!-- Kelurahan Kedua -->
-                          <div
-                            class="w-full flex flex-col -mt-1 border border-green-500"
-                          >
-                            <div class="spasi_kel">&nbsp;</div>
-                            <div class="spasi_kel">&nbsp;</div>
+                            <!-- Kecamatan Kedua -->
+                            <div
+                              class="grid grid-cols-[160px,1fr] border border-yellow-500"
+                            >
+                              <div class="w-full grid grid-cols-1 items-center">
+                                <div class="flex flex-col">
+                                  <div class="grid grid-cols-[1fr,25px]">
+                                    <div class="flex justify-start items-start">
+                                      Tanjung Siangg
+                                    </div>
+                                    <div
+                                      class="flex justify-center items-center"
+                                    >
+                                      <div class="btn_open_desa_2">
+                                        <img
+                                          class="w-3 h-3 object-contain cursor-pointer icon_minus hidden"
+                                          src="/src/images/desa/minus.png"
+                                          alt=""
+                                        />
+                                        <img
+                                          class="w-3 h-3 object-contain cursor-pointer icon_plus"
+                                          src="/src/images/desa/plus.png"
+                                          alt=""
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="text-xs text-gray-500">
+                                    Rp 20,3 M
+                                  </div>
+                                </div>
+                                <!--  -->
+                              </div>
+                            </div>
+                            <!-- Kecamatan Ketiga -->
+                            <div
+                              class="grid grid-cols-[160px,1fr] border border-yellow-500"
+                            >
+                              <div class="w-full grid grid-cols-1 items-center">
+                                <div class="flex flex-col">
+                                  <div class="grid grid-cols-[1fr,25px]">
+                                    <div class="flex justify-start items-start">
+                                      Tanjung Siangg
+                                    </div>
+                                    <div
+                                      class="flex justify-center items-center"
+                                    >
+                                      <div class="btn_open_desa_3">
+                                        <img
+                                          class="w-3 h-3 object-contain cursor-pointer icon_minus hidden"
+                                          src="/src/images/desa/minus.png"
+                                          alt=""
+                                        />
+                                        <img
+                                          class="w-3 h-3 object-contain cursor-pointer icon_plus"
+                                          src="/src/images/desa/plus.png"
+                                          alt=""
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="text-xs text-gray-500">
+                                    Rp 20,3 M
+                                  </div>
+                                </div>
+                                <!--  -->
+                              </div>
+                            </div>
+                            <!-- Kecamatan Keempat -->
+                            <div
+                              class="grid grid-cols-[160px,1fr] border border-yellow-500"
+                            >
+                              <div class="w-full grid grid-cols-1 items-center">
+                                <div class="flex flex-col">
+                                  <div class="grid grid-cols-[1fr,25px]">
+                                    <div class="flex justify-start items-start">
+                                      Tanjung Siangg
+                                    </div>
+                                    <div
+                                      class="flex justify-center items-center"
+                                    >
+                                      <div class="btn_open_desa_4">
+                                        <img
+                                          class="w-3 h-3 object-contain cursor-pointer icon_minus hidden"
+                                          src="/src/images/desa/minus.png"
+                                          alt=""
+                                        />
+                                        <img
+                                          class="w-3 h-3 object-contain cursor-pointer icon_plus"
+                                          src="/src/images/desa/plus.png"
+                                          alt=""
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="text-xs text-gray-500">
+                                    Rp 20,3 M
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- Kecamatan Kelima -->
+                            <div
+                              class="grid grid-cols-[160px,1fr] border border-yellow-500"
+                            >
+                              <div class="w-full grid grid-cols-1 items-center">
+                                <div class="flex flex-col">
+                                  <div class="grid grid-cols-[1fr,25px]">
+                                    <div class="flex justify-start items-start">
+                                      Tanjung Siangg5
+                                    </div>
+                                    <div
+                                      class="flex justify-center items-center"
+                                    >
+                                      <div class="btn_open_desa_5">
+                                        <img
+                                          class="w-3 h-3 object-contain cursor-pointer icon_minus hidden"
+                                          src="/src/images/desa/minus.png"
+                                          alt=""
+                                        />
+                                        <img
+                                          class="w-3 h-3 object-contain cursor-pointer icon_plus"
+                                          src="/src/images/desa/plus.png"
+                                          alt=""
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="text-xs text-gray-500">
+                                    Rp 23 M
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
                             <!--  -->
-                            <div class="data_konten_kelurahan_hidden_2 hidden">
-                              <div class="grid grid-cols-1">
-                                <div class="">Rancamanggung2</div>
-                                <div class="text-xs text-gray-500">Rp 25 M</div>
-                              </div>
-
-                              <div class="grid grid-cols-1">
-                                <div class="">Gandasoli</div>
-                                <div class="text-xs text-gray-500">Rp 25 M</div>
-                              </div>
-                            </div>
                           </div>
-                          <!-- Kelurahan Ketiga -->
+
+                          <!-- Main Kelurahan1 -->
                           <div
-                            class="w-full flex flex-col -mt-1 border border-green-500"
+                            class="w-full grid grid-cols-1 data_konten_kabupaten_1"
                           >
-                            <div class="spasi_kel">&nbsp;</div>
-                            <div class="spasi_kel">&nbsp;</div>
-                            <div class="data_konten_kelurahan_hidden_3 hidden">
-                              <div class="grid grid-cols-1">
-                                <div class="">Rancamanggung3</div>
-                                <div class="text-xs text-gray-500">Rp 25 M</div>
-                              </div>
+                            <!-- Kelurahan Pertama -->
+                            <div
+                              class="w-full flex flex-col border border-green-500"
+                            >
+                              <!-- <div class="spasi_kel">&nbsp;</div>
+                            <div class="spasi_kel">&nbsp;</div> -->
+                              <div class="data_konten_kelurahan_hidden_1">
+                                <div class="grid grid-cols-1">
+                                  <div class="">Rancamanggung1</div>
+                                  <div class="text-xs text-gray-500">
+                                    Rp 25 M
+                                  </div>
+                                </div>
 
-                              <div class="grid grid-cols-1">
-                                <div class="">Gandasoli</div>
-                                <div class="text-xs text-gray-500">Rp 25 M</div>
+                                <div class="grid grid-cols-1">
+                                  <div class="">Gandasoli</div>
+                                  <div class="text-xs text-gray-500">
+                                    Rp 25 M
+                                  </div>
+                                </div>
                               </div>
                             </div>
+                            <!-- Kelurahan Kedua -->
+                            <div
+                              class="w-full flex flex-col -mt-1 border border-green-500"
+                            >
+                              <div class="spasi_kel">&nbsp;</div>
+                              <div class="spasi_kel">&nbsp;</div>
+                              <!--  -->
+                              <div
+                                class="data_konten_kelurahan_hidden_2 hidden"
+                              >
+                                <div class="grid grid-cols-1">
+                                  <div class="">Rancamanggung2</div>
+                                  <div class="text-xs text-gray-500">
+                                    Rp 25 M
+                                  </div>
+                                </div>
+
+                                <div class="grid grid-cols-1">
+                                  <div class="">Gandasoli</div>
+                                  <div class="text-xs text-gray-500">
+                                    Rp 25 M
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Kelurahan Ketiga -->
+                            <div
+                              class="w-full flex flex-col -mt-1 border border-green-500"
+                            >
+                              <div class="spasi_kel">&nbsp;</div>
+                              <div class="spasi_kel">&nbsp;</div>
+                              <div
+                                class="data_konten_kelurahan_hidden_3 hidden"
+                              >
+                                <div class="grid grid-cols-1">
+                                  <div class="">Rancamanggung3</div>
+                                  <div class="text-xs text-gray-500">
+                                    Rp 25 M
+                                  </div>
+                                </div>
+
+                                <div class="grid grid-cols-1">
+                                  <div class="">Gandasoli</div>
+                                  <div class="text-xs text-gray-500">
+                                    Rp 25 M
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Kelurahan Keempat -->
+                            <div
+                              class="w-full flex flex-col -mt-1 border border-green-500"
+                            >
+                              <div class="spasi_kel">&nbsp;</div>
+                              <div class="spasi_kel">&nbsp;</div>
+                              <div
+                                class="data_konten_kelurahan_hidden_4 hidden"
+                              >
+                                <div class="grid grid-cols-1">
+                                  <div class="">Rancamanggung4</div>
+                                  <div class="text-xs text-gray-500">
+                                    Rp 25 M
+                                  </div>
+                                </div>
+
+                                <div class="grid grid-cols-1">
+                                  <div class="">Gandasoli</div>
+                                  <div class="text-xs text-gray-500">
+                                    Rp 25 M
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Kelurahan Lima -->
+                            <div
+                              class="w-full flex flex-col -mt-1 border border-green-500"
+                            >
+                              <div class="spasi_kel">&nbsp;</div>
+                              <div class="spasi_kel">&nbsp;</div>
+                              <div
+                                class="data_konten_kelurahan_hidden_5 hidden"
+                              >
+                                <div class="grid grid-cols-1">
+                                  <div class="">Rancamanggung5</div>
+                                  <div class="text-xs text-gray-500">
+                                    Rp 25 M
+                                  </div>
+                                </div>
+
+                                <div class="grid grid-cols-1">
+                                  <div class="">Gandasoli</div>
+                                  <div class="text-xs text-gray-500">
+                                    Rp 25 M
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!--  -->
                           </div>
-                          <!-- Kelurahan Keempat -->
+
+                          <!-- spasi antar row -->
+                          <div class="spasi_kab hidden">&nbsp;</div>
+                          <div class="spasi_kab hidden">&nbsp;</div>
+                          <div class="spasi_kab hidden">&nbsp;</div>
+                          <div class="spasi_kab hidden">&nbsp;</div>
+
+                          <!-- Main Kecamatan2  -->
                           <div
-                            class="w-full flex flex-col -mt-1 border border-green-500"
+                            class="w-full flex flex-col data_konten_kabupaten_2 hidden"
                           >
-                            <div class="spasi_kel">&nbsp;</div>
-                            <div class="spasi_kel">&nbsp;</div>
-                            <div class="data_konten_kelurahan_hidden_4 hidden">
-                              <div class="grid grid-cols-1">
-                                <div class="">Rancamanggung4</div>
-                                <div class="text-xs text-gray-500">Rp 25 M</div>
-                              </div>
+                            <!-- Kecamatan Pertama -->
+                            <div
+                              class="grid grid-cols-[160px,1fr] hidden_kelurahan_satu border border-green-500"
+                            >
+                              <div class="w-full grid grid-cols-1 items-center">
+                                <div class="flex flex-col">
+                                  <div class="grid grid-cols-[1fr,25px]">
+                                    <div class="flex justify-start items-start">
+                                      Tanjung Siangg
+                                    </div>
+                                    <div
+                                      class="flex justify-center items-center"
+                                    >
+                                      <div class="btn_open_desa_1">
+                                        <img
+                                          class="w-3 h-3 object-contain cursor-pointer icon_minus hidden"
+                                          src="/src/images/desa/minus.png"
+                                          alt=""
+                                        />
+                                        <img
+                                          class="w-3 h-3 object-contain cursor-pointer icon_plus"
+                                          src="/src/images/desa/plus.png"
+                                          alt=""
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
 
-                              <div class="grid grid-cols-1">
-                                <div class="">Gandasoli</div>
-                                <div class="text-xs text-gray-500">Rp 25 M</div>
+                                  <div class="text-xs text-gray-500">
+                                    Rp 20,3 M
+                                  </div>
+                                </div>
+                                <!--  -->
                               </div>
                             </div>
+                            <!-- Kecamatan Kedua -->
+                            <div
+                              class="grid grid-cols-[160px,1fr] border border-yellow-500"
+                            >
+                              <div class="w-full grid grid-cols-1 items-center">
+                                <div class="flex flex-col">
+                                  <div class="grid grid-cols-[1fr,25px]">
+                                    <div class="flex justify-start items-start">
+                                      Tanjung Siangg
+                                    </div>
+                                    <div
+                                      class="flex justify-center items-center"
+                                    >
+                                      <div class="btn_open_desa_2">
+                                        <img
+                                          class="w-3 h-3 object-contain cursor-pointer icon_minus hidden"
+                                          src="/src/images/desa/minus.png"
+                                          alt=""
+                                        />
+                                        <img
+                                          class="w-3 h-3 object-contain cursor-pointer icon_plus"
+                                          src="/src/images/desa/plus.png"
+                                          alt=""
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="text-xs text-gray-500">
+                                    Rp 20,3 M
+                                  </div>
+                                </div>
+                                <!--  -->
+                              </div>
+                            </div>
+                            <!-- Kecamatan Ketiga -->
+                            <div
+                              class="grid grid-cols-[160px,1fr] border border-yellow-500"
+                            >
+                              <div class="w-full grid grid-cols-1 items-center">
+                                <div class="flex flex-col">
+                                  <div class="grid grid-cols-[1fr,25px]">
+                                    <div class="flex justify-start items-start">
+                                      Tanjung Siangg
+                                    </div>
+                                    <div
+                                      class="flex justify-center items-center"
+                                    >
+                                      <div class="btn_open_desa_3">
+                                        <img
+                                          class="w-3 h-3 object-contain cursor-pointer icon_minus hidden"
+                                          src="/src/images/desa/minus.png"
+                                          alt=""
+                                        />
+                                        <img
+                                          class="w-3 h-3 object-contain cursor-pointer icon_plus"
+                                          src="/src/images/desa/plus.png"
+                                          alt=""
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="text-xs text-gray-500">
+                                    Rp 20,3 M
+                                  </div>
+                                </div>
+                                <!--  -->
+                              </div>
+                            </div>
+                            <!-- Kecamatan Keempat -->
+                            <div
+                              class="grid grid-cols-[160px,1fr] border border-yellow-500"
+                            >
+                              <div class="w-full grid grid-cols-1 items-center">
+                                <div class="flex flex-col">
+                                  <div class="grid grid-cols-[1fr,25px]">
+                                    <div class="flex justify-start items-start">
+                                      Tanjung Siangg
+                                    </div>
+                                    <div
+                                      class="flex justify-center items-center"
+                                    >
+                                      <div class="btn_open_desa_4">
+                                        <img
+                                          class="w-3 h-3 object-contain cursor-pointer icon_minus hidden"
+                                          src="/src/images/desa/minus.png"
+                                          alt=""
+                                        />
+                                        <img
+                                          class="w-3 h-3 object-contain cursor-pointer icon_plus"
+                                          src="/src/images/desa/plus.png"
+                                          alt=""
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="text-xs text-gray-500">
+                                    Rp 20,3 M
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- Kecamatan Kelima -->
+                            <div
+                              class="grid grid-cols-[160px,1fr] border border-yellow-500"
+                            >
+                              <div class="w-full grid grid-cols-1 items-center">
+                                <div class="flex flex-col">
+                                  <div class="grid grid-cols-[1fr,25px]">
+                                    <div class="flex justify-start items-start">
+                                      Tanjung Siangg5
+                                    </div>
+                                    <div
+                                      class="flex justify-center items-center"
+                                    >
+                                      <div class="btn_open_desa_5">
+                                        <img
+                                          class="w-3 h-3 object-contain cursor-pointer icon_minus hidden"
+                                          src="/src/images/desa/minus.png"
+                                          alt=""
+                                        />
+                                        <img
+                                          class="w-3 h-3 object-contain cursor-pointer icon_plus"
+                                          src="/src/images/desa/plus.png"
+                                          alt=""
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="text-xs text-gray-500">
+                                    Rp 23 M
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!--  -->
                           </div>
-                          <!-- Kelurahan Lima -->
+
+                          <!-- Main Kelurahan2 -->
                           <div
-                            class="w-full flex flex-col -mt-1 border border-green-500"
+                            class="w-full grid grid-cols-1 data_konten_kabupaten_2 hidden"
                           >
-                            <div class="spasi_kel">&nbsp;</div>
-                            <div class="spasi_kel">&nbsp;</div>
-                            <div class="data_konten_kelurahan_hidden_5 hidden">
-                              <div class="grid grid-cols-1">
-                                <div class="">Rancamanggung5</div>
-                                <div class="text-xs text-gray-500">Rp 25 M</div>
-                              </div>
+                            <!-- Kelurahan Pertama -->
+                            <div
+                              class="w-full flex flex-col border border-green-500"
+                            >
+                              <!-- <div class="spasi_kel">&nbsp;</div>
+                            <div class="spasi_kel">&nbsp;</div> -->
+                              <div class="data_konten_kelurahan_hidden_1">
+                                <div class="grid grid-cols-1">
+                                  <div class="">Rancamanggung1</div>
+                                  <div class="text-xs text-gray-500">
+                                    Rp 25 M
+                                  </div>
+                                </div>
 
-                              <div class="grid grid-cols-1">
-                                <div class="">Gandasoli</div>
-                                <div class="text-xs text-gray-500">Rp 25 M</div>
+                                <div class="grid grid-cols-1">
+                                  <div class="">Gandasoli</div>
+                                  <div class="text-xs text-gray-500">
+                                    Rp 25 M
+                                  </div>
+                                </div>
                               </div>
                             </div>
-                          </div>
+                            <!-- Kelurahan Kedua -->
+                            <div
+                              class="w-full flex flex-col -mt-1 border border-green-500"
+                            >
+                              <div class="spasi_kel">&nbsp;</div>
+                              <div class="spasi_kel">&nbsp;</div>
+                              <!--  -->
+                              <div
+                                class="data_konten_kelurahan_hidden_2 hidden"
+                              >
+                                <div class="grid grid-cols-1">
+                                  <div class="">Rancamanggung2</div>
+                                  <div class="text-xs text-gray-500">
+                                    Rp 25 M
+                                  </div>
+                                </div>
 
+                                <div class="grid grid-cols-1">
+                                  <div class="">Gandasoli</div>
+                                  <div class="text-xs text-gray-500">
+                                    Rp 25 M
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Kelurahan Ketiga -->
+                            <div
+                              class="w-full flex flex-col -mt-1 border border-green-500"
+                            >
+                              <div class="spasi_kel">&nbsp;</div>
+                              <div class="spasi_kel">&nbsp;</div>
+                              <div
+                                class="data_konten_kelurahan_hidden_3 hidden"
+                              >
+                                <div class="grid grid-cols-1">
+                                  <div class="">Rancamanggung3</div>
+                                  <div class="text-xs text-gray-500">
+                                    Rp 25 M
+                                  </div>
+                                </div>
+
+                                <div class="grid grid-cols-1">
+                                  <div class="">Gandasoli</div>
+                                  <div class="text-xs text-gray-500">
+                                    Rp 25 M
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Kelurahan Keempat -->
+                            <div
+                              class="w-full flex flex-col -mt-1 border border-green-500"
+                            >
+                              <div class="spasi_kel">&nbsp;</div>
+                              <div class="spasi_kel">&nbsp;</div>
+                              <div
+                                class="data_konten_kelurahan_hidden_4 hidden"
+                              >
+                                <div class="grid grid-cols-1">
+                                  <div class="">Rancamanggung4</div>
+                                  <div class="text-xs text-gray-500">
+                                    Rp 25 M
+                                  </div>
+                                </div>
+
+                                <div class="grid grid-cols-1">
+                                  <div class="">Gandasoli</div>
+                                  <div class="text-xs text-gray-500">
+                                    Rp 25 M
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Kelurahan Lima -->
+                            <div
+                              class="w-full flex flex-col -mt-1 border border-green-500"
+                            >
+                              <div class="spasi_kel">&nbsp;</div>
+                              <div class="spasi_kel">&nbsp;</div>
+                              <div
+                                class="data_konten_kelurahan_hidden_5 hidden"
+                              >
+                                <div class="grid grid-cols-1">
+                                  <div class="">Rancamanggung5</div>
+                                  <div class="text-xs text-gray-500">
+                                    Rp 25 M
+                                  </div>
+                                </div>
+
+                                <div class="grid grid-cols-1">
+                                  <div class="">Gandasoli</div>
+                                  <div class="text-xs text-gray-500">
+                                    Rp 25 M
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!--  -->
+                          </div>
                           <!--  -->
                         </div>
+
+                        <!--  -->
                       </div>
 
                       <!--  -->
