@@ -1574,84 +1574,43 @@ document.addEventListener("DOMContentLoaded", function () {
 //
 //
 
-document.addEventListener("DOMContentLoaded", () => {
-  // Function to manage the visibility of content and space elements
-  function manageContentVisibility(
-    buttonSelector,
-    contentSelectors,
-    manageSpace
-  ) {
-    const buttons = document.querySelectorAll(buttonSelector);
+document.addEventListener("DOMContentLoaded", function () {
+  // Mendapatkan tombol dan konten yang relevan
+  const btnOpenDesa1 = document.querySelector(".btn_open_desa_1");
+  const contentKelurahan1 = document.querySelector(
+    ".data_konten_kelurahan_hidden_1"
+  );
 
-    buttons.forEach((button) => {
-      button.addEventListener("click", () => {
-        // Extract the number from the button class to identify specific content
-        const contentId = button.className.match(/btn_open_desa_(\d+)/)[1];
-        const contentToShow = document.querySelector(
-          `.${contentSelectors.replace("#", contentId)}`
-        );
+  const btnOpenDesa2 = document.querySelector(".btn_open_desa_2");
+  const contentKelurahan2 = document.querySelector(
+    ".data_konten_kelurahan_hidden_2"
+  );
 
-        if (!contentToShow) {
-          console.error("Content not found for", buttonSelector);
-          return; // Exit the function if content is not found
-        }
+  const btnOpenDesa3 = document.querySelector(".btn_open_desa_3");
+  const contentKelurahan3 = document.querySelector(
+    ".data_konten_kelurahan_hidden_3"
+  );
 
-        // Hide all content sections and reset icons except the one to show
-        document.querySelectorAll(".data_konten").forEach((content) => {
-          if (content !== contentToShow) {
-            content.classList.add("hidden");
-            const iconPlus = content
-              .closest(".content-container")
-              .querySelector(".icon_plus");
-            const iconMinus = content
-              .closest(".content-container")
-              .querySelector(".icon_minus");
-            if (iconPlus && iconMinus) {
-              iconPlus.classList.remove("hidden");
-              iconMinus.classList.add("hidden");
-            }
-            // Optionally hide spaces if configured to manage spaces
-            if (manageSpace) {
-              const spaces =
-                content.parentElement.querySelectorAll(".spasi_kel");
-              spaces.forEach((space) => space.classList.add("hidden"));
-            }
-          }
-        });
+  // Fungsi untuk menampilkan dan menyembunyikan konten secara eksklusif
+  function toggleContentExclusive(button, content) {
+    button.addEventListener("click", function () {
+      // Pertama, sembunyikan semua konten
+      contentKelurahan1.classList.add("hidden");
+      contentKelurahan2.classList.add("hidden");
+      contentKelurahan3.classList.add("hidden");
 
-        // Toggle visibility of the selected content
-        contentToShow.classList.toggle("hidden");
-        const iconPlus = button.querySelector(".icon_plus");
-        const iconMinus = button.querySelector(".icon_minus");
-        if (iconPlus && iconMinus) {
-          iconPlus.classList.toggle("hidden");
-          iconMinus.classList.toggle("hidden");
-        }
-
-        // Manage spaces for the selected content if required
-        if (manageSpace) {
-          const spaces =
-            contentToShow.parentElement.querySelectorAll(".spasi_kel");
-          spaces.forEach((space) => space.classList.toggle("hidden"));
-        }
-      });
+      // Kemudian tampilkan konten yang terkait dengan tombol yang diklik, jika sudah tersembunyi
+      if (content.classList.contains("hidden")) {
+        content.classList.remove("hidden");
+      }
     });
   }
 
-  // Initialize toggling functionality for each button and corresponding content
-  manageContentVisibility(
-    ".btn_open_desa_1",
-    "data_konten_kelurahan_hidden_1",
-    false
-  );
-  manageContentVisibility(
-    ".btn_open_desa_2",
-    "data_konten_kelurahan_hidden_2",
-    true
-  );
-  manageContentVisibility(
-    ".btn_open_desa_3",
-    "data_konten_kelurahan_hidden_3",
-    true
-  );
+  // Terapkan fungsi toggle eksklusif ke setiap tombol dan konten yang sesuai
+  toggleContentExclusive(btnOpenDesa1, contentKelurahan1);
+  toggleContentExclusive(btnOpenDesa2, contentKelurahan2);
+  toggleContentExclusive(btnOpenDesa3, contentKelurahan3);
+
+  // Tampilkan konten pertama secara default
+  contentKelurahan1.classList.remove("hidden");
 });
