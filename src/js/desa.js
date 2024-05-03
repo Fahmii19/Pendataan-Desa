@@ -1873,6 +1873,10 @@ document.addEventListener("DOMContentLoaded", function () {
   // Function to show or hide content
   function toggleContent(content) {
     const isHidden = content.classList.contains("hidden");
+
+    //
+
+    //
     contentKelurahan1.classList.add("hidden");
     contentKelurahan2.classList.add("hidden");
     contentKelurahan3.classList.add("hidden");
