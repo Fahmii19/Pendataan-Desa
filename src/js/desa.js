@@ -1574,114 +1574,84 @@ document.addEventListener("DOMContentLoaded", function () {
 //
 //
 
-document.addEventListener("DOMContentLoaded", function () {
-  const openKecKelButtons = document.querySelectorAll(".btn_open_keckel");
-  const dataKelDesAggregasi = document.querySelectorAll(".data_agregasi_kec");
-  const data_agregasi_kel_binara = document.querySelector(
-    ".data_agregasi_kel_binara"
-  );
+document.addEventListener("DOMContentLoaded", () => {
+  // Function to manage the visibility of content and space elements
+  function manageContentVisibility(
+    buttonSelector,
+    contentSelectors,
+    manageSpace
+  ) {
+    const buttons = document.querySelectorAll(buttonSelector);
 
-  // Tampilkan data agregasi kelurahan Binara saat halaman dimuat
-  data_agregasi_kel_binara.classList.remove("hidden");
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => {
+        // Extract the number from the button class to identify specific content
+        const contentId = button.className.match(/btn_open_desa_(\d+)/)[1];
+        const contentToShow = document.querySelector(
+          `.${contentSelectors.replace("#", contentId)}`
+        );
 
-  // Tampilkan data agregasi kecamatan saat halaman dimuat
-  dataKelDesAggregasi.forEach((dataAggregasi) => {
-    dataAggregasi.classList.remove("hidden");
-  });
+        if (!contentToShow) {
+          console.error("Content not found for", buttonSelector);
+          return; // Exit the function if content is not found
+        }
 
-  //
-  const btn_keldes_tanjungsiang = document.querySelector(
-    ".btn_keldes_tanjungsiang"
-  );
-  const data_agregasi_kel_cisalak = document.querySelector(
-    ".data_agregasi_kel_cisalak"
-  );
+        // Hide all content sections and reset icons except the one to show
+        document.querySelectorAll(".data_konten").forEach((content) => {
+          if (content !== contentToShow) {
+            content.classList.add("hidden");
+            const iconPlus = content
+              .closest(".content-container")
+              .querySelector(".icon_plus");
+            const iconMinus = content
+              .closest(".content-container")
+              .querySelector(".icon_minus");
+            if (iconPlus && iconMinus) {
+              iconPlus.classList.remove("hidden");
+              iconMinus.classList.add("hidden");
+            }
+            // Optionally hide spaces if configured to manage spaces
+            if (manageSpace) {
+              const spaces =
+                content.parentElement.querySelectorAll(".spasi_kel");
+              spaces.forEach((space) => space.classList.add("hidden"));
+            }
+          }
+        });
 
-  //
-  const btn_keldes_binong = document.querySelector(".btn_keldes_binong");
+        // Toggle visibility of the selected content
+        contentToShow.classList.toggle("hidden");
+        const iconPlus = button.querySelector(".icon_plus");
+        const iconMinus = button.querySelector(".icon_minus");
+        if (iconPlus && iconMinus) {
+          iconPlus.classList.toggle("hidden");
+          iconMinus.classList.toggle("hidden");
+        }
 
-  // Untuk melacak apakah elemen terbuka atau tertutup
-  let isOpen = false;
-
-  openKecKelButtons.forEach((btn) => {
-    btn.addEventListener("click", function () {
-      // Dapatkan elemen ikon pada tombol yang diklik
-      const iconMinus = btn.querySelector(".icon_minus");
-      const iconPlus = btn.querySelector(".icon_plus");
-
-      dataKelDesAggregasi.forEach((dataAggregasi) => {
-        // Toggle antara menampilkan dan menyembunyikan elemen terkait
-        if (dataAggregasi.classList.contains("hidden")) {
-          dataAggregasi.classList.remove("hidden");
-          iconMinus.classList.remove("hidden");
-          iconPlus.classList.add("hidden");
-        } else {
-          dataAggregasi.classList.add("hidden");
-          iconMinus.classList.add("hidden");
-          iconPlus.classList.remove("hidden");
+        // Manage spaces for the selected content if required
+        if (manageSpace) {
+          const spaces =
+            contentToShow.parentElement.querySelectorAll(".spasi_kel");
+          spaces.forEach((space) => space.classList.toggle("hidden"));
         }
       });
     });
-  });
+  }
 
-  // Tanjungsiang
-  btn_keldes_tanjungsiang.addEventListener("click", function () {
-    // Dapatkan elemen ikon pada tombol yang diklik
-    const iconMinus = this.querySelector(".icon_minus");
-    const iconPlus = this.querySelector(".icon_plus");
-
-    if (data_agregasi_kel_binara.classList.contains("hidden")) {
-      // Menyembunyikan konten binara saat btn_keldes_tanjungsiang diklik
-      if (!data_agregasi_kel_cisalak.classList.contains("hidden")) {
-        data_agregasi_kel_cisalak.classList.add("hidden");
-      }
-      // Menampilkan konten tanjungsiang saat btn_keldes_tanjungsiang diklik
-      data_agregasi_kel_binara.classList.remove("hidden");
-      // Perbarui ikon
-      iconMinus.classList.remove("hidden");
-      iconPlus.classList.add("hidden");
-    } else {
-      // Menyembunyikan konten tanjungsiang saat btn_keldes_tanjungsiang diklik kembali
-      data_agregasi_kel_binara.classList.add("hidden");
-      // Perbarui ikon
-      iconMinus.classList.add("hidden");
-      iconPlus.classList.remove("hidden");
-    }
-  });
-
-  // Binong
-  btn_keldes_binong.addEventListener("click", function () {
-    // Dapatkan elemen ikon pada tombol yang diklik
-    const iconMinus = this.querySelector(".icon_minus");
-    const iconPlus = this.querySelector(".icon_plus");
-
-    const iconPlusBinara = document.querySelector(
-      ".btn_keldes_tanjungsiang .icon_plus"
-    );
-    const iconMinusBinara = document.querySelector(
-      ".btn_keldes_tanjungsiang .icon_minus"
-    );
-
-    if (data_agregasi_kel_cisalak.classList.contains("hidden")) {
-      // Menyembunyikan konten tanjungsiang saat btn_keldes_binong diklik
-      if (!data_agregasi_kel_binara.classList.contains("hidden")) {
-        data_agregasi_kel_binara.classList.add("hidden");
-      }
-      // Menampilkan konten binong saat btn_keldes_binong diklik
-      data_agregasi_kel_cisalak.classList.remove("hidden");
-      // Perbarui ikon
-      iconMinus.classList.remove("hidden");
-      iconPlus.classList.add("hidden");
-      // Perbarui ikon di tombol Tanjungsiang
-      iconPlusBinara.classList.remove("hidden");
-      iconMinusBinara.classList.add("hidden");
-    } else {
-      // Menyembunyikan konten binong saat btn_keldes_binong diklik kembali
-      data_agregasi_kel_cisalak.classList.add("hidden");
-      // Perbarui ikon
-      iconMinus.classList.add("hidden");
-      iconPlus.classList.remove("hidden");
-    }
-  });
-  //
+  // Initialize toggling functionality for each button and corresponding content
+  manageContentVisibility(
+    ".btn_open_desa_1",
+    "data_konten_kelurahan_hidden_1",
+    false
+  );
+  manageContentVisibility(
+    ".btn_open_desa_2",
+    "data_konten_kelurahan_hidden_2",
+    true
+  );
+  manageContentVisibility(
+    ".btn_open_desa_3",
+    "data_konten_kelurahan_hidden_3",
+    true
+  );
 });
