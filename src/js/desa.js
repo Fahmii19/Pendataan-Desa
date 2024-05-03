@@ -1651,6 +1651,46 @@ document.addEventListener("DOMContentLoaded", function () {
     ".data_konten_kelurahan_hidden_10"
   );
 
+  // Mendefinisikan tombol, ikon, dan konten untuk Desa 11
+  const btnOpenDesa11 = document.querySelector(".btn_open_desa_11");
+  const iconPlus11 = btnOpenDesa11.querySelector(".icon_plus");
+  const iconMinus11 = btnOpenDesa11.querySelector(".icon_minus");
+  const contentKelurahan11 = document.querySelector(
+    ".data_konten_kelurahan_hidden_11"
+  );
+
+  // Mendefinisikan tombol, ikon, dan konten untuk Desa 12
+  const btnOpenDesa12 = document.querySelector(".btn_open_desa_12");
+  const iconPlus12 = btnOpenDesa12.querySelector(".icon_plus");
+  const iconMinus12 = btnOpenDesa12.querySelector(".icon_minus");
+  const contentKelurahan12 = document.querySelector(
+    ".data_konten_kelurahan_hidden_12"
+  );
+
+  // Mendefinisikan tombol, ikon, dan konten untuk Desa 13
+  const btnOpenDesa13 = document.querySelector(".btn_open_desa_13");
+  const iconPlus13 = btnOpenDesa13.querySelector(".icon_plus");
+  const iconMinus13 = btnOpenDesa13.querySelector(".icon_minus");
+  const contentKelurahan13 = document.querySelector(
+    ".data_konten_kelurahan_hidden_13"
+  );
+
+  // Mendefinisikan tombol, ikon, dan konten untuk Desa 14
+  const btnOpenDesa14 = document.querySelector(".btn_open_desa_14");
+  const iconPlus14 = btnOpenDesa14.querySelector(".icon_plus");
+  const iconMinus14 = btnOpenDesa14.querySelector(".icon_minus");
+  const contentKelurahan14 = document.querySelector(
+    ".data_konten_kelurahan_hidden_14"
+  );
+
+  // Mendefinisikan tombol, ikon, dan konten untuk Desa 15
+  const btnOpenDesa15 = document.querySelector(".btn_open_desa_15");
+  const iconPlus15 = btnOpenDesa15.querySelector(".icon_plus");
+  const iconMinus15 = btnOpenDesa15.querySelector(".icon_minus");
+  const contentKelurahan15 = document.querySelector(
+    ".data_konten_kelurahan_hidden_15"
+  );
+
   // Mendapatkan tombol, ikon, dan konten yang relevan untuk Kabupaten
   const btnOpenKabupaten1 = document.querySelector(".btn_open_kabupaten_1");
   const iconPlusKab1 = btnOpenKabupaten1.querySelector(".icon_plus");
@@ -1665,6 +1705,14 @@ document.addEventListener("DOMContentLoaded", function () {
   const contentKabupaten2 = document.querySelectorAll(
     ".data_konten_kabupaten_2"
   );
+
+  const btnOpenKabupaten3 = document.querySelector(".btn_open_kabupaten_3");
+  const iconPlusKab3 = btnOpenKabupaten3.querySelector(".icon_plus");
+  const iconMinusKab3 = btnOpenKabupaten3.querySelector(".icon_minus");
+  const contentKabupaten3 = document.querySelectorAll(
+    ".data_konten_kabupaten_3"
+  );
+
   const spasiKab = document.querySelectorAll(".spasi_kab"); // Selecting all spasi_kab elements
 
   // Function to manage visibility of spasi_kab elements
@@ -1760,6 +1808,46 @@ document.addEventListener("DOMContentLoaded", function () {
       "hidden",
       contentKelurahan10.classList.contains("hidden")
     );
+    iconPlus11.classList.toggle(
+      "hidden",
+      !contentKelurahan11.classList.contains("hidden")
+    );
+    iconMinus11.classList.toggle(
+      "hidden",
+      contentKelurahan11.classList.contains("hidden")
+    );
+    iconPlus12.classList.toggle(
+      "hidden",
+      !contentKelurahan12.classList.contains("hidden")
+    );
+    iconMinus12.classList.toggle(
+      "hidden",
+      contentKelurahan12.classList.contains("hidden")
+    );
+    iconPlus13.classList.toggle(
+      "hidden",
+      !contentKelurahan13.classList.contains("hidden")
+    );
+    iconMinus13.classList.toggle(
+      "hidden",
+      contentKelurahan13.classList.contains("hidden")
+    );
+    iconPlus14.classList.toggle(
+      "hidden",
+      !contentKelurahan14.classList.contains("hidden")
+    );
+    iconMinus14.classList.toggle(
+      "hidden",
+      contentKelurahan14.classList.contains("hidden")
+    );
+    iconPlus15.classList.toggle(
+      "hidden",
+      !contentKelurahan15.classList.contains("hidden")
+    );
+    iconMinus15.classList.toggle(
+      "hidden",
+      contentKelurahan15.classList.contains("hidden")
+    );
   }
 
   // Function to show or hide content
@@ -1775,6 +1863,11 @@ document.addEventListener("DOMContentLoaded", function () {
     contentKelurahan8.classList.add("hidden");
     contentKelurahan9.classList.add("hidden");
     contentKelurahan10.classList.add("hidden");
+    contentKelurahan11.classList.add("hidden");
+    contentKelurahan12.classList.add("hidden");
+    contentKelurahan13.classList.add("hidden");
+    contentKelurahan14.classList.add("hidden");
+    contentKelurahan15.classList.add("hidden");
 
     if (isHidden) {
       content.classList.remove("hidden");
@@ -1823,11 +1916,31 @@ document.addEventListener("DOMContentLoaded", function () {
   iconMinus10.addEventListener("click", () =>
     toggleContent(contentKelurahan10)
   );
+  iconPlus11.addEventListener("click", () => toggleContent(contentKelurahan11));
+  iconMinus11.addEventListener("click", () =>
+    toggleContent(contentKelurahan11)
+  );
+  iconPlus12.addEventListener("click", () => toggleContent(contentKelurahan12));
+  iconMinus12.addEventListener("click", () =>
+    toggleContent(contentKelurahan12)
+  );
+  iconPlus13.addEventListener("click", () => toggleContent(contentKelurahan13));
+  iconMinus13.addEventListener("click", () =>
+    toggleContent(contentKelurahan13)
+  );
+  iconPlus14.addEventListener("click", () => toggleContent(contentKelurahan14));
+  iconMinus14.addEventListener("click", () =>
+    toggleContent(contentKelurahan14)
+  );
+  iconPlus15.addEventListener("click", () => toggleContent(contentKelurahan15));
+  iconMinus15.addEventListener("click", () =>
+    toggleContent(contentKelurahan15)
+  );
 
   btnOpenKabupaten1.addEventListener("click", () =>
     toggleKabupaten(
       Array.from(contentKabupaten1),
-      Array.from(contentKabupaten2),
+      Array.from(contentKabupaten2).concat(Array.from(contentKabupaten3)),
       iconPlusKab1,
       iconMinusKab1,
       false
@@ -1836,17 +1949,28 @@ document.addEventListener("DOMContentLoaded", function () {
   btnOpenKabupaten2.addEventListener("click", () =>
     toggleKabupaten(
       Array.from(contentKabupaten2),
-      Array.from(contentKabupaten1),
+      Array.from(contentKabupaten1).concat(Array.from(contentKabupaten3)),
       iconPlusKab2,
       iconMinusKab2,
       true
     )
   );
 
+  btnOpenKabupaten3.addEventListener("click", () => {
+    toggleKabupaten(
+      Array.from(contentKabupaten3), // Content to show for Kabupaten 3
+      Array.from(contentKabupaten1).concat(Array.from(contentKabupaten2)), // Content to hide from Kabupaten 1 and 2
+      iconPlusKab3,
+      iconMinusKab3,
+      true // Assuming you want to show spasi_kab, adjust based on your requirements
+    );
+  });
+
   // Initial visibility and icon setup
   updateIcons();
   contentKelurahan1.classList.remove("hidden"); // Show first village content by default
   Array.from(contentKabupaten1).forEach((el) => el.classList.remove("hidden")); // Show first kabupaten content by default
   Array.from(contentKabupaten2).forEach((el) => el.classList.add("hidden")); // Hide second kabupaten content by default
+  Array.from(contentKabupaten3).forEach((el) => el.classList.add("hidden")); // Hide third kabupaten content by default
   toggleSpasiKab(false); // Initially hide all spasi_kab elements
 });
