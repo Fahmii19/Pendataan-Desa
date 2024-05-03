@@ -1575,42 +1575,105 @@ document.addEventListener("DOMContentLoaded", function () {
 //
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Mendapatkan tombol dan konten yang relevan
+  // Mendapatkan tombol, ikon, dan konten yang relevan
   const btnOpenDesa1 = document.querySelector(".btn_open_desa_1");
+  const iconPlus1 = btnOpenDesa1.querySelector(".icon_plus");
+  const iconMinus1 = btnOpenDesa1.querySelector(".icon_minus");
   const contentKelurahan1 = document.querySelector(
     ".data_konten_kelurahan_hidden_1"
   );
 
   const btnOpenDesa2 = document.querySelector(".btn_open_desa_2");
+  const iconPlus2 = btnOpenDesa2.querySelector(".icon_plus");
+  const iconMinus2 = btnOpenDesa2.querySelector(".icon_minus");
   const contentKelurahan2 = document.querySelector(
     ".data_konten_kelurahan_hidden_2"
   );
 
   const btnOpenDesa3 = document.querySelector(".btn_open_desa_3");
+  const iconPlus3 = btnOpenDesa3.querySelector(".icon_plus");
+  const iconMinus3 = btnOpenDesa3.querySelector(".icon_minus");
   const contentKelurahan3 = document.querySelector(
     ".data_konten_kelurahan_hidden_3"
   );
 
-  // Fungsi untuk menampilkan dan menyembunyikan konten secara eksklusif
-  function toggleContentExclusive(button, content) {
-    button.addEventListener("click", function () {
-      // Pertama, sembunyikan semua konten
-      contentKelurahan1.classList.add("hidden");
-      contentKelurahan2.classList.add("hidden");
-      contentKelurahan3.classList.add("hidden");
+  const btnOpenDesa4 = document.querySelector(".btn_open_desa_4");
+  const iconPlus4 = btnOpenDesa4.querySelector(".icon_plus");
+  const iconMinus4 = btnOpenDesa4.querySelector(".icon_minus");
+  const contentKelurahan4 = document.querySelector(
+    ".data_konten_kelurahan_hidden_4"
+  );
 
-      // Kemudian tampilkan konten yang terkait dengan tombol yang diklik, jika sudah tersembunyi
-      if (content.classList.contains("hidden")) {
-        content.classList.remove("hidden");
-      }
-    });
+  const btnOpenDesa5 = document.querySelector(".btn_open_desa_5");
+  const iconPlus5 = btnOpenDesa5.querySelector(".icon_plus");
+  const iconMinus5 = btnOpenDesa5.querySelector(".icon_minus");
+  const contentKelurahan5 = document.querySelector(
+    ".data_konten_kelurahan_hidden_5"
+  );
+
+  // Fungsi untuk mengelola visibilitas ikon berdasarkan status konten
+  function updateIcons() {
+    iconPlus1.classList.toggle(
+      "hidden",
+      !contentKelurahan1.classList.contains("hidden")
+    );
+    iconMinus1.classList.toggle(
+      "hidden",
+      contentKelurahan1.classList.contains("hidden")
+    );
+
+    iconPlus2.classList.toggle(
+      "hidden",
+      !contentKelurahan2.classList.contains("hidden")
+    );
+    iconMinus2.classList.toggle(
+      "hidden",
+      contentKelurahan2.classList.contains("hidden")
+    );
+
+    iconPlus3.classList.toggle(
+      "hidden",
+      !contentKelurahan3.classList.contains("hidden")
+    );
+    iconMinus3.classList.toggle(
+      "hidden",
+      contentKelurahan3.classList.contains("hidden")
+    );
   }
 
-  // Terapkan fungsi toggle eksklusif ke setiap tombol dan konten yang sesuai
-  toggleContentExclusive(btnOpenDesa1, contentKelurahan1);
-  toggleContentExclusive(btnOpenDesa2, contentKelurahan2);
-  toggleContentExclusive(btnOpenDesa3, contentKelurahan3);
+  // Fungsi untuk menampilkan dan menyembunyikan konten
+  function toggleContent(content) {
+    const isHidden = content.classList.contains("hidden");
+    // Sembunyikan semua konten dulu
+    contentKelurahan1.classList.add("hidden");
+    contentKelurahan2.classList.add("hidden");
+    contentKelurahan3.classList.add("hidden");
+    contentKelurahan4.classList.add("hidden");
+    contentKelurahan5.classList.add("hidden");
 
-  // Tampilkan konten pertama secara default
+    // Tampilkan atau sembunyikan konten yang relevan
+    if (isHidden) {
+      content.classList.remove("hidden");
+    } else {
+      content.classList.add("hidden");
+    }
+
+    updateIcons(); // Perbarui ikon setiap kali konten ditoggle
+  }
+
+  // Tambahkan event listener untuk ikon plus dan minus
+  iconPlus1.addEventListener("click", () => toggleContent(contentKelurahan1));
+  iconMinus1.addEventListener("click", () => toggleContent(contentKelurahan1));
+  iconPlus2.addEventListener("click", () => toggleContent(contentKelurahan2));
+  iconMinus2.addEventListener("click", () => toggleContent(contentKelurahan2));
+  iconPlus3.addEventListener("click", () => toggleContent(contentKelurahan3));
+  iconMinus3.addEventListener("click", () => toggleContent(contentKelurahan3));
+  iconPlus4.addEventListener("click", () => toggleContent(contentKelurahan4));
+  iconMinus4.addEventListener("click", () => toggleContent(contentKelurahan4));
+  iconPlus5.addEventListener("click", () => toggleContent(contentKelurahan5));
+  iconMinus5.addEventListener("click", () => toggleContent(contentKelurahan5));
+
+  // Inisialisasi awal
+  updateIcons();
   contentKelurahan1.classList.remove("hidden");
 });
