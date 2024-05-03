@@ -1611,6 +1611,46 @@ document.addEventListener("DOMContentLoaded", function () {
     ".data_konten_kelurahan_hidden_5"
   );
 
+  // Mendefinisikan tombol, ikon, dan konten untuk Desa 6
+  const btnOpenDesa6 = document.querySelector(".btn_open_desa_6");
+  const iconPlus6 = btnOpenDesa6.querySelector(".icon_plus");
+  const iconMinus6 = btnOpenDesa6.querySelector(".icon_minus");
+  const contentKelurahan6 = document.querySelector(
+    ".data_konten_kelurahan_hidden_6"
+  );
+
+  // Mendefinisikan tombol, ikon, dan konten untuk Desa 7
+  const btnOpenDesa7 = document.querySelector(".btn_open_desa_7");
+  const iconPlus7 = btnOpenDesa7.querySelector(".icon_plus");
+  const iconMinus7 = btnOpenDesa7.querySelector(".icon_minus");
+  const contentKelurahan7 = document.querySelector(
+    ".data_konten_kelurahan_hidden_7"
+  );
+
+  // Mendefinisikan tombol, ikon, dan konten untuk Desa 8
+  const btnOpenDesa8 = document.querySelector(".btn_open_desa_8");
+  const iconPlus8 = btnOpenDesa8.querySelector(".icon_plus");
+  const iconMinus8 = btnOpenDesa8.querySelector(".icon_minus");
+  const contentKelurahan8 = document.querySelector(
+    ".data_konten_kelurahan_hidden_8"
+  );
+
+  // Mendefinisikan tombol, ikon, dan konten untuk Desa 9
+  const btnOpenDesa9 = document.querySelector(".btn_open_desa_9");
+  const iconPlus9 = btnOpenDesa9.querySelector(".icon_plus");
+  const iconMinus9 = btnOpenDesa9.querySelector(".icon_minus");
+  const contentKelurahan9 = document.querySelector(
+    ".data_konten_kelurahan_hidden_9"
+  );
+
+  // Mendefinisikan tombol, ikon, dan konten untuk Desa 10
+  const btnOpenDesa10 = document.querySelector(".btn_open_desa_10");
+  const iconPlus10 = btnOpenDesa10.querySelector(".icon_plus");
+  const iconMinus10 = btnOpenDesa10.querySelector(".icon_minus");
+  const contentKelurahan10 = document.querySelector(
+    ".data_konten_kelurahan_hidden_10"
+  );
+
   // Mendapatkan tombol, ikon, dan konten yang relevan untuk Kabupaten
   const btnOpenKabupaten1 = document.querySelector(".btn_open_kabupaten_1");
   const iconPlusKab1 = btnOpenKabupaten1.querySelector(".icon_plus");
@@ -1680,6 +1720,46 @@ document.addEventListener("DOMContentLoaded", function () {
       "hidden",
       contentKelurahan5.classList.contains("hidden")
     );
+    iconPlus6.classList.toggle(
+      "hidden",
+      !contentKelurahan6.classList.contains("hidden")
+    );
+    iconMinus6.classList.toggle(
+      "hidden",
+      contentKelurahan6.classList.contains("hidden")
+    );
+    iconPlus7.classList.toggle(
+      "hidden",
+      !contentKelurahan7.classList.contains("hidden")
+    );
+    iconMinus7.classList.toggle(
+      "hidden",
+      contentKelurahan7.classList.contains("hidden")
+    );
+    iconPlus8.classList.toggle(
+      "hidden",
+      !contentKelurahan8.classList.contains("hidden")
+    );
+    iconMinus8.classList.toggle(
+      "hidden",
+      contentKelurahan8.classList.contains("hidden")
+    );
+    iconPlus9.classList.toggle(
+      "hidden",
+      !contentKelurahan9.classList.contains("hidden")
+    );
+    iconMinus9.classList.toggle(
+      "hidden",
+      contentKelurahan9.classList.contains("hidden")
+    );
+    iconPlus10.classList.toggle(
+      "hidden",
+      !contentKelurahan10.classList.contains("hidden")
+    );
+    iconMinus10.classList.toggle(
+      "hidden",
+      contentKelurahan10.classList.contains("hidden")
+    );
   }
 
   // Function to show or hide content
@@ -1690,6 +1770,11 @@ document.addEventListener("DOMContentLoaded", function () {
     contentKelurahan3.classList.add("hidden");
     contentKelurahan4.classList.add("hidden");
     contentKelurahan5.classList.add("hidden");
+    contentKelurahan6.classList.add("hidden");
+    contentKelurahan7.classList.add("hidden");
+    contentKelurahan8.classList.add("hidden");
+    contentKelurahan9.classList.add("hidden");
+    contentKelurahan10.classList.add("hidden");
 
     if (isHidden) {
       content.classList.remove("hidden");
@@ -1726,6 +1811,18 @@ document.addEventListener("DOMContentLoaded", function () {
   iconMinus4.addEventListener("click", () => toggleContent(contentKelurahan4));
   iconPlus5.addEventListener("click", () => toggleContent(contentKelurahan5));
   iconMinus5.addEventListener("click", () => toggleContent(contentKelurahan5));
+  iconPlus6.addEventListener("click", () => toggleContent(contentKelurahan6));
+  iconMinus6.addEventListener("click", () => toggleContent(contentKelurahan6));
+  iconPlus7.addEventListener("click", () => toggleContent(contentKelurahan7));
+  iconMinus7.addEventListener("click", () => toggleContent(contentKelurahan7));
+  iconPlus8.addEventListener("click", () => toggleContent(contentKelurahan8));
+  iconMinus8.addEventListener("click", () => toggleContent(contentKelurahan8));
+  iconPlus9.addEventListener("click", () => toggleContent(contentKelurahan9));
+  iconMinus9.addEventListener("click", () => toggleContent(contentKelurahan9));
+  iconPlus10.addEventListener("click", () => toggleContent(contentKelurahan10));
+  iconMinus10.addEventListener("click", () =>
+    toggleContent(contentKelurahan10)
+  );
 
   btnOpenKabupaten1.addEventListener("click", () =>
     toggleKabupaten(
