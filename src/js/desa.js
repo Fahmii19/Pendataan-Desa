@@ -1691,6 +1691,12 @@ document.addEventListener("DOMContentLoaded", function () {
     ".data_konten_kelurahan_hidden_15"
   );
 
+  //
+  const btnOpenProv1 = document.querySelector(".btn_open_prov_1");
+  const iconPlusProv1 = btnOpenProv1.querySelector(".icon_plus");
+  const iconMinusProv1 = btnOpenProv1.querySelector(".icon_minus");
+  const contentProvinsi1 = document.querySelector(".data_konten_provinsi_1");
+
   // Mendapatkan tombol, ikon, dan konten yang relevan untuk Kabupaten
   const btnOpenKabupaten1 = document.querySelector(".btn_open_kabupaten_1");
   const iconPlusKab1 = btnOpenKabupaten1.querySelector(".icon_plus");
@@ -1848,6 +1854,20 @@ document.addEventListener("DOMContentLoaded", function () {
       "hidden",
       contentKelurahan15.classList.contains("hidden")
     );
+
+    //
+
+    // Update province icon visibility
+    iconPlusProv1.classList.toggle(
+      "hidden",
+      !contentProvinsi1.classList.contains("hidden")
+    );
+    iconMinusProv1.classList.toggle(
+      "hidden",
+      contentProvinsi1.classList.contains("hidden")
+    );
+
+    //
   }
 
   // Function to show or hide content
@@ -1874,6 +1894,10 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       content.classList.add("hidden");
     }
+
+    // Update the icons for province
+    iconPlusProv1.classList.toggle("hidden", !isHidden);
+    iconMinusProv1.classList.toggle("hidden", isHidden);
 
     updateIcons(); // Update icons after toggling content
   }
@@ -1936,6 +1960,10 @@ document.addEventListener("DOMContentLoaded", function () {
   iconMinus15.addEventListener("click", () =>
     toggleContent(contentKelurahan15)
   );
+
+  // Event listener for provincial content toggle
+  btnOpenProv1.addEventListener("click", () => toggleContent(contentProvinsi1));
+  //
 
   btnOpenKabupaten1.addEventListener("click", () =>
     toggleKabupaten(
