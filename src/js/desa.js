@@ -1497,6 +1497,14 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 window.ButtonAgregat = function () {
+  // Mencari elemen dengan class .mapboxgl-ctrl-top-right
+  var controlElement = document.querySelector(".mapboxgl-ctrl-top-right");
+
+  // Memastikan elemen tersebut ditemukan sebelum mencoba mengubah gayanya
+  if (controlElement) {
+    controlElement.style.top = "20.5vh";
+  }
+
   // Simpan kondisi di localStorage
   localStorage.setItem("komponenDuaUpdated", "true");
   localStorage.setItem("hiddenAgregatsUpdated", "true");
