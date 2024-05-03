@@ -1496,14 +1496,42 @@ document.addEventListener("DOMContentLoaded", function () {
   tampilkanInformasi("Padi Sawah");
 });
 
-window.ButtonAgregat = function () {
-  // Mencari elemen dengan class .mapboxgl-ctrl-top-right
-  var controlElement = document.querySelector(".mapboxgl-ctrl-top-right");
+// window.hideButtons = function () {
+//   // Mencari elemen dengan class .mapboxgl-ctrl-top-right
+//   var controlElement = document.querySelector(".mapboxgl-ctrl-top-right");
 
-  // Memastikan elemen tersebut ditemukan sebelum mencoba mengubah gayanya
-  if (controlElement) {
-    controlElement.style.top = "20.5vh";
-  }
+//   // Memastikan elemen tersebut ditemukan sebelum mencoba mengubah gayanya
+//   if (controlElement) {
+//     controlElement.style.top = "20.5vh";
+//   }
+
+//   // Mengambil semua elemen yang memiliki kelas btn-location dan btn-stick3
+//   const btnLocationElements = document.querySelectorAll(
+//     ".mapboxgl-ctrl-icon.custom-control-button.btn-location"
+//   );
+//   const btnStick3Elements = document.querySelectorAll(
+//     ".mapboxgl-ctrl-icon.custom-control-button.btn-stick3"
+//   );
+
+//   // Menyembunyikan semua elemen btn-location dengan important
+//   btnLocationElements.forEach((element) => {
+//     element.style.setProperty("display", "none", "important");
+//   });
+
+//   // Menyembunyikan semua elemen btn-stick3 dengan important
+//   btnStick3Elements.forEach((element) => {
+//     element.style.setProperty("display", "none", "important");
+//   });
+// };
+
+// // Memanggil fungsi untuk menyembunyikan tombol saat dokumen selesai dimuat
+// document.addEventListener("DOMContentLoaded", function () {
+//   hideButtons();
+// });
+
+window.ButtonAgregat = function () {
+  //
+  // hideButtons();
 
   // Simpan kondisi di localStorage
   localStorage.setItem("komponenDuaUpdated", "true");
@@ -1553,6 +1581,25 @@ document.addEventListener("DOMContentLoaded", function () {
       var kontenAgregats = document.querySelectorAll(
         ".mapboxgl-ctrl-top-right"
       );
+
+      // Mengambil semua elemen yang memiliki kelas btn-location dan btn-stick3
+      const btnLocationElements = document.querySelectorAll(
+        ".mapboxgl-ctrl-icon.custom-control-button.btn-location"
+      );
+      const btnStick3Elements = document.querySelectorAll(
+        ".mapboxgl-ctrl-icon.custom-control-button.btn-stick3"
+      );
+
+      // Menyembunyikan semua elemen btn-location dengan important
+      btnLocationElements.forEach((element) => {
+        element.style.setProperty("display", "none", "important");
+      });
+
+      // Menyembunyikan semua elemen btn-stick3 dengan important
+      btnStick3Elements.forEach((element) => {
+        element.style.setProperty("display", "none", "important");
+      });
+
       kontenAgregats.forEach(function (elem) {
         elem.classList.add("mapboxgl-ctrl-top-right_agregasi"); // Menambahkan class untuk styling
       });

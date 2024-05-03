@@ -1347,6 +1347,10 @@ input[name="plan"]:checked ~ .menuKetigaAds {
   /* border: none !important; */
 }
 
+.hidden-important {
+  display: none !important;
+}
+
 /* .width_agregasi {
   @apply !w-screen;
 } */

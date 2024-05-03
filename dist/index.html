@@ -62,7 +62,7 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"
       charset="utf-8"
     ></script>
-    <script type="module" crossorigin src="./assets/index-1c027bd3.js"></script>
+    <script type="module" crossorigin src="./assets/index-1d190034.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/node-releases-bd3ac2a8.js">
     <link rel="modulepreload" crossorigin href="./assets/caniuse-lite-548bebad.js">
     <link rel="modulepreload" crossorigin href="./assets/electron-to-chromium-b46be654.js">
@@ -74,7 +74,7 @@
     <link rel="modulepreload" crossorigin href="./assets/postcss-value-parser-3ebb14b1.js">
     <link rel="modulepreload" crossorigin href="./assets/normalize-range-6cde8521.js">
     <link rel="modulepreload" crossorigin href="./assets/autoprefixer-8b6a301d.js">
-    <link rel="stylesheet" href="./assets/index-75c148b7.css">
+    <link rel="stylesheet" href="./assets/index-08bac0e8.css">
   </head>
 
   <body class="font-sf_pro_reguler">
@@ -2761,9 +2761,8 @@
                               />
                             </svg>
                             <span
-                              class="ms-1 text-xs font-medium text-gray-500 md:ms-2 dark:text-gray-400"
-                              >Prov. Jawa Barat</span
-                            >
+                              class="ms-1 text-xs font-medium text-gray-500 md:ms-2 dark:text-gray-400 breadcrumb_provinsi"
+                            ></span>
                           </div>
                         </li>
                         <li aria-current="page">
@@ -2784,9 +2783,8 @@
                               />
                             </svg>
                             <span
-                              class="ms-1 text-xs font-medium text-gray-500 md:ms-2 dark:text-gray-400"
-                              >Kab. Subang</span
-                            >
+                              class="ms-1 text-xs font-medium text-gray-500 md:ms-2 dark:text-gray-400 breadcrumb_kabupaten"
+                            ></span>
                           </div>
                         </li>
                         <li aria-current="page">
@@ -2807,9 +2805,8 @@
                               />
                             </svg>
                             <span
-                              class="ms-1 text-xs font-medium text-gray-500 md:ms-2 dark:text-gray-400"
-                              >Kec. Tanjungsiang</span
-                            >
+                              class="ms-1 text-xs font-medium text-gray-500 md:ms-2 dark:text-gray-400 breadcrumb_kecamatan"
+                            ></span>
                           </div>
                         </li>
                         <li aria-current="page">
@@ -2830,9 +2827,8 @@
                               />
                             </svg>
                             <span
-                              class="ms-1 text-xs font-medium text-gray-500 md:ms-2 dark:text-gray-400"
-                              >Kel. Cimeuhmal</span
-                            >
+                              class="ms-1 text-xs font-medium text-gray-500 md:ms-2 dark:text-gray-400 breadcrumb_kelurahan"
+                            ></span>
                           </div>
                         </li>
                       </ol>
@@ -2848,18 +2844,18 @@
                         <div class="w-full grid grid-cols-[1fr,30px]">
                           <div class="">Indonesia</div>
                           <div class="flex justify-center items-center">
-                            <div class="btn_open_keckel_new">
+                            <!-- <div class="btn_open_keckel_new">
                               <img
                                 class="w-3 h-3 object-contain cursor-pointer icon_minus"
-                                src="./assets/minus-191d18eb.png"
+                                src="/src/images/desa/minus.png"
                                 alt=""
                               />
                               <img
                                 class="w-3 h-3 object-contain cursor-pointer icon_plus hidden"
-                                src="./assets/plus-dde2a7ef.png"
+                                src="/src/images/desa/plus.png"
                                 alt=""
                               />
-                            </div>
+                            </div> -->
                           </div>
                         </div>
                         <div class="text-xs text-gray-500">Rp 134 T</div>
@@ -2873,7 +2869,7 @@
                         <div class="w-full grid grid-cols-[1fr,30px]">
                           <div>Jawa Barat</div>
                           <div class="flex justify-center items-center">
-                            <div class="btn_open_keckel_new">
+                            <div class="btn_open_prov_1">
                               <img
                                 class="w-3 h-3 object-contain cursor-pointer icon_minus"
                                 src="./assets/minus-191d18eb.png"
@@ -2986,7 +2982,9 @@
                       <!--  -->
 
                       <!-- Baris Kecamatan Dan Kelurahan -->
-                      <div class="w-full grid grid-cols-[150px,1fr]">
+                      <div
+                        class="w-full grid grid-cols-[150px,1fr] data_konten_provinsi_1"
+                      >
                         <!-- Main Kabupaten  -->
                         <div class="w-full flex flex-col">
                           <!-- kab -->
@@ -3011,12 +3009,34 @@
                             <div class="text-xs text-gray-500">Rp 70,3 M</div>
                           </div>
 
-                          <!-- kab -->
+                          <!-- kab2 -->
                           <div class="w-full flex flex-col">
                             <div class="w-full grid grid-cols-[1fr,30px]">
                               <div>Bandung Barat</div>
                               <div class="flex justify-center items-center">
                                 <div class="btn_open_kabupaten_2">
+                                  <img
+                                    class="w-3 h-3 object-contain cursor-pointer icon_minus hidden"
+                                    src="./assets/minus-191d18eb.png"
+                                    alt=""
+                                  />
+                                  <img
+                                    class="w-3 h-3 object-contain cursor-pointer icon_plus"
+                                    src="./assets/plus-dde2a7ef.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="text-xs text-gray-500">Rp 70,3 M</div>
+                          </div>
+
+                          <!-- kab3 -->
+                          <div class="w-full flex flex-col">
+                            <div class="w-full grid grid-cols-[1fr,30px]">
+                              <div>Bogor</div>
+                              <div class="flex justify-center items-center">
+                                <div class="btn_open_kabupaten_3">
                                   <img
                                     class="w-3 h-3 object-contain cursor-pointer icon_minus hidden"
                                     src="./assets/minus-191d18eb.png"
@@ -3043,9 +3063,7 @@
                             class="w-full flex flex-col data_konten_kabupaten_1"
                           >
                             <!-- Kecamatan Pertama -->
-                            <div
-                              class="grid grid-cols-[160px,1fr] hidden_kelurahan_satu"
-                            >
+                            <div class="grid grid-cols-[160px,1fr]">
                               <div class="w-full grid grid-cols-1 items-center">
                                 <div class="flex flex-col">
                                   <div class="grid grid-cols-[1fr,25px]">
@@ -3220,14 +3238,31 @@
                             <div class="spasi_kel">&nbsp;</div> -->
                               <div class="data_konten_kelurahan_hidden_1">
                                 <div class="grid grid-cols-1">
-                                  <div class="">Buniara</div>
+                                  <div
+                                    class="cursor-pointer active_position"
+                                    data-provinsi="Prov. Jawa Barat"
+                                    data-kabupaten="Kab. Subang"
+                                    data-kecamatan="Kec. Tanjungsiang"
+                                    data-kelurahan="Buniara"
+                                  >
+                                    Buniara
+                                  </div>
+
                                   <div class="text-xs text-gray-500">
                                     Rp 25 M
                                   </div>
                                 </div>
 
                                 <div class="grid grid-cols-1">
-                                  <div class="">Kawungluwuk</div>
+                                  <div
+                                    class="cursor-pointer active_position"
+                                    data-provinsi="Prov. Jawa Barat"
+                                    data-kabupaten="Kab. Subang"
+                                    data-kecamatan="Kec. Tanjungsiang"
+                                    data-kelurahan="Kawungluwuk"
+                                  >
+                                    Kawungluwuk
+                                  </div>
                                   <div class="text-xs text-gray-500">
                                     Rp 25 M
                                   </div>
@@ -3337,10 +3372,8 @@
                           <div
                             class="w-full flex flex-col data_konten_kabupaten_2 hidden"
                           >
-                            <!-- Kecamatan Pertama -->
-                            <div
-                              class="grid grid-cols-[160px,1fr] hidden_kelurahan_satu"
-                            >
+                            <!-- Kecamatan Keenam -->
+                            <div class="grid grid-cols-[160px,1fr]">
                               <div class="w-full grid grid-cols-1 items-center">
                                 <div class="flex flex-col">
                                   <div class="grid grid-cols-[1fr,25px]">
@@ -3350,7 +3383,7 @@
                                     <div
                                       class="flex justify-center items-center"
                                     >
-                                      <div class="btn_open_desa_1">
+                                      <div class="btn_open_desa_6">
                                         <img
                                           class="w-3 h-3 object-contain cursor-pointer icon_minus hidden"
                                           src="./assets/minus-191d18eb.png"
@@ -3372,7 +3405,7 @@
                                 <!--  -->
                               </div>
                             </div>
-                            <!-- Kecamatan Kedua -->
+                            <!-- Kecamatan Ketujuh -->
                             <div class="grid grid-cols-[160px,1fr]">
                               <div class="w-full grid grid-cols-1 items-center">
                                 <div class="flex flex-col">
@@ -3383,7 +3416,7 @@
                                     <div
                                       class="flex justify-center items-center"
                                     >
-                                      <div class="btn_open_desa_2">
+                                      <div class="btn_open_desa_7">
                                         <img
                                           class="w-3 h-3 object-contain cursor-pointer icon_minus hidden"
                                           src="./assets/minus-191d18eb.png"
@@ -3405,7 +3438,7 @@
                                 <!--  -->
                               </div>
                             </div>
-                            <!-- Kecamatan Ketiga -->
+                            <!-- Kecamatan Kedelapan -->
                             <div class="grid grid-cols-[160px,1fr]">
                               <div class="w-full grid grid-cols-1 items-center">
                                 <div class="flex flex-col">
@@ -3416,7 +3449,7 @@
                                     <div
                                       class="flex justify-center items-center"
                                     >
-                                      <div class="btn_open_desa_3">
+                                      <div class="btn_open_desa_8">
                                         <img
                                           class="w-3 h-3 object-contain cursor-pointer icon_minus hidden"
                                           src="./assets/minus-191d18eb.png"
@@ -3438,7 +3471,7 @@
                                 <!--  -->
                               </div>
                             </div>
-                            <!-- Kecamatan Keempat -->
+                            <!-- Kecamatan Sembilan -->
                             <div class="grid grid-cols-[160px,1fr]">
                               <div class="w-full grid grid-cols-1 items-center">
                                 <div class="flex flex-col">
@@ -3449,7 +3482,7 @@
                                     <div
                                       class="flex justify-center items-center"
                                     >
-                                      <div class="btn_open_desa_4">
+                                      <div class="btn_open_desa_9">
                                         <img
                                           class="w-3 h-3 object-contain cursor-pointer icon_minus hidden"
                                           src="./assets/minus-191d18eb.png"
@@ -3469,8 +3502,7 @@
                                 </div>
                               </div>
                             </div>
-
-                            <!-- Kecamatan Kelima -->
+                            <!-- Kecamatan Sepuluh -->
                             <div class="grid grid-cols-[160px,1fr]">
                               <div class="w-full grid grid-cols-1 items-center">
                                 <div class="flex flex-col">
@@ -3481,7 +3513,7 @@
                                     <div
                                       class="flex justify-center items-center"
                                     >
-                                      <div class="btn_open_desa_5">
+                                      <div class="btn_open_desa_10">
                                         <img
                                           class="w-3 h-3 object-contain cursor-pointer icon_minus hidden"
                                           src="./assets/minus-191d18eb.png"
@@ -3509,36 +3541,52 @@
                           <div
                             class="w-full grid grid-cols-1 data_konten_kabupaten_2 hidden"
                           >
-                            <!-- Kelurahan Pertama -->
+                            <!-- Kelurahan Keenam -->
                             <div class="w-full flex flex-col">
                               <!-- <div class="spasi_kel">&nbsp;</div>
                             <div class="spasi_kel">&nbsp;</div> -->
-                              <div class="data_konten_kelurahan_hidden_1">
+                              <div class="data_konten_kelurahan_hidden_6">
                                 <div class="grid grid-cols-1">
-                                  <div class="">Rancamanggung</div>
+                                  <div
+                                    class="active_position cursor-pointer"
+                                    data-provinsi="Prov. Jawa Barat"
+                                    data-kabupaten="Kab. Bandung"
+                                    data-kecamatan="Kec. Cihampelas"
+                                    data-kelurahan="Cihampelas"
+                                  >
+                                    Cihampelas
+                                  </div>
                                   <div class="text-xs text-gray-500">
                                     Rp 25 M
                                   </div>
                                 </div>
 
                                 <div class="grid grid-cols-1">
-                                  <div class="">Gandasoli</div>
+                                  <div
+                                    class="active_position cursor-pointer"
+                                    data-provinsi="Prov. Jawa Barat"
+                                    data-kabupaten="Kab. Bandung"
+                                    data-kecamatan="Kec. Mekarjaya"
+                                    data-kelurahan="Mekarjaya"
+                                  >
+                                    Mekarjaya
+                                  </div>
                                   <div class="text-xs text-gray-500">
                                     Rp 25 M
                                   </div>
                                 </div>
                               </div>
                             </div>
-                            <!-- Kelurahan Kedua -->
+                            <!-- Kelurahan Ketujuh -->
                             <div class="w-full flex flex-col -mt-1">
                               <div class="spasi_kel">&nbsp;</div>
                               <div class="spasi_kel">&nbsp;</div>
                               <!--  -->
                               <div
-                                class="data_konten_kelurahan_hidden_2 hidden"
+                                class="data_konten_kelurahan_hidden_7 hidden"
                               >
                                 <div class="grid grid-cols-1">
-                                  <div class="">Rancamanggung2</div>
+                                  <div class="">Rancamanggung7</div>
                                   <div class="text-xs text-gray-500">
                                     Rp 25 M
                                   </div>
@@ -3552,15 +3600,15 @@
                                 </div>
                               </div>
                             </div>
-                            <!-- Kelurahan Ketiga -->
+                            <!-- Kelurahan Kedelapan -->
                             <div class="w-full flex flex-col -mt-1">
                               <div class="spasi_kel">&nbsp;</div>
                               <div class="spasi_kel">&nbsp;</div>
                               <div
-                                class="data_konten_kelurahan_hidden_3 hidden"
+                                class="data_konten_kelurahan_hidden_8 hidden"
                               >
                                 <div class="grid grid-cols-1">
-                                  <div class="">Rancamanggung3</div>
+                                  <div class="">Rancamanggung8</div>
                                   <div class="text-xs text-gray-500">
                                     Rp 25 M
                                   </div>
@@ -3574,15 +3622,15 @@
                                 </div>
                               </div>
                             </div>
-                            <!-- Kelurahan Keempat -->
+                            <!-- Kelurahan Sembilan -->
                             <div class="w-full flex flex-col -mt-1">
                               <div class="spasi_kel">&nbsp;</div>
                               <div class="spasi_kel">&nbsp;</div>
                               <div
-                                class="data_konten_kelurahan_hidden_4 hidden"
+                                class="data_konten_kelurahan_hidden_9 hidden"
                               >
                                 <div class="grid grid-cols-1">
-                                  <div class="">Rancamanggung4</div>
+                                  <div class="">Rancamanggung9</div>
                                   <div class="text-xs text-gray-500">
                                     Rp 25 M
                                   </div>
@@ -3596,15 +3644,15 @@
                                 </div>
                               </div>
                             </div>
-                            <!-- Kelurahan Lima -->
+                            <!-- Kelurahan Sepuluh -->
                             <div class="w-full flex flex-col -mt-1">
                               <div class="spasi_kel">&nbsp;</div>
                               <div class="spasi_kel">&nbsp;</div>
                               <div
-                                class="data_konten_kelurahan_hidden_5 hidden"
+                                class="data_konten_kelurahan_hidden_10 hidden"
                               >
                                 <div class="grid grid-cols-1">
-                                  <div class="">Rancamanggung5</div>
+                                  <div class="">Rancamanggung10</div>
                                   <div class="text-xs text-gray-500">
                                     Rp 25 M
                                   </div>
@@ -3621,6 +3669,316 @@
 
                             <!--  -->
                           </div>
+                          <!-- spasi antar row -->
+                          <div class="spasi_kab hidden">&nbsp;</div>
+                          <div class="spasi_kab hidden">&nbsp;</div>
+                          <div class="spasi_kab hidden">&nbsp;</div>
+                          <div class="spasi_kab hidden">&nbsp;</div>
+
+                          <!-- Main Kecamatan3  -->
+                          <div
+                            class="w-full flex flex-col data_konten_kabupaten_3 hidden"
+                          >
+                            <!-- Kecamatan Keenam -->
+                            <div class="grid grid-cols-[160px,1fr]">
+                              <div class="w-full grid grid-cols-1 items-center">
+                                <div class="flex flex-col">
+                                  <div class="grid grid-cols-[1fr,25px]">
+                                    <div class="flex justify-start items-start">
+                                      Bojonggede
+                                    </div>
+                                    <div
+                                      class="flex justify-center items-center"
+                                    >
+                                      <div class="btn_open_desa_11">
+                                        <img
+                                          class="w-3 h-3 object-contain cursor-pointer icon_minus hidden"
+                                          src="./assets/minus-191d18eb.png"
+                                          alt=""
+                                        />
+                                        <img
+                                          class="w-3 h-3 object-contain cursor-pointer icon_plus"
+                                          src="./assets/plus-dde2a7ef.png"
+                                          alt=""
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="text-xs text-gray-500">
+                                    Rp 20,3 M
+                                  </div>
+                                </div>
+                                <!--  -->
+                              </div>
+                            </div>
+                            <!-- Kecamatan Ketujuh -->
+                            <div class="grid grid-cols-[160px,1fr]">
+                              <div class="w-full grid grid-cols-1 items-center">
+                                <div class="flex flex-col">
+                                  <div class="grid grid-cols-[1fr,25px]">
+                                    <div class="flex justify-start items-start">
+                                      Cibinong
+                                    </div>
+                                    <div
+                                      class="flex justify-center items-center"
+                                    >
+                                      <div class="btn_open_desa_12">
+                                        <img
+                                          class="w-3 h-3 object-contain cursor-pointer icon_minus hidden"
+                                          src="./assets/minus-191d18eb.png"
+                                          alt=""
+                                        />
+                                        <img
+                                          class="w-3 h-3 object-contain cursor-pointer icon_plus"
+                                          src="./assets/plus-dde2a7ef.png"
+                                          alt=""
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="text-xs text-gray-500">
+                                    Rp 20,3 M
+                                  </div>
+                                </div>
+                                <!--  -->
+                              </div>
+                            </div>
+                            <!-- Kecamatan Kedelapan -->
+                            <div class="grid grid-cols-[160px,1fr]">
+                              <div class="w-full grid grid-cols-1 items-center">
+                                <div class="flex flex-col">
+                                  <div class="grid grid-cols-[1fr,25px]">
+                                    <div class="flex justify-start items-start">
+                                      Cileungsi
+                                    </div>
+                                    <div
+                                      class="flex justify-center items-center"
+                                    >
+                                      <div class="btn_open_desa_13">
+                                        <img
+                                          class="w-3 h-3 object-contain cursor-pointer icon_minus hidden"
+                                          src="./assets/minus-191d18eb.png"
+                                          alt=""
+                                        />
+                                        <img
+                                          class="w-3 h-3 object-contain cursor-pointer icon_plus"
+                                          src="./assets/plus-dde2a7ef.png"
+                                          alt=""
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="text-xs text-gray-500">
+                                    Rp 20,3 M
+                                  </div>
+                                </div>
+                                <!--  -->
+                              </div>
+                            </div>
+                            <!-- Kecamatan Sembilan -->
+                            <div class="grid grid-cols-[160px,1fr]">
+                              <div class="w-full grid grid-cols-1 items-center">
+                                <div class="flex flex-col">
+                                  <div class="grid grid-cols-[1fr,25px]">
+                                    <div class="flex justify-start items-start">
+                                      Ciseeng
+                                    </div>
+                                    <div
+                                      class="flex justify-center items-center"
+                                    >
+                                      <div class="btn_open_desa_14">
+                                        <img
+                                          class="w-3 h-3 object-contain cursor-pointer icon_minus hidden"
+                                          src="./assets/minus-191d18eb.png"
+                                          alt=""
+                                        />
+                                        <img
+                                          class="w-3 h-3 object-contain cursor-pointer icon_plus"
+                                          src="./assets/plus-dde2a7ef.png"
+                                          alt=""
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="text-xs text-gray-500">
+                                    Rp 20,3 M
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Kecamatan Sepuluh -->
+                            <div class="grid grid-cols-[160px,1fr]">
+                              <div class="w-full grid grid-cols-1 items-center">
+                                <div class="flex flex-col">
+                                  <div class="grid grid-cols-[1fr,25px]">
+                                    <div class="flex justify-start items-start">
+                                      Gunung Putri
+                                    </div>
+                                    <div
+                                      class="flex justify-center items-center"
+                                    >
+                                      <div class="btn_open_desa_15">
+                                        <img
+                                          class="w-3 h-3 object-contain cursor-pointer icon_minus hidden"
+                                          src="./assets/minus-191d18eb.png"
+                                          alt=""
+                                        />
+                                        <img
+                                          class="w-3 h-3 object-contain cursor-pointer icon_plus"
+                                          src="./assets/plus-dde2a7ef.png"
+                                          alt=""
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="text-xs text-gray-500">
+                                    Rp 23 M
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!--  -->
+                          </div>
+
+                          <!-- Main Kelurahan3 -->
+                          <div
+                            class="w-full grid grid-cols-1 data_konten_kabupaten_3 hidden"
+                          >
+                            <!-- Kelurahan sebelas -->
+                            <div class="w-full flex flex-col">
+                              <!-- <div class="spasi_kel">&nbsp;</div>
+                            <div class="spasi_kel">&nbsp;</div> -->
+                              <div class="data_konten_kelurahan_hidden_11">
+                                <div class="grid grid-cols-1">
+                                  <div
+                                    class="active_position cursor-pointer"
+                                    data-provinsi="Prov. Jawa Barat"
+                                    data-kabupaten="Kab. Cirebon"
+                                    data-kecamatan="Kec. Bojong Baru"
+                                    data-kelurahan="Bojong Baru"
+                                  >
+                                    Bojong Baru
+                                  </div>
+
+                                  <div class="text-xs text-gray-500">
+                                    Rp 25 M
+                                  </div>
+                                </div>
+
+                                <div class="grid grid-cols-1">
+                                  <div
+                                    class="active_position cursor-pointer"
+                                    data-provinsi="Prov. Jawa Barat"
+                                    data-kabupaten="Kab. Cirebon"
+                                    data-kecamatan="Kec. Waringin Jaya"
+                                    data-kelurahan="Waringin Jaya"
+                                  >
+                                    Waringin Jaya
+                                  </div>
+                                  <div class="text-xs text-gray-500">
+                                    Rp 25 M
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Kelurahan duabelas -->
+                            <div class="w-full flex flex-col -mt-1">
+                              <div class="spasi_kel">&nbsp;</div>
+                              <div class="spasi_kel">&nbsp;</div>
+                              <!--  -->
+                              <div
+                                class="data_konten_kelurahan_hidden_12 hidden"
+                              >
+                                <div class="grid grid-cols-1">
+                                  <div class="">Karadenan</div>
+                                  <div class="text-xs text-gray-500">
+                                    Rp 25 M
+                                  </div>
+                                </div>
+
+                                <div class="grid grid-cols-1">
+                                  <div class="">Cirimekar</div>
+                                  <div class="text-xs text-gray-500">
+                                    Rp 25 M
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Kelurahan tigabelas -->
+                            <div class="w-full flex flex-col -mt-1">
+                              <div class="spasi_kel">&nbsp;</div>
+                              <div class="spasi_kel">&nbsp;</div>
+                              <div
+                                class="data_konten_kelurahan_hidden_13 hidden"
+                              >
+                                <div class="grid grid-cols-1">
+                                  <div class="">Pasir Angin</div>
+                                  <div class="text-xs text-gray-500">
+                                    Rp 25 M
+                                  </div>
+                                </div>
+
+                                <div class="grid grid-cols-1">
+                                  <div class="">Setu Sari</div>
+                                  <div class="text-xs text-gray-500">
+                                    Rp 25 M
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Kelurahan empatbelas -->
+                            <div class="w-full flex flex-col -mt-1">
+                              <div class="spasi_kel">&nbsp;</div>
+                              <div class="spasi_kel">&nbsp;</div>
+                              <div
+                                class="data_konten_kelurahan_hidden_14 hidden"
+                              >
+                                <div class="grid grid-cols-1">
+                                  <div class="">Babakan</div>
+                                  <div class="text-xs text-gray-500">
+                                    Rp 25 M
+                                  </div>
+                                </div>
+
+                                <div class="grid grid-cols-1">
+                                  <div class="">Cibentang</div>
+                                  <div class="text-xs text-gray-500">
+                                    Rp 25 M
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Kelurahan limabelas -->
+                            <div class="w-full flex flex-col -mt-1">
+                              <div class="spasi_kel">&nbsp;</div>
+                              <div class="spasi_kel">&nbsp;</div>
+                              <div
+                                class="data_konten_kelurahan_hidden_15 hidden"
+                              >
+                                <div class="grid grid-cols-1">
+                                  <div class="">Wanaherang</div>
+                                  <div class="text-xs text-gray-500">
+                                    Rp 25 M
+                                  </div>
+                                </div>
+
+                                <div class="grid grid-cols-1">
+                                  <div class="">Bojong Kulur</div>
+                                  <div class="text-xs text-gray-500">
+                                    Rp 25 M
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!--  -->
+                          </div>
+
+                          <!--  -->
                           <!--  -->
                         </div>
 
@@ -3713,7 +4071,7 @@
               </div>
 
               <!-- tea3 -->
-              <div class="absolute top-0 w-full hidden_agregat hidden">
+              <div class="absolute top-0 w-full hidden_agregat">
                 <div class="w-full flex flex-col relative">
                   <div id="btn-titik"></div>
                   <!--  -->
