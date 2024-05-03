@@ -1575,6 +1575,43 @@ document.addEventListener("DOMContentLoaded", function () {
 //
 
 document.addEventListener("DOMContentLoaded", function () {
+  // active posisi kelurahan
+
+  // Fungsi untuk mengupdate breadcrumb
+  function updateBreadcrumb(provinsi, kabupaten, kecamatan, kelurahan) {
+    document.querySelector(".breadcrumb_provinsi").textContent = provinsi;
+    document.querySelector(".breadcrumb_kabupaten").textContent = kabupaten;
+    document.querySelector(".breadcrumb_kecamatan").textContent = kecamatan;
+    document.querySelector(".breadcrumb_kelurahan").textContent = kelurahan;
+  }
+
+  // Data default untuk Buniara
+  const defaultProvinsi = "Prov. Jawa Barat";
+  const defaultKabupaten = "Kab. Subang";
+  const defaultKecamatan = "Kec. Tanjungsiang";
+  const defaultKelurahan = "Kel. Buniara";
+
+  // Mengupdate breadcrumb saat halaman dimuat
+  updateBreadcrumb(
+    defaultProvinsi,
+    defaultKabupaten,
+    defaultKecamatan,
+    defaultKelurahan
+  );
+
+  // Event listener untuk elemen yang dapat diklik
+  const positions = document.querySelectorAll(".active_position");
+  positions.forEach((position) => {
+    position.addEventListener("click", function () {
+      const provinsi = this.getAttribute("data-provinsi");
+      const kabupaten = this.getAttribute("data-kabupaten");
+      const kecamatan = this.getAttribute("data-kecamatan");
+      const kelurahan = this.getAttribute("data-kelurahan");
+
+      updateBreadcrumb(provinsi, kabupaten, kecamatan, kelurahan);
+    });
+  });
+
   // Mendapatkan tombol, ikon, dan konten yang relevan untuk Desa
   const btnOpenDesa1 = document.querySelector(".btn_open_desa_1");
   const iconPlus1 = btnOpenDesa1.querySelector(".icon_plus");
