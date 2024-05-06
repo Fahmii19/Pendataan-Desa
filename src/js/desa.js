@@ -2004,7 +2004,8 @@ document.addEventListener("DOMContentLoaded", function () {
     contentToHide,
     iconPlus,
     iconMinus,
-    showSpasi
+    showSpasi,
+    kabupatenId
   ) {
     contentToHide.forEach((el) => el.classList.add("hidden")); // Menyembunyikan konten yang tidak aktif
     contentToShow.forEach((el) => el.classList.remove("hidden")); // Menampilkan konten yang aktif
@@ -2020,6 +2021,32 @@ document.addEventListener("DOMContentLoaded", function () {
     iconMinus.classList.remove("hidden");
 
     toggleSpasiKab(showSpasi); // Mengatur visibilitas spasi_kab
+
+    // Conditionally hide specific content based on button clicked
+    if (kabupatenId === 1 || kabupatenId === 2 || kabupatenId === 3) {
+      const additionalContentToHide1 = document.querySelectorAll(
+        ".data_konten_kelurahan_hidden_1, .data_konten_kelurahan_hidden_2, .data_konten_kelurahan_hidden_3, .data_konten_kelurahan_hidden_4, .data_konten_kelurahan_hidden_5",
+        ".data_konten_kelurahan_hidden_6, .data_konten_kelurahan_hidden_7, .data_konten_kelurahan_hidden_8, .data_konten_kelurahan_hidden_9, .data_konten_kelurahan_hidden_10",
+        ".data_konten_kelurahan_hidden_11, .data_konten_kelurahan_hidden_12, .data_konten_kelurahan_hidden_13, .data_konten_kelurahan_hidden_14, .data_konten_kelurahan_hidden_15"
+      );
+      additionalContentToHide1.forEach((el) => el.classList.add("hidden"));
+    }
+
+    // Hiding content for button 1
+    if (kabupatenId === 1 || kabupatenId === 2 || kabupatenId === 3) {
+      const additionalContentToHide2 = document.querySelectorAll(
+        ".data_konten_kelurahan_hidden_6, .data_konten_kelurahan_hidden_7, .data_konten_kelurahan_hidden_8, .data_konten_kelurahan_hidden_9, .data_konten_kelurahan_hidden_10"
+      );
+      additionalContentToHide2.forEach((el) => el.classList.add("hidden"));
+    }
+
+    // Hiding content for button 3
+    if (kabupatenId === 3 || kabupatenId === 2 || kabupatenId === 1) {
+      const additionalContentToHide3 = document.querySelectorAll(
+        ".data_konten_kelurahan_hidden_11, .data_konten_kelurahan_hidden_12, .data_konten_kelurahan_hidden_13, .data_konten_kelurahan_hidden_14, .data_konten_kelurahan_hidden_15"
+      );
+      additionalContentToHide3.forEach((el) => el.classList.add("hidden"));
+    }
   }
 
   // Event listeners for plus and minus icons of villages and kabupatens
@@ -2077,7 +2104,8 @@ document.addEventListener("DOMContentLoaded", function () {
       Array.from(contentKabupaten2).concat(Array.from(contentKabupaten3)),
       iconPlusKab1,
       iconMinusKab1,
-      false
+      false,
+      1
     );
   });
   btnOpenKabupaten2.addEventListener("click", () => {
@@ -2086,7 +2114,8 @@ document.addEventListener("DOMContentLoaded", function () {
       Array.from(contentKabupaten1).concat(Array.from(contentKabupaten3)),
       iconPlusKab2,
       iconMinusKab2,
-      true
+      true,
+      2
     );
   });
   btnOpenKabupaten3.addEventListener("click", () => {
@@ -2095,7 +2124,8 @@ document.addEventListener("DOMContentLoaded", function () {
       Array.from(contentKabupaten1).concat(Array.from(contentKabupaten2)),
       iconPlusKab3,
       iconMinusKab3,
-      true
+      true,
+      3
     );
   });
 
