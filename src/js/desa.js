@@ -1640,11 +1640,11 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector(".breadcrumb_kelurahan").textContent = kelurahan;
   }
 
-  // Data default untuk Buniara
+  // Data default untuk Cimeuhmal
   const defaultProvinsi = "Prov. Jawa Barat";
   const defaultKabupaten = "Kab. Subang";
   const defaultKecamatan = "Kec. Tanjungsiang";
-  const defaultKelurahan = "Kel. Buniara";
+  const defaultKelurahan = "Kel. Cimeuhmal";
 
   // Mengupdate breadcrumb saat halaman dimuat
   updateBreadcrumb(
