@@ -2,7 +2,7 @@ import PasarIcon from "../images/icons/pasar.png";
 import LumbungIcon from "../images/icons/lumbung.png";
 import PenggilinganIcon from "../images/icons/penggilingan.png";
 
-const base_url = "https://desa.pintoinvest.com/server/api/v1";
+const base_url = "http://desa.pintoinvest.com/server/api/v1";
 const list_layers = ["persil"];
 const list_layers_default = ["persil"];
 
@@ -12,8 +12,8 @@ mapboxgl.accessToken =
 const map = new mapboxgl.Map({
   container: "mapSoaraja",
   style: "mapbox://styles/mapbox/streets-v11",
-  zoom: 16.5,
-  center: { lng: 107.82534697045242, lat: -6.742200615984984 },
+  zoom: 12,
+  center: { lng: 111.3596969, lat: -7.4203236 },
   preserveDrawingBuffer: true,
 });
 
@@ -84,24 +84,24 @@ const AddLayers = (source) => {
         },
       });
       break;
-    case "hujan":
-      const day =
-        document.querySelector("input[name='curah_hujan']:checked")?.value ??
-        30;
-      map.addLayer({
-        id: "hujan-fill",
-        type: "fill",
-        source: source,
-        layout: {
-          visibility: "visible",
-        },
-        paint: {
-          "fill-color": ["get", `color_${day}`],
-          "fill-opacity": 0.5,
-          "fill-outline-color": "#fff",
-        },
-      });
-      break;
+    // case "hujan":
+    //   const day =
+    //     document.querySelector("input[name='curah_hujan']:checked")?.value ??
+    //     30;
+    //   map.addLayer({
+    //     id: "hujan-fill",
+    //     type: "fill",
+    //     source: source,
+    //     layout: {
+    //       visibility: "visible",
+    //     },
+    //     paint: {
+    //       "fill-color": ["get", `color_${day}`],
+    //       "fill-opacity": 0.5,
+    //       "fill-outline-color": "#fff",
+    //     },
+    //   });
+    //   break;
     case "fasilitas":
       const category = document
         .querySelector("[id^='chip-'].text-blue-500")
@@ -211,3 +211,5 @@ document.querySelectorAll("[id^='chip-']").forEach((chip) => {
     }
   });
 });
+
+map.addControl(new mapboxgl.NavigationControl());
