@@ -2,7 +2,7 @@ import PasarIcon from "../images/icons/pasar.png";
 import LumbungIcon from "../images/icons/lumbung.png";
 import PenggilinganIcon from "../images/icons/penggilingan.png";
 
-const base_url = "http://desa.pintoinvest.com/server/api/v1";
+const base_url = "https://desa.pintoinvest.com/server/api/v1";
 const list_layers = ["persil"];
 const list_layers_default = ["persil"];
 
